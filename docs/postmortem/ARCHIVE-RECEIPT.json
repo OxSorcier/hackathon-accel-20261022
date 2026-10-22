@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "EIGHT_REPORT_FILES_BYTE_VERIFIED",
+  "status": "EIGHT_REPORT_FILES_AND_COMPLETE_BUNDLE_BYTE_VERIFIED_TRACKING_READ_BACK",
   "date": "2026-10-22",
   "parentId": "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp",
   "folderUrl": "https://drive.google.com/drive/folders/1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp",
@@ -144,6 +144,30 @@
       "identical": true
     }
   ],
-  "bundle": "PENDING",
-  "tracking": "PENDING"
+  "bundle": {
+    "id": "1KLtEYjm8LIJoLa-DIR1_APU57GD4CWTe",
+    "url": "https://drive.google.com/file/d/1KLtEYjm8LIJoLa-DIR1_APU57GD4CWTe/view",
+    "parentId": "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp",
+    "shared": false,
+    "bytes": 1924826,
+    "localSha256": "f0a6ca67b971f3bea3e89670fe625171b0304f6b3979365867febf59d08d30b1",
+    "remoteSha256": "f0a6ca67b971f3bea3e89670fe625171b0304f6b3979365867febf59d08d30b1",
+    "identical": true,
+    "freshExtraction": {
+      "entries": 32,
+      "contentPins": 31,
+      "mismatches": 0
+    },
+    "scope": "Immutable content checkpoint including all four MD/HTML reports, appendices, captures and receipts at packaging time. Final delivery metadata subsequently advances in the PR; the ZIP does not claim to contain these later receipt updates."
+  },
+  "tracking": {
+    "issue": "ERW-133",
+    "url": "https://linear.app/briques/issue/ERW-133",
+    "commentId": "9295d7c8-911a-4625-9d05-573dbe4e984a",
+    "marker": "PHYSICAL-IMPACT-POSTMORTEM-20261022-V1",
+    "readbackIdentical": true,
+    "bodyCharacters": 2106,
+    "issueStatusAfter": "Todo",
+    "issueStatusChanged": false
+  }
 }
