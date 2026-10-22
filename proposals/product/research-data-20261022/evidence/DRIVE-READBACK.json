@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "kind": "md",
+      "bytes": 19146,
+      "sha256": "ced29ff38eb68ce05469d99a1e175120b93c6d132478b51db15c4b91bf7d9a0b",
+      "identical": true
+    },
+    {
+      "kind": "html",
+      "bytes": 184468,
+      "sha256": "bd89049d664eed5462749b6b8d85bb42525ccbd4565e9cbf225d65e9f28b1d84",
+      "identical": true
+    }
+  ],
+  "remoteIds": {
+    "md": "1SmrxX66p8ZSnMXTm3d6s47jx-5EBawim",
+    "html": "1qnBOlvC7al0okEiAGnp_X-MdMuw_7gPx"
+  },
+  "visibility": "private metadata read; owner only",
+  "parentFolderId": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+}

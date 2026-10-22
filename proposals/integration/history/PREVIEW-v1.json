@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T09:09:45.521Z",
+  "userUrl": "http://127.0.0.1:3001",
+  "frozenRuntime": ".local/preview-stable-v1",
+  "credentialsLocation": ".env, DEMO_LOGIN_TOKEN; no credential value in this receipt",
+  "rows": [
+    {
+      "port": 3000,
+      "companyId": "CO-DEMO",
+      "revision": "R0",
+      "assetHttp": 200
+    },
+    {
+      "port": 3001,
+      "companyId": "CO-PARCOURS-PAUL",
+      "revision": "R0",
+      "assetHttp": 200
+    }
+  ],
+  "limits": [
+    "UI final review receipt pending",
+    "No real model provider configured",
+    "Alert-to-model-proposal journey blocked at inference; no simulated model response in this preview"
+  ]
+}

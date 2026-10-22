@@ -1,0 +1,90 @@
+{
+  "version": 3,
+  "observedAt": "2026-10-22T10:47:26.597531+00:00",
+  "status": "FINAL_SOURCE_MODEL_CALCULATION_APPROVED_PROPOSAL_READ_BACK",
+  "readOnlyApi": "http://127.0.0.1:3001/api/decisions",
+  "responseSha256": "5528349db9841e2a22c7d5bcf222f39956dc058eac4f471e7e7786bbdc160cfd",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "caseRef": {
+    "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "caseRevision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca"
+  },
+  "evidenceRef": {
+    "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+    "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+    "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+  },
+  "source": {
+    "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+    "publishedAt": "2026-07-10T14:04:59.000Z",
+    "provenance": {
+      "method": "fetch",
+      "endpoint": "https://api.keenable.ai/v1/fetch",
+      "provider": "keenable",
+      "indexedAt": null,
+      "profileId": "soissons-project",
+      "truncated": false
+    },
+    "indexedFreshnessQualificationRetained": true
+  },
+  "run": {
+    "id": "6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+    "mode": "direct",
+    "model": "gpt-5.4-mini",
+    "status": "proposal",
+    "tools": [
+      "context_manifest",
+      "model_intent",
+      "model_result",
+      "read_company_context",
+      "model_intent",
+      "model_result",
+      "read_commitments",
+      "model_intent",
+      "model_result",
+      "read_observation_context",
+      "model_intent",
+      "model_result",
+      "evaluate_options",
+      "model_intent",
+      "model_result",
+      "prepare_proposal"
+    ]
+  },
+  "proposal": {
+    "id": "proposal:6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+    "status": "approved",
+    "kind": "emergency_purchase",
+    "costEur": 1420,
+    "quantity": 8,
+    "arrivalDate": "2026-10-23",
+    "targetOrderLineId": "OL-A",
+    "coverage": [
+      {
+        "orderLineId": "OL-A",
+        "quantity": 8,
+        "covered": 8,
+        "shortage": 0,
+        "requiredDate": "2026-10-23"
+      },
+      {
+        "orderLineId": "OL-B",
+        "quantity": 8,
+        "covered": 8,
+        "shortage": 0,
+        "requiredDate": "2026-11-05"
+      }
+    ]
+  },
+  "integratorSourceReceipt": "proposals/integration/FINAL-SOURCE-CASE.json",
+  "scopeReceipt": "proposals/data/READY-KEENABLE-v3.json",
+  "scopeAcknowledgment": "proposals/integration/RECEIVED-DATA-KEENABLE-v3.json",
+  "limits": [
+    "Company and independent operator confirmation are synthetic",
+    "Public news does not establish supplier relationship or delivery delay",
+    "No purchase or stock movement executed",
+    "This read triggered no model call or collection",
+    "Aiven and server restart are attested by integration; data owner independently read the API state",
+    "Research-memory R1/R2 are separate from this source-to-proposal proof"
+  ]
+}

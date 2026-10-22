@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "status": "QUALIFIED_ARCHIVED_PRIVATE_PRODUCT_MAPPING_PENDING",
+  "owner_thread_id": "01a162bd-6384-7031-82c3-fdb5efba174e",
+  "existing_tracker": "ERW-133",
+  "existing_drive_parent": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+  "files": [
+    {"path": "INDUSTRIAL-INCIDENTS-20261022.json", "drive_id": "1vARfaHIT4ktP0Las7kxi9253U1zb1Qy7", "sha256": "bae2bc472c354c448a5aa9072a4aaed5344e37360b1ae6897b8857b7657e4342", "bytes": 8820, "remote_byte_identical": true, "shared": false},
+    {"path": "INDUSTRIAL-INCIDENTS.md", "drive_id": "1W5n8iKG0NUAictOCnwFNK0KryIhzScpY", "sha256": "ac2ae42417c6be938c63068bbd42d29073e6512eecce070fa0e1bdcc6a42b27f", "bytes": 4396, "remote_byte_identical": true, "shared": false},
+    {"path": "INDUSTRIAL-INCIDENTS.html", "drive_id": "1IrRP1Wy6omQ7kMKwuA9xG_NiPJ_s96u5", "sha256": "d1703f388fa09be8948bfa37c048e138413829c22f723118f3163aca03d2d9a8", "bytes": 161728, "remote_byte_identical": true, "shared": false}
+  ],
+  "checks": {"markdown_html_same_fragments": 21, "font_loaded": true, "widths_without_document_overflow": [1440, 768, 390], "external_display_resources": 0, "browser": "isolated Chromium, local file; Aside file and resize limitations previously observed", "visual_inspection": "390 px screenshot inspected"},
+  "sources": [
+    {"id": "ARIA-66803", "original_read": true, "historical": true, "supported": "Technical wood sawdust plant production stopped 15 days after an April 2026 fire", "limit": "Anonymous entity, retrospective record; no current supplier, SKU or October disruption established"},
+    {"id": "ROCKWOOL-ST-ELOY-20251223", "original_read": true, "historical": true, "supported": "Part of finished-product stock damaged; publisher says industrial activity unaffected", "limit": "No affected SKU, quantity, customer delay, current shortage or competitor relation established"},
+    {"id": "ISOVER-LUCENS-20260925", "original_read": false, "http_status": 403, "use": "Access rejection retained; not an acquired original or production shutdown fact"}
+  ],
+  "delivery": "Native v2 sent to existing integrator, data, portfolio, ERP/report coordinator and vision owner. Data explicitly acknowledged both historical limits and waits for canonical industrial contract. New private archive links follow in the same owners' chats.",
+  "remaining": "Integrator-owned product relation, controlled scenario release, ingestion and calculated risk/opportunity journey. Research qualification is not app reception. Independent research review NOT_RUN."
+}

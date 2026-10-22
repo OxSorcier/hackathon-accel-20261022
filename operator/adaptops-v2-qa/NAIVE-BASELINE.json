@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "status": "NOT_RUN",
+  "operator_only": true,
+  "release_sha256": null,
+  "purpose": "Transparent deliberately incomplete control on the exact same released portfolio; not a claim about generic agents or real manual work.",
+  "rule": "Use physical stock by SKU and depot, without reservations, downstream commitments, dependencies or CRM qualification. Keep this definition fixed before execution.",
+  "limitations": [
+    "This baseline is intentionally weaker than the product rules.",
+    "Its timing must be measured during this run, not copied from the earlier 2.5 second smoke.",
+    "Do not infer business gain or general superiority from synthetic comparison."
+  ],
+  "outputs": null,
+  "coreReleaseSha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+  "coreObservedAt": "2026-10-22T11:14:32.139656+00:00",
+  "corePreEventResult": {
+    "status": "RUN_LOCAL_RAW_TABLES",
+    "naivePhysicalOnlyExposedIds": [
+      "OL-A"
+    ],
+    "independentActualBaseShortages": [],
+    "falsePositives": [
+      "OL-A"
+    ],
+    "method": "For each confirmed commitment compare its own quantity with total physical SKU/unit at its destination. No reservation subtraction, inbound consideration or shared consumption. Deliberately weak control, not a fair manual or LLM benchmark."
+  }
+}

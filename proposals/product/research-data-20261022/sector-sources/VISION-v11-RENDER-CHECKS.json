@@ -1,0 +1,29 @@
+{
+  "browser": "Aside desktop; isolated Chromium 1440/768/390 because Aside resize unavailable in previously verified API",
+  "results": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "tables": 5,
+      "externalResources": 0,
+      "mainTop": 430.0625
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "tables": 5,
+      "externalResources": 0,
+      "mainTop": 391.71875
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "tables": 5,
+      "externalResources": 0,
+      "mainTop": 387.65625
+    }
+  ]
+}

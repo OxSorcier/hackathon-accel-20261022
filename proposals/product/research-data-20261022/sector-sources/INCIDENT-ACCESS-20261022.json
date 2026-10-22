@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "scope": "Two bounded public source GETs only. No access-control bypass, product ingestion or scheduler activation.",
+  "sources": [
+    {
+      "id": "aria-66803",
+      "url": "https://www.aria.developpement-durable.gouv.fr/accident/66803/",
+      "collected_at": "2026-10-22T11:00:24.420222+00:00",
+      "status": 200,
+      "final_url": "https://www.aria.developpement-durable.gouv.fr/accident/66803/",
+      "bytes_read": 135893,
+      "sha256": "10a88142254b92d2f6b83991d8a32a1d241639d7e24fe5cc6843a7c08d5a9d1c",
+      "content_type": "text/html; charset=UTF-8",
+      "truncated": false,
+      "publication_metadata": [
+        "<meta property=\"article:modified_time\" content=\"2026-09-15T23:00:05+00:00\" />"
+      ],
+      "jsonld_dates": [
+        "\"datePublished\":\"2026-04-03T00:00:00+00:00\"",
+        "\"dateModified\":\"2026-09-15T23:00:05+00:00\""
+      ],
+      "expected_fact_fragment_present": false
+    },
+    {
+      "id": "isover-lucens-control",
+      "url": "https://www.isover.ch/de/news/information-zum-vorfall-der-nacht-vom-24-auf-den-25-september-2026",
+      "collected_at": "2026-10-22T11:00:24.848320+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "aside": {
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "fontLoaded": true,
+    "resize": "NOT_SUPPORTED: setViewportSize is not a function",
+    "screenshot": "report-aside-1440.png"
+  },
+  "chrome": {
+    "version": "155.0.8059.85",
+    "offline": true,
+    "measurements": [
+      {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "fonts": [
+          {
+            "weight": 400,
+            "loaded": true
+          },
+          {
+            "weight": 500,
+            "loaded": true
+          },
+          {
+            "weight": 600,
+            "loaded": true
+          },
+          {
+            "weight": 700,
+            "loaded": true
+          }
+        ],
+        "brokenAnchors": 0,
+        "headings": 9,
+        "tables": 5,
+        "globalOverflow": false
+      },
+      {
+        "viewport": 768,
+        "scrollWidth": 768,
+        "fonts": [
+          {
+            "weight": 400,
+            "loaded": true
+          },
+          {
+            "weight": 500,
+            "loaded": true
+          },
+          {
+            "weight": 600,
+            "loaded": true
+          },
+          {
+            "weight": 700,
+            "loaded": true
+          }
+        ],
+        "brokenAnchors": 0,
+        "headings": 9,
+        "tables": 5,
+        "globalOverflow": false
+      },
+      {
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "fonts": [
+          {
+            "weight": 400,
+            "loaded": true
+          },
+          {
+            "weight": 500,
+            "loaded": true
+          },
+          {
+            "weight": 600,
+            "loaded": true
+          },
+          {
+            "weight": 700,
+            "loaded": true
+          }
+        ],
+        "brokenAnchors": 0,
+        "headings": 9,
+        "tables": 5,
+        "globalOverflow": false
+      }
+    ],
+    "externalRequests": []
+  },
+  "sameContent": {
+    "equal": true,
+    "expectedCharacters": 16751,
+    "actualCharacters": 16751
+  },
+  "visualInspection": {
+    "status": "PASS",
+    "inspected": [
+      "report-aside-1440.png",
+      "report-chrome-390.png",
+      "report-chrome-768.png",
+      "regulation-chrome-390.png",
+      "regulation-chrome-1440.png"
+    ],
+    "note": "Long tables scroll in their local containers; no global overflow. No PDF requested."
+  }
+}

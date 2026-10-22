@@ -1,0 +1,12 @@
+{
+  "status": "RECEIVED_NEXT_SLICE_NOT_IMPLEMENTED",
+  "sourceRead": "proposals/product/MEMOIRE-RECHERCHE-TRACES.md",
+  "owner": "Integrator owns shared knowledge contract, API, migration and R1/R2 reception; UI keeps current case blocks.",
+  "minimalUiDelta": "Within the existing case, show backend-attributed knowledge references, source dates, reused/new/recheck/revised states, current and historical versions. Keep trace/reference details folded. Do not infer reuse from identical hashes.",
+  "acceptance": {
+    "R1": "NOT_RUN: fresh session/run must retrieve persisted knowledge through tools and database without reinjected answer; record source identities and external calls performed or avoided, restart and company isolation.",
+    "R2": "NOT_RUN: controlled labeled v2 under the same source identity revises knowledge, keeps v1 and stales/re-evaluates affected proposals; unchanged recollection does not duplicate."
+  },
+  "blocker": "No canonical research-knowledge API/view contract received for this UI delta. Do not reopen frozen current code or invent visible states.",
+  "largeCompanyScope": "ERP/CRM and source-of-truth ownership remain part of the product vision; the present company data is synthetic."
+}

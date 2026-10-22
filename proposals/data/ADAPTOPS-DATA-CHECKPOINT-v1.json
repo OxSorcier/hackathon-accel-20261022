@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T10:59:56.103700+00:00",
+  "product": "AdaptOps",
+  "tagline": "Adapt as fast as your market changes.",
+  "owner": "Existing data/watch chat,01a162bd-e262-7fa2-a1f3-aab46f68fc1a",
+  "authority": "Human coordination requests verified in the two existing owner chats. No new coordinator, dataset, importer or scheduler created.",
+  "reservedPaths": [
+    "src/data/",
+    "src/watch/",
+    "tests/data/",
+    "tests/watch/",
+    "proposals/data/"
+  ],
+  "frozenCollector": {
+    "receipt": "proposals/data/READY-KEENABLE-v3.json",
+    "scopeSha256": "2460d70ffb886c4ce1a65fd0e3030b9a9db485935a480922b8ec55f3da0c073e",
+    "status": "RECEIVED_AND_TESTED_IN_STABLE3001"
+  },
+  "memory": {
+    "priorReceipt": "proposals/data/READY-RESEARCH-v1.json",
+    "priorStatus": "HISTORICAL_RECEIVED",
+    "currentDelta": "fail(NULL) adoption correction",
+    "reviewScopeSha256": "026f33d1aa4373925ef170fd59bd634808eff0cd9c1554a4b97e34405ab7affc",
+    "status": "50_LOCAL_TESTS_PASS_TWO_FRESH_REVIEWS_PENDING",
+    "integratedModelAivenR1R2": "Owned by integration/agent chats on separate3002 candidate; not certified here"
+  },
+  "observedCapabilities": [
+    {
+      "capability": "Public collection",
+      "status": "INTEGRATED",
+      "evidence": "BOAMP and bounded Keenable Search/Fetch share existing watch engine and PostgreSQL storage. Source-to-model/tools/proposal/approval independently read back from3001; KEENABLE-FINAL-FLOW-READBACK.json."
+    },
+    {
+      "capability": "Sector coverage",
+      "status": "PARTIAL",
+      "evidence": "10 public profiles tested; many older/generic hits. July ROCKWOOL page is a research-supplied priority URL, not a claimed search-discovery win. Indexed-copy freshness explicitly unknown."
+    },
+    {
+      "capability": "Event to company link",
+      "status": "CANDIDATE_AND_SYNTHETIC",
+      "evidence": "Public issuer/site/article are attributed. No verified legal entity/SIREN-to-supplier or industrial SKU mapping. Demonstrated supplier relation remains unverified. Internal POL-1 delay is an independently attributed synthetic operator confirmation."
+    },
+    {
+      "capability": "Freshness and source revisions",
+      "status": "IMPLEMENTED_LOCAL_TESTED_PENDING_CURRENT_DELTA_RECEPTION",
+      "evidence": "Identity/hash, publication/collection, exact refs/generation, company/profile/version/namespace, v1/v2 history and controlled mode separation. Soissons v1 policy24h applies to received observations only, complete nontruncated Fetch pages from partial result; not publisher freshness."
+    },
+    {
+      "capability": "Automatic analysis from new observation",
+      "status": "NOT_IMPLEMENTED_IN_DATA_MODULE",
+      "evidence": "Existing worker stores occurrences; it does not automatically queue a business analysis. Current demonstrated analysis is an explicit user question. Additive bridge contract remains integrator-owned."
+    },
+    {
+      "capability": "Commercial opportunity or mixed plan",
+      "status": "NOT_PROVED_END_TO_END",
+      "evidence": "Projects/public contracts provide leads; current fixture proves protection of commitments and deterministic supply alternatives. No real or fully received synthetic CRM demand/capacity/margin journey demonstrated here."
+    },
+    {
+      "capability": "Approved action execution",
+      "status": "NOT_PROVED_BY_CURRENT_FLOW",
+      "evidence": "Approved proposal persisted, no purchase or stock movement executed in this flow. Execution/idempotent readback needs its own received contract and tests."
+    }
+  ],
+  "additionalSources": {
+    "productAdapters": [
+      "BOAMP",
+      "Keenable"
+    ],
+    "researchTrialsOnly": [
+      "FNB RSS",
+      "France Bois Foret observatory RSS",
+      "Government company search",
+      "BODACC",
+      "Sitadel metadata"
+    ],
+    "regulation": "FR/EU candidate sources and jurisdiction metadata exist. Company applicability, legal deadlines and operational compliance alerts remain unverified."
+  },
+  "missingInputsForMixedPlan": [
+    "Attributed event/entity/industrial-site/supplier/product links; distinguish public event from a declared synthetic commercial impact",
+    "Confirmed affected purchases and dates plus reservations/transport, with native ids and source revisions",
+    "Qualified CRM customer need: product specification, quantity, destination, deadline, confirmed status and selling price",
+    "Compatible usable capacity/stock after disjoint reservations, safety and quality holds; no implicit SKU substitution",
+    "Attributed quote/material/processing/transport/other incremental cost and required contribution margin",
+    "Execution target, role and approval budget, revision/idempotency key and durable result/status from explicit simulated systems"
+  ],
+  "nextAdditiveBoundaryProposed": {
+    "status": "PROPOSAL_NOT_RECEIVED_CONTRACT",
+    "principle": "Integrator releases a server-bound observation reference plus attributed internal links to the existing company/run system. Queue only a changed received source once for an explicit analysis policy/context revision. Reuse current worker and SQL transaction/outbox facilities; do not invent another scheduler. Unresolved linkage yields a precise needs_input condition, not a fabricated commercial impact.",
+    "dataFirstMilestone": "Deliver exact corrected memory READY, then receive canonical release/analysis-trigger DTO and source candidate from current research owner. Validate its real URL/hash/dates and source state; preserve controlled ERP/CRM link provenance.",
+    "ownership": "Portfolio10k enriched only by existing owner, import/SQL/API only by integrator, business calculation by existing agent/domain owners, vision/UX by existing product/UI owners."
+  },
+  "datedDeltas": [
+    {
+      "observedAt": "2026-10-22T11:40:00Z",
+      "status": "CURRENT_DELTA_PRESERVES_EARLIER_SNAPSHOT",
+      "researchMemory": "READY-RESEARCH-v2.json scope9008ba459e68d33a7fbad13d94f25ad97da4d890a13932e443b3f541ed437a2c;56localtests35PG;two fresh exact reviews no findings; RECEIVED-RESEARCH-UNITS-v2.json confirms4pins. Canonical007 is byte-identical. Integrated R1/R2 remain with existing agent/integrator owners.",
+      "industrialData": "READY-INDUSTRIAL-DATA-v1.json scope3564295636d44b24edd453bfe1d650f00b9d34d86553b7383a7bbe8f5d1fd358;75localtests46PG; two fresh independent final reviews no findings. RECEIVED-INDUSTRIAL-DATA.json confirms exact5pins; integrated worker/report reception remains with integrator.",
+      "currentLiveFeedReceipt": "LIVE-FEED-CHECKPOINT-v1.json, read-only3001 observation at11:36:27Z. One enabled weekly10080minSoissons watch; latest manual10:32:29Z partial5raw/3completeFetch. Ten capabilities are not ten active watches. Publisher freshness, new publisher article, repeated current browser-closed cadence and automatic industrial report remain unproved.",
+      "existingHistoricalProof": "proposals/integration/BROWSER-CLOSED-RESULT.json belongs to earlier bounded local BOAMP tests and does not establish the current Aiven/watch configuration.",
+      "nextSingleCollectionOwner": "Integrator01a162bd-d470-7522-9d95-a03a82d9bd68 only, through existing worker and accepted profile in isolated industrial company. Proposed15min cadence remains a configuration proposal until received and observed. No parallel collector, import or scheduler.",
+      "publicAndControlled": "Two dated industrial incident originals were qualified and archived by existing research owner; neither proves a current ISO100 disruption or new commercial demand. Current public observations keep dates/hashes/limits; controlled fire and ERP/CRM confirmations stay distinct."
+    },
+    {
+      "observedAt": "2026-10-22T11:54:00Z",
+      "servicePublicLookup": "READY-RESEARCH-SERVICE-v1.json scope196aedaa4d8b2c5a1b6d44538e144bca49146435efe536871dabac7009e02ca0;79localtests50PG, including4service tests. Two fresh independent reviewers verify exact2pins and return no findings. Integrator real SQL callback binding and integrated principal reception remain pending.",
+      "historicalResearch": "The exact4pins of READY-RESEARCH-v2 remain in history/research-v2 and immutable integration R1/R2 snapshots. The working-tree repository is the distinct service extension, not the historical R1 version.",
+      "ownership": "Integrator alone owns the bounded live probe, profile/cadence configuration, worker binding, industrial report, approval and simulated execution. No provider call, extra import or scheduler was started by the data owner.",
+      "currentLimit": "Public article collection and the earlier calculated8pallet1420EUR flow are proved. A new industrial public observation automatically producing a joint risk/opportunity report is not yet attested by this data checkpoint."
+    },
+    {
+      "id": "execution-and-public-contract-policy-v1",
+      "observedAt": "2026-10-22T12:36:37.016555+00:00",
+      "execution": "industrial-execution/READY-v1.json scope687691d229d460c4864c013076d3e9bccd6691b469ff92a74fc8ca35eb7c2bad. StrictTS and9/9 Aiven random-schema tests PASS. Two fresh exact independent Sol/Astra reviews no findings; reviewer DB/network NOT_RUN, served models UNATTESTED. Current callback/route/worker/UI reception remains integrator-owned.",
+      "executionPreservation": "Only new supplyStepId delta allocations and simulated native documents/holds/capacity/draft offers persisted. Physical stock,13native allocations,9999reservations and10k lines unchanged in the large fixture test. Historical reports/releases/approvals immutable; revision invalidates basis. Application ACK loss injected, no real network cut.",
+      "serviceReceipt": "proposals/integration/RECEIVED-INDUSTRIAL-AGENT-SERVICE.json independently confirms historical service2pins196aedaa. Exact files and receipts preserved in history/research-service-v1 before the separately received BOAMP policy delta.",
+      "publicContractsPolicy": "PUBLIC-CONTRACTS-OBSERVATION-POLICY-v1.json received by integrator via PUBLIC-CONTRACTS-POLICY-RECEIVED.json. New exact scope4ce9e6bf7061cb1acfe00262c0341d675af94827789ef8c5161c8cb2bda9a455 is frozen pending two reviews.34 Aiven PostgreSQL tests and29 pure tests PASS; no actual collection.",
+      "sourceBoundary": "Configured public-contracts/v1/live keeps only dated complete native BOAMP api_record observations for partial and success; raw status/history retained. No qualified CRM demand, supplier fire/delay, SKU suitability, rights, stock or margin inferred from a notice.",
+      "singleLiveOwner": "Existing integrator only on isolated3003 through existing worker; collector server bound3per source under unchanged total10 boundary. Real provider call/configuration/automatic industrial report still NOT_RUN by this checkpoint."
+    },
+    {
+      "observedAt": "2026-10-22T12:38:40.121020+00:00",
+      "publicContractsPolicyReady": "READY-PUBLIC-CONTRACTS-v1.json scope4ce9e6bf7061cb1acfe00262c0341d675af94827789ef8c5161c8cb2bda9a455;34AivenPG+29pure+strictTS PASS, two independent exact fresh Sol/Astra reviewers no findings and20memory probes PASS. Runtime activation/only live probe remain integrator-owned."
+    }
+  ],
+  "limits": [
+    "No new collection, paid service, account or infrastructure for this checkpoint",
+    "No regeneration or second import of ERP/CRM data",
+    "No source future capacity such as2028 used as an urgent present-day delay",
+    "No build docs, oracles or future test events in product model context",
+    "No claim that approval equals execution or that source count proves business value"
+  ]
+}

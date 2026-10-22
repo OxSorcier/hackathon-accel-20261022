@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T10:03:50.312541+00:00",
+  "files": [
+    {
+      "path": "src/agent/runner.ts",
+      "baseline": "proposals/agent/research-baseline/src/agent/runner.ts",
+      "sha256": "c02dc079acef046767432ef0e57fd88572d1916b4f916b40efac7b0263753379"
+    },
+    {
+      "path": "src/agent/context.ts",
+      "baseline": "proposals/agent/research-baseline/src/agent/context.ts",
+      "sha256": "e31ec3af0c61c6791093bdba9acaa1ba0a4b48a1d33e2592ab4b8c1626fa319b"
+    },
+    {
+      "path": "src/agent/case-context.ts",
+      "baseline": "proposals/agent/research-baseline/src/agent/case-context.ts",
+      "sha256": "7a0e3b29e1104f7fb222d46f9b814a864257e650c22e56b677431e47c4ca7be8"
+    },
+    {
+      "path": "src/agent/index.ts",
+      "baseline": "proposals/agent/research-baseline/src/agent/index.ts",
+      "sha256": "8726531f42c5e56268d7b9757b285768af2a1693d4107b1dbea977cd5accbc48"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "baseline": "proposals/agent/research-baseline/src/contracts/index.ts",
+      "sha256": "0f67dae2f11a01a07f95c6e9e88f145a434a82d70c4e0e94ed1be7b21fd48a56"
+    },
+    {
+      "path": "docs/CONTRACTS.md",
+      "baseline": "proposals/agent/research-baseline/docs/CONTRACTS.md",
+      "sha256": "df74345ba177ee25ed0c1a5d9b1a95ff616372cb40b719cf2054098e9d779148"
+    }
+  ]
+}

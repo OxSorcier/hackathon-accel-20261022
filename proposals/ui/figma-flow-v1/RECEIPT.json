@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "session_id": "01a162cd-6303-7891-9160-54e6b70a3ffc",
+  "status": "design_proposal_created_and_inspected",
+  "authority": "Demande explicite d'Erwan de montrer le flow UX/UI et de le placer dans le fichier Figma fourni. Direction A déjà reçue.",
+  "figma": {
+    "file_key": "wMbxbmFzu1E2pIDPXzZ5O1",
+    "page_id": "0:1",
+    "page_name": "Paul · Démo et décisions · v1",
+    "wrapper_id": "3:2",
+    "url": "https://www.figma.com/design/wMbxbmFzu1E2pIDPXzZ5O1/Untitled?node-id=3-2",
+    "screens": [
+      {"step":"01", "id":"5:253", "name":"Le cadre de travail"},
+      {"step":"02", "id":"5:332", "name":"Un signal, avec ses limites"},
+      {"step":"03", "id":"5:424", "name":"Des options qui tiennent les règles"},
+      {"step":"04", "id":"5:525", "name":"Paul garde la main"},
+      {"step":"05", "id":"5:617", "name":"Une décision explicite"},
+      {"step":"06", "id":"5:716", "name":"Retrouver la décision et poursuivre"}
+    ]
+  },
+  "artifacts": ["parcours-paul-v1.png", "03-options-v1.png"],
+  "verification": {
+    "environment":"Figma Plugin API et captures Figma téléchargées, inspectées visuellement",
+    "screen_dimensions":"1440x960 pour les six écrans",
+    "native_text_nodes":317,
+    "component_instances":111,
+    "complete_ui_rasters":0,
+    "font_families":["Inter"],
+    "screen_overflow_count":0,
+    "collapsed_text_count":0,
+    "placeholder_count":0,
+    "corrections":["Hauteurs de texte automatiques rétablies après resize", "Largeur du libellé Fréquence corrigée", "Copy rendue concrète et signal explicitement fictif"]
+  },
+  "semantic_reception": {
+    "case":"Paul configure une veille. Un signal public illustratif ne confirme pas PO-1. Une simulation explicite de retard conduit au calcul des options, à une révision humaine, puis à une approbation de simulation et à sa reprise cible.",
+    "business_check":"8 palettes ISO100 pour A. Achat urgent synthétique : 8*155+180=1420 EUR. Plafond fictif de Paul : 2000 EUR. Réservation B conservée.",
+    "counterpath":"Le transfert Centre-Lille à 120 EUR reste sous conditions et sans approbation : les palettes couvrent B et PO-2 est non confirmé. Remplacement confirmé avant le 3 novembre requis.",
+    "exceptions_shown":"Collecte indisponible, analyse interrompue/réessai, plan périmé/recalcul, annulation et refus décrits dans le parcours.",
+    "limits":"Les branches d'exception sont des propositions décrites, pas des parcours interactifs exécutés. La carte de l'étape 06 illustre l'approbation. Un refus afficherait son propre état. La question directe peut ouvrir le calcul sans attendre un signal de veille."
+  },
+  "sources_sha256": {
+    "docs/HANDOFF.md":"c65cdb3d5125849171536548c8892eb5a6813675c203f520b8b4810436127bab",
+    "docs/OWNERSHIP.md":"7bbeffee06857c261ce9ad95e0b871b47c76840c307a02c6b7309b57466b523a",
+    "docs/tasks/UI.md":"70c8551757bee28b66eb74b5fae3600a788aef42550f6387a0efc287f1972eb5",
+    "design/A-bureau-decisions.png":"0622ae63f8ebaa837ef8a373bd8283c66ee349d1c8bc5f44602287e64a1ba8fc",
+    "fixtures/company/dataset.json":"bad22e5b53b82c793f34aff5e53d41a8f155d16f6938bc9d2e871374a114c4c9",
+    "fixtures/company/company-policy.json":"9a2670115f88a98109e1032788f622e9c370ddd2abad80322ccbd26b03896163",
+    "src/ui/styles.css":"c6dbb31f042169340ae0e3c2dac89fd743ecd7baf598abfd6ba3f711921ea798"
+  },
+  "methods_applied":["capability-discovery", "erwan-product-ui", "ux-ui-visual-first dans la direction A reçue", "figma-use", "figma-generate-design", "figma-generate-library pour les composants nécessaires", "program-design réception sémantique"],
+  "delivery_scope":"Figma natif et captures PNG. Aucun code produit modifié dans ce mandat.",
+  "product_runtime":"NOT_RUN",
+  "aiven":"NOT_RUN",
+  "interactive_prototype":"NOT_RUN",
+  "user_acceptance":"pending"
+}

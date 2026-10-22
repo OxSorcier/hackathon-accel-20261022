@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T11:07:01.272640+00:00",
+  "status": "PROPOSED_TO_EXISTING_INTEGRATOR_NOT_CANONICAL",
+  "product": "AdaptOps",
+  "scope": "Smallest mixed industrial risk and qualified commercial opportunity assessment on the existing company portfolio",
+  "sources": [
+    {
+      "path": "proposals/agent/OPPORTUNITY-ACCEPTANCE.json",
+      "sha256": "6070aa5efc19188e527b6d55fda9aa1c71acb6e7cccfe74879037735175c4ce3"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/CONTRACT-SAMPLES.proposed.json",
+      "sha256": "76ebb54b9f71e700a9d2211a160f37d108bb8bdb89c60e883d3b66b03077ec23"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/PROPOSED-IMPORT-STRUCTURE.json",
+      "sha256": "3213f94b98d5c4e9ced3ccec1ba86435f1aa126e41c1215dc7cfa3076864d1ce"
+    }
+  ],
+  "ownership": {
+    "integrator": "Canonical industrial.ts contract, import/SQL/API, identity, report state, operator release, invalidation and demo execution/readback",
+    "builder": "Only released industrial domain/context module paths and their tests",
+    "portfolio": "Existing portfolio owner only, no duplicate dataset or registry"
+  },
+  "minimalCalculationInputs": [
+    "Existing CompanySnapshot C1 and policy, all confirmed commitments/reservations/inbound allocations, exact SKU/unit/depot/date facts. Full portfolio stays on server.",
+    "Server-resolved event/relation version, affected supplier+plant+purchase IDs and a separate attributed interruption/ETA confirmation; a public article alone does not set those facts.",
+    "One native qualified CRM demand: ID/revision, customer/project, exact SKU/unit, quantity, needDate, destination, confirmed status, received selling price/currency and provenance. Unknown fields remain null/missing.",
+    "Canonical physical supply resource IDs for stock, purchase/inbound, transfer and emergency quote; alternate quote aliases cannot create a second eight-pallet capacity.",
+    "Received stock valuation in integer cents, independent alternative purchase price/quantity/arrival, received delivery/handling costs, validUntil and dispatch/arrival feasibility.",
+    "Alternative plant independence received as confirmed/unknown/affected, not inferred from another supplier name.",
+    "Server supplied evaluatedAt, company/business/policy/context/source/demand versions and allowed action types."
+  ],
+  "minimalServerResults": [
+    "Event -> company dependency -> separate risk and opportunity impacts, or precise needs_input with missing IDs/fields.",
+    "One common plan with allocations keyed by canonical physical resource, protecting every confirmed commitment before a new offer. No option combination may allocate the same remaining capacity twice.",
+    "Risk mitigation costs, commercial revenue/material valuation/transport/handling contribution and actual new cash spend distinguished; do not count historic valuation as a new cash payment or hide missing costs as zero.",
+    "Non-executing reviewed proposal with exact dependencies, constraints and approval requirements.",
+    "Bounded model projection: affected commitments and demand candidates plus aggregated coverage totals and calculated option IDs; no 6.5MB portfolio in the model context."
+  ],
+  "domainInterfaceProposal": {
+    "function": "evaluateIndustrialPlan(snapshot, releasedContext, demandId, evaluatedAt)",
+    "returns": "Current-version risk/opportunity assessment, all-commitment protection, feasible common plan or missing-data reasons, attributed integer-cent calculations",
+    "sideEffects": "none"
+  },
+  "acceptanceDelta": [
+    {
+      "id": "IND-01",
+      "input": "Received synthetic fire and interruption at the affected plant, qualified CRM demand and current independent supply/delivery facts",
+      "expected": "Risk and opportunity considered together; one non-overlapping plan and attributable calculation, all pre-existing commitments protected."
+    },
+    {
+      "id": "IND-02",
+      "input": "Article mentions competitor disruption but CRM demand is not qualified",
+      "expected": "Opportunity to qualify; request customer/SKU/quantity/date/price confirmation, no invented demand or revenue."
+    },
+    {
+      "id": "IND-03",
+      "input": "Unreserved stock is required by another confirmed commitment",
+      "expected": "Not available for the new demand. Server checks all engagements, not only reservation rows."
+    },
+    {
+      "id": "IND-04",
+      "input": "URG-1 and URG-IND-ALT-8 name the same eight pallets",
+      "expected": "One canonical capacity, never sixteen pallets or two independent actions."
+    },
+    {
+      "id": "IND-05",
+      "input": "Alternative supplier plant independence unknown or same affected plant",
+      "expected": "Cannot promise it as an independent mitigation. Ask precise confirmation or reject affected resource."
+    },
+    {
+      "id": "IND-06",
+      "input": "Price/valuation/transport cost missing, quote expired, incompatible unit/SKU or arrival too late",
+      "expected": "Explicit needs_input or rejection; no fabricated margin, implicit substitution or date promise."
+    },
+    {
+      "id": "IND-07",
+      "input": "Demand/relation/source/stock revision changes after report calculation",
+      "expected": "Dependent plan invalidated/recomputed before approval or demo execution."
+    },
+    {
+      "id": "IND-08",
+      "input": "Approved demo action is submitted twice and system result is read back",
+      "expected": "Exactly one demo effect by server operation key and recorded readback; approval status alone is not an execution proof."
+    }
+  ],
+  "state": "NO_NEW_INDUSTRIAL_CODE_OR_DATASET_CREATED",
+  "nextAction": "Receive src/contracts/industrial.ts and explicit owner path release, then implement the deterministic module and bounded projection. R1/R2 stays priority."
+}

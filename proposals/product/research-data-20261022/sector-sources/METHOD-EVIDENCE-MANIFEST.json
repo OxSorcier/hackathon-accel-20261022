@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T11:40:44.728569+00:00",
+  "status": "DOCUMENTARY_SKILL_DELTA_LOCAL_UPDATED_NO_FRESH_AGENT_BENCHMARK",
+  "files": [
+    {
+      "path": "skill-update-20261022/SKILL-DELTA.patch",
+      "sha256": "18a8156dc5bc39e291a25f8789a7072f5ad7d41b5196bfa51631db30dfd0f7e5",
+      "bytes": 9174
+    },
+    {
+      "path": "skill-update-20261022/SKILL-UPDATE-RECEIPT.json",
+      "sha256": "4e5c05c581fd8d1fb641e761aeb4f49c9f273773dcae9ec53ed9c8b9f8f00fc8",
+      "bytes": 4129
+    },
+    {
+      "path": "skill-update-20261022/recherche-multisource/SKILL.md",
+      "sha256": "25081774b422459c549f5361f3251654f88022fd49a92eec7eb2fb365f3214a5",
+      "bytes": 7896
+    },
+    {
+      "path": "skill-update-20261022/recherche-multisource/agents/openai.yaml",
+      "sha256": "0c2add2e7ae1b54c34b1d3a3ddedd7d38f1080d859f4319ad01aa60b512e9358",
+      "bytes": 366
+    },
+    {
+      "path": "skill-update-20261022/recherche-multisource/references/agency.md",
+      "sha256": "6f9a6a3b9b443e6352477b086388ceec3778076f212b303a36e5d87f76188fc5",
+      "bytes": 4973
+    },
+    {
+      "path": "skill-update-20261022/recherche-multisource/references/aside.md",
+      "sha256": "d17d4a3c6b8542c7b7ea4f1014ff0de9f09c60d27fa3925c459bbc07774c3cd8",
+      "bytes": 4304
+    },
+    {
+      "path": "skill-update-20261022/recherche-multisource/references/discovery.md",
+      "sha256": "4f20a59cb1cf5ce6e8a8c4fc38df65f6b55fc94b6dcee863138e9eaaaf4425fd",
+      "bytes": 2839
+    },
+    {
+      "path": "skill-update-20261022/recherche-multisource/references/feeds.md",
+      "sha256": "18e0713c774ed49ef6fee2503bdb6ab160217cb4d3926137f50467e9853f1125",
+      "bytes": 4868
+    },
+    {
+      "path": "skill-update-20261022/recherche-multisource/references/investigation.md",
+      "sha256": "b9f2582960066b4468cd36c8dcf4f8948b4c0aca20a63c0722b717880322eef6",
+      "bytes": 5453
+    },
+    {
+      "path": "skill-update-20261022/recherche-multisource/references/verification.md",
+      "sha256": "c57bb9059b85635de2e71dd3df4043ac3787bf201269399da5a9d0e90e717871",
+      "bytes": 5041
+    },
+    {
+      "path": "RESEARCH-METHOD-RETROSPECTIVE.md",
+      "sha256": "4942fb6957c04ccd5c7e21c0b6cc99e520370b8198eb3841def98e860fe3e90b",
+      "bytes": 5116
+    },
+    {
+      "path": "RESEARCH-METHOD-RETROSPECTIVE.html",
+      "sha256": "aae51a1cd08a177c5d77b48421a8c49deabe1d2baa28bc4e78f954f1ee5fbdd7",
+      "bytes": 162914
+    },
+    {
+      "path": "METHOD-CONTENT-CHECKS.json",
+      "sha256": "6c00cc11124786270f16648f53bfbe099f609ff8234fd317e03a824029df9017",
+      "bytes": 203
+    },
+    {
+      "path": "METHOD-RENDER-CHECKS.json",
+      "sha256": "7948d23ff1574795f4d47f1c93a8b2d5e3e478807252403930fc4ddd1723c07b",
+      "bytes": 1405
+    },
+    {
+      "path": "PUBLIC-ACCESS-PROBES.json",
+      "sha256": "d7c665f53cb9516b16a8b77f624578f127bd6dd3e99f2160179e34acde59cac4",
+      "bytes": 16731
+    },
+    {
+      "path": "INDUSTRIAL-INCIDENTS-20261022.json",
+      "sha256": "bae2bc472c354c448a5aa9072a4aaed5344e37360b1ae6897b8857b7657e4342",
+      "bytes": 8820
+    },
+    {
+      "path": "SECTOR-DATA-STRATEGY.md",
+      "sha256": "1ee6b430af177b943c8c9770f84b941bed4988a84ec62cecc4b211a9a8ad069d",
+      "bytes": 25802
+    },
+    {
+      "path": "SECTOR-DATA-STRATEGY.html",
+      "sha256": "9603091e302907c81eeae1f4f515ca78842838d92032d1c94fa5fb2f6c427231",
+      "bytes": 185570
+    }
+  ]
+}

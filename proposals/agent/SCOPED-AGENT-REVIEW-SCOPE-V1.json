@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T11:49:06.734409+00:00",
+  "status": "EXACT_SCOPED_AGENT_CODE_FROZEN_FOR_TWO_REVIEWS",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "files": [
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "edcf50b10913dbec3c69a56772407c7c3c2effd6283b70ae0e0b7ba872ca6537"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "d138898456b8672b19443ae25b37e0af21be262bec0374495450033f68324327"
+    },
+    {
+      "path": "src/agent/specialized-runner.ts",
+      "sha256": "d768687f8d44dd264c613ac7bd7e0ff91f4349459f90cc3e3bd5ac16fa1d9d08"
+    },
+    {
+      "path": "tests/agent/industrial-runner.test.ts",
+      "sha256": "7c6f056bb6da011ac8bf7896e04ad7a3aa62564b8339a6ae9740594a814d175b"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/agent/industrial-context.ts",
+      "sha256": "1b10459579998d7cce530a49d6d775ad3fd0b766e151943c00ac7d20ceabc9c6"
+    },
+    {
+      "path": "src/domain/industrial.ts",
+      "sha256": "87ddba8bec62406f71121af51d6fd5c17e3da795c9bca9fb303b87765f2f53ed"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "e7822f04664c7ee474dc70569535530f84f517559dce859931442d67e11b66ea"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "104d14d3677f9df853cb34f2d4c534a7ae53645c2cbde7c015694ccbadd49794"
+    },
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "2e22d97141cde9426df6221433e2ba82d86edf8a3a93376378ce8487293e2ace"
+    },
+    {
+      "path": "src/contracts/pdf.ts",
+      "sha256": "8df45c4c63087489d89f3ea27691f954eea7c95fd083d76e524f833061cea4de"
+    },
+    {
+      "path": "src/agent/research-context.ts",
+      "sha256": "b6bb1a985878d0a9787cc6e55ae15a090a497ca9ef8bd73b3f14ef2fe7080d96"
+    },
+    {
+      "path": "src/server/provider.ts",
+      "sha256": "92f8d797d7783acd691336620e513ecc22a0b9de99285fbacc365921625f4bc3"
+    }
+  ],
+  "sourceFingerprint": "9343f3b6a6a57b21b20da8b24a2071fd39dabc5859a96c091c32cf609992c221",
+  "baseline": ".local/research-server-review-v3/src/agent/ context.ts and runner.ts",
+  "behavior": "Same createAgentRunner dispatches industrialScope/pdfProfileId into dedicated tool capability path. No C1 complete commitments or approval/execution; initial manifest only, current server ports, persistent industrial budget reservation before each provider/tool, current checks, cached PDF pages, actual returned eval/plan IDs required for report.",
+  "tests": "69/69 agent+industrial domain PASS, strict root PASS. Includes10 new scoped runner tests.",
+  "overviewContract": "Required company/revisions/counts/demands/releasedEvent/publicSources plus optional profile/relationships, received integrator 2026-10-22",
+  "limits": [
+    "No industrial actual provider/server/Aiven integration executed by this scope yet.",
+    "PDF acquisition/extraction is outside this port and module.",
+    "R1 actual restarted server is separate frozen v3, remains immutable; R2 owner integrator.",
+    "Historical domain receipt has reviewed dependency pins; current final parser and additive DTO are dependency deltas to receive here."
+  ]
+}

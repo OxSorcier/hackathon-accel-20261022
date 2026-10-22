@@ -1,0 +1,21 @@
+%% Accel target flow, clarified directly by Erwan on 22 October 2026.
+%% This diagram describes the requested product, not an implemented or tested journey.
+%% Canonical vision: docs/PRODUCT-VISION.md. Runtime evidence: docs/STATUS.md and current owner receipts.
+%% Factory and neighbouring competitor impacts are scenario inputs to verify, never assumed facts.
+%% Label live public reads, recorded scenarios and synthetic business data separately.
+flowchart TD
+    P["Company profile, ERP / CRM, policy and valid prior knowledge"] --> M["Company-specific monitoring of live industry sources"]
+    M --> V["Verify event, dates, source versions and company dependencies"]
+    V --> R["Supply risk: products, purchases, sites and commitments"]
+    V --> O["Demand opportunity: affected competitor and customer needs to qualify"]
+    R --> C["Calculate joint options: protect commitments, check free capacity and costs"]
+    O --> C
+    C --> B["Automatic impact report: what changed, who is affected and recommended actions"]
+    B --> A["Human review: approve a purchase plan and a targeted commercial plan"]
+    A --> K["Store decision, conditions and observed outcome when available"]
+    K --> P
+    U["New source, supplier confirmation, CRM demand or inventory revision"] --> V
+    V --> S["Invalidate or re-evaluate dependent knowledge, reports and pending plans"]
+    S --> C
+%% Approval records authority and intent. Actual purchase, stock reservation or external outreach requires its own execution path and readback.
+%% Memory means attributed, versioned retrieval. Measured self-improvement requires separate before-and-after evidence.

@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T09:12:32.084Z",
+  "role": "ui",
+  "receiptHash": "3835145e3a82c67deafe814d55ad900a4e5787d69fb0355661340de682fba499",
+  "files": [
+    {
+      "path": "proposals/ui/BROWSER-RECEIPT.json",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/INTEGRATION.md",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/REVIEW-INPUT-v1.json",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/REVIEW-INPUT-v2.json",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/REVIEW-INPUT-v3.json",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/REVIEW-RECEIPT.json",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/accel-ui-320-v2.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/accel-ui-768-v3.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/accel-ui-error-v1.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/accel-ui-loading-v1.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-conflict-v3.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-conflict-v3.snapshot.txt",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-connected-read-v3.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-connected-read-v3.snapshot.txt",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-connected-watches-v3.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-connected-watches-v3.snapshot.txt",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-desktop-v3.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-desktop-v3.snapshot.txt",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-mobile-detail-v3.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-mobile-detail-v3.snapshot.txt",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-mobile-v3.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/evidence/ui-mobile-v3.snapshot.txt",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/figma-flow-v1/03-options-v1.png",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/figma-flow-v1/RECEIPT.json",
+      "match": true
+    },
+    {
+      "path": "proposals/ui/figma-flow-v1/parcours-paul-v1.png",
+      "match": true
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "match": true
+    },
+    {
+      "path": "src/ui/api.ts",
+      "match": true
+    },
+    {
+      "path": "src/ui/format.ts",
+      "match": true
+    },
+    {
+      "path": "src/ui/index.ts",
+      "match": true
+    },
+    {
+      "path": "src/ui/styles.css",
+      "match": true
+    },
+    {
+      "path": "src/ui/types.ts",
+      "match": true
+    },
+    {
+      "path": "tests/ui/api.test.ts",
+      "match": true
+    },
+    {
+      "path": "tests/ui/fixtures.ts",
+      "match": true
+    },
+    {
+      "path": "tests/ui/preview.html",
+      "match": true
+    },
+    {
+      "path": "tests/ui/preview.tsx",
+      "match": true
+    },
+    {
+      "path": "tests/ui/responsive.html",
+      "match": true
+    }
+  ],
+  "allMatch": true
+}

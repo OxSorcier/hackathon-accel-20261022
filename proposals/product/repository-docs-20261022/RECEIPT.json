@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "status": "LOCAL_DOCUMENTATION_CHECKED",
+  "checkedAt": "2026-10-22T12:35:53.196638+00:00",
+  "ownerThreadId": "01a16393-fa43-7050-aee1-26938ecf8de3",
+  "objective": "Explain product rationale, data provenance, architecture, exact-version evidence and owner-based recovery from the normal README entry.",
+  "changed": [
+    "README.md: contributor pointer only; submission content preserved",
+    "START-HERE.md: remove obsolete no-implementation claim and point to current guide/vision",
+    "docs/HANDOFF.md: distinguish historical setup from current reception",
+    "docs/REPOSITORY-GUIDE.md",
+    "docs/REPOSITORY-GUIDE.html"
+  ],
+  "documentationChecks": {
+    "checkedAt": "2026-10-22",
+    "scope": "Documentation only; no application tests, database writes, provider calls or fresh-context independent agent evaluation.",
+    "localLinksChecked": 103,
+    "brokenLocalLinks": [],
+    "markdownContentMissingFromHTML": [],
+    "externalRenderAssets": [],
+    "interEmbedded": true,
+    "emDashCount": 0,
+    "sourceHashes": {
+      "README.md": "9384e78960b559897a4b724c7d4a80c229af3a253f4447fd33b12cf074d7e54a",
+      "START-HERE.md": "2e4e6014ab4a570d154459c2c03718288c6e8cb74dac1c19a7c04f5f8b1df14d",
+      "docs/HANDOFF.md": "4b06f88cc96b6b0de7dca345ab92a2c44b78c17b01d299c8cc4653a5cbde58aa",
+      "docs/REPOSITORY-GUIDE.md": "ac3dfcb0b475b596a8f3c5a6e7ac4781c50f903cb8c1b0af5fd3546d01b7bc9f",
+      "docs/REPOSITORY-GUIDE.html": "35f29d3cc6a5e57f62db9e885b3d6a62717206397b7fb2dc9e090e06a0ac8110"
+    }
+  },
+  "renderChecks": "proposals/product/repository-docs-20261022/RENDER-CHECKS.json",
+  "renderScope": "Bundled Playwright Chromium, isolated headless context",
+  "visualInspection": [
+    "guide-1440.png",
+    "guide-390.png",
+    "guide-390-data.png; final links corrected to report teal"
+  ],
+  "boundedCredentialPatternCheck": {
+    "scope": "Git-eligible text files only. Ignored private files were not opened. This bounded pattern check is not a complete security audit. No matching value is emitted.",
+    "filesScanned": 1060,
+    "matchingFiles": []
+  },
+  "gitIgnoreReadback": [
+    ".env",
+    ".env.access",
+    ".local/example",
+    ".preparation/example",
+    "node_modules/example",
+    "dist/example"
+  ],
+  "remoteReadback": {
+    "repository": "OxSorcier/hackathon-accel-20261022",
+    "nativeRepositoryId": "1429462493",
+    "visibility": "private",
+    "size": 0,
+    "readmeResponse": "GitHub API 404: This repository is empty.",
+    "operation": "Read-only connected GitHub tools"
+  },
+  "localGitReadback": {
+    "branch": "build/accel-local",
+    "commits": "none",
+    "indexMutation": "none"
+  },
+  "methodsRead": [
+    "work-reconcile",
+    "erwan-ticket-delivery",
+    "writing-for-agents",
+    "briques-da and report recipe",
+    "capability-discovery",
+    "project-reference-contract"
+  ],
+  "limits": [
+    "Documentation only; no application source or build configuration changed.",
+    "Independent fresh-context agent comprehension test NOT_RUN.",
+    "Application suites and live product browser acceptance NOT_RUN in this task. Existing product evidence is attributed to its exact-version receipts.",
+    "No commit, push, visibility change, runtime promotion, deployment, provider call, database mutation, external message or shared archive write.",
+    "Git-eligible-file pattern check is bounded and does not certify public release. Other owners continue writing in this checkout."
+  ]
+}

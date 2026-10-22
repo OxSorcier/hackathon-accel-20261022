@@ -1,0 +1,21 @@
+{
+  "version": 7,
+  "purpose": "Commercial copy and visual cleanup; no test-report framing",
+  "edits": [
+    {
+      "key": "A-company-promise",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-ba2f3f86-dd17-459f-b1ad-5856a62b4959.png",
+      "prompt": "Make two restrained refinements only to this AdaptOps company pitch. Preserve all brand, headline, value proposition, structure and WHO IT'S FOR / WHY NOW / FIRST USERS text exactly.\n1. Remove the small photo of timber/forest inside the Company brief. Replace it with a clean neutral source-document preview matching the rest of the white product view, with no photograph and no new words.\n2. Replace the tiny line beneath the product view \"Company knowledge, always up to date\" with exactly \"Company knowledge evolves with each decision\".\nDo not add disclaimers, tests, benchmark content or any new claim. Keep the same slide size, whitespace, type and art direction. Return the complete slide."
+    },
+    {
+      "key": "B-response-ready",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-93d4f6e1-c11e-45ac-a61d-b21180081b34.png",
+      "prompt": "Refine this AdaptOps company sales slide in three local ways, preserving the rest exactly.\n1. Remove the landscape/forest background outside the panoramic product view and remove the tiny timber photo inside it. Use clean white or very pale neutral background and a simple source-document preview, with no photo or new decoration.\n2. In What changed, replace the main industry-update sentence with exactly \"A supply change to investigate\". In What it means for us, use the three clear lines \"Supply commitments to protect\", \"Alternative supply to assess\", \"New demand to qualify\". Keep the existing visual hierarchy and fit cleanly.\n3. In the right-hand execution/result column, use active product functions instead of completed example statements: \"Execute approved actions\", \"Verify results\", \"Update company knowledge\". Keep the existing heading, icons and sequence.\nPreserve the AdaptOps brand, exact tagline and pitch, shared roles, Review & approve, benefits and entire WHO IT'S FOR / WHY NOW / FIRST USERS row. Do not add demo, test, prototype or benchmark language. Return the full 16:9 slide."
+    },
+    {
+      "key": "C-adaptation-business",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-e5028d01-4614-40fb-9440-33ca6b58e385.png",
+      "prompt": "Make a visual cleanup only to the supplied AdaptOps company pitch slide. Remove the pale decorative wave/landscape shapes behind and below the central product-story band. Replace them with plain clean white space. Preserve the product brief, all labels, exact brand and tagline, value statement, return connection and WHO IT'S FOR / WHY NOW / FIRST USERS row exactly. Do not change or add text, claims, metrics or disclaimers. No other alterations. Return the full slide."
+    }
+  ]
+}

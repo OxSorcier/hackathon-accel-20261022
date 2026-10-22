@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "status": "CODE_CANDIDATE_FROZEN_FOR_TWO_REVIEWS",
+  "createdAt": "2026-10-22T11:31:50.831687+00:00",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "files": [
+    {
+      "path": "src/domain/industrial.ts",
+      "sha256": "87ddba8bec62406f71121af51d6fd5c17e3da795c9bca9fb303b87765f2f53ed"
+    },
+    {
+      "path": "src/agent/industrial-context.ts",
+      "sha256": "1b10459579998d7cce530a49d6d775ad3fd0b766e151943c00ac7d20ceabc9c6"
+    },
+    {
+      "path": "tests/domain/industrial-fixture.ts",
+      "sha256": "92c5e91cfc890d1d717130780683cb90d3b9301a48d4b015822e8d08a183c79e"
+    },
+    {
+      "path": "tests/domain/industrial.test.ts",
+      "sha256": "d2a77232a01c848ffeaf68ee4638f3438f7bcfb0fd80a713c425acd336dc8488"
+    },
+    {
+      "path": "tests/agent/industrial-context.test.ts",
+      "sha256": "7b90fcc2e64916030bf7641eb95450b8ade64c568abf7e7d35cd81c3776003df"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "5553acf836a5fc074a2100f36ea619a22f91fc094def662ff61adfce2dbcc3fd"
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "sha256": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057"
+    },
+    {
+      "path": "src/domain/model.ts",
+      "sha256": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2"
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "sha256": "018748a36911b677956174a6375ca7ca4a86ed7ad58e017877e9ed857601c779"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "c8518566c9d3af65f782e8c69e24651d7ebc154af66000a58f29c1017d7fcbe8"
+    }
+  ],
+  "tests": {
+    "industrial": "14/14 PASS, two retained counterexamples RED before fix then GREEN",
+    "strictTypecheck": "PASS",
+    "fullPortfolio": "10000/10000 protected, no worsening, feasible combined candidate; 5.646s latest measured test, prior loaded run17.821s"
+  },
+  "limits": [
+    "No runtime industrial worker/model/report/execution/Aiven assembly test yet.",
+    "R1 source freeze v3 is distinct and immutable.",
+    "Pure domain cannot authenticate operator/actor; server must supply authenticated release/current ledger under company lock and revalidate exact plan."
+  ],
+  "sourceFingerprint": "f090e5d773f37d18a09f9137d3cf0f0c051076afb74585bc66c1ce6d264c9d18",
+  "updatedAt": "2026-10-22T11:35:24.290358+00:00"
+}

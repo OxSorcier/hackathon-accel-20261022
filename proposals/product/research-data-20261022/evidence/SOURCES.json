@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "consultedOn": "2026-10-22",
+  "timezone": "Europe/Paris",
+  "sources": [
+    {
+      "id": "K01",
+      "title": "Keenable API",
+      "url": "https://docs.keenable.ai/api-reference",
+      "evidenceType": "official_documentation",
+      "access": "web read"
+    },
+    {
+      "id": "K02",
+      "title": "Keenable Search",
+      "url": "https://docs.keenable.ai/api-reference/search",
+      "evidenceType": "official_documentation",
+      "access": "web read and public trials"
+    },
+    {
+      "id": "K03",
+      "title": "Keenable Fetch",
+      "url": "https://docs.keenable.ai/api-reference/fetch",
+      "evidenceType": "official_documentation",
+      "access": "web read and public trials"
+    },
+    {
+      "id": "K04",
+      "title": "Keenable rate limits",
+      "url": "https://docs.keenable.ai/rate-limits",
+      "evidenceType": "official_documentation",
+      "access": "web read"
+    },
+    {
+      "id": "E01",
+      "title": "Exa Search",
+      "url": "https://exa.ai/docs/reference/search",
+      "evidenceType": "official_documentation",
+      "access": "web read, API NOT_RUN"
+    },
+    {
+      "id": "E02",
+      "title": "Exa Contents",
+      "url": "https://exa.ai/docs/reference/get-contents",
+      "evidenceType": "official_documentation",
+      "access": "web read, API NOT_RUN"
+    },
+    {
+      "id": "P01",
+      "title": "ROCKWOOL Courmelles July10",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+      "evidenceType": "publisher_statement",
+      "access": "web read and Keenable indexed fetch"
+    },
+    {
+      "id": "P02",
+      "title": "ROCKWOOL Courmelles March5",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+      "evidenceType": "publisher_forecast",
+      "access": "web read and Keenable indexed fetch"
+    },
+    {
+      "id": "P03",
+      "title": "ROCKWOOL historical incident",
+      "url": "https://www.rockwool.com/fr/a-propos-de-rockwool/presse-et-medias/2025/incident-ma%C3%AEtris%C3%A9-dans-une-zone-de-stockage-de-lusine-rockwool-de-saint-%C3%A9loy-les-mines/",
+      "evidenceType": "publisher_statement_historical",
+      "access": "web read and Keenable indexed fetch"
+    },
+    {
+      "id": "R01",
+      "title": "French ministry CPR",
+      "url": "https://rpc-construction.ecologie.gouv.fr/rpc-20243110",
+      "evidenceType": "official_explanation",
+      "access": "web read and Keenable indexed fetch"
+    },
+    {
+      "id": "R02",
+      "title": "French ministry RE2020",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/reglementation-environnementale-re2020",
+      "evidenceType": "official_explanation",
+      "access": "web read"
+    },
+    {
+      "id": "R03",
+      "title": "French customs EUDR",
+      "url": "https://www.douane.gouv.fr/actualites/lutte-contre-la-deforestation-report-de-la-mise-en-application-du-reglement-ue-20231115",
+      "evidenceType": "official_explanation",
+      "access": "web read"
+    },
+    {
+      "id": "R04",
+      "title": "Council PE-CONS60/25",
+      "url": "https://data.consilium.europa.eu/doc/document/PE-60-2025-INIT/fr/pdf",
+      "evidenceType": "prepublication_legislative_text",
+      "access": "web PDF read, printed page49 articles37/38"
+    },
+    {
+      "id": "R05",
+      "title": "European Commission current EUDR overview",
+      "url": "https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en",
+      "evidenceType": "official_explanation",
+      "access": "web read"
+    }
+  ],
+  "limitations": [
+    "Final official legal texts not retrieved where challenge/403 noted",
+    "No legal applicability to synthetic company established",
+    "No Exa API call",
+    "No private data in queries"
+  ]
+}

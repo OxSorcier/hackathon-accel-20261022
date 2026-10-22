@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "status": "TWO_REAL_RUNS_RETRIEVAL_RECEIVED_WITH_FIRST_PROCESS_METRIC_LIMIT",
+  "checkedAt": "2026-10-22T11:40:41.281439+00:00",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "sourceFingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631",
+  "manifestDigest": "8d5dd09d6a4c0ca15bb9f5ab61c0adcea46544a32aca2914e1430d311f8749f4",
+  "receipts": [
+    "R1-TRANSFER.json",
+    "R1-FIRST-FAILURE.json",
+    "R1-ORACLE-CORRECTION.json",
+    "R1-FIRST.json",
+    "R1-ORACLE-AMENDMENT-REVIEWS.json",
+    "R1-RESTART.json"
+  ],
+  "actualRuns": [
+    "8102d357-fa5e-4bd3-8be4-81696141a940",
+    "78476d66-190a-4db1-a92d-fe8ad205ee8f"
+  ],
+  "actualModel": "gpt-5.4-mini",
+  "actualProviderResultsTotal": 4,
+  "usageTokens": 11720,
+  "restartProcess": {
+    "pid": 28260,
+    "exitCode": 0,
+    "modelHttpCalls": 2,
+    "researchHttpAttempts": 0,
+    "otherHttpAttempts": 0
+  },
+  "result": "Both distinct completed runs retrieved exact same3 canonical reusable source observations; raw5 retained,2 search_snippets excluded by preexisting policy. No seed or import after initial transfer. Witness company zero observations.",
+  "limits": [
+    "First PID, session hash and IPC transport counters not retained; first usage and retrieval traces durable.",
+    "No claim that first IPC counters are proved by second run.",
+    "Public observation facts and company applicability are distinct.",
+    "R2 source revision and old-plan invalidation remain integrator-owned, pending actual receipt."
+  ],
+  "handoff": {
+    "ownerThreadId": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "port": 3002,
+    "process": "STOPPED_EXIT0",
+    "schemaMutableOwner": "INTEGRATOR_R2_ONLY"
+  }
+}

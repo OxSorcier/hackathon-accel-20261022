@@ -1,0 +1,33 @@
+{
+  "version": 6,
+  "date": "2026-10-22",
+  "status": "Selected proactive pitch visually inspected and delivered",
+  "mode": "Built-in reference-led image editing, then brief text cleanup",
+  "file": "Physical-Impact-pitch-proactive.png",
+  "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-de1458fa-985f-4d30-91fc-3a310d7ee436.png",
+  "firstRender": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-9ba2c5a2-e36f-4da8-b258-c09b9fc8d936.png",
+  "width": 1672,
+  "height": 941,
+  "sha256": "e4407d29486a40f4696e538ecac52476b61af090b7c40fb436cac5a0b1fc2855",
+  "selection": "SELECTION.md",
+  "prompts": [
+    "PROMPT.json",
+    "CLEANUP-PROMPT.json"
+  ],
+  "supersedes": "../physical-impact-v5-final/Physical-Impact-pitch-final.png",
+  "changes": [
+    "Main offer prepares a coordinated response before the user asks",
+    "Market changes tracked in the background",
+    "Why now connects abundant market information, company data and business tools to timely action"
+  ],
+  "inspection": [
+    "Exact new main offer and human-approved execution checked",
+    "Second card shortened to preserve clear space above UI",
+    "Why-now first sentence has a period and the paragraph fits",
+    "Selected DA, brand, tagline, customer benefits, tools note, WHO and FIRST USERS retained",
+    "No new unsupported proof, customer, number or connector claim",
+    "Final image visually inspected for English, fit and card alignment"
+  ],
+  "proofScope": "Existing narrow company-data/feasible-plan/human-approval/restart statement unchanged. This image does not add runtime evidence for proactive analysis or real ERP execution.",
+  "scope": "Current selected marketing pitch image and copy reference. No app code, native identity, public artifact, sharing or submission changed."
+}

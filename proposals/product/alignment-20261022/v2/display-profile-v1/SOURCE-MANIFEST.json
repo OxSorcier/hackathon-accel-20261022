@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "date": "2026-10-22T11:47:24.962642+00:00",
+  "status": "PROPOSED_DISPLAY_ONLY",
+  "nativeInput": "display-aliases.v1.json",
+  "inputSha256": "472a7b9558bda98e14b9a9a7f747fda6da95f1abc9598b500e6392b6c4052c25",
+  "sources": [
+    {
+      "path": "proposals/integration/INDUSTRIAL-CORE-AIVEN.json",
+      "sha256": "4534165351e0fff576d8ee4439886494c78d92544aecc8650b0615aa40216a78",
+      "bytes": 2214
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/CORE-READY.json",
+      "sha256": "babc07971a1659db802e372751ac6e83fe4f23bf9d8dcf2a55c0b73a1b3199ca",
+      "bytes": 1909
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/INDUSTRIAL-READY-v2.json",
+      "sha256": "b955e5374c111bd7d5e1779c00028953980b88e1683280c26a80f14ca281bfea",
+      "bytes": 3390
+    }
+  ],
+  "authority": {
+    "threadId": "01a16361-0550-7f93-b117-5ae28117b00a",
+    "humanMessageId": "01a16363-3406-7801-b051-40422a242c3c"
+  },
+  "runtime": "Integrator reception/import and UI/model use remain separate."
+}

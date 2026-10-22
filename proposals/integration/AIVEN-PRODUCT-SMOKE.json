@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-22T09:46:52.471Z",
+  "environment": "Aiven product",
+  "companyId": "CO-DEMO",
+  "reset": false,
+  "deployment": "NOT_RUN",
+  "connection": {
+    "version": "PostgreSQL 18.6 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 15.3.1 20260722 (Red Hat 15.3.1-1), 64-bit",
+    "database": "defaultdb",
+    "ssl": true,
+    "tls": "TLSv1.3"
+  },
+  "tablesBefore": [
+    "schema_migrations",
+    "sessions",
+    "companies",
+    "runs",
+    "proposals",
+    "decisions",
+    "memories",
+    "business_events",
+    "accel_watch_definitions",
+    "accel_watch_occurrences",
+    "accel_watch_evidence",
+    "decision_cases",
+    "case_versions",
+    "case_commands"
+  ],
+  "migrations": [
+    "001_core.sql",
+    "002_watch.sql",
+    "003_cases.sql",
+    "004_decision_telemetry.sql"
+  ],
+  "seed": "existing company preserved",
+  "reconnected": true,
+  "revision": "R0",
+  "policyVersion": "P1",
+  "identities": [
+    "CO-DEMO",
+    "CO-DEMO",
+    "CO-DEMO",
+    "CO-DEMO"
+  ],
+  "dataOrigin": "synthetic"
+}

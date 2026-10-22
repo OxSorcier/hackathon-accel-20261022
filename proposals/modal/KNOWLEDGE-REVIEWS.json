@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "unit": "pdf-knowledge-adapter",
+  "revision": 1,
+  "status": "reviewed",
+  "recordedAt": "2026-10-22T11:34:49.258566+00:00",
+  "scope": "proposals/modal/KNOWLEDGE-REVIEW-SCOPE.json",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModelAttestation": "unavailable; names describe requested models",
+  "cycles": 1,
+  "reviewers": [
+    {
+      "agent": "/root/pdf_knowledge_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "effortRequested": "high",
+      "role": "adversarial counter-review",
+      "initialContext": "fresh; fork_turns none; no implementation transcript or other reviewer conclusions",
+      "findings": [],
+      "tests": "9/9 targeted tests pass, 8/8 independent in-memory probes pass (NUL, unpaired surrogate, non-NFC, 30000-character limit, Unicode boundaries 5999/6000/6001/30000).",
+      "hashesStable": true
+    },
+    {
+      "agent": "/root/pdf_knowledge_arch",
+      "modelRequested": "gpt-6-astra",
+      "effortRequested": "high",
+      "role": "contracts and architecture",
+      "initialContext": "fresh; fork_turns none; no implementation transcript or other reviewer conclusions",
+      "findings": [],
+      "tests": "9/9 targeted tests independently executed without cache.",
+      "hashesStable": true
+    }
+  ],
+  "coordinatorChecks": [
+    "Initial RED: missing implementation module",
+    "9 targeted tests pass",
+    "TypeScript noEmit passes",
+    "All five manifest hashes still match after reviews"
+  ],
+  "coverage": [
+    "Bound immutable server actor/company/profile and read-only business roles",
+    "Fixed public provenance, document/extractor/page identities and full-text hash integrity",
+    "At most20 metadata descriptors,1-2 physical pages,6000 Unicode codepoints/page and12000total",
+    "Fixed citation URL, full-page versus excerpt hashes, truncation and empty text explicit",
+    "Unavailable states release no text, sanitized storage errors, no implicit acquire/download/extract/retry"
+  ],
+  "limits": [
+    "Shared PDF contract is candidate at reviewed hash; integrator retains canonical reception.",
+    "No Aiven/Modal/model/UI/browser integration executed in this unit.",
+    "No served model identity attestation."
+  ],
+  "reviewerSourceWrites": false,
+  "externalCalls": 0
+}

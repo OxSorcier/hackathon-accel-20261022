@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "file": "ALIGNMENT-AND-STORY.md",
+      "id": "1n8bJa1-dinbA4Vt8AbHzBaSQz6Wuvei6",
+      "bytes": 32586,
+      "sha256": "dffb75325526dba40e3bdbefc34870443637ba15570684d7fbb00907b1188476",
+      "remoteBytesIdentical": true
+    },
+    {
+      "file": "ALIGNMENT-AND-STORY.html",
+      "id": "1HN3q5kTeCX-SdlAp426-_OLbQPb3xoon",
+      "bytes": 204016,
+      "sha256": "46633672ec1f9bade14ad96d8b0b837f439952b8890f8a215a337078beaee113",
+      "remoteBytesIdentical": true
+    },
+    {
+      "file": "ACCEL-ALIGNMENT-STORY-20261022-v1.zip",
+      "id": "1fRMpHmacxHUvXxqT0HHmG2b0lS0SwrQ1",
+      "bytes": 1388590,
+      "sha256": "c2eb7aed50d875dbda1c2a9d942d6178d34798d7d799235446c158f20756a03f",
+      "remoteBytesIdentical": true
+    }
+  ],
+  "remoteBundleEntriesVerified": 22,
+  "freshDirectory": "/private/tmp/accel-alignment-remote-readback"
+}

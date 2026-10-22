@@ -1,0 +1,208 @@
+{
+  "schema": "accel-builder-ready/1",
+  "role": "agent",
+  "status": "READY_FOR_INTEGRATION",
+  "ready": true,
+  "version": "agent-local-final-20261022",
+  "createdAt": "2026-10-22T09:04:01.190045+00:00",
+  "threadId": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+  "projectPath": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "objective": "Deliver deterministic business calculations, scoped model tools, bounded runner, non-executing versioned proposals and revalidated attributed memory for C1 local integration.",
+  "realizer": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "identityEvidence": "Local session turn_context.model and effort, read in this run; no provider-level served-model attestation"
+  },
+  "contract": {
+    "version": "C1",
+    "path": "src/contracts/index.ts",
+    "sha256": "e1eec6ee3fe568ba6921db8d6fb345755eef2f90b3299a0eb7372d3c8bbe055b",
+    "ownership": "read-only dependency, unchanged by this builder"
+  },
+  "sourceFingerprint": "a564ef2c5be7fe0f1c46d5f2ffd4d23e89561f1d9f31aa300b8af4d0113e954e",
+  "sourceFiles": [
+    "src/agent/context.ts",
+    "src/agent/index.ts",
+    "src/agent/runner.ts",
+    "src/domain/contract.ts",
+    "src/domain/engine.ts",
+    "src/domain/index.ts",
+    "src/domain/model.ts",
+    "tests/agent/runner.test.ts",
+    "tests/domain/engine.test.ts"
+  ],
+  "files": [
+    {
+      "path": "proposals/agent/INTEGRATION.md",
+      "sha256": "a2983560f98de0993096feddee6bfa420fc0c468f2b9416a7001d57f9109792f"
+    },
+    {
+      "path": "proposals/agent/review-adversarial-v1.json",
+      "sha256": "9da2e381723ee13d7f6d2d9a11772035f13a03685d51d9f08be6ef262b483730"
+    },
+    {
+      "path": "proposals/agent/review-adversarial-v3.json",
+      "sha256": "e9537bd4fe51aa7dd65176e51a75efa4c79b9450fb861cde373afaca7ed33f51"
+    },
+    {
+      "path": "proposals/agent/review-architecture-v1.json",
+      "sha256": "145aa32498bbe02e5410b06c55fd12ce64732425c7ef231cb8bc2e614bc3534e"
+    },
+    {
+      "path": "proposals/agent/review-architecture-v3.json",
+      "sha256": "9a09ec6f5b576a8cec37d683ee3131ee7a45f879e2cf542b8ab2527f6ab50ff3"
+    },
+    {
+      "path": "proposals/agent/review-final.json",
+      "sha256": "76cb1cf8938ba673a30dccc07c39fb7d05eaae81a67e2a934d702082dfd259a9"
+    },
+    {
+      "path": "proposals/agent/review-manifest-final.json",
+      "sha256": "c21a922c19a1d642f27bb0463f860f8d5490edeb7dd0f3d7f8d65aa151d26096"
+    },
+    {
+      "path": "proposals/agent/review-manifest-v1.json",
+      "sha256": "e6a8bc6cabdfc30a163519cd5ca07f9b1bb3543f231b3512ddd447c2e47d8da6"
+    },
+    {
+      "path": "proposals/agent/review-manifest-v2.json",
+      "sha256": "cbea2e87c0e8fc33594a035799f31d871f62d0772e70bb23631d22a0f1cd745a"
+    },
+    {
+      "path": "proposals/agent/review-manifest-v3.json",
+      "sha256": "10a15a3167ffe184038e148cd938436179f5e5464d4b4081b11636310d9eccfd"
+    },
+    {
+      "path": "proposals/agent/review-v2.json",
+      "sha256": "b5b441e860f286b7340e80f7c6584998b4d9a9547645de2b11bcb14197faf391"
+    },
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "a93fb70759b89517d8d268299cd70a9639b2efde37c4f4160a1d0153b27fa357"
+    },
+    {
+      "path": "src/agent/index.ts",
+      "sha256": "8968194b55933d457fb6c736512dc2c35ab9ed6aa3c5d5bf9cd645dda17f5074"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "671421ad3f50d82655ace80135c885c26372ee4c26ace0c99e634c3620198e0e"
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "sha256": "de3dd3d74408fe84f069c78cf095ee37f60bc3990b6b6c85af50b005317ad668"
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "sha256": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057"
+    },
+    {
+      "path": "src/domain/index.ts",
+      "sha256": "52308544e7b44b7ee2837d015a2d2b0633089cd381fbfd2857eb4e465c51d98c"
+    },
+    {
+      "path": "src/domain/model.ts",
+      "sha256": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2"
+    },
+    {
+      "path": "tests/agent/runner.test.ts",
+      "sha256": "15359aad0aaa31545a12d5748c75085b902f75dc947b283c884353707f31456b"
+    },
+    {
+      "path": "tests/domain/engine.test.ts",
+      "sha256": "443610cf8528c5560714e0cc62019409894dc7877d4094c46e01a91be5e38e94"
+    }
+  ],
+  "exports": {
+    "domain": "src/domain/index.ts: businessEngine, evaluateBusiness, parseSnapshot, parsePolicy, evaluateOptions, assertCurrentEvaluation",
+    "agent": "src/agent/index.ts: createAgentRunner, agentRunner, buildModelContext, recallMemories"
+  },
+  "implemented": [
+    "Validated same-SKU/unit quantities, reservations, dated inbound and quotes; deterministic coverage across confirmed commitments.",
+    "C1 adapter with explicit B-only replacement margin and all-target reevaluation using bounded tuple-hash identities.",
+    "Transfer simulations protect current commitments and propagate indirect displacement; partial purchases price actual missing quantities in integer cents.",
+    "No stock or purchase effect. Proposal remains pending, current-scoped and tied to evaluations actually generated in the run.",
+    "Positive-list model context and persisted manifest trace; no construction files, personnel secrets, future events, SQL or arbitrary disk tools.",
+    "Sequential typed tools with correlated batches, strict arguments, current-version checks and bounded turns/calls/time.",
+    "Provider is injected. Missing provider returns needs_input with model null; no scripted fallback in product code.",
+    "Provider timeout or lost response remains uncertain, with terminal trace returned even when its sink cannot complete.",
+    "Memory is scoped by company, attributed, revalidated against revision/policy and observed reading time; advice grants no rights."
+  ],
+  "checks": [
+    {
+      "command": "node node_modules/vitest/vitest.mjs run tests/domain tests/agent",
+      "status": "PASS",
+      "tests": 27,
+      "environment": "local, synthetic business fixtures and explicitly scripted test providers only",
+      "evidence": "27 passed after final policy-scope correction; both reviewers reran final checks"
+    },
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --pretty false",
+      "status": "PASS",
+      "environment": "current local assembled checkout",
+      "evidence": "exit 0 after final context type compatibility correction"
+    },
+    {
+      "command": "node node_modules/typescript/bin/tsc -p tsconfig.server.json --noEmit --pretty false",
+      "status": "PASS",
+      "environment": "local",
+      "evidence": "passed on preceding reviewed source; final global typecheck includes changed source"
+    },
+    {
+      "command": "SHA-256 verification of review-manifest-final.json",
+      "status": "PASS",
+      "files": 10,
+      "evidence": "both reviewers verified before and after; builder verified again immediately before READY"
+    },
+    {
+      "command": "rg for em dash, any and console.log in owned code/tests/receipts",
+      "status": "PASS at last scan",
+      "evidence": "no matches; code and documents contain no em dash or production console.log"
+    }
+  ],
+  "testEvidence": {
+    "existingTestsAtIntake": "none in owned paths",
+    "initialRed": "module-not-found failures observed before creating new domain and agent modules",
+    "reviewRegressions": "v1/v2 counterexamples and final B-only policy regression observed failing before fixes",
+    "proofLimits": "A scripted provider or memory-only SQL probe is not real inference or a PostgreSQL/Aiven test"
+  },
+  "reviews": {
+    "status": "COMPLETE_FOR_OWNED_FINAL_CODE",
+    "receipt": "proposals/agent/review-final.json",
+    "manifest": "proposals/agent/review-manifest-final.json",
+    "roles": [
+      "same-model adversarial: gpt-6.1-sol requested high",
+      "architecture: gpt-6-astra requested high"
+    ],
+    "servedModelAttestation": "unavailable for reviewers",
+    "reviewCorrectionCycles": 3,
+    "finalDelta": "targeted correction/revalidation of B-only scope within cycle 3"
+  },
+  "limits": [
+    "Real provider inference NOT_RUN in this builder chat; actual provider/model/key integration belongs to integrator and access owner.",
+    "PostgreSQL/Aiven, provider protocol, restart/fence integration and browser acceptance NOT_RUN by this builder. Other owners have separate evidence.",
+    "Durable writeTrace and finishRun persistence, fence, authenticated rights, revision and current ceiling checks remain server integration responsibilities.",
+    "C1 policy prose adapter supports only the six received initial rules; unknown semantics fail closed.",
+    "C1 allocation sourceId has no source type, so ambiguous IDs across inventory, inbound and quotes are rejected.",
+    "No measured learning or business efficacy claimed; memory storage and retrieval remain attributed advice.",
+    "No commit, push, deployment, new dependency, account, paid resource or external contact performed by this role.",
+    "The requested .codex task-state file could not be created because this chat has read-only access to .codex; continuity was checked manually."
+  ],
+  "states": {
+    "implemented": true,
+    "testedLocally": true,
+    "reviewedExactFinalSource": true,
+    "testedOnAiven": "NOT_RUN",
+    "realInference": "NOT_RUN",
+    "integratedAcceptance": "NOT_RUN",
+    "committed": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "nextAction": {
+    "owner": "integrator",
+    "action": "Verify files and final contract hash, receive the modules, use businessEngine for all-target decision reevaluation and createAgentRunner with authorized provider/currentVersion/writeTrace; test the assembled flow and persistence under current fence. Update tests consuming old option IDs to use returned opaque identities.",
+    "handoff": "proposals/agent/INTEGRATION.md"
+  },
+  "frozenAfterReceipt": true
+}

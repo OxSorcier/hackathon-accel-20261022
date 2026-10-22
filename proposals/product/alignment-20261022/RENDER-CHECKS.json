@@ -1,0 +1,202 @@
+{
+  "checkedAt": "2026-10-22T10:08:35.578Z",
+  "browser": "isolated Chromium through bundled Playwright",
+  "fileSchemeOffline": true,
+  "results": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontLoaded": true,
+      "sections": 12,
+      "tables": [
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 499,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        }
+      ],
+      "headings": [
+        "1. The shared direction",
+        "2. Current alignment and gaps",
+        "3. Who the customer and Paul are",
+        "4. Decisions determine data and systems",
+        "5. A concrete portfolio, prepared now",
+        "6. Monitoring follows the customer's footprint",
+        "7. Harness and scale acceptance",
+        "8. Press release draft",
+        "9. Website copy, ready for the site owner",
+        "10. Three-minute demo and single slide",
+        "11. Existing owners and concrete continuation",
+        "12. Sources and reception limits"
+      ],
+      "externalDisplayRequests": 0,
+      "navigation": "PASS"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontLoaded": true,
+      "sections": 12,
+      "tables": [
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        }
+      ],
+      "headings": [
+        "1. The shared direction",
+        "2. Current alignment and gaps",
+        "3. Who the customer and Paul are",
+        "4. Decisions determine data and systems",
+        "5. A concrete portfolio, prepared now",
+        "6. Monitoring follows the customer's footprint",
+        "7. Harness and scale acceptance",
+        "8. Press release draft",
+        "9. Website copy, ready for the site owner",
+        "10. Three-minute demo and single slide",
+        "11. Existing owners and concrete continuation",
+        "12. Sources and reception limits"
+      ],
+      "externalDisplayRequests": 0,
+      "navigation": "PASS"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontLoaded": true,
+      "sections": 12,
+      "tables": [
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        }
+      ],
+      "headings": [
+        "1. The shared direction",
+        "2. Current alignment and gaps",
+        "3. Who the customer and Paul are",
+        "4. Decisions determine data and systems",
+        "5. A concrete portfolio, prepared now",
+        "6. Monitoring follows the customer's footprint",
+        "7. Harness and scale acceptance",
+        "8. Press release draft",
+        "9. Website copy, ready for the site owner",
+        "10. Three-minute demo and single slide",
+        "11. Existing owners and concrete continuation",
+        "12. Sources and reception limits"
+      ],
+      "externalDisplayRequests": 0,
+      "navigation": "PASS"
+    }
+  ]
+}

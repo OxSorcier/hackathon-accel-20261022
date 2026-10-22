@@ -1,0 +1,28 @@
+{
+  "schema":"accel-agent-acceptance-proposal/1",
+  "status":"PREPARED_CONTRACT_NOT_YET_RECEIVED",
+  "date":"2026-10-22",
+  "owner":"agent builder",
+  "integrationOwner":"01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "scope":"Positive public-evidence context, declared business relation, typed read tool and version-bound calculation/proposal. Shared contract, persistence and integrated test remain integrator-owned.",
+  "currentContract":"C1, no observation/case fields in AgentRunnerInput at inspection",
+  "initialReady":{"path":"proposals/agent/READY.json","sha256":"67a3c29992e0c67abfc05d60e9aba67f80535ec2f45518dc1426e45649647f58","all20FilesUnchanged":true,"state":"FROZEN_UNTIL_CONTRACT_AND_OWNED_PATH_RELEASE"},
+  "acceptanceCases":[
+    {"id":"CHAIN-01","input":"Server-scoped case with received public evidence, current source version and verified declared company relation","expected":"Model reads the actual released evidence and relation through a typed tool, evaluates an allowed target and returns a pending proposal tied to the same case and source version."},
+    {"id":"CHAIN-02","input":"Public observation with no established company relation","expected":"No invented supplier, product, purchase-order or customer link. Explicit unknown/needs_input outcome; no actionable proposal attributed to that observation."},
+    {"id":"CHAIN-03","input":"Homonymous supplier or unrelated public article","expected":"Ambiguity remains visible; text similarity alone does not become a verified business relation."},
+    {"id":"CHAIN-04","input":"Case or evidence carrying another company ID","expected":"Refused before provider/tool output; no foreign contents or identifiers enter model context."},
+    {"id":"CHAIN-05","input":"Model tries to provide company, actor, relation authority, arbitrary path or SQL in tool arguments","expected":"Unknown arguments/tool rejected; server scope and declared relation remain unchanged."},
+    {"id":"CHAIN-06","input":"Evidence content includes instructions to ignore policy or modify stock","expected":"Content is explicitly untrusted data, no authority is derived from it, and no mutating tool exists."},
+    {"id":"CHAIN-07","input":"Case/source version changes while business revision stays the same, before calculation","expected":"Stale case detected; old evidence cannot support a fresh evaluation."},
+    {"id":"CHAIN-08","input":"Case/source version changes after calculation or during model call, before proposal publication","expected":"stale_context, no proposal using the former case version; final publication must also be checked under server ownership."},
+    {"id":"CHAIN-09","input":"Business revision or policy changes while case version is unchanged","expected":"Existing stale-context protection remains effective independently of source version."},
+    {"id":"CHAIN-10","input":"Forged or prior-run evaluation/case reference","expected":"Refused; prose or guessed references do not establish that an evaluation was produced for this run and case."},
+    {"id":"CHAIN-11","input":"Provider response lost while case also changes","expected":"uncertain remains dominant, with current trace evidence and no stale proposal; no automatic provider retry."},
+    {"id":"CHAIN-12","input":"Two identical received observations or resumed processing after interruption","expected":"No duplicate logical proposal through the integrator's stable operation identity and fence. Builder unit checks do not claim database proof."},
+    {"id":"CHAIN-13","input":"Existing question-only run without external case","expected":"C1 question behavior, deterministic calculations and company isolation remain compatible unless the received contract explicitly changes them."},
+    {"id":"CHAIN-14","input":"Construction metadata, oracle, future event or unreleased company fields attached to received objects","expected":"Positive projection drops those fields; only actual released evidence, declared relation and permitted business facts appear in model input or traces."}
+  ],
+  "executionState":{"tests":"NOT_RUN for this extension","implementation":"NOT_STARTED","realProvider":"NOT_RUN by this builder","Aiven":"NOT_RUN by this builder"},
+  "nextStep":"Receive the canonical types and explicit release of owned paths, implement focused tests and code, obtain the two independent reviews, then hand exact hashes to the existing integrator."
+}

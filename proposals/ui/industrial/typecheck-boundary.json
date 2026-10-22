@@ -1,0 +1,14 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": { "noEmit": true },
+  "include": [
+    "../../../src/ui/api.ts",
+    "../../../src/ui/types.ts",
+    "../../../src/ui/industrial.ts",
+    "../../../src/ui/industrial-api.ts",
+    "../../../src/ui/pending-commands.ts",
+    "../../../tests/ui/industrial-api.test.ts",
+    "../../../tests/ui/industrial-fixtures.ts"
+  ],
+  "exclude": []
+}

@@ -1,0 +1,173 @@
+{
+  "version": 4,
+  "date": "2026-10-22T11:14:47.839Z",
+  "scope": "Saved research UI, exact company/profile/namespace API boundaries, retained source versions and source-only results. Existing CASE contract preserved. Local context trace and English copy included.",
+  "realizationModelRequested": "gpt-6.1-sol",
+  "servedModel": "UNATTESTED",
+  "baseline": ".local/flow-reception-source-v4, CASE flow before research UI",
+  "expected": [
+    "Preserve direction A and English UI for a broad company decision workspace.",
+    "Read only server-advertised research profiles for the authenticated company.",
+    "Keep controlled test and live research distinct.",
+    "Display available research even without a business proposal.",
+    "Retain exact source references and generations per historical analysis.",
+    "Preserve server authority, idempotency and uncertain states. Do not infer business links or savings.",
+    "No operator ingestion form, external mutation, commit, push or deployment."
+  ],
+  "files": [
+    {
+      "path": "src/ui/App.tsx",
+      "sha256": "c44ad7ced99c0b8dfcf33ce3b7674b040c5053b1409689deb34bab26fe0c35dd",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/App.tsx.snapshot"
+    },
+    {
+      "path": "src/ui/CasePanel.tsx",
+      "sha256": "e8b54d7dfacac37d316bdc2a232dbe3766a310071bc1817224e619a376fd02ce",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/CasePanel.tsx.snapshot"
+    },
+    {
+      "path": "src/ui/ExecutionTrace.tsx",
+      "sha256": "66634afc919e743b0b0bdc6a54a943379b5642d5dfab01f26023eac2f72c63fe",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/ExecutionTrace.tsx.snapshot"
+    },
+    {
+      "path": "src/ui/ResearchPanel.tsx",
+      "sha256": "eda3b774023a913a59003503201687d1be0aa4f0854652b4064a668978537442",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/ResearchPanel.tsx.snapshot"
+    },
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "b3735643df92fd3d6df4d2b5a672d02c6cb4dab3d52e697eec4fab4e587ac9f0",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/api.ts.snapshot"
+    },
+    {
+      "path": "src/ui/format.ts",
+      "sha256": "6ab5f3efe789d4057a9b35da78f02ebd49c216a80b267a16c0f9be17537081ea",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/format.ts.snapshot"
+    },
+    {
+      "path": "src/ui/index.ts",
+      "sha256": "93dacefe521e1a71ef4708549f47da3cbafc20c54a3c8da842bb70fb491c7663",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/index.ts.snapshot"
+    },
+    {
+      "path": "src/ui/research-commands.ts",
+      "sha256": "6bb80ba557d4dab03405fe75e177fdd7eaf90e66caf9082a4df0e1c18a94178c",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/research-commands.ts.snapshot"
+    },
+    {
+      "path": "src/ui/research.ts",
+      "sha256": "29f1df16af9a6c3bb24d42904e8608c2946acd8e7b9272410067ed7815cf18e2",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/research.ts.snapshot"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "63522fb90d3277fea8ca322b6e39ae620cb9f721f979a007779e6173bd126241",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/styles.css.snapshot"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "1d1dccc37fc3d043ed5a269ef2e514ceec31b7d7196171e9311b14430cc3dda7",
+      "snapshot": "proposals/ui/research/source-v4/src/ui/types.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/api.test.ts",
+      "sha256": "9e6b64b5fe9da341d64fdcb70d9cf4d672991cb660538c4cc5ef6a4dcedc34da",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/api.test.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/case-api.test.ts",
+      "sha256": "a1f8b7c7cda487d84a0080ada52b9f952da75ac2e1b4d523b24257f19cf0815b",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/case-api.test.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/confirmation-boundary.test.ts",
+      "sha256": "28d1f99b3d995fcc2ede3d5709e043e2d2a36ccf51b0b4f25dbaf7195b54e12b",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/confirmation-boundary.test.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/context-manifest.test.ts",
+      "sha256": "63c4e15b3284de25d0b6da3126341e02e652cddf8df51d4ba617a7b97867151f",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/context-manifest.test.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/fixtures.ts",
+      "sha256": "3382ac8cf197fddbfeb0a162a5e16151c38e211ffee65a4958341afc1bfea8c9",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/fixtures.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/preview.html",
+      "sha256": "e3a2494290a035d87f27c6ae54b062cdde35baf79b4dfe977591216b9c912219",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/preview.html.snapshot"
+    },
+    {
+      "path": "tests/ui/preview.tsx",
+      "sha256": "809013a5ad80b3639eef5b4a25c802efbbe6447c95aecbd23967a247702eb76e",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/preview.tsx.snapshot"
+    },
+    {
+      "path": "tests/ui/research-api.test.ts",
+      "sha256": "4bab9c0837495e5e6175c317158f490093388df558077df183be3e554afef4ce",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/research-api.test.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/research-commands.test.ts",
+      "sha256": "38d883a8b1dd147d1cea8c412efacabddbef3ac2b16e3f7f54cc1ddd6b86f920",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/research-commands.test.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/research-fixtures.ts",
+      "sha256": "49c685890ccfb59e1f235557714f77452e5efbe14ba3c7ec296f4b637c5b274a",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/research-fixtures.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/responsive.html",
+      "sha256": "df48cc1fe26f1c3c030a8ea750141253ea283f3ddd50e7c6ad24a739466b6074",
+      "snapshot": "proposals/ui/research/source-v4/tests/ui/responsive.html.snapshot"
+    }
+  ],
+  "references": [
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "47a8a3c8bbce586209944e9ef89f94022361b4b4b65f08f305785683b8358458",
+      "snapshot": "proposals/ui/research/references-v4/src/contracts/index.ts.snapshot",
+      "authority": "Reference only. Owned by another builder."
+    },
+    {
+      "path": "src/contracts/research.ts",
+      "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214",
+      "snapshot": "proposals/ui/research/references-v4/src/contracts/research.ts.snapshot",
+      "authority": "Reference only. Owned by another builder."
+    },
+    {
+      "path": "src/server/research-service.ts",
+      "sha256": "b86e9d6476a3e0cbea37dbd70026f159ca37c9ca909282e4fd3d5e748a019b95",
+      "snapshot": "proposals/ui/research/references-v4/src/server/research-service.ts.snapshot",
+      "authority": "Reference only. Owned by another builder."
+    },
+    {
+      "path": "src/server/app.ts",
+      "sha256": "e13fd2940ec288303ed2fbb9639f85a428a3c73e20ba7499100b3264ae040f1a",
+      "snapshot": "proposals/ui/research/references-v4/src/server/app.ts.snapshot",
+      "authority": "Reference only. Owned by another builder."
+    },
+    {
+      "path": "src/server/cases.ts",
+      "sha256": "8649122c9ff9c27eb490bca33994065d35a64a0606c6dc83e1a3b287f6447bc7",
+      "snapshot": "proposals/ui/research/references-v4/src/server/cases.ts.snapshot",
+      "authority": "Reference only. Owned by another builder."
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256": "b5dec6ed1a279399b97f0f00f7a54789ef988058bf77c49e7f837a0d4e6240d4",
+      "snapshot": "proposals/ui/research/references-v4/src/server/store.ts.snapshot",
+      "authority": "Reference only. Owned by another builder."
+    },
+    {
+      "path": "src/agent/research-context.ts",
+      "sha256": "b6bb1a985878d0a9787cc6e55ae15a090a497ca9ef8bd73b3f14ef2fe7080d96",
+      "snapshot": "proposals/ui/research/references-v4/src/agent/research-context.ts.snapshot",
+      "authority": "Reference only. Owned by another builder."
+    }
+  ]
+}

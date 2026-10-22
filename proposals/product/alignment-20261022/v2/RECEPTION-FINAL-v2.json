@@ -1,0 +1,286 @@
+{
+  "version": 2,
+  "status": "DATA_AND_COPY_DELIVERED_INTEGRATED_APPLICATION_PENDING",
+  "checkedAt": "2026-10-22T11:23:32.651Z",
+  "product": "AdaptOps",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "contextRevision": "IC-INDUSTRIAL-2-2",
+  "qualificationRevision": "Q-INDUSTRIAL-2-1",
+  "ownerScope": "Existing portfolio author: synthetic data, proposed operator inputs and positioning copy only.",
+  "coreReceipt": "CORE-READY.json",
+  "industrialReceipt": "INDUSTRIAL-READY-v2.json",
+  "documentChecks": "DOCUMENT-CHECKS.json",
+  "asideCheck": "ASIDE-CHECK.json",
+  "remoteReadback": {
+    "version": 2,
+    "status": "REMOTE_BYTES_AND_BUNDLE_ENTRIES_VERIFIED",
+    "checkedAt": "2026-10-22T11:22:03.579346+00:00",
+    "files": [
+      {
+        "file": "DATA-RECEIPT.md",
+        "id": "1f81SzS3GH2pmMMQ1RfHVetXEmJP9npkH",
+        "bytes": 12445,
+        "sha256": "c70ade7029185791a527f2e3bf8035edef779ce3e3cf89785572406043212c84",
+        "byteIdentical": true
+      },
+      {
+        "file": "DATA-RECEIPT.html",
+        "id": "1LyArCUjo8TBgm-oxfIBCDnKDAdxH8_D6",
+        "bytes": 181188,
+        "sha256": "6dd80131b997bf7a908608ccf03d81afe8dc5e4a0b46171ef76cfd9929a9e365",
+        "byteIdentical": true
+      },
+      {
+        "file": "PRESS-RELEASE.md",
+        "id": "1S9R5eb0BcbYAPkVzJofY6zzsO2H7LSeF",
+        "bytes": 2747,
+        "sha256": "8c51cec396a0879ee4267fd0716cb3782b8f77a6b27c6e87fa2817b0dc4f61c2",
+        "byteIdentical": true
+      },
+      {
+        "file": "PRESS-RELEASE.html",
+        "id": "1FtvEKp6F9W2a8tTUBLfgqQqVzoS4UvKE",
+        "bytes": 170002,
+        "sha256": "417d150a0c95767e7fb517413a0ba4d37aa5a925ad41ed9c7e36ac81368113d1",
+        "byteIdentical": true
+      },
+      {
+        "file": "WEBSITE-COPY.md",
+        "id": "10NXJSqNCVYmSiH-Q6FDBi1qiNMtb9er9",
+        "bytes": 3227,
+        "sha256": "c8d83ea6e8b3941d947a143833ea1969e45aa410b55af599fce64f4c691fba5c",
+        "byteIdentical": true
+      },
+      {
+        "file": "WEBSITE-COPY.html",
+        "id": "1SPzAAwfKlJFpkd6rEYqVEIaRGXMaBLpc",
+        "bytes": 170875,
+        "sha256": "ef94eb520b2741deb526d4cbd8da67428f077b7e1ac20b4c5a7b3e1873b9eb5b",
+        "byteIdentical": true
+      },
+      {
+        "file": "ACCEL-ADAPTOPS-DATA-20261022-v2.zip",
+        "id": "1k8L93sikT7nbIGVlrOsZyzTMQOPIn3em",
+        "bytes": 3739448,
+        "sha256": "879df020885c4cbaace73ad906243d712a0519d00f76aa64c5e7dacfee97614b",
+        "byteIdentical": true
+      }
+    ],
+    "coldRetrievalDirectory": "/var/folders/1p/h6m1c58x3lzg4080b8yzckn40000gn/T/adaptops-v2-cold-read-6nr0x81b",
+    "archiveEntries": 81,
+    "manifestEntriesVerified": 80,
+    "folderId": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+    "sharing": "Existing private folder and seven file metadata shared=false; no audience change.",
+    "limits": [
+      "Retrieval proof does not establish application import, runtime deployment or business effect."
+    ]
+  },
+  "remoteFiles": [
+    {
+      "local": "DATA-RECEIPT.md",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1f81SzS3GH2pmMMQ1RfHVetXEmJP9npkH",
+        "title": "AdaptOps - Company ERP CRM and demo readiness - 2026-10-22 v2.md",
+        "file_name": "AdaptOps - Company ERP CRM and demo readiness - 2026-10-22 v2.md",
+        "mime_type": "text/markdown",
+        "url": "https://drive.google.com/file/d/1f81SzS3GH2pmMMQ1RfHVetXEmJP9npkH/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1f81SzS3GH2pmMMQ1RfHVetXEmJP9npkH",
+          "title": "AdaptOps - Company ERP CRM and demo readiness - 2026-10-22 v2.md",
+          "file_name": "AdaptOps - Company ERP CRM and demo readiness - 2026-10-22 v2.md",
+          "mime_type": "text/markdown",
+          "url": "https://drive.google.com/file/d/1f81SzS3GH2pmMMQ1RfHVetXEmJP9npkH/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      }
+    },
+    {
+      "local": "DATA-RECEIPT.html",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1LyArCUjo8TBgm-oxfIBCDnKDAdxH8_D6",
+        "title": "AdaptOps - Company ERP CRM and demo readiness - 2026-10-22 v2.html",
+        "file_name": "AdaptOps - Company ERP CRM and demo readiness - 2026-10-22 v2.html",
+        "mime_type": "text/html",
+        "url": "https://drive.google.com/file/d/1LyArCUjo8TBgm-oxfIBCDnKDAdxH8_D6/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1LyArCUjo8TBgm-oxfIBCDnKDAdxH8_D6",
+          "title": "AdaptOps - Company ERP CRM and demo readiness - 2026-10-22 v2.html",
+          "file_name": "AdaptOps - Company ERP CRM and demo readiness - 2026-10-22 v2.html",
+          "mime_type": "text/html",
+          "url": "https://drive.google.com/file/d/1LyArCUjo8TBgm-oxfIBCDnKDAdxH8_D6/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      }
+    },
+    {
+      "local": "PRESS-RELEASE.md",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1S9R5eb0BcbYAPkVzJofY6zzsO2H7LSeF",
+        "title": "AdaptOps - Press release draft - 2026-10-22 v2.md",
+        "file_name": "AdaptOps - Press release draft - 2026-10-22 v2.md",
+        "mime_type": "text/markdown",
+        "url": "https://drive.google.com/file/d/1S9R5eb0BcbYAPkVzJofY6zzsO2H7LSeF/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1S9R5eb0BcbYAPkVzJofY6zzsO2H7LSeF",
+          "title": "AdaptOps - Press release draft - 2026-10-22 v2.md",
+          "file_name": "AdaptOps - Press release draft - 2026-10-22 v2.md",
+          "mime_type": "text/markdown",
+          "url": "https://drive.google.com/file/d/1S9R5eb0BcbYAPkVzJofY6zzsO2H7LSeF/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      }
+    },
+    {
+      "local": "PRESS-RELEASE.html",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1FtvEKp6F9W2a8tTUBLfgqQqVzoS4UvKE",
+        "title": "AdaptOps - Press release draft - 2026-10-22 v2.html",
+        "file_name": "AdaptOps - Press release draft - 2026-10-22 v2.html",
+        "mime_type": "text/html",
+        "url": "https://drive.google.com/file/d/1FtvEKp6F9W2a8tTUBLfgqQqVzoS4UvKE/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1FtvEKp6F9W2a8tTUBLfgqQqVzoS4UvKE",
+          "title": "AdaptOps - Press release draft - 2026-10-22 v2.html",
+          "file_name": "AdaptOps - Press release draft - 2026-10-22 v2.html",
+          "mime_type": "text/html",
+          "url": "https://drive.google.com/file/d/1FtvEKp6F9W2a8tTUBLfgqQqVzoS4UvKE/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      }
+    },
+    {
+      "local": "WEBSITE-COPY.md",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "10NXJSqNCVYmSiH-Q6FDBi1qiNMtb9er9",
+        "title": "AdaptOps - Website copy - 2026-10-22 v2.md",
+        "file_name": "AdaptOps - Website copy - 2026-10-22 v2.md",
+        "mime_type": "text/markdown",
+        "url": "https://drive.google.com/file/d/10NXJSqNCVYmSiH-Q6FDBi1qiNMtb9er9/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "10NXJSqNCVYmSiH-Q6FDBi1qiNMtb9er9",
+          "title": "AdaptOps - Website copy - 2026-10-22 v2.md",
+          "file_name": "AdaptOps - Website copy - 2026-10-22 v2.md",
+          "mime_type": "text/markdown",
+          "url": "https://drive.google.com/file/d/10NXJSqNCVYmSiH-Q6FDBi1qiNMtb9er9/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      }
+    },
+    {
+      "local": "WEBSITE-COPY.html",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1SPzAAwfKlJFpkd6rEYqVEIaRGXMaBLpc",
+        "title": "AdaptOps - Website copy - 2026-10-22 v2.html",
+        "file_name": "AdaptOps - Website copy - 2026-10-22 v2.html",
+        "mime_type": "text/html",
+        "url": "https://drive.google.com/file/d/1SPzAAwfKlJFpkd6rEYqVEIaRGXMaBLpc/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1SPzAAwfKlJFpkd6rEYqVEIaRGXMaBLpc",
+          "title": "AdaptOps - Website copy - 2026-10-22 v2.html",
+          "file_name": "AdaptOps - Website copy - 2026-10-22 v2.html",
+          "mime_type": "text/html",
+          "url": "https://drive.google.com/file/d/1SPzAAwfKlJFpkd6rEYqVEIaRGXMaBLpc/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      }
+    },
+    {
+      "local": "ACCEL-ADAPTOPS-DATA-20261022-v2.zip",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1k8L93sikT7nbIGVlrOsZyzTMQOPIn3em",
+        "title": "AdaptOps - Industrial company data and copy - 2026-10-22 v2.zip",
+        "file_name": "AdaptOps - Industrial company data and copy - 2026-10-22 v2.zip",
+        "mime_type": "application/zip",
+        "url": "https://drive.google.com/file/d/1k8L93sikT7nbIGVlrOsZyzTMQOPIn3em/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1k8L93sikT7nbIGVlrOsZyzTMQOPIn3em",
+          "title": "AdaptOps - Industrial company data and copy - 2026-10-22 v2.zip",
+          "file_name": "AdaptOps - Industrial company data and copy - 2026-10-22 v2.zip",
+          "mime_type": "application/zip",
+          "url": "https://drive.google.com/file/d/1k8L93sikT7nbIGVlrOsZyzTMQOPIn3em/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      }
+    }
+  ],
+  "tracker": {
+    "issueId": "8ba8dae3-e21a-4dd2-8af3-feb2b2083509",
+    "identifier": "ERW-133",
+    "parentCommentId": "319941d6-f0d4-409b-a590-4689e047b594",
+    "commentId": "ece9931e-d385-486a-87c6-10bd0ecda646",
+    "readbackVerified": true
+  },
+  "existingOwners": {
+    "integration": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "coordination": "01a162cf-0150-7091-8394-f5dbca7b53a9",
+    "visionAndDemo": "01a16316-d948-7672-b47f-395e6d411d33"
+  },
+  "checks": {
+    "v1Preserved": true,
+    "coreAndSidecarHashesStillMatch": true,
+    "coreAssertions": 30206,
+    "contextChecks": 65,
+    "dtoChecks": 69,
+    "exactDtoLiteralTypecheck": "PASS",
+    "offlineDocumentPairs": 3,
+    "viewportChecks": 9,
+    "remoteByteIdenticalFiles": 7,
+    "archiveEntries": 81,
+    "archiveContentPinsVerified": 80
+  },
+  "application": {
+    "existingStableRisk": "Separately received on Aiven and port3001; no purchase or stock movement executed by approval.",
+    "industrialImport": "Existing integrator local import/new-process readback reported and reviewed; Aiven receipt still separate.",
+    "mixedCalculation": "PENDING_EXISTING_BUSINESS_OWNER",
+    "automaticReport": "PENDING_EXISTING_DATA_AND_INTEGRATION_OWNERS",
+    "simulatedExecution": "PENDING_EXISTING_INTEGRATOR",
+    "aivenRuntimeDeployment": "NOT_RUN"
+  },
+  "nextRequiredProof": "Isolated Aiven intake, attributed event release, prepared calculated mixed report, approval, labelled simulated future orders/offer and durable readback/idempotence/reassessment.",
+  "limits": [
+    "All company and commercial data are synthetic.",
+    "Current CRM request precedes the controlled fire and was not caused by it.",
+    "The competitor confirmation is separate fictional operator data, not public-source proof.",
+    "Preparation files grant no authority and cannot bootstrap future events.",
+    "No real ERP/CRM API connector or business outcome is established.",
+    "No application source, contract, dependency or migration was changed by this author.",
+    "Private archiving changes no audience; no commit/push/deploy/publication."
+  ],
+  "sharedNotesLookup": "Linear get_agent_context unavailable (tool not found); existing project sources and owner receipts used."
+}

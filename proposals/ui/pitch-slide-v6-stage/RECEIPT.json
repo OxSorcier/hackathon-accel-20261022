@@ -1,0 +1,64 @@
+{
+  "version": 6,
+  "date": "2026-10-22",
+  "status": "THREE_COMPLETE_RASTER_PITCH_PROPOSALS_INSPECTED",
+  "generation_mode": "built-in image_gen",
+  "files": [
+    {
+      "path": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/pitch-slide-v6-stage/A-prepared-response.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "de74f932ea062f44841a22fc20d46168131b55aba1637501aa257d5e82cd268b"
+    },
+    {
+      "path": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/pitch-slide-v6-stage/B-stage-story.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0253c1018caddec564274fd50c65a74308411f02d8b9398e5e603b24330cada4"
+    },
+    {
+      "path": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/pitch-slide-v6-stage/C-plan-and-proof.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c3b69a12cbae96176cf38cd6fd060463b3aa35cf0d1d8f1560e5173b4249926d"
+    }
+  ],
+  "recommended_direction": "B-stage-story",
+  "prompt_files": [
+    "PROMPTS.json",
+    "EDIT-PROMPTS.json"
+  ],
+  "comparison": "DATA-COMPARISON.json",
+  "supersedes": "../pitch-slide-v5-adaptops/RECEIPT.json",
+  "scope": "Images first, by explicit user steering. Google Slides authoring and sharing are deferred.",
+  "coverage": {
+    "brand_and_pitch": "AdaptOps, received tagline, action-led agent promise",
+    "who": "Operations/procurement in multi-site timber/materials first",
+    "why_now": "Research, business calculation and approved tools",
+    "first_users": "Planned recruitment of three design partners via founder introductions",
+    "product": "Prepared company brief, risk/opportunity, shared plan, approval, verification and memory",
+    "data_layer": "Authorised ERP/CRM/WMS, prior research, public sources; evidence and memory in Aiven PostgreSQL",
+    "evidence": "Analytical lowest-cost-for-A rule vs recorded feasible option checking both commitments. Separate received restart evidence."
+  },
+  "proof_limits": [
+    "The cost-only baseline is an analytical selection from recorded options, not a newly executed model baseline",
+    "EUR1420 is purchase cost, not savings or revenue",
+    "Order coverage is a calculated synthetic plan effect, not a real delivery outcome",
+    "Comparison and final restart receipts concern separate recorded runs of the same received scenario",
+    "No latency or productivity gain claimed"
+  ],
+  "visual_checks": [
+    "All three final PNGs visually inspected and read back",
+    "English brand, tagline, headings and required pitch criteria checked",
+    "No clipping or accidental text overlap observed",
+    "A speculative extra examples and return connection corrected",
+    "B pre-approval action rows labelled Review with empty selection boxes",
+    "C seven narrow moments consolidated into three readable stages",
+    "Product target distinguished from synthetic risk-flow proof"
+  ],
+  "remote_state": "Drive search was read-only. No Google presentation, permission change, publication or submission performed.",
+  "limits": [
+    "Raster images, not native editable slides",
+    "Connected execution and commercial opportunity loop remain product targets"
+  ]
+}

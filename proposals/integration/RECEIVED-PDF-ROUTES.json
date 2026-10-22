@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "status": "HASHES_MATCH_ROUTE_UNIT_RECEIVED_APP_ASSEMBLY_PENDING",
+  "receivedAt": "2026-10-22T11:29:39.875898+00:00",
+  "receipt": "proposals/modal/ROUTES-READY.json",
+  "receiptSha256": "6ed4390cc79864278f824ce690d84d8fe84157e652443ddcc334bdcdacc8436b",
+  "files": [
+    {
+      "path": "src/server/pdf-routes.ts",
+      "sha256": "8fd23cb260bc11e64a1a9cf470e4b456934653f9316cdcac492edf1673b01d79"
+    },
+    {
+      "path": "tests/server/pdf-routes.test.ts",
+      "sha256": "4bb6574b9e5649bebeb127520a8d13bc0c5689ceb3150c982bc355e8b09ecb18"
+    }
+  ]
+}

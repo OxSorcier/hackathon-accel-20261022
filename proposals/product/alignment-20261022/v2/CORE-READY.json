@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "status": "CORE_FROZEN_LOCAL_DATA_AND_DOMAIN_CHECKED_IMPORT_NOT_RUN",
+  "checkedAt": "2026-10-22T11:09:43.053Z",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "revision": "R-INDUSTRIAL-CANDIDATE-2",
+  "dataOrigin": "synthetic",
+  "files": [
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-10000.json",
+      "sha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+      "bytes": 4746932
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-policy.json",
+      "sha256": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2",
+      "bytes": 1190
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/DATA-CHECKS.json",
+      "sha256": "bcf02f8047635a57293e8e65950fe00de3f42d4660a2aa050e00febbaf1dd3c2",
+      "bytes": 1933
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/LOCAL-DOMAIN-SMOKE.json",
+      "sha256": "f5f52d41d1e7dd22320275bf327f4bff0cec8171211b9da7a075391ea80ea0b7",
+      "bytes": 1197
+    }
+  ],
+  "readOnlyAfterReceipt": true,
+  "importAllowlist": [
+    "portfolio-10000.json",
+    "portfolio-policy.json"
+  ],
+  "notImportableAsCurrentFacts": [
+    "CONTRACT-SAMPLES.proposed.json",
+    "operator-release.proposed.json",
+    "DATA-CHECKS.json",
+    "LOCAL-DOMAIN-SMOKE.json",
+    "EARLY-CORE.json"
+  ],
+  "integratorReceiptRequired": [
+    "DTO mapping of proposed industrial-context sidecar",
+    "distinct candidate company/schema; preserve stable risk candidate",
+    "idempotent explicit import and restart readback",
+    "bounded model projection and exact data manifest"
+  ],
+  "limits": [
+    "The current deterministic engine does not calculate the commercial opportunity.",
+    "No ERP/CRM API connector, model-at-scale run, Aiven import or action execution is proved by this receipt.",
+    "No commit, push, publication or deployment."
+  ]
+}

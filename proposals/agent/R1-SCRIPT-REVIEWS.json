@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "receivedAt": "2026-10-22T11:24:13.131995+00:00",
+  "status": "CYCLE3_TWO_INDEPENDENT_REVIEWS_PASS",
+  "scope": "proposals/agent/R1-SCRIPT-REVIEW-SCOPE.json",
+  "sourceFingerprint": "6edee6eea546c89bdd29514aefcb7b3250f9fbb3db7398d459f528b1471b60e1",
+  "files": [
+    {
+      "path": ".local/research-reception/shared.ts",
+      "sha256": "3f13ed1dda09eae140ccca4276c84df399befe69c6a7f0daedbd297b2c0c366f"
+    },
+    {
+      "path": ".local/research-reception/serve.ts",
+      "sha256": "f1d0f1f8fe3e6a0fad9ba4969b8cf75482e35094eacfae4d6813615bf19e27a8"
+    },
+    {
+      "path": ".local/research-reception/run.ts",
+      "sha256": "bc90b9dc75933548543a2f77c87f522e5c245616623b87ddb2776ecb5012e871"
+    }
+  ],
+  "realizer": "gpt-6.1-sol/xhigh",
+  "servedReviewerModels": "NOT_INDEPENDENTLY_ATTESTED",
+  "reviews": [
+    {
+      "agent": "/root/r1_script_counter",
+      "role": "counter",
+      "modelRequested": "gpt-6.1-sol",
+      "effort": "high",
+      "isolation": "fresh fork_turns none, read-only",
+      "cycles": 3,
+      "initialFindings": [
+        "Initial system message not checked",
+        "Pins not bound to the received server checkpoint",
+        "Transport did not prohibit a retry after failure"
+      ],
+      "finalVerdict": "No retained finding on exact cycle3 publication-import scope",
+      "typecheck": "PASS",
+      "hashesBeforeAfter": "MATCH_3_OF_3_AND_MIGRATION007"
+    },
+    {
+      "agent": "/root/r1_script_architecture",
+      "role": "architecture",
+      "modelRequested": "gpt-6-astra",
+      "effort": "high",
+      "isolation": "fresh fork_turns none, read-only",
+      "cycles": 3,
+      "initialFindings": [
+        "Restart could accept different runtime pins under the same declared fingerprint",
+        "Cleanup could retain a live child after stopped metrics"
+      ],
+      "finalVerdict": "No retained finding on exact cycle3 publication-import scope",
+      "typecheck": "PASS",
+      "hashesBeforeAfter": "MATCH_3_OF_3_AND_MIGRATION007"
+    }
+  ],
+  "limits": [
+    "No reviewer DB, network, env read or actual process/model launch.",
+    "Runtime server review is separate.",
+    "Future corrected frozen server checkpoint must be received and externally pinned before R1.",
+    "Actual model_result usage/timings and process interruption remain to observe.",
+    "Cycle3 explicitly reviewed empty-schema migration before one terminal occurrence import, company row lock, generated publication ordinal and unchanged original dates."
+  ],
+  "nextScope": "proposals/agent/R1-SCRIPT-REVIEW-SCOPE.json"
+}

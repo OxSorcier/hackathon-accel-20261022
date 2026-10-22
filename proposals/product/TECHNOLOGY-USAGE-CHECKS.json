@@ -1,0 +1,193 @@
+{
+  "document_only": true,
+  "markdown_html_same_source": true,
+  "embedded_font_faces": 4,
+  "broken_anchors": [],
+  "external_loads_declared": 0,
+  "em_dashes": 0,
+  "files": [
+    {
+      "path": "proposals/product/TECHNOLOGY-USAGE.md",
+      "bytes": 18481,
+      "sha256": "caf825cbcab18ff65174ec7df6204d9b56ac9e88cef73febc6514e240b7d8be3"
+    },
+    {
+      "path": "proposals/product/TECHNOLOGY-USAGE.html",
+      "bytes": 183307,
+      "sha256": "f6146705c155db328e73201e9a7cf47f7c2db21b0be7a574918773cc6dc564cd"
+    },
+    {
+      "path": "proposals/product/README-TECHNOLOGY-USAGE.md",
+      "bytes": 1127,
+      "sha256": "db2782b00ee1c49937db238a2848b53667eeb233bda515133ce6fa6c4b1ee1a2"
+    }
+  ],
+  "browser": {
+    "browser": "155.0.8059.85",
+    "source": "file:// local, HTTP blocked",
+    "viewports": [
+      {
+        "width": 390,
+        "scrollWidth": 390,
+        "fontFaces": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "700",
+            "status": "loaded"
+          }
+        ],
+        "tableRows": 15,
+        "sections": 7,
+        "brokenAnchors": [],
+        "navTargets": [
+          {
+            "text": "Les offres",
+            "target": "Les offres et leur utilité"
+          },
+          {
+            "text": "Modal",
+            "target": "Modal, concrètement"
+          },
+          {
+            "text": "README",
+            "target": "Bloc anglais prêt pour le README"
+          }
+        ],
+        "tables": [
+          {
+            "client": 350,
+            "scroll": 534
+          },
+          {
+            "client": 350,
+            "scroll": 480
+          }
+        ]
+      },
+      {
+        "width": 768,
+        "scrollWidth": 768,
+        "fontFaces": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "700",
+            "status": "loaded"
+          }
+        ],
+        "tableRows": 15,
+        "sections": 7,
+        "brokenAnchors": [],
+        "navTargets": [
+          {
+            "text": "Les offres",
+            "target": "Les offres et leur utilité"
+          },
+          {
+            "text": "Modal",
+            "target": "Modal, concrètement"
+          },
+          {
+            "text": "README",
+            "target": "Bloc anglais prêt pour le README"
+          }
+        ],
+        "tables": [
+          {
+            "client": 688,
+            "scroll": 688
+          },
+          {
+            "client": 688,
+            "scroll": 688
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "fontFaces": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "700",
+            "status": "loaded"
+          }
+        ],
+        "tableRows": 15,
+        "sections": 7,
+        "brokenAnchors": [],
+        "navTargets": [
+          {
+            "text": "Les offres",
+            "target": "Les offres et leur utilité"
+          },
+          {
+            "text": "Modal",
+            "target": "Modal, concrètement"
+          },
+          {
+            "text": "README",
+            "target": "Bloc anglais prêt pour le README"
+          }
+        ],
+        "tables": [
+          {
+            "client": 880,
+            "scroll": 880
+          },
+          {
+            "client": 880,
+            "scroll": 880
+          }
+        ]
+      }
+    ],
+    "externalRequests": []
+  },
+  "visual_inspection": "PASS: desktop, tablet and mobile screenshots inspected",
+  "aside": "Resource page, six downloads, local HTML desktop and Inter loaded observed. Resizing unsupported."
+}

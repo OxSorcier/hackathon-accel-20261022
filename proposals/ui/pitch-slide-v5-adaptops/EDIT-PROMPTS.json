@@ -1,0 +1,21 @@
+{
+  "version": 5,
+  "purpose": "Targeted visual and copy cleanup after inspection",
+  "edits": [
+    {
+      "key": "A-company-brief",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-2622285e-b804-4319-8d34-42ec12d2e33c.png",
+      "prompt": "Edit only the decorative strip in this AdaptOps slide. Remove the forest and timber photo strip at the far right of the large product view. Replace that whole strip with the same clean white/light-neutral continuation as the application surface, and use a simple straight/rounded right edge matching the rest of that product view. Do not add any photograph, illustration or icon. Keep ALL text exactly unchanged, including AdaptOps, tagline, promise, prepared brief, source line, impact, four plan rows, button, verification/memory line and all footer criteria/proof scope. Preserve the layout, type, dimensions, whitespace and colors. Do not resize the whole composition. Return the full slide."
+    },
+    {
+      "key": "B-coordinated-response",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-427ee3ef-fba7-4f95-af89-e1094ca63aed.png",
+      "prompt": "Make ONE precise text correction in the supplied AdaptOps slide. At the upper-right inside the panoramic Shared plan surface, replace the malformed small label with exactly: \"Illustrative synthetic scenario\". Render this short phrase cleanly, with the same font color and small label size, without extra words. Do not change any other text or element. Preserve the entire 16:9 composition, all hierarchy, AdaptOps wordmark/tagline/promise, prepared report, coordinated plan rows, approval button, results/memory and WHO/WHY NOW/FIRST USERS/proof footer. No other alterations."
+    },
+    {
+      "key": "C-adaptation-loop",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-203d4883-1981-49ee-8968-26b190f85e8d.png",
+      "prompt": "Make two precise text corrections in the supplied AdaptOps adaptation-loop slide. Preserve all other text, geometry, colors, size, brand and tagline.\n1. In the first product moment's Business impact area, cleanly replace the visibly duplicated/overprinted sentence with exactly \"Commitments to protect. Opportunity to assess.\" Use two comfortable lines if necessary, without duplicate letters or overlapping text.\n2. In the top-left of the right product moment, replace the small heading \"Approved actions\" with \"Action review\", because this state is still Ready for your approval.\nKeep the ready company brief, all four departmental plan actions, Approve & execute, verification/memory sentence, return line, footer criteria and proof scope exactly. No new elements. Return the complete 16:9 slide."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "status": "PROPOSED_NOT_IMPORTED",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "opportunityId": "CRM-IND-000",
+  "customerId": "CLI-A",
+  "projectId": "PROJECT-IND-00",
+  "productId": "SKU-ISO100",
+  "quantity": 20,
+  "unit": "palette",
+  "needDate": "2026-10-29",
+  "destinationDepotId": "DEP-LILLE",
+  "ownerActorId": "EMP-PAUL",
+  "qualification": "confirmed_in_synthetic_crm",
+  "currency": "EUR",
+  "sellingUnitPriceCents": 19000,
+  "customerMaximumUnitPriceCents": 22000,
+  "intake": {
+    "id": "INTAKE-CRM-IND-000-V2",
+    "dataOrigin": "synthetic",
+    "recordedByActorId": "EMP-PAUL",
+    "recordedAt": "2026-10-22T08:50:00+02:00",
+    "attribution": "Fictional CRM author within the synthetic dataset, not a real signature, message or customer request.",
+    "needBasis": "Additional exact-SKU demand; source selection still open. No current fire or future event disclosed."
+  },
+  "supplyCandidate": {
+    "stockId": "ST-IND-DEP-LYON-SKU-ISO100",
+    "unitCostCents": 12000,
+    "costSourceRef": "VAL-LYON-ISO100-V2",
+    "dedicatedDeliveryQuote": {
+      "id": "DQ-CRM-IND-000-V2",
+      "quantity": 20,
+      "unit": "palette",
+      "dispatchDate": "2026-10-28",
+      "arrivalDate": "2026-10-29",
+      "freightCents": 26000,
+      "handlingCents": 4000,
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "dataOrigin": "synthetic"
+    }
+  },
+  "publicSourceRef": "BOAMP-26-101741",
+  "publicRelation": "sector lead only; no real commercial relationship or exact-SKU equivalence established",
+  "release": "Operator/integrator must explicitly receive and seed this current synthetic intake. No production action or order is executed by this file."
+}

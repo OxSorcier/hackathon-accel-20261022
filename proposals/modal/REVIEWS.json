@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "status": "reviewed_revision_2",
+  "createdAt": "2026-10-22T10:27:46.315969+00:00",
+  "scope": "proposals/modal/REVIEW-SCOPE.json",
+  "scopeSha256": "1209488cc9fcd669ea0d8871aa8d2dade51af10083dbb0154e850986fc47f26b",
+  "revision": 2,
+  "realizerModel": "gpt-6.1-sol",
+  "realizerModelSource": "current session turn_context",
+  "isolation": "Two distinct read-only reviewers started with fresh contexts; neither received the other review conclusions.",
+  "reviews": [
+    {
+      "role": "counter-review",
+      "reviewer": "/root/pdf_counter_review",
+      "requestedModel": "gpt-6.1-sol",
+      "requestedEffort": "high",
+      "servedModel": "unverified",
+      "cycles": 2,
+      "finalVerdict": "No retained finding on revision 2",
+      "checks": [
+        "13 unit tests pass",
+        "Independent Unicode and exact character limit probes pass",
+        "Real public report: 17 pages, 40113 characters, matching document hash",
+        "All 10 revision-2 file hashes verified stable by reviewer before and after"
+      ]
+    },
+    {
+      "role": "contracts-and-architecture",
+      "reviewer": "/root/pdf_arch_review",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "servedModel": "unverified",
+      "cycles": 2,
+      "finalVerdict": "No confirmed defect on revision 2",
+      "checks": [
+        "13 unit tests pass",
+        "Reader, tests, contract and revision-2 manifest reread",
+        "Eight unchanged files covered by first review, final hash check delegated to parent"
+      ],
+      "hashCheckLimitation": "Reviewer tool wrapper refused its final hash command; parent independently verified all 10 revision-2 hashes and informed reviewer."
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "id": "unicode-nul-nfc-order",
+      "severity": "P2",
+      "observation": "NUL removal after NFC could produce non-NFC final text and change digests.",
+      "redEvidence": "A real ToUnicode PDF regression failed before the correction.",
+      "correction": "Remove NUL before NFC normalization and trim; count and hash the final text.",
+      "revalidation": "Both reviewers reread revision 2; 13 tests pass."
+    }
+  ],
+  "parentFinalHashCheck": {
+    "all10Stable": true,
+    "changedAfterReview": false
+  },
+  "separateProofs": {
+    "modalRuntime": "NOT_RUN_at_review",
+    "nodeAivenUi": "NOT_RUN_at_review"
+  },
+  "shipping": "No commit, push, merge or Node deployment performed."
+}

@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "scope": "Observed browser case target correction and English HTML document",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "e5e0d52744f844686b70bb6d116799587a84bcd90a2b2297b87637f9fc4d7b4f"
+    },
+    {
+      "path": "src/server/cases.ts",
+      "sha256": "7e49fc6a9b1f1c29c36b591856c0574ceab8a6ca85193052ecc7df6d5bb8bf70"
+    },
+    {
+      "path": "tests/integration/cases.test.ts",
+      "sha256": "48bf2d02307dd585f4ca7699375d58eb9239deb991ab9486b8857b2e48e22e8c"
+    }
+  ]
+}

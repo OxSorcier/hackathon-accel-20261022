@@ -1,0 +1,971 @@
+{
+  "checkedAt": "2026-10-22T09:48:35.001Z",
+  "environment": "local candidate server with Aiven and real OpenAI",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "run": {
+    "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914",
+    "mode": "direct",
+    "model": "gpt-5.4-mini",
+    "status": "proposal",
+    "traces": [
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:1",
+        "tool": "context_manifest",
+        "input": {},
+        "output": {
+          "revision": "R0",
+          "companyId": "CO-PARCOURS-PAUL-V2",
+          "memoryIds": [],
+          "assembledAt": "2026-10-22T09:48:27.056Z",
+          "snapshotAsOf": "2026-10-22T08:55:00+02:00",
+          "toolsVersion": "agent-tools/1",
+          "policyVersion": "P1",
+          "contractVersion": "C1"
+        },
+        "startedAt": "2026-10-22T09:48:27.057Z",
+        "completedAt": "2026-10-22T09:48:27.057Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:2",
+        "tool": "model_intent",
+        "input": {
+          "turn": 0,
+          "model": "gpt-5.4-mini",
+          "version": "openai-chat-completions/v1"
+        },
+        "output": {
+          "status": "started"
+        },
+        "startedAt": "2026-10-22T09:48:27.084Z",
+        "completedAt": "2026-10-22T09:48:27.084Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:3",
+        "tool": "model_result",
+        "input": {
+          "turn": 0
+        },
+        "output": {
+          "usage": {
+            "inputTokens": 789,
+            "totalTokens": 803,
+            "outputTokens": 14
+          },
+          "status": "tool_calls"
+        },
+        "startedAt": "2026-10-22T09:48:27.084Z",
+        "completedAt": "2026-10-22T09:48:28.981Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:4",
+        "tool": "read_company_context",
+        "input": {
+          "callId": "call_MlA30tY2VzTVmignahHZQA7C",
+          "arguments": {}
+        },
+        "output": {
+          "callId": "call_MlA30tY2VzTVmignahHZQA7C",
+          "result": {
+            "policy": {
+              "rules": [
+                "same SKU and same unit; no implicit substitution",
+                "reserved stock is unavailable until a versioned plan replaces coverage before all confirmed need dates",
+                "unconfirmed inbound is not confirmed coverage",
+                "replacement for B must be confirmed and available at least 2 calendar days before 2026-11-05",
+                "only simulation actions; authenticated actor role and amount checked on exact current plan",
+                "no implicit priority that breaks another confirmed order"
+              ],
+              "version": "P1",
+              "replacementMarginDays": 2,
+              "replacementOrderLineIds": [
+                "OL-B"
+              ]
+            },
+            "manifest": {
+              "revision": "R0",
+              "companyId": "CO-PARCOURS-PAUL-V2",
+              "memoryIds": [],
+              "assembledAt": "2026-10-22T09:48:27.056Z",
+              "snapshotAsOf": "2026-10-22T08:55:00+02:00",
+              "toolsVersion": "agent-tools/1",
+              "policyVersion": "P1",
+              "contractVersion": "C1"
+            },
+            "question": "Respond in English. Inspect the current commitments for Chantier A and compare admissible supply options, costs and dates while protecting Chantier B. Use only released facts. Prepare a non-executing proposal with the returned evaluation and option references, or ask for missing facts.",
+            "companyId": "CO-PARCOURS-PAUL-V2",
+            "dataOrigin": "synthetic"
+          },
+          "isError": false
+        },
+        "startedAt": "2026-10-22T09:48:29.013Z",
+        "completedAt": "2026-10-22T09:48:29.022Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:5",
+        "tool": "model_intent",
+        "input": {
+          "turn": 1,
+          "model": "gpt-5.4-mini",
+          "version": "openai-chat-completions/v1"
+        },
+        "output": {
+          "status": "started"
+        },
+        "startedAt": "2026-10-22T09:48:29.061Z",
+        "completedAt": "2026-10-22T09:48:29.061Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:6",
+        "tool": "model_result",
+        "input": {
+          "turn": 1
+        },
+        "output": {
+          "usage": {
+            "inputTokens": 1084,
+            "totalTokens": 1098,
+            "outputTokens": 14
+          },
+          "status": "tool_calls"
+        },
+        "startedAt": "2026-10-22T09:48:29.061Z",
+        "completedAt": "2026-10-22T09:48:30.490Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:7",
+        "tool": "read_commitments",
+        "input": {
+          "callId": "call_UysaOPds9l4kWjULivAJ65WW",
+          "arguments": {}
+        },
+        "output": {
+          "callId": "call_UysaOPds9l4kWjULivAJ65WW",
+          "result": {
+            "asOf": "2026-10-22T08:55:00+02:00",
+            "lines": [
+              {
+                "id": "OL-A",
+                "unit": "palette",
+                "order_id": "ORD-A",
+                "quantity": 8,
+                "product_id": "SKU-ISO100"
+              },
+              {
+                "id": "OL-B",
+                "unit": "palette",
+                "order_id": "ORD-B",
+                "quantity": 8,
+                "product_id": "SKU-ISO100"
+              }
+            ],
+            "orders": [
+              {
+                "id": "ORD-A",
+                "status": "confirmed",
+                "depot_id": "DEP-LILLE",
+                "need_date": "2026-10-23"
+              },
+              {
+                "id": "ORD-B",
+                "status": "confirmed",
+                "depot_id": "DEP-CENTRE",
+                "need_date": "2026-11-05"
+              }
+            ],
+            "inbound": [
+              {
+                "id": "POL-1",
+                "unit": "palette",
+                "depot_id": "DEP-LILLE",
+                "quantity": 8,
+                "product_id": "SKU-ISO100",
+                "expected_date": "2026-10-23",
+                "purchase_order_id": "PO-1"
+              },
+              {
+                "id": "POL-2",
+                "unit": "palette",
+                "depot_id": "DEP-CENTRE",
+                "quantity": 8,
+                "product_id": "SKU-ISO100",
+                "expected_date": "2026-10-29",
+                "purchase_order_id": "PO-2"
+              }
+            ],
+            "revision": "R0",
+            "companyId": "CO-PARCOURS-PAUL-V2",
+            "emergency": [
+              {
+                "id": "URG-1",
+                "unit": "palette",
+                "valid_on": "2026-10-22",
+                "confirmed": true,
+                "lead_days": 1,
+                "product_id": "SKU-ISO100",
+                "freightCents": 18000,
+                "unitPriceCents": 15500,
+                "available_quantity": 8,
+                "destination_depot_id": "DEP-LILLE"
+              }
+            ],
+            "inventory": [
+              {
+                "id": "ST-L100",
+                "unit": "palette",
+                "depot_id": "DEP-LILLE",
+                "product_id": "SKU-ISO100",
+                "physical_quantity": 0
+              },
+              {
+                "id": "ST-C100",
+                "unit": "palette",
+                "depot_id": "DEP-CENTRE",
+                "product_id": "SKU-ISO100",
+                "physical_quantity": 8
+              },
+              {
+                "id": "ST-S100",
+                "unit": "palette",
+                "depot_id": "DEP-SUD",
+                "product_id": "SKU-ISO100",
+                "physical_quantity": 0
+              },
+              {
+                "id": "ST-S120",
+                "unit": "palette",
+                "depot_id": "DEP-SUD",
+                "product_id": "SKU-ISO120",
+                "physical_quantity": 8
+              }
+            ],
+            "purchases": [
+              {
+                "id": "PO-1",
+                "status": "confirmed"
+              },
+              {
+                "id": "PO-2",
+                "status": "planned_unconfirmed"
+              }
+            ],
+            "dataOrigin": "synthetic",
+            "transports": [
+              {
+                "id": "TR-C-L",
+                "unit": "palette",
+                "capacity": 8,
+                "valid_on": "2026-10-22",
+                "confirmed": true,
+                "costCents": 12000,
+                "lead_days": 1,
+                "product_id": "SKU-ISO100",
+                "to_depot_id": "DEP-LILLE",
+                "from_depot_id": "DEP-CENTRE"
+              }
+            ],
+            "reservations": [
+              {
+                "id": "RES-B",
+                "unit": "palette",
+                "status": "active",
+                "quantity": 8,
+                "stock_id": "ST-C100",
+                "order_line_id": "OL-B"
+              }
+            ],
+            "policyVersion": "P1",
+            "inboundAllocations": [
+              {
+                "id": "ALLOC-A",
+                "unit": "palette",
+                "quantity": 8,
+                "order_line_id": "OL-A",
+                "purchase_order_line_id": "POL-1"
+              }
+            ]
+          },
+          "isError": false
+        },
+        "startedAt": "2026-10-22T09:48:30.547Z",
+        "completedAt": "2026-10-22T09:48:30.555Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:8",
+        "tool": "model_intent",
+        "input": {
+          "turn": 2,
+          "model": "gpt-5.4-mini",
+          "version": "openai-chat-completions/v1"
+        },
+        "output": {
+          "status": "started"
+        },
+        "startedAt": "2026-10-22T09:48:30.583Z",
+        "completedAt": "2026-10-22T09:48:30.583Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:9",
+        "tool": "model_result",
+        "input": {
+          "turn": 2
+        },
+        "output": {
+          "usage": {
+            "inputTokens": 1753,
+            "totalTokens": 1774,
+            "outputTokens": 21
+          },
+          "status": "tool_calls"
+        },
+        "startedAt": "2026-10-22T09:48:30.583Z",
+        "completedAt": "2026-10-22T09:48:31.870Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:10",
+        "tool": "evaluate_options",
+        "input": {
+          "callId": "call_RNlEMloYZi5yQ9K260oFOWsC",
+          "arguments": {
+            "targetOrderLineId": "OL-A"
+          }
+        },
+        "output": {
+          "callId": "call_RNlEMloYZi5yQ9K260oFOWsC",
+          "result": {
+            "id": "evaluation:1898333fb2f3d07eeffaed030f2a10569213e26935c27d37f9efdc6915176ce0",
+            "facts": {
+              "coverage": [
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-LILLE",
+                  "orderId": "ORD-A",
+                  "needDate": "2026-10-23",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "POL-1",
+                      "availableDate": "2026-10-23"
+                    }
+                  ],
+                  "orderLineId": "OL-A",
+                  "requiredDate": "2026-10-23"
+                },
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-CENTRE",
+                  "orderId": "ORD-B",
+                  "needDate": "2026-11-05",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [
+                    "UNCONFIRMED_INBOUND:POL-2"
+                  ],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "ST-C100",
+                      "availableDate": "2026-10-22"
+                    }
+                  ],
+                  "orderLineId": "OL-B",
+                  "requiredDate": "2026-11-05"
+                }
+              ],
+              "dataOrigin": "synthetic",
+              "targetOrderLineId": "OL-A"
+            },
+            "options": [
+              {
+                "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+                "kind": "wait",
+                "label": "Keep current coverage",
+                "status": "feasible",
+                "costEur": 0,
+                "effects": {
+                  "unit": "palette",
+                  "quoteId": null,
+                  "coverage": [
+                    {
+                      "unit": "palette",
+                      "covered": 8,
+                      "depotId": "DEP-LILLE",
+                      "orderId": "ORD-A",
+                      "needDate": "2026-10-23",
+                      "quantity": 8,
+                      "shortage": 0,
+                      "unknowns": [],
+                      "productId": "SKU-ISO100",
+                      "allocations": [
+                        {
+                          "quantity": 8,
+                          "sourceId": "POL-1",
+                          "availableDate": "2026-10-23"
+                        }
+                      ],
+                      "orderLineId": "OL-A",
+                      "requiredDate": "2026-10-23"
+                    },
+                    {
+                      "unit": "palette",
+                      "covered": 8,
+                      "depotId": "DEP-CENTRE",
+                      "orderId": "ORD-B",
+                      "needDate": "2026-11-05",
+                      "quantity": 8,
+                      "shortage": 0,
+                      "unknowns": [
+                        "UNCONFIRMED_INBOUND:POL-2"
+                      ],
+                      "productId": "SKU-ISO100",
+                      "allocations": [
+                        {
+                          "quantity": 8,
+                          "sourceId": "ST-C100",
+                          "availableDate": "2026-10-22"
+                        }
+                      ],
+                      "orderLineId": "OL-B",
+                      "requiredDate": "2026-11-05"
+                    }
+                  ],
+                  "quantity": 8,
+                  "productId": "SKU-ISO100",
+                  "toDepotId": "DEP-LILLE",
+                  "arrivalDate": null,
+                  "fromDepotId": null,
+                  "simulationOnly": true,
+                  "targetOrderLineId": "OL-A"
+                },
+                "reasons": [],
+                "conditions": []
+              }
+            ],
+            "revision": "R0",
+            "unknowns": [
+              "UNCONFIRMED_INBOUND:POL-2"
+            ],
+            "companyId": "CO-PARCOURS-PAUL-V2",
+            "constraints": [
+              "SAME_SKU_AND_UNIT",
+              "NO_STOCK_EFFECT",
+              "SERVER_DECISION_REQUIRED"
+            ],
+            "evaluatedAt": "2026-10-22T08:55:00+02:00",
+            "policyVersion": "P1"
+          },
+          "isError": false
+        },
+        "startedAt": "2026-10-22T09:48:31.900Z",
+        "completedAt": "2026-10-22T09:48:31.922Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:11",
+        "tool": "model_intent",
+        "input": {
+          "turn": 3,
+          "model": "gpt-5.4-mini",
+          "version": "openai-chat-completions/v1"
+        },
+        "output": {
+          "status": "started"
+        },
+        "startedAt": "2026-10-22T09:48:31.957Z",
+        "completedAt": "2026-10-22T09:48:31.957Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:12",
+        "tool": "model_result",
+        "input": {
+          "turn": 3
+        },
+        "output": {
+          "usage": {
+            "inputTokens": 2467,
+            "totalTokens": 2882,
+            "outputTokens": 415
+          },
+          "status": "tool_calls"
+        },
+        "startedAt": "2026-10-22T09:48:31.957Z",
+        "completedAt": "2026-10-22T09:48:34.267Z"
+      },
+      {
+        "id": "4c73b502-7db7-4d5b-a284-ed01ba55d914:trace:13",
+        "tool": "prepare_proposal",
+        "input": {
+          "callId": "call_tfBVSvDUs2qVz6VKpbvdzPd6",
+          "arguments": {
+            "title": "Proposal for Chantier A: Keep current coverage",
+            "summary": "Released facts show Chantier A (OL-A) is already fully covered: 8 palette of SKU-ISO100 for DEP-LILLE with allocation from confirmed inbound POL-1 available on 2026-10-23, matching the need date. Chantier B (OL-B) is also fully covered by active reservation RES-B on ST-C100 for 8 palette of SKU-ISO100 at DEP-CENTRE, available from 2026-10-22. The only noted uncertainty is unconfirmed inbound POL-2, which must not be treated as confirmed coverage. The only evaluated admissible option for OL-A is 'Keep current coverage' with cost EUR 0 and no impact on OL-B. No stock or purchase action is proposed.",
+            "optionId": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+            "evaluationId": "evaluation:1898333fb2f3d07eeffaed030f2a10569213e26935c27d37f9efdc6915176ce0"
+          }
+        },
+        "output": {
+          "callId": "call_tfBVSvDUs2qVz6VKpbvdzPd6",
+          "result": {
+            "status": "pending",
+            "revision": "R0",
+            "conditions": [],
+            "proposalId": "proposal:4c73b502-7db7-4d5b-a284-ed01ba55d914",
+            "nonExecuting": true
+          },
+          "isError": false
+        },
+        "startedAt": "2026-10-22T09:48:34.320Z",
+        "completedAt": "2026-10-22T09:48:34.341Z"
+      }
+    ],
+    "actorId": "EMP-PAUL",
+    "message": "Proposal ready for review. No stock was changed.",
+    "question": "Respond in English. Inspect the current commitments for Chantier A and compare admissible supply options, costs and dates while protecting Chantier B. Use only released facts. Prepare a non-executing proposal with the returned evaluation and option references, or ask for missing facts.",
+    "revision": "R0",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "createdAt": "2026-10-22T09:48:26.566Z",
+    "proposalId": "proposal:4c73b502-7db7-4d5b-a284-ed01ba55d914",
+    "completedAt": "2026-10-22T09:48:34.470Z",
+    "operationKey": "febcfc84-7c8d-4cd1-852a-45a379af2287",
+    "policyVersion": "P1"
+  },
+  "proposal": {
+    "id": "proposal:4c73b502-7db7-4d5b-a284-ed01ba55d914",
+    "runId": "4c73b502-7db7-4d5b-a284-ed01ba55d914",
+    "title": "Proposal for Chantier A: Keep current coverage",
+    "status": "pending",
+    "summary": "Released facts show Chantier A (OL-A) is already fully covered: 8 palette of SKU-ISO100 for DEP-LILLE with allocation from confirmed inbound POL-1 available on 2026-10-23, matching the need date. Chantier B (OL-B) is also fully covered by active reservation RES-B on ST-C100 for 8 palette of SKU-ISO100 at DEP-CENTRE, available from 2026-10-22. The only noted uncertainty is unconfirmed inbound POL-2, which must not be treated as confirmed coverage. The only evaluated admissible option for OL-A is 'Keep current coverage' with cost EUR 0 and no impact on OL-B. No stock or purchase action is proposed.",
+    "optionId": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+    "revision": "R0",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "createdAt": "2026-10-22T09:48:34.330Z",
+    "conditions": [],
+    "evaluation": {
+      "id": "evaluation:1898333fb2f3d07eeffaed030f2a10569213e26935c27d37f9efdc6915176ce0",
+      "facts": {
+        "coverage": [
+          {
+            "unit": "palette",
+            "covered": 8,
+            "depotId": "DEP-LILLE",
+            "orderId": "ORD-A",
+            "needDate": "2026-10-23",
+            "quantity": 8,
+            "shortage": 0,
+            "unknowns": [],
+            "productId": "SKU-ISO100",
+            "allocations": [
+              {
+                "quantity": 8,
+                "sourceId": "POL-1",
+                "availableDate": "2026-10-23"
+              }
+            ],
+            "orderLineId": "OL-A",
+            "requiredDate": "2026-10-23"
+          },
+          {
+            "unit": "palette",
+            "covered": 8,
+            "depotId": "DEP-CENTRE",
+            "orderId": "ORD-B",
+            "needDate": "2026-11-05",
+            "quantity": 8,
+            "shortage": 0,
+            "unknowns": [
+              "UNCONFIRMED_INBOUND:POL-2"
+            ],
+            "productId": "SKU-ISO100",
+            "allocations": [
+              {
+                "quantity": 8,
+                "sourceId": "ST-C100",
+                "availableDate": "2026-10-22"
+              }
+            ],
+            "orderLineId": "OL-B",
+            "requiredDate": "2026-11-05"
+          }
+        ],
+        "dataOrigin": "synthetic",
+        "targetOrderLineId": "OL-A"
+      },
+      "options": [
+        {
+          "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+          "kind": "wait",
+          "label": "Keep current coverage",
+          "status": "feasible",
+          "costEur": 0,
+          "effects": {
+            "unit": "palette",
+            "quoteId": null,
+            "coverage": [
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "POL-1",
+                    "availableDate": "2026-10-23"
+                  }
+                ],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "quantity": 8,
+            "productId": "SKU-ISO100",
+            "toDepotId": "DEP-LILLE",
+            "arrivalDate": null,
+            "fromDepotId": null,
+            "simulationOnly": true,
+            "targetOrderLineId": "OL-A"
+          },
+          "reasons": [],
+          "conditions": []
+        }
+      ],
+      "revision": "R0",
+      "unknowns": [
+        "UNCONFIRMED_INBOUND:POL-2"
+      ],
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "constraints": [
+        "SAME_SKU_AND_UNIT",
+        "NO_STOCK_EFFECT",
+        "SERVER_DECISION_REQUIRED"
+      ],
+      "evaluatedAt": "2026-10-22T08:55:00+02:00",
+      "policyVersion": "P1"
+    },
+    "policyVersion": "P1"
+  },
+  "decision": {
+    "id": "proposal:4c73b502-7db7-4d5b-a284-ed01ba55d914",
+    "runId": "4c73b502-7db7-4d5b-a284-ed01ba55d914",
+    "title": "Proposal for Chantier A: Keep current coverage",
+    "status": "approved",
+    "summary": "Released facts show Chantier A (OL-A) is already fully covered: 8 palette of SKU-ISO100 for DEP-LILLE with allocation from confirmed inbound POL-1 available on 2026-10-23, matching the need date. Chantier B (OL-B) is also fully covered by active reservation RES-B on ST-C100 for 8 palette of SKU-ISO100 at DEP-CENTRE, available from 2026-10-22. The only noted uncertainty is unconfirmed inbound POL-2, which must not be treated as confirmed coverage. The only evaluated admissible option for OL-A is 'Keep current coverage' with cost EUR 0 and no impact on OL-B. No stock or purchase action is proposed.",
+    "optionId": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+    "revision": "R0",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "createdAt": "2026-10-22T09:48:34.330Z",
+    "conditions": [],
+    "evaluation": {
+      "id": "evaluation:1898333fb2f3d07eeffaed030f2a10569213e26935c27d37f9efdc6915176ce0",
+      "facts": {
+        "coverage": [
+          {
+            "unit": "palette",
+            "covered": 8,
+            "depotId": "DEP-LILLE",
+            "orderId": "ORD-A",
+            "needDate": "2026-10-23",
+            "quantity": 8,
+            "shortage": 0,
+            "unknowns": [],
+            "productId": "SKU-ISO100",
+            "allocations": [
+              {
+                "quantity": 8,
+                "sourceId": "POL-1",
+                "availableDate": "2026-10-23"
+              }
+            ],
+            "orderLineId": "OL-A",
+            "requiredDate": "2026-10-23"
+          },
+          {
+            "unit": "palette",
+            "covered": 8,
+            "depotId": "DEP-CENTRE",
+            "orderId": "ORD-B",
+            "needDate": "2026-11-05",
+            "quantity": 8,
+            "shortage": 0,
+            "unknowns": [
+              "UNCONFIRMED_INBOUND:POL-2"
+            ],
+            "productId": "SKU-ISO100",
+            "allocations": [
+              {
+                "quantity": 8,
+                "sourceId": "ST-C100",
+                "availableDate": "2026-10-22"
+              }
+            ],
+            "orderLineId": "OL-B",
+            "requiredDate": "2026-11-05"
+          }
+        ],
+        "dataOrigin": "synthetic",
+        "targetOrderLineId": "OL-A"
+      },
+      "options": [
+        {
+          "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+          "kind": "wait",
+          "label": "Keep current coverage",
+          "status": "feasible",
+          "costEur": 0,
+          "effects": {
+            "unit": "palette",
+            "quoteId": null,
+            "coverage": [
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "POL-1",
+                    "availableDate": "2026-10-23"
+                  }
+                ],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "quantity": 8,
+            "productId": "SKU-ISO100",
+            "toDepotId": "DEP-LILLE",
+            "arrivalDate": null,
+            "fromDepotId": null,
+            "simulationOnly": true,
+            "targetOrderLineId": "OL-A"
+          },
+          "reasons": [],
+          "conditions": []
+        }
+      ],
+      "revision": "R0",
+      "unknowns": [
+        "UNCONFIRMED_INBOUND:POL-2"
+      ],
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "constraints": [
+        "SAME_SKU_AND_UNIT",
+        "NO_STOCK_EFFECT",
+        "SERVER_DECISION_REQUIRED"
+      ],
+      "evaluatedAt": "2026-10-22T08:55:00+02:00",
+      "policyVersion": "P1"
+    },
+    "policyVersion": "P1"
+  },
+  "persistedReadback": {
+    "id": "proposal:4c73b502-7db7-4d5b-a284-ed01ba55d914",
+    "runId": "4c73b502-7db7-4d5b-a284-ed01ba55d914",
+    "title": "Proposal for Chantier A: Keep current coverage",
+    "status": "approved",
+    "summary": "Released facts show Chantier A (OL-A) is already fully covered: 8 palette of SKU-ISO100 for DEP-LILLE with allocation from confirmed inbound POL-1 available on 2026-10-23, matching the need date. Chantier B (OL-B) is also fully covered by active reservation RES-B on ST-C100 for 8 palette of SKU-ISO100 at DEP-CENTRE, available from 2026-10-22. The only noted uncertainty is unconfirmed inbound POL-2, which must not be treated as confirmed coverage. The only evaluated admissible option for OL-A is 'Keep current coverage' with cost EUR 0 and no impact on OL-B. No stock or purchase action is proposed.",
+    "optionId": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+    "revision": "R0",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "createdAt": "2026-10-22T09:48:34.330Z",
+    "conditions": [],
+    "evaluation": {
+      "id": "evaluation:1898333fb2f3d07eeffaed030f2a10569213e26935c27d37f9efdc6915176ce0",
+      "facts": {
+        "coverage": [
+          {
+            "unit": "palette",
+            "covered": 8,
+            "depotId": "DEP-LILLE",
+            "orderId": "ORD-A",
+            "needDate": "2026-10-23",
+            "quantity": 8,
+            "shortage": 0,
+            "unknowns": [],
+            "productId": "SKU-ISO100",
+            "allocations": [
+              {
+                "quantity": 8,
+                "sourceId": "POL-1",
+                "availableDate": "2026-10-23"
+              }
+            ],
+            "orderLineId": "OL-A",
+            "requiredDate": "2026-10-23"
+          },
+          {
+            "unit": "palette",
+            "covered": 8,
+            "depotId": "DEP-CENTRE",
+            "orderId": "ORD-B",
+            "needDate": "2026-11-05",
+            "quantity": 8,
+            "shortage": 0,
+            "unknowns": [
+              "UNCONFIRMED_INBOUND:POL-2"
+            ],
+            "productId": "SKU-ISO100",
+            "allocations": [
+              {
+                "quantity": 8,
+                "sourceId": "ST-C100",
+                "availableDate": "2026-10-22"
+              }
+            ],
+            "orderLineId": "OL-B",
+            "requiredDate": "2026-11-05"
+          }
+        ],
+        "dataOrigin": "synthetic",
+        "targetOrderLineId": "OL-A"
+      },
+      "options": [
+        {
+          "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+          "kind": "wait",
+          "label": "Keep current coverage",
+          "status": "feasible",
+          "costEur": 0,
+          "effects": {
+            "unit": "palette",
+            "quoteId": null,
+            "coverage": [
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "POL-1",
+                    "availableDate": "2026-10-23"
+                  }
+                ],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "quantity": 8,
+            "productId": "SKU-ISO100",
+            "toDepotId": "DEP-LILLE",
+            "arrivalDate": null,
+            "fromDepotId": null,
+            "simulationOnly": true,
+            "targetOrderLineId": "OL-A"
+          },
+          "reasons": [],
+          "conditions": []
+        }
+      ],
+      "revision": "R0",
+      "unknowns": [
+        "UNCONFIRMED_INBOUND:POL-2"
+      ],
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "constraints": [
+        "SAME_SKU_AND_UNIT",
+        "NO_STOCK_EFFECT",
+        "SERVER_DECISION_REQUIRED"
+      ],
+      "evaluatedAt": "2026-10-22T08:55:00+02:00",
+      "policyVersion": "P1"
+    },
+    "policyVersion": "P1"
+  },
+  "inventoryUnchanged": true,
+  "costEur": null,
+  "costEvidence": "Not supplied by the provider response; token usage, when supplied, is in model_result traces.",
+  "limits": [
+    "This question-only run does not prove the public-alert case chain.",
+    "Candidate code and UI are still in final exact-code review.",
+    "No purchase, stock movement or external communication executed."
+  ]
+}

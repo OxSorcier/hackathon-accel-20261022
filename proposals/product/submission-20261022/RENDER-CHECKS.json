@@ -1,0 +1,90 @@
+{
+  "browser": "Aside",
+  "method": "Same-origin iframe widths in real local browser. This is document rendering, not product journey QA.",
+  "checks": [
+    {
+      "name": "ONE-PAGER",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "ONE-PAGER",
+      "width": 768,
+      "scrollWidth": 768,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "ONE-PAGER",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "EVIDENCE-IT-WORKS",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "EVIDENCE-IT-WORKS",
+      "width": 768,
+      "scrollWidth": 768,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "EVIDENCE-IT-WORKS",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "DATA-LAYER",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "DATA-LAYER",
+      "width": 768,
+      "scrollWidth": 768,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "DATA-LAYER",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "SUBMISSION-COPY",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "SUBMISSION-COPY",
+      "width": 768,
+      "scrollWidth": 768,
+      "font": true,
+      "outside": false
+    },
+    {
+      "name": "SUBMISSION-COPY",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": true,
+      "outside": false
+    }
+  ]
+}

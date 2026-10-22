@@ -1,0 +1,10 @@
+{
+  "status": "FAILED_RECONCILE_BEFORE_ANY_REPEAT",
+  "phase": "first",
+  "code": "WRONG_RETRIEVED_EVIDENCE",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "sourceFingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631",
+  "manifestDigest": "8d5dd09d6a4c0ca15bb9f5ab61c0adcea46544a32aca2914e1430d311f8749f4",
+  "checkedAt": "2026-10-22T11:33:14.043Z",
+  "noAutomaticModelRetry": true
+}

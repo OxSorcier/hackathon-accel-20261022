@@ -1,0 +1,91 @@
+{
+  "schema": "accel-industrial-profile-proposal/1",
+  "status": "PROPOSED_NOT_IMPORTED",
+  "company_id": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "display_name": "Industrial Materials Group (synthetic)",
+  "effective_at": "2026-10-22",
+  "authority": "Erwan requested an industrial multi-site France/Europe customer; detailed values are author proposals, not customer observations.",
+  "activity": {
+    "primary": "distribution of timber and building materials",
+    "extension_proposed": "cutting and finishing timber and panels at Nantes and Lyon",
+    "manufacturing_proven": false,
+    "processing_capacity_modelled": false
+  },
+  "persona": {
+    "primary_user": "Paul, group operations director",
+    "daily_collaborators": [
+      "procurement planner",
+      "site logistics lead",
+      "commercial account manager"
+    ],
+    "economic_buyer": "operations director with finance and IT approval",
+    "observed_user_research": false
+  },
+  "sites": [
+    {
+      "id": "DEP-LILLE",
+      "name": "Lille",
+      "country": "FR",
+      "region": "Hauts-de-France",
+      "role": "distribution"
+    },
+    {
+      "id": "DEP-CENTRE",
+      "name": "Centre",
+      "country": "FR",
+      "region": "Centre-Val de Loire",
+      "role": "distribution"
+    },
+    {
+      "id": "DEP-SUD",
+      "name": "Sud",
+      "country": "FR",
+      "region": "Provence-Alpes-Cote d Azur",
+      "role": "distribution"
+    },
+    {
+      "id": "DEP-NANTES",
+      "name": "Nantes",
+      "country": "FR",
+      "region": "Pays de la Loire",
+      "role": "finishing_and_distribution"
+    },
+    {
+      "id": "DEP-LYON",
+      "name": "Lyon",
+      "country": "FR",
+      "region": "Auvergne-Rhone-Alpes",
+      "role": "finishing_and_distribution"
+    },
+    {
+      "id": "DEP-BRUSSELS",
+      "name": "Brussels",
+      "country": "BE",
+      "region": "Brussels",
+      "role": "distribution"
+    }
+  ],
+  "systems": {
+    "erp_wms": "synthetic relational JSON only",
+    "crm": "synthetic opportunities only",
+    "erp_export_import_tested": false,
+    "erp_api_tested": false,
+    "crm_api_tested": false
+  },
+  "data_provenance": {
+    "origin": "synthetic",
+    "base": "fixtures/company/dataset.json",
+    "base_ids_retained_in_separate_candidate": true,
+    "product_fixture_modified": false,
+    "generated_order_lines": 9998,
+    "total_order_lines": 10000
+  },
+  "authority_boundary": "This proposal and validation receipts are builder material. Do not load this file into a model or seed a session without owner acceptance. Only explicit business facts may be released.",
+  "limits": [
+    "No manufacturing BOM, work orders, yield or processing-capacity calculation.",
+    "No demand confirmation, selling prices or commercial margin calculation.",
+    "No verified relationships to real publishers or suppliers.",
+    "No private industrial customer dataset.",
+    "No generated history or inbound purchase volume beyond the preserved initial case."
+  ]
+}

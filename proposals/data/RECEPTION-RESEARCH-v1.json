@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T10:53:20.012160+00:00",
+  "status": "DATA_MODULE_REVIEWED_TESTED_AND_RECEIVED",
+  "scopeSha256": "8f416b7e358d9f779eeb4adf75376198512d77aaf75faa6050f0f07edc59a479",
+  "ready": {
+    "path": "proposals/data/READY-RESEARCH-v1.json",
+    "sha256": "2a511f13dc344a37e513fc75816ce08c7af758a7d61be465044705a3fa2ecba5"
+  },
+  "acknowledgment": {
+    "path": "proposals/integration/RECEIVED-DATA-RESEARCH.json",
+    "sha256": "0aa47835af2a2ac58d62093c6df64a98943d3e0ab2461bb54f2b84939d481027"
+  },
+  "all3CurrentPinsMatch": true,
+  "reviews": "proposals/data/RESEARCH-REVIEWS-v1.json",
+  "verification": {
+    "dataWatchTests": 49,
+    "realLocalPostgresTests": 28,
+    "researchPostgresTests": 13,
+    "strictTypecheck": "PASS"
+  },
+  "integrationOwner": "Existing Accel integration chat, no parallel coordinator",
+  "remainingOwnerAcceptance": "Actual new-session model/Aiven R1 and controlled-change R2 are owned and currently executed by integration/agent owners on their separate3002 candidate. This receipt does not certify those results.",
+  "existingSourceFlow": "proposals/data/KEENABLE-FINAL-FLOW-READBACK.json",
+  "limits": [
+    "Source observations are not automatically business facts or legal applicability",
+    "Controlled input remains explicitly synthetic test material",
+    "Publisher freshness and complete sector coverage remain unproved",
+    "No commit, push, deployment, paid service or external account created by data owner"
+  ]
+}

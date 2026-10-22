@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recherche multisource"
+  short_description: "Recherche proportionnée, sources et conclusions vérifiées"
+  default_prompt: "Utilise $recherche-multisource : choisis la profondeur adaptée, croise notre contexte, les sources originales et les retours de terrain utiles, puis vérifie les conclusions importantes et indique les limites."

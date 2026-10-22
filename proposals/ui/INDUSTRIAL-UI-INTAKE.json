@@ -1,0 +1,156 @@
+{
+  "version": 3,
+  "date": "2026-10-22",
+  "status": "FIRST_REAL_CAPTURE_PARSED_CENTRAL_DTO_REVIEW_RUNNING",
+  "owner": "Existing API owner: adapters/parsers/tests. Physical Impact owner: frontend. Integrator: contracts/server/assembly.",
+  "sourcesRead": [
+    "src/contracts/industrial.ts",
+    "docs/PRODUCT-VISION.md",
+    "proposals/product/alignment-20261022/DEMO-SCRIPT.md",
+    "proposals/ui/ADAPTOPS-DEMO-CHECKPOINT.json"
+  ],
+  "direction": "Current frontend belongs to the native human Physical Impact mandate. Earlier direction A and raster proposals remain historical references; API owner makes no composition changes.",
+  "connectionGate": "Typed routes in proposals/integration/INDUSTRIAL-HTTP-CONTRACT.json received. UI boundary uses those exact paths; live GET sample and full runtime reception are still awaited from the integrator.",
+  "mapping": [
+    {
+      "block": "Known company and received data",
+      "contract": [
+        "IndustrialContext.companyProfile",
+        "IndustrialContext.receivedAt",
+        "IndustrialContext.revision",
+        "IndustrialContext.qualificationRevision",
+        "CompanySnapshot.revision",
+        "CompanySnapshot.policyVersion"
+      ],
+      "display": "Activity, geography, origin, received date and distinct source/business revisions. No 10k counter from a partial array length. Backend must identify totals and their scope if displayed."
+    },
+    {
+      "block": "Prepared report",
+      "contract": [
+        "IndustrialReport.status",
+        "IndustrialReport.title",
+        "IndustrialReport.summary",
+        "IndustrialReport.createdAt",
+        "IndustrialReport.basis",
+        "IndustrialAnalysisIntent.status"
+      ],
+      "states": [
+        "loading",
+        "no report received",
+        "ready/queued/running analysis",
+        "prepared",
+        "needs_input",
+        "stale",
+        "uncertain",
+        "read error with last received report retained"
+      ],
+      "display": "Saved report before the follow-up question. Do not equate a saved report with an automatic trigger unless its intent/receipt attests that trigger."
+    },
+    {
+      "block": "Incident and public evidence",
+      "contract": [
+        "ReleasedIndustrialEvent.event",
+        "ReleasedIndustrialEvent.confirmations",
+        "ReleasedIndustrialEvent.researchDependencies"
+      ],
+      "display": "Declared synthetic industrial-fire scenario and confirmed synthetic interruptions remain distinct from public-source observations. Exact source references need server hydration, including title, URL, dates, content hash and provenance."
+    },
+    {
+      "block": "Why this concerns us",
+      "contract": [
+        "IndustrialContext.supplierDependencies",
+        "IndustrialContext.supplierSites",
+        "IndustrialContext.competitors",
+        "IndustrialContext.projectOwners",
+        "IndustrialAssessment.affectedOrderLineIds"
+      ],
+      "display": "Show the received native entity links and provenance. Never infer a supplier/concurrent/customer relation from a public title or text match."
+    },
+    {
+      "block": "Risk, opportunity or mixed impact",
+      "contract": [
+        "IndustrialAssessment.impact",
+        "IndustrialAssessment.coverage",
+        "IndustrialAssessment.qualifiedDemandIds",
+        "IndustrialAssessment.constraints",
+        "IndustrialAssessment.unknowns"
+      ],
+      "display": "Render the server impact enum and known missing facts. Qualified synthetic CRM demand is not a live customer commitment. Unknown or unreceived opportunity remains explicit. Coverage.protectedCommitments is projected protection if the candidate plan is applied, never completed deliveries. Preserve BOUNDED_CANDIDATE_NOT_GLOBAL_OPTIMUM when supplied."
+    },
+    {
+      "block": "Common purchasing, operations and commercial plan",
+      "contract": [
+        "IndustrialReport.recommendedPlanId",
+        "IndustrialAssessment.plans",
+        "CoordinatedIndustrialPlan.steps",
+        "CoordinatedIndustrialPlan.allocations",
+        "CoordinatedIndustrialPlan.economics",
+        "CoordinatedIndustrialPlan.status"
+      ],
+      "display": "Open the exact recommended plan when present, otherwise explain the missing result. Steps use their server kind and dependencies. Display monetary cents as EUR, without recomputing feasibility, capacity or contribution in the UI. Null economics stay unknown."
+    },
+    {
+      "block": "Human decision",
+      "contract": [
+        "IndustrialApproval.id",
+        "IndustrialApproval.planId",
+        "IndustrialApproval.planVersion",
+        "IndustrialApproval.planHash",
+        "IndustrialApproval.basis",
+        "IndustrialApproval.decision"
+      ],
+      "display": "Separate plan review and approval receipt. Never send a C1 proposal decision for an industrial plan. Exact command route/body, role/permission receipt and stale/conflict codes are integrator dependencies."
+    },
+    {
+      "block": "Demo execution and readback",
+      "contract": [
+        "IndustrialDemoExecution.simulation",
+        "IndustrialDemoExecution.approvalId",
+        "IndustrialDemoExecution.operationKey",
+        "IndustrialDemoExecution.planHash",
+        "IndustrialDemoExecution.status",
+        "IndustrialDemoExecution.records",
+        "IndustrialDemoExecution.beforeRevision",
+        "IndustrialDemoExecution.afterRevision",
+        "IndustrialDemoExecution.completedAt",
+        "IndustrialDemoExecution.code"
+      ],
+      "display": "Simulation label and explicit applied/failed/uncertain state. An approval never marks an action executed. Show actual native result records and received before/after revisions. No automatic retry after an uncertain command."
+    },
+    {
+      "block": "Correction and reevaluation",
+      "contract": [
+        "IndustrialBasis",
+        "IndustrialReport.status",
+        "IndustrialAnalysisIntent.status",
+        "IndustrialApproval.basis",
+        "IndustrialDemoExecution.beforeRevision"
+      ],
+      "display": "Preserve prior report/plan/decision/result versions and mark stale. Request reevaluation through the published command. Operator-only release or correction does not become a user form by default."
+    }
+  ],
+  "httpNeededFromIntegrator": [
+    "Actual central DTO emission for read-only validation.",
+    "Integrated analysis/question/decision/simulation runtime observations and durable-state readback."
+  ],
+  "validationPlanned": [
+    "Aside first, real candidate readback after route receipt",
+    "Nominal, no report, read failure, needs input, stale, conflicting version and uncertain command",
+    "Wrong company/actor/plan/version/hash and mismatched source references",
+    "Approved versus executed distinction and exact durable result IDs",
+    "CSS small-screen measurements and keyboard flow",
+    "Two independent exact-code reviews and a separate industrial UI manifest"
+  ],
+  "implemented": "BOUNDARY_ONLY_NOT_FULL_UI",
+  "runtime": "First real capture parsed locally; integrated new DTO and full journey NOT_RUN here.",
+  "stable3001": "Unchanged",
+  "updatedAt": "2026-10-22T12:23:24.518Z",
+  "history": "proposals/ui/industrial/INDUSTRIAL-UI-INTAKE-v2.json",
+  "activeManifest": "proposals/ui/industrial/REVIEW-INPUT-v5.json",
+  "productName": "Physical Impact",
+  "frontendOwner": {
+    "threadId": "01a16346-9b6f-7b70-afc7-57775e697a94",
+    "title": "Faire le point par chantier",
+    "transfer": "proposals/ui/industrial/FRONT-TRANSFER.json"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "status": "READY_LOCAL_REVIEWED_INTEGRATOR_RECEIPT_PENDING",
+  "scope": "Research memory plus durable publication ordering",
+  "scopeSha256": "9008ba459e68d33a7fbad13d94f25ad97da4d890a13932e443b3f541ed437a2c",
+  "reviewInput": "proposals/data/REVIEW-INPUT-RESEARCH-ORDER-v2.json",
+  "files": [
+    {
+      "path": "proposals/data/research-publication-order.sql",
+      "sha256": "367b1f3733a10e157a5613093269e0c962c442ae70d193c4c26bce3fc05ed7b0"
+    },
+    {
+      "path": "proposals/data/research-schema.sql",
+      "sha256": "79eb7786942be6009444932e7b7f8ee598e4e26811673664d93dcb2215c9816c"
+    },
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "640d75523cb81f88eb581aa169f5fefd8c94d72deee1a7f5b0da6dd5f21f0e6a"
+    },
+    {
+      "path": "tests/data/research-postgres.test.ts",
+      "sha256": "a70c9c81721541c76a2af6b0c65a385028bf108b8037548d4bf656095881c40b"
+    }
+  ],
+  "tests": {
+    "total": 56,
+    "postgres": 35,
+    "researchPostgres": 20,
+    "watchPostgres": 15,
+    "pure": 21,
+    "strictTypecheck": "PASS",
+    "environment": "Disposable local PostgreSQL17.6; no Aiven claim"
+  },
+  "reviews": "proposals/data/RESEARCH-ORDER-REVIEWS-v1.json",
+  "integration": {
+    "migration": "Integrator owns canonical007; must match proposed SQL",
+    "writerContract": "Company FOR UPDATE before every terminal write, including explicit imports",
+    "historicalBoundary": "Backfilled order is uncertain. Old scopes become nonreusable with changed generation; refs preserved. First absent scope skips historical publications.",
+    "freshImport": "Fresh007 database has barrier0. Explicit postmigration imported terminal receives new seq; preserve original source times/hashes and freshness limitations.",
+    "collector": "Existing16collector READY-KEENABLE-v3 pins unchanged",
+    "r1ModelAiven": "NOT_RUN_BY_DATA_OWNER; existing agent owner awaits exact integrated checkpoint"
+  },
+  "supersedes": "READY-RESEARCH-v1.json is historical"
+}

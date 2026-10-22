@@ -1,0 +1,749 @@
+{
+  "schema": "adaptops-industrial/1",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "revision": "IC-INDUSTRIAL-2-1",
+  "qualificationRevision": "Q-INDUSTRIAL-2-1",
+  "dataOrigin": "synthetic",
+  "receivedAt": "2026-10-22T08:50:00+02:00",
+  "companyProfile": {
+    "activity": "Multi-site distributor of insulation, timber and panels, with light finishing at two sites.",
+    "countries": [
+      "FR",
+      "BE"
+    ],
+    "regions": [
+      "Hauts-de-France",
+      "Centre-Val de Loire",
+      "Provence-Alpes-Cote d Azur",
+      "Pays de la Loire",
+      "Auvergne-Rhone-Alpes",
+      "Brussels"
+    ],
+    "provenance": {
+      "system": "ERP_DEMO",
+      "nativeId": "COMPANY-PROFILE-V2",
+      "version": "2",
+      "receivedAt": "2026-10-22T08:50:00+02:00",
+      "actorId": "EMP-PAUL"
+    }
+  },
+  "projectOwners": [
+    {
+      "projectId": "PROJECT-IND-00",
+      "customerId": "CLI-A",
+      "siteId": "DEP-LILLE",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-00",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-01",
+      "customerId": "CLI-B",
+      "siteId": "DEP-CENTRE",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-01",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-02",
+      "customerId": "CUS-IND-002",
+      "siteId": "DEP-SUD",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-02",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-03",
+      "customerId": "CUS-IND-003",
+      "siteId": "DEP-NANTES",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-03",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-04",
+      "customerId": "CUS-IND-004",
+      "siteId": "DEP-LYON",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-04",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-05",
+      "customerId": "CUS-IND-005",
+      "siteId": "DEP-BRUSSELS",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-05",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-06",
+      "customerId": "CUS-IND-006",
+      "siteId": "DEP-LILLE",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-06",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-07",
+      "customerId": "CUS-IND-007",
+      "siteId": "DEP-CENTRE",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-07",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-08",
+      "customerId": "CUS-IND-008",
+      "siteId": "DEP-SUD",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-08",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-09",
+      "customerId": "CUS-IND-009",
+      "siteId": "DEP-NANTES",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-09",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-10",
+      "customerId": "CUS-IND-010",
+      "siteId": "DEP-LYON",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-10",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-11",
+      "customerId": "CUS-IND-011",
+      "siteId": "DEP-BRUSSELS",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-11",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-12",
+      "customerId": "CUS-IND-012",
+      "siteId": "DEP-LILLE",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-12",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-13",
+      "customerId": "CUS-IND-013",
+      "siteId": "DEP-CENTRE",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-13",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-14",
+      "customerId": "CUS-IND-014",
+      "siteId": "DEP-SUD",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-14",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-15",
+      "customerId": "CUS-IND-015",
+      "siteId": "DEP-NANTES",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-15",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-16",
+      "customerId": "CUS-IND-016",
+      "siteId": "DEP-LYON",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-16",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-17",
+      "customerId": "CUS-IND-017",
+      "siteId": "DEP-BRUSSELS",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-17",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-18",
+      "customerId": "CUS-IND-018",
+      "siteId": "DEP-LILLE",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-18",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-19",
+      "customerId": "CUS-IND-019",
+      "siteId": "DEP-CENTRE",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-19",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-20",
+      "customerId": "CUS-IND-020",
+      "siteId": "DEP-SUD",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-20",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-21",
+      "customerId": "CUS-IND-021",
+      "siteId": "DEP-NANTES",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-21",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-22",
+      "customerId": "CUS-IND-022",
+      "siteId": "DEP-LYON",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-22",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    },
+    {
+      "projectId": "PROJECT-IND-23",
+      "customerId": "CUS-IND-023",
+      "siteId": "DEP-BRUSSELS",
+      "ownerActorId": "EMP-PAUL",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "PROJECT-IND-23",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    }
+  ],
+  "supplierSites": [
+    {
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "name": "Alpha insulation plant (synthetic)",
+      "country": "FR",
+      "region": "Hauts-de-France",
+      "productIds": [
+        "SKU-ISO100",
+        "SKU-IND-002"
+      ],
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "SUPSITE-ALPHA-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "supplierId": "SUP-2",
+      "supplierSiteId": "PLANT-BETA-FR",
+      "name": "Beta supply site (synthetic)",
+      "country": "FR",
+      "region": "Centre-Val de Loire",
+      "productIds": [
+        "SKU-ISO100",
+        "SKU-IND-003"
+      ],
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "SUPSITE-BETA-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "supplierId": "SUP-3",
+      "supplierSiteId": "PLANT-EMERGENCY-FR",
+      "name": "Emergency warehouse (synthetic)",
+      "country": "FR",
+      "region": "Hauts-de-France",
+      "productIds": [
+        "SKU-ISO100"
+      ],
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "SUPSITE-EMERGENCY-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "name": "Gamma independent stock site (synthetic)",
+      "country": "BE",
+      "region": "Wallonia",
+      "productIds": [
+        "SKU-IND-002"
+      ],
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "SUPSITE-GAMMA-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    }
+  ],
+  "supplierDependencies": [
+    {
+      "id": "DEP-ALPHA-POL-1",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-ISO100",
+      "purchaseOrderLineIds": [
+        "POL-1"
+      ],
+      "orderLineIds": [
+        "OL-A"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-1",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "id": "DEP-ALPHA-POL-IND-ALPHA-01",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-IND-002",
+      "purchaseOrderLineIds": [
+        "POL-IND-ALPHA-01"
+      ],
+      "orderLineIds": [
+        "OL-IND-00000",
+        "OL-IND-03960",
+        "OL-IND-07920"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-IND-ALPHA-01",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "id": "DEP-ALPHA-POL-IND-ALPHA-02",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-IND-002",
+      "purchaseOrderLineIds": [
+        "POL-IND-ALPHA-02"
+      ],
+      "orderLineIds": [
+        "OL-IND-02574",
+        "OL-IND-06534",
+        "OL-IND-03366"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-IND-ALPHA-02",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "id": "DEP-ALPHA-POL-IND-ALPHA-03",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-IND-002",
+      "purchaseOrderLineIds": [
+        "POL-IND-ALPHA-03"
+      ],
+      "orderLineIds": [
+        "OL-IND-00396",
+        "OL-IND-04356",
+        "OL-IND-08316"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-IND-ALPHA-03",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "id": "DEP-ALPHA-POL-IND-ALPHA-04",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-IND-002",
+      "purchaseOrderLineIds": [
+        "POL-IND-ALPHA-04"
+      ],
+      "orderLineIds": [
+        "OL-IND-02178",
+        "OL-IND-06138",
+        "OL-IND-02970"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-IND-ALPHA-04",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    }
+  ],
+  "competitors": [
+    {
+      "id": "COMP-IND-001",
+      "name": "Regional Materials Rival (synthetic)",
+      "productIds": [
+        "SKU-ISO100",
+        "SKU-IND-002"
+      ],
+      "regions": [
+        "Hauts-de-France",
+        "Ile-de-France"
+      ],
+      "supplierSiteIds": [
+        "PLANT-ALPHA-FR"
+      ],
+      "provenance": {
+        "system": "CRM_DEMO",
+        "nativeId": "COMPETITOR-001-MASTER-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    }
+  ],
+  "commercialDemand": [
+    {
+      "opportunityId": "CRM-IND-000",
+      "customerId": "CLI-A",
+      "projectId": "PROJECT-IND-00",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "quantity": 20,
+      "needDate": "2026-10-29",
+      "destinationDepotId": "DEP-LILLE",
+      "confirmedAt": "2026-10-22T08:50:00+02:00",
+      "ownerActorId": "EMP-PAUL",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "CRM_DEMO",
+        "nativeId": "INTAKE-CRM-IND-000-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      },
+      "saleUnitPriceCents": 19000,
+      "customerMaximumUnitPriceCents": 22000,
+      "currency": "EUR"
+    }
+  ],
+  "stockValuations": [
+    {
+      "stockId": "ST-IND-DEP-LYON-SKU-ISO100",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "currency": "EUR",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "VAL-LYON-ISO100-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      },
+      "unitCostCents": 12000
+    }
+  ],
+  "deliveryQuotes": [
+    {
+      "quoteId": "DQ-CRM-IND-000-V2",
+      "fromDepotId": "DEP-LYON",
+      "destinationDepotId": "DEP-LILLE",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "availableQuantity": 20,
+      "dispatchDate": "2026-10-28",
+      "arrivalDate": "2026-10-29",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DQ-CRM-IND-000-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-ALEX"
+      },
+      "sourceStockId": "ST-IND-DEP-LYON-SKU-ISO100",
+      "freightCents": 26000,
+      "handlingCents": 4000
+    },
+    {
+      "quoteId": "DQ-RISK-8-V2",
+      "fromDepotId": "DEP-LYON",
+      "destinationDepotId": "DEP-LILLE",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "availableQuantity": 8,
+      "dispatchDate": "2026-10-22",
+      "arrivalDate": "2026-10-23",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DQ-RISK-8-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-ALEX"
+      },
+      "sourceStockId": "ST-IND-DEP-LYON-SKU-ISO100",
+      "freightCents": 18000,
+      "handlingCents": 0
+    }
+  ],
+  "independentAlternatives": [
+    {
+      "quoteId": "URG-1",
+      "supplierId": "SUP-3",
+      "supplierSiteId": "PLANT-EMERGENCY-FR",
+      "affectedSiteRelation": "independent",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "availableQuantity": 8,
+      "arrivalDate": "2026-10-23",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-1",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      },
+      "canonicalResourceId": "URG-1",
+      "unitCostCents": 15500,
+      "freightCents": 18000
+    },
+    {
+      "quoteId": "URG-IND-GAMMA-01",
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "affectedSiteRelation": "independent",
+      "productId": "SKU-IND-002",
+      "unit": "palette",
+      "availableQuantity": 3,
+      "arrivalDate": "2026-10-24",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-IND-GAMMA-01",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      },
+      "canonicalResourceId": "URG-IND-GAMMA-01",
+      "unitCostCents": 9100,
+      "freightCents": 9000
+    },
+    {
+      "quoteId": "URG-IND-GAMMA-02",
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "affectedSiteRelation": "independent",
+      "productId": "SKU-IND-002",
+      "unit": "palette",
+      "availableQuantity": 37,
+      "arrivalDate": "2026-10-24",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-IND-GAMMA-02",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      },
+      "canonicalResourceId": "URG-IND-GAMMA-02",
+      "unitCostCents": 9100,
+      "freightCents": 9000
+    },
+    {
+      "quoteId": "URG-IND-GAMMA-03",
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "affectedSiteRelation": "independent",
+      "productId": "SKU-IND-002",
+      "unit": "palette",
+      "availableQuantity": 51,
+      "arrivalDate": "2026-10-24",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-IND-GAMMA-03",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      },
+      "canonicalResourceId": "URG-IND-GAMMA-03",
+      "unitCostCents": 9100,
+      "freightCents": 9000
+    },
+    {
+      "quoteId": "URG-IND-GAMMA-04",
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "affectedSiteRelation": "independent",
+      "productId": "SKU-IND-002",
+      "unit": "palette",
+      "availableQuantity": 49,
+      "arrivalDate": "2026-10-24",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-IND-GAMMA-04",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      },
+      "canonicalResourceId": "URG-IND-GAMMA-04",
+      "unitCostCents": 9100,
+      "freightCents": 9000
+    }
+  ]
+}

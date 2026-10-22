@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-10-22T11:17:04.763Z",
+  "browser": "isolated Chromium through bundled Playwright",
+  "fileSchemeOffline": true,
+  "results": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontLoaded": true,
+      "sections": 9,
+      "tables": [
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 350,
+          "scrollWidth": 480,
+          "overflowX": "auto"
+        }
+      ],
+      "headings": [
+        "1. What is ready",
+        "2. The product we are showing",
+        "3. A concrete company, with explicit limits",
+        "4. One demonstration flow",
+        "5. Quantities and economics that can be checked",
+        "6. Current facts and operator events stay separate",
+        "7. Public information has its own evidence",
+        "8. Checks and next delivery",
+        "9. Copy and consulted sources"
+      ],
+      "externalDisplayRequests": 0,
+      "navigation": "PASS"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontLoaded": true,
+      "sections": 9,
+      "tables": [
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 688,
+          "scrollWidth": 688,
+          "overflowX": "visible"
+        }
+      ],
+      "headings": [
+        "1. What is ready",
+        "2. The product we are showing",
+        "3. A concrete company, with explicit limits",
+        "4. One demonstration flow",
+        "5. Quantities and economics that can be checked",
+        "6. Current facts and operator events stay separate",
+        "7. Public information has its own evidence",
+        "8. Checks and next delivery",
+        "9. Copy and consulted sources"
+      ],
+      "externalDisplayRequests": 0,
+      "navigation": "PASS"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontLoaded": true,
+      "sections": 9,
+      "tables": [
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        },
+        {
+          "clientWidth": 880,
+          "scrollWidth": 880,
+          "overflowX": "visible"
+        }
+      ],
+      "headings": [
+        "1. What is ready",
+        "2. The product we are showing",
+        "3. A concrete company, with explicit limits",
+        "4. One demonstration flow",
+        "5. Quantities and economics that can be checked",
+        "6. Current facts and operator events stay separate",
+        "7. Public information has its own evidence",
+        "8. Checks and next delivery",
+        "9. Copy and consulted sources"
+      ],
+      "externalDisplayRequests": 0,
+      "navigation": "PASS"
+    }
+  ]
+}

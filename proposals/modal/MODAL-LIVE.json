@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "status": "tested_on_modal",
+  "testedAt": "2026-10-22T10:29:01.662108+00:00",
+  "workspace": "oxsorcier",
+  "environment": "main",
+  "application": "accel-pdf-reader",
+  "deploymentPage": "https://modal.com/apps/oxsorcier/main/deployed/accel-pdf-reader",
+  "scopeRevision": 2,
+  "scopeManifestSha256": "1209488cc9fcd669ea0d8871aa8d2dade51af10083dbb0154e850986fc47f26b",
+  "imageId": "im-eMCB3Zxg60i074Iz9cqHrw",
+  "uploadedLocalFilesObserved": [
+    "services/modal-pdf/modal_app.py",
+    "services/modal-pdf/accel_pdf_reader.py",
+    "services/modal-pdf/accel_pdf_http.py"
+  ],
+  "uploadBoundary": "Two explicit modules and the single-file Modal entrypoint. SDK entrypoint FILE mount inspected; no checkout-wide package mount. No .env, operator, preparation, fixture or business data was uploaded.",
+  "authentication": {
+    "unauthenticatedStatus": 401,
+    "authenticatedStatus": 200,
+    "requiresProxyAuth": true,
+    "redirects": "refused",
+    "scope": "Workspace-wide Proxy Token on Starter; inventory before creation: zero apps/endpoints, one main environment, one owner."
+  },
+  "source": {
+    "url": "https://www.rockwool.com/siteassets/investors/financial-reports/2026/q2-h1-2026-financial-report.pdf",
+    "title": "Report on first half of 2026 for ROCKWOOL A/S",
+    "publishedAt": "2026-08-19",
+    "byteLength": 530288,
+    "documentHash": "a46561052fe30f7e4ab152b144fa23fc1c50e5a5f931c8279141793dbba9f57b"
+  },
+  "result": {
+    "pageCount": 17,
+    "characterCount": 40113,
+    "status": "complete",
+    "emptyPages": [],
+    "extractorVersion": "pypdf/6.21.2+accel.1",
+    "allPageHashesVerified": true,
+    "page3ExpectedPhrasesVerified": true,
+    "requestLatencySeconds": 6.715
+  },
+  "negativeCheck": {
+    "status": 422,
+    "code": "PDF_INVALID"
+  },
+  "verificationNote": "The first live probe wrongly expected HTTP 415 for a malformed file that starts with a valid PDF prefix. The reviewed contract specifies 422 for this parse failure. Corrected the probe and verified 422/PDF_INVALID; production code unchanged.",
+  "limits": "One real public document tested. No scale benchmark, OCR, application persistence, model citation or UI proof is asserted by this receipt.",
+  "applicationIntegration": "NOT_RUN_in_this_receipt",
+  "creditCharge": "not_yet_observed",
+  "reviewedHashesStableAfterDeploy": true
+}

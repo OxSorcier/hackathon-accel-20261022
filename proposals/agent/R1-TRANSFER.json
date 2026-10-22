@@ -1,0 +1,74 @@
+{
+  "status": "INITIAL_TRANSFER_ONLY",
+  "transferredAt": "2026-10-22T11:32:52.212Z",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "sourceFingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631",
+  "manifestDigest": "8d5dd09d6a4c0ca15bb9f5ab61c0adcea46544a32aca2914e1430d311f8749f4",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "companySha256": "d4414a8cc20d0d403a6417978f2bd6528ab88442b0d0b81d0792b4a6d7b647cf",
+  "watchId": "watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2",
+  "watchSha256": "de255348817f7d48712e3871533291999520415e649e5c17ba618bb01a2538e0",
+  "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3",
+  "importedPublicationSequence": 1,
+  "publicationMeaning": "Reception/import order in this new schema only, not a new publisher acquisition; original dates preserved.",
+  "occurrenceSha256": "acc711ac8db86863b109e851a9471eab4d3917333a271b6c9dae843159c40fd3",
+  "evidence": [
+    {
+      "id": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+      "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+      "payloadSha256": "151d4c667b85af9f513c365b9930c51a11397b062a47d5fb452c8ae17bb06ff5",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+      "publishedAt": "2026-07-10T14:04:59.000Z",
+      "collectedAt": "2026-10-22T10:32:29.137Z",
+      "mode": "direct"
+    },
+    {
+      "id": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+      "contentHash": "8b10fcbbb062cf9a666237dd8cb8fd3d7369262d2e266954561c2ddaece2a40f",
+      "payloadSha256": "90b6985b491004eb3c639b2335a9bee8239799be8dda81963800824e236d63ac",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026/",
+      "publishedAt": null,
+      "collectedAt": "2026-10-22T10:32:29.364Z",
+      "mode": "direct"
+    },
+    {
+      "id": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+      "contentHash": "48a4cf4a9ee460c1d41466774a300b75524fb681a1fd9eddc27c1b62e205007d",
+      "payloadSha256": "0e811e77ec9ebb92db63a3d2e1cc9c1331c6c841f5f72176bd06c78bf7bc6187",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-02-janvier-2026/",
+      "publishedAt": "2026-01-02T00:00:00.000Z",
+      "collectedAt": "2026-10-22T10:32:29.676Z",
+      "mode": "direct"
+    },
+    {
+      "id": "keenable:02d3b679b232631548edc2f8d5b2dd4885802b02721d9f21bfe1837a82e76d39",
+      "contentHash": "6ad5f773c77360e31bba16551d2cb623589c7dcf06d69d468ae5efb76ef0ebe0",
+      "payloadSha256": "7f32ce08537a6d0c02de10cbd3ac6e89b61f2385f85778b0c80ab7be1f8490ba",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+      "publishedAt": "2026-03-06T07:20:00.000Z",
+      "collectedAt": "2026-10-22T09:52:36.196Z",
+      "mode": "direct"
+    },
+    {
+      "id": "keenable:60bc7f14c97a1e9d1702674ac02557b64c5c2f82473979457e0a7176f2f63486",
+      "contentHash": "781b3d8018706ba9623a37d589fa7a23c5d80241e5e7e920e9ef2a9c8bbc7161",
+      "payloadSha256": "4b07c0ccf06b94feccd13adcca94d739d2bc1f1f98b16032aed6d5636ea8709c",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-29-juin-2026/",
+      "publishedAt": "2026-06-29T17:40:00.000Z",
+      "collectedAt": "2026-10-22T09:52:36.196Z",
+      "mode": "direct"
+    }
+  ],
+  "copiedTables": [
+    "companies",
+    "accel_watch_definitions",
+    "accel_watch_occurrences",
+    "accel_watch_evidence"
+  ],
+  "priorRunsCopied": 0,
+  "priorResponsesCopied": 0,
+  "priorMemoriesCopied": 0,
+  "witnessCompanyId": "CO-RESEARCH-R1-EMPTY",
+  "watchNextRunAt": "2026-10-29T09:52:32.179Z",
+  "scheduledWatchWorker": "CANONICAL_START_FUTURE_WATCH_REQUIRED"
+}

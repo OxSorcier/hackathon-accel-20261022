@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-22T10:33:57.184602+00:00",
+  "scopeSha256": "40b800f208fd634b3d370db3b24229a64ab1d2747c8c3ce044e8691108723de9",
+  "cycles": 1,
+  "coder": {
+    "configuredModel": "gpt-6.1-sol",
+    "servedModel": "UNATTESTED"
+  },
+  "reviewers": [
+    {
+      "agent": "/root/watch_race_counter_review",
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high",
+      "freshContext": true,
+      "servedModel": "UNATTESTED",
+      "verdict": "NO_RETAINED_FINDING"
+    },
+    {
+      "agent": "/root/watch_race_architecture_review",
+      "requestedModel": "gpt-6-astra",
+      "effort": "high",
+      "freshContext": true,
+      "servedModel": "UNATTESTED",
+      "verdict": "NO_RETAINED_FINDING"
+    }
+  ],
+  "coverage": "Exact repository delta against frozen v2, full watch-postgres tests and candidate SQL. Independent static readings, hashes and diffs executed; reviewers ran no DB/network.",
+  "rootVerification": {
+    "vitestTests": 36,
+    "realLocalPostgresTests": 15,
+    "strictScopedTypecheck": "PASS",
+    "concurrencyRegression": "40 distinct commands, 12 creations then12 manual clicks each, pool8; one watch/occurrence per key",
+    "rawSQLProbe": "300 rounds x12 same-key insertions, no failures with transaction advisory lock"
+  },
+  "retainedLimit": "Port expected to use normal autocommit READ COMMITTED. No DB locks are held during network/model calls."
+}

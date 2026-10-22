@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-22",
+  "instruction": "All authored hackathon deliverables must be in English",
+  "authorization": "Erwan explicitly approved sending the instruction to both existing owner chats in this conversation",
+  "ui_owner": {
+    "thread_id": "01a162bd-facf-7b63-861b-9bbf7f402938",
+    "title": "Accel : interface A",
+    "transport": "send_message_to_thread succeeded",
+    "acknowledgment": "The UI chat explicitly confirmed applying the English instruction to the current UI, error messages and date formatting",
+    "implementation": "owned by the active UI build; final receipt pending"
+  },
+  "integration_owner": {
+    "thread_id": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "title": "Accel : intégration et déploiement",
+    "transport": "send_message_to_thread succeeded",
+    "acknowledgment": "The integration chat explicitly confirmed the English-language instruction in its commentary",
+    "implementation": "English product-output requirement observed in src/agent/runner.ts; en-GB locale observed in src/ui/format.ts; full integrated language acceptance remains pending"
+  },
+  "application_files_modified_by_this_chat": false,
+  "readme": "Current README.md inspected in full and already in English",
+  "integration_language_acceptance": "NOT_RUN by this chat; retained by the current application owners"
+}

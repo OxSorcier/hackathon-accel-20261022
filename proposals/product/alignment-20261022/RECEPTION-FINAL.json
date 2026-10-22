@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "title": "Accel: company and industrial demo alignment",
+  "date": "2026-10-22",
+  "producerThreadId": "01a16306-b164-72f3-83d9-9edd27ded2ef",
+  "state": "PREPARATION_DELIVERED_INDUSTRIAL_APPLICATION_WORK_CONTINUES",
+  "canonicalOwnerDocument": "docs/PRODUCT-VISION.md",
+  "canonicalReferenceObserved": true,
+  "canonicalReferenceMeaning": "The owner document links the proposal. This is not human acceptance of the synthetic company activity or application integration.",
+  "localHome": "proposals/product/alignment-20261022",
+  "scope": "Alignment and copy; candidate synthetic portfolio and local baseline calculation. No application code modified.",
+  "artifactStatus": {
+    "alignment": "PROPOSED_AND_LINKED",
+    "press": "DRAFT",
+    "websiteCopy": "DRAFT",
+    "demoScript": "PREPARED_NOT_RECORDED",
+    "candidateData": "GENERATED_AND_CHECKED_LOCALLY",
+    "localBusinessBaseline": "PASS_SINGLE_OBSERVATION",
+    "applicationImport": "NOT_RUN",
+    "erpCrmConnection": "NOT_RUN",
+    "aivenPortfolioRun": "NOT_RUN",
+    "tiers100kAnd1m": "NOT_RUN"
+  },
+  "archive": {
+    "status": "VERIFIED_REMOTE_BYTES",
+    "folderId": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+    "shared": false,
+    "files": [
+      {
+        "file": "ALIGNMENT-AND-STORY.md",
+        "id": "1n8bJa1-dinbA4Vt8AbHzBaSQz6Wuvei6",
+        "url": "https://drive.google.com/file/d/1n8bJa1-dinbA4Vt8AbHzBaSQz6Wuvei6/view?usp=drivesdk"
+      },
+      {
+        "file": "ALIGNMENT-AND-STORY.html",
+        "id": "1HN3q5kTeCX-SdlAp426-_OLbQPb3xoon",
+        "url": "https://drive.google.com/file/d/1HN3q5kTeCX-SdlAp426-_OLbQPb3xoon/view?usp=drivesdk"
+      },
+      {
+        "file": "ACCEL-ALIGNMENT-STORY-20261022-v1.zip",
+        "id": "1fRMpHmacxHUvXxqT0HHmG2b0lS0SwrQ1",
+        "url": "https://drive.google.com/file/d/1fRMpHmacxHUvXxqT0HHmG2b0lS0SwrQ1/view?usp=drivesdk"
+      }
+    ],
+    "readback": "REMOTE-READBACK.json",
+    "remoteBundleEntriesVerified": 22,
+    "scopeNote": "ZIP contains a pre-archive RECEPTION.json snapshot. This final sidecar records the later archive/tracker/owner-reference reception."
+  },
+  "tracker": {
+    "id": "ERW-133",
+    "commentId": "319941d6-f0d4-409b-a590-4689e047b594",
+    "statusChanged": false
+  },
+  "controls": {
+    "htmlMarkdownSameText": true,
+    "aside": "desktop 1440x900",
+    "asideResize": "unavailable",
+    "chromiumWidths": [
+      390,
+      768,
+      1440
+    ],
+    "embeddedInter": true,
+    "externalDisplayRequests": 0,
+    "visualInspection": true
+  },
+  "coordinatedOwners": [
+    {
+      "threadId": "01a162bd-6384-7031-82c3-fdb5efba174e",
+      "title": "Clarifier le kit et la démo Accel",
+      "state": "canonical document linked the proposal"
+    },
+    {
+      "threadId": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+      "title": "Accel : intégration et déploiement",
+      "state": "messages accepted; final current-case fixes and reception in progress; industrial import not yet received"
+    },
+    {
+      "threadId": "01a162f6-8e54-7190-9b3b-fb79ba9f7b6b",
+      "title": "Clarifier mémoire de recherche et té",
+      "state": "ownership reconciled; no parallel memory implementation"
+    }
+  ],
+  "remaining": "Receive the industrial identity/activity, import a separately attributed portfolio, add bounded model projections with complete server calculations, prove a semantically matched industrial case and opportunity, run the integrated 10k chain, then decide higher tiers. Existing integrator and builders retain ownership. This package does not close the product objective."
+}

@@ -1,0 +1,38 @@
+{
+  "data_origin": "synthetic",
+  "company_id": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "rules": [
+    {
+      "id": "RULE-SKU",
+      "rule": "same SKU and same unit; no implicit substitution"
+    },
+    {
+      "id": "RULE-RESERVE",
+      "rule": "reserved stock is unavailable until a versioned plan replaces coverage before all confirmed need dates"
+    },
+    {
+      "id": "RULE-INBOUND",
+      "rule": "unconfirmed inbound is not confirmed coverage"
+    },
+    {
+      "id": "RULE-MARGIN",
+      "rule": "replacement for B must be confirmed and available at least 2 calendar days before 2026-11-05"
+    },
+    {
+      "id": "RULE-PERMISSION",
+      "rule": "only simulation actions; authenticated actor role and amount checked on exact current plan"
+    },
+    {
+      "id": "RULE-PRIORITY",
+      "rule": "no implicit priority that breaks another confirmed order"
+    }
+  ],
+  "role_approval_note": "Fixture policy for demo only; no real authorization granted",
+  "agent_context_excludes": [
+    "scenarios/",
+    "evaluation/",
+    "expected outcomes",
+    "future events"
+  ],
+  "public_search_inputs": "public sector terms only; no customer/order/employee data sent to web provider"
+}

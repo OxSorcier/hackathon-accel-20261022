@@ -1,0 +1,15 @@
+{
+  "browser": "Aside",
+  "flow": [
+    "https://physical-impact.com/",
+    "click Live product",
+    "https://physical-impact.com/live/",
+    "Coming soon visible",
+    "click Explore the demo",
+    "https://physical-impact.com/demo",
+    "Rivebois Overview and Demo marker observed"
+  ],
+  "status": "PASS",
+  "applicationMutations": false,
+  "evidence": "public-live-product.png"
+}

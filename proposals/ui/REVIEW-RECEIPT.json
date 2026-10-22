@@ -1,0 +1,78 @@
+{
+  "schema": "accel-ui-reviews/1",
+  "createdAt": "2026-10-22T09:10:23.902830+00:00",
+  "manifest": "proposals/ui/REVIEW-INPUT-v3.json",
+  "manifestSha256": "3c77176eb72f28eaf824fd18302d690cbc3ac47b5983d43bf7ae95884c9a30f7",
+  "cycles": 3,
+  "implementationModel": {
+    "runtimeContext": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "servedIdentity": "NOT_ATTESTED"
+  },
+  "isolation": "Two distinct reviewers; fork_turns none; effort high. Full v1 source review, independent delta revalidation v2 and v3. No cross-review conclusions supplied.",
+  "reviewers": [
+    {
+      "role": "adversarial",
+      "agent": "/root/ui_adversarial_review",
+      "requestedModel": "gpt-6.1-sol",
+      "servedModel": "NOT_ATTESTED",
+      "finalVerdict": "No retained finding on v3 delta and related cases",
+      "testsExecuted": 21,
+      "finalIndependentProbes": 8
+    },
+    {
+      "role": "architecture",
+      "agent": "/root/ui_architecture_review",
+      "requestedModel": "gpt-6-astra",
+      "servedModel": "NOT_ATTESTED",
+      "finalVerdict": "No retained finding on v3 delta and related cases",
+      "testsExecuted": 21,
+      "finalIndependentProbes": 6
+    }
+  ],
+  "retainedFindingsAndCorrections": [
+    {
+      "finding": "Global proposal conditions, evaluation unknowns and constraints lost in projection",
+      "correction": "Preserved and rendered separately from option conditions"
+    },
+    {
+      "finding": "Decision receipt not bound to company, run, option or evaluation",
+      "correction": "Bound all identifiers and structurally equivalent evaluation to expected proposal"
+    },
+    {
+      "finding": "Question receipt not bound to requesting company, actor, operation and text",
+      "correction": "Receipt correlation before clearing question or operation key"
+    },
+    {
+      "finding": "Watch creation receipt not bound to requesting company, actor, topic, sources and cadence",
+      "correction": "Receipt correlation before clearing form or declaring activation"
+    },
+    {
+      "finding": "Unknown/not_run trace treated as success",
+      "correction": "Explicit not_run, intent and unknown statuses; no success by default"
+    },
+    {
+      "finding": "Occurrence sorting used lexical dates across timezones",
+      "correction": "Numeric timestamp ordering"
+    },
+    {
+      "finding": "JSON key reordering rejected valid evaluation receipt",
+      "correction": "Structural equality, object keys unordered, array order and values preserved"
+    }
+  ],
+  "regressionEvidence": {
+    "cycle2": "8 new assertions failed before corrections; 19 then passed",
+    "cycle3": "2 new assertions failed before corrections; 21 then passed"
+  },
+  "additionalBrowserCorrections": [
+    "Logout remains visible on narrow screens",
+    "Refresh icon has an accessible name",
+    "Unavailable context no longer says loading"
+  ],
+  "finalHashesVerifiedByBothReviewers": true,
+  "limits": [
+    "Requested reviewer model names are not provider served-model attestations",
+    "No reviewer tested a browser, real provider, PostgreSQL or Aiven",
+    "No absence-of-bug guarantee or integrated product acceptance implied"
+  ]
+}

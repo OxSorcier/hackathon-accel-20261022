@@ -1,0 +1,15 @@
+{
+  "observedAt": "2026-10-22T10:28:28.648Z",
+  "environment": "Disposable local PostgreSQL17.6",
+  "rounds": 3,
+  "concurrency": 12,
+  "failures": [
+    {
+      "round": 2,
+      "code": "23505",
+      "constraint": "accel_watch_definitions_pkey",
+      "detail": "duplicate key value violates unique constraint \"accel_watch_definitions_pkey\""
+    }
+  ],
+  "scope": "Exact createWatch INSERT with two unique constraints, no mutation of production code or Aiven"
+}

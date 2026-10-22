@@ -1,0 +1,27 @@
+{
+  "observedAt": "2026-10-22T10:14:22.674700+00:00",
+  "kind": "independent_read_only_local_api_readback",
+  "method": "GET",
+  "endpoint": "http://127.0.0.1:3000/api/decisions",
+  "responseSha256": "df1b5f87f402afbbf4daddbd38644a42da359a2c80e8cc8888b79bb55d525d26",
+  "proposalId": "proposal:b706f102-f547-47b8-94ec-a623f6e6c1c3",
+  "proposalStatus": "approved",
+  "caseRef": {
+    "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+  },
+  "selectedOption": {
+    "kind": "emergency_purchase",
+    "costEur": 1420,
+    "quantity": 8,
+    "arrivalDate": "2026-10-23",
+    "targetOrderLineId": "OL-A"
+  },
+  "evidenceHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+  "limits": [
+    "Earlier candidate collector source hash, not the final refreshed source",
+    "Company and confirmation synthetic; no purchase or stock movement",
+    "Aiven backend attested by integrator receipt, not independently queried by data owner",
+    "No mutation, collection or model call triggered by this read"
+  ]
+}

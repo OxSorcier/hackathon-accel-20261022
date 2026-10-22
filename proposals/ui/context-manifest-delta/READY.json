@@ -1,0 +1,43 @@
+{
+  "version": 4,
+  "status": "READY_FOR_INTEGRATOR_REVIEW",
+  "ready": false,
+  "date": "2026-10-22",
+  "scope": "Local context_manifest recorded semantics and analysis-mode badge copy against isolated CASE flow. Main research UI excluded. No new run or business execution.",
+  "manifest": "proposals/ui/context-manifest-delta/REVIEW-INPUT.json",
+  "manifestSha256": "842b071b2d7962c995989f5a7cd3cb296eb6cf8e9f441f1c04f6aa915deef271",
+  "snapshots": [
+    {
+      "path": "src/ui/api.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/api.ts.snapshot",
+      "sha256": "4aaa8acb3c3456de9a1806f669df7d4821c5c68aec87eff033800687953d12c3"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/types.ts.snapshot",
+      "sha256": "8eb3a73e588d2a3197ca27a452cca80bca4b345ee51cf2e584215f1ef2caf84a"
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/App.tsx.snapshot",
+      "sha256": "b4fabde686467c03021db659b0477d065988846ba23e88af25cb7ced6f6b83c7"
+    },
+    {
+      "path": "tests/ui/context-manifest.test.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/tests/ui/context-manifest.test.ts.snapshot",
+      "sha256": "63c4e15b3284de25d0b6da3126341e02e652cddf8df51d4ba617a7b97867151f"
+    }
+  ],
+  "behavior": "A validated local context_manifest event displays Context assembled and Recorded. Incomplete records remain unknown. Provider requests keep their existing statuses. Analysis provenance badges say Live analysis or Test analysis. Approved keeps its server business meaning and does not imply execution. Recorded requires exact run company/revision/policy/case/research scope and an error-free complete manifest. Every other context_manifest stays unknown, without provider-success fallback. A local manifest uses a strict positive-list record schema including optional evidenceRef. Provider result/status/error fields are outside that contract and cannot mask a failure or create Recorded.",
+  "validation": {
+    "targetedUiTests": "10 initial RED failures, then 4 contradictory status/error RED failures observed. 20 context tests expected after strict local-record validation. Final checks pending.",
+    "typecheck": "PASS on main source",
+    "isolatedFlowBrowser": "NOT_RUN by UI owner"
+  },
+  "review": {
+    "status": "PENDING_INTEGRATOR_PANEL",
+    "instruction": "The integrator panel may cover these exact immutable bytes. No competing panel is launched for this isolated micro-delta."
+  },
+  "nextAction": "Integrator reviews the four immutable snapshots, copies only these files into the isolated flow source and verifies the saved trace without a new model call.",
+  "publication": "No commit, push or deploy."
+}

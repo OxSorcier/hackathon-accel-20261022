@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "status": "USER_ACCEPTED_AND_IMPLEMENTED_IN_UI_CANDIDATE",
+  "receivedAt": "2026-10-22",
+  "visualReference": "design/A-bureau-decisions.png",
+  "languageReference": "proposals/ui/english-language/LANGUAGE.md",
+  "userDirection": "Keep direction A and the broader large-company vision. Make the path understandable without reducing the product to a supplier-delay tool.",
+  "navigation": [
+    "Needs decision",
+    "In progress",
+    "Completed",
+    "Watches"
+  ],
+  "detailBlocks": [
+    "Public evidence",
+    "Link to our business",
+    "Commitments to examine",
+    "Options and decision"
+  ],
+  "states": [
+    "Impact undetermined",
+    "Risk with explicit assumption",
+    "Needs verification",
+    "No known exposure",
+    "Operator-confirmed internal synthetic fact",
+    "Stale previous proposal"
+  ],
+  "implemented": [
+    "Received evidence reference only, no arbitrary article submitted.",
+    "Create/revise/analyze versioned cases through canonical APIs.",
+    "Separate actual and conditional coverage.",
+    "Display attributed internal confirmation; expose no operator confirmation form or model tool.",
+    "History and execution events at the second level."
+  ],
+  "notDelivered": [
+    "Commercial opportunity calculation and mixed-impact calculation.",
+    "Real ERP/CRM connectors.",
+    "Research-knowledge reuse/revision UI before its backend contract."
+  ],
+  "previous": "proposals/ui/CASE-FLOW-PROPOSAL-v1-history.json"
+}

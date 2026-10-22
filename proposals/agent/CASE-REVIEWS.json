@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "status": "COMPLETE_FOR_EXACT_OWNED_SOURCE",
+  "sourceFingerprint": "519649f7b18c69121d03513f587c681d958cac7dc7c7a33ef8bcca05b252242d",
+  "manifest": "proposals/agent/CASE-REVIEW-SCOPE.json",
+  "realizer": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "attestation": "session turn_context at realization, no provider-level served-model attestation"
+  },
+  "isolation": "two reviewers in separate fresh contexts, fork_turns none, independent of realization and each other",
+  "reviewCorrectionCycles": 2,
+  "cancelledScope": "Initial packet was superseded before review completion when language and confirmation contracts arrived. It is not counted as a completed review cycle.",
+  "priorCycle": "proposals/agent/CASE-REVIEWS-R1.json",
+  "roles": [
+    {
+      "role": "same-model counterexample",
+      "task": "/root/case_final_counter",
+      "requestedModel": "gpt-6.1-sol",
+      "requestedEffort": "high",
+      "servedModelAttestation": "unavailable",
+      "status": "COMPLETE",
+      "scopeHashes": "16 of 16 matched before and after final revalidation",
+      "result": "P2 free provider product copy corrected; no new retained finding",
+      "tests": "47 exact test callbacks passed through an in-memory registration harness, not a Vitest runner execution",
+      "ownProbes": [
+        "needs_input and end with and without a case emit deterministic English text and exclude provider markers",
+        "Case proposal with writeTrace excludes free title/summary, keeps evaluationId/optionId",
+        "Original evidence content preserved"
+      ]
+    },
+    {
+      "role": "architecture/contracts",
+      "task": "/root/case_final_architecture",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "servedModelAttestation": "unavailable",
+      "status": "COMPLETE",
+      "scopeHashes": "16 of 16 matched before and after final revalidation",
+      "result": "No actionable finding in original scope or final delta",
+      "tests": "47 of 47 agent/domain tests passed using Vitest, global tsc --noEmit passed",
+      "coverage": "Original full contract/context/runner/domain and observed server-consumer reading remains applicable; final runner/language delta read in full"
+    }
+  ],
+  "fixes": [
+    {
+      "code": "FREE_PROVIDER_PRODUCT_COPY",
+      "confirmed": "Provider final message and plain-question proposal title/summary could be French",
+      "red": "Two language regressions failed before correction on 2026-10-22 at 09:49 UTC",
+      "green": "Both regressions passed after correction; full builder suite 50 of 50 passed",
+      "resolution": "English deterministic product messages and proposal text; free provider title/summary omitted from persisted prepare arguments",
+      "revalidatedBy": [
+        "same-model counterexample",
+        "architecture/contracts"
+      ]
+    }
+  ],
+  "limits": [
+    "Provider final clarification is now generic; it does not preserve the precise free-text question from the model.",
+    "No real provider, PostgreSQL/Aiven or browser executed in either owned-code review.",
+    "Server consumers are owned by the integrator and were not part of the frozen source packet.",
+    "Review independence covers contexts and role; reviewers share a model family."
+  ]
+}

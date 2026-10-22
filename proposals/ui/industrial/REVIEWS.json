@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "manifest": "proposals/ui/industrial/REVIEW-INPUT-v3.json",
+  "manifestSha256": "98b74d2b05575e423f8ffc05af60e3e51c64840715f85141851cce2ef5ae98f8",
+  "realizerModel": "gpt-6.1-sol",
+  "servedModelAttested": false,
+  "cycles": 2,
+  "isolation": "Two distinct reviewers, fork_turns:none, effort high; revalidation by each original reviewer on corrected exact snapshot.",
+  "roles": [
+    {
+      "role": "counter-review",
+      "agent": "/root/industrial_boundary_counter",
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high",
+      "status": "REVALIDATED_NO_RETAINED_FINDINGS",
+      "independentProbes": 12
+    },
+    {
+      "role": "contracts-and-architecture",
+      "agent": "/root/industrial_boundary_architecture",
+      "requestedModel": "gpt-6-astra",
+      "effort": "high",
+      "status": "REVALIDATED_NO_RETAINED_FINDINGS",
+      "independentProbes": 9
+    }
+  ],
+  "findings": [
+    {
+      "id": "late-run-read",
+      "severity": "P2",
+      "result": "FIXED_AND_REVALIDATED",
+      "fix": "Per-run read sequence and mutation fence; distinct runs remain independent."
+    },
+    {
+      "id": "received-basis-drift",
+      "severity": "P2",
+      "result": "FIXED_AND_REVALIDATED",
+      "fix": "Full previously received basis is immutable. First late basis must name received event pins, then becomes immutable."
+    },
+    {
+      "id": "uncertain-key-loss",
+      "severity": "P2",
+      "result": "FIXED_AND_REVALIDATED",
+      "fix": "Resolved uncertain simulation retains the original operation key."
+    },
+    {
+      "id": "automatic-actor-binding",
+      "severity": "P2",
+      "result": "CONTRACT_CLARIFIED_FIXED_AND_REVALIDATED",
+      "fix": "Automatic run actor equals received servicePrincipalId. Manual question cannot invent an automatic intent."
+    }
+  ],
+  "negativeEvidence": "Old business revision of historical run is intentionally preserved when report/intent pins match. No claim of double server effects from lost operation key probe.",
+  "limits": [
+    "Requested model identity only; served model unattested.",
+    "Reviewers used pinned modules and in-memory transport; they did not rerun the announced Vitest suites.",
+    "Server, browser, Aiven, automatic analysis and business effects NOT_RUN for this unit."
+  ]
+}

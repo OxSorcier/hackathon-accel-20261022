@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "status": "READ_ONLY_DIAGNOSIS_AMENDMENT_PENDING_TWO_REVIEWS",
+  "checkedAt": "2026-10-22T12:17:13.274339+00:00",
+  "originalScript": ".local/research-reception/r2.ts",
+  "originalScriptSha256": "777c05f632027195b153d77154a81d5e5b15f99d7b3f984c97af9703dfd9b994",
+  "originalOracle": "assert(duplicate.generation === revised.generation && digest(duplicate.observations.map(o => o.ref)) === digest(revised.observations.map(o => o.ref)) && beforeDuplicate === afterDuplicate, 'R2_DUPLICATE_PUBLICATION');",
+  "originalOracleSha256": "147452d969987cb7ede6c814ea08d25ba2abda7828093508de3809f59f2f8840",
+  "negativeReceipt": "proposals/agent/R2-FAILURE.json",
+  "negativeReceiptSha256": "3020a6a96178bb6a07adb8375494976a27d288096513af98c22a461775e6596d",
+  "diagnostic": "proposals/agent/R2-READONLY-DIAGNOSIS.json",
+  "diagnosticSha256": "94627e1f88710075173b4171510527662ce7c5afadf7adac4e2d08f8e7b51c67",
+  "observed": {
+    "commands": 2,
+    "occurrences": 2,
+    "contentVersions": 2,
+    "controlledGeneration": 2,
+    "sourceIds": 1,
+    "runs": 3,
+    "proposals": [
+      "approved",
+      "stale"
+    ],
+    "r1Hash": "8ca199c424abf11a70dfd91718d44d6764b363d2599384a35c6d76d1c6f17d20"
+  },
+  "cause": "JSON.stringify(ref object) depends on insertion order; PostgreSQL JSONB returns the same named fields in a different order. Original digest comparison fails for semantically identical references.",
+  "correctedRule": "Compare sorted tuples [occurrenceId,evidenceId,contentHash] in sorted lists; independently assert generation, native evidence version count, occurrences and current projection.",
+  "preserved": "No original script, source content/hash/timestamps, negative, business state or R1 data is changed. No original R2 execute, worker, confirmation, approval, analysis or real model is repeated.",
+  "remainingAuthorizedMutation": {
+    "operation": "frozen repository.ingestControlled",
+    "companyId": "CO-RESEARCH-R1-EMPTY",
+    "operationKey": "r2-source-v2-new-command",
+    "input": "Exact existing v2 evidence read from the frozen native occurrence; no content/timestamp change.",
+    "expected": "Additional command/occurrence receipt is legitimate; current refs and generation2 stay identical, evidence versions remain2."
+  },
+  "proofLimits": [
+    "Original duplicate return value and native session digests not retained after process failure. Do not reconstruct.",
+    "STALE_CONTEXT refusals were asserted before the recorded later failure, not persisted as successful decisions and not replayed."
+  ]
+}

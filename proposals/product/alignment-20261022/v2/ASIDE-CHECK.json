@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-22T11:18:55.942Z",
+  "browser": "Aside",
+  "url": "http://127.0.0.1:18768/DATA-RECEIPT.html",
+  "localServer": "Temporary HTML-only allowlist; all JSON and operator paths return 404.",
+  "viewport": {
+    "width": 1440,
+    "documentScrollWidth": 1440
+  },
+  "font": "Inter",
+  "fontLoaded": true,
+  "sections": 9,
+  "navigation": {
+    "target": "#section-8",
+    "status": "PASS"
+  },
+  "capture": "data-receipt-aside-1440.png",
+  "fileAccess": "Aside local-file access unavailable in the prior test; HTTP preview used. Isolated Chromium verifies offline files and 390/768/1440 layouts separately."
+}

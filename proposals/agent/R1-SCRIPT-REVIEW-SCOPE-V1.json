@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T10:54:06.974611+00:00",
+  "scope": "R1 reception operator scripts only, existing Aiven isolated schema and canonical frozen application entry",
+  "sourceFingerprint": "e6fdc44d7229f840681b4ce8864ee6d8481b42027f2fc9a1909060c847728a88",
+  "files": [
+    {
+      "path": ".local/research-reception/shared.ts",
+      "sha256": "29b20b877bf584ee57fd7535a9121ff35f322bb46807bf075b831c40cffb884a"
+    },
+    {
+      "path": ".local/research-reception/serve.ts",
+      "sha256": "d34557ecaf3102fcbc10ae1bb2950a4c9803fc4ca3ed1c745c1a6779332121db"
+    },
+    {
+      "path": ".local/research-reception/run.ts",
+      "sha256": "25b283cf3fb54ab27897b80e59548f71553198d77e6ad1108163569b96dc7907"
+    }
+  ],
+  "runtimeDependency": "proposals/integration/REVIEW-INPUT-RESEARCH-SERVER.json",
+  "runtimeDependencySha256": "f78b5bc99974d61c1fd36ef3bcd28d263324003805d9e2ca1a7cb0015d554d91",
+  "typecheck": "PASS with ignoreConfig, strict, NodeNext, allowImportingTsExtensions",
+  "execution": "NO_DATABASE_OR_PROVIDER_CALL_YET",
+  "realizer": "gpt-6.1-sol/xhigh"
+}

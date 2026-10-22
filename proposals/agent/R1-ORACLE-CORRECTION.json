@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "status": "READ_ONLY_RECONCILED_EXISTING_CANONICAL_PARTIAL_RULE",
+  "checkedAt": "2026-10-22T11:36:00.377Z",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "manifestDigest": "8d5dd09d6a4c0ca15bb9f5ab61c0adcea46544a32aca2914e1430d311f8749f4",
+  "checkpointSha256": "7f66847ac1d5e1bdf9ac4b219517389f5529e20d5b4fdab7c5258b97b78889f7",
+  "resultStatus": "partial",
+  "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3",
+  "occurrenceResultSha256": "9faa7553f7cf449ddce0deaea79dff3cb057bb94e689ae0cf372ff89e5d3c3f0",
+  "ruleSource": "src/data/research-repository.ts projected: partial+acceptPartialObservations selects method fetch and truncated false",
+  "classified": [
+    {
+      "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+      "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+      "method": "fetch",
+      "truncated": false,
+      "eligible": true
+    },
+    {
+      "evidenceId": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+      "contentHash": "8b10fcbbb062cf9a666237dd8cb8fd3d7369262d2e266954561c2ddaece2a40f",
+      "method": "fetch",
+      "truncated": false,
+      "eligible": true
+    },
+    {
+      "evidenceId": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+      "contentHash": "48a4cf4a9ee460c1d41466774a300b75524fb681a1fd9eddc27c1b62e205007d",
+      "method": "fetch",
+      "truncated": false,
+      "eligible": true
+    },
+    {
+      "evidenceId": "keenable:02d3b679b232631548edc2f8d5b2dd4885802b02721d9f21bfe1837a82e76d39",
+      "contentHash": "6ad5f773c77360e31bba16551d2cb623589c7dcf06d69d468ae5efb76ef0ebe0",
+      "method": "search_snippet",
+      "truncated": false,
+      "eligible": false
+    },
+    {
+      "evidenceId": "keenable:60bc7f14c97a1e9d1702674ac02557b64c5c2f82473979457e0a7176f2f63486",
+      "contentHash": "781b3d8018706ba9623a37d589fa7a23c5d80241e5e7e920e9ef2a9c8bbc7161",
+      "method": "search_snippet",
+      "truncated": false,
+      "eligible": false
+    }
+  ],
+  "expectedReusableRefs": [
+    {
+      "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3",
+      "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+      "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724"
+    },
+    {
+      "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3",
+      "evidenceId": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+      "contentHash": "8b10fcbbb062cf9a666237dd8cb8fd3d7369262d2e266954561c2ddaece2a40f"
+    },
+    {
+      "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3",
+      "evidenceId": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+      "contentHash": "48a4cf4a9ee460c1d41466774a300b75524fb681a1fd9eddc27c1b62e205007d"
+    }
+  ],
+  "rawEvidenceCount": 5,
+  "reusableCount": 3,
+  "actualFirstRunId": "8102d357-fa5e-4bd3-8be4-81696141a940",
+  "actualFirstRefsMatch": true,
+  "firstUsage": [
+    {
+      "startedAt": "2026-10-22T11:33:04.167Z",
+      "completedAt": "2026-10-22T11:33:06.405Z",
+      "output": {
+        "usage": {
+          "inputTokens": 1009,
+          "totalTokens": 1024,
+          "outputTokens": 15
+        },
+        "status": "tool_calls"
+      }
+    },
+    {
+      "startedAt": "2026-10-22T11:33:07.007Z",
+      "completedAt": "2026-10-22T11:33:12.383Z",
+      "output": {
+        "usage": {
+          "inputTokens": 3868,
+          "totalTokens": 4754,
+          "outputTokens": 886
+        },
+        "status": "needs_input"
+      }
+    }
+  ],
+  "limits": [
+    "Original R1-FIRST-FAILURE preserved.",
+    "First model completed; process cleanup executed before parent nonzero exit. PID/session hashes and IPC transport metrics were not retained and cannot be reconstructed.",
+    "No new model, web request, mutation or reseed during this reconciliation."
+  ]
+}

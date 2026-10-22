@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "status": "TWO_FRESH_EXACT_REVIEWS_NO_FINDINGS",
+  "scopeSha256": "196aedaa4d8b2c5a1b6d44538e144bca49146435efe536871dabac7009e02ca0",
+  "snapshot": "/tmp/accel-research-service-review-v1",
+  "cycle": 1,
+  "reviewers": [
+    {
+      "task": "/root/research_service_counter_review",
+      "role": "same_coder_model_counter_review",
+      "configuredModel": "gpt-6.1-sol",
+      "servedModel": "UNATTESTED",
+      "newContext": true,
+      "exactDigestVerified": true,
+      "findings": [],
+      "independentProbes": "Node memory probes: missing callback, false/null/undefined/string/number authorization, transaction client/order, original exceptions, controlled denial, authorized missing state, zero collector creation",
+      "postgres": "NOT_RUN"
+    },
+    {
+      "task": "/root/research_service_architecture_review",
+      "role": "architecture_review",
+      "configuredModel": "gpt-6-astra",
+      "servedModel": "UNATTESTED",
+      "newContext": true,
+      "exactDigestVerified": true,
+      "findings": [],
+      "coverage": "Full two-file scope and baseline diff; callback, live-only, transaction, invalidation and no duplicate evidence SQL",
+      "postgres": "NOT_RUN"
+    }
+  ],
+  "realizerTests": {
+    "totalDataWatch": 79,
+    "postgres": 50,
+    "servicePostgres": 4,
+    "strictTypecheck": "PASS",
+    "environment": "Disposable local PostgreSQL17.6; no provider or model call by data owner"
+  },
+  "limits": [
+    "Actual SQL principal callback is integrator-owned and absent from review snapshot service factory",
+    "Reviewers did not verify historical4pins materially; realizer archive verification is distinct",
+    "No Aiven, provider or integrated model reception in this data review"
+  ]
+}

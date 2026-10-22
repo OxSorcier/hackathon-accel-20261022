@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "status": "RESEARCH_R1_R2_RECEIVED_WITH_EXPLICIT_LIMITS",
+  "r1": "proposals/agent/R1-RECEPTION.json",
+  "r2": "proposals/agent/R2-RECEPTION.json",
+  "r2Sha256": "895bf90d5ad7624c4bfad7f64f9a9ec10fd3bd240c80c6f20a11f909d23cab05",
+  "checkedAt": "2026-10-22T12:27:20.710254+00:00",
+  "evidence": [
+    "R1 two distinct real model runs retrieve the same3 reusable observations; actual reported11720tokens, cost unknown.",
+    "R2 controlled actual Aiven correction invalidates an otherwise feasible1420 plan, retains approved control and2sourceversions; new-key identical content retains generation2/currentrefs."
+  ],
+  "limits": [
+    "Controlled source change only. No publisher revision, actual model inference, browser authentication or ERP execution proved.",
+    "The original R2 process reached the duplicate assertion after three native runs, fresh connection/session lookup and stale approval/case refusals. Session digests and duplicate return object were not retained; these events are not replayed or invented.",
+    "R1 original first-process metric limits remain. No reset, seed, import, business confirmation, approval or analysis repeated.",
+    "R1 first PID/session/IPC not retained. R2 injected provider, no new actual model/HTTP call."
+  ],
+  "industrialFlow": "NOT_PROVED_BY_RESEARCH_RECEPTION"
+}

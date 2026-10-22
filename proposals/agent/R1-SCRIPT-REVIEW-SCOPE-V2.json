@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "createdAt": "2026-10-22T10:54:06.974611+00:00",
+  "scope": "R1 reception operator scripts only, existing Aiven isolated schema and canonical frozen application entry",
+  "sourceFingerprint": "bcd3e7fd5fbbb8b224cae8e69f3ee4524478bebdc988cd12d4697040fdf28bb2",
+  "files": [
+    {
+      "path": ".local/research-reception/shared.ts",
+      "sha256": "3f13ed1dda09eae140ccca4276c84df399befe69c6a7f0daedbd297b2c0c366f"
+    },
+    {
+      "path": ".local/research-reception/serve.ts",
+      "sha256": "f1d0f1f8fe3e6a0fad9ba4969b8cf75482e35094eacfae4d6813615bf19e27a8"
+    },
+    {
+      "path": ".local/research-reception/run.ts",
+      "sha256": "dfbd3b67b746d871486bd923b726901c5be43d62035d5603f39490dd829eb69a"
+    }
+  ],
+  "runtimeDependency": "proposals/integration/REVIEW-INPUT-RESEARCH-SERVER.json",
+  "runtimeDependencySha256": "f78b5bc99974d61c1fd36ef3bcd28d263324003805d9e2ca1a7cb0015d554d91",
+  "typecheck": "PASS with ignoreConfig, strict, NodeNext, allowImportingTsExtensions",
+  "execution": "NO_DATABASE_OR_PROVIDER_CALL_YET",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "updatedAt": "2026-10-22T11:00:41.839245+00:00",
+  "change": "Initial message policy+system pin, externally supplied checkpoint/manifest digests and recomputed runtime fingerprint, identical phase digest, terminal transport latch, bounded child termination, negative receipt."
+}

@@ -1,0 +1,41 @@
+{
+  "schema":"accel-agent-acceptance-proposal/1",
+  "status":"PREPARED_PENDING_CANONICAL_CONTRACT_AND_PATH_RELEASE",
+  "date":"2026-10-22",
+  "receivedDirection":"Company context approved and transmitted to existing builders: protect commitments and qualify opportunities from the same sourced event, first in construction materials and wood.",
+  "canonicalProductSource":"docs/PRODUCT-VISION.md, A1-A4 and A6",
+  "invariants":[
+    "Impact is determined from company relations and business facts, not article sentiment.",
+    "The same event can have risk, opportunity or mixed consequences for distinct company resources.",
+    "A public signal does not prove customer interest, increased demand, a supplier dependency, substitution rights or a selling margin.",
+    "An offer draft creates neither a stock reservation nor an external message.",
+    "Confirmed orders and SKU/unit/date/policy checks remain authoritative.",
+    "Company, source, relation, case, business and policy versions remain attributable and current."
+  ],
+  "cases":[
+    {"id":"OPP-01","input":"Same received event, verified affected purchase and independently identified free compatible stock","expected":"Risk and opportunity may coexist. Each assessment references its own declared relation and calculated facts."},
+    {"id":"OPP-02","input":"Negative article without a verified company relation","expected":"No inferred stock risk or commercial demand from tone alone; relation remains unknown or to verify."},
+    {"id":"OPP-03","input":"Physically present stock entirely reserved to B","expected":"No free commercial capacity is claimed unless an explicit currently admissible replacement protects B and other commitments."},
+    {"id":"OPP-04","input":"Unreserved stock needed by another confirmed commitment","expected":"Do not classify it as available merely because no reservation row exists; evaluate every affected engagement."},
+    {"id":"OPP-05","input":"ISO120 available while demand concerns ISO100","expected":"No implicit substitution. Present any alternative only with explicit compatibility/acceptance still required."},
+    {"id":"OPP-06","input":"No verified interested customer, demand quantity or deadline","expected":"Opportunity to qualify and missing inputs, not a confirmed order, customer promise or revenue."},
+    {"id":"OPP-07","input":"No selling price, buying cost or commercial terms","expected":"No fabricated selling price or margin. Costs already known may be reported with their own provenance and scope."},
+    {"id":"OPP-08","input":"Unconfirmed inbound is the only resource supporting an offer","expected":"Conditional capacity, not confirmed available stock."},
+    {"id":"OPP-09","input":"Confirmed delivery arrives after the potential customer's requested need date","expected":"Offer cannot be promised for that date."},
+    {"id":"OPP-10","input":"Two opportunity candidates consume the same remaining capacity","expected":"Separate non-executing alternatives must not be presented as simultaneously committed; a future reservation requires its own authenticated command."},
+    {"id":"OPP-11","input":"Public source is corrected, production resumes or the verified relation is withdrawn","expected":"Reevaluate or invalidate linked opportunity/risk dossiers even if stock revision is unchanged."},
+    {"id":"OPP-12","input":"Offer draft prepared by the model","expected":"Pending review, no stock mutation, reservation, purchase, email or other external communication."}
+  ],
+  "requiredCapabilitiesForSharedContract":[
+    "Positive projection of evidence with actual version and provenance",
+    "Server-declared relation and its validation/ambiguity status",
+    "Stable dossier reference plus source and relation versions",
+    "Permitted impact classification and explicit unknown states",
+    "Declared commercial inputs and missing-data representation, without making absence look like a zero price or a confirmed demand",
+    "Current case-version port checked independently of current business revision"
+  ],
+  "ownership":"This file proposes behaviors and acceptance cases, not a competing shared schema. Integrator owns canonical contracts, migrations and integration tests. Agent/domain builder owns only released implementation paths and targeted unit tests.",
+  "implementationState":"NOT_STARTED for this extension; initial reviewed READY files remain frozen",
+  "tests":"NOT_RUN for opportunity extension",
+  "nextAction":"Receive canonical contract and explicit paths from integrator, then implement and independently review the exact delta."
+}

@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "status": "TWO_FRESH_EXACT_REVIEWS_NO_FINDINGS",
+  "scopeSha256": "4ce9e6bf7061cb1acfe00262c0341d675af94827789ef8c5161c8cb2bda9a455",
+  "snapshot": "/tmp/accel-public-contract-policy-review-v1",
+  "cycle": 1,
+  "realizerModel": {
+    "configured": "gpt-6.1-sol",
+    "served": "UNATTESTED"
+  },
+  "reviewers": [
+    {
+      "task": "/root/public_contract_policy_counter_review",
+      "role": "same_coder_model_counter_review",
+      "configuredModel": "gpt-6.1-sol",
+      "independentMemoryProbes": 14,
+      "probeResult": "PASS",
+      "servedModel": "UNATTESTED",
+      "newContext": true,
+      "effort": "high",
+      "exactDigestVerified": true,
+      "findings": [],
+      "database": "NOT_RUN",
+      "network": "NOT_RUN"
+    },
+    {
+      "task": "/root/public_contract_policy_architecture_review",
+      "role": "architecture_review",
+      "configuredModel": "gpt-6-astra",
+      "independentMemoryProbes": 6,
+      "probeResult": "PASS",
+      "servedModel": "UNATTESTED",
+      "newContext": true,
+      "effort": "high",
+      "exactDigestVerified": true,
+      "findings": [],
+      "database": "NOT_RUN",
+      "network": "NOT_RUN"
+    }
+  ],
+  "coverage": [
+    "Both complete scope files, base diff and5context pins",
+    "Validation/native BOAMP identity, dates, source-set and10boundary",
+    "Partial and success filtering, exact opt-in and namespace",
+    "Existing projection reconciliation, pinned refs/observation time, freshness, generation invalidation, publication barrier",
+    "Service authorization and no refresh/collector, source observations distinct from qualified CRM demand"
+  ],
+  "realizerTests": {
+    "aivenPostgres": 34,
+    "newPolicyPostgres": 10,
+    "existingResearchPostgres": 20,
+    "existingServicePostgres": 4,
+    "pureDataWatch": 29,
+    "strictTypecheck": "PASS",
+    "environment": "Random isolated schemas on existing Aiven, TLS verify-full/realCA, all dropped; no provider/model call"
+  },
+  "limits": [
+    "Reviewer SQL and rollback probes were simulated in memory, not PostgreSQL proof",
+    "PostgreSQL/Aiven, Vitest/typecheck, real concurrency and provider calls NOT_RUN by reviewers",
+    "Server configuration and actual collection remain integrator-owned"
+  ]
+}

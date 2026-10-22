@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "CANDIDATE_SHARED_DTO_TYPECHECKED_NOT_FINAL_REVIEWED",
+  "path": "src/contracts/industrial.ts",
+  "sha256": "677af20201199649634b6b95bfeb81b73cbecc761ecbdeedb4e7f332f6c13e5b",
+  "date": "2026-10-22T11:10:31.755164+00:00",
+  "scope": "Additive context and controlled event, common calculated plan, durable analysis and simulated execution. Does not modify C1 or import data.",
+  "rules": [
+    "Integer cents, integer quantities, explicit EUR and native provenance. Actor provenance never grants rights.",
+    "Current IndustrialContext excludes future/operator events. Only authenticated release supplies ReleasedIndustrialEvent.",
+    "Alternative canonicalResourceId names C1 emergency quote capacity. URG-IND-ALT-8 is not additional supply beyond URG-1.",
+    "All-commitment calculation remains server-side; bounded model projection only.",
+    "Approval and simulated execution are distinct durable records. No real ERP supplier action."
+  ],
+  "ownerPaths": {
+    "agent": [
+      "src/domain/industrial.ts",
+      "src/agent/industrial-context.ts",
+      "tests/domain/industrial*.ts",
+      "tests/agent/industrial*.ts"
+    ],
+    "data": [
+      "src/data/industrial-relations.ts",
+      "src/data/analysis-trigger.ts",
+      "tests/data/industrial*.ts",
+      "proposals/data/"
+    ],
+    "integrator": [
+      "src/contracts/industrial.ts",
+      "migrations/",
+      "src/server/",
+      "tests/integration/",
+      "tests/server/"
+    ]
+  }
+}

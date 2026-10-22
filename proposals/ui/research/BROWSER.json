@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T11:21:56.881Z",
+  "browser": "Aside local",
+  "scope": "Synthetic UI harness. No external model, collector, database or R1/R2 acceptance proof. Separate stable3001 observation is read-only.",
+  "responsive": "CSS iframe widths 320,390,768,1024. No real phone/touch emulation.",
+  "checks": [
+    "Available research without a business proposal",
+    "Controlled namespace and test markers",
+    "Historical versions 1 and 2 retained per run",
+    "Trace displays saved-research receipt and reported external call count",
+    "Missing, stale, partial, empty, error and uncertain states",
+    "Read failure preserves last received context and suspends analysis",
+    "Lost analysis receipt remains visibly uncertain",
+    "No horizontal overflow, heading focused and visible on panel opening"
+  ],
+  "files": [
+    {
+      "path": "proposals/ui/research/evidence/adaptops-real-3001-before.png",
+      "sha256": "0a28be7460637710ce63102084b195d91f9409e59e00bffb2e94044af28e46b1"
+    },
+    {
+      "path": "proposals/ui/research/evidence/adaptops-real-3001-before.snapshot.txt",
+      "sha256": "09f0711829be45fff0d7c0d160b8ca68608a245594843099c04c6f2be454ad26"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-1024.png",
+      "sha256": "997ffd1d36d042e0679fad6e06f0ec9a2034facf71f6dca432722b9a00f39f06"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-1024.snapshot.txt",
+      "sha256": "df6910373aead4efd5836319bbfb7c06401abc2e6a0c5366faf36a712e3954be"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-320.png",
+      "sha256": "fb23f586536c04d3d0f7d177b50bf7f0613590b353d53e0558ac67016d23f536"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-320.snapshot.txt",
+      "sha256": "7bdbc2e1f098315f0fe31b31b172c9e0c59e90c30f6653a49656fed5f87a617a"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-390.png",
+      "sha256": "60981f79468aa644a2036a6fe549220e5750676889bf55cbf843a0a9268132ed"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-390.snapshot.txt",
+      "sha256": "e6388451b1b2055bfa55dc89dc4518571cebd9793a89ae65f9830444d4faab02"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-768.png",
+      "sha256": "8f75ac52f8d8b8c8b1f989a42e1ecb709820a6bc27856b25e569374b1a249154"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-768.snapshot.txt",
+      "sha256": "90a6a98f36912dd7bb512d7a3478ee7b2a63ec37b77193852e9639354e75e277"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-analyzed.snapshot.txt",
+      "sha256": "46d2df4087bcaaeab04f8738305a8a79712bedf71b7363ca53f3e7eb2ab93221"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-capabilities-history-open.png",
+      "sha256": "d5c34155655ea0cbf482f9d03bfc17e73476a8f65302465fd6fcfbef24de3bcd"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-capabilities-history-open.snapshot.txt",
+      "sha256": "3d2d79970115fcc80d15401984c505d844b5ac61e18c4487bbac477095941fed"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-capabilities-history.png",
+      "sha256": "a8d3deba092db87901800c21fc9fa58802d9b769513080849cd816dabc5211e2"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-capabilities-history.snapshot.txt",
+      "sha256": "960f0394bf570ae1b96d0573b7242381fe04456715b7f82eae808f3a118830c9"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-command-uncertain.snapshot.txt",
+      "sha256": "5ca9d86e5568c2eb7e6c49c7ec01ee4a945167dcb9114f6821937517f0470139"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-controlled.png",
+      "sha256": "6035dc49248cc21133fa323e0c02c91c72ed7b439fb86a57c558aeda2710e65b"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-controlled.snapshot.txt",
+      "sha256": "c2ee3c645388cf7bdca2e29b1aab256fba221bc8e955703827699539cf69d868"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-empty.snapshot.txt",
+      "sha256": "62fc94e4c1a6eebfa4fa10190edf0b1a99dd6fcfdf48131c4c67a0af50096cbe"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-error.snapshot.txt",
+      "sha256": "9d680127c796c3a9bf4a521fb9f36c90665a516f96a0124278276716424ee6ac"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-live.png",
+      "sha256": "d63f282cb8ca3d93eb588488f086aaa257cabf3679ea8cd01f39da9327e73a0e"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-live.snapshot.txt",
+      "sha256": "72adf149be263f128f7cad9d0667d659ecfcdf185be389fc88c062be5032673c"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-missing.snapshot.txt",
+      "sha256": "e0b5acb457df2135457bbbb482746ee386895e96003e2260401f77675d7be06f"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-partial.snapshot.txt",
+      "sha256": "7b9f8f9fd176a2fad908e763692f13f721a96092604000b5ad0599561272812a"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-pending-reopen.json",
+      "sha256": "878468e6e54bcf36c43d42fb5cf159e0fdd9522e53ebe79ca024ca28d4fb8e30"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-pending-reopen.snapshot.txt",
+      "sha256": "31dfb0f0194e8268b4988e91a4f8f024bdf0b734af97401877733e072226bdad"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-read-error.snapshot.txt",
+      "sha256": "3b6b3a9869e21bc3a58dbde5159b3dae8d1ed8928cd1c5b47fd7b3696a0e7667"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-responsive-final.json",
+      "sha256": "f5f9fa924e0d3503491c2a55196216304c7443bfb2ecf3b640c21525ced05c06"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-responsive.json",
+      "sha256": "2f8bab0e4422d3d84d83205d893dab90dee4966aafd80a8d71edbc8c3bcdfd49"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-stale.snapshot.txt",
+      "sha256": "a8c869de4bc723a0e7cfcc4edbe0c7025714efaa8648617869ccd15e9483597f"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-states.json",
+      "sha256": "4da90af30278d3425aefb31586676d65f75876b37a78b812ae755f6cc2de1408"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-uncertain-reopen.json",
+      "sha256": "b9f0de6398a160d5b5471e7fc5cd16a6c6979f04c8317a855e959cb7d72c1530"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-uncertain-reopen.snapshot.txt",
+      "sha256": "f6d56c398588859a3db7b4cd7cfca5d801a6385f7b248e536fd011edd067e7ac"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-uncertain.snapshot.txt",
+      "sha256": "8c2ae2ca1151a91be597973f6898173589c82dd717d1956cfc95ea5878f1704f"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-versions-trace.png",
+      "sha256": "8ddc232909d480ed7a41db96ec87b4f2e95c3cd6fd26ef4ae61555708ba12b03"
+    },
+    {
+      "path": "proposals/ui/research/evidence/research-versions-trace.snapshot.txt",
+      "sha256": "98860739de2ff009ce459f1db249881b62a0996384695be97b438ce370719936"
+    }
+  ]
+}

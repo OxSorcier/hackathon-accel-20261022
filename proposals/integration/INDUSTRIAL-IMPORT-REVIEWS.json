@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "status": "RECEIVED_BOTH_ROLES_NO_RETAINED_FINDING",
+  "date": "2026-10-22T11:19:41.933610+00:00",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModelIdentity": "unattested",
+  "scopeManifest": "proposals/integration/REVIEW-INPUT-INDUSTRIAL-IMPORT.json",
+  "manifestSha256": "53b5a7bccd238271e51ec5aa9d6a71e18e90d03d6ada638b6c48bdbade05b4f3",
+  "roles": [
+    {
+      "reviewer": "/root/industrial_import_counter_review",
+      "modelRequested": "gpt-6.1-sol",
+      "isolation": "fork_turns:none",
+      "effort": "high",
+      "cycles": 2,
+      "findings": [
+        "malformed URI could expose credentials in uncaught error",
+        "replay did not compare policyVersion"
+      ],
+      "result": "fixed_and_revalidated"
+    },
+    {
+      "reviewer": "/root/industrial_import_architecture_review",
+      "modelRequested": "gpt-6-astra",
+      "isolation": "fork_turns:none",
+      "effort": "high",
+      "cycles": 2,
+      "findings": [
+        "replay did not compare policyVersion"
+      ],
+      "result": "fixed_and_revalidated"
+    }
+  ],
+  "checks": [
+    "Both roles independently executed --check, targeted script typecheck and counterexamples.",
+    "Root local PostgreSQL import and new-process readback passed; divergent policy readback rejected after correction.",
+    "Fake malformed URI now emits only a generic diagnostic and no success receipt."
+  ],
+  "limits": [
+    "Reviewers did not connect to Aiven. Runtime import receipts are separate.",
+    "Industrial types reviewed; future consumers still require their own code reviews and tests."
+  ],
+  "hashesStable": true
+}

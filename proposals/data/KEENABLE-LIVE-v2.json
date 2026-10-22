@@ -1,0 +1,111 @@
+{
+  "observedAt": "2026-10-22T09:39:03.841Z",
+  "kind": "real_keenable_collection",
+  "status": "partial",
+  "startedAt": "2026-10-22T09:38:58.948Z",
+  "completedAt": "2026-10-22T09:39:03.841Z",
+  "sources": [
+    {
+      "url": "https://api.keenable.ai/v1/search",
+      "status": "partial",
+      "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+      "evidence": [
+        {
+          "id": "keenable:e618a4133c36463fc60a3d0f03cf228283f991188871efb9ef5496bd92881058",
+          "url": "https://rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026",
+          "title": "Actualit&#xE9; du 03 mars 2026",
+          "publishedAt": "2026-03-04T07:20:00.000Z",
+          "collectedAt": "2026-10-22T09:39:01.302Z",
+          "contentHash": "6e9c40c27ad9b8d3c6f026bb18f6c1463295e9e104fdc937badb906832aafbf8",
+          "contentCharacters": 1322,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/search/public",
+            "method": "search_snippet",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-05-06T04:48:29.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        },
+        {
+          "id": "keenable:a032668608148448b3906c78a43c73dbdaf49920d1151c3a63d2f23b1e239484",
+          "url": "https://rockwool.com/fr/soissons/actualites/actualite-du-02-janvier-2026",
+          "title": "Actualit&#xE9; du 02 janvier 2026",
+          "publishedAt": "2026-01-02T16:57:25.000Z",
+          "collectedAt": "2026-10-22T09:39:03.095Z",
+          "contentHash": "24b60a7834111f6c8665aee34b5ec58c733c5fa3d02f357029bf5b3763db6f39",
+          "contentCharacters": 808,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/search/public",
+            "method": "search_snippet",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-05-06T08:34:17.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        },
+        {
+          "id": "keenable:02d3b679b232631548edc2f8d5b2dd4885802b02721d9f21bfe1837a82e76d39",
+          "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+          "title": "Actualité du 05 mars 2026",
+          "publishedAt": "2026-03-06T07:20:00.000Z",
+          "collectedAt": "2026-10-22T09:39:03.841Z",
+          "contentHash": "1fff7b9e5d44465b2b3b79f70ccde48281e284f0d9d76316d87880c8d50ae4cf",
+          "contentCharacters": 1480,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/fetch/public",
+            "method": "fetch",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-05-05T18:04:25.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        },
+        {
+          "id": "keenable:3454f2e08d30f19a721779ab605a81171f54783d24a86e77578b281d708422cc",
+          "url": "https://rockwool.com/uk/about-us/news/2025/rockwool-broadens-industry-education-offering-with-launch-of-new-training-academy",
+          "title": "Article headline",
+          "publishedAt": "2026-01-12T12:31:00.000Z",
+          "collectedAt": "2026-10-22T09:39:03.841Z",
+          "contentHash": "c5282298a2e4065ad44b2f5dddffe8204b3b246a7a09a5286e3f8eb0667bce9d",
+          "contentCharacters": 1180,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/search/public",
+            "method": "search_snippet",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-05-20T10:59:46.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        },
+        {
+          "id": "keenable:abbfa3dbd73a69d12b95d05e6b5790fe98766669e0d62cace37f2057c794b049",
+          "url": "https://rockwool.com/fr/soissons/actualites/actualite-du-29-juin-2026",
+          "title": "Actualité du 29 juin 2026",
+          "publishedAt": "2026-06-29T17:40:00.000Z",
+          "collectedAt": "2026-10-22T09:39:03.841Z",
+          "contentHash": "2b4e4e3cd9a307af404541735e10de6ec1e4a742c754189c2909eec172d65817",
+          "contentCharacters": 1103,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/search/public",
+            "method": "search_snippet",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-07-02T03:59:17.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Public statements are dated; no present production capacity is inferred",
+    "No verified relationship with synthetic suppliers or SKUs",
+    "This probe does not execute a model or calculate a proposal"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "status": "existing_http_path_verified_in_source_runtime_not_received",
+  "product": "Physical Impact",
+  "public_demo": {
+    "url": "https://physical-impact.com/demo",
+    "factory": "src/ui/physical-demo.ts:createPhysicalDemoApi",
+    "mode": "Scripted account and browser storage. Separate from canonical Aiven portfolio.",
+    "receipt": "proposals/ui/physical-impact-build-v1/READY.json"
+  },
+  "existing_product_path": {
+    "selector": "src/ui/App.tsx:ConnectedApp uses createHttpUiApi outside /demo and demo=1",
+    "interface": "src/ui/types.ts:UiApi",
+    "http_factory": "src/ui/api.ts:createHttpUiApi",
+    "industrial_adapter": "src/ui/industrial-api.ts:createIndustrialApi",
+    "read": "GET /api/industrial",
+    "question": "POST /api/industrial/questions then GET /api/runs/:id",
+    "report": "GET /api/industrial/reports/:id",
+    "decision": "POST /api/industrial/plans/:id/decision",
+    "simulation": "POST /api/industrial/approvals/:id/simulate",
+    "authentication": "Existing server session and company actor. No identity supplied by the model grants authority.",
+    "presentation": "IndustrialDesk owns received workspace and command state; PhysicalPages renders it. No new store or composition is needed."
+  },
+  "ownership": {
+    "frontend_composition": "01a16346-9b6f-7b70-afc7-57775e697a94, App.tsx, IndustrialDesk.tsx, physical-pages.tsx, physical-impact.css and physical-model.ts",
+    "http_adapters_parsers_types_tests": "01a162bd-facf-7b63-861b-9bbf7f402938",
+    "shared_contracts_proxy_runtime_backend": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "single_runtime_scenario": "01a15f24-8d9c-7fd2-8a00-1b039732248f"
+  },
+  "remaining": [
+    "Integrator must route this same frontend to its existing 3003 API. Current Vite proxy points to 3000.",
+    "The public deployment is static. No Fastify API is served by that package.",
+    "UI adapter accepts received central display/publicResearch/publicFeed/questionsConnected; the new PhysicalPages rendering does not yet project all these central fields.",
+    "Receive a single canonical workspace/report and update this presentation from its server labels and source observations. Do not load a second alias registry.",
+    "Run one existing QA scenario on the integrated candidate. Do not infer live collection or model execution from the scripted demo."
+  ],
+  "publication": {
+    "combined_package": "/tmp/physical-impact-demo-20261022-final/.vercel/output",
+    "config": "/tmp/physical-impact-demo-20261022-final/.vercel/output/config.json",
+    "preserve": "Landing files, /demo and /demo/ routing, app.html and referenced assets must travel together. A landing-only package would remove the demo."
+  },
+  "actions_in_this_handoff": "Source inspection and this receipt only. No collection, model call, database command, app message or deployment."
+}

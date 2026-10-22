@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "status": "READ_CHECKPOINT_PASS_FULL_FLOW_PENDING",
+  "owner_thread_id": "01a15f24-8d9c-7fd2-8a00-1b039732248f",
+  "coordination_thread_id": "01a162cf-0150-7091-8394-f5dbca7b53a9",
+  "integrator_thread_id": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "scope": "Independent operator expectations for AdaptOps ERP/CRM, fire risk and opportunity report",
+  "authority": "Human current mandate and latest human request verified in native thread 01a16316-d948-7672-b47f-395e6d411d33 on 2026-10-22: ERP/CRM/public information chatbot, report, plan, approval and simulated execution; frontend remains with Erwan.",
+  "product_code_changes": false,
+  "operator_only": true,
+  "must_not_enter_model_context": true,
+  "release": {
+    "manifest": "proposals/product/alignment-20261022/v2/INDUSTRIAL-READY-v2.json",
+    "sha256": "b955e5374c111bd7d5e1779c00028953980b88e1683280c26a80f14ca281bfea",
+    "company_id": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+    "policy_version": null,
+    "contract_revision": "c638d5c1c7fe4205c26318642c21e0b0375149490d81ffde9a4c1242cca04845",
+    "candidate_url": null
+  },
+  "rules": [
+    "Fix native IDs, quantities, dates, units and expected sets only after receiving the exact frozen manifest.",
+    "Do not use the production business engine to compute the independent oracle.",
+    "Record first outputs and failures before any correction or replay.",
+    "Release future events only through the received operator contract, one at a time.",
+    "Do not send oracles, future events or expected answers to product agents.",
+    "Use the same input release for product and explicitly incomplete naive baseline.",
+    "Unknown model usage or monetary cost stays unknown.",
+    "The prior 2.5 second smoke is historical local deterministic evidence, not this acceptance or a user-impact benchmark.",
+    "Stable 3001 and its existing company are not reset or modified by preparation."
+  ],
+  "cases": [
+    {
+      "id": "NULL_IMPACT",
+      "title": "Signal sans exposition établie",
+      "expectation": "Aucun engagement déclaré exposé sans relation reçue. Distinguer impact nul et information insuffisante.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "MULTIPLE_COMMITMENTS",
+      "title": "Plusieurs engagements exposés",
+      "expectation": "Comparer l’ensemble exact des engagements exposés à l’oracle indépendant, avec quantités, échéances et liens attribués. Ne pas se limiter au premier chantier.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "RESERVED_STOCK",
+      "title": "Stock présent mais réservé",
+      "expectation": "Le stock physique réservé ne devient pas disponible pour un nouveau plan. Les engagements protégés restent couverts.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "LATE_ALTERNATIVE",
+      "title": "Alternative disponible trop tard",
+      "expectation": "Une alternative arrivant après le besoin ou la marge reçue ne couvre pas le chantier à temps.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "CORRELATED_ALTERNATIVE",
+      "title": "Alternative non indépendante",
+      "expectation": "Un autre fournisseur dépendant du même site ou événement ne devient pas un secours indépendant sans preuve. Une dépendance inconnue reste à vérifier.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "UNQUALIFIED_CRM",
+      "title": "Demande CRM non qualifiée",
+      "expectation": "Un signal ou un prospect ne devient ni commande ni revenu ni réservation. Toute piste conserve sa qualification et ses inconnues.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "QUALIFIED_CRM",
+      "title": "Demande CRM qualifiée",
+      "expectation": "Une opportunité peut être proposée seulement avec produit, quantité, dates, client et capacité recevables. Une qualification commerciale ne vaut pas commande confirmée.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "OPPORTUNITY_CONFLICT",
+      "title": "Opportunité consommant la couverture d’un autre chantier",
+      "expectation": "Le gain commercial supposé ne permet pas de prendre le stock déjà nécessaire à un engagement reçu. Évaluer le portefeuille après le plan, sans double allocation.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "SOURCE_REVISION",
+      "title": "Correction d’une source sous la même identité",
+      "expectation": "Conserver v1, recevoir v2 et son empreinte. Réévaluer ou refuser l’ancien plan selon ses dépendances, même si le stock n’a pas changé.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "STOCK_REVISION",
+      "title": "Correction du stock ou des réservations",
+      "expectation": "Refuser l’approbation d’un plan fondé sur l’ancienne révision, puis recalculer avec les faits courants.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "APPROVED_INTERNAL_ACTION",
+      "title": "Action interne de simulation approuvée",
+      "expectation": "Uniquement si le contrat d’action est reçu : droits, versions, admissibilité et plafond contrôlés, effet simulé relu. Une simple approbation ne prouve pas un effet.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "ACTION_IDEMPOTENCE",
+      "title": "Rejeu de la même action interne",
+      "expectation": "Même clé logique et même commande donnent le même résultat, avec un seul effet. Une commande différente sous la même clé est refusée.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "DURABLE_RESTART",
+      "title": "Reprise après changement de session et redémarrage",
+      "expectation": "Retrouver les mêmes identités et historiques sans seed ni import répété. Ne pas injecter la réponse précédente dans le prompt.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "TENANT_AUTHORITY",
+      "title": "Société, auteur et droits serveur",
+      "expectation": "Une autre société, un homonyme, un rôle non autorisé ou un identifiant fourni par le modèle n’accorde aucun droit ni accès.",
+      "native_ids": null,
+      "expected_quantities": null,
+      "expected_exposed_set": null,
+      "status": "NOT_RUN",
+      "evidence": null
+    }
+  ],
+  "metrics": [
+    "Exact set of exposed native commitments: missing and extra IDs.",
+    "Constraint violations: reservations, SKU, unit, date, dependency, budget and capacity.",
+    "Correct qualification of CRM signals and admissible opportunity plans.",
+    "Stale approval refusal and preservation of revisions.",
+    "Wall-clock time to an admissible complete plan, including failures.",
+    "Actual external calls, model name and returned token usage.",
+    "Monetary model cost only when supported; otherwise null.",
+    "Observed internal effects, readback and idempotence."
+  ],
+  "completion": [
+    "Exact enriched release imported and read back on Aiven.",
+    "Prepared fire report shows source, company exposure, purchase and commercial options with explicit unknowns.",
+    "Applicable constraints hold after the selected plan.",
+    "Source or stock change triggers revision or stale refusal.",
+    "Restart preserves attributable state and traces.",
+    "Aside browser receipt matches the exact candidate sent to the integrator for promotion."
+  ],
+  "core_release": {
+    "manifest": "proposals/product/alignment-20261022/v2/CORE-READY.json",
+    "manifestSha256": "babc07971a1659db802e372751ac6e83fe4f23bf9d8dcf2a55c0b73a1b3199ca",
+    "files": [
+      {
+        "path": "proposals/product/alignment-20261022/v2/portfolio-10000.json",
+        "sha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af"
+      },
+      {
+        "path": "proposals/product/alignment-20261022/v2/portfolio-policy.json",
+        "sha256": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2"
+      },
+      {
+        "path": "proposals/product/alignment-20261022/v2/DATA-CHECKS.json",
+        "sha256": "bcf02f8047635a57293e8e65950fe00de3f42d4660a2aa050e00febbaf1dd3c2"
+      },
+      {
+        "path": "proposals/product/alignment-20261022/v2/LOCAL-DOMAIN-SMOKE.json",
+        "sha256": "f5f52d41d1e7dd22320275bf327f4bff0cec8171211b9da7a075391ea80ea0b7"
+      }
+    ],
+    "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+    "businessRevision": "R-INDUSTRIAL-CANDIDATE-2"
+  },
+  "temporal_and_causal_checks": [
+    "Qualified CRM demand predating the incident must not be presented as generated by that incident.",
+    "Competitor fulfilment inability requires a distinct attributed confirmation; shared supplier exposure alone is insufficient.",
+    "Supplier dependency is not a confirmed delayed ETA for every linked purchase line.",
+    "Physical stock, free stock, potential contribution, draft offer and realised sale must remain distinct."
+  ],
+  "oracle": "operator/adaptops-v2-qa/MIXED-ORACLE.json",
+  "currentContractObservation": {
+    "observedAt": "2026-10-22T11:26:49.151120+00:00",
+    "sha256": "5553acf836a5fc074a2100f36ea619a22f91fc094def662ff61adfce2dbcc3fd",
+    "matchesIndustrialDataReceipt": false,
+    "action": "Reconcile integrator amendment and final review before runtime acceptance. Data arithmetic oracle remains pinned to original exact data hashes.",
+    "interpretation": "Integrator v3 is an additive execution-ledger amendment. Authored context/event DTOs and exact data arithmetic remain unchanged; consumer code/reviews must use final contract."
+  },
+  "executionLedgerChecks": [
+    "After execution and new business revision, active stock holds still reduce free stock for every other plan.",
+    "Committed purchase/transport quote capacity stays consumed across report and business revisions.",
+    "A destination planned transfer is counted once and only on/after its dated arrival, without immediate physical receipt.",
+    "A draft offer consumes its qualified demand and attributed allocation; a second run cannot offer the same full demand again.",
+    "New plan revalidates against execution ledger and snapshot read under the same company lock/revision."
+  ],
+  "chatbotChecks": {
+    "status": "NOT_RUN",
+    "initialQuestion": "What has changed for our company, which commitments and commercial opportunities should I examine, and what plan preserves our commitments?",
+    "followUpQuestion": "Why this plan? Which received sources and business data support it, and what remains unknown?",
+    "rules": [
+      "Real provider and bounded tools over the same imported v2 company context, not the old small demo.",
+      "No expected IDs, quantities, answer or operator oracle supplied in the prompt.",
+      "Explicit ERP/CRM synthetic provenance and public source dates; never infer commercial dependency from a public title.",
+      "Run and trace persist actual calls, useful tool results and supplied usage; no private reasoning or secrets.",
+      "Follow-up retains attributable context and discloses missing data, never hardcoded success.",
+      "After-action answer must read current durable revisions/ledger and distinguish scheduled operations, draft offer and actual receipt or sale."
+    ],
+    "evidence": null,
+    "afterActionQuestion": "Now that the approved plan has been simulated, what has changed and what remains to be done?"
+  },
+  "displayIdentity": {
+    "product": "Physical Impact",
+    "formerProduct": "AdaptOps",
+    "customer": "Rivebois Matériaux",
+    "nativeCompanyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+    "authorityThread": "01a16346-9b6f-7b70-afc7-57775e697a94",
+    "verifiedAt": "2026-10-22T12:14:26.450372+00:00",
+    "preserveExistingArtifactPaths": true
+  },
+  "evidenceTracks": {
+    "demoUI": {
+      "status": "WAIT_AUTHOR_EXACT_RECEIPT",
+      "sourceOwnerThread": "01a16346-9b6f-7b70-afc7-57775e697a94",
+      "navigation": [
+        "Overview",
+        "Actions",
+        "Watchtower"
+      ],
+      "rules": [
+        "Preserve author physical-* and integration ownership.",
+        "Demo simulated content and local persistence do not prove remote ERP/CRM/public acquisition, model calls, Aiven effects or a server execution.",
+        "Receive exact source/review/browser evidence before testing an assembled UI; no source-main montage."
+      ]
+    },
+    "realBackend": {
+      "status": "WAIT_INTEGRATOR_RUNTIME_CANDIDATE",
+      "existingOracleUnchanged": true,
+      "requiredProof": "Attributed Aiven data, real source collection and model tools, exact report/plan, approval/execution readback, revisions and replay."
+    }
+  },
+  "receivedReadCheckpoint": {
+    "url": "http://127.0.0.1:3003",
+    "manifest": "proposals/integration/INDUSTRIAL-READ-CANDIDATE.json",
+    "sha256": "88278fe025a4867c98f088a698e177740b6b6257177a021cf915a47594e4d57c",
+    "evidence": ".local/qa-adaptops-v2/INDUSTRIAL-READ-3003.json",
+    "scope": "Authenticated reads only. No provider, collection, controlled event or business mutation.",
+    "fullFlow": "NOT_RUN",
+    "displayAliases": "NOT_CONNECTED"
+  }
+}

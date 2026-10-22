@@ -1,0 +1,357 @@
+{
+  "version": 12,
+  "observedAt": "2026-10-22T09:56:11.787778+00:00",
+  "status": "R1_REAL_RESTART_AND_R2_CONTROLLED_REVISION_RECEIVED_WITH_LIMITS",
+  "role": "agent",
+  "threadId": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+  "receivedFromThread": "01a162f6-8e54-7190-9b3b-fb79ba9f7b6b",
+  "sourceFiles": [
+    {
+      "path": "proposals/product/MEMOIRE-RECHERCHE-TRACES.md",
+      "sha256": "40f7688443fac56ec2d5ef37fabbc690490e51916430d780dc127a57757d5a56",
+      "read": "FULL_LOCAL_CONTENT"
+    },
+    {
+      "path": "proposals/product/MEMOIRE-RECHERCHE-TRACES-RECEIPT.json",
+      "sha256": "cefa708156180fbc0d4825bdc742eeb6ceacef9297300ca8617e66e0c908306e",
+      "read": "FULL_LOCAL_CONTENT"
+    }
+  ],
+  "existingOwnerThread": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "existingTracker": "ERW-133",
+  "priorDelivery": {
+    "receipt": "proposals/agent/CASE-READY.json",
+    "sourceFingerprint": "519649f7b18c69121d03513f587c681d958cac7dc7c7a33ef8bcca05b252242d",
+    "state": "FROZEN_FOR_INTEGRATOR_RECEPTION",
+    "change": "No prior receipt, code or server state changed for research intake.",
+    "reception": {
+      "receipt": "proposals/agent/CASE-RECEPTION.json",
+      "integratorReceipt": "proposals/integration/RECEIVED-AGENT-CASE.json",
+      "state": "RECEIVED_21_OF_21_AND_FROZEN_DURING_FINAL_UI_RECEPTION"
+    }
+  },
+  "ownedDelta": [
+    "Read previously stored company-scoped research through a typed server port before external search.",
+    "Distinguish attributed decision advice from research knowledge and original evidence.",
+    "Trace reuse or rejection, exact knowledge/source versions, freshness and conditions, and why a targeted new search is required.",
+    "Test independent agent executions without previous conversation content, changed test source, expired knowledge and foreign-company isolation."
+  ],
+  "states": {
+    "framingRead": "RECEIVED",
+    "currentCaseModules": "IMPLEMENTED_AND_TESTED_LOCAL_50_PASS_TWO_REVIEWS",
+    "researchTool": "IMPLEMENTED",
+    "researchLocalTests": "PASS_12_PROTOCOL_TESTS",
+    "researchAivenTests": "NOT_RUN_BY_THIS_BUILDER",
+    "R1": "DURABLE_SESSION_RESTART_ACCEPTANCE_NOT_RUN",
+    "R2": "DURABLE_SOURCE_CORRECTION_ACCEPTANCE_NOT_RUN",
+    "allBuilderTests": "PASS_64_AGENT_DOMAIN_SCENARIOS",
+    "globalTypecheck": "PASS",
+    "researchIndependentReviews": "COMPLETE_NO_RETAINED_FINDING"
+  },
+  "proposedAcceptance": [
+    {
+      "id": "R1",
+      "status": "NOT_RUN",
+      "scenario": "Persist attributed research evidence through server/data path, terminate session, new session and new run with only business question and company authority. Retrieve the right native knowledge/version, sources and conditions through the lookup tool. Show actual external calls made or avoided; repeat after application restart."
+    },
+    {
+      "id": "R2",
+      "status": "NOT_RUN",
+      "scenario": "Controlled explicitly labelled test source changes content/hash v1 to v2 under the same source identity. Lookup revises current knowledge, preserves v1 and correction link, and blocks or reevaluates dependent v1 proposals. Identical recollection creates no duplicate."
+    },
+    {
+      "id": "R3",
+      "status": "NOT_RUN",
+      "scenario": "Foreign-company record and homonymous entity cannot be reused or disclosed as company knowledge."
+    },
+    {
+      "id": "R4",
+      "status": "NOT_RUN",
+      "scenario": "Expired validity or changed source causes an explicit exclusion and targeted complement reason; no stale content silently treated as current."
+    },
+    {
+      "id": "R5",
+      "status": "NOT_RUN",
+      "scenario": "Missing information, empty lookup and empty search remain unknown; neither becomes evidence of absence."
+    },
+    {
+      "id": "R6",
+      "status": "NOT_RUN",
+      "scenario": "Lookup/source version changes during model or tool execution prevent a proposal against superseded knowledge."
+    },
+    {
+      "id": "R7",
+      "status": "NOT_RUN",
+      "scenario": "Provider error/uncertain stays explicit; no automatic external retry or fabricated successful research."
+    },
+    {
+      "id": "R8",
+      "status": "NOT_RUN",
+      "scenario": "Research hypotheses and regulatory applicability remain unverified; logs and model output do not become facts automatically."
+    },
+    {
+      "id": "R9",
+      "status": "NOT_RUN",
+      "scenario": "Traces show actual knowledge accepted/excluded, reason, IDs/versions, calls/results and timings; usage only when supplied, no invented cost or private reasoning."
+    }
+  ],
+  "historicalTestReconciliation": {
+    "sourceNote": "22 passed / 1 uncertain on an earlier active shared checkout",
+    "currentProof": "Final CASE-READY code has 50 local tests passed, including declared risk and confirmation; both independent reviews revalidated its exact source.",
+    "conclusion": "Preserve the historical failure; it is not a current regression against the final CASE fingerprint."
+  },
+  "nextAction": "Receive the corrected server checkpoint including the frozen agent provenance delta, create one isolated Aiven reception schema, run first and restart R1, then hand that same schema to integrator R2.",
+  "limits": [
+    "No research code, shared types, migrations, dependencies or database changes made at intake.",
+    "No new chat, ticket, registry, provider, service or paid resource created.",
+    "Remote archive bytes cited by product owner were not independently reread by this builder.",
+    "Current real OpenAI/Aiven question proof is distinct from R1/R2 research reuse/correction."
+  ],
+  "history": [
+    {
+      "version": 1,
+      "observedAt": "2026-10-22T09:56:11.787778+00:00",
+      "status": "RECEIVED_WAITING_FOR_SHARED_CONTRACT_AND_SCOPE_RELEASE",
+      "change": "Initial research-memory intake, before sector supplement reception."
+    },
+    {
+      "version": 2,
+      "observedAt": "2026-10-22T10:00:55.194078+00:00",
+      "status": "RECEIVED_WAITING_FOR_SHARED_CONTRACT_AND_SCOPE_RELEASE",
+      "change": "Sector supplement received while CASE source remained frozen."
+    },
+    {
+      "version": 3,
+      "observedAt": "2026-10-22T10:04:44.440682+00:00",
+      "status": "EXECUTION_AUTHORIZED_CONTRACT_COORDINATION_ACTIVE",
+      "change": "Execution authorized and contract coordination started; no source implementation yet."
+    },
+    {
+      "version": 4,
+      "observedAt": "2026-10-22T10:31:11.048879+00:00",
+      "status": "IMPLEMENTED_LOCAL_TESTED_FROZEN_FOR_TWO_REVIEWS",
+      "change": "Agent implementation and local protocol frozen before two final independent reviews."
+    }
+  ],
+  "updatedAt": "2026-10-22T12:28:57.775188+00:00",
+  "sectorSupplement": {
+    "receivedAt": "2026-10-22T10:00:55.194078+00:00",
+    "receivedFromThread": "01a162bd-6384-7031-82c3-fdb5efba174e",
+    "source": "proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.md",
+    "sha256": "fe04378faade01f2463d42ff3a73fa41a6175589ad2abf2e9c759cb3b7527a7d",
+    "read": "FULL_LOCAL_MARKDOWN_CONTENT",
+    "status": "RECEIVED_PRODUCT_REQUIREMENTS_NOT_IMPLEMENTED",
+    "requirements": [
+      "Timber compatibility includes species, grade, treatment, origin and lot constraints. A keyword or common product label does not establish interchangeability.",
+      "An opportunity requires qualified demand, actually free compatible capacity and contribution after incremental costs, while protecting every confirmed commitment.",
+      "Statistical observation period, publication, event and collection dates remain distinct; a refreshed catalogue timestamp does not prove fresh business data.",
+      "Newly published capacity or a public project budget is not current eligible supply or company revenue.",
+      "Company/site/supplier matches remain attributed candidates until supported; regulatory applicability stays to_verify.",
+      "Controlled source updates preserve history and invalidate only dependent knowledge/cases; duplicated articles are not independent confirmations.",
+      "Read permitted prior research before an external query; company data stays out of public search queries."
+    ],
+    "illustration": {
+      "status": "ILLUSTRATIVE_SYNTHETIC_ONLY",
+      "changesExistingFixture": false,
+      "note": "The 3000 cubic-metre illustration and EUR 22200 contribution are explanatory examples, not runtime inputs or a delivered calculation."
+    },
+    "researchOwnerLimits": [
+      "Independent research review NOT_RUN according to the source.",
+      "Public access trials and archived documents do not prove installed product connectors.",
+      "Remote archives and external source claims were not independently reverified by this builder."
+    ],
+    "raccord": "Use the existing research-memory intake, company context and integrator contract; no alternate registry, scheduler, fixture or engine."
+  },
+  "executionAuthorization": {
+    "source": "direct user message in builder chat",
+    "date": "2026-10-22",
+    "instruction": "Coordinate with the existing integrator, unblock the contract and connect research memory to the harness without duplication. Test retrieval in a new session and revision when the source changes."
+  },
+  "executionTasks": [
+    {
+      "id": "reconcile",
+      "status": "done",
+      "evidence": "Existing actors, exact CASE baseline and data-owner controlled scenario reused."
+    },
+    {
+      "id": "contract",
+      "status": "done",
+      "evidence": "Canonical types/rules received with hashes; scope explicitly released; non-reusable consultation expiry semantics and controlled-case rules ACKed."
+    },
+    {
+      "id": "agent",
+      "status": "done",
+      "evidence": "Read/refresh tools, positive projection, exact dependencies/currentness, terminal uncertainty and stale restart implemented in owned paths."
+    },
+    {
+      "id": "local-protocol-r1-r2",
+      "status": "done",
+      "evidence": "12 research protocol tests, controlled-case tests and existing suite passed; 64 local tests total. Ports/providers injected, not durable R1/R2 proof."
+    },
+    {
+      "id": "reviews",
+      "status": "done",
+      "evidence": "Two fresh independent reviewers requested gpt-6.1-sol/high and gpt-6-astra/high; both 40 agent tests and typecheck PASS; 18 before/after hashes match. Served models not independently attested."
+    },
+    {
+      "id": "integrated-r1-r2",
+      "status": "done",
+      "evidence": "R1 actual OpenAI/Aiven process restart two distinct runs; R2 controlled Aiven source correction, stale source-dependent plan and exact/new-key dedup verified. R1 metric and R2 lost-session/return-object limits explicit in receipts."
+    }
+  ],
+  "canonicalContract": {
+    "types": [
+      "src/contracts/research.ts",
+      "src/contracts/index.ts"
+    ],
+    "rules": "proposals/integration/RESEARCH-CONTRACT.json",
+    "scopeRelease": "Integrator explicitly released src/agent, tests/agent and proposals/agent after isolating CASE baseline."
+  },
+  "contractFraming": {
+    "receipt": "proposals/agent/RESEARCH-FRAMING.json",
+    "status": "RECEIVED_PROPOSED_NOT_FINAL_CODE_REVIEW"
+  },
+  "currentReview": {
+    "manifest": "proposals/agent/RESEARCH-REVIEW-SCOPE.json",
+    "tasks": [
+      "/root/research_final_counter",
+      "/root/research_final_architecture"
+    ],
+    "requestedModels": [
+      "gpt-6.1-sol/high",
+      "gpt-6-astra/high"
+    ],
+    "servedModelAttestation": "unavailable",
+    "receipt": "proposals/agent/RESEARCH-REVIEWS.json",
+    "status": "COMPLETE_18_HASHES_UNCHANGED"
+  },
+  "resolvedIntakeBlockers": [
+    {
+      "owner": "integrator",
+      "requirement": "Canonical research knowledge, lookup/result/validity/provenance types and authorized lookup/search ports. No such types exist in src/contracts/index.ts or docs/CONTRACTS.md at intake.",
+      "status": "RESOLVED_BY_CANONICAL_CONTRACT_AND_SCOPE_RELEASE"
+    },
+    {
+      "owner": "integrator",
+      "requirement": "Release the frozen agent paths after exact CASE-READY receipt, and define version invalidation when research changes during provider/tool/proposal execution.",
+      "status": "RESOLVED_BY_CANONICAL_CONTRACT_AND_SCOPE_RELEASE"
+    }
+  ],
+  "blockedBy": [],
+  "ready": {
+    "path": "proposals/agent/RESEARCH-READY.json",
+    "sha256": "d91685ffceee26318bbe5dbc7e1d8032fd7f9d643580afd8f7fcc1608d3979f7"
+  },
+  "integratorReception": {
+    "path": "proposals/integration/RECEIVED-AGENT-RESEARCH.json",
+    "sha256": "4183891b87c6cd37fa04e4138fb694fdaacbfa95c6a9a789bffb77382520ff82",
+    "receivedAt": "2026-10-22T10:37:11.407699+00:00",
+    "checks": "20_OF_20_MATCH",
+    "verifiedCurrentBytes": true,
+    "scope": "Historical research-v1 package received20/20 before the current memory-provenance delta."
+  },
+  "integrationProgress": {
+    "localPostgresProtocol": "Integrator executed tests/integration/research.test.ts and typecheck successfully after an additive migration FK fix. Includes two sessions/new repository and causal source-change stale-plan test.",
+    "R1NewAgentRun": "NOT_RUN_OR_NOT_RECEIVED",
+    "R1ProcessRestart": "NOT_RUN_OR_NOT_RECEIVED",
+    "AivenAcceptance": "NOT_RUN_OR_NOT_RECEIVED",
+    "source": "Integrator live command execution and message to data owner read at 2026-10-22T10:37:28Z, not a final acceptance receipt."
+  },
+  "resolvedContractQuestions": {
+    "questionsAtIntake": [
+      "How does the server identify current knowledge/source versions and block publication or approval against superseded research?",
+      "Which typed public-subject search port is authorized after lookup, and where is the actual search decision/reason persisted?",
+      "How are research freshness, entity ambiguity, missing data, unknown applicability and failure represented without promoting model claims into company facts?",
+      "How does new-session lookup use the existing PostgreSQL/evidence history without another registry or new infrastructure?"
+    ],
+    "resolution": "Canonical research.ts and RESEARCH-CONTRACT.json received; port binds actor/company/run/profile; attributed evidence with exact refs, scope generation and freshness; guarded runner plus server finish/decide validation; existing occurrences/evidence reused."
+  },
+  "currentDelta": {
+    "receipt": "proposals/agent/MEMORY-PROVENANCE-READY.json",
+    "status": "LOCAL_45_PASS_TYPECHECK_PASS_WAITING_INTEGRATOR_TWO_ROLE_PANEL"
+  },
+  "R1Operator": {
+    "scriptReviews": "proposals/agent/R1-SCRIPT-REVIEWS.json",
+    "metadata": "proposals/agent/R1-METADATA.json",
+    "state": "TWO_SCRIPT_REVIEWS_COMPLETE_NO_MODEL_CALL",
+    "executorThreadId": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+    "port": 3002,
+    "schema": "NOT_CREATED",
+    "gate": "Integrator next corrected exact server freeze; two bounded real runs, no automatic repeats."
+  },
+  "runtimeReception": {
+    "schema": "r1_reception_20261022_1104ce6d364e",
+    "port": 3002,
+    "manifest": "proposals/agent/R1-FROZEN.json",
+    "checkpoint": "proposals/integration/REVIEW-INPUT-RESEARCH-SERVER-v3.json",
+    "setupReceipt": "proposals/agent/R1-TRANSFER.json",
+    "priorRunsCopied": 0,
+    "priorResponsesCopied": 0,
+    "priorMemoriesCopied": 0,
+    "publicationSequence": 1,
+    "models": "TWO_REAL_RUNS_COMPLETED",
+    "R2": "Integrator owns next controlled revision in the same schema",
+    "firstRunId": "8102d357-fa5e-4bd3-8be4-81696141a940",
+    "firstReceipt": "proposals/agent/R1-FIRST.json",
+    "negativeReceipt": "proposals/agent/R1-FIRST-FAILURE.json",
+    "oracleCorrection": "proposals/agent/R1-ORACLE-CORRECTION.json",
+    "expectedRaw": 5,
+    "expectedReusable": 3,
+    "remainingAuthorizedActualRuns": 0,
+    "limits": [
+      "First PID, session hash and IPC transport metrics not retained. First session row1 remains; second login must create row2.",
+      "No product/source/hash/time change; partial acceptance filters fetch/untruncated only."
+    ],
+    "secondRunId": "78476d66-190a-4db1-a92d-fe8ad205ee8f",
+    "receipt": "proposals/agent/R1-RECEPTION.json"
+  },
+  "industrialDelta": {
+    "status": "READY_PURE_DOMAIN_PROJECTION_TWO_REVIEWS_RECEIVED",
+    "receipt": "proposals/agent/INDUSTRIAL-READY.json",
+    "tests": "14/14 PASS and strict PASS",
+    "runtime": "NOT_RUN, integrator owns assembly"
+  },
+  "scopedAgentDelta": {
+    "status": "READY_LOCAL_TWO_REVIEWS_CLOSED",
+    "receipt": "proposals/agent/SCOPED-AGENT-READY.json",
+    "sourceFingerprint": "0016d2f008e6d00c244e842515b6dd66702300ec67fafb9f30037d891733ef76",
+    "tests": "72/72, strict and final narrow two-role check PASS",
+    "integratedRuntime": "NOT_RUN"
+  },
+  "R2": {
+    "status": "PASS_CONTROLLED_AIVEN_WITH_RECONCILIATION_LIMITS",
+    "script": "proposals/agent/R2-SCRIPT-REVIEW-SCOPE.json",
+    "protocol": "proposals/agent/R2-PROTOCOL.json",
+    "negative": "proposals/agent/R2-FAILURE.json",
+    "diagnosis": "proposals/agent/R2-READONLY-DIAGNOSIS.json",
+    "amendment": "proposals/agent/R2-ORACLE-CORRECTION.json",
+    "supplement": "proposals/agent/R2-TRACE-ORACLE-SUPPLEMENT.json",
+    "originalRuns": 3,
+    "actualOpenAiCalls": 0,
+    "injectedInvocations": 10,
+    "remaining": "None for bounded R1/R2 operator protocol. Full industrial assembled runtime remains integrator-owned.",
+    "receipt": "proposals/agent/R2-RECEPTION.json",
+    "receiptSha256": "895bf90d5ad7624c4bfad7f64f9a9ec10fd3bd240c80c6f20a11f909d23cab05",
+    "finalNewKey": "PASS_3_COMMAND_OCCURRENCE_RECEIPTS_2_CONTENT_VERSIONS_GENERATION_2"
+  },
+  "industrialPortDelta": {
+    "status": "READY_LOCAL_TWO_REVIEWS_FROZEN_FOR_INTEGRATOR",
+    "scope": "proposals/agent/INDUSTRIAL-PORT-REVIEW-SCOPE.json",
+    "paths": [
+      "src/server/industrial-agent-port.ts",
+      "tests/server/industrial-agent-port.test.ts"
+    ],
+    "integrated": "NOT_RUN",
+    "receipt": "proposals/agent/INDUSTRIAL-PORT-READY.json",
+    "tests": "11/11 PASS and strict PASS",
+    "integrationRuntime": "NOT_RUN",
+    "sourceFingerprint": "e5f9bceb0651db488308f63853e3ae138ecf5b1ccbcfa712758b10ae199aed30"
+  },
+  "integratorR2Reception": {
+    "status": "ACTUAL_RECEIPT_READ_AND_ACKNOWLEDGED_WITH_LIMITS",
+    "source": "Integrator direct message in this chat at2026-10-22T12:27Z",
+    "receipt": "proposals/integration/RECEIVED-RESEARCH-R1-R2.json",
+    "note": "Integrator confirmed actual read, sourcev2/control1420/invalidation received; oracle/session reservations retained.",
+    "hashVerified": true
+  }
+}

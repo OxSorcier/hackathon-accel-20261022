@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "status": "LOCAL_CODEX_SKILL_UPDATED_AND_BYTE_VERIFIED",
+  "skill": "recherche-multisource",
+  "activeLink": "/Users/erwan/.codex/skills/recherche-multisource",
+  "originalTarget": "/Users/erwan/.codex/skill-sources/erwan-os/consolidation-20261020-d5cae9981946/skills/recherche-multisource",
+  "originalLinkValue": "/Users/erwan/.codex/skill-sources/erwan-os/consolidation-20261020-d5cae9981946/skills/recherche-multisource",
+  "baselineFiles": [
+    {
+      "path": "SKILL.md",
+      "sha256": "991fd9b52bfb0a65e519eabb5c07db2bfca5beb465c0615ad0d750a46386da99"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "0c2add2e7ae1b54c34b1d3a3ddedd7d38f1080d859f4319ad01aa60b512e9358"
+    },
+    {
+      "path": "references/agency.md",
+      "sha256": "6f9a6a3b9b443e6352477b086388ceec3778076f212b303a36e5d87f76188fc5"
+    },
+    {
+      "path": "references/aside.md",
+      "sha256": "d17d4a3c6b8542c7b7ea4f1014ff0de9f09c60d27fa3925c459bbc07774c3cd8"
+    },
+    {
+      "path": "references/discovery.md",
+      "sha256": "4f20a59cb1cf5ce6e8a8c4fc38df65f6b55fc94b6dcee863138e9eaaaf4425fd"
+    },
+    {
+      "path": "references/investigation.md",
+      "sha256": "b11e600c2953c1c44a326e9fb7168c8cefa89a6db0a59ec31bd4beb247a13aec"
+    },
+    {
+      "path": "references/verification.md",
+      "sha256": "a14d99559ae4b348491cc90a3bd789cf4c6854fd7110c23f482cbedbd191e56e"
+    }
+  ],
+  "candidate": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/product/research-data-20261022/sector-sources/skill-update-20261022/recherche-multisource",
+  "codeChanged": false,
+  "invocationPolicyPreserved": true,
+  "userScope": "Improve existing research skill with RSS discovery and learned relevance pitfalls. Competitor analysis deferred, not a hackathon gate.",
+  "candidateFiles": [
+    {
+      "path": "SKILL.md",
+      "sha256": "25081774b422459c549f5361f3251654f88022fd49a92eec7eb2fb365f3214a5",
+      "bytes": 7896
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "0c2add2e7ae1b54c34b1d3a3ddedd7d38f1080d859f4319ad01aa60b512e9358",
+      "bytes": 366
+    },
+    {
+      "path": "references/agency.md",
+      "sha256": "6f9a6a3b9b443e6352477b086388ceec3778076f212b303a36e5d87f76188fc5",
+      "bytes": 4973
+    },
+    {
+      "path": "references/aside.md",
+      "sha256": "d17d4a3c6b8542c7b7ea4f1014ff0de9f09c60d27fa3925c459bbc07774c3cd8",
+      "bytes": 4304
+    },
+    {
+      "path": "references/discovery.md",
+      "sha256": "4f20a59cb1cf5ce6e8a8c4fc38df65f6b55fc94b6dcee863138e9eaaaf4425fd",
+      "bytes": 2839
+    },
+    {
+      "path": "references/feeds.md",
+      "sha256": "18e0713c774ed49ef6fee2503bdb6ab160217cb4d3926137f50467e9853f1125",
+      "bytes": 4868
+    },
+    {
+      "path": "references/investigation.md",
+      "sha256": "b9f2582960066b4468cd36c8dcf4f8948b4c0aca20a63c0722b717880322eef6",
+      "bytes": 5453
+    },
+    {
+      "path": "references/verification.md",
+      "sha256": "c57bb9059b85635de2e71dd3df4043ac3787bf201269399da5a9d0e90e717871",
+      "bytes": 5041
+    }
+  ],
+  "candidateManifestSha256": "ef82b748f9ad6cde32e88dfc8e88fb00146fbea17a2d90f8171a2e43164fa2cc",
+  "targetRoot": "/Users/erwan/.codex/skill-sources/erwan-os/research-feeds-20261022-ef82b748f9ad",
+  "checkedAt": "2026-10-22T11:38:34.481923+00:00",
+  "staticChecks": {
+    "localReferencesResolve": true,
+    "noEmDashAdded": true,
+    "invocationMetadataUnchanged": true,
+    "originalBytesUnchanged": true
+  },
+  "newAgentBehaviorTest": "NOT_RUN",
+  "causalResearchImprovement": "NOT_ESTABLISHED",
+  "applicationCollectorChange": "NONE",
+  "installedAt": "2026-10-22T11:38:59.544357+00:00",
+  "activeTarget": "/Users/erwan/.codex/skill-sources/erwan-os/research-feeds-20261022-ef82b748f9ad/recherche-multisource",
+  "originalBytesPreserved": true,
+  "otherSkillLinksUnchanged": true,
+  "activeFilesByteVerified": 8,
+  "rollbackTarget": "/Users/erwan/.codex/skill-sources/erwan-os/consolidation-20261020-d5cae9981946/skills/recherche-multisource",
+  "scope": "Local Codex skill only. No source repository commit, shared distribution or guaranteed reload in existing chats."
+}

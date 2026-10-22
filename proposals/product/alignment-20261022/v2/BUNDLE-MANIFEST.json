@@ -1,0 +1,408 @@
+{
+  "version": 2,
+  "createdAt": "2026-10-22T11:19:59.563135+00:00",
+  "status": "PRIVATE_BUILDER_PACKAGE_NOT_PRODUCT_MODEL_INPUT",
+  "files": [
+    {
+      "path": "docs/CONTRACTS.md",
+      "sha256": "df74345ba177ee25ed0c1a5d9b1a95ff616372cb40b719cf2054098e9d779148",
+      "bytes": 12369
+    },
+    {
+      "path": "docs/OWNERSHIP.md",
+      "sha256": "2ed72ab883513d08b38251948909e5e73e27d3efd6be169089fa59e287ac7809",
+      "bytes": 7579
+    },
+    {
+      "path": "docs/PRODUCT-VISION.html",
+      "sha256": "a2ccdb3db8fe9ac64a567fa2f3a0fcf3544496974d989ab03fec3cd321cfdbf0",
+      "bytes": 172752
+    },
+    {
+      "path": "docs/PRODUCT-VISION.md",
+      "sha256": "b3d54b15cbdb62082bdb246b3408b353cb4b9088eb338cd4277111cd9085e758",
+      "bytes": 14267
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "77b89ec1a87a210a62cc45b741a2502fa6ca417601fec9607752fb1a2c1464f1",
+      "bytes": 7119
+    },
+    {
+      "path": "proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.html",
+      "sha256": "46633672ec1f9bade14ad96d8b0b837f439952b8890f8a215a337078beaee113",
+      "bytes": 204016
+    },
+    {
+      "path": "proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.md",
+      "sha256": "dffb75325526dba40e3bdbefc34870443637ba15570684d7fbb00907b1188476",
+      "bytes": 32586
+    },
+    {
+      "path": "proposals/product/alignment-20261022/DATA-CHECKS.json",
+      "sha256": "3ffbda788e517de2bbd132003bd62179a8adab5b88c5fb9628bd459ec87fea88",
+      "bytes": 1583
+    },
+    {
+      "path": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+      "sha256": "18238d49f2ca31591f179b56049e801985fc77217e1873ee24ff414992ae7841",
+      "bytes": 171873
+    },
+    {
+      "path": "proposals/product/alignment-20261022/DEMO-SCRIPT.md",
+      "sha256": "f15c9aa46a5b0de62dc10419cb11ef15914a8dda71d206c51866b8ff5b523c80",
+      "bytes": 13465
+    },
+    {
+      "path": "proposals/product/alignment-20261022/DOCUMENT-CHECKS.json",
+      "sha256": "b0b85dde0a2d7c01154e898aa7b7713a3fc4524319154c602bb637f2a39d55a8",
+      "bytes": 963
+    },
+    {
+      "path": "proposals/product/alignment-20261022/FINAL-RECEIPT-READBACK.json",
+      "sha256": "1606b60f95e463a2f607200a9e22d12814d295b995875c5164088384ed00858e",
+      "bytes": 194
+    },
+    {
+      "path": "proposals/product/alignment-20261022/LOCAL-DOMAIN-SMOKE.json",
+      "sha256": "4b198adf0d134779a7a780a3f1437d20ac2f1880fb9947947842b6a26c76b438",
+      "bytes": 1197
+    },
+    {
+      "path": "proposals/product/alignment-20261022/PRESS-RELEASE.md",
+      "sha256": "271f9dd6ef57b94f90f61f5086876ca1589e97ff46a7c89830418d5bfe587860",
+      "bytes": 2230
+    },
+    {
+      "path": "proposals/product/alignment-20261022/RECEPTION-FINAL.json",
+      "sha256": "634855e93293967375ea470d33911550c905afe23e096fc19c1a55ba71a28a46",
+      "bytes": 3565
+    },
+    {
+      "path": "proposals/product/alignment-20261022/RECEPTION.json",
+      "sha256": "e62d91077e24b5e69bd66dd3860d0e5978cdb5f8597d87044b0bf024d5de59e3",
+      "bytes": 1663
+    },
+    {
+      "path": "proposals/product/alignment-20261022/REMOTE-READBACK.json",
+      "sha256": "a4d6c9d093e532b15fa3ac0671b67486ec3d91bc5f683085a54759ccdd1e301b",
+      "bytes": 874
+    },
+    {
+      "path": "proposals/product/alignment-20261022/RENDER-CHECKS.json",
+      "sha256": "4fc6c8e506a9e9b3b00a0c8abbd9f149bb7df644a936cddc3fe60fa38430f26a",
+      "bytes": 5494
+    },
+    {
+      "path": "proposals/product/alignment-20261022/SOURCE-MANIFEST.json",
+      "sha256": "1cc1f93f7957593185e8bf170fa0d9f44c516db162026852b793bb50e1c4a256",
+      "bytes": 3230
+    },
+    {
+      "path": "proposals/product/alignment-20261022/WEBSITE-COPY.md",
+      "sha256": "7012698fc8f74cd23bb44b4d9953eab96e4125b8941e3cc00396c9c16e18bd83",
+      "bytes": 2557
+    },
+    {
+      "path": "proposals/product/alignment-20261022/customer-profile.proposed.json",
+      "sha256": "f1b6c02c37de4467cb994f14a265d27f2c2a51c438d5340c35397596345cbbf5",
+      "bytes": 2957
+    },
+    {
+      "path": "proposals/product/alignment-20261022/data-table-390.png",
+      "sha256": "791aade23a5dfbc5a9fc39df25e68ff97c483bf65021329cdd1549df183315b4",
+      "bytes": 61159
+    },
+    {
+      "path": "proposals/product/alignment-20261022/history/DEMO-SCRIPT-v1.md",
+      "sha256": "754730e042166ea82dfff35ce8ae98ce1694029b3ca70c5711efdeae5b150043",
+      "bytes": 4873
+    },
+    {
+      "path": "proposals/product/alignment-20261022/opportunity/PUBLIC-SOURCE.json",
+      "sha256": "6ee1c9e428dba2a345905ecc034d1897242adcc9c06471940a88d51966f97fd1",
+      "bytes": 1662
+    },
+    {
+      "path": "proposals/product/alignment-20261022/opportunity/boamp-26-101741.raw.json",
+      "sha256": "8895ca3208f5f62b477bebeca66ca8f4f56eceb9d1610d84314988dcb344a4de",
+      "bytes": 9791
+    },
+    {
+      "path": "proposals/product/alignment-20261022/portfolio-10000.json",
+      "sha256": "cc498346bd374f920112cc3aa31673e4e623a635dd3063b151d7cc739c526606",
+      "bytes": 4708902
+    },
+    {
+      "path": "proposals/product/alignment-20261022/portfolio-policy.json",
+      "sha256": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2",
+      "bytes": 1190
+    },
+    {
+      "path": "proposals/product/alignment-20261022/rendered-source-text.txt",
+      "sha256": "9185f4adfee46cc6d91cb8bd1eb1c0810a790a311fb4ccef62dcee715aba686e",
+      "bytes": 30848
+    },
+    {
+      "path": "proposals/product/alignment-20261022/report-aside-desktop.png",
+      "sha256": "6f42fdbfa19f9e4027bbcd39dc1f83509ccb91aa2257f7fecd35870139385939",
+      "bytes": 263193
+    },
+    {
+      "path": "proposals/product/alignment-20261022/report-chromium-1440.png",
+      "sha256": "974a8fd7f7f84521c79fc54b5aeaf186e2e001f49e55726be9cb008601199eb8",
+      "bytes": 124141
+    },
+    {
+      "path": "proposals/product/alignment-20261022/report-chromium-390.png",
+      "sha256": "ab32b4db56494cefa73312c096cdc94b0a62d071d57a25dfd6d96f7d1dc28cdf",
+      "bytes": 67641
+    },
+    {
+      "path": "proposals/product/alignment-20261022/report-chromium-768.png",
+      "sha256": "a53c77cfb04bcefb7825dd982259d0a62701f37370fd774f8cc7354c97886fa0",
+      "bytes": 93379
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/ASIDE-CHECK.json",
+      "sha256": "b818f6af60a49074af4036e93cbc6d4578dd5af1309495eadd08607617159133",
+      "bytes": 629
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/CONTEXT-CHECKS.json",
+      "sha256": "5523a9d92dc70e996bb028618df7bb6487e3e1382b59883cdc55f3e2bc796815",
+      "bytes": 4745
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/CONTRACT-SAMPLES.proposed.json",
+      "sha256": "1a248e852e6a35c3e3a8019f5d7eccd574e78150621d5481fb562a3317d3963e",
+      "bytes": 5343
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/CORE-READY.json",
+      "sha256": "babc07971a1659db802e372751ac6e83fe4f23bf9d8dcf2a55c0b73a1b3199ca",
+      "bytes": 1909
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/DATA-CHECKS.json",
+      "sha256": "bcf02f8047635a57293e8e65950fe00de3f42d4660a2aa050e00febbaf1dd3c2",
+      "bytes": 1933
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/DATA-RECEIPT.html",
+      "sha256": "6dd80131b997bf7a908608ccf03d81afe8dc5e4a0b46171ef76cfd9929a9e365",
+      "bytes": 181188
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/DATA-RECEIPT.md",
+      "sha256": "c70ade7029185791a527f2e3bf8035edef779ce3e3cf89785572406043212c84",
+      "bytes": 12445
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/DOCUMENT-CHECKS.json",
+      "sha256": "60665acc0248d64c20020db90e8c084e82f84f356d3fb2d1d9ffa9ddcf857e05",
+      "bytes": 2862
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/EARLY-CORE.json",
+      "sha256": "d38de53dd3e0b4fa362f085f9defdc29f3a57d6db3e4f1840d6942a40a45c3e7",
+      "bytes": 2619
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/INDUSTRIAL-READY-v2.json",
+      "sha256": "b955e5374c111bd7d5e1779c00028953980b88e1683280c26a80f14ca281bfea",
+      "bytes": 3390
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/INDUSTRIAL-READY.json",
+      "sha256": "c0515d681e1232ef259d24355372eb5fb7a5686ccafb34631d76494e4f2cc40d",
+      "bytes": 5227
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/LOCAL-DOMAIN-SMOKE.json",
+      "sha256": "f5f52d41d1e7dd22320275bf327f4bff0cec8171211b9da7a075391ea80ea0b7",
+      "bytes": 1197
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/ONE-DEMAND-SAMPLE.proposed.json",
+      "sha256": "989b34e71c69cb6d86ebde054303c66d5bef0c275c25f8ed480777b4176afd43",
+      "bytes": 1695
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/PRESS-RELEASE.html",
+      "sha256": "417d150a0c95767e7fb517413a0ba4d37aa5a925ad41ed9c7e36ac81368113d1",
+      "bytes": 170002
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/PRESS-RELEASE.md",
+      "sha256": "8c51cec396a0879ee4267fd0716cb3782b8f77a6b27c6e87fa2817b0dc4f61c2",
+      "bytes": 2747
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/PROPOSED-IMPORT-STRUCTURE.json",
+      "sha256": "3213f94b98d5c4e9ced3ccec1ba86435f1aa126e41c1215dc7cfa3076864d1ce",
+      "bytes": 2212
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/RENDER-CHECKS.json",
+      "sha256": "37f9c5d959f3b422bac1144c7e5584f154748fc3a9957f57101b4dc4799b7565",
+      "bytes": 3028
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/SOURCE-MANIFEST.json",
+      "sha256": "429f23e393f97e7b32224471510f87f5689afeb9143db56c6b54d4443f6ab9e2",
+      "bytes": 2657
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/WEBSITE-COPY.html",
+      "sha256": "ef94eb520b2741deb526d4cbd8da67428f077b7e1ac20b4c5a7b3e1873b9eb5b",
+      "bytes": 170875
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/WEBSITE-COPY.md",
+      "sha256": "c8d83ea6e8b3941d947a143833ea1969e45aa410b55af599fce64f4c691fba5c",
+      "bytes": 3227
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/data-receipt-1440.png",
+      "sha256": "0e1e2702c32de8e68be1d64e7ea110f76bb80004205111e5601937d312fc81d4",
+      "bytes": 111545
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/data-receipt-390.png",
+      "sha256": "1fbe225173175da81492e56eadf9435dee0e9cf91533c7e2d35a39fe408598ff",
+      "bytes": 63093
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/data-receipt-768.png",
+      "sha256": "4d670425919a98e93ab91f9f1c6993e202ee268fb2a3fd1ade294f3dcf131ce1",
+      "bytes": 92263
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/data-receipt-aside-1440.png",
+      "sha256": "55584cb5c09f27698da46166de7c9bd1a91ae0cd56dc68bed8d3f445b1088332",
+      "bytes": 428428
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/data-table-390.png",
+      "sha256": "c638bd1fdc3f81a812f8cb904b13764433a1ee275857393dd80ce0cb3e652411",
+      "bytes": 67101
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/industrial-context.json",
+      "sha256": "04a930633daba8c71868d4a00af4f928b1aae0db7fc6cd040e3b4c72c8233f2c",
+      "bytes": 20746
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/industrial-context.proposed.json",
+      "sha256": "9970eb5e2431e818d3081e0ca6102fe2a407e44b7fd9c3bfb0bb2cdd5d913210",
+      "bytes": 14969
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/industrial-context.v2.json",
+      "sha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e",
+      "bytes": 22721
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/operator-event.json",
+      "sha256": "08441bcbdba2c65ea466aa0aa8363377cb9cdd68ae99e6aa04e4a67c77840e2f",
+      "bytes": 1223
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/operator-event.v2.json",
+      "sha256": "12efd02dc12781fa7aa243db1064e5f15c7c948fc3d9eab8a33c1383c9f189b7",
+      "bytes": 2004
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/operator-release.proposed.json",
+      "sha256": "634d28bdf65ac701035cce766d7c507f8fe4f1755359017ea2c407f3aa2bdbd5",
+      "bytes": 4059
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-10000.json",
+      "sha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+      "bytes": 4746932
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-policy.json",
+      "sha256": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2",
+      "bytes": 1190
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/press-release-1440.png",
+      "sha256": "5ef0abbd61600c5ef39a330faef3e8b50dbc2827aae52f2358e1cf1aba11a316",
+      "bytes": 102988
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/press-release-390.png",
+      "sha256": "1d3c334e9514bdc1cc399fe154d5a4876ae1127247eb8953a6200d4d81983bba",
+      "bytes": 64637
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/press-release-768.png",
+      "sha256": "dd581ad71ecdef89fd72afef2b7ec969c59f1c5458962a4f635c4bb71be677a6",
+      "bytes": 89175
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/rendered-source-text.txt",
+      "sha256": "d367ec2ed2fb092b4d539f367a5f3a0eda2d4e18d8fd67199d7b781f0ad987bf",
+      "bytes": 11763
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/report-chromium-1440.png",
+      "sha256": "0e1e2702c32de8e68be1d64e7ea110f76bb80004205111e5601937d312fc81d4",
+      "bytes": 111545
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/report-chromium-390.png",
+      "sha256": "1fbe225173175da81492e56eadf9435dee0e9cf91533c7e2d35a39fe408598ff",
+      "bytes": 63093
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/report-chromium-768.png",
+      "sha256": "4d670425919a98e93ab91f9f1c6993e202ee268fb2a3fd1ade294f3dcf131ce1",
+      "bytes": 92263
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/website-copy-1440.png",
+      "sha256": "3675ddd808d141cbb5f684d07b5350dc695804479c67c98c70474b4943b555f1",
+      "bytes": 102407
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/website-copy-390.png",
+      "sha256": "e545ca1a97526077ca573a8a78faa560b7bbd5dcc8c165e12df6e077328d453d",
+      "bytes": 66801
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/website-copy-768.png",
+      "sha256": "4e72fdffc2a6176e7c1617d917f1b1e35f86361099757908813ded7f6957fabb",
+      "bytes": 89161
+    },
+    {
+      "path": "proposals/product/alignment-20261022/website-copy-1440.png",
+      "sha256": "471547325a866e9c76bb0f33c4e45d820839654631f1bff61b30f2fae297bc61",
+      "bytes": 186261
+    },
+    {
+      "path": "proposals/product/alignment-20261022/website-copy-390.png",
+      "sha256": "6e79178c9c6df0418406dda63163674aaf76bb4debf0db361cc928fe8dba8c4c",
+      "bytes": 95514
+    },
+    {
+      "path": "proposals/product/alignment-20261022/website-copy-768.png",
+      "sha256": "c42403ddd10bc3064e7a43c2162b890a6c5edf018c91fab622311f0a37f5b666",
+      "bytes": 166595
+    },
+    {
+      "path": "proposals/product/research-data-20261022/sector-sources/INDUSTRIAL-INCIDENTS-20261022.json",
+      "sha256": "bae2bc472c354c448a5aa9072a4aaed5344e37360b1ae6897b8857b7657e4342",
+      "bytes": 8820
+    },
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "c638d5c1c7fe4205c26318642c21e0b0375149490d81ffde9a4c1242cca04845",
+      "bytes": 9575
+    }
+  ],
+  "scope": "Existing v1 alignment family plus v2 deltas, consulted documentary snapshots and public-source receipts; no secrets, runtime config, .preparation/ or operator/ directory copied. Authored v2 operator proposals remain explicitly labelled builder inputs."
+}

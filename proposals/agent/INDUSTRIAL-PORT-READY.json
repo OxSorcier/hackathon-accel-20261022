@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "status": "READY_LOCAL_TWO_REVIEWS_FROZEN_FOR_INTEGRATOR",
+  "createdAt": "2026-10-22T12:30:48.168926+00:00",
+  "threadId": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+  "ownerThreadId": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "files": [
+    {
+      "path": "src/server/industrial-agent-port.ts",
+      "sha256": "5d2aa4029ab2b6d74a9ad40b6d8bfc3c4a8af207414f89d4bdfc7b164858de9a"
+    },
+    {
+      "path": "tests/server/industrial-agent-port.test.ts",
+      "sha256": "df79381194d336f5ec3e77f62f027ebea5f60f2075fd08b95debc2dcd7cfb4b0"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "104d14d3677f9df853cb34f2d4c534a7ae53645c2cbde7c015694ccbadd49794"
+    },
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "2e22d97141cde9426df6221433e2ba82d86edf8a3a93376378ce8487293e2ace"
+    },
+    {
+      "path": "src/contracts/research.ts",
+      "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214"
+    },
+    {
+      "path": "src/agent/industrial-context.ts",
+      "sha256": "1b10459579998d7cce530a49d6d775ad3fd0b766e151943c00ac7d20ceabc9c6"
+    },
+    {
+      "path": "src/domain/industrial.ts",
+      "sha256": "87ddba8bec62406f71121af51d6fd5c17e3da795c9bca9fb303b87765f2f53ed"
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "sha256": "018748a36911b677956174a6375ca7ca4a86ed7ad58e017877e9ed857601c779"
+    },
+    {
+      "path": "src/domain/model.ts",
+      "sha256": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2"
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "sha256": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "e7822f04664c7ee474dc70569535530f84f517559dce859931442d67e11b66ea"
+    },
+    {
+      "path": "src/data/validation.ts",
+      "sha256": "070a87444889f0341adec582a929fbe1955e8b99bf01ca499365451c14cc799e"
+    },
+    {
+      "path": "tests/domain/industrial-fixture.ts",
+      "sha256": "92c5e91cfc890d1d717130780683cb90d3b9301a48d4b015822e8d08a183c79e"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-10000.json",
+      "sha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-policy.json",
+      "sha256": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/industrial-context.v2.json",
+      "sha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/operator-event.v2.json",
+      "sha256": "12efd02dc12781fa7aa243db1064e5f15c7c948fc3d9eab8a33c1383c9f189b7"
+    }
+  ],
+  "sourceFingerprint": "e5f9bceb0651db488308f63853e3ae138ecf5b1ccbcfa712758b10ae199aed30",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "reviewReceipt": "proposals/agent/INDUSTRIAL-PORT-REVIEWS.json",
+  "behavior": [
+    "Single createIndustrialAgentPort typed factory using existing IndustrialAgentPort. Root owns transaction-bound input/overview/basis and durable usage callbacks.",
+    "Private full assessment cache per instance/run, bounded projection only for model. Cache retained only after successful transaction.",
+    "Prepare only this-run evaluation and actual non-rejected plan; reload/recalculate same evaluatedAt, verify full hash and exact run basis including research dependencies.",
+    "Current actual timestamp and mandatory native company timezone revalidate source freshness, current context, used quote valid_on and step dates.",
+    "Prepared report id report:<run.id>, exact company/run/basis; no durable publication, approval, stock or ERP effect. Root finishRun remains sole publisher after successful non-uncertain final result.",
+    "Overview-only post-action answer is possible. Usage callback delegated once without nested company-lock transaction."
+  ],
+  "checks": {
+    "focusedTests": "11/11 PASS",
+    "strictTargeted": "PASS",
+    "fullPortfolio": "10000/10000 protected; full allocations retained in report while model projection remains bounded",
+    "runnerCompatibility": "Real specialized runner + real port + full10k + injected provider PASS, no external provider"
+  },
+  "integrationRuntime": "NOT_RUN_BY_BUILDER",
+  "nextAction": "Integrator verifies2 owned+15 dependency pins, binds existing callbacks and worker, then receives full industrial OpenAI/Aiven/browser report-approval-simulation flow. Do not create a second server path or copy the pure engine.",
+  "limits": [
+    "Callbacks are injected for local tests. Real company lock, authority, worker, provider, Aiven and publication remain integrator-owned NOT_RUN in this port reception.",
+    "No SQL mutation/publication, dependency, worker, external call, commit or deployment added."
+  ]
+}

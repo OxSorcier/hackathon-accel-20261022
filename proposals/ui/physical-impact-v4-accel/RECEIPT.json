@@ -1,0 +1,52 @@
+{
+  "version": 4,
+  "date": "2026-10-22",
+  "status": "Three enriched single-slide proposals inspected and delivered",
+  "mode": "Built-in reference-led imagegen, one call per variant",
+  "assets": [
+    {
+      "variant": "A",
+      "file": "A-complete-pitch.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-eb7e6a56-7edf-4c0a-a1bf-298dfbb5c5ae.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3984b6e2585adb71dda66d47339f189d9e73bd0d100e28a01852118957308703"
+    },
+    {
+      "variant": "B",
+      "file": "B-business-value.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-61ea7a07-f8f7-4a4a-b851-c7857cadf6e3.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4463d422003a23cc508815e31d5d78e2b12abb0be53138cc4424e3ebe9c403bd"
+    },
+    {
+      "variant": "C",
+      "file": "C-prepared-response.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-4157da18-149a-4676-b847-ee17235ad97b.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ba8f740700ffb0b7b91e5e975366b6775183ed21c8704a389a7b7e7b14d0d467"
+    }
+  ],
+  "promptSet": "PROMPTS.json",
+  "brief": "BRIEF.md",
+  "adaptationReference": "ADAPTATION-BRIEF.md",
+  "selectedFamily": "User approved v3 A as clean visual reference; v4 A recommended for balanced standalone pitch.",
+  "inspection": [
+    "English brand, tagline and supporting offer checked",
+    "Customer value added as explicit readable line",
+    "Four richer pillar descriptions retain company context, market intelligence, coordinated response and approved action",
+    "Headless/existing-tools ability stays secondary",
+    "Audience, first industry, why-now pain and proposed direct outreach/pilot expansion stated explicitly",
+    "Quiet positive proof line stays within received company-data/plan/approval/restart evidence",
+    "No real connector execution or numerical gain invented",
+    "All final variants visually inspected for spelling, fit, card alignment and footer completeness"
+  ],
+  "proofSources": [
+    "../../../docs/STATUS.md",
+    "../../integration/FINAL-3001-QA.json",
+    "../../integration/FINAL-PREVIEW-RESTART.json"
+  ],
+  "scope": "Visual proposals and local adaptation brief. No app code, native IDs, public sharing, website publication, Google Slides creation or submission changed. Measured comparative evidence remains a separate exact-version artifact."
+}

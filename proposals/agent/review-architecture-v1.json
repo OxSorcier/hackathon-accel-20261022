@@ -1,0 +1,21 @@
+{
+  "schema":"accel-agent-review/1",
+  "manifest":"proposals/agent/review-manifest-v1.json",
+  "role":"architecture",
+  "requestedModel":"gpt-6-astra",
+  "requestedEffort":"high",
+  "servedModel":"unverified",
+  "isolation":"fresh context, fork_turns none, read only",
+  "reviewer":"/root/agent_architecture",
+  "filesHashVerifiedBeforeAndAfter":true,
+  "existingTestsPassed":15,
+  "findings":[
+    {"id":"ARCH-1","priority":"P1","summary":"A server decision can approve B using the default A evaluation because keep IDs are shared.","disposition":"same cause as ADV-1; to correct"},
+    {"id":"ARCH-2","priority":"P1","summary":"Releasing B reservation removes the replacement margin; a transfer becomes feasible with replacement November 4 instead of November 3.","file":"src/domain/engine.ts:85","disposition":"to correct"},
+    {"id":"ARCH-3","priority":"P1","summary":"Emergency action quantity and price disagree with the quantity actually added to coverage.","disposition":"same cause as ADV-2; to correct"},
+    {"id":"ARCH-4","priority":"P1","summary":"A trace sink masks provider timeout uncertainty as budget_exhausted.","disposition":"same cause as ADV-4; to correct"},
+    {"id":"ARCH-5","priority":"P2","summary":"Decision memories created after snapshot.updatedAt are incorrectly considered future.","disposition":"same cause as ADV-3; to correct"}
+  ],
+  "probes":"Memory-only execution of five counterexamples, no real external calls or database.",
+  "runtimeLimitations":["Real provider NOT_RUN","PostgreSQL/Aiven NOT_RUN","Integrated reception NOT_RUN"]
+}

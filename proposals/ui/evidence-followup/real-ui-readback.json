@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-22T10:02:21.120Z",
+  "ui": "http://127.0.0.1:5175/",
+  "backend": "http://127.0.0.1:3000",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "revision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+  "actor": {
+    "role": "direction",
+    "actorId": "EMP-PAUL",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "approvalCeilingEur": 2000
+  },
+  "proposals": [
+    {
+      "id": "proposal:0d2d6507-d5a1-4474-80d1-6a53e09efde7",
+      "status": "pending",
+      "revision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+      "caseRef": {
+        "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+        "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+      },
+      "optionId": "keep:7f37fc157675f19f5d47be6328cfceb0bbf7cc85dc8f9bab85d7a124c6d0292d",
+      "costEur": 0
+    },
+    {
+      "id": "proposal:b706f102-f547-47b8-94ec-a623f6e6c1c3",
+      "status": "approved",
+      "revision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+      "caseRef": {
+        "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+        "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+      },
+      "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+      "costEur": 1420
+    },
+    {
+      "id": "proposal:7f523d24-47ab-4856-99d0-d588367daf71",
+      "status": "stale",
+      "revision": "R0",
+      "caseRef": {
+        "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+        "caseRevision": "C-26cdd96e-464a-49a8-8b40-763d922fcd19"
+      },
+      "optionId": "transfer:4ff795fd03fac9c64cdb9ed8764ceb1b0415b887413b18702014c99e06420f37",
+      "costEur": 120
+    },
+    {
+      "id": "proposal:4c73b502-7db7-4d5b-a284-ed01ba55d914",
+      "status": "approved",
+      "revision": "R0",
+      "optionId": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+      "costEur": 0
+    }
+  ],
+  "cases": [
+    {
+      "id": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+      "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f",
+      "impactKind": "risk",
+      "evidenceRef": {
+        "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+        "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+        "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+      },
+      "confirmation": {
+        "kind": "inbound_date_confirmed",
+        "basis": "Operator test confirmation inside the synthetic company only. This date is not established by ROCKWOOL news.",
+        "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+        "actorId": "OPERATOR",
+        "eventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c",
+        "companyId": "CO-PARCOURS-PAUL-V2",
+        "productId": "SKU-ISO100",
+        "dataOrigin": "synthetic",
+        "confirmedAt": "2026-10-22T09:52:47.815Z",
+        "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f",
+        "policyVersion": "P1",
+        "businessRevision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+        "purchaseOrderLineId": "POL-1",
+        "previousExpectedDate": "2026-10-23",
+        "confirmedExpectedDate": "2026-10-27"
+      },
+      "candidates": [
+        "OL-A",
+        "OL-B"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": 4,
+  "date": "2026-10-22",
+  "status": "ACTION_COPY_RASTER_PROPOSAL_INSPECTED",
+  "generation_mode": "built-in image_gen",
+  "image": {
+    "path": "proposals/ui/pitch-slide-v4/pitch-action-v4.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "5eae33d45ae20aa9810ea9548683d0068d88b28bc90902b44229583c73c9b548"
+  },
+  "prompt": "PROMPT.json",
+  "supersedes": "../pitch-slide-v3/RECEIPT.json",
+  "received_feedback": "Single slide needs an impactful company vision that connects signals and data to action",
+  "changes": [
+    "Headline: Act on market changes.",
+    "Subtitle ties company data to protecting commitments, pursuing opportunities and deciding the next move",
+    "Right block: Decide and act, proposed actions, human review and approval, outcome tracking"
+  ],
+  "visual_review": [
+    "English text inspected",
+    "No clipping or accidental overlap observed",
+    "Airy three-column visual direction preserved",
+    "Who, why now and first-user acquisition route retained",
+    "Human authority visible; no automatic external execution claimed"
+  ],
+  "limits": [
+    "Raster product vision, not editable native slide",
+    "Benchmark and public submission link remain pending",
+    "Action and opportunity concepts do not certify current runtime implementation",
+    "No application code, publication, submission or external messaging changed"
+  ]
+}

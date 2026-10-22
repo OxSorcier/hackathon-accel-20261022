@@ -1,0 +1,484 @@
+{
+  "version": 2,
+  "status": "PROPOSED_AWAITING_INTEGRATOR_DTO",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "revision": "R-INDUSTRIAL-CANDIDATE-2",
+  "dataOrigin": "synthetic",
+  "asOf": "2026-10-22T08:55:00+02:00",
+  "companyProfile": {
+    "displayName": "Industrial Materials Group (synthetic)",
+    "activity": "Multi-site distributor of insulation, timber and panels, with light finishing at two sites.",
+    "operatingCountries": [
+      "FR",
+      "BE"
+    ],
+    "marketScope": [
+      "France",
+      "Europe"
+    ],
+    "ownerActorId": "EMP-PAUL",
+    "procurementActorId": "EMP-CLAIRE",
+    "logisticsActorId": "EMP-ALEX",
+    "manufacturingCapacity": "NOT_MODELLED",
+    "finishingCapacity": "NOT_MODELLED",
+    "provenance": {
+      "system": "ERP_DEMO",
+      "nativeId": "COMPANY-PROFILE-V2",
+      "version": "2",
+      "receivedAt": "2026-10-22T08:50:00+02:00",
+      "actorId": "EMP-PAUL"
+    }
+  },
+  "supplierSites": [
+    {
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "name": "Alpha insulation plant (synthetic)",
+      "country": "FR",
+      "region": "Hauts-de-France",
+      "siteRole": "production",
+      "productIds": [
+        "SKU-ISO100",
+        "SKU-IND-002"
+      ],
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "SUPSITE-ALPHA-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "supplierId": "SUP-2",
+      "supplierSiteId": "PLANT-BETA-FR",
+      "name": "Beta supply site (synthetic)",
+      "country": "FR",
+      "region": "Centre-Val de Loire",
+      "siteRole": "supply",
+      "productIds": [
+        "SKU-ISO100",
+        "SKU-IND-003"
+      ],
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "SUPSITE-BETA-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "supplierId": "SUP-3",
+      "supplierSiteId": "PLANT-EMERGENCY-FR",
+      "name": "Emergency warehouse (synthetic)",
+      "country": "FR",
+      "region": "Hauts-de-France",
+      "siteRole": "distribution",
+      "productIds": [
+        "SKU-ISO100"
+      ],
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "SUPSITE-EMERGENCY-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "name": "Gamma independent stock site (synthetic)",
+      "country": "BE",
+      "region": "Wallonia",
+      "siteRole": "distribution",
+      "productIds": [
+        "SKU-IND-002"
+      ],
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "SUPSITE-GAMMA-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    }
+  ],
+  "supplierDependencies": [
+    {
+      "id": "DEP-ALPHA-POL-1",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-ISO100",
+      "purchaseOrderLineIds": [
+        "POL-1"
+      ],
+      "orderLineIds": [
+        "OL-A"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-1",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "id": "DEP-ALPHA-POL-IND-ALPHA-01",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-IND-002",
+      "purchaseOrderLineIds": [
+        "POL-IND-ALPHA-01"
+      ],
+      "orderLineIds": [
+        "OL-IND-00000",
+        "OL-IND-03960",
+        "OL-IND-07920"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-IND-ALPHA-01",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "id": "DEP-ALPHA-POL-IND-ALPHA-02",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-IND-002",
+      "purchaseOrderLineIds": [
+        "POL-IND-ALPHA-02"
+      ],
+      "orderLineIds": [
+        "OL-IND-02574",
+        "OL-IND-06534",
+        "OL-IND-03366"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-IND-ALPHA-02",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "id": "DEP-ALPHA-POL-IND-ALPHA-03",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-IND-002",
+      "purchaseOrderLineIds": [
+        "POL-IND-ALPHA-03"
+      ],
+      "orderLineIds": [
+        "OL-IND-00396",
+        "OL-IND-04356",
+        "OL-IND-08316"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-IND-ALPHA-03",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "id": "DEP-ALPHA-POL-IND-ALPHA-04",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "productId": "SKU-IND-002",
+      "purchaseOrderLineIds": [
+        "POL-IND-ALPHA-04"
+      ],
+      "orderLineIds": [
+        "OL-IND-02178",
+        "OL-IND-06138",
+        "OL-IND-02970"
+      ],
+      "status": "confirmed_in_synthetic_master",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DEP-ALPHA-POL-IND-ALPHA-04",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    }
+  ],
+  "competitors": [
+    {
+      "competitorId": "COMP-IND-001",
+      "displayName": "Regional Materials Rival (synthetic)",
+      "country": "FR",
+      "regions": [
+        "Hauts-de-France",
+        "Ile-de-France"
+      ],
+      "productIds": [
+        "SKU-ISO100",
+        "SKU-IND-002"
+      ],
+      "declaredSupplyDependencies": [
+        {
+          "supplierId": "SUP-1",
+          "supplierSiteId": "PLANT-ALPHA-FR",
+          "productIds": [
+            "SKU-ISO100",
+            "SKU-IND-002"
+          ]
+        }
+      ],
+      "status": "synthetic_master_record_no_disruption_asserted",
+      "provenance": {
+        "system": "CRM_DEMO",
+        "nativeId": "COMPETITOR-001-MASTER-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    }
+  ],
+  "qualifiedDemands": [
+    {
+      "opportunityId": "CRM-IND-000",
+      "customerId": "CLI-A",
+      "projectId": "PROJECT-IND-00",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "quantity": 20,
+      "needDate": "2026-10-29",
+      "destinationDepotId": "DEP-LILLE",
+      "saleUnitPriceEur": 190,
+      "customerMaximumUnitPriceEur": 220,
+      "confirmedAt": "2026-10-22T08:50:00+02:00",
+      "ownerActorId": "EMP-PAUL",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "CRM_DEMO",
+        "nativeId": "INTAKE-CRM-IND-000-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-PAUL"
+      }
+    }
+  ],
+  "independentQuotes": [
+    {
+      "quoteId": "URG-1",
+      "supplierId": "SUP-3",
+      "supplierSiteId": "PLANT-EMERGENCY-FR",
+      "affectedSiteRelation": "independent",
+      "independenceScope": "The quoted current stock lot is at a different synthetic site and is declared available. Upstream multi-tier independence is not established.",
+      "stockLotId": "LOT-URG-1",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "availableQuantity": 8,
+      "unitCostEur": 155,
+      "freightEur": 180,
+      "arrivalDate": "2026-10-23",
+      "destinationDepotId": "DEP-LILLE",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-1",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "quoteId": "URG-IND-GAMMA-01",
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "affectedSiteRelation": "independent",
+      "independenceScope": "The quoted current stock lot is at a different synthetic site and is declared available. Upstream multi-tier independence is not established.",
+      "stockLotId": "LOT-URG-IND-GAMMA-01",
+      "productId": "SKU-IND-002",
+      "unit": "palette",
+      "availableQuantity": 3,
+      "unitCostEur": 91,
+      "freightEur": 90,
+      "arrivalDate": "2026-10-24",
+      "destinationDepotId": "DEP-LILLE",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-IND-GAMMA-01",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "quoteId": "URG-IND-GAMMA-02",
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "affectedSiteRelation": "independent",
+      "independenceScope": "The quoted current stock lot is at a different synthetic site and is declared available. Upstream multi-tier independence is not established.",
+      "stockLotId": "LOT-URG-IND-GAMMA-02",
+      "productId": "SKU-IND-002",
+      "unit": "palette",
+      "availableQuantity": 37,
+      "unitCostEur": 91,
+      "freightEur": 90,
+      "arrivalDate": "2026-10-24",
+      "destinationDepotId": "DEP-CENTRE",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-IND-GAMMA-02",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "quoteId": "URG-IND-GAMMA-03",
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "affectedSiteRelation": "independent",
+      "independenceScope": "The quoted current stock lot is at a different synthetic site and is declared available. Upstream multi-tier independence is not established.",
+      "stockLotId": "LOT-URG-IND-GAMMA-03",
+      "productId": "SKU-IND-002",
+      "unit": "palette",
+      "availableQuantity": 51,
+      "unitCostEur": 91,
+      "freightEur": 90,
+      "arrivalDate": "2026-10-24",
+      "destinationDepotId": "DEP-NANTES",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-IND-GAMMA-03",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    },
+    {
+      "quoteId": "URG-IND-GAMMA-04",
+      "supplierId": "SUP-IND-003",
+      "supplierSiteId": "PLANT-GAMMA-BE",
+      "affectedSiteRelation": "independent",
+      "independenceScope": "The quoted current stock lot is at a different synthetic site and is declared available. Upstream multi-tier independence is not established.",
+      "stockLotId": "LOT-URG-IND-GAMMA-04",
+      "productId": "SKU-IND-002",
+      "unit": "palette",
+      "availableQuantity": 49,
+      "unitCostEur": 91,
+      "freightEur": 90,
+      "arrivalDate": "2026-10-24",
+      "destinationDepotId": "DEP-LYON",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "URG-IND-GAMMA-04",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    }
+  ],
+  "stockValuations": [
+    {
+      "stockId": "ST-IND-DEP-LYON-SKU-ISO100",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "unitCostEur": 120,
+      "currency": "EUR",
+      "basis": "Explicit synthetic current inventory valuation; not inferred from an inbound purchase price.",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "VAL-LYON-ISO100-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    }
+  ],
+  "deliveryQuotes": [
+    {
+      "quoteId": "DQ-CRM-IND-000-V2",
+      "transportQuoteId": "TR-IND-LYON-LILLE-OPPORTUNITY",
+      "opportunityId": "CRM-IND-000",
+      "fromDepotId": "DEP-LYON",
+      "destinationDepotId": "DEP-LILLE",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "availableQuantity": 20,
+      "freightEur": 260,
+      "handlingEur": 40,
+      "dispatchDate": "2026-10-28",
+      "arrivalDate": "2026-10-29",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "costMapping": "The base transport cost_eur 300 already includes freight 260 plus handling 40. Do not add these again.",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DQ-CRM-IND-000-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-ALEX"
+      }
+    },
+    {
+      "quoteId": "DQ-RISK-8-V2",
+      "transportQuoteId": "TR-IND-LYON-LILLE-RISK",
+      "fromDepotId": "DEP-LYON",
+      "destinationDepotId": "DEP-LILLE",
+      "productId": "SKU-ISO100",
+      "unit": "palette",
+      "availableQuantity": 8,
+      "freightEur": 180,
+      "handlingEur": 0,
+      "dispatchDate": "2026-10-22",
+      "arrivalDate": "2026-10-23",
+      "validUntil": "2026-10-22T23:59:59+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "DQ-RISK-8-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-ALEX"
+      }
+    }
+  ],
+  "stockSourceProvenance": [
+    {
+      "stockId": "ST-IND-DEP-LYON-SKU-ISO100",
+      "inventoryLotId": "LOT-LYON-ISO100-V2",
+      "physicalStockBasis": "Current synthetic on-hand inventory. The stock is already present before any event release.",
+      "affectedSiteRelation": "independent_on_hand_for_this_scenario",
+      "upstreamManufacturingOrigin": "unknown",
+      "provenance": {
+        "system": "ERP_DEMO",
+        "nativeId": "LOT-LYON-ISO100-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T08:50:00+02:00",
+        "actorId": "EMP-CLAIRE"
+      }
+    }
+  ],
+  "factsExcluded": [
+    "No fire or competitor interruption in current master data.",
+    "No forecast, oracle, expected recommendation or future event in current master data.",
+    "No supplier quote aliases create extra stock.",
+    "No real CRM signature, ERP connector or production-system authorization is claimed."
+  ]
+}

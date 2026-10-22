@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "title": "Accel: what we sell and what we demonstrate",
+  "date": "2026-10-22",
+  "status": "DOCUMENTS_AND_SYNTHETIC_DATA_PREPARED_INDUSTRIAL_INTEGRATION_PENDING",
+  "owner": "Erwan",
+  "producerThreadId": "01a16306-b164-72f3-83d9-9edd27ded2ef",
+  "existingIssue": "ERW-133",
+  "canonicalVision": "docs/PRODUCT-VISION.md",
+  "scope": "Alignment, prepared English press/site/demo content, candidate customer data and local deterministic observation. No application code or shared contract changed.",
+  "sourceManifest": "SOURCE-MANIFEST.json",
+  "documentChecks": "DOCUMENT-CHECKS.json",
+  "dataChecks": "DATA-CHECKS.json",
+  "domainSmoke": "LOCAL-DOMAIN-SMOKE.json",
+  "owners": {
+    "product": "01a162bd-6384-7031-82c3-fdb5efba174e",
+    "integration": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "memory": "01a162f6-8e54-7190-9b3b-fb79ba9f7b6b"
+  },
+  "coordination": "Messages accepted by existing product, integration and memory chats. Owner reception and integration remain separate.",
+  "pending": [
+    "Owner reception into canonical vision and current brief.",
+    "Validated import into a separate synthetic company session.",
+    "Bounded model tools with complete server-side dependency checks.",
+    "Semantically relevant industrial source-to-decision journey.",
+    "ERP/CRM connector or attributed export-import evidence.",
+    "Research-memory R1/R2 receipts with existing owner.",
+    "10k full agent/Aiven evaluation, 100k/1m tiers.",
+    "Final exact-code reviews, UI reception, Runtime deployment and demo recording."
+  ],
+  "archive": {
+    "status": "PENDING",
+    "folderId": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "status": "RECORDED_CASE_RECOMPUTED_NOT_A_NEW_PROVIDER_RUN",
+  "sampleSize": 1,
+  "dataOrigin": "synthetic company and internal confirmation",
+  "baselineDefinition": "Choose the cheapest recorded option that covers order A, ignoring coverage of other orders. Analytical rule, not an LLM ablation.",
+  "baseline": {
+    "kind": "transfer",
+    "costEur": 120,
+    "status": "conditional",
+    "coveredCommitments": 1,
+    "totalCommitments": 2,
+    "coveredPallets": 8,
+    "requiredPallets": 16,
+    "uncoveredPallets": 8,
+    "coverage": [
+      {
+        "unit": "palette",
+        "covered": 8,
+        "depotId": "DEP-LILLE",
+        "orderId": "ORD-A",
+        "needDate": "2026-10-23",
+        "quantity": 8,
+        "shortage": 0,
+        "unknowns": [],
+        "productId": "SKU-ISO100",
+        "allocations": [
+          {
+            "quantity": 8,
+            "sourceId": "TR-C-L",
+            "availableDate": "2026-10-23"
+          }
+        ],
+        "orderLineId": "OL-A",
+        "requiredDate": "2026-10-23"
+      },
+      {
+        "unit": "palette",
+        "covered": 0,
+        "depotId": "DEP-CENTRE",
+        "orderId": "ORD-B",
+        "needDate": "2026-11-05",
+        "quantity": 8,
+        "shortage": 8,
+        "unknowns": [
+          "UNCONFIRMED_INBOUND:POL-2"
+        ],
+        "productId": "SKU-ISO100",
+        "allocations": [],
+        "orderLineId": "OL-B",
+        "requiredDate": "2026-11-03"
+      }
+    ]
+  },
+  "dataAware": {
+    "kind": "emergency_purchase",
+    "costEur": 1420,
+    "status": "feasible",
+    "coveredCommitments": 2,
+    "totalCommitments": 2,
+    "coveredPallets": 16,
+    "requiredPallets": 16,
+    "uncoveredPallets": 0,
+    "coverage": [
+      {
+        "unit": "palette",
+        "covered": 8,
+        "depotId": "DEP-LILLE",
+        "orderId": "ORD-A",
+        "needDate": "2026-10-23",
+        "quantity": 8,
+        "shortage": 0,
+        "unknowns": [],
+        "productId": "SKU-ISO100",
+        "allocations": [
+          {
+            "quantity": 8,
+            "sourceId": "URG-1",
+            "availableDate": "2026-10-23"
+          }
+        ],
+        "orderLineId": "OL-A",
+        "requiredDate": "2026-10-23"
+      },
+      {
+        "unit": "palette",
+        "covered": 8,
+        "depotId": "DEP-CENTRE",
+        "orderId": "ORD-B",
+        "needDate": "2026-11-05",
+        "quantity": 8,
+        "shortage": 0,
+        "unknowns": [
+          "UNCONFIRMED_INBOUND:POL-2"
+        ],
+        "productId": "SKU-ISO100",
+        "allocations": [
+          {
+            "quantity": 8,
+            "sourceId": "ST-C100",
+            "availableDate": "2026-10-22"
+          }
+        ],
+        "orderLineId": "OL-B",
+        "requiredDate": "2026-11-05"
+      }
+    ]
+  },
+  "comparisonRunId": "b706f102-f547-47b8-94ec-a623f6e6c1c3",
+  "comparisonRecordedAt": "2026-10-22T09:55:30.586Z",
+  "correctedUiFlow": {
+    "version": 1,
+    "observedAt": "2026-10-22T10:37:01.863Z",
+    "environment": "Aside candidate3000, Aiven, real OpenAI/Keenable",
+    "runId": "6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+    "proposalId": "proposal:6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "caseRef": {
+      "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+      "caseRevision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca"
+    },
+    "businessRevision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+    "policyVersion": "P1",
+    "sourceRef": {
+      "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+      "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+      "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+    },
+    "confirmationEventId": "e925cb58-a2fd-44d3-bb01-237cfdfe44ad",
+    "selectedKind": "emergency_purchase",
+    "selectedCostEur": 1420,
+    "decision": "approved",
+    "traceCount": 16,
+    "modelCalls": 5,
+    "totalTokens": 15886,
+    "monetaryCost": null,
+    "checks": {
+      "sameQuestionAsNegative": true,
+      "correctTarget": true,
+      "approved": true,
+      "caseMatches": true,
+      "protectsB": true,
+      "coversA": true,
+      "negativePreserved": true,
+      "negativeProposalStale": true
+    },
+    "conditionalTransferApprovalEnabled": false,
+    "browserApprovalObserved": "Approval recorded. No purchase or transfer executed.",
+    "passed": true,
+    "limits": [
+      "Synthetic company and internal confirmation; public causal link remains unverified",
+      "No purchase or stock movement executed",
+      "Final3001 promotion and readback still pending"
+    ]
+  },
+  "restartChecks": {
+    "passed": true,
+    "unchangedHashGroups": [
+      "company",
+      "case",
+      "caseHistory",
+      "run",
+      "traces",
+      "proposal",
+      "inventory"
+    ],
+    "traceCount": 16
+  },
+  "sources": [
+    {
+      "path": "proposals/integration/REAL-CASE-FLOW.json",
+      "sha256": "8e3c5ac559b2335283a395d3e1c8ab2649a995cfe8da17461101ede6494e0c97"
+    },
+    {
+      "path": "proposals/integration/FINAL-UI-FLOW.json",
+      "sha256": "2979f26c51f5915e662c06fb6cec4c3c093b2d4f57e957307726372cb72e6b79"
+    },
+    {
+      "path": "proposals/integration/FINAL-PREVIEW-RESTART.json",
+      "sha256": "500bac82b684952feab8edb17d2f52d9fda215ded0a3bee32f8132c92ba60315"
+    },
+    {
+      "path": "proposals/integration/FINAL-3001-QA.json",
+      "sha256": "1aa7bdae3715df16b5326d96e9f3dbb0d8eeb2c4d1b9e86fec66451ce7bd46fb"
+    },
+    {
+      "path": "proposals/integration/INDUSTRIAL-CORE-AIVEN.json",
+      "sha256": "4534165351e0fff576d8ee4439886494c78d92544aecc8650b0615aa40216a78"
+    },
+    {
+      "path": "proposals/modal/AIVEN-DOCUMENTS-LIVE.json",
+      "sha256": "c22c43dcdc630bbf00e611b1194caef71d5cbf9adc4213b8f6e91397744807f3"
+    },
+    {
+      "path": "proposals/agent/R1-RECEPTION.json",
+      "sha256": "00dc83b8427dd0b24bc5093da05fd60ae4b63955c4eb643d9b299944d14ce489"
+    }
+  ],
+  "limits": [
+    "One controlled case, no aggregate accuracy claim.",
+    "No human time-saving baseline or monetary model-cost measurement.",
+    "Approval is not a purchase or inventory movement.",
+    "The comparison and corrected UI reception are distinct recorded runs.",
+    "Industrial import and PDF cache are separately tested modules, not proof of the full industrial app journey."
+  ]
+}

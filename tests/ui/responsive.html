@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Responsive UI harness, CSS viewport</title>
+<style>body{margin:0;background:#dfe7ec;font:13px system-ui}header{padding:12px;text-align:center;color:#31475c}iframe{display:block;margin:0 auto;background:white;border:1px solid #b6c7d2;box-sizing:content-box;max-width:100%}</style></head>
+<body><header>Synthetic responsive check in an iframe. No real phone or touch emulation.</header><iframe title="Responsive UI" width="390" height="844"></iframe>
+<script>
+const params = new URLSearchParams(location.search);
+const width = [320, 390, 768, 1024].includes(Number(params.get('width'))) ? Number(params.get('width')) : 390;
+const scenario = ['ready', 'stale', 'conflict', 'missing', 'empty', 'conditional', 'error', 'loading', 'unsafe', 'case', 'confirmed-case', 'capabilities-error', 'research', 'research-missing', 'research-stale', 'research-partial', 'research-empty', 'research-error', 'research-uncertain', 'research-read-error', 'research-command-uncertain'].includes(params.get('scenario')) ? params.get('scenario') : 'ready';
+const frame = document.querySelector('iframe');
+frame.width = String(width); frame.src = '/tests/ui/preview.html?scenario=' + encodeURIComponent(scenario);
+</script></body></html>

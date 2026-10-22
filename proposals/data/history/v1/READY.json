@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "role": "data-watch",
+  "status": "READY",
+  "deliveryState": "reviewed_and_locally_tested_for_integrator_reception",
+  "createdAt": "2026-10-22T08:58:42.242876+00:00",
+  "sessionId": "01a162bd-e262-7fa2-a1f3-aab46f68fc1a",
+  "project": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "sourceMandate": "docs/tasks/DATA-WATCH.md",
+  "contract": {
+    "version": "C1",
+    "path": "src/contracts/index.ts",
+    "sha256": "e1eec6ee3fe568ba6921db8d6fb345755eef2f90b3299a0eb7372d3c8bbe055b"
+  },
+  "implementationModel": "gpt-6.1-sol",
+  "modelEvidence": "current session turn_context configuration; backend served identity not independently attested",
+  "gitCommit": null,
+  "gitState": "uncommitted; no HEAD commit available; no commit or push executed",
+  "scopeSha256": "7d6afe5595271bdfa766609952a6041a6cfb042989acfc952a03776928fafac9",
+  "deliverySha256": "7511f30d4707fdc0de75e729813cc2a600caaf7d184d876c53a7c45aa29315f9",
+  "files": [
+    {
+      "path": "proposals/data/INTEGRATION.md",
+      "sha256": "12fb3cef947731356bbea455b94a543e75b7f3fdd8381677cbd12f1905cca844"
+    },
+    {
+      "path": "proposals/data/LIVE-COLLECTION-PG-CYCLE2.json",
+      "sha256": "853860c5e92abbd79fabb3e17f7416eed8669e5a8d61e7b0afd4ab0a05583249"
+    },
+    {
+      "path": "proposals/data/LIVE-COLLECTION-PG.json",
+      "sha256": "4646ce34106fad1634a9491a424e38a2993ca5662fa368b5ac554a8fb4a464b5"
+    },
+    {
+      "path": "proposals/data/REVIEW-INPUT-cycle1.json",
+      "sha256": "54d8d2106112222cd7b38514d238c97a846863bd63e8fac7471a61a70ea38ab7"
+    },
+    {
+      "path": "proposals/data/REVIEW-INPUT.json",
+      "sha256": "38d565242e987898fa8680c2d3516951fb1e8837ce9583565a97e691f72b579e"
+    },
+    {
+      "path": "proposals/data/REVIEW-RECEIPT.json",
+      "sha256": "785f9469e44db0f644d9b44af99e8ef43dd4111fa14df952072cf99592fffd61"
+    },
+    {
+      "path": "proposals/data/VERIFICATION.json",
+      "sha256": "ff7f7409ae2fa6da42ecf1c349ba00b8bd52d00a499799d3c9ebb7c1c51f1e63"
+    },
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "sha256": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08"
+    },
+    {
+      "path": "src/data/validation.ts",
+      "sha256": "915e83c1ec9c87c9f7927551b7bc2b839b31e9210dca3b688d94e4c02974949d"
+    },
+    {
+      "path": "src/data/watch-repository.ts",
+      "sha256": "29e24db1be644c809b2026389b5d730f507781a5d8412be76f6186c9b821bb29"
+    },
+    {
+      "path": "src/watch/collector.ts",
+      "sha256": "64f8882d20935c444ea6a3c8730de45d91e93cd574e356905c71d5b951a317db"
+    },
+    {
+      "path": "src/watch/engine.ts",
+      "sha256": "8b912aaefe04daf1206c6a2c1f98230d034c4bc19721e7d8a181c5418bb3b9a6"
+    },
+    {
+      "path": "tests/data/validation.test.ts",
+      "sha256": "82434d403bfce66b4eb241d52cb7a5a869fa7b3edf4e9a580c0d1e2f33dc39c0"
+    },
+    {
+      "path": "tests/data/watch-postgres.test.ts",
+      "sha256": "ebc69ded1ef667fa39c725c30a0fa93a3691ec46a41e33fd85d286da896c5dc4"
+    },
+    {
+      "path": "tests/watch/collector.test.ts",
+      "sha256": "776c2b35706b1ba4cd226bde15648acd709bc4146f951833354bbeec602d531d"
+    },
+    {
+      "path": "tests/watch/live-boamp.ts",
+      "sha256": "e1b05a8fb21c7b31c4d5209a934cec98abf34510eae568c5c0f17061b5d36667"
+    }
+  ],
+  "exports": {
+    "src/data/watch-repository.ts": [
+      "createWatchRepository(sql)",
+      "WatchRepository",
+      "ClaimedOccurrence"
+    ],
+    "src/watch/collector.ts": [
+      "createPublicCollector(options?)",
+      "BOAMP_SOURCE_URL",
+      "PUBLIC_TOPICS"
+    ],
+    "src/watch/engine.ts": [
+      "createWatchEngine({repository, collector, ...budgets})"
+    ]
+  },
+  "dependenciesAdded": [],
+  "checks": [
+    {
+      "command": "DATA_WATCH_TEST_DATABASE_URL=<isolated local database> node_modules/.bin/vitest run tests/data tests/watch",
+      "status": "passed",
+      "testFiles": 3,
+      "passed": 17,
+      "realPostgresTests": 10,
+      "serverVersion": "17.6"
+    },
+    {
+      "command": "node_modules/.bin/tsc --ignoreConfig --noEmit --strict --skipLibCheck --target es2023 --types node --module esnext --moduleResolution bundler --allowImportingTsExtensions src/data/*.ts src/watch/*.ts tests/data/*.ts tests/watch/*.ts",
+      "status": "passed"
+    },
+    {
+      "command": "node_modules/.bin/tsc --noEmit",
+      "status": "passed",
+      "scope": "assembled checkout at check time, other owners still working"
+    },
+    {
+      "command": "node tests/watch/live-boamp.ts, authorized host",
+      "status": "passed",
+      "observedCollectionStatus": "partial"
+    },
+    {
+      "command": "two real BOAMP collections through engine and repository on final scope; reconnect pool and repository between collections",
+      "status": "passed",
+      "evidence": "proposals/data/LIVE-COLLECTION-PG-CYCLE2.json",
+      "deduplicatedEvidenceCount": 2
+    }
+  ],
+  "reviews": {
+    "status": "both independent roles revalidated",
+    "cycles": 2,
+    "counterReview": {
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high",
+      "agent": "/root/data_counter_review"
+    },
+    "architectureReview": {
+      "requestedModel": "gpt-6-astra",
+      "effort": "high",
+      "agent": "/root/data_architecture_review"
+    },
+    "isolation": "distinct fresh contexts with fork_turns none; independent delta revalidation",
+    "servedModels": "unverified",
+    "receipt": "proposals/data/REVIEW-RECEIPT.json"
+  },
+  "limits": [
+    "Aiven runtime NOT_RUN; local PostgreSQL evidence only",
+    "Integrated HTTP lifecycle, server restart and browser-close acceptance NOT_RUN for this module receipt",
+    "No product model inference, stock calculation or proposal generation by this module; downstream trigger belongs to integrator",
+    "BOAMP is an opportunity source; observed results include old notices and respiratory equipment, not confirmed fictional supplier disruption",
+    "Bounded collection remains partial when matching total exceeds page budget; no completeness or freshness claim",
+    "Schedule selection and claim recovery depend on the trusted server caller clock; no full multi-host clock independence claim",
+    "Missed cadence slots are caught up one per watch per tick; backlog policy remains integrator-owned",
+    "Default test command skips the ten PostgreSQL tests when DATA_WATCH_TEST_DATABASE_URL is absent"
+  ],
+  "integrationActions": [
+    "Receive and apply proposals/data/watch-schema.sql as a migration",
+    "Inject canonical SqlPort and trusted Actor, use createWatchEngine({repository,collector})",
+    "Start and await the worker loop on the server, outside browser lifecycle",
+    "Connect released collection results to the agent/domain path if required by the integrated scenario",
+    "Run Aiven/TLS, integrated lifecycle, UI and final integrated acceptance checks"
+  ],
+  "evidence": "proposals/data/VERIFICATION.json",
+  "handoff": "proposals/data/INTEGRATION.md",
+  "cleanup": {
+    "temporaryTestPostgres": "removed",
+    "testSchemas": "removed"
+  },
+  "freeze": "No further writes to delivered scope after this receipt. Any correction requires a new receipt and revalidation."
+}

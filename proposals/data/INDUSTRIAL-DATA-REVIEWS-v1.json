@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "status": "FINAL_TWO_FRESH_REVIEW_CONTEXTS_NO_FINDINGS",
+  "scopeSha256": "3564295636d44b24edd453bfe1d650f00b9d34d86553b7383a7bbe8f5d1fd358",
+  "snapshot": "/tmp/accel-industrial-data-review-v3",
+  "cycles": [
+    {
+      "cycle": 1,
+      "scopeSha256": "9dfe048e6c4d194aadbb8977bed8cda9273cd0f4065c03dec8583bc3b7ed2b57",
+      "findings": [
+        "Native future/SCENARIO provenance could be promoted by an earlier alias",
+        "Native C1 quote validity could be prolonged by sidecar deadline"
+      ],
+      "resolution": "Validate native provenance on referenced resources; C1 valid_on must match business day and alias deadline must be bounded to that native day in company timezone"
+    },
+    {
+      "cycle": 2,
+      "scopeSha256": "753cb16505d5b8e4874e875121df52bd3bf67547634376275f478de460a79325",
+      "findings": [
+        "Native CRM dequalification/cancellation left an old confirmed demand reusable"
+      ],
+      "resolution": "Require current native qualified_synthetic_confirmed status; regressions cover to_qualify, cancelled and missing status"
+    },
+    {
+      "cycle": 3,
+      "scopeSha256": "3564295636d44b24edd453bfe1d650f00b9d34d86553b7383a7bbe8f5d1fd358",
+      "findings": [],
+      "reviewers": [
+        {
+          "task": "/root/industrial_data_counter_review_v3",
+          "role": "same_coder_model_counter_review",
+          "configuredModel": "gpt-6.1-sol",
+          "servedModel": "UNATTESTED",
+          "newContext": true,
+          "exactDigestVerified": true,
+          "independentPureProbes": 16,
+          "postgres": "NOT_RUN",
+          "findings": []
+        },
+        {
+          "task": "/root/industrial_data_architecture_review_v3",
+          "role": "architecture_review",
+          "configuredModel": "gpt-6-astra",
+          "servedModel": "UNATTESTED",
+          "newContext": true,
+          "exactDigestVerified": true,
+          "independentPureTests": 8,
+          "postgres": "NOT_RUN",
+          "findings": []
+        }
+      ]
+    }
+  ],
+  "realizerTests": {
+    "dataWatch": 75,
+    "postgres": 46,
+    "industrialPostgres": 11,
+    "industrialPure": 8,
+    "strictTypecheck": "PASS",
+    "environment": "Disposable local PostgreSQL17.6 and existing received synthetic10k portfolio; no Aiven or real model claim"
+  },
+  "limits": [
+    "Independent reviewers did not run PostgreSQL/Aiven/network or integrated worker",
+    "Final guarantee depends on received server transaction/counter/principal/basis binding"
+  ]
+}

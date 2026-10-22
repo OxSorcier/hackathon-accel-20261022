@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "scope": "Physical Impact frontend and explicit browser demo",
+  "files": [
+    {
+      "file": "src/ui/App.tsx",
+      "sha256": "54076bd21fea9c4c2bd18f1185dfce4bef7f83afee1a6f9ed201cff89238cc4c"
+    },
+    {
+      "file": "src/ui/IndustrialDesk.tsx",
+      "sha256": "15ace51b5d79405a59607e0651bf85132a0346985961c852beda439a17b138be"
+    },
+    {
+      "file": "src/ui/physical-pages.tsx",
+      "sha256": "063914af9b009df777dca8549c71b8e6176e3e8f9993de03dd894efcf7a58a44"
+    },
+    {
+      "file": "src/ui/physical-impact.css",
+      "sha256": "37be13648e1e9fe506387012a83baa4d3e19935b435585a1384e459e8cb2d1ba"
+    },
+    {
+      "file": "src/ui/physical-model.ts",
+      "sha256": "aedaf25da29744b9bc2b9b31979a396227d23ebc5dd76e1b4bc8cfd7642ba52a"
+    },
+    {
+      "file": "src/ui/physical-demo.ts",
+      "sha256": "33d38f989dbf64979d5eb7f26ebe878ded344bd83f6c81421f31c374659722ef"
+    },
+    {
+      "file": "tests/ui/physical-model.test.ts",
+      "sha256": "42461df8afb0f81f43ff6a50643da80f9322b7d708488d087a251972a0943578"
+    },
+    {
+      "file": "tests/ui/physical-demo.test.ts",
+      "sha256": "c13afee3a0509c31c3ec0ce55e4002e30368e70d4284c8eca7e39166d556a7f1"
+    }
+  ],
+  "compiled_bundle_sha256": "1cf98ff58a2f01006915e4dd4ed4043fbfb52f8a6a40da809db57bd25707e334",
+  "bundle": "assets/index-0i85LfEo.js"
+}

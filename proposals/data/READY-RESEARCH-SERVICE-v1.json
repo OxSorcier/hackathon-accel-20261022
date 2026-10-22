@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "status": "READY_LOCAL_TESTED_TWO_INDEPENDENT_REVIEWS_INTEGRATOR_RECEIPT_PENDING",
+  "scopeSha256": "196aedaa4d8b2c5a1b6d44538e144bca49146435efe536871dabac7009e02ca0",
+  "files": [
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "486702dc451a01bd73ef3c8c8364e04e4478b6b9c8ef2dabb6dd9c1e78bce59f"
+    },
+    {
+      "path": "tests/data/research-service-postgres.test.ts",
+      "sha256": "a13685596e8fec4e6627814f14c114cb2cbbabd3ffbe71500e0ddf270d11cfe4"
+    }
+  ],
+  "reviewInput": "proposals/data/REVIEW-INPUT-RESEARCH-SERVICE-v1.json",
+  "reviews": "proposals/data/RESEARCH-SERVICE-REVIEWS-v1.json",
+  "tests": {
+    "totalDataWatch": 79,
+    "postgres": 50,
+    "servicePostgres": 4,
+    "strictTypecheck": "PASS",
+    "environment": "Disposable local PostgreSQL17.6; no provider or model call by data owner"
+  },
+  "api": {
+    "method": "lookupForService(companyId:string,scope:ResearchScope,principalId:string):Promise<ResearchContext>",
+    "authorization": "authorizeServiceLookup(client:SqlPort,companyId:string,scope:ResearchScope,principalId:string):Promise<boolean>",
+    "namespace": "live_only",
+    "sourceHttpCalls": 0,
+    "collectorCalls": 0,
+    "refreshForService": false,
+    "actorImpersonation": false,
+    "metadata": "Reuses current() adoption/freshness projection and generation invalidation in the same company-locked transaction; does not write source data or business actions"
+  },
+  "integrationRequirements": [
+    "Company, allowed profile and principal are fixed by server, never model-chosen authorization",
+    "Provide mandatory SQL callback checking active same-company analysis_only principal and explicit server profile/version whitelist; accept only boolean true",
+    "Keep principal/profile permission reads inside transaction; no HTTP or fabricated human Actor",
+    "Existing repository policyFor whitelist still applies; controlled namespace always refused",
+    "Root owns actual principal table, authorization binding, callback review and runtime end-to-end reception",
+    "Use root immutable snapshots for historical R1/R2; the working-tree repository is now this separate version"
+  ],
+  "historicalR1": {
+    "scopeSha256": "9008ba459e68d33a7fbad13d94f25ad97da4d890a13932e443b3f541ed437a2c",
+    "exact4Pins": "proposals/data/history/research-v2",
+    "receipt": "READY-RESEARCH-v2.json",
+    "integratorSnapshots": "Preserved and used by root/agent for closed R1 and exclusive R2; no rewrite"
+  },
+  "preserved": [
+    "Current collector16pins",
+    "Current industrial5pins",
+    "Historical R1 exact4pins"
+  ],
+  "notProved": [
+    "Real SQL authorization callback binding",
+    "Service principal in Aiven/model run",
+    "Industrial live collection to automatic report"
+  ],
+  "singleLiveProbeOwner": "Existing integrator on isolated3003, existing worker/profile only"
+}

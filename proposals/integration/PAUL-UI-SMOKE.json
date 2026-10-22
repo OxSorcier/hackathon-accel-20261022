@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T09:16:27.441Z",
+  "url": "http://127.0.0.1:3001",
+  "companyId": "CO-PARCOURS-PAUL",
+  "runId": "d63242ad-c2d5-47b9-a9a6-f79d899b84f7",
+  "status": "needs_input",
+  "model": null,
+  "proposalId": null,
+  "traceCount": 0,
+  "message": "Le fournisseur modèle autorisé reste à configurer. Aucun appel modèle exécuté.",
+  "sessionEvidence": "Coordinator performed real Paul login in shared Aside profile without publishing the credential; root subsequently observed Paul and enabled form",
+  "effects": "No stock or proposal mutation"
+}

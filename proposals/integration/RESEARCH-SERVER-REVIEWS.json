@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "status": "RECEIVED_BOTH_ROLES_NO_RETAINED_FINDING",
+  "receivedAt": "2026-10-22T11:31:28.573223+00:00",
+  "scopeManifest": "proposals/integration/REVIEW-INPUT-RESEARCH-SERVER-v3.json",
+  "manifestSha256": "7f66847ac1d5e1bdf9ac4b219517389f5529e20d5b4fdab7c5258b97b78889f7",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModelIdentity": "unattested",
+  "roles": [
+    {
+      "reviewer": "/root/research_server_counter_review",
+      "modelRequested": "gpt-6.1-sol",
+      "effort": "high",
+      "isolation": "fork_turns:none",
+      "cycles": 3,
+      "result": "findings_fixed_and_revalidated"
+    },
+    {
+      "reviewer": "/root/research_server_architecture_review",
+      "modelRequested": "gpt-6-astra",
+      "effort": "high",
+      "isolation": "fork_turns:none",
+      "cycles": 3,
+      "result": "findings_fixed_and_revalidated"
+    }
+  ],
+  "findingsClosed": [
+    "Failed terminal publication without result must invalidate reusable research.",
+    "Order publications durably across identical millisecond timestamps, preserve historical uncertainty.",
+    "Identical freshness renewal retains case evidence identity but respects current TTL.",
+    "Persist and validate new decision-memory research provenance.",
+    "Exclude v1 research memories lacking positive provenance using their origin proposal/run; keep attributed generic C1 advice and historical bytes."
+  ],
+  "rootChecks": {
+    "fullTests": 291,
+    "bothPostgresFlags": true,
+    "typecheck": "PASS_v2_then_build_v3_strict_server",
+    "build": "PASS_v3",
+    "hashesStable": true
+  },
+  "limits": [
+    "Actual model/session/process restart/Aiven R1 and controlled source-v2 R2 are pending runtime reception.",
+    "New source import into fresh007 schema is explicitly received; preserve acquired times, hashes and provenance, no blanket source freshness claim."
+  ]
+}

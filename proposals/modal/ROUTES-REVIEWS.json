@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "unit": "pdf-http-routes",
+  "revision": 2,
+  "status": "reviewed",
+  "recordedAt": "2026-10-22T11:20:49.436021+00:00",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModelAttestation": "unavailable; model names describe requested roles",
+  "scope": "proposals/modal/ROUTES-REVIEW-SCOPE.json",
+  "cycles": 2,
+  "reviewers": [
+    {
+      "agent": "/root/pdf_routes_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "effortRequested": "high",
+      "initialContext": "fresh; fork_turns none; no implementation transcript or other reviewer conclusions",
+      "role": "adversarial counter-review",
+      "initialFindings": [
+        "P1 encoded raw-path alias bypassed parent Origin prefix guard",
+        "P2 client disconnect during session lookup was missed"
+      ],
+      "revalidation": "Both findings corrected on exact revision 2; independent 8 tests pass, actual HTTP cancellation probe records zero acquisitions, createApp canonical valid request 202 and encoded alias 403. Hashes stable.",
+      "remainingFindings": []
+    },
+    {
+      "agent": "/root/pdf_routes_arch",
+      "modelRequested": "gpt-6-astra",
+      "effortRequested": "high",
+      "initialContext": "fresh; fork_turns none; no implementation transcript or other reviewer conclusions",
+      "role": "contracts and architecture",
+      "initialFindings": [],
+      "revalidation": "Exact revision 2 and all five hashes received; independent 8 tests pass; real parent hook probes refuse aliases/missing Origin, simulated close after service start propagates abort signal. Hashes stable.",
+      "remainingFindings": [],
+      "limits": [
+        "Additional real-network post-start probe hit listen EPERM; event-based signal probe was used. Actual HTTP during-authentication test passed in targeted suite."
+      ]
+    }
+  ],
+  "regressions": {
+    "red": "Both new tests failed before correction: encoded alias 202; acquisition started after client disconnected during actorFor.",
+    "green": "Both pass after canonical path guard and early close listener / pre-acquisition abort check."
+  },
+  "coordinatorChecks": [
+    "8 route tests pass",
+    "TypeScript noEmit passes",
+    "All review manifest hashes match after both reviews"
+  ],
+  "sharedHook": "Integrator separately changed parent Origin hook to check all mutations regardless of raw URL prefix; its source review and promotion remain integrator-owned.",
+  "limitations": [
+    "Route protocol uses injected company-scoped document service and actorFor test resolver.",
+    "No new Modal or Aiven call in this unit.",
+    "No integrated app/UI/model acceptance asserted.",
+    "Review model served identity is not attested."
+  ],
+  "filesChangedByReviewers": false
+}

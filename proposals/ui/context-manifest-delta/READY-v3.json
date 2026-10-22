@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "status": "READY_FOR_INTEGRATOR_REVIEW",
+  "ready": false,
+  "date": "2026-10-22",
+  "scope": "Local context_manifest recorded semantics and analysis-mode badge copy against isolated CASE flow. Main research UI excluded. No new run or business execution.",
+  "manifest": "proposals/ui/context-manifest-delta/REVIEW-INPUT.json",
+  "manifestSha256": "a9f0d7a7fb176c4950c35977573d19708e338531abe1848f73922ef9eaa262a5",
+  "snapshots": [
+    {
+      "path": "src/ui/api.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/api.ts.snapshot",
+      "sha256": "5a4d4d33fa47d57547eec4d7e9b42eec585209b3d4a18656ef9e4bfe9fa147fc"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/types.ts.snapshot",
+      "sha256": "8eb3a73e588d2a3197ca27a452cca80bca4b345ee51cf2e584215f1ef2caf84a"
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/App.tsx.snapshot",
+      "sha256": "b4fabde686467c03021db659b0477d065988846ba23e88af25cb7ced6f6b83c7"
+    },
+    {
+      "path": "tests/ui/context-manifest.test.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/tests/ui/context-manifest.test.ts.snapshot",
+      "sha256": "da7e23852ae43d325659c1b600710cd0b04adf2a79294ea493fcd32bf077a416"
+    }
+  ],
+  "behavior": "A validated local context_manifest event displays Context assembled and Recorded. Incomplete records remain unknown. Provider requests keep their existing statuses. Analysis provenance badges say Live analysis or Test analysis. Approved keeps its server business meaning and does not imply execution. Recorded requires exact run company/revision/policy/case/research scope and an error-free complete manifest. Every other context_manifest stays unknown, without provider-success fallback.",
+  "validation": {
+    "targetedUiTests": "10 expected failures before fix. 14 context-manifest tests pass after fix on main, with positive plain/CASE/research scopes. Isolated flow review and checks remain integrator-owned.",
+    "typecheck": "PASS on main source",
+    "isolatedFlowBrowser": "NOT_RUN by UI owner"
+  },
+  "review": {
+    "status": "PENDING_INTEGRATOR_PANEL",
+    "instruction": "The integrator panel may cover these exact immutable bytes. No competing panel is launched for this isolated micro-delta."
+  },
+  "nextAction": "Integrator reviews the four immutable snapshots, copies only these files into the isolated flow source and verifies the saved trace without a new model call.",
+  "publication": "No commit, push or deploy."
+}

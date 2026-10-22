@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "status": "FINAL_TWO_INDEPENDENT_REVIEWS_NO_FINDINGS",
+  "scopeSha256": "9008ba459e68d33a7fbad13d94f25ad97da4d890a13932e443b3f541ed437a2c",
+  "snapshot": "/tmp/accel-research-order-review-v2",
+  "cycles": [
+    {
+      "cycle": 1,
+      "scopeSha256": "026f33d1aa4373925ef170fd59bd634808eff0cd9c1554a4b97e34405ab7affc",
+      "findings": [
+        "Timestamp equality re-adopts older failure after a successful refresh"
+      ],
+      "resolution": "Astra framing and integrator received durable publication sequence, private cursor and historical barrier"
+    },
+    {
+      "cycle": 2,
+      "scopeSha256": "9a3673c240acf46c9e1e41c62c617eb8aa4727d3020c26f036852e02c2d4e572",
+      "findings": [
+        "validate catch absorbed DataWatchError from invalidation callback and could commit its projection"
+      ],
+      "resolution": "Catch limited to dependency input validation; real PostgreSQL regression covers own and supplied transactions"
+    },
+    {
+      "cycle": 3,
+      "scopeSha256": "9008ba459e68d33a7fbad13d94f25ad97da4d890a13932e443b3f541ed437a2c",
+      "findings": [],
+      "reviewers": [
+        {
+          "role": "same_coder_model_counter_review",
+          "task": "/root/research_order_counter_review_v2",
+          "configuredModel": "gpt-6.1-sol",
+          "servedModel": "UNATTESTED",
+          "newContext": true,
+          "exactDigestVerified": true,
+          "findings": [],
+          "testsExecuted": "NOT_RUN"
+        },
+        {
+          "role": "architecture_review",
+          "task": "/root/research_order_architecture_review_v2",
+          "configuredModel": "gpt-6-astra",
+          "servedModel": "UNATTESTED",
+          "newContext": true,
+          "exactDigestVerified": true,
+          "findings": [],
+          "testsExecuted": "NOT_RUN"
+        }
+      ]
+    }
+  ],
+  "reviewerLimits": [
+    "Read-only exact snapshots and relevant caller paths",
+    "No PostgreSQL, network, Aiven or canonical migration execution by reviewers"
+  ],
+  "realizerTests": {
+    "total": 56,
+    "postgres": 35,
+    "researchPostgres": 20,
+    "watchPostgres": 15,
+    "pure": 21,
+    "strictTypecheck": "PASS",
+    "environment": "Disposable local PostgreSQL17.6; no Aiven claim"
+  }
+}

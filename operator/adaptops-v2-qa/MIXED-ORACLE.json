@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "operatorOnly": true,
+  "mustNotEnterModelContext": true,
+  "fixedAt": "2026-10-22T11:17:41.767111+00:00",
+  "method": "Independent arithmetic from exact raw tables and released scenario payload, without product engine imports. This oracle is not a release authorization.",
+  "manifest": {
+    "path": "proposals/product/alignment-20261022/v2/INDUSTRIAL-READY-v2.json",
+    "sha256": "b955e5374c111bd7d5e1779c00028953980b88e1683280c26a80f14ca281bfea",
+    "files": [
+      {
+        "path": "src/contracts/industrial.ts",
+        "sha256": "c638d5c1c7fe4205c26318642c21e0b0375149490d81ffde9a4c1242cca04845"
+      },
+      {
+        "path": "proposals/product/alignment-20261022/v2/industrial-context.v2.json",
+        "sha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e"
+      },
+      {
+        "path": "proposals/product/alignment-20261022/v2/operator-event.v2.json",
+        "sha256": "12efd02dc12781fa7aa243db1064e5f15c7c948fc3d9eab8a33c1383c9f189b7"
+      }
+    ]
+  },
+  "coreDatasetSha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "contextRevision": "IC-INDUSTRIAL-2-2",
+  "qualificationRevision": "Q-INDUSTRIAL-2-1",
+  "eventVersion": "IE-ALPHA-2-2",
+  "expected": {
+    "preEventConfirmedShortageIds": [],
+    "supplierLinkedCommitmentIds": [
+      "OL-A",
+      "OL-IND-00000",
+      "OL-IND-00396",
+      "OL-IND-02178",
+      "OL-IND-02574",
+      "OL-IND-02970",
+      "OL-IND-03366",
+      "OL-IND-03960",
+      "OL-IND-04356",
+      "OL-IND-06138",
+      "OL-IND-06534",
+      "OL-IND-07920",
+      "OL-IND-08316"
+    ],
+    "confirmedLateCommitmentsAfterReceivedConfirmations": [
+      {
+        "orderLineId": "OL-A",
+        "productId": "SKU-ISO100",
+        "unit": "palette",
+        "shortage": 8,
+        "needDate": "2026-10-23",
+        "purchaseLineId": "POL-1",
+        "newArrivalDate": "2026-11-20"
+      }
+    ],
+    "unconfirmedOtherDelays": "Other linked purchase ETAs remain current until separately confirmed; dependency exposure may be conditional. Do not assert all have a confirmed delay.",
+    "qualifiedDemandIds": [
+      "CRM-IND-000"
+    ],
+    "unqualifiedCrmIds": [
+      "CRM-IND-001",
+      "CRM-IND-002",
+      "CRM-IND-003",
+      "CRM-IND-004",
+      "CRM-IND-005",
+      "CRM-IND-006",
+      "CRM-IND-007",
+      "CRM-IND-008",
+      "CRM-IND-009",
+      "CRM-IND-010",
+      "CRM-IND-011",
+      "CRM-IND-012",
+      "CRM-IND-013",
+      "CRM-IND-014",
+      "CRM-IND-015",
+      "CRM-IND-016",
+      "CRM-IND-017",
+      "CRM-IND-018",
+      "CRM-IND-019",
+      "CRM-IND-020",
+      "CRM-IND-021",
+      "CRM-IND-022",
+      "CRM-IND-023",
+      "CRM-IND-024",
+      "CRM-IND-025",
+      "CRM-IND-026",
+      "CRM-IND-027",
+      "CRM-IND-028",
+      "CRM-IND-029",
+      "CRM-IND-030",
+      "CRM-IND-031",
+      "CRM-IND-032",
+      "CRM-IND-033",
+      "CRM-IND-034",
+      "CRM-IND-035",
+      "CRM-IND-036",
+      "CRM-IND-037",
+      "CRM-IND-038",
+      "CRM-IND-039",
+      "CRM-IND-040",
+      "CRM-IND-041",
+      "CRM-IND-042",
+      "CRM-IND-043",
+      "CRM-IND-044",
+      "CRM-IND-045",
+      "CRM-IND-046",
+      "CRM-IND-047",
+      "CRM-IND-048",
+      "CRM-IND-049",
+      "CRM-IND-050",
+      "CRM-IND-051",
+      "CRM-IND-052",
+      "CRM-IND-053",
+      "CRM-IND-054",
+      "CRM-IND-055",
+      "CRM-IND-056",
+      "CRM-IND-057",
+      "CRM-IND-058",
+      "CRM-IND-059",
+      "CRM-IND-060",
+      "CRM-IND-061",
+      "CRM-IND-062",
+      "CRM-IND-063",
+      "CRM-IND-064",
+      "CRM-IND-065",
+      "CRM-IND-066",
+      "CRM-IND-067",
+      "CRM-IND-068",
+      "CRM-IND-069",
+      "CRM-IND-070",
+      "CRM-IND-071",
+      "CRM-IND-072",
+      "CRM-IND-073",
+      "CRM-IND-074",
+      "CRM-IND-075",
+      "CRM-IND-076",
+      "CRM-IND-077",
+      "CRM-IND-078",
+      "CRM-IND-079"
+    ],
+    "protectedStock": {
+      "stockId": "ST-C100",
+      "physical": 8,
+      "reserved": 8,
+      "available": 0
+    },
+    "sharedFreeResource": {
+      "stockId": "ST-IND-DEP-LYON-SKU-ISO100",
+      "available": 100,
+      "riskQuantity": 8,
+      "opportunityQuantity": 20,
+      "combinedRequired": 28
+    },
+    "crmEconomicsCents": {
+      "currency": "EUR",
+      "potentialRevenue": 380000,
+      "inventoryValuation": 240000,
+      "freight": 26000,
+      "handling": 4000,
+      "potentialContribution": 110000,
+      "realisedRevenue": 0
+    },
+    "twoFeasibleArithmeticalOptionsIgnoringNoAdditionalUnknowns": {
+      "transferRiskAndCrm": {
+        "riskNewSpend": 18000,
+        "crmNewSpend": 30000,
+        "totalNewSpend": 48000
+      },
+      "purchaseRiskAndTransferCrm": {
+        "riskNewSpend": 142000,
+        "crmNewSpend": 30000,
+        "totalNewSpend": 172000
+      }
+    },
+    "lateQuoteForEarlyRisk": {
+      "quoteId": "DQ-CRM-IND-000-V2",
+      "arrivalDate": "2026-10-29",
+      "earlyNeedDate": "2026-10-23",
+      "mustNotCoverEarlyRisk": true
+    },
+    "causalTimeline": {
+      "crmConfirmedBeforeIncident": true,
+      "incidentCreatedThisDemand": false,
+      "competitorInabilitySeparatelyAttributed": true
+    },
+    "executionInvariants": [
+      "Approval alone does not change business stock.",
+      "Demo purchase/transfer creates future dated orders/allocations, never immediate destination on-hand inventory.",
+      "Prepared offer is draft, not confirmed sale.",
+      "Same operation key and command has exactly one effect.",
+      "Stale basis, unauthorised role/company, capacity, dates and approval ceiling checked by server."
+    ]
+  },
+  "productResults": "NOT_RUN",
+  "aivenImport": "WAIT_RECEIPT",
+  "candidateUrl": null
+}

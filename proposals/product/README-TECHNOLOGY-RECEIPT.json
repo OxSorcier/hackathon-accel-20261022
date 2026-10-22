@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-22T12:11:08.269924+02:00",
+  "scope": "README Technology usage, stale evidence statements and brief product assessment",
+  "authority": "Direct request from Erwan in the existing chat, bounded README prose edit",
+  "status": "README_UPDATED_AND_DOCUMENT_CHECKED",
+  "file": "README.md",
+  "sha256": "58c9d3848df4eca2664c3f53e5c62865454dd2b3cd582e28f8b2617c513da0fb",
+  "before": "proposals/product/history/README-before-technology-usage-20261022.md",
+  "changes": [
+    "Technology roles tied to recorded EUR1420 result",
+    "Local app and Aiven PostgreSQL distinguished from pending Runtime deployment",
+    "Two stale scope paragraphs reconciled"
+  ],
+  "checks": {
+    "unique_technology_section": true,
+    "em_dashes": 0,
+    "local_links": 7,
+    "application_tests": "NOT_RUN: prose only",
+    "code_reviews": "NOT_APPLICABLE: no application code changed"
+  },
+  "browser_observation": {
+    "browser": "Aside local",
+    "url": "http://127.0.0.1:3000/",
+    "read_only_business_state": true,
+    "observed": "Completed contains approved emergency purchase EUR1420; transfer EUR120 conditional with B shortfall8; default view selected keep-current-coverage",
+    "fresh_model_or_business_mutation": false
+  },
+  "evidence": [
+    "docs/STATUS.md",
+    "proposals/integration/REAL-CASE-FLOW.json",
+    "proposals/integration/AIVEN-PRODUCT-SMOKE.json"
+  ],
+  "publication": {
+    "commit": false,
+    "push": false,
+    "deployment": false
+  },
+  "previous_delivery": "TECHNOLOGY-USAGE-RECEIPT.json"
+}

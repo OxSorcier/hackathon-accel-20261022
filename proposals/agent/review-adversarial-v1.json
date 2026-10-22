@@ -1,0 +1,20 @@
+{
+  "schema": "accel-agent-review/1",
+  "manifest": "proposals/agent/review-manifest-v1.json",
+  "role": "adversarial",
+  "requestedModel": "gpt-6.1-sol",
+  "requestedEffort": "high",
+  "servedModel": "unverified",
+  "isolation": "fresh context, fork_turns none, read only",
+  "reviewer": "/root/agent_adversarial",
+  "filesHashVerifiedBeforeAndAfter": true,
+  "existingTestsPassed": 15,
+  "findings": [
+    {"id":"ADV-1","priority":"P1","files":["src/server/store.ts:106","src/domain/contract.ts:31"],"summary":"Generic keep option ID allows the server to approve a conditional C proposal using the default A evaluation.","observed":"target OL-C, selectedEvaluationStatus conditional, decisionStatus approved","disposition":"to correct target-bound option identity in domain; server decision target selection belongs to integrator"},
+    {"id":"ADV-2","priority":"P2","files":["src/domain/engine.ts:102"],"summary":"With 4 local pallets and only 4 emergency pallets, feasible option still advertises purchase quantity 8 and 1420 EUR.","disposition":"to correct"},
+    {"id":"ADV-3","priority":"P2","files":["src/agent/context.ts:21","src/server/store.ts:114"],"summary":"Comparing decision createdAt with snapshot updatedAt excludes all normal decisions created after that snapshot.","disposition":"to correct"},
+    {"id":"ADV-4","priority":"P2","files":["src/agent/runner.ts:95","src/agent/runner.ts:113"],"summary":"A provider timeout followed by writeTrace hits the expired deadline, hiding uncertain as budget_exhausted.","disposition":"to correct"}
+  ],
+  "probes": "Memory-only SQL test double plus real domain/runner/store methods. No real model, database or external API.",
+  "runtimeLimitations": ["Real provider NOT_RUN","PostgreSQL/Aiven NOT_RUN","UI NOT_RUN"]
+}

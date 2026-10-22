@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "checked_at": "2026-10-22T11:36:55.197325+02:00",
+  "scope": "Verification de reception et avancement, sans changement de code ni lancement concurrent du produit",
+  "four_builder_reads_confirmed": true,
+  "full_chain_observed": false,
+  "chain": [
+    {
+      "step": "Information publique sectorielle",
+      "state": "IN_PROGRESS",
+      "evidence": "BOAMP produit deja teste. Keenable et OpenAI testes en appels autonomes selon docs/ACCES-CREDITS ; collecteur Keenable ecrit, reception module et test produit attendus."
+    },
+    {
+      "step": "Lien et impact entreprise",
+      "state": "IN_PROGRESS",
+      "evidence": "Contrat et stockage DecisionCase ajoutes. Les relations admises restent unverified/none ; le calcul preserve la couverture actuelle sous hypothese."
+    },
+    {
+      "step": "Risque, opportunite ou effet mixte",
+      "state": "GAP_CONFIRMED",
+      "evidence": "DecisionCase.qualification ne porte que to_verify/no_known_exposure dans la version lue. Integrateur explicitement relance pour poursuivre vers le maillon demande."
+    },
+    {
+      "step": "Proposition calculee dans application",
+      "state": "NOT_YET_OBSERVED",
+      "evidence": "Moteur de calcul deja teste separement ; nouveau contexte agent, raccord UI, revues et premier run produit reel encore attendus."
+    }
+  ],
+  "ui_gate": "Validation des quatre blocs deja demandee dans le chat interface. Adaptateurs et tests independants continuent ; aucune question dupliquee depuis ce chat.",
+  "current_model_blocker": "La configuration privee OpenAI est presente selon integrateur ; blocage declare : reception du nouveau code et revues, pas absence de cle.",
+  "next_owner": "Integrateur : recevoir les modules exacts, conserver la chaine complete apres la premiere tranche, executer le run reel et fournir preuve persistante et affichage app.",
+  "runtime_tests_executed_here": false,
+  "code_changed_here": false,
+  "sources": [
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "f27d08d6a10b0c8f54e1bc463b492ea1d067cf81562f6c0965a2aafe035b891e"
+    },
+    {
+      "path": "docs/CONTRACTS.md",
+      "sha256": "1f62c0fad9089650f34e20cadbf35fa83e7033bb178572a1bc3694c441cbc62e"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "58d652bea863874a7d0c487cd95049805668f68479f39b49d6e10d0aa5353249"
+    },
+    {
+      "path": "docs/ACCES-CREDITS.md",
+      "sha256": "dc5478128849273af44b8f045a27a9dda8f19d2d390a1cb7ccbc68a9e3daf298"
+    },
+    {
+      "path": "proposals/integration/CASE-CONTRACT-DRAFT.md",
+      "sha256": "0406c20bd7475254006d594daabdece013ee1f862d68646ab08341cd2307fb51"
+    },
+    {
+      "path": "proposals/integration/KEENABLE-CONTRACT.md",
+      "sha256": "ac1a8b50b1fcf3100000e2ce13525478d1dde7dee3c9e944ee4305e97c9a612f"
+    },
+    {
+      "path": "proposals/agent/CHAIN-ACCEPTANCE.json",
+      "sha256": "6d0272165f6c8567a52bf10786c4d40b69ae3ac3a9d74c19457f2362ee8cbf0f"
+    },
+    {
+      "path": "proposals/agent/OPPORTUNITY-ACCEPTANCE.json",
+      "sha256": "6070aa5efc19188e527b6d55fda9aa1c71acb6e7cccfe74879037735175c4ce3"
+    },
+    {
+      "path": "proposals/ui/CASE-FLOW-PROPOSAL.json",
+      "sha256": "5aa0385e280d47c26814dc5815142273453663fb05141c2f1290647d3b4bfa38"
+    },
+    {
+      "path": "src/server/cases.ts",
+      "sha256": "1b2f857d2f97f4363911dc3bfd1f71098ba36591d2cf5934a84d79cd014fb9e2"
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256": "415ea137eccb12576629930ac9e7fddcd55a2e671a307f67dfddf405fec99624"
+    },
+    {
+      "path": "src/server/worker.ts",
+      "sha256": "6eca89254140f7062aee8e6b3a6d3072d1f79a56eb6c08537a95a3d2a27962fe"
+    },
+    {
+      "path": "src/watch/keenable.ts",
+      "sha256": "aad1c09908e77a1ab70d371ad4bcf9577657b9c574b50fcf9daa285d4f6b8281"
+    },
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "8decce95a010bef6add09f4b30ffbbd3c5b8b89bed6169b9e4838dfa335d0fb7"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "ad31f8df7bc747e6f1faef094cd4544dccef997e573369b150c3886c2cda5fba"
+    }
+  ]
+}

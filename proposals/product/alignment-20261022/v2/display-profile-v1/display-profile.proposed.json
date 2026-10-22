@@ -1,0 +1,485 @@
+{
+  "schema": "adaptops-display-profile/proposal-1",
+  "version": 1,
+  "status": "PROPOSED_DISPLAY_ONLY_AWAITING_INTEGRATOR_RECEPTION",
+  "profileRevision": "DISPLAY-INDUSTRIAL-1",
+  "createdAt": "2026-10-22T11:38:58.251Z",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "dataOrigin": "synthetic",
+  "basis": {
+    "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+    "contextRevision": "IC-INDUSTRIAL-2-2",
+    "qualificationRevision": "Q-INDUSTRIAL-2-1",
+    "datasetSha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+    "contextSha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e",
+    "aivenReceipt": "proposals/integration/INDUSTRIAL-CORE-AIVEN.json",
+    "meaning": "Provenance of the presentation proposal. These pins do not authorize an old business plan or require reseeding the company."
+  },
+  "profile": {
+    "displayName": "Rivebois Matériaux",
+    "fictionalCompanyLabel": "Fictional demo company",
+    "dataBadge": "Synthetic ERP / CRM data",
+    "activityTitle": "Multi-site timber and building materials",
+    "activitySummary": "Rivebois Matériaux distributes insulation, timber and panels across France and Belgium. Purchasing, stock allocation, inter-site logistics and commercial programmes are coordinated across six sites.",
+    "companyBrief": "Paul Martin leads operations, with Claire Bernard in purchasing and Alex Petit in logistics. Nantes and Lyon also have light-finishing roles. AdaptOps starts with the company’s authorised records and valid prior knowledge; each market signal is assessed against those facts.",
+    "geographySummary": "France and Belgium, with European supply relationships.",
+    "knownScopeLabel": "Company records already available",
+    "sourceOfCounts": "Read current persisted counts from the authenticated workspace. Do not use presentation text as a count authority.",
+    "unmodelled": "Manufacturing schedules, bills of materials and finishing-capacity quantities are not part of this dataset."
+  },
+  "baselineCounts": {
+    "depots": 6,
+    "construction_projects": 24,
+    "products": 200,
+    "suppliers": 40,
+    "customers": 400,
+    "orders": 2502,
+    "order_lines": 10000
+  },
+  "aliases": [
+    {
+      "entityType": "company",
+      "nativeId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+      "displayName": "Rivebois Matériaux",
+      "synthetic": true
+    },
+    {
+      "entityType": "depot",
+      "nativeId": "DEP-LILLE",
+      "displayName": "Rivebois Lille",
+      "synthetic": true
+    },
+    {
+      "entityType": "depot",
+      "nativeId": "DEP-CENTRE",
+      "displayName": "Rivebois Centre-Val de Loire",
+      "synthetic": true
+    },
+    {
+      "entityType": "depot",
+      "nativeId": "DEP-SUD",
+      "displayName": "Rivebois Provence-Alpes-Côte d’Azur",
+      "synthetic": true
+    },
+    {
+      "entityType": "depot",
+      "nativeId": "DEP-NANTES",
+      "displayName": "Rivebois Nantes",
+      "synthetic": true
+    },
+    {
+      "entityType": "depot",
+      "nativeId": "DEP-LYON",
+      "displayName": "Rivebois Lyon",
+      "synthetic": true
+    },
+    {
+      "entityType": "depot",
+      "nativeId": "DEP-BRUSSELS",
+      "displayName": "Rivebois Brussels",
+      "synthetic": true
+    },
+    {
+      "entityType": "supplier",
+      "nativeId": "SUP-1",
+      "displayName": "Arven Isolation",
+      "synthetic": true
+    },
+    {
+      "entityType": "supplier",
+      "nativeId": "SUP-2",
+      "displayName": "Mérial Approvisionnements",
+      "synthetic": true
+    },
+    {
+      "entityType": "supplier",
+      "nativeId": "SUP-3",
+      "displayName": "Relais Matériaux",
+      "synthetic": true
+    },
+    {
+      "entityType": "supplier",
+      "nativeId": "SUP-IND-003",
+      "displayName": "Belrive Matériaux",
+      "synthetic": true
+    },
+    {
+      "entityType": "supplier_site",
+      "nativeId": "PLANT-ALPHA-FR",
+      "displayName": "Arven Isolation · Hauts-de-France",
+      "synthetic": true
+    },
+    {
+      "entityType": "supplier_site",
+      "nativeId": "PLANT-BETA-FR",
+      "displayName": "Mérial Approvisionnements · Centre-Val de Loire",
+      "synthetic": true
+    },
+    {
+      "entityType": "supplier_site",
+      "nativeId": "PLANT-EMERGENCY-FR",
+      "displayName": "Relais Matériaux · Hauts-de-France",
+      "synthetic": true
+    },
+    {
+      "entityType": "supplier_site",
+      "nativeId": "PLANT-GAMMA-BE",
+      "displayName": "Belrive Matériaux · Wallonia",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-00",
+      "displayName": "Programme Cèdre",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CLI-A",
+      "displayName": "Bâtirives Construction",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-01",
+      "displayName": "Programme Aulne",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CLI-B",
+      "displayName": "Ateliers du Parc",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-02",
+      "displayName": "Programme Orme",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-002",
+      "displayName": "Cédralis Bâtiment",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-03",
+      "displayName": "Programme Frêne",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-003",
+      "displayName": "Rives & Charpentes",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-04",
+      "displayName": "Programme Bouleau",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-004",
+      "displayName": "Valcote Construction",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-05",
+      "displayName": "Programme Hêtre",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-005",
+      "displayName": "Ateliers de la Senne",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-06",
+      "displayName": "Programme Érable",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-006",
+      "displayName": "Orme Construction",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-07",
+      "displayName": "Programme Chêne",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-007",
+      "displayName": "Maisons des Coteaux",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-08",
+      "displayName": "Programme Tilleul",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-008",
+      "displayName": "Terres & Bâtis",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-09",
+      "displayName": "Programme Mélèze",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-009",
+      "displayName": "Ateliers de l’Estuaire",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-10",
+      "displayName": "Programme Charme",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-010",
+      "displayName": "Bâtisseurs du Levant",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-11",
+      "displayName": "Programme Pin",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-011",
+      "displayName": "Senne Construction",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-12",
+      "displayName": "Programme Sapin",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-012",
+      "displayName": "Cèdres & Structures",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-13",
+      "displayName": "Programme If",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-013",
+      "displayName": "Bâtiment des Terrasses",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-14",
+      "displayName": "Programme Noyer",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-014",
+      "displayName": "Rives Habitat",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-15",
+      "displayName": "Programme Peuplier",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-015",
+      "displayName": "Ateliers des Plaines",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-16",
+      "displayName": "Programme Acacia",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-016",
+      "displayName": "Valmont Bâtiment",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-17",
+      "displayName": "Programme Saule",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-017",
+      "displayName": "Canal & Structures",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-18",
+      "displayName": "Programme Douglas",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-018",
+      "displayName": "Bâtisseurs du Verger",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-19",
+      "displayName": "Programme Cyprès",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-019",
+      "displayName": "Coteaux Construction",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-20",
+      "displayName": "Programme Châtaignier",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-020",
+      "displayName": "Ardoise & Bâtis",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-21",
+      "displayName": "Programme Épicéa",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-021",
+      "displayName": "Maisons de l’Orée",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-22",
+      "displayName": "Programme Merisier",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-022",
+      "displayName": "Ateliers des Deux Rives",
+      "synthetic": true
+    },
+    {
+      "entityType": "project",
+      "nativeId": "PROJECT-IND-23",
+      "displayName": "Programme Séquoia",
+      "synthetic": true
+    },
+    {
+      "entityType": "customer",
+      "nativeId": "CUS-IND-023",
+      "displayName": "Riveclaire Construction",
+      "synthetic": true
+    },
+    {
+      "entityType": "competitor",
+      "nativeId": "COMP-IND-001",
+      "displayName": "Varenne Négoce",
+      "synthetic": true
+    },
+    {
+      "entityType": "employee",
+      "nativeId": "EMP-PAUL",
+      "displayName": "Paul Martin",
+      "synthetic": true
+    },
+    {
+      "entityType": "employee",
+      "nativeId": "EMP-CLAIRE",
+      "displayName": "Claire Bernard",
+      "synthetic": true
+    },
+    {
+      "entityType": "employee",
+      "nativeId": "EMP-ALEX",
+      "displayName": "Alex Petit",
+      "synthetic": true
+    },
+    {
+      "entityType": "product",
+      "nativeId": "SKU-ISO100",
+      "displayName": "Isolant référence 100",
+      "synthetic": true
+    },
+    {
+      "entityType": "product",
+      "nativeId": "SKU-ISO120",
+      "displayName": "Isolant référence 120",
+      "synthetic": true
+    },
+    {
+      "entityType": "product",
+      "nativeId": "SKU-IND-002",
+      "displayName": "Isolant gamme 002",
+      "synthetic": true
+    }
+  ],
+  "displayRules": {
+    "companyScoping": "Resolve companyId on the server. Apply a label only to the same entity type and native ID in that company; unknown entities keep their received label.",
+    "identity": "Keep native IDs in details, trace correlation and commands. Display names never select a company, grant access, verify a source relation or change a calculation.",
+    "orderPrimaryLabel": "Use the related project and customer display names as the order heading; keep the order reference as secondary text. Avoid Chantier A or B as the only visible label.",
+    "scenarioExample": {
+      "orderId": "ORD-A",
+      "projectId": "PROJECT-IND-00",
+      "customerId": "CLI-A",
+      "primaryLabel": "Programme Cèdre · Bâtirives Construction",
+      "secondaryLabel": "Order reference ORD-A"
+    },
+    "persistentDisclosure": "Keep Fictional demo company and Synthetic ERP / CRM data visible on the company overview and industrial workspace. Retain a synthetic-data disclosure in report details and exports.",
+    "publicSources": "Preserve real publisher, source title, URL and dates exactly. Do not replace a real source entity with a fictional alias or use the alias map to assert a supplier relationship.",
+    "feed": "The alias map supplies company names only. Live/recorded/scenario status, impact, collection timestamps and actions must come from their received runtime evidence; no feed event or recommendation is supplied here.",
+    "scope": "One central server-owned projection should serve the same labels to UI and authorised model context. No second portfolio, client-side identity authority or additional registry.",
+    "changes": "The integrator owns any additive presentation DTO and received server/UI mapping. Do not modify frozen core/context, quantities, prices, dates, relationships, permissions or business revisions for this display-only proposal."
+  },
+  "limits": [
+    "All organisation and project labels in this map are invented demo aliases. No link to a real legal entity, client project or trademark uniqueness is asserted.",
+    "Geographical labels come from the existing dataset and context. Supplier sites known only by region remain regional; no street address or new municipality is invented.",
+    "Coverage is the six company sites, four scenario supply partners and sites, 24 active programmes and their 24 customers, the scenario competitor, three existing employees and three displayed products. Other entities retain their received labels.",
+    "No incident, competitor interruption, future event, scoring oracle or expected recommendation is in this current presentation profile.",
+    "Prepared and checked data is distinct from an accepted DTO, integrated UI, observed model use and live public data."
+  ]
+}

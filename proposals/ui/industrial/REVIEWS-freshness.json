@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "manifest": "proposals/ui/industrial/REVIEW-INPUT-v4.json",
+  "manifestSha256": "17082c2a5b5c0920bdb5f7933726efbdaa37451b015d9995058abfc28a183a0a",
+  "scope": "Received optional freshness contract only, history-preserving parser and mutation gates.",
+  "realizerModel": "gpt-6.1-sol",
+  "servedModelsAttested": false,
+  "roles": [
+    {
+      "role": "counter-review",
+      "agent": "/root/industrial_boundary_counter",
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high",
+      "independentProbes": 18,
+      "result": "NO_RETAINED_FINDINGS"
+    },
+    {
+      "role": "contracts-and-architecture",
+      "agent": "/root/industrial_boundary_architecture",
+      "requestedModel": "gpt-6-astra",
+      "effort": "high",
+      "independentProbes": 15,
+      "result": "NO_RETAINED_FINDINGS"
+    }
+  ],
+  "isolation": "Original distinct fresh-context reviewers of v2, bounded new-contract revalidation on exact v4. Neither received the other reviewer conclusions.",
+  "checks": [
+    "Absent or stale freshness blocks approve/reject/simulate before HTTP.",
+    "Current freshness does not override report status, basis or permissions.",
+    "Historical status and correlated historical runs remain readable.",
+    "Stale detail removes admissibility; late old current detail is fenced."
+  ],
+  "limits": "Injected in-memory probes only. Reviewers did not rerun Vitest. Frontend, server/Aiven/model/effects not verified."
+}

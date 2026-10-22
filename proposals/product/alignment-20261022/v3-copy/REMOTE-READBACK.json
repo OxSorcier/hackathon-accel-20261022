@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "status": "REMOTE_BYTES_VERIFIED",
+  "checkedAt": "2026-10-22T12:37:23.959140+00:00",
+  "folderId": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+  "files": [
+    {
+      "file": "PRESS-RELEASE.md",
+      "id": "1zFh3yFo8fuf8nvp6IhZ9hPmPY9eQ2I8e",
+      "url": "https://drive.google.com/file/d/1zFh3yFo8fuf8nvp6IhZ9hPmPY9eQ2I8e/view?usp=drivesdk",
+      "bytes": 4784,
+      "sha256": "2af873176cb432de4cbf697362b3751a9092851c2ae6d34e462e3d76c93ccad3",
+      "exactByteReadback": true,
+      "shared": false
+    },
+    {
+      "file": "PRESS-RELEASE.html",
+      "id": "1JXq5rJmBPhVkNZpK0MX9DTLnoCbq-Lr4",
+      "url": "https://drive.google.com/file/d/1JXq5rJmBPhVkNZpK0MX9DTLnoCbq-Lr4/view?usp=drivesdk",
+      "bytes": 171915,
+      "sha256": "8057a363fdfacedc94dd210b5ed8a84d9571167504de0e1c1bfcdbaf9ca64985",
+      "exactByteReadback": true,
+      "shared": false
+    },
+    {
+      "file": "WEBSITE-COPY.md",
+      "id": "1sUTP7sErr92u4KUBFK3FeUgdU2l-1o1c",
+      "url": "https://drive.google.com/file/d/1sUTP7sErr92u4KUBFK3FeUgdU2l-1o1c/view?usp=drivesdk",
+      "bytes": 5012,
+      "sha256": "5b7d3365fa314edd25382525a8a701d7bc9db8b1536ea274b03c9125d92f685e",
+      "exactByteReadback": true,
+      "shared": false
+    },
+    {
+      "file": "WEBSITE-COPY.html",
+      "id": "1FBo2fjK8tlB-TiTQLhMSfOYf3_uahP0V",
+      "url": "https://drive.google.com/file/d/1FBo2fjK8tlB-TiTQLhMSfOYf3_uahP0V/view?usp=drivesdk",
+      "bytes": 172486,
+      "sha256": "c1b9c52fa9c2846f0dc924902ab197ed7d9161d34c47165d6f4f10f7f551608e",
+      "exactByteReadback": true,
+      "shared": false
+    }
+  ]
+}

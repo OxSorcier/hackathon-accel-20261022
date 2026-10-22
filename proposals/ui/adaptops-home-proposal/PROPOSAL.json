@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "date": "2026-10-22T11:18:44.438Z",
+  "status": "PROPOSED_NOT_IMPLEMENTED",
+  "direction": "Existing direction A preserved; three comparable compositions, not three new brand identities.",
+  "recommendation": "A",
+  "humanValidation": "PENDING for the new home composition. Direction A and AdaptOps brand already received.",
+  "reference": "proposals/ui/research/evidence/adaptops-real-3001-before.png",
+  "truths": "Saved real public source and synthetic company risk-flow records. No opportunity assessment or execution receipt has been received. These images do not prove automatic report generation or a new industrial flow.",
+  "limitations": [
+    "Generated raster copy remains an illustrative proposal. Native server IDs and exact version metadata must be rendered from the API, never from image text.",
+    "This is the historical ROCKWOOL project proof, not the future controlled industrial-fire scenario.",
+    "Source-to-supplier relation remains unverified in this received flow.",
+    "No UI code or stable3001 mutation is made for these proposals."
+  ],
+  "generator": "Built-in image_gen, one generation then one targeted edit per layout.",
+  "files": [
+    {
+      "label": "A",
+      "path": "proposals/ui/adaptops-home-proposal/A-briefing-first-v2.png",
+      "sha256": "d0f836bfddff083e8088caa44beb216eb03768d748e63b0daf51c2f751f0c935",
+      "description": "Briefing first. Recommendation: company context and the received business result come before the secondary question."
+    },
+    {
+      "label": "B",
+      "path": "proposals/ui/adaptops-home-proposal/B-evidence-to-action-v2.png",
+      "sha256": "0d83b924d30fc4d09ee59f15171050ca6a47982642b397ecd25f4c13ef4d1519",
+      "description": "Evidence to action. Compare source, business meaning and response in one table."
+    },
+    {
+      "label": "C",
+      "path": "proposals/ui/adaptops-home-proposal/C-case-reader-v2.png",
+      "sha256": "001e39e0acc30e314344ffdb8195ca9acce87fa7584b5c1c8fff49dc11d606a9",
+      "description": "Case reader. Explain the source-to-result chain through a step rail."
+    }
+  ]
+}

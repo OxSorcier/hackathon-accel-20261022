@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "scope": "Only additive confirmation exposureOrderLineIds schema preservation and HTTP regression tests. Baseline CASE v3e historical receipt remains unchanged. Research UI is separate.",
+  "contract": "src/contracts/index.ts InternalConfirmation.exposureOrderLineIds optional",
+  "files": [
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "8078d6492d98e68b111f80ad3d69747ccad8a0845e89212fd83babb155b3fc46",
+      "immutableSnapshot": "proposals/ui/case-confirmation-delta/api.ts.snapshot"
+    },
+    {
+      "path": "tests/ui/confirmation-boundary.test.ts",
+      "sha256": "28d1f99b3d995fcc2ede3d5709e043e2d2a36ccf51b0b4f25dbaf7195b54e12b",
+      "immutableSnapshot": "proposals/ui/case-confirmation-delta/confirmation-boundary.test.ts.snapshot"
+    }
+  ]
+}

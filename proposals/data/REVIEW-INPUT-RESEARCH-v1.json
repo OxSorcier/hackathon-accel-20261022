@@ -1,0 +1,18 @@
+{
+  "scopeSha256": "cf46f3f738e0789a7b2cb5c6c23a5120c32809e43202582ccd89325a782bbb81",
+  "files": [
+    {
+      "path": "proposals/data/research-schema.sql",
+      "sha256": "79eb7786942be6009444932e7b7f8ee598e4e26811673664d93dcb2215c9816c"
+    },
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "f742ba2a6ac78bd2b15aef52d2d7c5d32d0dedca09d27805e0fcc7f7bb12f68d"
+    },
+    {
+      "path": "tests/data/research-postgres.test.ts",
+      "sha256": "0ebe7fb8bbc4c84befb557e614b01f814efebb86e41ab85558c37bb0257a9770"
+    }
+  ],
+  "snapshot": "/tmp/accel-research-review-v1"
+}

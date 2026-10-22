@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "scopeSha256": "7d6afe5595271bdfa766609952a6041a6cfb042989acfc952a03776928fafac9",
+  "cycles": 2,
+  "implementationModel": {
+    "configured": "gpt-6.1-sol",
+    "evidence": "current session turn_context",
+    "servedIdentity": "unverified"
+  },
+  "contextIsolation": {
+    "initial": "fork_turns none for each distinct reviewer",
+    "delta": "each original reviewer independently revalidated cycle 2 without the other reviewer conclusions or implementation transcript"
+  },
+  "counterReview": {
+    "agent": "/root/data_counter_review",
+    "requestedModel": "gpt-6.1-sol",
+    "requestedEffort": "high",
+    "servedIdentity": "unverified",
+    "status": "revalidated",
+    "coverage": [
+      "src/data/validation.ts",
+      "src/data/watch-repository.ts",
+      "src/watch/collector.ts",
+      "src/watch/engine.ts",
+      "tests/data",
+      "tests/watch",
+      "proposals/data/watch-schema.sql",
+      "C1 and project ownership/task sources"
+    ],
+    "cycle1Findings": [
+      {
+        "severity": "P2",
+        "issue": "prior-attempt collection accepted as current",
+        "status": "corrected",
+        "regression": "tests/data/watch-postgres.test.ts prior-attempt replay"
+      },
+      {
+        "severity": "P2",
+        "issue": "coercible nonprimitive execution mode accepted",
+        "status": "corrected",
+        "regression": "tests/data/validation.test.ts mode values"
+      }
+    ],
+    "cycle2": "Both prior findings resolved; no new finding retained. Seven original pure test bodies executed in VM harness; prior result rejected before SQL; current result reaches SQL boundary.",
+    "notRun": [
+      "Vitest suite as reviewer",
+      "Real PostgreSQL as reviewer",
+      "Lock wait contention as reviewer",
+      "BOAMP network",
+      "Aiven"
+    ]
+  },
+  "architectureReview": {
+    "agent": "/root/data_architecture_review",
+    "requestedModel": "gpt-6-astra",
+    "requestedEffort": "high",
+    "servedIdentity": "unverified",
+    "status": "revalidated",
+    "coverage": [
+      "all nine scope files",
+      "C1",
+      "AGENTS.md",
+      "DATA-WATCH mandate",
+      "HANDOFF",
+      "OWNERSHIP",
+      "CONTRACTS"
+    ],
+    "cycle1Findings": [
+      {
+        "severity": "P2",
+        "issue": "HTTP response body not canceled when Content-Length exceeds budget",
+        "status": "corrected",
+        "regression": "tests/watch/collector.test.ts Content-Length branch"
+      }
+    ],
+    "cycle2": "Oversized declared body canceled exactly once. Primitive modes enforced. Prior attempt, absent attempt and future completion rejected before SQL. Lease renewal/publication/failure guards inspected with database clock. No new reproducible finding retained.",
+    "notRun": [
+      "Full Vitest suite as reviewer",
+      "Real PostgreSQL as reviewer",
+      "Lock wait contention as reviewer",
+      "BOAMP network",
+      "Aiven",
+      "Model inference"
+    ],
+    "reservations": [
+      "Due selection and claim recovery still use the trusted server caller clock; no claim of full clock independence between hosts",
+      "A future caller clock can lengthen a lease through GREATEST; current product uses one server process",
+      "Missed schedule slots are caught up one per watch per tick; integrator owns eventual backlog policy"
+    ]
+  },
+  "additionalRegression": {
+    "issue": "stale caller time could renew an actually expired database lease",
+    "redObserved": true,
+    "corrected": "Database clock lower bound in renew, finish and fail; claim lease base also includes database clock",
+    "test": "tests/data/watch-postgres.test.ts stale caller timestamp"
+  },
+  "coordinatorVerification": {
+    "vitestPassed": 17,
+    "realPostgresTestsPassed": 10,
+    "postgresVersion": "17.6",
+    "scopedStrictTypecheck": "passed",
+    "assembledTypecheck": "passed",
+    "realDirectCollections": "two completed local PostgreSQL occurrences after reconnect, collection status partial"
+  },
+  "verdict": "reviewed_and_locally_tested_for_integration",
+  "notEvidenceOf": [
+    "Aiven runtime",
+    "Deployment",
+    "Real supplier disruption",
+    "Product model inference",
+    "Final integrated acceptance"
+  ]
+}

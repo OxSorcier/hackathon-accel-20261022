@@ -1,0 +1,143 @@
+{
+  "version": 2,
+  "owner": "ui",
+  "status": "READY_FOR_INTEGRATOR_RECEIPT",
+  "ready": true,
+  "frozenAfterReceipt": true,
+  "checkedAt": "2026-10-22T10:09:13.518Z",
+  "scope": [
+    "src/ui/",
+    "tests/ui/"
+  ],
+  "previousReceipt": "proposals/ui/READY-ui-v3-history.json",
+  "realizationModelRequested": "gpt-6.1-sol",
+  "servedModel": "UNATTESTED",
+  "manifest": "proposals/ui/REVIEW-FOLLOWUP-v3e.json",
+  "manifestSha256": "587cb5bd476c88ab14467ce44945104b6cbf61df7628bf1d48252a54d23e6bd7",
+  "sourceFingerprint": "4c0c57ca0f8b82acdcfd0fcab4ca5289fda068d64fdc0ce8e17aad5a7fae8bac",
+  "files": [
+    {
+      "path": "src/ui/App.tsx",
+      "sha256": "51f4372e68dc2ba4d544e5d9936a57908053792e93bdedf29f91eda60c02a581"
+    },
+    {
+      "path": "src/ui/CasePanel.tsx",
+      "sha256": "cd77f57b7de7f4e5dd908b5da55273e43bdf526540384a656b615e2df767572f"
+    },
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "c19a873725f648591e741ade90132851ef857199b5e043aae5b92b74d8c25a8a"
+    },
+    {
+      "path": "src/ui/format.ts",
+      "sha256": "9c55a328db8409b957e3e2a9111d4d7f8396b27c908471d1e02eec1362ec0bef"
+    },
+    {
+      "path": "src/ui/index.ts",
+      "sha256": "93dacefe521e1a71ef4708549f47da3cbafc20c54a3c8da842bb70fb491c7663"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "f02961321fc188292ff26b3c7daf87fe92fbb07d7d0e1402053568b4e8f05cab"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "c8fc1eceb87aeae8d93f34d3199248f3b5589cfeac3c892253e37a7dab28810a"
+    },
+    {
+      "path": "tests/ui/api.test.ts",
+      "sha256": "9e6b64b5fe9da341d64fdcb70d9cf4d672991cb660538c4cc5ef6a4dcedc34da"
+    },
+    {
+      "path": "tests/ui/case-api.test.ts",
+      "sha256": "a1f8b7c7cda487d84a0080ada52b9f952da75ac2e1b4d523b24257f19cf0815b"
+    },
+    {
+      "path": "tests/ui/fixtures.ts",
+      "sha256": "3382ac8cf197fddbfeb0a162a5e16151c38e211ffee65a4958341afc1bfea8c9"
+    },
+    {
+      "path": "tests/ui/preview.html",
+      "sha256": "e3a2494290a035d87f27c6ae54b062cdde35baf79b4dfe977591216b9c912219"
+    },
+    {
+      "path": "tests/ui/preview.tsx",
+      "sha256": "3aa36d35dc3f116029bf866bb6745982a979b5dcfd07372fb89bb18cc3664597"
+    },
+    {
+      "path": "tests/ui/responsive.html",
+      "sha256": "c5bfd4cdf9bc51a011ed710da0d2e88151f17435356865bee176f9822a3017c1"
+    }
+  ],
+  "implemented": [
+    "Received evidence reference only, no arbitrary article submitted.",
+    "Create/revise/analyze versioned cases through canonical APIs.",
+    "Separate actual and conditional coverage.",
+    "Display attributed internal confirmation; expose no operator confirmation form or model tool.",
+    "History and execution events at the second level."
+  ],
+  "language": "English authored copy, dates and currency; original source quotations, native IDs and business records preserved.",
+  "checks": {
+    "uiTests": {
+      "status": "PASS",
+      "count": 52,
+      "command": "npm exec vitest run tests/ui",
+      "version": "v3c; later App wording and styles-only changes independently revalidated"
+    },
+    "typecheck": {
+      "status": "PASS",
+      "command": "npm run typecheck",
+      "version": "v3c; later server TypeScript compile/build and reviewer typecheck pass"
+    },
+    "build": {
+      "status": "PASS",
+      "command": "npm run build",
+      "clientJs": "index-B8ZoEaRZ.js",
+      "clientCss": "index-D1Fgjz82.css",
+      "version": "v3e"
+    },
+    "reviews": {
+      "status": "PASS",
+      "receipt": "proposals/ui/REVIEWS-FOLLOWUP.json"
+    },
+    "browser": {
+      "status": "PASS_WITH_SCOPE_LIMITS",
+      "receipt": "proposals/ui/JOURNEY-FOLLOWUP.json"
+    },
+    "nativeFinal3001": {
+      "status": "NOT_RUN",
+      "reason": "Integrator must receive this exact source fingerprint, rebuild/restart and perform final QA. Old stable copy is not this UI version."
+    }
+  },
+  "uiEntry": "src/ui/App.tsx default export unchanged; optional additive case APIs are in UiApi.",
+  "integrationNotes": [
+    "Latest integrator QA gate: a new analysis selected commitment B instead of the inbound-affected A. Integrator is correcting target selection and reviewing the backend before stable 3001 reception. The earlier approved EUR1420 proposal read by this UI check remains a separate receipt.",
+    "Shared contract already canonical. No dependency, migration, package or server file edited by UI owner.",
+    "QA date issue is fixed in this final fingerprint: only orders.need_date is authoritative; null remains unknown.",
+    "Execution trace count is an event count, not a count of business tool or model calls.",
+    "Receive both models requested, not attested served identities.",
+    "Do not mutate these 13 files during receipt; another correction requires a new exact receipt."
+  ],
+  "notRun": [
+    "Real ERP/CRM connection",
+    "Commercial opportunity/mixed-impact calculation",
+    "Research memory R1/R2",
+    "Real mobile device and Safari/Firefox compatibility",
+    "Final native integrated candidate restart/3001 receipt"
+  ],
+  "researchMemory": {
+    "status": "RECEIVED_NEXT_SLICE_NOT_IMPLEMENTED",
+    "sourceRead": "proposals/product/MEMOIRE-RECHERCHE-TRACES.md",
+    "owner": "Integrator owns shared knowledge contract, API, migration and R1/R2 reception; UI keeps current case blocks.",
+    "minimalUiDelta": "Within the existing case, show backend-attributed knowledge references, source dates, reused/new/recheck/revised states, current and historical versions. Keep trace/reference details folded. Do not infer reuse from identical hashes.",
+    "acceptance": {
+      "R1": "NOT_RUN: fresh session/run must retrieve persisted knowledge through tools and database without reinjected answer; record source identities and external calls performed or avoided, restart and company isolation.",
+      "R2": "NOT_RUN: controlled labeled v2 under the same source identity revises knowledge, keeps v1 and stales/re-evaluates affected proposals; unchanged recollection does not duplicate."
+    },
+    "blocker": "No canonical research-knowledge API/view contract received for this UI delta. Do not reopen frozen current code or invent visible states.",
+    "largeCompanyScope": "ERP/CRM and source-of-truth ownership remain part of the product vision; the present company data is synthetic."
+  },
+  "provenance": "proposals/ui/JOURNEY-FOLLOWUP.json",
+  "nextAction": "Integrator verifies these 13 SHA256 values, rebuilds/restarts the candidate, receives coordinated QA, then updates the authorized stable 3001 copy. Research memory follows through its existing owner and contract.",
+  "publication": "No commit, push, deploy or new service by this UI builder."
+}

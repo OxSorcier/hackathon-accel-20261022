@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "status": "both_roles_revalidated_on_provider_v3_corrected",
+  "implementationModelConfigured": "gpt-6.1-sol",
+  "implementationEffort": "xhigh",
+  "modelEvidence": "Own session turn_context metadata, backend served identity not independently attested",
+  "cycles": 3,
+  "scopeManifest": "proposals/integration/REVIEW-INPUT-v2.json",
+  "scopeManifestSha256": "a93abcaef246ffde128026579340abe9fb7a452f048715807f14c3ba7063c5f0",
+  "isolation": "Two distinct reviewers, fork_turns none, independent initial contexts; independent delta revalidation",
+  "counterReview": {
+    "agent": "/root/integration_adversarial",
+    "requestedModel": "gpt-6.1-sol inherited from parent",
+    "requestedEffort": "high",
+    "servedModel": "unverified",
+    "initialFindings": [
+      "Integrated scenario selected obsolete option identity",
+      "HTTP watch accepted a free topic while repository only accepted two fixed public topics; refusal became misleading 503"
+    ],
+    "v2Verdict": "No remaining finding retained in reread scope",
+    "v2Evidence": [
+      "28 hashes match before and after",
+      "Typecheck passes",
+      "68 tests in 10 files pass with both PostgreSQL suites enabled",
+      "Independent HTTP probes: alias accepted; unsupported topic and source refused before watch service",
+      "Independent durable-intent interruption probe preserves uncertain and traces"
+    ]
+  },
+  "architectureReview": {
+    "agent": "/root/integration_architecture",
+    "requestedModel": "gpt-6-astra",
+    "requestedEffort": "high",
+    "servedModel": "unverified",
+    "initialFindings": [
+      "A transient finalization failure replaced uncertain result with generic error and erased durable traces",
+      "A revision change overwrote supplier uncertainty with stale_context",
+      "Integrated scenario lookup used obsolete identity"
+    ],
+    "v2Verdict": "All retained findings corrected; no new confirmed finding on examined delta",
+    "v2Evidence": [
+      "28 hashes match before and after",
+      "Typecheck passes",
+      "26 server/integration/data tests pass on local PostgreSQL",
+      "Uncertain plus stale context retains uncertainty and traces, no proposal",
+      "One failed publication: two SQL attempts, one runner invocation",
+      "Two failed publications: retry stops, lease expiration makes run uncertain",
+      "HTTP invalid inputs refused before external work"
+    ]
+  },
+  "corrections": [
+    "Select test options by opaque identity semantics, target and kind",
+    "Expose watch capabilities, accept the exact UI public-topic alias, and refuse other topic/source inputs with explicit 400",
+    "Give uncertain priority over stale_context while dropping stale proposals",
+    "Retry only the same fenced SQL publication; never repeat the provider call",
+    "Preserve durable traces on interruption and leave exhausted publication failures recoverable"
+  ],
+  "regressions": "New cases observed failing before implementation, then passing on PostgreSQL",
+  "limits": [
+    "Reviewers did not execute external APIs, Aiven, Docker or browser",
+    "Other builders have separate code ownership and exact-hash review receipts",
+    "Public watch collection and business analysis remain separate paths; automatic observation-to-proposal is not claimed",
+    "No commit, push, deployment or external publication"
+  ],
+  "providerV3": {
+    "scopeManifest": "proposals/integration/REVIEW-INPUT-v3-corrected.json",
+    "sha256": "36a57060805314a45e4f87f1ea46cca29e7eee8ea31a47b280cad15fdde68417",
+    "counterReview": "29 hashes match before/after; 18 provider and runner tests pass; batch and truncated-proposal probes pass",
+    "architectureReview": "29 hashes match before/after; 18 tests and server typecheck pass; two batch turns and incomplete/refused boundary probes pass",
+    "regressions": "Two tests first failed, then passed after fixes",
+    "globalTypecheck": "FAIL on concurrent UI delta: src/ui/api.ts watchCapabilities possibly undefined",
+    "liveInference": "NOT_RUN"
+  }
+}

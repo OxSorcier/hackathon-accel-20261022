@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "operatorOnly": true,
+  "checkedAt": "2026-10-22T11:14:32.139656+00:00",
+  "method": "Independent arithmetic on authored raw tables; no product domain imports or provider calls.",
+  "release": {
+    "manifest": "proposals/product/alignment-20261022/v2/CORE-READY.json",
+    "manifestSha256": "babc07971a1659db802e372751ac6e83fe4f23bf9d8dcf2a55c0b73a1b3199ca",
+    "files": [
+      {
+        "path": "proposals/product/alignment-20261022/v2/portfolio-10000.json",
+        "sha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af"
+      },
+      {
+        "path": "proposals/product/alignment-20261022/v2/portfolio-policy.json",
+        "sha256": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2"
+      },
+      {
+        "path": "proposals/product/alignment-20261022/v2/DATA-CHECKS.json",
+        "sha256": "bcf02f8047635a57293e8e65950fe00de3f42d4660a2aa050e00febbaf1dd3c2"
+      },
+      {
+        "path": "proposals/product/alignment-20261022/v2/LOCAL-DOMAIN-SMOKE.json",
+        "sha256": "f5f52d41d1e7dd22320275bf327f4bff0cec8171211b9da7a075391ea80ea0b7"
+      }
+    ],
+    "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+    "businessRevision": "R-INDUSTRIAL-CANDIDATE-2"
+  },
+  "counts": {
+    "company": 1,
+    "employees": 3,
+    "suppliers": 40,
+    "products": 200,
+    "depots": 6,
+    "customers": 400,
+    "orders": 2502,
+    "order_lines": 10000,
+    "inventory": 764,
+    "reservations": 9999,
+    "purchase_orders": 8,
+    "purchase_order_lines": 8,
+    "inbound_allocations": 13,
+    "transport_quotes": 3,
+    "emergency_quotes": 5,
+    "crm_opportunities": 81,
+    "watch_drafts": 1,
+    "construction_projects": 24,
+    "product_supply_links": 202
+  },
+  "checks": {
+    "allFileHashesMatch": true,
+    "reservationSkuUnitDepotMatches": true,
+    "noPhysicalOverreservation": true,
+    "noInboundOverallocation": true,
+    "baseConfirmedCommitmentsCovered": true
+  },
+  "baseShortages": [],
+  "supplierLinkedCommitments": [
+    "OL-A",
+    "OL-IND-00000",
+    "OL-IND-00396",
+    "OL-IND-02178",
+    "OL-IND-02574",
+    "OL-IND-02970",
+    "OL-IND-03366",
+    "OL-IND-03960",
+    "OL-IND-04356",
+    "OL-IND-06138",
+    "OL-IND-06534",
+    "OL-IND-07920",
+    "OL-IND-08316"
+  ],
+  "supplierLinkMeaning": "Dependency only. No delayed ETA is inferred for any purchase line from this core receipt.",
+  "freeStocks": [
+    {
+      "stockId": "ST-L100",
+      "physical": 0,
+      "activeReserved": 0,
+      "free": 0
+    },
+    {
+      "stockId": "ST-C100",
+      "physical": 8,
+      "activeReserved": 8,
+      "free": 0
+    },
+    {
+      "stockId": "ST-S100",
+      "physical": 0,
+      "activeReserved": 0,
+      "free": 0
+    },
+    {
+      "stockId": "ST-IND-DEP-LILLE-SKU-IND-002",
+      "physical": 106,
+      "activeReserved": 106,
+      "free": 0
+    },
+    {
+      "stockId": "ST-IND-DEP-LYON-SKU-ISO100",
+      "physical": 3852,
+      "activeReserved": 3752,
+      "free": 100
+    },
+    {
+      "stockId": "ST-IND-DEP-CENTRE-SKU-IND-002",
+      "physical": 106,
+      "activeReserved": 106,
+      "free": 0
+    },
+    {
+      "stockId": "ST-IND-DEP-NANTES-SKU-IND-002",
+      "physical": 66,
+      "activeReserved": 66,
+      "free": 0
+    },
+    {
+      "stockId": "ST-IND-DEP-LYON-SKU-IND-002",
+      "physical": 83,
+      "activeReserved": 83,
+      "free": 0
+    }
+  ],
+  "limits": [
+    "No Aiven import readback or product execution yet.",
+    "Industrial contract/event still pending exact matching manifest; mixed-plan oracle not fixed."
+  ]
+}

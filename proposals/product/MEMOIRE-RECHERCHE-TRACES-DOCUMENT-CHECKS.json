@@ -1,0 +1,186 @@
+{
+  "browser": "isolated Playwright Chromium",
+  "aside": "desktop 1440x900 PASS; resize unavailable",
+  "checks": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "inter": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "headings": [
+        "Ce que le produit doit savoir retrouver",
+        "La boucle à construire",
+        "État vérifié dans le checkout",
+        "Ce que les traces doivent nous permettre de comprendre",
+        "La prochaine tranche concrète",
+        "Contrôles de cette note et sources"
+      ],
+      "tables": [
+        {
+          "width": 350,
+          "scrollWidth": 480,
+          "overflow": "auto"
+        },
+        {
+          "width": 350,
+          "scrollWidth": 480,
+          "overflow": "auto"
+        }
+      ],
+      "links": [
+        {
+          "label": "vision conservée",
+          "url": "https://drive.google.com/file/d/1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_/view"
+        },
+        {
+          "label": "suivi Accel existant",
+          "url": "https://linear.app/briques/issue/ERW-133/preparer-accel-ai-innovate-paris-du-22-octobre"
+        }
+      ],
+      "embeddedFonts": [
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "700"
+        }
+      ],
+      "externalResources": [],
+      "pass": true
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "inter": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "headings": [
+        "Ce que le produit doit savoir retrouver",
+        "La boucle à construire",
+        "État vérifié dans le checkout",
+        "Ce que les traces doivent nous permettre de comprendre",
+        "La prochaine tranche concrète",
+        "Contrôles de cette note et sources"
+      ],
+      "tables": [
+        {
+          "width": 688,
+          "scrollWidth": 688,
+          "overflow": "auto"
+        },
+        {
+          "width": 688,
+          "scrollWidth": 688,
+          "overflow": "auto"
+        }
+      ],
+      "links": [
+        {
+          "label": "vision conservée",
+          "url": "https://drive.google.com/file/d/1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_/view"
+        },
+        {
+          "label": "suivi Accel existant",
+          "url": "https://linear.app/briques/issue/ERW-133/preparer-accel-ai-innovate-paris-du-22-octobre"
+        }
+      ],
+      "embeddedFonts": [
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "700"
+        }
+      ],
+      "externalResources": [],
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "inter": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "headings": [
+        "Ce que le produit doit savoir retrouver",
+        "La boucle à construire",
+        "État vérifié dans le checkout",
+        "Ce que les traces doivent nous permettre de comprendre",
+        "La prochaine tranche concrète",
+        "Contrôles de cette note et sources"
+      ],
+      "tables": [
+        {
+          "width": 880,
+          "scrollWidth": 880,
+          "overflow": "auto"
+        },
+        {
+          "width": 880,
+          "scrollWidth": 880,
+          "overflow": "auto"
+        }
+      ],
+      "links": [
+        {
+          "label": "vision conservée",
+          "url": "https://drive.google.com/file/d/1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_/view"
+        },
+        {
+          "label": "suivi Accel existant",
+          "url": "https://linear.app/briques/issue/ERW-133/preparer-accel-ai-innovate-paris-du-22-octobre"
+        }
+      ],
+      "embeddedFonts": [
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "700"
+        }
+      ],
+      "externalResources": [],
+      "pass": true
+    }
+  ]
+}

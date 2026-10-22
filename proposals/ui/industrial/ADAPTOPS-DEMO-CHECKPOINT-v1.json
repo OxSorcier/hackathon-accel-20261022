@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "status": "OBSERVED_AND_PROPOSED",
+  "humanAuthority": "Direct user message in 01a16316-d948-7672-b47f-395e6d411d33, verified through read_thread: update AdaptOps vision/demo, coordinate owners and prioritize application UX/UI.",
+  "direction": "A retained. English authored UI. AdaptOps, Adapt as fast as your market changes.",
+  "observation": {
+    "browser": "Aside local",
+    "url": "http://127.0.0.1:3001/",
+    "mode": "Read-only. No session change, analysis, approval, reset or execution.",
+    "screenshot": "proposals/ui/research/evidence/adaptops-real-3001-before.png",
+    "snapshot": "proposals/ui/research/evidence/adaptops-real-3001-before.snapshot.txt",
+    "width": 1440,
+    "documentWidth": 1440,
+    "mainRect": { "x": 204, "y": 96, "width": 870 },
+    "observed": "Saved approved risk proposal with real public source, synthetic company records, 1420 EUR proposed purchase, conditional transfer, 16 trace events. Approval note explicitly states no purchase or stock transfer is confirmed. Generic question precedes saved work. Existing heading remains Signals & Decisions."
+  },
+  "priorities": [
+    {
+      "id": "prepared-company-home",
+      "priority": 1,
+      "existing": "Company snapshot, actor, revision, saved cases and proposals are supplied by the API.",
+      "proposedUi": "Brand header AdaptOps and a compact received-company overview, with saved work first and the question below it. Retain direction A and current navigation.",
+      "missingBackend": "A prepared automatic business report and collection-to-analysis trigger are not represented by the current UI contract.",
+      "status": "PROPOSED, pending coordination with existing integrator before code."
+    },
+    {
+      "id": "coordinated-plan",
+      "priority": 2,
+      "existing": "Risk case, source/business separation, coverage, options, cost and decision gates. Saved research UI currently under exact-code review.",
+      "proposedUi": "A common dossier that identifies proved relationships, positive/negative/mixed impacts and actions by team, from server-supplied results.",
+      "missingBackend": "Qualified CRM demand, free capacity, contribution after costs, positive/mixed impact evaluation and a common plan DTO.",
+      "status": "MISSING contract and calculations. No opportunity result or plan is invented in the UI."
+    },
+    {
+      "id": "approved-action-result",
+      "priority": 3,
+      "existing": "Server approval and rejection receipts. Approval is explicitly separate from a purchase or movement of stock.",
+      "proposedUi": "Separate approved action, execution state and durable result readback, with retry or reconciliation only when supplied by the server.",
+      "missingBackend": "Execution command, authorization/idempotency contract, persistent action/result records and simulated effect readback.",
+      "status": "MISSING execution contract. Current approval must retain its limited meaning."
+    }
+  ],
+  "activeDelivery": {
+    "scope": "Saved research UI, separate from historical CASE baseline",
+    "manifest": "proposals/ui/research/REVIEW-INPUT-v1.json",
+    "manifestSha256": "a4fa52e9c1f19e2dce397341bfbe894e3516d1abc975472b1d2ab08e762aa3b7",
+    "state": "Frozen for two independent fresh-context reviews. 91 UI tests, typecheck and build pass before final reviews."
+  },
+  "boundary": "3001 remains unchanged. Integrator owns shared contracts, root index title, candidate assembly and runtime reception. No commit/push/deploy."
+}

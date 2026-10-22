@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T10:37:01.863Z",
+  "environment": "Aside candidate3000, Aiven, real OpenAI/Keenable",
+  "runId": "6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+  "proposalId": "proposal:6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "caseRef": {
+    "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "caseRevision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca"
+  },
+  "businessRevision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+  "policyVersion": "P1",
+  "sourceRef": {
+    "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+    "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+    "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+  },
+  "confirmationEventId": "e925cb58-a2fd-44d3-bb01-237cfdfe44ad",
+  "selectedKind": "emergency_purchase",
+  "selectedCostEur": 1420,
+  "decision": "approved",
+  "traceCount": 16,
+  "modelCalls": 5,
+  "totalTokens": 15886,
+  "monetaryCost": null,
+  "checks": {
+    "sameQuestionAsNegative": true,
+    "correctTarget": true,
+    "approved": true,
+    "caseMatches": true,
+    "protectsB": true,
+    "coversA": true,
+    "negativePreserved": true,
+    "negativeProposalStale": true
+  },
+  "conditionalTransferApprovalEnabled": false,
+  "browserApprovalObserved": "Approval recorded. No purchase or transfer executed.",
+  "passed": true,
+  "limits": [
+    "Synthetic company and internal confirmation; public causal link remains unverified",
+    "No purchase or stock movement executed",
+    "Final3001 promotion and readback still pending"
+  ]
+}

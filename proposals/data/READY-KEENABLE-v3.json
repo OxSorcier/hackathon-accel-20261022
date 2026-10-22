@@ -1,0 +1,181 @@
+{
+  "version": 3,
+  "module": "data-watch-keenable",
+  "status": "READY_FOR_INTEGRATOR_RECEPTION",
+  "createdAt": "2026-10-22T10:33:57.184602+00:00",
+  "scopeSha256": "2460d70ffb886c4ce1a65fd0e3030b9a9db485935a480922b8ec55f3da0c073e",
+  "files": [
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "sha256": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08"
+    },
+    {
+      "path": "src/data/validation.ts",
+      "sha256": "070a87444889f0341adec582a929fbe1955e8b99bf01ca499365451c14cc799e"
+    },
+    {
+      "path": "src/data/watch-repository.ts",
+      "sha256": "567b05c4d427b7df7d39211fd18d65b9e8172eb8db188f81c1ecb1ec6dafc437"
+    },
+    {
+      "path": "src/watch/collection-status.ts",
+      "sha256": "d488455a87d17d1cb32862dc22c298ecff7e181ca7059027ddd1260d14dcba3d"
+    },
+    {
+      "path": "src/watch/collector.ts",
+      "sha256": "01ef6cdf0c29256c859e926a1789883ca8513d88a206ca17fd5173752a2121d2"
+    },
+    {
+      "path": "src/watch/engine.ts",
+      "sha256": "f1c22040c3e4ceeb192d33876398e4853648960ac32933da33b8b907b0302dfd"
+    },
+    {
+      "path": "src/watch/http.ts",
+      "sha256": "a8adbde861c5c8176852487fb3980ee9aff8dfc73384985ad120027e3fbe0c81"
+    },
+    {
+      "path": "src/watch/keenable.ts",
+      "sha256": "8d0c97d2ac8d50848a09490744e32976f9dff9f22a0ec36a2d4239b98376d5ce"
+    },
+    {
+      "path": "src/watch/source-policy.ts",
+      "sha256": "a4aae81d72c93a3cf46f6fe91a2ec1db0a2b309bbd1eb52860f588b02aa41f3b"
+    },
+    {
+      "path": "tests/data/validation.test.ts",
+      "sha256": "0b22e3fa42459b5b47c39090f325af1661eb86aa9bf45afe775d5ad11b549818"
+    },
+    {
+      "path": "tests/data/watch-postgres.test.ts",
+      "sha256": "a788ad1295e396a65d61fddace822952fe73075d844ea5b3871e3a3295716f5e"
+    },
+    {
+      "path": "tests/watch/collector.test.ts",
+      "sha256": "b6097347de53fcc8f3dc4b85e0addc68358e3b8b962270414519212383d64855"
+    },
+    {
+      "path": "tests/watch/keenable.test.ts",
+      "sha256": "8307cf2f0554dba7dd9f603c90b1811ef79ace21d7b52bef88cecca0cb5e679b"
+    },
+    {
+      "path": "tests/watch/live-boamp.ts",
+      "sha256": "e1b05a8fb21c7b31c4d5209a934cec98abf34510eae568c5c0f17061b5d36667"
+    },
+    {
+      "path": "tests/watch/live-coverage.ts",
+      "sha256": "ecbbb82f64455203c368bd367d0d3d877babecd6192e1be47ca1b40e02b0bd04"
+    },
+    {
+      "path": "tests/watch/live-keenable.ts",
+      "sha256": "f7555c9dc5f06121115a515235055c5734efb3935f64656187fcddde1c4e5e2a"
+    }
+  ],
+  "priorReady": "proposals/data/READY-KEENABLE-v2.json",
+  "history": "proposals/data/history/v2",
+  "sharedContract": "src/contracts/index.ts",
+  "sharedContractSha256": "748532e783acab084503b0214fe96d49d3116b82389617e1cc1f36584e990a40",
+  "integratorContract": "proposals/integration/KEENABLE-CONTRACT.md",
+  "exports": [
+    "createPublicCollector(options?)",
+    "createKeenableCollector(options?)",
+    "getWatchCapabilities()",
+    "PUBLIC_PROFILES",
+    "PUBLIC_TOPICS",
+    "PUBLIC_SOURCE_URLS",
+    "BOAMP_SOURCE_URL",
+    "KEENABLE_SOURCE_URL",
+    "isPublicTopic",
+    "isPublicSource",
+    "isAllowedSourceUrl",
+    "aggregateCollectionStatus",
+    "createWatchRepository(sql)",
+    "createWatchEngine({repository,collector,...})"
+  ],
+  "configuration": "Integrator passes lazy getApiKey; no key file loaded by this module. No dependency/migration/configuration change by data owner.",
+  "implemented": [
+    "Backward-compatible BOAMP plus bounded Keenable Search/Fetch through existing Collector port",
+    "10 public-topic profiles across 8 signal families, including FR/EU regulation",
+    "Positive URL/profile policy, metadata/hash validation, source statuses and partial limits",
+    "Atomic company-scoped evidence/occurrence persistence, concurrency fences and existing durable scheduler",
+    "Same-result/fence SQL publication retry within the current engine process; terminal invalid results release the queue"
+  ],
+  "verification": {
+    "unitAndPostgres": {
+      "status": "PASS",
+      "runner": "Vitest 5.0.5",
+      "tests": 36,
+      "localPostgresTests": 15,
+      "pureTests": 21,
+      "environment": "Disposable local PostgreSQL 17.6, randomized schemas, cleaned after tests"
+    },
+    "strictScopedTypecheck": "PASS",
+    "twoIndependentReviews": "PASS_COMPOSED_COVERAGE: 14 unchanged v2 pins plus two changed pins and unchanged SQL examined by both fresh race reviewers",
+    "liveKeenable": "Real public calls recorded on v3; indexed copy explicitly labeled, collection partial",
+    "livePersistence": "Real public Keenable through engine/repository, PostgreSQL client recreated and evidence reloaded on v3. Final v4 delta covered by 35 tests.",
+    "AivenAndModel": "Integrator owns final code reception and actual case/model/calculation/proposal readback; do not infer it from these data-only tests"
+  },
+  "coverage": {
+    "externalSignals": "Profiles implemented and probed. All 10 v3 probes returned partial; many hits were old or generic. Not comprehensive or proven current monitoring.",
+    "businessFacts": "Existing synthetic company snapshot and deterministic business engine reused; no real ERP/CRM connector delivered here.",
+    "regulation": "FR RE2020 and EU RPC official guidance read via indexed Fetch. Full applicable law, company obligations and alert deadlines remain unverified; unknown dates are null.",
+    "commercialOpportunities": "Public procurement and project leads supported as inputs; qualification/client-product relationship and available stock remain server/business responsibilities. A real sales-opportunity E2E is NOT_RUN.",
+    "otherSources": "BOAMP and Keenable share the current collector/engine. Additional government APIs and timber RSS were researched by the existing product owner; not installed by this module."
+  },
+  "researchDossier": "proposals/product/research-data-20261022/RECHERCHE-DATA-DELTA.html",
+  "supplementalSources": "proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.html",
+  "proofs": [
+    {
+      "path": "proposals/data/KEENABLE-REVIEWS-v2.json",
+      "sha256": "afe454a4f19230a392f2f7ef060bc1306eaa17e3dc13bb3a77c893d335b77f67"
+    },
+    {
+      "path": "proposals/data/REVIEW-INPUT-KEENABLE-v4.json",
+      "sha256": "d34aef342573e0fdfce5a0e653a201ce5d5653e7333995110d2fa6f68695ae21"
+    },
+    {
+      "path": "proposals/data/KEENABLE-LIVE-v3.json",
+      "sha256": "d7e223026203bc36d56a6b4a61c81adcc0241558902fe886bf83da45087008b3"
+    },
+    {
+      "path": "proposals/data/KEENABLE-COVERAGE-v3.json",
+      "sha256": "0bf4876d55b1d64e50d269ffda678e2c72efa0c38e848763dafbe3941a6791b6"
+    },
+    {
+      "path": "proposals/data/KEENABLE-PG-LIVE-v3.json",
+      "sha256": "183a342d73d4bd85e3b03238847ae6521c49cab462269753787bd55166317931"
+    },
+    {
+      "path": "proposals/data/KEENABLE-JULY-SEARCH-NEGATIVE.json",
+      "sha256": "cdb157135374b69f2f38d9c98888d62992ffddc84fee5658e3cc5bb88367e583"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/REGULATORY-CANDIDATES.json",
+      "sha256": "2f09519976f748634dd4a0b4617a98eecaa02ef35b8213d304bcd42570477351"
+    },
+    {
+      "path": "proposals/data/RESEARCH-MEMORY-DELTA.md",
+      "sha256": "1b89ff13ea16f8ba32285e2fbed60819352982ce5943f541a3e9dbd63f79d6a3"
+    },
+    {
+      "path": "proposals/data/RESEARCH-MEMORY-CONTROLLED-SCENARIO.json",
+      "sha256": "cd45ff318afdd022ad1626555dac1fe9fc1f2e670572057dfa1150db6cc2bd33"
+    },
+    {
+      "path": "proposals/data/WATCH-RACE-REVIEWS-v1.json",
+      "sha256": "c2590a16c66c29122621811b01a247e05d12a647d00ce08102a6f26ecb2ecb48"
+    }
+  ],
+  "nextIntegratorAction": "Verify these 16 file hashes and current C1 compatibility, instantiate with the existing private lazy key getter, receive final source collection and case/proposal chain. Preserve earlier REAL-CASE-FLOW evidence as an earlier runtime receipt, distinct from final module reception.",
+  "limits": [
+    "Search did not discover the July source in the negative probe; its priority URL was supplied by research",
+    "Indexed content is not a fresh publisher-page read",
+    "Public announcement does not prove a supplier relationship or internal delay",
+    "Collection failure/empty/partial does not establish absence",
+    "Pending SQL result is retained only within a live engine instance; a process crash before commit can require recollection after lease recovery",
+    "New research-memory R1/R2 is proposed as next slice, not proved by source de-duplication",
+    "No commit, push, deployment, new account/service or commercial transaction by this data owner"
+  ],
+  "change": "Bounded concurrency correction for idempotent watch creation and manual enqueue; transaction advisory lock on deterministic command id before unique-index arbitration. No research-repository delivery in this receipt.",
+  "deltaReview": "proposals/data/WATCH-RACE-REVIEWS-v1.json",
+  "deltaScopeSha256": "40b800f208fd634b3d370db3b24229a64ab1d2747c8c3ce044e8691108723de9"
+}

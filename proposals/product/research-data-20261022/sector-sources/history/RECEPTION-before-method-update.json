@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-22T10:00:18.783518+00:00",
+  "status": "RESEARCH_DELIVERED_FULL_APP_RECEPTION_CONTINUES",
+  "objective": "Government APIs and timber-sector sources that can support source to company impact to risk/opportunity to calculated proposal",
+  "report": "SECTOR-DATA-STRATEGY.md",
+  "source_register": "SOURCE-COVERAGE.json",
+  "bounded_trials": "PUBLIC-ACCESS-PROBES.json",
+  "initial_network_limit": "SANDBOX-NETWORK-LIMIT.json",
+  "independent_research_review": "NOT_RUN",
+  "application_code_changed": false,
+  "shared_contract_changed": false,
+  "fixtures_changed": false,
+  "product_tests_run_by_this_chat": false,
+  "collection_schedule_created": false,
+  "paid_or_authenticated_provider_call_by_this_chat": false,
+  "archive_folder_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+  "archive": [
+    {
+      "file": "SECTOR-DATA-STRATEGY.md",
+      "drive_id": "1QiWEua9XM7r-wcPVGbvKPl-BENu_-VDN",
+      "sha256": "fe04378faade01f2463d42ff3a73fa41a6175589ad2abf2e9c759cb3b7527a7d",
+      "bytes": 25124,
+      "remote_bytes_identical": true,
+      "shared": false
+    },
+    {
+      "file": "SECTOR-DATA-STRATEGY.html",
+      "drive_id": "1yEqkGjp_KOsz2AJquDUOZZAN45EtYGJS",
+      "sha256": "7acec6463fdb6d5a2a59c0a68b1852fc82d2bae98ab9d873d1bfcc58bcc6bdd9",
+      "bytes": 184808,
+      "remote_bytes_identical": true,
+      "shared": false
+    },
+    {
+      "file": "SECTOR-DATA-EVIDENCE-v1.zip",
+      "drive_id": "1rTPVFEi1nvLW1OhWqW40HS0y2SAbf7-q",
+      "sha256": "7f838b3214ac47f4e71001f5bc4ba549ee6e6fe5361c6977b79ab2d87360aaf6",
+      "bytes": 136812,
+      "remote_bytes_identical": true,
+      "shared": false
+    }
+  ],
+  "fresh_archive_reception": {
+    "entries_verified": 7,
+    "directory": "/var/folders/1p/h6m1c58x3lzg4080b8yzckn40000gn/T/accel-sector-reception-ovhzcico"
+  },
+  "document_checks": "CONTENT-CHECKS.json",
+  "render_checks": "RENDER-CHECKS.json",
+  "aside": {
+    "desktop_snapshot_and_measurements": "PASS",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "font_loaded": true,
+    "screenshot": "Captured within Aside session artifacts after absolute path refused; isolated Chromium screenshots visually inspected"
+  },
+  "tracker": {
+    "id": "ERW-133",
+    "marker": "ACCEL-SECTOR-DATA-20261022-V1",
+    "marker_and_three_links_read_back": true,
+    "status_preserved": "Todo"
+  },
+  "transmission": {
+    "authorization": "Erwan: Oui, transmets aux quatre chats; latest instruction to coordinate with integrator through complete chain",
+    "integrator": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "data": "01a162bd-e262-7fa2-a1f3-aab46f68fc1a",
+    "agent": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+    "ui": "01a162bd-facf-7b63-861b-9bbf7f402938",
+    "state": "Four sends accepted; documentary consultation of this new supplement not yet individually received"
+  },
+  "integrated_runtime_receipt_read": "proposals/integration/REAL-CASE-FLOW.json",
+  "runtime_proof_scope": "Source read through Keenable, hypothetical analysis and rejected hypothetical approval, synthetic attributed confirmation, EUR 1420 emergency option, proposal approved and read back on Aiven. Public-source commercial causal relation remains unverified. Final UI/data reception still pending at this checkpoint.",
+  "additional_candidates": {
+    "path": "SOURCE-CANDIDATES.json",
+    "drive_id": "1IxGQrcEsp3W1KRIAsXBkpS3DCjTWQhn7",
+    "remote_bytes_identical": true,
+    "shared": false,
+    "sha256": "6fb959d5082210a5df5aec5bbc54f922e94428665072f8917b2ec33d9f40987c"
+  },
+  "owner_vision_links": "proposals/product/VISION-LINKS-v11-RECEIPT.json"
+}

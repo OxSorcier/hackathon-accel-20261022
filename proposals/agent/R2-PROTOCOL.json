@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "status": "RECEIVED_BY_INTEGRATOR_SCRIPT_FROZEN_FOR_TWO_REVIEWS",
+  "createdAt": "2026-10-22T11:58:57.105454+00:00",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "companyId": "CO-RESEARCH-R1-EMPTY",
+  "runtime": "Exact R1-FROZEN.json v3 runtime and45 pins, no main modules, no server/start or scheduler",
+  "sourceFixture": "proposals/data/RESEARCH-MEMORY-CONTROLLED-SCENARIO.json, versionsv1/v2 exact content/publication dates; source identity URL is fictional, never fetched",
+  "scope": {
+    "profileId": "soissons-project",
+    "profileVersion": "v1",
+    "namespace": "controlled"
+  },
+  "actors": "Explicit synthetic operator and Paul for witness company, passed to existing frozen trusted operator/core methods. No claim of UI authentication. Optional fresh PgStore sessions use native tokens in memory only.",
+  "provider": "Injected ModelProvider mode:test, explicitly named NO_MODEL_CALL. Actual provider/HTTP0; traces count deterministic protocol invocations only, no invented usage.",
+  "preflight": [
+    "Validate independent manifest/checkpoint pins and read immutable existing witness snapshot. No seed/import/migration/reset.",
+    "Require exactly2 completed R1 runs in schema, zero witness runs/proposals/memories/research commands, and no queued/running run anywhere. Otherwise stop and reconcile.",
+    "Preserve R1 company snapshot, two live run payload hashes and all5 acquired raw source tuples. Global fetch throws and counts attempts; no collector allowed."
+  ],
+  "steps": [
+    "Ingest controlledv1 via frozen repository.ingestControlled with stable operation key, current actual test observation date and exact fixture content/published date. No publisher claim or timestamp alteration of prior evidence.",
+    "Through existing queueQuestion, operator test mode marker and createRunWorker.tick (never .start), actual frozen createAgentRunner consumes lookup then evaluate_options then prepare_proposal through a deterministic provider. No answer/source is pre-injected into initial prompt. Select a genuinely feasible current OL-A option within Paul ceiling.",
+    "Approve first control plan through real PgStore.decide with current businessEngine; assert approved. This adds synthetic decision/advice only, no stock effect.",
+    "Produce a second identical current pending plan by same actual worker/runner. Verify same business R/P, option, feasible cost and researchv1 dependencies.",
+    "Publish controlledv2 under same source identity with changed contentHash through ingestControlled. Assert generation changed and current lookup isv2, old pending plan becomes stale.",
+    "Attempt approval of old pending plan through real PgStore.decide and assert STALE_CONTEXT. Snapshot/hash/R/P unchanged and fresh businessEngine same option still feasible: invalidation attributable solely to source correction. Preserve first approved control status.",
+    "Close connection. Reopen pool/store/repository, new native session/run, injected provider reads research tool then ends. Verifyv2 retrieved by tool, not injected prior answer, testOnly/mode:test preserved.",
+    "Reingest EXACT samev2 and same operation key, then optionally new operation key only if explicitly received, assert generation/occurrence/ref identities unchanged and evidence rows exactlyv1+v2. No second acquisition/model call.",
+    "Check R1 company/run/source hashes unchanged, witness business snapshot unchanged, no active runs, zero actual external/provider HTTP and collector calls. Close pool/process. Preserve native IDs, traces and uncertainty/failure if any."
+  ],
+  "receipt": "proposals/agent/R2-RECEPTION.json plus precise immutable first negative receipt if failure",
+  "notProved": [
+    "This is controlled source correction in actual Aiven/core modules, not a publisher change, actual inference, HTTP/UI route or ERP execution.",
+    "R1 first PID/session/IPC gaps remain unchanged.",
+    "No global adoption or complete industrial live flow claim."
+  ],
+  "updatedAt": "2026-10-22T12:03:24.438633+00:00",
+  "amendment": "CreateControlledv1 + actual CaseRepository.confirm POL1 to2026-10-27 before both analyses. Only this advances witness R; during correction R/P/hash unchanged. Force actual emergency option1420 with A and B protected. Also reingest identicalv2 under new operationKey: new command receipt allowed, no new evidence version/generation/current ref."
+}

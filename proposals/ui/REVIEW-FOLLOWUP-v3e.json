@@ -1,0 +1,60 @@
+{
+  "version": "3e",
+  "mandate": "Connected journey, English direction A, evidence/case/revision UI and grouped corrections",
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "contract": "C1, published watch profiles and case/internal-confirmation extension",
+  "files": [
+    {
+      "path": "src/ui/App.tsx",
+      "sha256": "51f4372e68dc2ba4d544e5d9936a57908053792e93bdedf29f91eda60c02a581"
+    },
+    {
+      "path": "src/ui/CasePanel.tsx",
+      "sha256": "cd77f57b7de7f4e5dd908b5da55273e43bdf526540384a656b615e2df767572f"
+    },
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "c19a873725f648591e741ade90132851ef857199b5e043aae5b92b74d8c25a8a"
+    },
+    {
+      "path": "src/ui/format.ts",
+      "sha256": "9c55a328db8409b957e3e2a9111d4d7f8396b27c908471d1e02eec1362ec0bef"
+    },
+    {
+      "path": "src/ui/index.ts",
+      "sha256": "93dacefe521e1a71ef4708549f47da3cbafc20c54a3c8da842bb70fb491c7663"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "f02961321fc188292ff26b3c7daf87fe92fbb07d7d0e1402053568b4e8f05cab"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "c8fc1eceb87aeae8d93f34d3199248f3b5589cfeac3c892253e37a7dab28810a"
+    },
+    {
+      "path": "tests/ui/api.test.ts",
+      "sha256": "9e6b64b5fe9da341d64fdcb70d9cf4d672991cb660538c4cc5ef6a4dcedc34da"
+    },
+    {
+      "path": "tests/ui/case-api.test.ts",
+      "sha256": "a1f8b7c7cda487d84a0080ada52b9f952da75ac2e1b4d523b24257f19cf0815b"
+    },
+    {
+      "path": "tests/ui/fixtures.ts",
+      "sha256": "3382ac8cf197fddbfeb0a162a5e16151c38e211ffee65a4958341afc1bfea8c9"
+    },
+    {
+      "path": "tests/ui/preview.html",
+      "sha256": "e3a2494290a035d87f27c6ae54b062cdde35baf79b4dfe977591216b9c912219"
+    },
+    {
+      "path": "tests/ui/preview.tsx",
+      "sha256": "3aa36d35dc3f116029bf866bb6745982a979b5dcfd07372fb89bb18cc3664597"
+    },
+    {
+      "path": "tests/ui/responsive.html",
+      "sha256": "c5bfd4cdf9bc51a011ed710da0d2e88151f17435356865bee176f9822a3017c1"
+    }
+  ]
+}

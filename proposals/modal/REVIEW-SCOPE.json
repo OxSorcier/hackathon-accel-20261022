@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "realizerModel": "gpt-6.1-sol",
+  "modelSource": "current session turn_context",
+  "files": [
+    {
+      "path": "proposals/modal/CONTRACT.json",
+      "sha256": "b4d2d366464e47f1b092282a3c2adac91cebb0347fc2a78eb16e59fe2969431f"
+    },
+    {
+      "path": "services/modal-pdf/.gitignore",
+      "sha256": "f04bfb510c66b7762b29f556b8d9e5ae1174b4997a8d049af91ef7cd74e1978e"
+    },
+    {
+      "path": "services/modal-pdf/README.md",
+      "sha256": "59242f0d9e01cd4ef0816ac023b41d5c37d84616d18f244274f0073753e6ee3b"
+    },
+    {
+      "path": "services/modal-pdf/accel_pdf_http.py",
+      "sha256": "de29c651ec033303db2eda6772893aef37325e7f5d9a7273e33d6ed21df85d48"
+    },
+    {
+      "path": "services/modal-pdf/accel_pdf_reader.py",
+      "sha256": "8d40521109ad449dfa96c9a165e6058c91d7db885495f5a63d0312168de361af"
+    },
+    {
+      "path": "services/modal-pdf/modal_app.py",
+      "sha256": "450d82cbb0f23e06d8481d86f457e0c0431c701c95e1e25f95b4d308f68b4fd3"
+    },
+    {
+      "path": "services/modal-pdf/requirements.in",
+      "sha256": "73b413a9d4fe8b31ad507f02d1bc5067bc5379adafe31ded234f9417c16964a4"
+    },
+    {
+      "path": "services/modal-pdf/requirements.lock",
+      "sha256": "014d18e3faaa74a16ed92c7013567605ae19bfd0883c5d133ec6aee212d6af9e"
+    },
+    {
+      "path": "services/modal-pdf/tests/test_http.py",
+      "sha256": "a1b823c22fd04c6e3e1521b006ecf093bc00a1fc9e7a9451a45c1dba85880729"
+    },
+    {
+      "path": "services/modal-pdf/tests/test_reader.py",
+      "sha256": "e279117cfd31de8f4aca675a66020289d01f670d7d463e64703fadb4732ed41b"
+    }
+  ],
+  "revision": 2
+}

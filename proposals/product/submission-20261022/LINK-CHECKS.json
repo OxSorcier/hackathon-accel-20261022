@@ -1,0 +1,137 @@
+[
+  {
+    "document": "README.md",
+    "target": "proposals/product/submission-20261022/ONE-PAGER.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.pdf",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/product/submission-20261022/DATA-LAYER.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/product/submission-20261022/EVIDENCE-DATA.json",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/STATUS.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/HANDOFF.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/STATUS.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/integration/FINAL-UI-FLOW.json",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/integration/FINAL-PREVIEW-RESTART.json",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/integration/FINAL-3001-QA.json",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/integration/INDUSTRIAL-CORE-AIVEN.json",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "proposals/modal/AIVEN-DOCUMENTS-LIVE.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "target": "EVIDENCE-DATA.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "target": "../../integration/REAL-CASE-FLOW.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "target": "../../integration/FINAL-UI-FLOW.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "target": "../../integration/FINAL-PREVIEW-RESTART.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "target": "../../integration/FINAL-3001-QA.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "target": "../../integration/INDUSTRIAL-CORE-AIVEN.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "target": "../../agent/R1-RECEPTION.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+    "target": "../../modal/AIVEN-DOCUMENTS-LIVE.json",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/ONE-PAGER.md",
+    "target": "EVIDENCE-IT-WORKS.html",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/ONE-PAGER.md",
+    "target": "DATA-LAYER.md",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/ONE-PAGER.md",
+    "target": "../../../docs/STATUS.md",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/SUBMISSION-COPY.md",
+    "target": "DATA-LAYER.md",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/SUBMISSION-COPY.md",
+    "target": "EVIDENCE-IT-WORKS.pdf",
+    "exists": true
+  },
+  {
+    "document": "proposals/product/submission-20261022/SUBMISSION-COPY.md",
+    "target": "EVIDENCE-DATA.json",
+    "exists": true
+  }
+]

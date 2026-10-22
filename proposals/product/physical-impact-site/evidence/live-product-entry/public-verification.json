@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-10-22T12:37:36.131622+00:00",
+  "deploymentId": "dpl_5RFnzQWRYEzZ2qJ81fbB9TPcZVpg",
+  "deploymentUrl": "https://physical-impact-mwkxlph67-erwan-gallos-projects.vercel.app",
+  "routes": [
+    {
+      "url": "https://physical-impact.com/",
+      "status": 200,
+      "finalUrl": "https://physical-impact.com/",
+      "sha256": "a12260953f7792143a3baba97453b5a7043713b9b7aa3231deed389b3176ace2",
+      "exactMatch": true
+    },
+    {
+      "url": "https://physical-impact.com/live/",
+      "status": 200,
+      "finalUrl": "https://physical-impact.com/live/",
+      "sha256": "a6e294e74c0d131a99dc7017a833bce93eac4df620be8034a4dbb8aa1b35f299",
+      "exactMatch": true
+    },
+    {
+      "url": "https://physical-impact.com/live",
+      "status": 200,
+      "finalUrl": "https://physical-impact.com/live",
+      "sha256": "a6e294e74c0d131a99dc7017a833bce93eac4df620be8034a4dbb8aa1b35f299",
+      "exactMatch": true
+    },
+    {
+      "url": "https://physical-impact.com/styles.css",
+      "status": 200,
+      "finalUrl": "https://physical-impact.com/styles.css",
+      "sha256": "34c1e89ed7a1d41c60fa4d1ad5ecb99d1cc44a03c2c556cee4f5aa0a1942f88a",
+      "exactMatch": true
+    },
+    {
+      "url": "https://physical-impact.com/demo",
+      "status": 200,
+      "finalUrl": "https://physical-impact.com/demo",
+      "sha256": "cfc680f432f77b55acb2e51aaa258f47c5f47e9e7b78433cba167d34850e630c",
+      "exactMatch": true
+    },
+    {
+      "url": "https://physical-impact.com/demo/",
+      "status": 200,
+      "finalUrl": "https://physical-impact.com/demo",
+      "sha256": "cfc680f432f77b55acb2e51aaa258f47c5f47e9e7b78433cba167d34850e630c",
+      "exactMatch": true
+    },
+    {
+      "url": "https://physical-impact.com/assets/index-0i85LfEo.js",
+      "status": 200,
+      "finalUrl": "https://physical-impact.com/assets/index-0i85LfEo.js",
+      "sha256": "1cf98ff58a2f01006915e4dd4ed4043fbfb52f8a6a40da809db57bd25707e334",
+      "exactMatch": true
+    },
+    {
+      "url": "https://physical-impact.com/assets/index-DMcC4Dwv.css",
+      "status": 200,
+      "finalUrl": "https://physical-impact.com/assets/index-DMcC4Dwv.css",
+      "sha256": "b82462222f0925b2b2d50522b5c032f6c2fd5459ba26b4f0e8284b7494355af6",
+      "exactMatch": true
+    },
+    {
+      "url": "https://www.physical-impact.com/",
+      "status": 200,
+      "finalUrl": "https://www.physical-impact.com/",
+      "sha256": "a12260953f7792143a3baba97453b5a7043713b9b7aa3231deed389b3176ace2",
+      "exactMatch": true
+    },
+    {
+      "url": "https://www.physical-impact.com/live/",
+      "status": 200,
+      "finalUrl": "https://www.physical-impact.com/live/",
+      "sha256": "a6e294e74c0d131a99dc7017a833bce93eac4df620be8034a4dbb8aa1b35f299",
+      "exactMatch": true
+    },
+    {
+      "url": "https://www.physical-impact.com/live",
+      "status": 200,
+      "finalUrl": "https://www.physical-impact.com/live",
+      "sha256": "a6e294e74c0d131a99dc7017a833bce93eac4df620be8034a4dbb8aa1b35f299",
+      "exactMatch": true
+    },
+    {
+      "url": "https://www.physical-impact.com/styles.css",
+      "status": 200,
+      "finalUrl": "https://www.physical-impact.com/styles.css",
+      "sha256": "34c1e89ed7a1d41c60fa4d1ad5ecb99d1cc44a03c2c556cee4f5aa0a1942f88a",
+      "exactMatch": true
+    },
+    {
+      "url": "https://www.physical-impact.com/demo",
+      "status": 200,
+      "finalUrl": "https://www.physical-impact.com/demo",
+      "sha256": "cfc680f432f77b55acb2e51aaa258f47c5f47e9e7b78433cba167d34850e630c",
+      "exactMatch": true
+    },
+    {
+      "url": "https://www.physical-impact.com/demo/",
+      "status": 200,
+      "finalUrl": "https://www.physical-impact.com/demo",
+      "sha256": "cfc680f432f77b55acb2e51aaa258f47c5f47e9e7b78433cba167d34850e630c",
+      "exactMatch": true
+    },
+    {
+      "url": "https://www.physical-impact.com/assets/index-0i85LfEo.js",
+      "status": 200,
+      "finalUrl": "https://www.physical-impact.com/assets/index-0i85LfEo.js",
+      "sha256": "1cf98ff58a2f01006915e4dd4ed4043fbfb52f8a6a40da809db57bd25707e334",
+      "exactMatch": true
+    },
+    {
+      "url": "https://www.physical-impact.com/assets/index-DMcC4Dwv.css",
+      "status": 200,
+      "finalUrl": "https://www.physical-impact.com/assets/index-DMcC4Dwv.css",
+      "sha256": "b82462222f0925b2b2d50522b5c032f6c2fd5459ba26b4f0e8284b7494355af6",
+      "exactMatch": true
+    }
+  ],
+  "demoPreserved": true
+}

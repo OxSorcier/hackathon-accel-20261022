@@ -1,0 +1,4017 @@
+{
+  "status": "READ_ONLY_DIAGNOSIS",
+  "checkedAt": "2026-10-22T12:14:32.521Z",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "companyId": "CO-RESEARCH-R1-EMPTY",
+  "commands": [
+    {
+      "operation_key": "r2-source-v2",
+      "status": "done",
+      "receipt": {
+        "scope": {
+          "namespace": "controlled",
+          "profileId": "soissons-project",
+          "profileVersion": "v1"
+        },
+        "state": "reusable",
+        "reason": "Received source observations within the server freshness policy; no business fact inferred.",
+        "reused": false,
+        "checkedAt": "2026-10-22T12:09:48.193Z",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "conditions": [
+          "SOURCE_OBSERVATION_ONLY",
+          "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+          "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+          "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+        ],
+        "generation": 2,
+        "validUntil": "2026-10-23T12:09:47.966Z",
+        "occurrenceId": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e",
+        "externalCalls": 0
+      }
+    },
+    {
+      "operation_key": "r2-source-v1",
+      "status": "done",
+      "receipt": {
+        "scope": {
+          "namespace": "controlled",
+          "profileId": "soissons-project",
+          "profileVersion": "v1"
+        },
+        "state": "reusable",
+        "reason": "Received source observations within the server freshness policy; no business fact inferred.",
+        "reused": false,
+        "checkedAt": "2026-10-22T12:09:41.087Z",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "conditions": [
+          "SOURCE_OBSERVATION_ONLY",
+          "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+          "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+          "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+        ],
+        "generation": 1,
+        "validUntil": "2026-10-23T12:09:40.950Z",
+        "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae",
+        "externalCalls": 0
+      }
+    }
+  ],
+  "projection": [
+    {
+      "company_id": "CO-RESEARCH-R1-EMPTY",
+      "profile_id": "soissons-project",
+      "profile_version": "v1",
+      "namespace": "controlled",
+      "generation": "2",
+      "fingerprint": "57ff74151ec052b495ed748fca2cd3839eab430a42c25bbbb2850d9167d40d7e",
+      "state": "reusable",
+      "observed_at": "2026-10-22T12:09:47.966Z",
+      "valid_until": "2026-10-23T12:09:47.966Z",
+      "occurrence_id": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e",
+      "evidence_refs": [
+        {
+          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+          "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+          "occurrenceId": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e"
+        }
+      ],
+      "conditions": [
+        "SOURCE_OBSERVATION_ONLY",
+        "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+        "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+        "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+      ],
+      "reason": "Received source observations within the server freshness policy; no business fact inferred.",
+      "observed_publication_seq": "3"
+    },
+    {
+      "company_id": "CO-RESEARCH-R1-EMPTY",
+      "profile_id": "soissons-project",
+      "profile_version": "v1",
+      "namespace": "live",
+      "generation": "0",
+      "fingerprint": "ce5ddeb111be91a32c8d2a395d7a1d6a167434e10c86a8f0660f02e7da24a467",
+      "state": "missing",
+      "observed_at": null,
+      "valid_until": null,
+      "occurrence_id": null,
+      "evidence_refs": [],
+      "conditions": [
+        "NO_RECEIVED_RESEARCH"
+      ],
+      "reason": "No observation received in this exact company/profile/version/namespace.",
+      "observed_publication_seq": "0"
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e",
+      "operation_key": "research:8a5d984ee7c451e0c30bbee3f467fe4fea2a9d674bfcf9f475e9377a2fd42040",
+      "status": "completed",
+      "result": {
+        "status": "success",
+        "sources": [
+          {
+            "url": "https://api.keenable.ai/v1/search",
+            "error": null,
+            "status": "success",
+            "evidence": [
+              {
+                "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                "mode": "test",
+                "title": "CONTROLLED research correction test, not a publisher statement",
+                "family": "supplier",
+                "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. The earlier 2028 project schedule is withdrawn; the timetable is unknown. No relationship to the test company's suppliers or products is verified.",
+                "dataOrigin": "public",
+                "provenance": {
+                  "method": "fetch",
+                  "endpoint": "https://api.keenable.ai/v1/fetch",
+                  "provider": "keenable",
+                  "indexedAt": null,
+                  "profileId": "soissons-project",
+                  "truncated": false
+                },
+                "collectedAt": "2026-10-22T12:09:40.950Z",
+                "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+                "publishedAt": "2026-10-02T00:00:00.000Z"
+              }
+            ]
+          }
+        ],
+        "startedAt": "2026-10-22T12:09:40.950Z",
+        "completedAt": "2026-10-22T12:09:47.966Z"
+      },
+      "publication_seq": "3"
+    },
+    {
+      "id": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae",
+      "operation_key": "research:70d5cd2d9437a7679438ffddf0c5a9920413d358a56b79c91607360c66b6a72b",
+      "status": "completed",
+      "result": {
+        "status": "success",
+        "sources": [
+          {
+            "url": "https://api.keenable.ai/v1/search",
+            "error": null,
+            "status": "success",
+            "evidence": [
+              {
+                "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                "mode": "test",
+                "title": "CONTROLLED research correction test, not a publisher statement",
+                "family": "supplier",
+                "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+                "dataOrigin": "public",
+                "provenance": {
+                  "method": "fetch",
+                  "endpoint": "https://api.keenable.ai/v1/fetch",
+                  "provider": "keenable",
+                  "indexedAt": null,
+                  "profileId": "soissons-project",
+                  "truncated": false
+                },
+                "collectedAt": "2026-10-22T12:09:40.950Z",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "publishedAt": "2026-10-01T00:00:00.000Z"
+              }
+            ]
+          }
+        ],
+        "startedAt": "2026-10-22T12:09:40.950Z",
+        "completedAt": "2026-10-22T12:09:40.950Z"
+      },
+      "publication_seq": "2"
+    }
+  ],
+  "evidence": [
+    {
+      "source_id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+      "content_hash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+      "evidence": {
+        "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+        "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+        "mode": "test",
+        "title": "CONTROLLED research correction test, not a publisher statement",
+        "family": "supplier",
+        "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+        "dataOrigin": "public",
+        "provenance": {
+          "method": "fetch",
+          "endpoint": "https://api.keenable.ai/v1/fetch",
+          "provider": "keenable",
+          "indexedAt": null,
+          "profileId": "soissons-project",
+          "truncated": false
+        },
+        "collectedAt": "2026-10-22T12:09:40.950Z",
+        "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+        "publishedAt": "2026-10-01T00:00:00.000Z"
+      }
+    },
+    {
+      "source_id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+      "content_hash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+      "evidence": {
+        "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+        "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+        "mode": "test",
+        "title": "CONTROLLED research correction test, not a publisher statement",
+        "family": "supplier",
+        "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. The earlier 2028 project schedule is withdrawn; the timetable is unknown. No relationship to the test company's suppliers or products is verified.",
+        "dataOrigin": "public",
+        "provenance": {
+          "method": "fetch",
+          "endpoint": "https://api.keenable.ai/v1/fetch",
+          "provider": "keenable",
+          "indexedAt": null,
+          "profileId": "soissons-project",
+          "truncated": false
+        },
+        "collectedAt": "2026-10-22T12:09:40.950Z",
+        "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+        "publishedAt": "2026-10-02T00:00:00.000Z"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "id": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+      "payload": {
+        "id": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+        "actorId": "RESEARCH-OPERATOR",
+        "relation": {
+          "basis": "Controlled source correction test only. No publisher relationship established.",
+          "status": "unverified",
+          "productId": "SKU-ISO100",
+          "supplierId": null
+        },
+        "testOnly": true,
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:41.457Z",
+        "impactKind": "risk",
+        "evidenceRef": {
+          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+        },
+        "observation": {
+          "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+          "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+          "mode": "test",
+          "title": "CONTROLLED research correction test, not a publisher statement",
+          "family": "supplier",
+          "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+          "dataOrigin": "public",
+          "provenance": {
+            "method": "fetch",
+            "endpoint": "https://api.keenable.ai/v1/fetch",
+            "provider": "keenable",
+            "indexedAt": null,
+            "profileId": "soissons-project",
+            "truncated": false
+          },
+          "collectedAt": "2026-10-22T12:09:40.950Z",
+          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+          "publishedAt": "2026-10-01T00:00:00.000Z"
+        },
+        "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+        "confirmation": {
+          "kind": "inbound_date_confirmed",
+          "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+          "actorId": "RESEARCH-OPERATOR",
+          "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+          "companyId": "CO-RESEARCH-R1-EMPTY",
+          "productId": "SKU-ISO100",
+          "dataOrigin": "synthetic",
+          "confirmedAt": "2026-10-22T12:09:41.446Z",
+          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+          "policyVersion": "P1",
+          "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+          "purchaseOrderLineId": "POL-1",
+          "exposureOrderLineIds": [
+            "OL-A"
+          ],
+          "previousExpectedDate": "2026-10-27",
+          "confirmedExpectedDate": "2026-10-27"
+        },
+        "policyVersion": "P1",
+        "qualification": "to_verify",
+        "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "previousRevision": "C-32ddaa94-c511-4776-be9e-1bd7f8910459",
+        "researchDependency": {
+          "scope": {
+            "namespace": "controlled",
+            "profileId": "soissons-project",
+            "profileVersion": "v1"
+          },
+          "generation": 1,
+          "validUntil": "2026-10-23T12:09:40.950Z",
+          "evidenceRefs": [
+            {
+              "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+              "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+              "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+            }
+          ]
+        },
+        "candidateOrderLineIds": [
+          "OL-A"
+        ]
+      }
+    }
+  ],
+  "caseVersions": [
+    {
+      "case_id": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+      "case_revision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+      "payload": {
+        "id": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+        "actorId": "RESEARCH-OPERATOR",
+        "relation": {
+          "basis": "Controlled source correction test only. No publisher relationship established.",
+          "status": "unverified",
+          "productId": "SKU-ISO100",
+          "supplierId": null
+        },
+        "testOnly": true,
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:41.457Z",
+        "impactKind": "risk",
+        "evidenceRef": {
+          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+        },
+        "observation": {
+          "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+          "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+          "mode": "test",
+          "title": "CONTROLLED research correction test, not a publisher statement",
+          "family": "supplier",
+          "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+          "dataOrigin": "public",
+          "provenance": {
+            "method": "fetch",
+            "endpoint": "https://api.keenable.ai/v1/fetch",
+            "provider": "keenable",
+            "indexedAt": null,
+            "profileId": "soissons-project",
+            "truncated": false
+          },
+          "collectedAt": "2026-10-22T12:09:40.950Z",
+          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+          "publishedAt": "2026-10-01T00:00:00.000Z"
+        },
+        "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+        "confirmation": {
+          "kind": "inbound_date_confirmed",
+          "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+          "actorId": "RESEARCH-OPERATOR",
+          "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+          "companyId": "CO-RESEARCH-R1-EMPTY",
+          "productId": "SKU-ISO100",
+          "dataOrigin": "synthetic",
+          "confirmedAt": "2026-10-22T12:09:41.446Z",
+          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+          "policyVersion": "P1",
+          "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+          "purchaseOrderLineId": "POL-1",
+          "exposureOrderLineIds": [
+            "OL-A"
+          ],
+          "previousExpectedDate": "2026-10-27",
+          "confirmedExpectedDate": "2026-10-27"
+        },
+        "policyVersion": "P1",
+        "qualification": "to_verify",
+        "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "previousRevision": "C-32ddaa94-c511-4776-be9e-1bd7f8910459",
+        "researchDependency": {
+          "scope": {
+            "namespace": "controlled",
+            "profileId": "soissons-project",
+            "profileVersion": "v1"
+          },
+          "generation": 1,
+          "validUntil": "2026-10-23T12:09:40.950Z",
+          "evidenceRefs": [
+            {
+              "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+              "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+              "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+            }
+          ]
+        },
+        "candidateOrderLineIds": [
+          "OL-A"
+        ]
+      }
+    },
+    {
+      "case_id": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+      "case_revision": "C-32ddaa94-c511-4776-be9e-1bd7f8910459",
+      "payload": {
+        "id": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+        "actorId": "RESEARCH-OPERATOR",
+        "relation": {
+          "basis": "Controlled source correction test only. No publisher relationship established.",
+          "status": "unverified",
+          "productId": "SKU-ISO100",
+          "supplierId": null
+        },
+        "testOnly": true,
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:41.174Z",
+        "impactKind": "undetermined",
+        "evidenceRef": {
+          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+        },
+        "observation": {
+          "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+          "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+          "mode": "test",
+          "title": "CONTROLLED research correction test, not a publisher statement",
+          "family": "supplier",
+          "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+          "dataOrigin": "public",
+          "provenance": {
+            "method": "fetch",
+            "endpoint": "https://api.keenable.ai/v1/fetch",
+            "provider": "keenable",
+            "indexedAt": null,
+            "profileId": "soissons-project",
+            "truncated": false
+          },
+          "collectedAt": "2026-10-22T12:09:40.950Z",
+          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+          "publishedAt": "2026-10-01T00:00:00.000Z"
+        },
+        "caseRevision": "C-32ddaa94-c511-4776-be9e-1bd7f8910459",
+        "policyVersion": "P1",
+        "qualification": "to_verify",
+        "businessRevision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+        "previousRevision": null,
+        "researchDependency": {
+          "scope": {
+            "namespace": "controlled",
+            "profileId": "soissons-project",
+            "profileVersion": "v1"
+          },
+          "generation": 1,
+          "validUntil": "2026-10-23T12:09:40.950Z",
+          "evidenceRefs": [
+            {
+              "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+              "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+              "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+            }
+          ]
+        },
+        "candidateOrderLineIds": [
+          "OL-A",
+          "OL-B"
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "4af05673-1b5e-49a6-98a4-ffa43499bff2",
+      "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+      "kind": "operator_snapshot",
+      "payload": {
+        "previousRevision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d"
+      }
+    },
+    {
+      "id": "ae467271-153a-4e00-baac-9279cdb7a789",
+      "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+      "kind": "inbound_confirmation",
+      "payload": {
+        "kind": "inbound_date_confirmed",
+        "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+        "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+        "actorId": "RESEARCH-OPERATOR",
+        "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "productId": "SKU-ISO100",
+        "dataOrigin": "synthetic",
+        "confirmedAt": "2026-10-22T12:09:41.446Z",
+        "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+        "policyVersion": "P1",
+        "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "purchaseOrderLineId": "POL-1",
+        "exposureOrderLineIds": [
+          "OL-A"
+        ],
+        "previousExpectedDate": "2026-10-27",
+        "confirmedExpectedDate": "2026-10-27"
+      }
+    }
+  ],
+  "runs": [
+    {
+      "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+      "operation_key": "r2-control-plan",
+      "payload": {
+        "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+        "mode": "test",
+        "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+        "status": "proposal",
+        "traces": [
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:1",
+            "tool": "context_manifest",
+            "input": {},
+            "output": {
+              "caseRef": {
+                "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+              },
+              "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+              "companyId": "CO-RESEARCH-R1-EMPTY",
+              "memoryIds": [],
+              "assembledAt": "2026-10-22T12:09:41.967Z",
+              "evidenceRef": {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              },
+              "snapshotAsOf": "2026-10-22T08:55:00+02:00",
+              "toolsVersion": "agent-tools/3",
+              "policyVersion": "P1",
+              "researchScope": {
+                "namespace": "controlled",
+                "profileId": "soissons-project",
+                "profileVersion": "v1"
+              },
+              "contractVersion": "C1"
+            },
+            "startedAt": "2026-10-22T12:09:41.969Z",
+            "completedAt": "2026-10-22T12:09:41.969Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:2",
+            "tool": "model_intent",
+            "input": {
+              "turn": 0,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:42.109Z",
+            "completedAt": "2026-10-22T12:09:42.109Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:3",
+            "tool": "model_result",
+            "input": {
+              "turn": 0
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:42.109Z",
+            "completedAt": "2026-10-22T12:09:42.181Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:4",
+            "tool": "read_research_context",
+            "input": {
+              "callId": "read-research",
+              "arguments": {}
+            },
+            "output": {
+              "callId": "read-research",
+              "result": {
+                "scope": {
+                  "namespace": "controlled",
+                  "profileId": "soissons-project",
+                  "profileVersion": "v1"
+                },
+                "state": "reusable",
+                "reason": "Received source observations within the server freshness policy; no business fact inferred.",
+                "reused": true,
+                "checkedAt": "2026-10-22T12:09:42.478Z",
+                "companyId": "CO-RESEARCH-R1-EMPTY",
+                "conditions": [
+                  "SOURCE_OBSERVATION_ONLY",
+                  "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                  "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                  "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+                ],
+                "generation": 1,
+                "validUntil": "2026-10-23T12:09:40.950Z",
+                "observations": [
+                  {
+                    "ref": {
+                      "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                      "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                    },
+                    "evidence": {
+                      "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                      "mode": "test",
+                      "title": "CONTROLLED research correction test, not a publisher statement",
+                      "family": "supplier",
+                      "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+                      "dataOrigin": "public",
+                      "provenance": {
+                        "method": "fetch",
+                        "endpoint": "https://api.keenable.ai/v1/fetch",
+                        "provider": "keenable",
+                        "indexedAt": null,
+                        "profileId": "soissons-project",
+                        "truncated": false
+                      },
+                      "collectedAt": "2026-10-22T12:09:40.950Z",
+                      "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                      "publishedAt": "2026-10-01T00:00:00.000Z"
+                    },
+                    "testOnly": true,
+                    "conditions": [
+                      "SOURCE_OBSERVATION_ONLY",
+                      "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                      "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                      "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+                    ],
+                    "qualification": "source_observation_only"
+                  }
+                ],
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae",
+                "externalCalls": 0,
+                "untrustedData": true
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:42.436Z",
+            "completedAt": "2026-10-22T12:09:42.557Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:5",
+            "tool": "model_intent",
+            "input": {
+              "turn": 1,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:42.703Z",
+            "completedAt": "2026-10-22T12:09:42.703Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:6",
+            "tool": "model_result",
+            "input": {
+              "turn": 1
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:42.703Z",
+            "completedAt": "2026-10-22T12:09:42.897Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:7",
+            "tool": "read_observation_context",
+            "input": {
+              "callId": "read-case",
+              "arguments": {}
+            },
+            "output": {
+              "callId": "read-case",
+              "result": {
+                "ref": {
+                  "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                  "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                },
+                "relation": {
+                  "basis": "Controlled source correction test only. No publisher relationship established.",
+                  "status": "unverified",
+                  "productId": "SKU-ISO100",
+                  "supplierId": null
+                },
+                "testOnly": true,
+                "impactKind": "risk",
+                "evidenceRef": {
+                  "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                  "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                  "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                },
+                "observation": {
+                  "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                  "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                  "mode": "test",
+                  "title": "CONTROLLED research correction test, not a publisher statement",
+                  "family": "supplier",
+                  "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+                  "dataOrigin": "public",
+                  "provenance": {
+                    "method": "fetch",
+                    "endpoint": "https://api.keenable.ai/v1/fetch",
+                    "provider": "keenable",
+                    "indexedAt": null,
+                    "profileId": "soissons-project",
+                    "truncated": false
+                  },
+                  "collectedAt": "2026-10-22T12:09:40.950Z",
+                  "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                  "publishedAt": "2026-10-01T00:00:00.000Z"
+                },
+                "confirmation": {
+                  "kind": "inbound_date_confirmed",
+                  "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+                  "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                  "actorId": "RESEARCH-OPERATOR",
+                  "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+                  "companyId": "CO-RESEARCH-R1-EMPTY",
+                  "productId": "SKU-ISO100",
+                  "dataOrigin": "synthetic",
+                  "confirmedAt": "2026-10-22T12:09:41.446Z",
+                  "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+                  "policyVersion": "P1",
+                  "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                  "purchaseOrderLineId": "POL-1",
+                  "exposureOrderLineIds": [
+                    "OL-A"
+                  ],
+                  "previousExpectedDate": "2026-10-27",
+                  "confirmedExpectedDate": "2026-10-27"
+                },
+                "coverageBasis": "confirmed_internal_synthetic",
+                "policyVersion": "P1",
+                "qualification": "to_verify",
+                "untrustedData": true,
+                "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                "relationVerified": false,
+                "researchDependency": {
+                  "scope": {
+                    "namespace": "controlled",
+                    "profileId": "soissons-project",
+                    "profileVersion": "v1"
+                  },
+                  "generation": 1,
+                  "validUntil": "2026-10-23T12:09:40.950Z",
+                  "evidenceRefs": [
+                    {
+                      "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                      "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                    }
+                  ]
+                },
+                "candidateOrderLineIds": [
+                  "OL-A"
+                ]
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:43.057Z",
+            "completedAt": "2026-10-22T12:09:43.125Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:8",
+            "tool": "model_intent",
+            "input": {
+              "turn": 2,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:43.288Z",
+            "completedAt": "2026-10-22T12:09:43.288Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:9",
+            "tool": "model_result",
+            "input": {
+              "turn": 2
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:43.288Z",
+            "completedAt": "2026-10-22T12:09:43.452Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:10",
+            "tool": "evaluate_options",
+            "input": {
+              "callId": "evaluate",
+              "arguments": {
+                "targetOrderLineId": "OL-A"
+              }
+            },
+            "output": {
+              "callId": "evaluate",
+              "result": {
+                "id": "case-run-evaluation:ebc514421bfb8f651ad0cf8e4e363305094c78a52a7f77c3cae5d32d189a77b8",
+                "facts": {
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "coverage": [
+                    {
+                      "unit": "palette",
+                      "covered": 0,
+                      "depotId": "DEP-LILLE",
+                      "orderId": "ORD-A",
+                      "needDate": "2026-10-23",
+                      "quantity": 8,
+                      "shortage": 8,
+                      "unknowns": [],
+                      "productId": "SKU-ISO100",
+                      "allocations": [],
+                      "orderLineId": "OL-A",
+                      "requiredDate": "2026-10-23"
+                    },
+                    {
+                      "unit": "palette",
+                      "covered": 8,
+                      "depotId": "DEP-CENTRE",
+                      "orderId": "ORD-B",
+                      "needDate": "2026-11-05",
+                      "quantity": 8,
+                      "shortage": 0,
+                      "unknowns": [
+                        "UNCONFIRMED_INBOUND:POL-2"
+                      ],
+                      "productId": "SKU-ISO100",
+                      "allocations": [
+                        {
+                          "quantity": 8,
+                          "sourceId": "ST-C100",
+                          "availableDate": "2026-10-22"
+                        }
+                      ],
+                      "orderLineId": "OL-B",
+                      "requiredDate": "2026-11-05"
+                    }
+                  ],
+                  "dataOrigin": "synthetic",
+                  "impactKind": "risk",
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  },
+                  "confirmation": {
+                    "kind": "inbound_date_confirmed",
+                    "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "actorId": "RESEARCH-OPERATOR",
+                    "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+                    "companyId": "CO-RESEARCH-R1-EMPTY",
+                    "productId": "SKU-ISO100",
+                    "dataOrigin": "synthetic",
+                    "confirmedAt": "2026-10-22T12:09:41.446Z",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+                    "policyVersion": "P1",
+                    "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                    "purchaseOrderLineId": "POL-1",
+                    "exposureOrderLineIds": [
+                      "OL-A"
+                    ],
+                    "previousExpectedDate": "2026-10-27",
+                    "confirmedExpectedDate": "2026-10-27"
+                  },
+                  "coverageBasis": "confirmed_internal_synthetic",
+                  "actualCoverage": [
+                    {
+                      "unit": "palette",
+                      "covered": 0,
+                      "depotId": "DEP-LILLE",
+                      "orderId": "ORD-A",
+                      "needDate": "2026-10-23",
+                      "quantity": 8,
+                      "shortage": 8,
+                      "unknowns": [],
+                      "productId": "SKU-ISO100",
+                      "allocations": [],
+                      "orderLineId": "OL-A",
+                      "requiredDate": "2026-10-23"
+                    },
+                    {
+                      "unit": "palette",
+                      "covered": 8,
+                      "depotId": "DEP-CENTRE",
+                      "orderId": "ORD-B",
+                      "needDate": "2026-11-05",
+                      "quantity": 8,
+                      "shortage": 0,
+                      "unknowns": [
+                        "UNCONFIRMED_INBOUND:POL-2"
+                      ],
+                      "productId": "SKU-ISO100",
+                      "allocations": [
+                        {
+                          "quantity": 8,
+                          "sourceId": "ST-C100",
+                          "availableDate": "2026-10-22"
+                        }
+                      ],
+                      "orderLineId": "OL-B",
+                      "requiredDate": "2026-11-05"
+                    }
+                  ],
+                  "relationCondition": {
+                    "code": "EXTERNAL_RELATION_UNVERIFIED",
+                    "caseRef": {
+                      "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                      "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                    },
+                    "evidenceRef": {
+                      "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                      "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                    }
+                  },
+                  "targetOrderLineId": "OL-A"
+                },
+                "options": [
+                  {
+                    "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+                    "kind": "wait",
+                    "label": "Keep current coverage",
+                    "status": "rejected",
+                    "costEur": 0,
+                    "effects": {
+                      "unit": "palette",
+                      "quoteId": null,
+                      "coverage": [
+                        {
+                          "unit": "palette",
+                          "covered": 0,
+                          "depotId": "DEP-LILLE",
+                          "orderId": "ORD-A",
+                          "needDate": "2026-10-23",
+                          "quantity": 8,
+                          "shortage": 8,
+                          "unknowns": [],
+                          "productId": "SKU-ISO100",
+                          "allocations": [],
+                          "orderLineId": "OL-A",
+                          "requiredDate": "2026-10-23"
+                        },
+                        {
+                          "unit": "palette",
+                          "covered": 8,
+                          "depotId": "DEP-CENTRE",
+                          "orderId": "ORD-B",
+                          "needDate": "2026-11-05",
+                          "quantity": 8,
+                          "shortage": 0,
+                          "unknowns": [
+                            "UNCONFIRMED_INBOUND:POL-2"
+                          ],
+                          "productId": "SKU-ISO100",
+                          "allocations": [
+                            {
+                              "quantity": 8,
+                              "sourceId": "ST-C100",
+                              "availableDate": "2026-10-22"
+                            }
+                          ],
+                          "orderLineId": "OL-B",
+                          "requiredDate": "2026-11-05"
+                        }
+                      ],
+                      "quantity": 8,
+                      "productId": "SKU-ISO100",
+                      "toDepotId": "DEP-LILLE",
+                      "arrivalDate": null,
+                      "fromDepotId": null,
+                      "simulationOnly": true,
+                      "relationCondition": {
+                        "code": "EXTERNAL_RELATION_UNVERIFIED",
+                        "caseRef": {
+                          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                        },
+                        "evidenceRef": {
+                          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                        }
+                      },
+                      "targetOrderLineId": "OL-A",
+                      "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+                    },
+                    "reasons": [
+                      "UNCOVERED:OL-A:8"
+                    ],
+                    "conditions": [
+                      "UNCOVERED:OL-A:8",
+                      "EXTERNAL_RELATION_UNVERIFIED"
+                    ]
+                  },
+                  {
+                    "id": "transfer:4ff795fd03fac9c64cdb9ed8764ceb1b0415b887413b18702014c99e06420f37",
+                    "kind": "transfer",
+                    "label": "Prepare a transfer",
+                    "status": "conditional",
+                    "costEur": 120,
+                    "effects": {
+                      "unit": "palette",
+                      "quoteId": "TR-C-L",
+                      "coverage": [
+                        {
+                          "unit": "palette",
+                          "covered": 8,
+                          "depotId": "DEP-LILLE",
+                          "orderId": "ORD-A",
+                          "needDate": "2026-10-23",
+                          "quantity": 8,
+                          "shortage": 0,
+                          "unknowns": [],
+                          "productId": "SKU-ISO100",
+                          "allocations": [
+                            {
+                              "quantity": 8,
+                              "sourceId": "TR-C-L",
+                              "availableDate": "2026-10-23"
+                            }
+                          ],
+                          "orderLineId": "OL-A",
+                          "requiredDate": "2026-10-23"
+                        },
+                        {
+                          "unit": "palette",
+                          "covered": 0,
+                          "depotId": "DEP-CENTRE",
+                          "orderId": "ORD-B",
+                          "needDate": "2026-11-05",
+                          "quantity": 8,
+                          "shortage": 8,
+                          "unknowns": [
+                            "UNCONFIRMED_INBOUND:POL-2"
+                          ],
+                          "productId": "SKU-ISO100",
+                          "allocations": [],
+                          "orderLineId": "OL-B",
+                          "requiredDate": "2026-11-03"
+                        }
+                      ],
+                      "quantity": 8,
+                      "productId": "SKU-ISO100",
+                      "toDepotId": "DEP-LILLE",
+                      "arrivalDate": "2026-10-23",
+                      "fromDepotId": "DEP-CENTRE",
+                      "simulationOnly": true,
+                      "relationCondition": {
+                        "code": "EXTERNAL_RELATION_UNVERIFIED",
+                        "caseRef": {
+                          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                        },
+                        "evidenceRef": {
+                          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                        }
+                      },
+                      "targetOrderLineId": "OL-A",
+                      "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+                    },
+                    "reasons": [
+                      "UNCOVERED:OL-B:8"
+                    ],
+                    "conditions": [
+                      "UNCONFIRMED_INBOUND:POL-2",
+                      "UNCOVERED:OL-B:8",
+                      "EXTERNAL_RELATION_UNVERIFIED"
+                    ]
+                  },
+                  {
+                    "id": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+                    "kind": "emergency_purchase",
+                    "label": "Prepare an emergency purchase",
+                    "status": "feasible",
+                    "costEur": 1420,
+                    "effects": {
+                      "unit": "palette",
+                      "quoteId": "URG-1",
+                      "coverage": [
+                        {
+                          "unit": "palette",
+                          "covered": 8,
+                          "depotId": "DEP-LILLE",
+                          "orderId": "ORD-A",
+                          "needDate": "2026-10-23",
+                          "quantity": 8,
+                          "shortage": 0,
+                          "unknowns": [],
+                          "productId": "SKU-ISO100",
+                          "allocations": [
+                            {
+                              "quantity": 8,
+                              "sourceId": "URG-1",
+                              "availableDate": "2026-10-23"
+                            }
+                          ],
+                          "orderLineId": "OL-A",
+                          "requiredDate": "2026-10-23"
+                        },
+                        {
+                          "unit": "palette",
+                          "covered": 8,
+                          "depotId": "DEP-CENTRE",
+                          "orderId": "ORD-B",
+                          "needDate": "2026-11-05",
+                          "quantity": 8,
+                          "shortage": 0,
+                          "unknowns": [
+                            "UNCONFIRMED_INBOUND:POL-2"
+                          ],
+                          "productId": "SKU-ISO100",
+                          "allocations": [
+                            {
+                              "quantity": 8,
+                              "sourceId": "ST-C100",
+                              "availableDate": "2026-10-22"
+                            }
+                          ],
+                          "orderLineId": "OL-B",
+                          "requiredDate": "2026-11-05"
+                        }
+                      ],
+                      "quantity": 8,
+                      "productId": "SKU-ISO100",
+                      "toDepotId": "DEP-LILLE",
+                      "arrivalDate": "2026-10-23",
+                      "fromDepotId": null,
+                      "simulationOnly": true,
+                      "relationCondition": {
+                        "code": "EXTERNAL_RELATION_UNVERIFIED",
+                        "caseRef": {
+                          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                        },
+                        "evidenceRef": {
+                          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                        }
+                      },
+                      "targetOrderLineId": "OL-A",
+                      "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+                    },
+                    "reasons": [],
+                    "conditions": [
+                      "EXTERNAL_RELATION_UNVERIFIED"
+                    ]
+                  }
+                ],
+                "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "companyId": "CO-RESEARCH-R1-EMPTY",
+                "constraints": [
+                  "SAME_SKU_AND_UNIT",
+                  "NO_STOCK_EFFECT",
+                  "SERVER_DECISION_REQUIRED",
+                  "EXTERNAL_RELATION_UNVERIFIED"
+                ],
+                "evaluatedAt": "2026-10-22T08:55:00+02:00",
+                "policyVersion": "P1"
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:43.609Z",
+            "completedAt": "2026-10-22T12:09:43.675Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:11",
+            "tool": "model_intent",
+            "input": {
+              "turn": 3,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:43.821Z",
+            "completedAt": "2026-10-22T12:09:43.821Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:12",
+            "tool": "model_result",
+            "input": {
+              "turn": 3
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:43.821Z",
+            "completedAt": "2026-10-22T12:09:43.991Z"
+          },
+          {
+            "id": "da2c42b5-9b11-4a92-aabf-b7834c6e4881:trace:13",
+            "tool": "prepare_proposal",
+            "input": {
+              "callId": "prepare",
+              "arguments": {
+                "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+                "evaluationId": "case-run-evaluation:ebc514421bfb8f651ad0cf8e4e363305094c78a52a7f77c3cae5d32d189a77b8"
+              }
+            },
+            "output": {
+              "callId": "prepare",
+              "result": {
+                "status": "pending",
+                "caseRef": {
+                  "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                  "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                },
+                "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                "conditions": [
+                  "EXTERNAL_RELATION_UNVERIFIED"
+                ],
+                "proposalId": "proposal:da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+                "nonExecuting": true,
+                "approvalBlocked": false,
+                "serverAuthorizationRequired": true
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:44.146Z",
+            "completedAt": "2026-10-22T12:09:44.283Z"
+          }
+        ],
+        "actorId": "EMP-PAUL",
+        "caseRef": {
+          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+        },
+        "message": "Proposal ready for review. No stock was changed.",
+        "question": "Read controlled research and the released internally confirmed case, then calculate a current synthetic emergency plan for OL-A. Deterministic state-guard test only.",
+        "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:41.611Z",
+        "proposalId": "proposal:da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+        "completedAt": "2026-10-22T12:09:44.623Z",
+        "operationKey": "r2-control-plan",
+        "policyVersion": "P1",
+        "researchScope": {
+          "namespace": "controlled",
+          "profileId": "soissons-project",
+          "profileVersion": "v1"
+        },
+        "researchResult": {
+          "outcome": "available",
+          "conditions": [
+            "SOURCE_OBSERVATION_ONLY",
+            "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+            "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+            "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+          ],
+          "dependencies": [
+            {
+              "scope": {
+                "namespace": "controlled",
+                "profileId": "soissons-project",
+                "profileVersion": "v1"
+              },
+              "generation": 1,
+              "validUntil": "2026-10-23T12:09:40.950Z",
+              "evidenceRefs": [
+                {
+                  "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                  "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                  "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                }
+              ]
+            }
+          ],
+          "observations": [
+            {
+              "ref": {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              },
+              "evidence": {
+                "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                "mode": "test",
+                "title": "CONTROLLED research correction test, not a publisher statement",
+                "family": "supplier",
+                "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+                "dataOrigin": "public",
+                "provenance": {
+                  "method": "fetch",
+                  "endpoint": "https://api.keenable.ai/v1/fetch",
+                  "provider": "keenable",
+                  "indexedAt": null,
+                  "profileId": "soissons-project",
+                  "truncated": false
+                },
+                "collectedAt": "2026-10-22T12:09:40.950Z",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "publishedAt": "2026-10-01T00:00:00.000Z"
+              },
+              "testOnly": true,
+              "conditions": [
+                "SOURCE_OBSERVATION_ONLY",
+                "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+              ],
+              "qualification": "source_observation_only"
+            }
+          ]
+        },
+        "researchDependencies": [
+          {
+            "scope": {
+              "namespace": "controlled",
+              "profileId": "soissons-project",
+              "profileVersion": "v1"
+            },
+            "generation": 1,
+            "validUntil": "2026-10-23T12:09:40.950Z",
+            "evidenceRefs": [
+              {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54",
+      "operation_key": "r2-new-session-v2-read",
+      "payload": {
+        "id": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54",
+        "mode": "test",
+        "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+        "status": "needs_input",
+        "traces": [
+          {
+            "id": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54:trace:1",
+            "tool": "context_manifest",
+            "input": {},
+            "output": {
+              "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+              "companyId": "CO-RESEARCH-R1-EMPTY",
+              "memoryIds": [],
+              "assembledAt": "2026-10-22T12:09:48.939Z",
+              "snapshotAsOf": "2026-10-22T08:55:00+02:00",
+              "toolsVersion": "agent-tools/3",
+              "policyVersion": "P1",
+              "researchScope": {
+                "namespace": "controlled",
+                "profileId": "soissons-project",
+                "profileVersion": "v1"
+              },
+              "contractVersion": "C1"
+            },
+            "startedAt": "2026-10-22T12:09:48.939Z",
+            "completedAt": "2026-10-22T12:09:48.939Z"
+          },
+          {
+            "id": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54:trace:2",
+            "tool": "model_intent",
+            "input": {
+              "turn": 0,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:49.167Z",
+            "completedAt": "2026-10-22T12:09:49.167Z"
+          },
+          {
+            "id": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54:trace:3",
+            "tool": "model_result",
+            "input": {
+              "turn": 0
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:49.167Z",
+            "completedAt": "2026-10-22T12:09:49.242Z"
+          },
+          {
+            "id": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54:trace:4",
+            "tool": "read_research_context",
+            "input": {
+              "callId": "read-research",
+              "arguments": {}
+            },
+            "output": {
+              "callId": "read-research",
+              "result": {
+                "scope": {
+                  "namespace": "controlled",
+                  "profileId": "soissons-project",
+                  "profileVersion": "v1"
+                },
+                "state": "reusable",
+                "reason": "Received source observations within the server freshness policy; no business fact inferred.",
+                "reused": true,
+                "checkedAt": "2026-10-22T12:09:49.435Z",
+                "companyId": "CO-RESEARCH-R1-EMPTY",
+                "conditions": [
+                  "SOURCE_OBSERVATION_ONLY",
+                  "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                  "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                  "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+                ],
+                "generation": 2,
+                "validUntil": "2026-10-23T12:09:47.966Z",
+                "observations": [
+                  {
+                    "ref": {
+                      "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+                      "occurrenceId": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e"
+                    },
+                    "evidence": {
+                      "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                      "mode": "test",
+                      "title": "CONTROLLED research correction test, not a publisher statement",
+                      "family": "supplier",
+                      "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. The earlier 2028 project schedule is withdrawn; the timetable is unknown. No relationship to the test company's suppliers or products is verified.",
+                      "dataOrigin": "public",
+                      "provenance": {
+                        "method": "fetch",
+                        "endpoint": "https://api.keenable.ai/v1/fetch",
+                        "provider": "keenable",
+                        "indexedAt": null,
+                        "profileId": "soissons-project",
+                        "truncated": false
+                      },
+                      "collectedAt": "2026-10-22T12:09:40.950Z",
+                      "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+                      "publishedAt": "2026-10-02T00:00:00.000Z"
+                    },
+                    "testOnly": true,
+                    "conditions": [
+                      "SOURCE_OBSERVATION_ONLY",
+                      "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                      "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                      "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+                    ],
+                    "qualification": "source_observation_only"
+                  }
+                ],
+                "occurrenceId": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e",
+                "externalCalls": 0,
+                "untrustedData": true
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:49.385Z",
+            "completedAt": "2026-10-22T12:09:49.508Z"
+          },
+          {
+            "id": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54:trace:5",
+            "tool": "model_intent",
+            "input": {
+              "turn": 1,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:49.727Z",
+            "completedAt": "2026-10-22T12:09:49.727Z"
+          },
+          {
+            "id": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54:trace:6",
+            "tool": "model_result",
+            "input": {
+              "turn": 1
+            },
+            "output": {
+              "status": "end"
+            },
+            "startedAt": "2026-10-22T12:09:49.727Z",
+            "completedAt": "2026-10-22T12:09:49.803Z"
+          }
+        ],
+        "actorId": "EMP-PAUL",
+        "message": "Prior research evidence is available with its sources and conditions. No new external search or business action is implied.",
+        "question": "Read the latest controlled research and its explicit limits. No business proposal.",
+        "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:48.531Z",
+        "proposalId": null,
+        "completedAt": "2026-10-22T12:09:49.942Z",
+        "operationKey": "r2-new-session-v2-read",
+        "policyVersion": "P1",
+        "researchScope": {
+          "namespace": "controlled",
+          "profileId": "soissons-project",
+          "profileVersion": "v1"
+        },
+        "researchResult": {
+          "outcome": "available",
+          "conditions": [
+            "SOURCE_OBSERVATION_ONLY",
+            "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+            "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+            "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+          ],
+          "dependencies": [
+            {
+              "scope": {
+                "namespace": "controlled",
+                "profileId": "soissons-project",
+                "profileVersion": "v1"
+              },
+              "generation": 2,
+              "validUntil": "2026-10-23T12:09:47.966Z",
+              "evidenceRefs": [
+                {
+                  "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                  "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+                  "occurrenceId": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e"
+                }
+              ]
+            }
+          ],
+          "observations": [
+            {
+              "ref": {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+                "occurrenceId": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e"
+              },
+              "evidence": {
+                "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                "mode": "test",
+                "title": "CONTROLLED research correction test, not a publisher statement",
+                "family": "supplier",
+                "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. The earlier 2028 project schedule is withdrawn; the timetable is unknown. No relationship to the test company's suppliers or products is verified.",
+                "dataOrigin": "public",
+                "provenance": {
+                  "method": "fetch",
+                  "endpoint": "https://api.keenable.ai/v1/fetch",
+                  "provider": "keenable",
+                  "indexedAt": null,
+                  "profileId": "soissons-project",
+                  "truncated": false
+                },
+                "collectedAt": "2026-10-22T12:09:40.950Z",
+                "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+                "publishedAt": "2026-10-02T00:00:00.000Z"
+              },
+              "testOnly": true,
+              "conditions": [
+                "SOURCE_OBSERVATION_ONLY",
+                "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+              ],
+              "qualification": "source_observation_only"
+            }
+          ]
+        },
+        "researchDependencies": [
+          {
+            "scope": {
+              "namespace": "controlled",
+              "profileId": "soissons-project",
+              "profileVersion": "v1"
+            },
+            "generation": 2,
+            "validUntil": "2026-10-23T12:09:47.966Z",
+            "evidenceRefs": [
+              {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+                "occurrenceId": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "21de755e-a2f2-4bea-974b-c3c1983c3649",
+      "operation_key": "r2-pending-plan",
+      "payload": {
+        "id": "21de755e-a2f2-4bea-974b-c3c1983c3649",
+        "mode": "test",
+        "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+        "status": "proposal",
+        "traces": [
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:1",
+            "tool": "context_manifest",
+            "input": {},
+            "output": {
+              "caseRef": {
+                "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+              },
+              "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+              "companyId": "CO-RESEARCH-R1-EMPTY",
+              "memoryIds": [],
+              "assembledAt": "2026-10-22T12:09:45.287Z",
+              "evidenceRef": {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              },
+              "snapshotAsOf": "2026-10-22T08:55:00+02:00",
+              "toolsVersion": "agent-tools/3",
+              "policyVersion": "P1",
+              "researchScope": {
+                "namespace": "controlled",
+                "profileId": "soissons-project",
+                "profileVersion": "v1"
+              },
+              "contractVersion": "C1"
+            },
+            "startedAt": "2026-10-22T12:09:45.287Z",
+            "completedAt": "2026-10-22T12:09:45.287Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:2",
+            "tool": "model_intent",
+            "input": {
+              "turn": 0,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:45.520Z",
+            "completedAt": "2026-10-22T12:09:45.520Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:3",
+            "tool": "model_result",
+            "input": {
+              "turn": 0
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:45.520Z",
+            "completedAt": "2026-10-22T12:09:45.596Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:4",
+            "tool": "read_research_context",
+            "input": {
+              "callId": "read-research",
+              "arguments": {}
+            },
+            "output": {
+              "callId": "read-research",
+              "result": {
+                "scope": {
+                  "namespace": "controlled",
+                  "profileId": "soissons-project",
+                  "profileVersion": "v1"
+                },
+                "state": "reusable",
+                "reason": "Received source observations within the server freshness policy; no business fact inferred.",
+                "reused": true,
+                "checkedAt": "2026-10-22T12:09:45.784Z",
+                "companyId": "CO-RESEARCH-R1-EMPTY",
+                "conditions": [
+                  "SOURCE_OBSERVATION_ONLY",
+                  "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                  "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                  "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+                ],
+                "generation": 1,
+                "validUntil": "2026-10-23T12:09:40.950Z",
+                "observations": [
+                  {
+                    "ref": {
+                      "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                      "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                    },
+                    "evidence": {
+                      "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                      "mode": "test",
+                      "title": "CONTROLLED research correction test, not a publisher statement",
+                      "family": "supplier",
+                      "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+                      "dataOrigin": "public",
+                      "provenance": {
+                        "method": "fetch",
+                        "endpoint": "https://api.keenable.ai/v1/fetch",
+                        "provider": "keenable",
+                        "indexedAt": null,
+                        "profileId": "soissons-project",
+                        "truncated": false
+                      },
+                      "collectedAt": "2026-10-22T12:09:40.950Z",
+                      "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                      "publishedAt": "2026-10-01T00:00:00.000Z"
+                    },
+                    "testOnly": true,
+                    "conditions": [
+                      "SOURCE_OBSERVATION_ONLY",
+                      "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                      "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                      "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+                    ],
+                    "qualification": "source_observation_only"
+                  }
+                ],
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae",
+                "externalCalls": 0,
+                "untrustedData": true
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:45.739Z",
+            "completedAt": "2026-10-22T12:09:45.856Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:5",
+            "tool": "model_intent",
+            "input": {
+              "turn": 1,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:46.101Z",
+            "completedAt": "2026-10-22T12:09:46.101Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:6",
+            "tool": "model_result",
+            "input": {
+              "turn": 1
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:46.101Z",
+            "completedAt": "2026-10-22T12:09:46.185Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:7",
+            "tool": "read_observation_context",
+            "input": {
+              "callId": "read-case",
+              "arguments": {}
+            },
+            "output": {
+              "callId": "read-case",
+              "result": {
+                "ref": {
+                  "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                  "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                },
+                "relation": {
+                  "basis": "Controlled source correction test only. No publisher relationship established.",
+                  "status": "unverified",
+                  "productId": "SKU-ISO100",
+                  "supplierId": null
+                },
+                "testOnly": true,
+                "impactKind": "risk",
+                "evidenceRef": {
+                  "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                  "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                  "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                },
+                "observation": {
+                  "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                  "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                  "mode": "test",
+                  "title": "CONTROLLED research correction test, not a publisher statement",
+                  "family": "supplier",
+                  "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+                  "dataOrigin": "public",
+                  "provenance": {
+                    "method": "fetch",
+                    "endpoint": "https://api.keenable.ai/v1/fetch",
+                    "provider": "keenable",
+                    "indexedAt": null,
+                    "profileId": "soissons-project",
+                    "truncated": false
+                  },
+                  "collectedAt": "2026-10-22T12:09:40.950Z",
+                  "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                  "publishedAt": "2026-10-01T00:00:00.000Z"
+                },
+                "confirmation": {
+                  "kind": "inbound_date_confirmed",
+                  "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+                  "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                  "actorId": "RESEARCH-OPERATOR",
+                  "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+                  "companyId": "CO-RESEARCH-R1-EMPTY",
+                  "productId": "SKU-ISO100",
+                  "dataOrigin": "synthetic",
+                  "confirmedAt": "2026-10-22T12:09:41.446Z",
+                  "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+                  "policyVersion": "P1",
+                  "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                  "purchaseOrderLineId": "POL-1",
+                  "exposureOrderLineIds": [
+                    "OL-A"
+                  ],
+                  "previousExpectedDate": "2026-10-27",
+                  "confirmedExpectedDate": "2026-10-27"
+                },
+                "coverageBasis": "confirmed_internal_synthetic",
+                "policyVersion": "P1",
+                "qualification": "to_verify",
+                "untrustedData": true,
+                "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                "relationVerified": false,
+                "researchDependency": {
+                  "scope": {
+                    "namespace": "controlled",
+                    "profileId": "soissons-project",
+                    "profileVersion": "v1"
+                  },
+                  "generation": 1,
+                  "validUntil": "2026-10-23T12:09:40.950Z",
+                  "evidenceRefs": [
+                    {
+                      "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                      "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                    }
+                  ]
+                },
+                "candidateOrderLineIds": [
+                  "OL-A"
+                ]
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:46.348Z",
+            "completedAt": "2026-10-22T12:09:46.418Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:8",
+            "tool": "model_intent",
+            "input": {
+              "turn": 2,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:46.662Z",
+            "completedAt": "2026-10-22T12:09:46.662Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:9",
+            "tool": "model_result",
+            "input": {
+              "turn": 2
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:46.662Z",
+            "completedAt": "2026-10-22T12:09:46.740Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:10",
+            "tool": "evaluate_options",
+            "input": {
+              "callId": "evaluate",
+              "arguments": {
+                "targetOrderLineId": "OL-A"
+              }
+            },
+            "output": {
+              "callId": "evaluate",
+              "result": {
+                "id": "case-run-evaluation:5123c34d894e7c94ecd0cd2d8d636c966b530d7642b73306e66b71263ced7814",
+                "facts": {
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "coverage": [
+                    {
+                      "unit": "palette",
+                      "covered": 0,
+                      "depotId": "DEP-LILLE",
+                      "orderId": "ORD-A",
+                      "needDate": "2026-10-23",
+                      "quantity": 8,
+                      "shortage": 8,
+                      "unknowns": [],
+                      "productId": "SKU-ISO100",
+                      "allocations": [],
+                      "orderLineId": "OL-A",
+                      "requiredDate": "2026-10-23"
+                    },
+                    {
+                      "unit": "palette",
+                      "covered": 8,
+                      "depotId": "DEP-CENTRE",
+                      "orderId": "ORD-B",
+                      "needDate": "2026-11-05",
+                      "quantity": 8,
+                      "shortage": 0,
+                      "unknowns": [
+                        "UNCONFIRMED_INBOUND:POL-2"
+                      ],
+                      "productId": "SKU-ISO100",
+                      "allocations": [
+                        {
+                          "quantity": 8,
+                          "sourceId": "ST-C100",
+                          "availableDate": "2026-10-22"
+                        }
+                      ],
+                      "orderLineId": "OL-B",
+                      "requiredDate": "2026-11-05"
+                    }
+                  ],
+                  "dataOrigin": "synthetic",
+                  "impactKind": "risk",
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  },
+                  "confirmation": {
+                    "kind": "inbound_date_confirmed",
+                    "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "actorId": "RESEARCH-OPERATOR",
+                    "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+                    "companyId": "CO-RESEARCH-R1-EMPTY",
+                    "productId": "SKU-ISO100",
+                    "dataOrigin": "synthetic",
+                    "confirmedAt": "2026-10-22T12:09:41.446Z",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+                    "policyVersion": "P1",
+                    "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                    "purchaseOrderLineId": "POL-1",
+                    "exposureOrderLineIds": [
+                      "OL-A"
+                    ],
+                    "previousExpectedDate": "2026-10-27",
+                    "confirmedExpectedDate": "2026-10-27"
+                  },
+                  "coverageBasis": "confirmed_internal_synthetic",
+                  "actualCoverage": [
+                    {
+                      "unit": "palette",
+                      "covered": 0,
+                      "depotId": "DEP-LILLE",
+                      "orderId": "ORD-A",
+                      "needDate": "2026-10-23",
+                      "quantity": 8,
+                      "shortage": 8,
+                      "unknowns": [],
+                      "productId": "SKU-ISO100",
+                      "allocations": [],
+                      "orderLineId": "OL-A",
+                      "requiredDate": "2026-10-23"
+                    },
+                    {
+                      "unit": "palette",
+                      "covered": 8,
+                      "depotId": "DEP-CENTRE",
+                      "orderId": "ORD-B",
+                      "needDate": "2026-11-05",
+                      "quantity": 8,
+                      "shortage": 0,
+                      "unknowns": [
+                        "UNCONFIRMED_INBOUND:POL-2"
+                      ],
+                      "productId": "SKU-ISO100",
+                      "allocations": [
+                        {
+                          "quantity": 8,
+                          "sourceId": "ST-C100",
+                          "availableDate": "2026-10-22"
+                        }
+                      ],
+                      "orderLineId": "OL-B",
+                      "requiredDate": "2026-11-05"
+                    }
+                  ],
+                  "relationCondition": {
+                    "code": "EXTERNAL_RELATION_UNVERIFIED",
+                    "caseRef": {
+                      "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                      "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                    },
+                    "evidenceRef": {
+                      "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                      "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                      "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                    }
+                  },
+                  "targetOrderLineId": "OL-A"
+                },
+                "options": [
+                  {
+                    "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+                    "kind": "wait",
+                    "label": "Keep current coverage",
+                    "status": "rejected",
+                    "costEur": 0,
+                    "effects": {
+                      "unit": "palette",
+                      "quoteId": null,
+                      "coverage": [
+                        {
+                          "unit": "palette",
+                          "covered": 0,
+                          "depotId": "DEP-LILLE",
+                          "orderId": "ORD-A",
+                          "needDate": "2026-10-23",
+                          "quantity": 8,
+                          "shortage": 8,
+                          "unknowns": [],
+                          "productId": "SKU-ISO100",
+                          "allocations": [],
+                          "orderLineId": "OL-A",
+                          "requiredDate": "2026-10-23"
+                        },
+                        {
+                          "unit": "palette",
+                          "covered": 8,
+                          "depotId": "DEP-CENTRE",
+                          "orderId": "ORD-B",
+                          "needDate": "2026-11-05",
+                          "quantity": 8,
+                          "shortage": 0,
+                          "unknowns": [
+                            "UNCONFIRMED_INBOUND:POL-2"
+                          ],
+                          "productId": "SKU-ISO100",
+                          "allocations": [
+                            {
+                              "quantity": 8,
+                              "sourceId": "ST-C100",
+                              "availableDate": "2026-10-22"
+                            }
+                          ],
+                          "orderLineId": "OL-B",
+                          "requiredDate": "2026-11-05"
+                        }
+                      ],
+                      "quantity": 8,
+                      "productId": "SKU-ISO100",
+                      "toDepotId": "DEP-LILLE",
+                      "arrivalDate": null,
+                      "fromDepotId": null,
+                      "simulationOnly": true,
+                      "relationCondition": {
+                        "code": "EXTERNAL_RELATION_UNVERIFIED",
+                        "caseRef": {
+                          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                        },
+                        "evidenceRef": {
+                          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                        }
+                      },
+                      "targetOrderLineId": "OL-A",
+                      "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+                    },
+                    "reasons": [
+                      "UNCOVERED:OL-A:8"
+                    ],
+                    "conditions": [
+                      "UNCOVERED:OL-A:8",
+                      "EXTERNAL_RELATION_UNVERIFIED"
+                    ]
+                  },
+                  {
+                    "id": "transfer:4ff795fd03fac9c64cdb9ed8764ceb1b0415b887413b18702014c99e06420f37",
+                    "kind": "transfer",
+                    "label": "Prepare a transfer",
+                    "status": "conditional",
+                    "costEur": 120,
+                    "effects": {
+                      "unit": "palette",
+                      "quoteId": "TR-C-L",
+                      "coverage": [
+                        {
+                          "unit": "palette",
+                          "covered": 8,
+                          "depotId": "DEP-LILLE",
+                          "orderId": "ORD-A",
+                          "needDate": "2026-10-23",
+                          "quantity": 8,
+                          "shortage": 0,
+                          "unknowns": [],
+                          "productId": "SKU-ISO100",
+                          "allocations": [
+                            {
+                              "quantity": 8,
+                              "sourceId": "TR-C-L",
+                              "availableDate": "2026-10-23"
+                            }
+                          ],
+                          "orderLineId": "OL-A",
+                          "requiredDate": "2026-10-23"
+                        },
+                        {
+                          "unit": "palette",
+                          "covered": 0,
+                          "depotId": "DEP-CENTRE",
+                          "orderId": "ORD-B",
+                          "needDate": "2026-11-05",
+                          "quantity": 8,
+                          "shortage": 8,
+                          "unknowns": [
+                            "UNCONFIRMED_INBOUND:POL-2"
+                          ],
+                          "productId": "SKU-ISO100",
+                          "allocations": [],
+                          "orderLineId": "OL-B",
+                          "requiredDate": "2026-11-03"
+                        }
+                      ],
+                      "quantity": 8,
+                      "productId": "SKU-ISO100",
+                      "toDepotId": "DEP-LILLE",
+                      "arrivalDate": "2026-10-23",
+                      "fromDepotId": "DEP-CENTRE",
+                      "simulationOnly": true,
+                      "relationCondition": {
+                        "code": "EXTERNAL_RELATION_UNVERIFIED",
+                        "caseRef": {
+                          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                        },
+                        "evidenceRef": {
+                          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                        }
+                      },
+                      "targetOrderLineId": "OL-A",
+                      "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+                    },
+                    "reasons": [
+                      "UNCOVERED:OL-B:8"
+                    ],
+                    "conditions": [
+                      "UNCONFIRMED_INBOUND:POL-2",
+                      "UNCOVERED:OL-B:8",
+                      "EXTERNAL_RELATION_UNVERIFIED"
+                    ]
+                  },
+                  {
+                    "id": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+                    "kind": "emergency_purchase",
+                    "label": "Prepare an emergency purchase",
+                    "status": "feasible",
+                    "costEur": 1420,
+                    "effects": {
+                      "unit": "palette",
+                      "quoteId": "URG-1",
+                      "coverage": [
+                        {
+                          "unit": "palette",
+                          "covered": 8,
+                          "depotId": "DEP-LILLE",
+                          "orderId": "ORD-A",
+                          "needDate": "2026-10-23",
+                          "quantity": 8,
+                          "shortage": 0,
+                          "unknowns": [],
+                          "productId": "SKU-ISO100",
+                          "allocations": [
+                            {
+                              "quantity": 8,
+                              "sourceId": "URG-1",
+                              "availableDate": "2026-10-23"
+                            }
+                          ],
+                          "orderLineId": "OL-A",
+                          "requiredDate": "2026-10-23"
+                        },
+                        {
+                          "unit": "palette",
+                          "covered": 8,
+                          "depotId": "DEP-CENTRE",
+                          "orderId": "ORD-B",
+                          "needDate": "2026-11-05",
+                          "quantity": 8,
+                          "shortage": 0,
+                          "unknowns": [
+                            "UNCONFIRMED_INBOUND:POL-2"
+                          ],
+                          "productId": "SKU-ISO100",
+                          "allocations": [
+                            {
+                              "quantity": 8,
+                              "sourceId": "ST-C100",
+                              "availableDate": "2026-10-22"
+                            }
+                          ],
+                          "orderLineId": "OL-B",
+                          "requiredDate": "2026-11-05"
+                        }
+                      ],
+                      "quantity": 8,
+                      "productId": "SKU-ISO100",
+                      "toDepotId": "DEP-LILLE",
+                      "arrivalDate": "2026-10-23",
+                      "fromDepotId": null,
+                      "simulationOnly": true,
+                      "relationCondition": {
+                        "code": "EXTERNAL_RELATION_UNVERIFIED",
+                        "caseRef": {
+                          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                        },
+                        "evidenceRef": {
+                          "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                          "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                          "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                        }
+                      },
+                      "targetOrderLineId": "OL-A",
+                      "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+                    },
+                    "reasons": [],
+                    "conditions": [
+                      "EXTERNAL_RELATION_UNVERIFIED"
+                    ]
+                  }
+                ],
+                "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "companyId": "CO-RESEARCH-R1-EMPTY",
+                "constraints": [
+                  "SAME_SKU_AND_UNIT",
+                  "NO_STOCK_EFFECT",
+                  "SERVER_DECISION_REQUIRED",
+                  "EXTERNAL_RELATION_UNVERIFIED"
+                ],
+                "evaluatedAt": "2026-10-22T08:55:00+02:00",
+                "policyVersion": "P1"
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:46.890Z",
+            "completedAt": "2026-10-22T12:09:46.958Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:11",
+            "tool": "model_intent",
+            "input": {
+              "turn": 3,
+              "model": "R2-INJECTED-PROTOCOL-NO-MODEL-CALL",
+              "version": "test/1"
+            },
+            "output": {
+              "status": "started"
+            },
+            "startedAt": "2026-10-22T12:09:47.198Z",
+            "completedAt": "2026-10-22T12:09:47.198Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:12",
+            "tool": "model_result",
+            "input": {
+              "turn": 3
+            },
+            "output": {
+              "status": "tool_calls"
+            },
+            "startedAt": "2026-10-22T12:09:47.198Z",
+            "completedAt": "2026-10-22T12:09:47.281Z"
+          },
+          {
+            "id": "21de755e-a2f2-4bea-974b-c3c1983c3649:trace:13",
+            "tool": "prepare_proposal",
+            "input": {
+              "callId": "prepare",
+              "arguments": {
+                "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+                "evaluationId": "case-run-evaluation:5123c34d894e7c94ecd0cd2d8d636c966b530d7642b73306e66b71263ced7814"
+              }
+            },
+            "output": {
+              "callId": "prepare",
+              "result": {
+                "status": "pending",
+                "caseRef": {
+                  "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                  "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                },
+                "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+                "conditions": [
+                  "EXTERNAL_RELATION_UNVERIFIED"
+                ],
+                "proposalId": "proposal:21de755e-a2f2-4bea-974b-c3c1983c3649",
+                "nonExecuting": true,
+                "approvalBlocked": false,
+                "serverAuthorizationRequired": true
+              },
+              "isError": false
+            },
+            "startedAt": "2026-10-22T12:09:47.437Z",
+            "completedAt": "2026-10-22T12:09:47.673Z"
+          }
+        ],
+        "actorId": "EMP-PAUL",
+        "caseRef": {
+          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+        },
+        "message": "Proposal ready for review. No stock was changed.",
+        "question": "Read controlled research and the released internally confirmed case, then calculate a current synthetic emergency plan for OL-A. Deterministic state-guard test only.",
+        "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:44.981Z",
+        "proposalId": "proposal:21de755e-a2f2-4bea-974b-c3c1983c3649",
+        "completedAt": "2026-10-22T12:09:47.913Z",
+        "operationKey": "r2-pending-plan",
+        "policyVersion": "P1",
+        "researchScope": {
+          "namespace": "controlled",
+          "profileId": "soissons-project",
+          "profileVersion": "v1"
+        },
+        "researchResult": {
+          "outcome": "available",
+          "conditions": [
+            "SOURCE_OBSERVATION_ONLY",
+            "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+            "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+            "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+          ],
+          "dependencies": [
+            {
+              "scope": {
+                "namespace": "controlled",
+                "profileId": "soissons-project",
+                "profileVersion": "v1"
+              },
+              "generation": 1,
+              "validUntil": "2026-10-23T12:09:40.950Z",
+              "evidenceRefs": [
+                {
+                  "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                  "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                  "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                }
+              ]
+            }
+          ],
+          "observations": [
+            {
+              "ref": {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              },
+              "evidence": {
+                "id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "url": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+                "mode": "test",
+                "title": "CONTROLLED research correction test, not a publisher statement",
+                "family": "supplier",
+                "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+                "dataOrigin": "public",
+                "provenance": {
+                  "method": "fetch",
+                  "endpoint": "https://api.keenable.ai/v1/fetch",
+                  "provider": "keenable",
+                  "indexedAt": null,
+                  "profileId": "soissons-project",
+                  "truncated": false
+                },
+                "collectedAt": "2026-10-22T12:09:40.950Z",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "publishedAt": "2026-10-01T00:00:00.000Z"
+              },
+              "testOnly": true,
+              "conditions": [
+                "SOURCE_OBSERVATION_ONLY",
+                "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                "CONTROLLED_TEST_NOT_A_PUBLIC_FACT"
+              ],
+              "qualification": "source_observation_only"
+            }
+          ]
+        },
+        "researchDependencies": [
+          {
+            "scope": {
+              "namespace": "controlled",
+              "profileId": "soissons-project",
+              "profileVersion": "v1"
+            },
+            "generation": 1,
+            "validUntil": "2026-10-23T12:09:40.950Z",
+            "evidenceRefs": [
+              {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "proposals": [
+    {
+      "id": "proposal:da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+      "payload": {
+        "id": "proposal:da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+        "runId": "da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+        "title": "Confirmed internal fact: Prepare an emergency purchase",
+        "status": "approved",
+        "caseRef": {
+          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+        },
+        "summary": "Inbound date confirmed in the simulation by the operator. Link to the public news remains unverified. This proposal uses current durable synthetic records. The server must verify the confirmation event, current versions and permissions before recording approval. No purchase or transfer is executed.",
+        "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+        "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:44.221Z",
+        "conditions": [
+          "EXTERNAL_RELATION_UNVERIFIED"
+        ],
+        "evaluation": {
+          "id": "case-run-evaluation:ebc514421bfb8f651ad0cf8e4e363305094c78a52a7f77c3cae5d32d189a77b8",
+          "facts": {
+            "caseRef": {
+              "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+              "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+            },
+            "coverage": [
+              {
+                "unit": "palette",
+                "covered": 0,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 8,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "dataOrigin": "synthetic",
+            "impactKind": "risk",
+            "evidenceRef": {
+              "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+              "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+              "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+            },
+            "confirmation": {
+              "kind": "inbound_date_confirmed",
+              "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+              "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+              "actorId": "RESEARCH-OPERATOR",
+              "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+              "companyId": "CO-RESEARCH-R1-EMPTY",
+              "productId": "SKU-ISO100",
+              "dataOrigin": "synthetic",
+              "confirmedAt": "2026-10-22T12:09:41.446Z",
+              "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+              "policyVersion": "P1",
+              "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+              "purchaseOrderLineId": "POL-1",
+              "exposureOrderLineIds": [
+                "OL-A"
+              ],
+              "previousExpectedDate": "2026-10-27",
+              "confirmedExpectedDate": "2026-10-27"
+            },
+            "coverageBasis": "confirmed_internal_synthetic",
+            "actualCoverage": [
+              {
+                "unit": "palette",
+                "covered": 0,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 8,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "relationCondition": {
+              "code": "EXTERNAL_RELATION_UNVERIFIED",
+              "caseRef": {
+                "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+              },
+              "evidenceRef": {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              }
+            },
+            "targetOrderLineId": "OL-A"
+          },
+          "options": [
+            {
+              "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+              "kind": "wait",
+              "label": "Keep current coverage",
+              "status": "rejected",
+              "costEur": 0,
+              "effects": {
+                "unit": "palette",
+                "quoteId": null,
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 0,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 8,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "ST-C100",
+                        "availableDate": "2026-10-22"
+                      }
+                    ],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-05"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": null,
+                "fromDepotId": null,
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [
+                "UNCOVERED:OL-A:8"
+              ],
+              "conditions": [
+                "UNCOVERED:OL-A:8",
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            },
+            {
+              "id": "transfer:4ff795fd03fac9c64cdb9ed8764ceb1b0415b887413b18702014c99e06420f37",
+              "kind": "transfer",
+              "label": "Prepare a transfer",
+              "status": "conditional",
+              "costEur": 120,
+              "effects": {
+                "unit": "palette",
+                "quoteId": "TR-C-L",
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "TR-C-L",
+                        "availableDate": "2026-10-23"
+                      }
+                    ],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 0,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 8,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-03"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": "2026-10-23",
+                "fromDepotId": "DEP-CENTRE",
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [
+                "UNCOVERED:OL-B:8"
+              ],
+              "conditions": [
+                "UNCONFIRMED_INBOUND:POL-2",
+                "UNCOVERED:OL-B:8",
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            },
+            {
+              "id": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+              "kind": "emergency_purchase",
+              "label": "Prepare an emergency purchase",
+              "status": "feasible",
+              "costEur": 1420,
+              "effects": {
+                "unit": "palette",
+                "quoteId": "URG-1",
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "URG-1",
+                        "availableDate": "2026-10-23"
+                      }
+                    ],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "ST-C100",
+                        "availableDate": "2026-10-22"
+                      }
+                    ],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-05"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": "2026-10-23",
+                "fromDepotId": null,
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [],
+              "conditions": [
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            }
+          ],
+          "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+          "unknowns": [
+            "UNCONFIRMED_INBOUND:POL-2"
+          ],
+          "companyId": "CO-RESEARCH-R1-EMPTY",
+          "constraints": [
+            "SAME_SKU_AND_UNIT",
+            "NO_STOCK_EFFECT",
+            "SERVER_DECISION_REQUIRED",
+            "EXTERNAL_RELATION_UNVERIFIED"
+          ],
+          "evaluatedAt": "2026-10-22T08:55:00+02:00",
+          "policyVersion": "P1"
+        },
+        "policyVersion": "P1",
+        "researchDependencies": [
+          {
+            "scope": {
+              "namespace": "controlled",
+              "profileId": "soissons-project",
+              "profileVersion": "v1"
+            },
+            "generation": 1,
+            "validUntil": "2026-10-23T12:09:40.950Z",
+            "evidenceRefs": [
+              {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "proposal:21de755e-a2f2-4bea-974b-c3c1983c3649",
+      "payload": {
+        "id": "proposal:21de755e-a2f2-4bea-974b-c3c1983c3649",
+        "runId": "21de755e-a2f2-4bea-974b-c3c1983c3649",
+        "title": "Confirmed internal fact: Prepare an emergency purchase",
+        "status": "stale",
+        "caseRef": {
+          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+        },
+        "summary": "Inbound date confirmed in the simulation by the operator. Link to the public news remains unverified. This proposal uses current durable synthetic records. The server must verify the confirmation event, current versions and permissions before recording approval. No purchase or transfer is executed.",
+        "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+        "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:47.591Z",
+        "conditions": [
+          "EXTERNAL_RELATION_UNVERIFIED"
+        ],
+        "evaluation": {
+          "id": "case-run-evaluation:5123c34d894e7c94ecd0cd2d8d636c966b530d7642b73306e66b71263ced7814",
+          "facts": {
+            "caseRef": {
+              "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+              "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+            },
+            "coverage": [
+              {
+                "unit": "palette",
+                "covered": 0,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 8,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "dataOrigin": "synthetic",
+            "impactKind": "risk",
+            "evidenceRef": {
+              "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+              "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+              "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+            },
+            "confirmation": {
+              "kind": "inbound_date_confirmed",
+              "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+              "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+              "actorId": "RESEARCH-OPERATOR",
+              "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+              "companyId": "CO-RESEARCH-R1-EMPTY",
+              "productId": "SKU-ISO100",
+              "dataOrigin": "synthetic",
+              "confirmedAt": "2026-10-22T12:09:41.446Z",
+              "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+              "policyVersion": "P1",
+              "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+              "purchaseOrderLineId": "POL-1",
+              "exposureOrderLineIds": [
+                "OL-A"
+              ],
+              "previousExpectedDate": "2026-10-27",
+              "confirmedExpectedDate": "2026-10-27"
+            },
+            "coverageBasis": "confirmed_internal_synthetic",
+            "actualCoverage": [
+              {
+                "unit": "palette",
+                "covered": 0,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 8,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "relationCondition": {
+              "code": "EXTERNAL_RELATION_UNVERIFIED",
+              "caseRef": {
+                "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+              },
+              "evidenceRef": {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              }
+            },
+            "targetOrderLineId": "OL-A"
+          },
+          "options": [
+            {
+              "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+              "kind": "wait",
+              "label": "Keep current coverage",
+              "status": "rejected",
+              "costEur": 0,
+              "effects": {
+                "unit": "palette",
+                "quoteId": null,
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 0,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 8,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "ST-C100",
+                        "availableDate": "2026-10-22"
+                      }
+                    ],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-05"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": null,
+                "fromDepotId": null,
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [
+                "UNCOVERED:OL-A:8"
+              ],
+              "conditions": [
+                "UNCOVERED:OL-A:8",
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            },
+            {
+              "id": "transfer:4ff795fd03fac9c64cdb9ed8764ceb1b0415b887413b18702014c99e06420f37",
+              "kind": "transfer",
+              "label": "Prepare a transfer",
+              "status": "conditional",
+              "costEur": 120,
+              "effects": {
+                "unit": "palette",
+                "quoteId": "TR-C-L",
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "TR-C-L",
+                        "availableDate": "2026-10-23"
+                      }
+                    ],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 0,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 8,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-03"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": "2026-10-23",
+                "fromDepotId": "DEP-CENTRE",
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [
+                "UNCOVERED:OL-B:8"
+              ],
+              "conditions": [
+                "UNCONFIRMED_INBOUND:POL-2",
+                "UNCOVERED:OL-B:8",
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            },
+            {
+              "id": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+              "kind": "emergency_purchase",
+              "label": "Prepare an emergency purchase",
+              "status": "feasible",
+              "costEur": 1420,
+              "effects": {
+                "unit": "palette",
+                "quoteId": "URG-1",
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "URG-1",
+                        "availableDate": "2026-10-23"
+                      }
+                    ],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "ST-C100",
+                        "availableDate": "2026-10-22"
+                      }
+                    ],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-05"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": "2026-10-23",
+                "fromDepotId": null,
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [],
+              "conditions": [
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            }
+          ],
+          "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+          "unknowns": [
+            "UNCONFIRMED_INBOUND:POL-2"
+          ],
+          "companyId": "CO-RESEARCH-R1-EMPTY",
+          "constraints": [
+            "SAME_SKU_AND_UNIT",
+            "NO_STOCK_EFFECT",
+            "SERVER_DECISION_REQUIRED",
+            "EXTERNAL_RELATION_UNVERIFIED"
+          ],
+          "evaluatedAt": "2026-10-22T08:55:00+02:00",
+          "policyVersion": "P1"
+        },
+        "policyVersion": "P1",
+        "researchDependencies": [
+          {
+            "scope": {
+              "namespace": "controlled",
+              "profileId": "soissons-project",
+              "profileVersion": "v1"
+            },
+            "generation": 1,
+            "validUntil": "2026-10-23T12:09:40.950Z",
+            "evidenceRefs": [
+              {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "operation_key": "r2-control-approval",
+      "proposal_id": "proposal:da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+      "result": {
+        "id": "proposal:da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+        "runId": "da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+        "title": "Confirmed internal fact: Prepare an emergency purchase",
+        "status": "approved",
+        "caseRef": {
+          "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+          "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+        },
+        "summary": "Inbound date confirmed in the simulation by the operator. Link to the public news remains unverified. This proposal uses current durable synthetic records. The server must verify the confirmation event, current versions and permissions before recording approval. No purchase or transfer is executed.",
+        "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+        "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+        "companyId": "CO-RESEARCH-R1-EMPTY",
+        "createdAt": "2026-10-22T12:09:44.221Z",
+        "conditions": [
+          "EXTERNAL_RELATION_UNVERIFIED"
+        ],
+        "evaluation": {
+          "id": "case-run-evaluation:ebc514421bfb8f651ad0cf8e4e363305094c78a52a7f77c3cae5d32d189a77b8",
+          "facts": {
+            "caseRef": {
+              "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+              "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+            },
+            "coverage": [
+              {
+                "unit": "palette",
+                "covered": 0,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 8,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "dataOrigin": "synthetic",
+            "impactKind": "risk",
+            "evidenceRef": {
+              "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+              "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+              "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+            },
+            "confirmation": {
+              "kind": "inbound_date_confirmed",
+              "basis": "Explicit independent synthetic internal confirmation for the controlled state-guard test.",
+              "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+              "actorId": "RESEARCH-OPERATOR",
+              "eventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+              "companyId": "CO-RESEARCH-R1-EMPTY",
+              "productId": "SKU-ISO100",
+              "dataOrigin": "synthetic",
+              "confirmedAt": "2026-10-22T12:09:41.446Z",
+              "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+              "policyVersion": "P1",
+              "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+              "purchaseOrderLineId": "POL-1",
+              "exposureOrderLineIds": [
+                "OL-A"
+              ],
+              "previousExpectedDate": "2026-10-27",
+              "confirmedExpectedDate": "2026-10-27"
+            },
+            "coverageBasis": "confirmed_internal_synthetic",
+            "actualCoverage": [
+              {
+                "unit": "palette",
+                "covered": 0,
+                "depotId": "DEP-LILLE",
+                "orderId": "ORD-A",
+                "needDate": "2026-10-23",
+                "quantity": 8,
+                "shortage": 8,
+                "unknowns": [],
+                "productId": "SKU-ISO100",
+                "allocations": [],
+                "orderLineId": "OL-A",
+                "requiredDate": "2026-10-23"
+              },
+              {
+                "unit": "palette",
+                "covered": 8,
+                "depotId": "DEP-CENTRE",
+                "orderId": "ORD-B",
+                "needDate": "2026-11-05",
+                "quantity": 8,
+                "shortage": 0,
+                "unknowns": [
+                  "UNCONFIRMED_INBOUND:POL-2"
+                ],
+                "productId": "SKU-ISO100",
+                "allocations": [
+                  {
+                    "quantity": 8,
+                    "sourceId": "ST-C100",
+                    "availableDate": "2026-10-22"
+                  }
+                ],
+                "orderLineId": "OL-B",
+                "requiredDate": "2026-11-05"
+              }
+            ],
+            "relationCondition": {
+              "code": "EXTERNAL_RELATION_UNVERIFIED",
+              "caseRef": {
+                "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+              },
+              "evidenceRef": {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              }
+            },
+            "targetOrderLineId": "OL-A"
+          },
+          "options": [
+            {
+              "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+              "kind": "wait",
+              "label": "Keep current coverage",
+              "status": "rejected",
+              "costEur": 0,
+              "effects": {
+                "unit": "palette",
+                "quoteId": null,
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 0,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 8,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "ST-C100",
+                        "availableDate": "2026-10-22"
+                      }
+                    ],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-05"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": null,
+                "fromDepotId": null,
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [
+                "UNCOVERED:OL-A:8"
+              ],
+              "conditions": [
+                "UNCOVERED:OL-A:8",
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            },
+            {
+              "id": "transfer:4ff795fd03fac9c64cdb9ed8764ceb1b0415b887413b18702014c99e06420f37",
+              "kind": "transfer",
+              "label": "Prepare a transfer",
+              "status": "conditional",
+              "costEur": 120,
+              "effects": {
+                "unit": "palette",
+                "quoteId": "TR-C-L",
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "TR-C-L",
+                        "availableDate": "2026-10-23"
+                      }
+                    ],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 0,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 8,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-03"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": "2026-10-23",
+                "fromDepotId": "DEP-CENTRE",
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [
+                "UNCOVERED:OL-B:8"
+              ],
+              "conditions": [
+                "UNCONFIRMED_INBOUND:POL-2",
+                "UNCOVERED:OL-B:8",
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            },
+            {
+              "id": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+              "kind": "emergency_purchase",
+              "label": "Prepare an emergency purchase",
+              "status": "feasible",
+              "costEur": 1420,
+              "effects": {
+                "unit": "palette",
+                "quoteId": "URG-1",
+                "coverage": [
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-LILLE",
+                    "orderId": "ORD-A",
+                    "needDate": "2026-10-23",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "URG-1",
+                        "availableDate": "2026-10-23"
+                      }
+                    ],
+                    "orderLineId": "OL-A",
+                    "requiredDate": "2026-10-23"
+                  },
+                  {
+                    "unit": "palette",
+                    "covered": 8,
+                    "depotId": "DEP-CENTRE",
+                    "orderId": "ORD-B",
+                    "needDate": "2026-11-05",
+                    "quantity": 8,
+                    "shortage": 0,
+                    "unknowns": [
+                      "UNCONFIRMED_INBOUND:POL-2"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "allocations": [
+                      {
+                        "quantity": 8,
+                        "sourceId": "ST-C100",
+                        "availableDate": "2026-10-22"
+                      }
+                    ],
+                    "orderLineId": "OL-B",
+                    "requiredDate": "2026-11-05"
+                  }
+                ],
+                "quantity": 8,
+                "productId": "SKU-ISO100",
+                "toDepotId": "DEP-LILLE",
+                "arrivalDate": "2026-10-23",
+                "fromDepotId": null,
+                "simulationOnly": true,
+                "relationCondition": {
+                  "code": "EXTERNAL_RELATION_UNVERIFIED",
+                  "caseRef": {
+                    "caseId": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+                    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22"
+                  },
+                  "evidenceRef": {
+                    "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                    "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                    "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+                  }
+                },
+                "targetOrderLineId": "OL-A",
+                "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789"
+              },
+              "reasons": [],
+              "conditions": [
+                "EXTERNAL_RELATION_UNVERIFIED"
+              ]
+            }
+          ],
+          "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+          "unknowns": [
+            "UNCONFIRMED_INBOUND:POL-2"
+          ],
+          "companyId": "CO-RESEARCH-R1-EMPTY",
+          "constraints": [
+            "SAME_SKU_AND_UNIT",
+            "NO_STOCK_EFFECT",
+            "SERVER_DECISION_REQUIRED",
+            "EXTERNAL_RELATION_UNVERIFIED"
+          ],
+          "evaluatedAt": "2026-10-22T08:55:00+02:00",
+          "policyVersion": "P1"
+        },
+        "policyVersion": "P1",
+        "researchDependencies": [
+          {
+            "scope": {
+              "namespace": "controlled",
+              "profileId": "soissons-project",
+              "profileVersion": "v1"
+            },
+            "generation": 1,
+            "validUntil": "2026-10-23T12:09:40.950Z",
+            "evidenceRefs": [
+              {
+                "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+                "contentHash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+                "occurrenceId": "research-occurrence:c733e063a868296c770d915e59e7cd0d303d41b58aa10aa73175f5d2131483ae"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "snapshot": {
+    "policy": {
+      "rules": [
+        {
+          "id": "RULE-SKU",
+          "rule": "same SKU and same unit; no implicit substitution"
+        },
+        {
+          "id": "RULE-RESERVE",
+          "rule": "reserved stock is unavailable until a versioned plan replaces coverage before all confirmed need dates"
+        },
+        {
+          "id": "RULE-INBOUND",
+          "rule": "unconfirmed inbound is not confirmed coverage"
+        },
+        {
+          "id": "RULE-MARGIN",
+          "rule": "replacement for B must be confirmed and available at least 2 calendar days before 2026-11-05"
+        },
+        {
+          "id": "RULE-PERMISSION",
+          "rule": "only simulation actions; authenticated actor role and amount checked on exact current plan"
+        },
+        {
+          "id": "RULE-PRIORITY",
+          "rule": "no implicit priority that breaks another confirmed order"
+        }
+      ],
+      "company_id": "CO-RESEARCH-R1-EMPTY",
+      "data_origin": "synthetic",
+      "role_approval_note": "Fixture policy for demo only; no real authorization granted",
+      "public_search_inputs": "public sector terms only; no customer/order/employee data sent to web provider",
+      "agent_context_excludes": [
+        "scenarios/",
+        "evaluation/",
+        "expected outcomes",
+        "future events"
+      ]
+    },
+    "dataset": {
+      "as_of": "2026-10-22T08:55:00+02:00",
+      "schema": "accel-demo-fixtures/1",
+      "tables": {
+        "depots": [
+          {
+            "id": "DEP-LILLE",
+            "label": "Lille"
+          },
+          {
+            "id": "DEP-CENTRE",
+            "label": "Centre"
+          },
+          {
+            "id": "DEP-SUD",
+            "label": "Sud"
+          }
+        ],
+        "orders": [
+          {
+            "id": "ORD-A",
+            "site": "Chantier A",
+            "status": "confirmed",
+            "depot_id": "DEP-LILLE",
+            "need_date": "2026-10-23",
+            "customer_id": "CLI-A"
+          },
+          {
+            "id": "ORD-B",
+            "site": "Chantier B",
+            "status": "confirmed",
+            "depot_id": "DEP-CENTRE",
+            "need_date": "2026-11-05",
+            "customer_id": "CLI-B"
+          }
+        ],
+        "company": [
+          {
+            "id": "CO-RESEARCH-R1-EMPTY",
+            "name": "Demo Negoce",
+            "sector": "negoce de materiaux",
+            "timezone": "Europe/Paris",
+            "data_origin": "synthetic",
+            "reference_date": "2026-10-22"
+          }
+        ],
+        "products": [
+          {
+            "id": "SKU-ISO100",
+            "unit": "palette",
+            "label": "Isolant reference 100",
+            "substitution_allowed": false
+          },
+          {
+            "id": "SKU-ISO120",
+            "unit": "palette",
+            "label": "Isolant reference 120",
+            "substitution_allowed": false
+          }
+        ],
+        "customers": [
+          {
+            "id": "CLI-A",
+            "name": "Entreprise Chantier A Fictive",
+            "sales_owner_id": "EMP-PAUL"
+          },
+          {
+            "id": "CLI-B",
+            "name": "Entreprise Chantier B Fictive",
+            "sales_owner_id": "EMP-PAUL"
+          }
+        ],
+        "employees": [
+          {
+            "id": "EMP-PAUL",
+            "name": "Paul Martin",
+            "role": "direction",
+            "email": "paul@demo-negoce.example",
+            "approval_ceiling_eur": 2000
+          },
+          {
+            "id": "EMP-CLAIRE",
+            "name": "Claire Bernard",
+            "role": "achats",
+            "email": "claire@demo-negoce.example",
+            "approval_ceiling_eur": 150
+          },
+          {
+            "id": "EMP-ALEX",
+            "name": "Alex Petit",
+            "role": "logistique",
+            "email": "alex@demo-negoce.example",
+            "approval_ceiling_eur": 0
+          }
+        ],
+        "inventory": [
+          {
+            "id": "ST-L100",
+            "unit": "palette",
+            "depot_id": "DEP-LILLE",
+            "product_id": "SKU-ISO100",
+            "physical_quantity": 0
+          },
+          {
+            "id": "ST-C100",
+            "unit": "palette",
+            "depot_id": "DEP-CENTRE",
+            "product_id": "SKU-ISO100",
+            "physical_quantity": 8
+          },
+          {
+            "id": "ST-S100",
+            "unit": "palette",
+            "depot_id": "DEP-SUD",
+            "product_id": "SKU-ISO100",
+            "physical_quantity": 0
+          },
+          {
+            "id": "ST-S120",
+            "unit": "palette",
+            "depot_id": "DEP-SUD",
+            "product_id": "SKU-ISO120",
+            "physical_quantity": 8
+          }
+        ],
+        "suppliers": [
+          {
+            "id": "SUP-1",
+            "name": "Isolant Alpha Fictif",
+            "email": "contact@alpha-fictif.example"
+          },
+          {
+            "id": "SUP-2",
+            "name": "Isolant Beta Fictif",
+            "email": "contact@beta-fictif.example"
+          },
+          {
+            "id": "SUP-3",
+            "name": "Depot Secours Fictif",
+            "email": "contact@secours-fictif.example"
+          }
+        ],
+        "order_lines": [
+          {
+            "id": "OL-A",
+            "unit": "palette",
+            "order_id": "ORD-A",
+            "quantity": 8,
+            "product_id": "SKU-ISO100"
+          },
+          {
+            "id": "OL-B",
+            "unit": "palette",
+            "order_id": "ORD-B",
+            "quantity": 8,
+            "product_id": "SKU-ISO100"
+          }
+        ],
+        "reservations": [
+          {
+            "id": "RES-B",
+            "unit": "palette",
+            "status": "active",
+            "quantity": 8,
+            "stock_id": "ST-C100",
+            "order_line_id": "OL-B"
+          }
+        ],
+        "watch_drafts": [
+          {
+            "id": "WATCH-1",
+            "status": "draft",
+            "approved": false,
+            "public_topic": "isolants France perturbations production",
+            "requested_by": "EMP-PAUL",
+            "alert_condition": "commande exposee a verifier",
+            "cadence_minutes": 15
+          }
+        ],
+        "purchase_orders": [
+          {
+            "id": "PO-1",
+            "status": "confirmed",
+            "supplier_id": "SUP-1"
+          },
+          {
+            "id": "PO-2",
+            "status": "planned_unconfirmed",
+            "supplier_id": "SUP-2"
+          }
+        ],
+        "emergency_quotes": [
+          {
+            "id": "URG-1",
+            "unit": "palette",
+            "valid_on": "2026-10-22",
+            "lead_days": 1,
+            "product_id": "SKU-ISO100",
+            "freight_eur": 180,
+            "supplier_id": "SUP-3",
+            "quote_status": "synthetic_confirmed",
+            "unit_price_eur": 155,
+            "available_quantity": 8,
+            "destination_depot_id": "DEP-LILLE"
+          }
+        ],
+        "transport_quotes": [
+          {
+            "id": "TR-C-L",
+            "unit": "palette",
+            "capacity": 8,
+            "cost_eur": 120,
+            "valid_on": "2026-10-22",
+            "lead_days": 1,
+            "product_id": "SKU-ISO100",
+            "to_depot_id": "DEP-LILLE",
+            "quote_status": "synthetic_confirmed",
+            "from_depot_id": "DEP-CENTRE"
+          }
+        ],
+        "crm_opportunities": [
+          {
+            "id": "OPP-A",
+            "note": "Client demande une date fiable. Aucune priorite autorisant a retarder B.",
+            "stage": "confirmed_order",
+            "order_id": "ORD-A",
+            "owner_id": "EMP-PAUL",
+            "customer_id": "CLI-A"
+          }
+        ],
+        "inbound_allocations": [
+          {
+            "id": "ALLOC-A",
+            "unit": "palette",
+            "quantity": 8,
+            "order_line_id": "OL-A",
+            "purchase_order_line_id": "POL-1"
+          }
+        ],
+        "purchase_order_lines": [
+          {
+            "id": "POL-1",
+            "unit": "palette",
+            "depot_id": "DEP-LILLE",
+            "quantity": 8,
+            "product_id": "SKU-ISO100",
+            "expected_date": "2026-10-27",
+            "unit_cost_eur": 120,
+            "purchase_order_id": "PO-1"
+          },
+          {
+            "id": "POL-2",
+            "unit": "palette",
+            "depot_id": "DEP-CENTRE",
+            "quantity": 8,
+            "product_id": "SKU-ISO100",
+            "expected_date": "2026-10-29",
+            "unit_cost_eur": 120,
+            "purchase_order_id": "PO-2"
+          }
+        ]
+      },
+      "company_id": "CO-RESEARCH-R1-EMPTY",
+      "data_origin": "synthetic",
+      "snapshot_revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09"
+    },
+    "revision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+    "companyId": "CO-RESEARCH-R1-EMPTY",
+    "updatedAt": "2026-10-22T12:09:41.418Z",
+    "dataOrigin": "synthetic",
+    "policyVersion": "P1"
+  },
+  "snapshotHash": "d00c9de04e8c22f0be6d4b3e14f5be7702d97ed007db23afbd64280eed034d60",
+  "r1Hash": "8ca199c424abf11a70dfd91718d44d6764b363d2599384a35c6d76d1c6f17d20"
+}

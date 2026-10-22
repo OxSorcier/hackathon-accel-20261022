@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "kind": "controlled_test_input_only",
+  "status": "PROPOSED_NOT_RUN",
+  "companyA": "CO-RESEARCH-TEST-A",
+  "companyB": "CO-RESEARCH-TEST-B",
+  "topic": "projet usine isolants ROCKWOOL Soissons France",
+  "profileId": "soissons-project",
+  "sourceUrl": "https://www.rockwool.com/fr/soissons/actualites/controlled-test-memory/",
+  "sourceUrlWarning": "Identity fixture only. No HTTP request may be sent to this fictional path. It is not a publisher statement.",
+  "mode": "test",
+  "dataOrigin": "public",
+  "dataOriginWarning": "The public tag is required by the SourceEvidence contract; mode:test and the controlled-test header must remain explicit. This is synthetic test content, never a live public fact.",
+  "versions": [
+    {
+      "version": "v1",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. An industrial project is planned for 2028. No relationship to the test company's suppliers or products is verified.",
+      "expectedQualification": "Project timing only; no delivery disruption established."
+    },
+    {
+      "version": "v2",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "content": "CONTROLLED TEST, NOT A PUBLISHER STATEMENT. The earlier 2028 project schedule is withdrawn; the timetable is unknown. No relationship to the test company's suppliers or products is verified.",
+      "expectedQualification": "Previous timing assertion superseded; timetable unknown, supplier relationship still unverified."
+    }
+  ],
+  "hashRule": "Compute source identity as keenable:sha256(sourceUrl), and each contentHash as sha256 of its exact UTF-8 content. Do not hand-copy invented hashes.",
+  "acceptance": [
+    "R1: new session and new run recover qualified v1 via authorized database tools before external research; previous answer is absent from prompt",
+    "R1: same behavior after restart, company isolation and homonym rejection",
+    "R2: same source identity plus changed hash retains both versions and links the correction",
+    "R2: affected case is revised and an old pending proposal is rejected or re-evaluated",
+    "R2: identical v2 ingestion creates no duplicate",
+    "Missing/stale/error/uncertain states remain explicit; actual tool calls, duration and provided tokens are recorded"
+  ]
+}

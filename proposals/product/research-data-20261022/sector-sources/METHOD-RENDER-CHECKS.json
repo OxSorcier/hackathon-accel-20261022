@@ -1,0 +1,59 @@
+{
+  "browser": "Isolated Chromium, local files. Aside local file access and viewport API unavailable in the earlier observed checks.",
+  "results": [
+    {
+      "document": "RESEARCH-METHOD-RETROSPECTIVE",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "tables": 1,
+      "externalResources": 0,
+      "mainTop": 430.0625
+    },
+    {
+      "document": "RESEARCH-METHOD-RETROSPECTIVE",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "tables": 1,
+      "externalResources": 0,
+      "mainTop": 353.703125
+    },
+    {
+      "document": "RESEARCH-METHOD-RETROSPECTIVE",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "tables": 1,
+      "externalResources": 0,
+      "mainTop": 350.265625
+    },
+    {
+      "document": "SECTOR-DATA-STRATEGY",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "tables": 4,
+      "externalResources": 0,
+      "mainTop": 430.0625
+    },
+    {
+      "document": "SECTOR-DATA-STRATEGY",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "tables": 4,
+      "externalResources": 0,
+      "mainTop": 353.703125
+    },
+    {
+      "document": "SECTOR-DATA-STRATEGY",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "tables": 4,
+      "externalResources": 0,
+      "mainTop": 330.46875
+    }
+  ]
+}

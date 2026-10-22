@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "status": "IN_PROGRESS",
+  "owner": "01a162bd-facf-7b63-861b-9bbf7f402938",
+  "authorization": "Erwan demande de tester le parcours connecté et d'avancer les raccords disponibles le 22 octobre 2026.",
+  "scope": ["src/ui", "tests/ui", "proposals/ui"],
+  "delta": "Consommer watch-capabilities et clarifier le reçu d'envoi de question. Aucun changement backend partagé.",
+  "previousReady": "proposals/ui/READY.json décrit la version précédente. Son manifeste v3 reste historique et ne couvre pas les prochains changements.",
+  "integrationGate": "Recevoir le prochain READY.json et ses empreintes avant de recompiler ou de déclarer la nouvelle UI reçue.",
+  "observedRuntime": "3001, CO-PARCOURS-PAUL, question persistée avec needs_input/model null. Le chat intégrateur prépare le fournisseur OpenAI, sans réalisation concurrente ici."
+}

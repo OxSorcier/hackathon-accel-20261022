@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "status": "READY_FOR_INTEGRATOR_RECEIPT",
+  "ready": true,
+  "date": "2026-10-22",
+  "scope": "CASE additive contract correction only. No research-memory code included.",
+  "baselineReceipt": "proposals/ui/READY.json, historical CASE v3e preserved unchanged",
+  "manifest": "proposals/ui/case-confirmation-delta/REVIEW-INPUT-v1.json",
+  "manifestSha256": "6f5dee2f3c8d7317be321912066bc8c997caec501e199b766639e5be30e091cc",
+  "files": [
+    { "path": "src/ui/api.ts", "sha256": "8078d6492d98e68b111f80ad3d69747ccad8a0845e89212fd83babb155b3fc46", "immutableSnapshot": "proposals/ui/case-confirmation-delta/api.ts.snapshot" },
+    { "path": "tests/ui/confirmation-boundary.test.ts", "sha256": "28d1f99b3d995fcc2ede3d5709e043e2d2a36ccf51b0b4f25dbaf7195b54e12b", "immutableSnapshot": "proposals/ui/case-confirmation-delta/confirmation-boundary.test.ts.snapshot" }
+  ],
+  "change": "Preserve optional exposureOrderLineIds as an array of unique canonical IDs, inclusive maximum 10000. Historical absence and [] remain distinct and valid. Full confirmation equality and all identity/version checks are unchanged.",
+  "validation": {
+    "red": "Five expected failures observed before the schema extension.",
+    "green": "8 targeted HTTP regression tests pass, including exact maximum, malformed IDs, duplicates, historical absence, empty array and evaluation mismatch.",
+    "existingUi": "52 pre-existing UI tests pass with the extension; combined initial run passed 59 before adding the maximum-edge case.",
+    "typecheck": "PASS",
+    "browser": "NOT_RUN for this schema-only delta",
+    "realApiAndAiven": "NOT_RUN by UI owner for this delta"
+  },
+  "reviews": [
+    { "agent": "/root/confirmation_counter", "modelRequested": "gpt-6.1-sol", "effort": "high", "forkTurns": "none", "servedModel": "UNATTESTED", "verdict": "NO_RETAINED_FINDING", "checks": "39 targeted tests, typecheck and 12 independent injected HTTP probes pass; canonical files and immutable snapshots match before/after." },
+    { "agent": "/root/confirmation_architecture", "modelRequested": "gpt-6-astra", "effort": "high", "forkTurns": "none", "servedModel": "UNATTESTED", "verdict": "NO_RETAINED_FINDING", "checks": "8 targeted tests and 27 independent injected checks pass; canonical files and immutable snapshots match before/after." }
+  ],
+  "integrationReviewReceipt": "proposals/integration/CONTINUITY-REVIEWS.json covers these exact API and test hashes, with two independent requested-model reviews and targeted HTTP continuity checks. Runtime promotion remains a separate integration proof.",
+  "nextAction": "Integrator may copy the immutable snapshots into the isolated flow source at their canonical paths. Its shared continuity panel is received for these bytes. The main source may subsequently move for the separately authorized research UI; use these exact snapshots for CASE.",
+  "publication": "No commit, push or deploy. No authority comparison relaxed."
+}

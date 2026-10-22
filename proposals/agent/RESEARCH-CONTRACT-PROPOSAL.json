@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "status": "PROPOSED_FOR_INTEGRATOR_CANONICALIZATION_NOT_IMPLEMENTED",
+  "createdAt": "2026-10-22T10:06:18.085334+00:00",
+  "objective": "Bounded research-memory lookup, explicit reuse/refresh and version invalidation in the existing company harness.",
+  "ownerThread": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "canonicalFilesOwnedByIntegrator": [
+    "src/contracts/index.ts",
+    "docs/CONTRACTS.md"
+  ],
+  "reuse": [
+    "accel_watch_definitions and occurrences for received public topic/profile",
+    "accel_watch_evidence company/source/content versions",
+    "existing decision cases and pending-proposal invalidation",
+    "existing durable run traces, leases and server actor authority"
+  ],
+  "proposedPortResponsibilities": {
+    "lookup": {
+      "authority": "Bound to server actor/company/run, never accepts company authority from model arguments.",
+      "input": "Received topic/profile and optional server-resolved entity identity; bounded lookup.",
+      "output": "Company-scoped current research generation plus bounded knowledge records and excluded records with reasons. Every usable record has immutable native ID/version, evidence tuples, source dates, qualification, validity conditions and unknowns."
+    },
+    "refresh": {
+      "authority": "Same run/company, only received public profiles, no arbitrary company query or arbitrary URL.",
+      "input": "Typed reason such as missing/stale/changed/insufficient, lookup generation, consulted refs and stable operation key.",
+      "output": "Completed/empty/partial/error/uncertain result with actual external call count and durable new refs/generation. No automatic retry for uncertain."
+    },
+    "validateCurrent": {
+      "input": "Company authority held by server factory plus pinned research generation or precise dependency refs.",
+      "output": "Current version/result. Changes between lookup, provider, tool, prepare, publish or approve prevent use of the old dependent proposal."
+    }
+  },
+  "proposedAgentBehavior": [
+    "Offer a bounded lookup tool distinct from recall_decisions. A positive lookup must precede an admitted external research action.",
+    "Validate and project results positively. A foreign company, invalid hash/reference, unknown entity mapping, invalid dates or inconsistent version cannot enter model context.",
+    "Reuse only currently eligible records. Retain source quotations, hypotheses and applicability limits; do not promote model prose or a log into a company fact.",
+    "When complement/refresh is required, record the deterministic validity reason and actual consulted versions before invoking the authorized port.",
+    "A refreshed or changed source invalidates old in-run evaluations/proposals; the next analysis starts from the newly released generation.",
+    "Persist actual lookup/reuse/exclusion/research-decision outputs in correlated traces, durations and supplied usage only."
+  ],
+  "questionsForCanonicalDecision": [
+    "Use a company research generation or precise referenced-version validation? A coarse generation is safe but can invalidate unrelated work.",
+    "How does qualification become eligible, and which current company/profile/entity fields are authoritative?",
+    "Should research retrieval be available to every question or only an explicit server-released research context?",
+    "What terminal output represents successful research reuse without a business proposal? Existing needs_input must not imply a failed retrieval.",
+    "How is the external refresh result retained across a process crash so a restart does not blindly repeat an uncertain call?"
+  ],
+  "acceptanceSource": "proposals/agent/RESEARCH-INTAKE.json R1 through R9; data-owner controlled scenario reused without HTTP to its fictional path",
+  "implementationScope": {
+    "builder": [
+      "src/agent/",
+      "tests/agent/",
+      "proposals/agent/"
+    ],
+    "integrator": [
+      "canonical types",
+      "server lookup/qualification/current-version ports",
+      "SQL and migrations",
+      "new session/restart/Aiven acceptance",
+      "stale source to case/proposal dependency integration"
+    ]
+  },
+  "limits": [
+    "Proposal only. No shared contract, code, fixture, dependency, source store or runtime state changed.",
+    "No new scheduler, knowledge registry, service or provider.",
+    "A final architecture choice belongs to the integrator; this proposal does not override its framing."
+  ]
+}

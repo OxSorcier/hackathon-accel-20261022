@@ -1,0 +1,39 @@
+{
+  "observedAt": "2026-10-22T11:15:44.773Z",
+  "allByteIdentical": true,
+  "checks": [
+    {
+      "label": "vision-md",
+      "id": "1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_",
+      "path": "docs/PRODUCT-VISION.md",
+      "byteIdentical": true,
+      "bytes": 14267,
+      "sha256": "b3d54b15cbdb62082bdb246b3408b353cb4b9088eb338cd4277111cd9085e758"
+    },
+    {
+      "label": "vision-html",
+      "id": "1cAFkWyF8YQNZTuQg-TXsxWMPrX4O7BYB",
+      "path": "docs/PRODUCT-VISION.html",
+      "byteIdentical": true,
+      "bytes": 172752,
+      "sha256": "a2ccdb3db8fe9ac64a567fa2f3a0fcf3544496974d989ab03fec3cd321cfdbf0"
+    },
+    {
+      "label": "demo-md",
+      "id": "1PJ9jbqHj0BSALsGPYZbPwNU2vhW4IExD",
+      "path": "proposals/product/alignment-20261022/DEMO-SCRIPT.md",
+      "byteIdentical": true,
+      "bytes": 13465,
+      "sha256": "f15c9aa46a5b0de62dc10419cb11ef15914a8dda71d206c51866b8ff5b523c80"
+    },
+    {
+      "label": "demo-html",
+      "id": "1ciaHiAmd67s1MLK4-DO4Y6vr0INg33RE",
+      "path": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+      "byteIdentical": true,
+      "bytes": 171873,
+      "sha256": "18238d49f2ca31591f179b56049e801985fc77217e1873ee24ff414992ae7841"
+    }
+  ],
+  "method": "Complete raw UTF-8 content returned by Drive fetch compared with local bytes; no inline base64 or signed URI persisted."
+}

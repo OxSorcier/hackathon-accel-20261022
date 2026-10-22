@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "HASHES_MATCH_UNIT_RECEIVED_INTEGRATED_REVIEW_PENDING",
+  "units": [
+    {
+      "receipt": "proposals/data/READY-INDUSTRIAL-DATA-v1.json",
+      "sha256": "3b07a803ce31599274bc478593bd06b2ed6bb5e92c7c3243c24ea34466797255",
+      "pins": 5
+    }
+  ],
+  "pins": [
+    {
+      "path": "proposals/data/industrial-analysis-schema.sql",
+      "sha256": "204005bb5ce53e230b0473fb2f10f4f1423b809493c4fd0c0e9eb175f17b3eda"
+    },
+    {
+      "path": "src/data/analysis-trigger.ts",
+      "sha256": "b18d884c29edfbb86952547685a90f8320e726f4ee909aab08bc52235f0510a2"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "e7822f04664c7ee474dc70569535530f84f517559dce859931442d67e11b66ea"
+    },
+    {
+      "path": "tests/data/industrial-relations.test.ts",
+      "sha256": "2bb7eb6a902e0d7bb1949af38d0bb0315a84874a420418007687bf92847aa50e"
+    },
+    {
+      "path": "tests/data/industrial-trigger-postgres.test.ts",
+      "sha256": "6429e5a24bedafba55b0b9b3c6a3161972e24e735971385f5eb2131f934e8402"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "status": "DOCUMENTARY_DELTA_DELIVERED_PRODUCT_E2E_NOT_RECEIVED",
+  "objective": "Keenable contract, sector signals, Exa comparison and FR/EU applicability facts for existing owners",
+  "ownerThreadId": "01a162e0-1387-7a10-92d4-97b76208a26c",
+  "humanAuthorization": {
+    "sourceThreadId": "01a162bd-e262-7fa2-a1f3-aab46f68fc1a",
+    "userMessageId": "01a162e9-e3a8-7391-8411-b166f70dabf9",
+    "readInThisTurn": true
+  },
+  "files": [
+    {
+      "path": "RECHERCHE-DATA-DELTA.md",
+      "bytes": 19146,
+      "sha256": "ced29ff38eb68ce05469d99a1e175120b93c6d132478b51db15c4b91bf7d9a0b"
+    },
+    {
+      "path": "RECHERCHE-DATA-DELTA.html",
+      "bytes": 184468,
+      "sha256": "bd89049d664eed5462749b6b8d85bb42525ccbd4565e9cbf225d65e9f28b1d84"
+    },
+    {
+      "path": "PUBLIC-SIGNALS.json",
+      "bytes": 2834,
+      "sha256": "559b24e605faa28fc26a9d74791141ad3c1157e72730ce4203aff81373ea671c"
+    },
+    {
+      "path": "REGULATORY-CANDIDATES.json",
+      "bytes": 5978,
+      "sha256": "2f09519976f748634dd4a0b4617a98eecaa02ef35b8213d304bcd42570477351"
+    },
+    {
+      "path": "evidence/API-TRIALS.json",
+      "bytes": 9674,
+      "sha256": "9f282d72b07edb39c9dd0437115faa7037599ae3690c816e3a56fc0c81d96899"
+    },
+    {
+      "path": "evidence/SOURCES.json",
+      "bytes": 3811,
+      "sha256": "4881c8fd7f42494bef674eb8e2af916246bbe319ccc9d62e79de61f11dda6126"
+    },
+    {
+      "path": "evidence/RENDER.json",
+      "bytes": 2346,
+      "sha256": "4c2da072c406d88288f5cc223df33f3e47e5cdd3f47bedd6fd4d084ec88b736e"
+    },
+    {
+      "path": "evidence/DRIVE-READBACK.json",
+      "bytes": 592,
+      "sha256": "d2150f000432183827833b2f9f241344728eb789cc7656a25ae5018afd22fb56"
+    },
+    {
+      "path": "evidence/ARCHIVE-COLD-READBACK.json",
+      "bytes": 848,
+      "sha256": "9425a3188502b0f3a87abc858df4b612e2676300a52a483fe7fa6f900807dbbd"
+    },
+    {
+      "path": "ACCEL-RESEARCH-DATA-20261022-v1.zip",
+      "bytes": 1210903,
+      "sha256": "95ee78f1c82cbbbb14be19a05093aba381aa795a62384707e6aa194bb6859a17"
+    }
+  ],
+  "observed": {
+    "publicApiTrials": 8,
+    "officialSourcesRead": 14,
+    "sourceCandidates": 2,
+    "regulatoryCandidates": 3,
+    "productCodeChanged": false,
+    "independentReview": "NOT_RUN",
+    "render": "Aside1440; Chrome155 offline390/768/1440; fonts/anchors/no overflow; exact content parity",
+    "archive": "MD/HTML/ZIP raw remote bytes identical; private metadata; archive18hashes and6destinations verified in fresh directory",
+    "tracker": {
+      "issue": "ERW-133",
+      "commentId": "602bf445-b2a7-4be6-a017-3843e205ed75",
+      "statusChanged": false
+    },
+    "handoff": {
+      "dataOwner": "RECEIVED via explicit owner message",
+      "integrator": "SEND_ACCEPTED; owns product E2E; no completion inferred"
+    }
+  },
+  "remoteFiles": [
+    {
+      "kind": "html",
+      "id": "1qnBOlvC7al0okEiAGnp_X-MdMuw_7gPx",
+      "url": "https://drive.google.com/file/d/1qnBOlvC7al0okEiAGnp_X-MdMuw_7gPx/view"
+    },
+    {
+      "kind": "markdown",
+      "id": "1SmrxX66p8ZSnMXTm3d6s47jx-5EBawim",
+      "url": "https://drive.google.com/file/d/1SmrxX66p8ZSnMXTm3d6s47jx-5EBawim/view"
+    },
+    {
+      "kind": "zip",
+      "id": "1S7fxzZSWVrWC3Ftt_cZ_LmiS1q8rOs37",
+      "url": "https://drive.google.com/file/d/1S7fxzZSWVrWC3Ftt_cZ_LmiS1q8rOs37/view"
+    }
+  ],
+  "remainingOutsideThisDocumentaryScope": [
+    "Data owner code reviews and exact READY",
+    "Integrator real authorized provider/source persistence/calculation/proposal journey",
+    "Company-specific legal applicability and authoritative consolidated legal text where not retrieved"
+  ],
+  "permissions": {
+    "newAccounts": false,
+    "newServices": false,
+    "spending": false,
+    "commitPush": false,
+    "deployment": false
+  }
+}

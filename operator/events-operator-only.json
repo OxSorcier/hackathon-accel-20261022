@@ -1,0 +1,84 @@
+{
+  "schema": "accel-demo-scenario/1",
+  "origin": "synthetic_operator_fixture",
+  "reference_date": "2026-10-22",
+  "release_policy": "operator releases one event at a time; future schedule not visible to agent",
+  "events": [
+    {
+      "id": "EV-0",
+      "time": "2026-10-22T09:00:00+02:00",
+      "kind": "illustrative_market_signal",
+      "payload": {
+        "topic": "perturbation production isolants",
+        "source_origin": "synthetic",
+        "commercial_delay_confirmed": false
+      },
+      "business_updates": []
+    },
+    {
+      "id": "EV-1",
+      "time": "2026-10-22T09:05:00+02:00",
+      "kind": "supplier_confirmation",
+      "document_id": "DOC-1",
+      "business_updates": [
+        {
+          "table": "purchase_order_lines",
+          "id": "POL-1",
+          "set": {
+            "expected_date": "2026-10-27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "EV-2",
+      "time": "2026-10-22T09:10:00+02:00",
+      "kind": "supplier_confirmation",
+      "document_id": "DOC-2",
+      "business_updates": [
+        {
+          "table": "purchase_orders",
+          "id": "PO-2",
+          "set": {
+            "status": "confirmed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "EV-3",
+      "time": "2026-10-22T09:15:00+02:00",
+      "kind": "supplier_revision",
+      "document_id": "DOC-3",
+      "business_updates": [
+        {
+          "table": "purchase_order_lines",
+          "id": "POL-2",
+          "set": {
+            "expected_date": "2026-11-07"
+          }
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-1",
+      "supplier_id": "SUP-1",
+      "origin": "synthetic",
+      "text": "Nous confirmons que PO-1, reference SKU-ISO100, huit palettes, arrivera le 27 octobre au depot Lille."
+    },
+    {
+      "id": "DOC-2",
+      "supplier_id": "SUP-2",
+      "origin": "synthetic",
+      "text": "Nous confirmons PO-2, reference SKU-ISO100, huit palettes, livraison le 29 octobre au depot Centre."
+    },
+    {
+      "id": "DOC-3",
+      "supplier_id": "SUP-2",
+      "origin": "synthetic",
+      "text": "PO-2 est reportee au 7 novembre. Cette revision remplace la confirmation du 29 octobre."
+    }
+  ]
+}

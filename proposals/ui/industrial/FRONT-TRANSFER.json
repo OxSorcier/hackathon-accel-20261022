@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T12:15:21.294Z",
+  "from": "Existing UI boundary builder",
+  "to": {
+    "threadId": "01a16346-9b6f-7b70-afc7-57775e697a94",
+    "title": "Faire le point par chantier"
+  },
+  "authority": {
+    "humanMessageIds": [
+      "01a1636f-9788-7502-a002-f5f75cf43f3a",
+      "01a1637f-e2ac-7e52-b371-67d09e49198c",
+      "01a16383-0b4c-7db3-af8a-98aa9260603c"
+    ],
+    "verifiedBy": "read_thread",
+    "scope": "Physical Impact final front, existing company Rivebois; new owner modules and App/styles are preserved."
+  },
+  "frontPaths": [
+    "src/ui/App.tsx",
+    "src/ui/styles.css",
+    "src/ui/IndustrialDesk.tsx",
+    "tests/ui/preview.tsx"
+  ],
+  "historicalWip": [
+    "proposals/ui/industrial/front-wip-20261022/CHECKPOINT.json",
+    "proposals/ui/industrial/front-wip-v2/CHECKPOINT.json"
+  ],
+  "status": "WIP_NOT_REVIEWED_FRONT_TRANSFERRED",
+  "notes": [
+    "No rollback; main frontend is already changing under the new owner. Historical snapshots are review material only, never a blanket replacement.",
+    "Our last functional WIP contains industrial question API + run polling, capability/freshness gates, projected coverage and uncertain-simulation copy. Front owner must review its exact final integrated code.",
+    "Preview harness now has industrial synthetic states and approve/simulate/question stubs. It proves UI behavior only, never Aiven/model/effects."
+  ],
+  "preview": {
+    "path": "tests/ui/preview.tsx",
+    "snapshot": "proposals/ui/industrial/front-wip-v2/tests/ui/preview-industrial.tsx.snapshot",
+    "sha256": "02c5ef744fba4a8219a4b524aebf9c06b6439cb52af16509b3b4e25ee447fa6c"
+  },
+  "retainedOwnership": [
+    "src/ui/api.ts",
+    "src/ui/types.ts",
+    "src/ui/industrial.ts",
+    "src/ui/industrial-api.ts",
+    "src/ui/pending-commands.ts",
+    "isolated tests/ui/industrial-*.ts"
+  ],
+  "receipts": [
+    "proposals/ui/industrial/READY.json",
+    "proposals/ui/industrial/READY-freshness-v1.json"
+  ]
+}

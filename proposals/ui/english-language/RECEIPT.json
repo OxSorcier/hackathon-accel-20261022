@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "language": "en-GB",
+  "status": "language_policy_and_owned_designs_delivered",
+  "user_instruction": "Use English for all hackathon UX/UI, README and other deliverables, and apply the rule to the reusable hackathon harness.",
+  "harness": {
+    "status": "updated_and_read_back",
+    "bootstrap": "0.3.2",
+    "ideation": "0.2.1",
+    "demo_package": "0.1.1",
+    "sources_and_installed_copies_match": true,
+    "shared_policy": "/Users/erwan/.codex/skills/hackathon-bootstrap/references/language.md",
+    "profile": "/Users/erwan/.codex/.chatgpt-projects/g-p-6acd1e2b630881918c37b331e317ea4c/deliveries/hackathon-experience-v0-20261018/B-PROFIL.md",
+    "receipt": "HARNESS-RECEIPT.json",
+    "checks": "HARNESS-CHECKS.json",
+    "effectiveness_in_future_runs": "NOT_RUN"
+  },
+  "figma": {
+    "file_key": "wMbxbmFzu1E2pIDPXzZ5O1",
+    "page_id": "0:1",
+    "wrapper_id": "3:2",
+    "status": "297 visible text targets translated, component defaults and annotations translated; screenshots inspected",
+    "remaining_known_french_copy": 0,
+    "overflow": 0,
+    "receipt": "FIGMA-RECEIPT.json",
+    "images": [
+      "figma-flow-en.png",
+      "figma-options-en.png"
+    ]
+  },
+  "visuals": {
+    "tool": "built-in image_gen",
+    "status": "generated_and_visually_inspected",
+    "images": [
+      "01-flow-en.png",
+      "02-home-en.png",
+      "03-opportunity-en.png"
+    ],
+    "base_prompts": "IMAGE-PROMPTS.json",
+    "correction_prompts": [
+      {
+        "key": "01-flow",
+        "path": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-7acaa0ca-520f-4e83-bd11-90ca675eec5b.png",
+        "prompt": "Edit only these English text details in the attached flow image. Preserve every position, color, card, icon and ALL corrected arrows. In step04 change 'Option ISO100' to 'Option A' and 'Option ISO120' to 'Option B'. These comparisons are generic conceptual alternatives, not claims about those two SKUs. Do not mention either ISO100 or ISO120 anywhere in this infographic. In the last strip of step03 replace 'Needs verification · To be verified.' with 'Unknown relationship? Needs verification.' Preserve all other text and details exactly, including the proposal/synthetic-data label, footer and return loop from06 to02."
+      },
+      {
+        "key": "03-opportunity",
+        "path": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-842831e6-3bb3-4d1f-9c26-4f3a1372077d.png",
+        "prompt": "Edit only these specific English phrases in the attached opportunity screen. Preserve all layout, style, icons, labels, actions and business facts. Subtitle directly below main headline must read 'A regional renovation listing, checked against our products and delivery capacity.' Do not imply compatibility or delivery capacity is already established. Right-column step1 body becomes 'Requirements extracted; missing facts visible.' Step2 body 'Compatibility needs confirmation.' Step4 body 'Offer preparation awaits the missing facts.' In the table change '0 pallet' to '0 pallets'. Bottom-right box heading becomes 'Paul stays in control'. Its body 'Check, revise, then approve.' Preserve all other text, numbers, headers, synthetic labels and states unchanged. Keep the 'Prepare an offer' button disabled. Do not invent an available supplier, sale, compatibility, or executed action."
+      }
+    ],
+    "corrections": [
+      "Restore generic Option A/B after translation introduced SKU-specific labels",
+      "Preserve uncertainty in opportunity subtitle and results",
+      "Polish English table and agent-activity copy"
+    ],
+    "original_french_assets": "Preserved in ../vision-flow-v2/ and ../figma-flow-v1/ as historical proposals",
+    "runtime": "Illustrations only"
+  },
+  "readme": {
+    "status": "already_English",
+    "file": "/Users/erwan/Projects/hackathon-accel-20261022/README.md",
+    "scope": "Inspected; no rewrite needed"
+  },
+  "application": {
+    "status": "English mandate received by both current owners",
+    "ui_owner_ack": "The UI chat explicitly confirmed applying the English instruction to its current interface, errors and dates",
+    "integration_ack": "The integration chat explicitly confirmed the English instruction",
+    "observed_sources": [
+      "src/ui/format.ts uses en-GB",
+      "src/agent/runner.ts explicitly requires English product output"
+    ],
+    "final_integrated_acceptance": "Pending in the existing active UI/integration build; not claimed here",
+    "handoff": "APPLICATION-HANDOFF.json"
+  },
+  "scope_limits": {
+    "application_code_modified_by_this_chat": false,
+    "model_calls_by_this_chat": false,
+    "commit_push_deploy": false
+  }
+}

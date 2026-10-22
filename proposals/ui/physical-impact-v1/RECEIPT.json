@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "status": "Received name and positioning applied to inspected slide proposal",
+  "identity": {
+    "displayName": "Physical Impact",
+    "previousDisplayName": "AdaptOps",
+    "sameProject": true,
+    "runtimeIdsChanged": false
+  },
+  "mode": "Reference-led built-in image generation",
+  "file": "Physical-Impact-pitch-v1.png",
+  "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-34f325df-73f7-4d08-bb56-4c10314e73bb.png",
+  "width": 1672,
+  "height": 941,
+  "sha256": "c243ed00a3d9d934510e6595e79cf345f67442c8ec534008f72f7d063edb0570",
+  "copy": "COPY-AND-RECEIVED-DIRECTION.md",
+  "prompt": "PROMPT.json",
+  "inspection": [
+    "New brand spelling and received palette checked",
+    "Headless descriptor and existing-tools positioning visible",
+    "Physical-goods audience, first market, why-now and acquisition plan retained",
+    "Human approval, execution/verification/memory visible as product vision",
+    "Working-core line limited to tool-driven planning, human approval and durable Aiven decisions",
+    "No traction, profitability, savings or universal connector claims"
+  ],
+  "runtimeSources": [
+    "../../integration/FINAL-3001-QA.json",
+    "../../../docs/STATUS.md",
+    "../../agent/R1-RECEPTION.json",
+    "../../integration/INDUSTRIAL-CORE-AIVEN.json"
+  ],
+  "runtimeInterpretation": {
+    "riskCore": "Received real model/tool planning and approval with Aiven readback and restart",
+    "researchReuse": "Two real runs with second after restart, separate schema; missing first transport counters retained in source",
+    "industrialCore": "10000 order lines imported and independently read back; this is not full industrial model journey",
+    "fullJourney": "Industrial automatic report, joint plan and approved simulated execution/readback still await integrated reception",
+    "headless": "Received target; separate server API and UI boundaries observed; external ERP/CRM connections not established"
+  },
+  "economicSources": [
+    {
+      "url": "https://www.ffbatiment.fr/le-batiment-en-chiffres",
+      "publisher": "FFB",
+      "period": 2025,
+      "metric": "French building sector revenue excluding VAT",
+      "valueEUR": 193000000000
+    },
+    {
+      "url": "https://www.insee.fr/fr/statistiques/2121515",
+      "publisher": "Insee",
+      "period": 2025,
+      "metric": "French manufacturing output in value, provisional",
+      "valueEUR": 981000000000
+    }
+  ],
+  "economicInterpretation": "Sector-scale indicators only. They are not software TAM, proven customer budgets or willingness to pay.",
+  "scope": "Own pitch proposal only. Existing owners retain app, canonical docs, runtime naming and release. No external publication or submission."
+}

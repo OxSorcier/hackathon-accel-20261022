@@ -1,0 +1,24 @@
+{
+  "version": 5,
+  "date": "2026-10-22",
+  "status": "Selected A corrected, visually inspected and fixed as pitch image reference",
+  "mode": "Built-in reference-led image editing",
+  "file": "Physical-Impact-pitch-final.png",
+  "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-6e006a3c-8daf-43d3-9171-73a292857f47.png",
+  "width": 1672,
+  "height": 941,
+  "sha256": "ec18b6cba5337ab7dde4b70de56afbcd7afe8462b2fde69179d62e119b0ead32",
+  "selection": "SELECTION.md",
+  "prompt": "PROMPT.json",
+  "base": "../physical-impact-v4-accel/A-complete-pitch.png",
+  "firstUsers": "Direct outreach to operations and procurement leaders at French multi-site materials businesses. Start with one supply-planning pilot, then expand across their sites.",
+  "correction": "Accel is the jury. No Accel acquisition partnership or community-introduction claim is made.",
+  "inspection": [
+    "Corrected English first-user text fits its footer column",
+    "Precise buyer, French multi-site customer segment, direct outreach, first supply-planning pilot and site expansion visible",
+    "Variant A badge removed",
+    "Brand, full vision, approved-action scope, secondary tools note, benefits, four cards, WHO/WHY and narrow verified-flow line retained",
+    "No clipping or visible spelling defect observed"
+  ],
+  "scope": "Selected marketing pitch image. No application code, canonical runtime documents, publication, Google Slides creation, sharing or submission changed."
+}

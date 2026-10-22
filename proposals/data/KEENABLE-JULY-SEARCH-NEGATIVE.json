@@ -1,0 +1,35 @@
+{
+  "kind": "preserved_negative_search_probe",
+  "sourceFileSha256": "b1e2952068900510f4721f1e5cc23e4a913f05c93e50e1403728ce14e81018c1",
+  "query": "ROCKWOOL Courmelles poursuite chantier juillet 2026",
+  "mode": "pro",
+  "resultCount": 5,
+  "results": [
+    {
+      "url": "https://rockwool.com/siteassets/investors/financial-reports/2026/q2-h1-2026-financial-report.pdf",
+      "title": "SE-2026-22_EN",
+      "publishedAt": "2026-08-19T08:24:29Z"
+    },
+    {
+      "url": "https://rockwool.com/siteassets/o2-rockwool/documentation/technical-guides/commercial/acoustic-wall-assemblies-catalog-techincal-guide.pdf",
+      "title": "Untitled",
+      "publishedAt": "2026-08-20T22:05:34Z"
+    },
+    {
+      "url": "https://rockwool.com/group/about-us/news/2026/rockwool-releases-h1-2026-results",
+      "title": "ROCKWOOL releases H1 2026 results",
+      "publishedAt": "2026-08-19T11:00:00Z"
+    },
+    {
+      "url": "https://rockwool.com/siteassets/investors/financial-reports/2026/q2-h1-2026-investor-presentation.pdf",
+      "title": "Q2-H1-2026-Investor-presentation",
+      "publishedAt": "2026-08-20T15:06:58Z"
+    },
+    {
+      "url": "https://rockwool.com/uk/about-us/news/2026/rockwool-uk--ireland-welcomes-new-commercial-director-melanie-marquard",
+      "title": "ROCKWOOL UK & Ireland welcomes new Commercial Director Melanie Marquard",
+      "publishedAt": "2026-09-22T07:49:20Z"
+    }
+  ],
+  "limit": "Search did not discover the received July Soissons article; that URL is a research-supplied priority source, not a search-discovery success."
+}

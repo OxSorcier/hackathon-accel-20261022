@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-22T12:38:58.067846+00:00",
+  "units": [
+    {
+      "receipt": "proposals/data/industrial-execution/READY-v1.json",
+      "sha256": "838400ccbc22990f32f925d688ca0f8eae7b3f7bd5c05ead5ecca191650b8ccc",
+      "files": [
+        {
+          "path": "src/server/industrial-execution.ts",
+          "sha256": "9fc63c284c3f73b142c9d6315bd96ad56f31462d3194e8bf09aac10839281cf9",
+          "match": true
+        },
+        {
+          "path": "tests/integration/industrial-execution.test.ts",
+          "sha256": "5bdc2b8fefc2e73fe5c84f7153eb3a19abba787390c9e9297ca1bd60734a7a60",
+          "match": true
+        }
+      ],
+      "status": "HASHES_MATCH"
+    },
+    {
+      "receipt": "proposals/agent/INDUSTRIAL-PORT-READY.json",
+      "sha256": "d5c56c7728b2970e9b528d941b2f8a17f5418b2e7eb0988f76a0e921acbede22",
+      "files": [
+        {
+          "path": "src/server/industrial-agent-port.ts",
+          "sha256": "5d2aa4029ab2b6d74a9ad40b6d8bfc3c4a8af207414f89d4bdfc7b164858de9a",
+          "match": true
+        },
+        {
+          "path": "tests/server/industrial-agent-port.test.ts",
+          "sha256": "df79381194d336f5ec3e77f62f027ebea5f60f2075fd08b95debc2dcd7cfb4b0",
+          "match": true
+        }
+      ],
+      "status": "HASHES_MATCH"
+    },
+    {
+      "receipt": "proposals/ui/industrial/READY-central-dto-v1.json",
+      "sha256": "e5a04db5bbf76dc485e01e3986127eae7eac5ac6f40f2713f27c3a8fbfe17aed",
+      "files": [
+        {
+          "path": "src/ui/api.ts",
+          "sha256": "96c7bcc84cb7e51abdb34719723e1bfd0ee8c76c4bc6641af62fd6c9ff5ae2e6",
+          "match": true
+        },
+        {
+          "path": "src/ui/types.ts",
+          "sha256": "06e471068d976dcbdcb0aa82375f9a4e1c9310fed0ab03d11cf1588768fe0582",
+          "match": true
+        },
+        {
+          "path": "src/ui/industrial.ts",
+          "sha256": "0a3efa206e26b132de722f53b33530804e33f508f0e3186ffa7b3b7997d86cf6",
+          "match": true
+        },
+        {
+          "path": "src/ui/industrial-api.ts",
+          "sha256": "29b5154aecbd2417bb8cb01903c623899f1b87f84082cc68e6631186d93af707",
+          "match": true
+        },
+        {
+          "path": "src/ui/pending-commands.ts",
+          "sha256": "dd41f6b7774b74b72a10b908bc58bcd7b7acb598f23f8be5d0e3147d5dde671a",
+          "match": true
+        },
+        {
+          "path": "tests/ui/industrial-api.test.ts",
+          "sha256": "3713bc5f98fc1c8c2bce9b3bc881d597b882cc800e7e07dc3170643be6cc40e8",
+          "match": true
+        },
+        {
+          "path": "tests/ui/industrial-fixtures.ts",
+          "sha256": "712f91b012296f85adda0e1aa30bfcfffd6a0d094febf99c65e7f7451cb80a29",
+          "match": true
+        }
+      ],
+      "status": "HASHES_MATCH"
+    }
+  ],
+  "runtime": "INTEGRATION_PENDING"
+}

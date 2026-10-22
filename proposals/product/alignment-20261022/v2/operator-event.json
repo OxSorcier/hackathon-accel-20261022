@@ -1,0 +1,46 @@
+{
+  "event": {
+    "eventId": "EV-FIRE-ALPHA-V2",
+    "version": "IE-ALPHA-2-1",
+    "kind": "industrial_fire",
+    "occurredAt": "2026-10-22T09:00:00+02:00",
+    "supplierId": "SUP-1",
+    "supplierSiteId": "PLANT-ALPHA-FR",
+    "competitorIds": [
+      "COMP-IND-001"
+    ],
+    "productIds": [
+      "SKU-ISO100",
+      "SKU-IND-002"
+    ],
+    "status": "declared_synthetic_scenario",
+    "testOnly": true,
+    "provenance": {
+      "system": "SCENARIO",
+      "nativeId": "EV-FIRE-ALPHA-V2",
+      "version": "2",
+      "receivedAt": "2026-10-22T09:00:00+02:00",
+      "actorId": "OPERATOR"
+    },
+    "publicSourceEvidenceRefs": []
+  },
+  "confirmations": [
+    {
+      "eventId": "CONFIRM-ALPHA-V2",
+      "supplierId": "SUP-1",
+      "supplierSiteId": "PLANT-ALPHA-FR",
+      "purchaseOrderLineId": "POL-1",
+      "previousExpectedDate": "2026-10-23",
+      "confirmedExpectedDate": "2026-11-20",
+      "confirmedAt": "2026-10-22T09:03:00+02:00",
+      "confirmationStatus": "synthetic_confirmed",
+      "provenance": {
+        "system": "SCENARIO",
+        "nativeId": "CONFIRM-ALPHA-V2",
+        "version": "2",
+        "receivedAt": "2026-10-22T09:03:00+02:00",
+        "actorId": "OPERATOR"
+      }
+    }
+  ]
+}

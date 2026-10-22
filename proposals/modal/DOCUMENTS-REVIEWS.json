@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "status": "reviewed_no_retained_findings",
+  "scope": "proposals/modal/DOCUMENTS-REVIEW-SCOPE.json",
+  "revision": 2,
+  "createdAt": "2026-10-22T11:03:52.499717+00:00",
+  "realizerModel": "gpt-6.1-sol",
+  "isolation": "Two distinct fresh-context read-only reviewers independent of realization and each other.",
+  "framing": {
+    "role": "conditional pre-code persistence design",
+    "task": "/root/pdf_documents_frame",
+    "requestedModel": "gpt-6-astra",
+    "servedModel": "unverified",
+    "result": "Single-table claim/provenance/DTO with fenced publication, no transaction during network; not a final code review."
+  },
+  "reviewers": [
+    {
+      "role": "counter-review",
+      "task": "/root/pdf_documents_counter",
+      "requestedModel": "gpt-6.1-sol",
+      "requestedEffort": "high",
+      "servedModel": "unverified",
+      "cycles": 2,
+      "verdict": "Finding corrected, no other confirmed defect",
+      "checks": [
+        "23 tests pass, including 12 isolated PostgreSQL and 11 client",
+        "TypeScript passes",
+        "Independent lock-contention probe and regression reread",
+        "Five hashes stable before/after"
+      ]
+    },
+    {
+      "role": "contracts-and-architecture",
+      "task": "/root/pdf_documents_arch",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "servedModel": "unverified",
+      "cycles": 2,
+      "verdict": "Finding corrected, no new confirmed defect",
+      "checks": [
+        "23 tests pass",
+        "Original independent PostgreSQL contention probe now returns uncertain/PDF_INTENT_EXPIRED and null extraction",
+        "Five hashes stable before/after"
+      ],
+      "limitation": "TypeScript not rerun by this reviewer."
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "id": "deadline-before-row-lock-wait",
+      "severity": "P2",
+      "observedIndependentlyByBoth": true,
+      "redEvidence": "Parent barrier regression confirmed Lock wait and expiration before releasing the blocker, then v1 incorrectly returned done.",
+      "fix": "Obtain row lock first; evaluate expiration in a separate statement; publication calls the shared lock/expiry path before conditional UPDATE.",
+      "revalidation": "Both reviewers accepted exact revision 2 and independent probe; parent 23 tests and TypeScript pass."
+    }
+  ],
+  "parentFinalHashes": "All five revision-2 scope hashes stable after final real Aiven/Modal test.",
+  "limitations": "Reviewer served models not attested. Reviewers performed no external calls, Aiven, routes, model or UI tests. Parent real-service proof is separate."
+}

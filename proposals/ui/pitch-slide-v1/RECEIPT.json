@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "status": "THREE_RASTER_DESIGN_PROPOSALS_GENERATED_AND_VISUALLY_INSPECTED",
+  "generation_mode": "built-in image_gen",
+  "language": "en",
+  "files": [
+    {
+      "path": "proposals/ui/pitch-slide-v1/A-editorial.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "430c42ee6543074501f411d322bc22bae74d8476bfcbdbc06e3f18097b674f93"
+    },
+    {
+      "path": "proposals/ui/pitch-slide-v1/B-system.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "98229a0509acf7d4181f8cdeae531b5528f811397bf8c206b5e16a0f90b39e6e"
+    },
+    {
+      "path": "proposals/ui/pitch-slide-v1/C-decision-story.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d3b8201518ee034fd66cb861c8f018bd42d36b15c0f0fa413f24ab6e3689cd1a"
+    }
+  ],
+  "prompt_set": "PROMPTS.json",
+  "source_of_requirements": "User-attached submission checklist",
+  "visual_review": [
+    "All three images inspected at returned native display size",
+    "English visible copy checked",
+    "No cropping or unintended text overlaps observed",
+    "Current prototype evidence and synthetic data labelled",
+    "No fabricated traction, savings, measured benchmark or public URL"
+  ],
+  "recommended_direction": "C-decision-story",
+  "limits": [
+    "Raster images, not editable native slides",
+    "Company brand still open",
+    "Opportunity workflow in development",
+    "Measured comparative evidence pending",
+    "Submission-ready public slide link not created or submitted"
+  ],
+  "source_documents": [
+    "docs/PRODUCT-VISION.md v1.1",
+    "proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.md v1",
+    "docs/STATUS.md read 22 October 2026"
+  ]
+}

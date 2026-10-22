@@ -1,0 +1,47 @@
+{
+  "version": 4,
+  "status": "CANDIDATE_SHARED_DTO_TYPECHECKED_NOT_FINAL_REVIEWED",
+  "path": "src/contracts/industrial.ts",
+  "sha256": "2e22d97141cde9426df6221433e2ba82d86edf8a3a93376378ce8487293e2ace",
+  "date": "2026-10-22T11:43:29.378572+00:00",
+  "scope": "Existing IndustrialContext/Event/Evaluation shape unchanged since v3; additive agent port and question scope.",
+  "rules": [
+    "Integer cents, integer quantities, explicit EUR and native provenance. Actor provenance never grants rights.",
+    "Current IndustrialContext excludes future/operator events. Only authenticated release supplies ReleasedIndustrialEvent.",
+    "Alternative canonicalResourceId names C1 emergency quote capacity. URG-IND-ALT-8 is not additional supply beyond URG-1.",
+    "All-commitment calculation remains server-side; bounded model projection only.",
+    "Approval and simulated execution are distinct durable records. No real ERP supplier action.",
+    "Alternative destination and current-stock lot independence are explicit. Unknown upstream manufacturing is retained, not promoted to whole-supplier independence.",
+    "Delivery quote aliases its C1 transportQuoteId; cost freight+handling is charged once, no consolidation without a received grouping quote.",
+    "A confirmation has confirmationId and eventId separately. Only explicitly confirmed purchase lines change ETA. Competitor inability is a separate released confirmation.",
+    "Purchase and transfer steps create future demo orders and dated planned allocations, never an immediate destination-stock receipt. CRM offer remains draft and revenue/contribution potential.",
+    "Analysis trigger deduplication includes released event revision and qualification; budget persists across every version of the same event. Blocked differs from uncertain.",
+    "IndustrialEvaluationInput.executionState is mandatory, including explicitly empty state. Load ledger and snapshot under the same company lock and require the same businessRevision.",
+    "Active source stock holds reduce usable stock, never physical_quantity. Scheduled transfers add one dated destination resource tied to those holds. Never introduce a purchase twice in C1 and ledger.",
+    "Committed capacity use aggregates by canonical resource across business revisions. resourceVersion is audit and cannot reset capacity without explicit newly received supply identity.",
+    "Existing draft offers and their reserved allocations reduce remaining qualified demand, without creating an accepted sale or silently releasing holds.",
+    "Every ledger mutation advances the same business R and invalidates dependent pending work; historical approved/executed receipts remain."
+  ],
+  "ownerPaths": {
+    "agent": [
+      "src/domain/industrial.ts",
+      "src/agent/industrial-context.ts",
+      "tests/domain/industrial*.ts",
+      "tests/agent/industrial*.ts"
+    ],
+    "data": [
+      "src/data/industrial-relations.ts",
+      "src/data/analysis-trigger.ts",
+      "tests/data/industrial*.ts",
+      "proposals/data/"
+    ],
+    "integrator": [
+      "src/contracts/industrial.ts",
+      "migrations/",
+      "src/server/",
+      "tests/integration/",
+      "tests/server/"
+    ]
+  },
+  "supersedes": "proposals/integration/industrial-contract-history/v2/RECEIPT.json"
+}

@@ -1,0 +1,23 @@
+{
+  "version": "1.1",
+  "observed_at": "2026-10-22T10:39:17.492036+00:00",
+  "change": "Linked existing research, company-memory and proposed industrial-story supplements from owner vision. Preserved initial inspection as dated checkpoint.",
+  "previous_version": [
+    "docs/history/PRODUCT-VISION-v1.md",
+    "docs/history/PRODUCT-VISION-v1.html"
+  ],
+  "markdown_html_fragments": 159,
+  "relative_links_valid": true,
+  "remote_files_byte_identical": 2,
+  "archive_ids_preserved": [
+    "1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_",
+    "1cAFkWyF8YQNZTuQg-TXsxWMPrX4O7BYB"
+  ],
+  "hashes": {
+    "md": "241ad186062d684df75527e944722ddf5888ddcaefdc6aae275633f0a6dff598",
+    "html": "5d70d1b543ede3cc288d3b82fcc9648d1010e94b33a15f233cbf5dadd694bd58"
+  },
+  "render_receipt": "proposals/product/research-data-20261022/sector-sources/VISION-v11-RENDER-CHECKS.json",
+  "human_approval_of_proposed_customer": "NOT_RECEIVED",
+  "application_code_changed": false
+}

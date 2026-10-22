@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "sessionId": "01a1636e-56c1-73d0-9c25-54d24df81053",
+  "title": "AdaptOps: three lean briefing proposals",
+  "status": "VISUAL_PROPOSALS_DELIVERED",
+  "tool": "built-in image_gen",
+  "parent": "../adaptops-news-briefing-20261022-v1/RECEIPT.json",
+  "prompts": "PROMPTS.json",
+  "artifacts": [
+    {
+      "variant": "A",
+      "file": "A-decision-card.png",
+      "source": "/Users/erwan/.codex/generated_images/01a1636e-56c1-73d0-9c25-54d24df81053/exec-d1d57aee-220b-49ca-9afb-ac59c2528068.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5c723304e1a79ccb0f7d3b92b28d006a3e1428f30d3993e5962cbacd322f4adf",
+      "sourceCopyMatches": true
+    },
+    {
+      "variant": "B",
+      "file": "B-three-step-brief.png",
+      "source": "/Users/erwan/.codex/generated_images/01a1636e-56c1-73d0-9c25-54d24df81053/exec-5e70c19f-7c91-486e-8ac9-85fcce5d296f.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "64c5fba749a0b499b2cf5ad034aaf820d8bc25204a385ccfa01e1e51bd800cd7",
+      "sourceCopyMatches": true
+    },
+    {
+      "variant": "C",
+      "file": "C-plan-first.png",
+      "source": "/Users/erwan/.codex/generated_images/01a1636e-56c1-73d0-9c25-54d24df81053/exec-8e2d5827-ac3f-4845-96b8-6df809359d25.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6c92c21aaa03b31e603e5eb4e339d8d1020842fa386758bcef186c1059ec175e",
+      "sourceCopyMatches": true
+    }
+  ],
+  "inspection": "All three final images visually inspected in generation outputs. Same scenario and viewport; less copy, one primary action, compact rationale and on-demand evidence. Repeated source subtitle removed from B. Workspace copies match their generated originals.",
+  "recommendation": "A: single contained decision card for a daily briefing.",
+  "limits": "Raster visual proposals only. Synthetic company and controlled event. Purchase availability remains unconfirmed. No application code, actual purchase or deployment."
+}

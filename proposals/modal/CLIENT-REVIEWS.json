@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "scope": "proposals/modal/CLIENT-REVIEW-SCOPE.json",
+  "revision": 2,
+  "status": "reviewed_no_retained_findings",
+  "createdAt": "2026-10-22T10:42:12.497101+00:00",
+  "realizerModel": "gpt-6.1-sol",
+  "modelSource": "Session turn_context",
+  "isolation": "Two distinct fresh-context read-only reviewers, independent from realization and each other.",
+  "reviewers": [
+    {
+      "role": "counter-review",
+      "task": "/root/pdf_client_counter",
+      "requestedModel": "gpt-6.1-sol",
+      "requestedEffort": "high",
+      "servedModel": "unverified",
+      "cycles": 2,
+      "finalVerdict": "Finding closed, no other confirmed defect",
+      "checks": "11 unit tests pass; independent EOF cancellation, normal/error/malformed-stream and byte-mutation probes; three hashes stable before/after"
+    },
+    {
+      "role": "contracts-and-architecture",
+      "task": "/root/pdf_client_arch",
+      "requestedModel": "gpt-6-astra",
+      "requestedEffort": "high",
+      "servedModel": "unverified",
+      "cycles": 2,
+      "finalVerdict": "No confirmed defect on revision 2",
+      "checks": "11 unit tests pass; independent exact-limit/Unicode/malformed-error and prebuffered cancellation probes; three hashes stable before/after"
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "id": "cancelled-at-eof-success",
+      "severity": "P2",
+      "observed": "A valid response could be returned after caller or deadline cancellation at stream EOF.",
+      "redEvidence": "Both new regression cases failed before the fix, returning a successful DTO.",
+      "fix": "Check requestSignal after await readJson and before validation/return.",
+      "revalidated": "Both reviewers received exact revision 2; 11 tests pass."
+    }
+  ],
+  "parentFinalHashCheck": "All three client-scope and all ten original service-scope hashes stable after final runtime call.",
+  "limitations": "Reviewer identity served not attested. Reviewers performed no live service, Aiven or UI checks. Parent live client proof is separate."
+}

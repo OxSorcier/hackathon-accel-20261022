@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-22T11:47:22.382Z",
+  "browser": "Aside",
+  "viewport": {
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  "fontLoaded": true,
+  "sections": 5,
+  "headerLabelCount": 64,
+  "capture": "display-profile-aside-1440.png",
+  "server": "Temporary report-only allowlist; no JSON or operator data served.",
+  "offlineResponsiveChecks": "DOCUMENT-CHECKS.json"
+}

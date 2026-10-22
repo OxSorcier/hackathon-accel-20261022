@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T09:04:30.119Z",
+  "role": "agent",
+  "receiptHash": "67a3c29992e0c67abfc05d60e9aba67f80535ec2f45518dc1426e45649647f58",
+  "files": [
+    {
+      "path": "proposals/agent/INTEGRATION.md",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-adversarial-v1.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-adversarial-v3.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-architecture-v1.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-architecture-v3.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-final.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-manifest-final.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-manifest-v1.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-manifest-v2.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-manifest-v3.json",
+      "match": true
+    },
+    {
+      "path": "proposals/agent/review-v2.json",
+      "match": true
+    },
+    {
+      "path": "src/agent/context.ts",
+      "match": true
+    },
+    {
+      "path": "src/agent/index.ts",
+      "match": true
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "match": true
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "match": true
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "match": true
+    },
+    {
+      "path": "src/domain/index.ts",
+      "match": true
+    },
+    {
+      "path": "src/domain/model.ts",
+      "match": true
+    },
+    {
+      "path": "tests/agent/runner.test.ts",
+      "match": true
+    },
+    {
+      "path": "tests/domain/engine.test.ts",
+      "match": true
+    }
+  ],
+  "allMatch": true
+}

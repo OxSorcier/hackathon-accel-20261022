@@ -1,0 +1,60 @@
+{
+  "version": 3,
+  "mandate": "UI connected journey and watch-capabilities follow-up, 22 October 2026",
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "contract": "C1 plus published watch-capabilities extension",
+  "files": [
+    {
+      "path": "src/ui/App.tsx",
+      "sha256": "fdc13a21f2c047e5f3aaff80d12a0b117642350bdda8f74933a3b332ce6b450f"
+    },
+    {
+      "path": "src/ui/CasePanel.tsx",
+      "sha256": "cd77f57b7de7f4e5dd908b5da55273e43bdf526540384a656b615e2df767572f"
+    },
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "e67b5d454d81270ebaa781f8dcf9ab6e19ade453f8e476a7217d86a7611784f9"
+    },
+    {
+      "path": "src/ui/format.ts",
+      "sha256": "9c55a328db8409b957e3e2a9111d4d7f8396b27c908471d1e02eec1362ec0bef"
+    },
+    {
+      "path": "src/ui/index.ts",
+      "sha256": "93dacefe521e1a71ef4708549f47da3cbafc20c54a3c8da842bb70fb491c7663"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "c4d1aca730ad76edfab8704fb17288fc4b7f51b89828bdb37a0e09c6329c8a2c"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "c8fc1eceb87aeae8d93f34d3199248f3b5589cfeac3c892253e37a7dab28810a"
+    },
+    {
+      "path": "tests/ui/api.test.ts",
+      "sha256": "9e6b64b5fe9da341d64fdcb70d9cf4d672991cb660538c4cc5ef6a4dcedc34da"
+    },
+    {
+      "path": "tests/ui/case-api.test.ts",
+      "sha256": "693e51094027875743fe5d1b7250924de9d8e71f9b2f5a8c2e819e040966917d"
+    },
+    {
+      "path": "tests/ui/fixtures.ts",
+      "sha256": "3382ac8cf197fddbfeb0a162a5e16151c38e211ffee65a4958341afc1bfea8c9"
+    },
+    {
+      "path": "tests/ui/preview.html",
+      "sha256": "e3a2494290a035d87f27c6ae54b062cdde35baf79b4dfe977591216b9c912219"
+    },
+    {
+      "path": "tests/ui/preview.tsx",
+      "sha256": "3aa36d35dc3f116029bf866bb6745982a979b5dcfd07372fb89bb18cc3664597"
+    },
+    {
+      "path": "tests/ui/responsive.html",
+      "sha256": "c5bfd4cdf9bc51a011ed710da0d2e88151f17435356865bee176f9822a3017c1"
+    }
+  ]
+}

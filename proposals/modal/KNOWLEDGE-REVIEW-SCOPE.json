@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "revision": 1,
+  "unit": "pdf-knowledge-adapter",
+  "realizerModel": "gpt-6.1-sol",
+  "recordedAt": "2026-10-22T11:32:17.986011+00:00",
+  "files": [
+    {
+      "path": "src/server/pdf-knowledge.ts",
+      "sha256": "619b69023971437410e87729a99862ba7dae7db7341e788eb04a2287aa01d054"
+    },
+    {
+      "path": "tests/server/pdf-knowledge.test.ts",
+      "sha256": "70fe21b7ba43c3d34b2390be32a633c1ce394b737f09138f119d45632b98e323"
+    },
+    {
+      "path": "src/contracts/pdf.ts",
+      "sha256": "8df45c4c63087489d89f3ea27691f954eea7c95fd083d76e524f833061cea4de"
+    },
+    {
+      "path": "src/server/pdf-documents.ts",
+      "sha256": "60c1bc24ed2995d3081aa56cbfcda82ec3a1923972bdde0957e2b0b7eae50120"
+    },
+    {
+      "path": "src/server/errors.ts",
+      "sha256": "74e7f5b864a68dc9103e809941034a66cb89747ce7a7fcdcde0438519ec84882"
+    }
+  ]
+}

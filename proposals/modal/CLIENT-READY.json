@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "unitScope": "Node bytes-to-Modal client only; full application acceptance remains pending with integrator.",
+  "createdAt": "2026-10-22T10:42:12.497323+00:00",
+  "realizerModel": "gpt-6.1-sol",
+  "files": [
+    {
+      "path": "src/server/pdf-client.ts",
+      "sha256": "7534e0159adcdbac2c1310e5641d9b66e8dd07ab6eeecf797cf6eb767bd50ab4"
+    },
+    {
+      "path": "tests/server/pdf-client.test.ts",
+      "sha256": "6467b089d13c4ce9d4c62d8f493fdb6162800b34c977fa0faaf1876b43a5f125"
+    },
+    {
+      "path": "proposals/modal/CONTRACT.json",
+      "sha256": "b4d2d366464e47f1b092282a3c2adac91cebb0347fc2a78eb16e59fe2969431f"
+    }
+  ],
+  "reviewScope": "proposals/modal/CLIENT-REVIEW-SCOPE.json",
+  "reviewReceipt": "proposals/modal/CLIENT-REVIEWS.json",
+  "runtimeReceipt": "proposals/modal/CLIENT-LIVE.json",
+  "publicApi": {
+    "factory": "createModalPdfClient(env = process.env, fetcher = globalThis.fetch)",
+    "method": "extract(bytes: Uint8Array, signal?: AbortSignal): Promise<PdfExtraction>",
+    "exports": [
+      "PdfExtraction",
+      "PdfPage",
+      "ModalPdfClient",
+      "ModalPdfError",
+      "ModalPdfErrorCode"
+    ]
+  },
+  "configuration": "Read lazily per extract from existing server-only MODAL_PDF_URL, MODAL_PDF_PROXY_KEY, MODAL_PDF_PROXY_SECRET. No deployment credentials.",
+  "boundaries": [
+    "Only received oxsorcier service HTTPS hosts; root path, no credentials/query/hash/port in URL",
+    "Raw byte snapshot; no public URL, download, filesystem or database access",
+    "redirect:error; no retry; 75-second deadline with caller cancellation",
+    "10 MiB input and 3 MB actual response-stream bounds",
+    "Strict DTO, exact input hash/byte length, all page text hashes, contiguous physical numbering, Unicode codepoints/NFC/Python trim semantics and complete/partial/empty consistency",
+    "Stable errors without raw provider bodies, env values or exception causes"
+  ],
+  "verification": {
+    "localCommands": [
+      {
+        "command": "./node_modules/.bin/vitest run tests/server/pdf-client.test.ts",
+        "result": "11 tests pass"
+      },
+      {
+        "command": "./node_modules/.bin/tsc --noEmit",
+        "result": "pass"
+      }
+    ],
+    "redBeforeImplementation": "New suite initially failed because module was missing; no prior implementation existed.",
+    "meaningfulRegression": "Caller/deadline EOF cancellation tests both failed before correction and pass after.",
+    "runtime": {
+      "schema": 1,
+      "testedAt": "2026-10-22T10:41:35.421Z",
+      "status": "node_client_tested_on_modal",
+      "clientScopeRevision": 2,
+      "sourceUrl": "https://www.rockwool.com/siteassets/investors/financial-reports/2026/q2-h1-2026-financial-report.pdf",
+      "documentHash": "a46561052fe30f7e4ab152b144fa23fc1c50e5a5f931c8279141793dbba9f57b",
+      "pageCount": 17,
+      "characterCount": 40113,
+      "extractionStatus": "complete",
+      "extractorVersion": "pypdf/6.21.2+accel.1",
+      "requestLatencyMs": 5656,
+      "allDtoAndHashChecks": true,
+      "sourcePage3Check": true,
+      "manifestHashesStableBeforeAndAfter": true,
+      "authentication": "Server-only runtime Proxy Token after deployment token revocation",
+      "limits": "Real Node adapter to Modal only. Application route, Aiven persistence, cache, model citation and UI not proved by this test."
+    },
+    "reviews": "Both independent reviewers accepted revision 2, requested same realizer model and Astra; served identity unverified",
+    "hashesStable": true
+  },
+  "unchanged": [
+    "Original ten service files",
+    "Shared contracts",
+    "Dependencies and lockfile",
+    "Routes",
+    "Migrations",
+    "Public download policy",
+    "Cache and persistence",
+    "UI"
+  ],
+  "git": "Uncommitted, no commit/push authority received. No worktree created.",
+  "nextOwner": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "nextAction": "Receive file hashes, integrate controlled public download, per-company page persistence and deduplication, excerpts/citations for UI and agent; verify actual Aiven readback and cache reuse.",
+  "fullApplicationProof": "NOT_RUN_in_this_unit"
+}

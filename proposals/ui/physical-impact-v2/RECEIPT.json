@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "date": "2026-10-22",
+  "status": "Corrected full-vision slide visually inspected and delivered",
+  "mode": "Reference-led built-in image editing, then one-label legibility correction",
+  "file": "Physical-Impact-full-vision-v2.png",
+  "width": 1671,
+  "height": 941,
+  "sha256": "4b3a53a001b069ae9061e69d7e8381d20d0d64c41b180b8057223426ae6fe6e1",
+  "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-0b0964e1-c5a5-4392-88cd-ba13b072db2d.png",
+  "firstRender": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-ced25cd0-53a2-4d87-abb3-ee12140c6e05.png",
+  "reference": "/var/folders/1p/h6m1c58x3lzg4080b8yzckn40000gn/T/codex-clipboard-a28f0b0d-18fa-4690-9821-2a16c60ee85e.png",
+  "supersedes": "../physical-impact-v1/",
+  "receivedCorrection": "Headless capability is complementary. Restore original company brief and full market-to-action product vision.",
+  "inspection": [
+    "Physical Impact name, original tagline, approved palette and split composition restored",
+    "Full five-step company-aware adaptation loop and durable company knowledge retained",
+    "Market intelligence, risk/opportunity, coordinated response and approved action remain primary",
+    "Existing-tools capability shown once as a small secondary note, without a headless brand subtitle",
+    "WHO, WHY NOW and FIRST USERS updated to received industrial scope and acquisition proposal",
+    "Crowded second report label simplified to Business impact and final spelling checked",
+    "No clipping observed; no fabricated customer, result, integration or numeric gain"
+  ],
+  "prompts": [
+    "PROMPT.json",
+    "CLEANUP-PROMPT.json"
+  ],
+  "copy": "COPY.md",
+  "scope": "Marketing product-vision raster. It is not a runtime screenshot or complete submission/evidence certification. No app code, IDs, publication or sharing changed."
+}

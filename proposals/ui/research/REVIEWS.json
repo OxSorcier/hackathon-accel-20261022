@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "receivedAt": "2026-10-22T11:20:41.819Z",
+  "realizationModelRequested": "gpt-6.1-sol",
+  "servedModels": "UNATTESTED",
+  "initialPanel": {
+    "manifest": "proposals/ui/research/REVIEW-INPUT-v1.json",
+    "agents": [
+      "/root/research_counter_v1",
+      "/root/research_architecture_v1"
+    ],
+    "retainedFindings": [
+      "Panel navigation loses the operation key.",
+      "A result can omit a retained source snapshot.",
+      "Controlled CASE receipt scope is not compared to the case.",
+      "Capabilities failure blocks historical source reading."
+    ]
+  },
+  "finalPanel": {
+    "manifest": "proposals/ui/research/REVIEW-INPUT-v4.json",
+    "manifestSha256": "c1113a86a1114336f5b1cb049cabe3574422b41fc2c0f9f3d17760bb027211a9",
+    "isolation": "Two distinct fresh contexts for v2 (fork_turns none), then the same reviewers revalidate exact bounded v3/v4 deltas independently.",
+    "reviewCycleCount": 3,
+    "reviewedCodeVersions": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "closingRevalidation": "v4 closes the contradictory-status cases from the existing third cycle. No new broad panel.",
+    "reviewers": [
+      {
+        "role": "counter_review",
+        "agent": "/root/research_counter_v2",
+        "modelRequested": "gpt-6.1-sol",
+        "effort": "high",
+        "verdict": "NO_RETAINED_FINDING_ON_FINAL_CODE",
+        "coverage": "All 22 source/test and 7 reference snapshots on v2; only API and manifest test change in v3/v4, both deltas read in full. 29 hashes match before/after.",
+        "checks": "11 independent v2 probes; final72 HTTP scenarios and144 run/proposal assertions;20 test bodies in memory pass. Vitest/typecheck/browser not run by this reviewer."
+      },
+      {
+        "role": "contracts_architecture",
+        "agent": "/root/research_architecture_v2",
+        "modelRequested": "gpt-6-astra",
+        "effort": "high",
+        "verdict": "NO_RETAINED_FINDING_ON_FINAL_CODE",
+        "coverage": "All22 source/test and7 reference snapshots onv2; API and manifest-test deltas onv3/v4.29 hashes match before/after.",
+        "checks": "7 independent v2 probes; final39 manifest cases, each on run and proposal consumers, pass. Vitest/typecheck/browser not run by this reviewer."
+      }
+    ]
+  },
+  "retainedAndCorrected": [
+    "App-scoped keyed pending/uncertain research commands survive panel navigation and retain actor/company/profile/namespace/intention isolation.",
+    "Research result validation requires complete bidirectional dependency/source correspondence.",
+    "CASE analysis receipts match exact research scope and pinned dependency, including a refreshed case version.",
+    "Historical run source details render independently of current watch capabilities.",
+    "Recorded local context requires strict record shape, exact run company/revision/policy/CASE/research scope and no provider-like status fields. Incomplete/foreign/contradictory records stay unknown."
+  ],
+  "redGreenEvidence": [
+    "Omitted source:1 expected HTTP test failure before fix, then pass.",
+    "Controlled case scope:4 expected HTTP test failures before fix, then pass; positive queued/proposal receipt probes also pass.",
+    "Manifest10 negative failures before first binding correction.",
+    "Contradictory manifest metadata:4 expected failures before strict local-record schema;20 final context tests pass.",
+    "Reviewer reproduced2 pending calls with2 keys before recovery fix. Aside after fix shows1 stub request/1 key across close+reopen; manual retry after uncertainty shows2 stub calls/1 key."
+  ],
+  "limits": [
+    "Requested models are recorded, served identity is not attested.",
+    "No production proof, live provider call or R1/R2 acceptance is supplied by these code reviews."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "status": "LOCAL_DETERMINISTIC_SMOKE_PASS",
+  "checkedAt": "2026-10-22T10:02:31.964Z",
+  "environment": "one Node process; local current domain engine; synthetic file; no database or model",
+  "targetOrderLineId": "OL-A",
+  "orderLines": 10000,
+  "coverageRows": 10000,
+  "allInitialCommitmentsCovered": true,
+  "inheritedAB": {
+    "A": 8,
+    "B": 8
+  },
+  "elapsedMs": 2495.853542,
+  "measurement": "single elapsed-time observation, no warmup, no concurrency or percentile benchmark",
+  "evaluationBytes": 6542867,
+  "options": [
+    {
+      "kind": "wait",
+      "status": "feasible",
+      "costEur": 0
+    }
+  ],
+  "sourceHashes": {
+    "src/domain/model.ts": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2",
+    "src/domain/engine.ts": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057",
+    "src/domain/contract.ts": "8a030ab828e853644f3141a8e0bf5493767d74e44eb0de662266d230d850e9f7",
+    "src/contracts/index.ts": "0f67dae2f11a01a07f95c6e9e88f145a434a82d70c4e0e94ed1be7b21fd48a56"
+  },
+  "sourceUnchangedDuringRun": true,
+  "aiven": "NOT_RUN",
+  "model": "NOT_RUN",
+  "erp": "NOT_RUN",
+  "crm": "NOT_RUN",
+  "largeScaleAcceptance": "NOT_RECEIVED"
+}

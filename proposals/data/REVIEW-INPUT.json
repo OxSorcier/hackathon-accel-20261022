@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "snapshot": "/tmp/accel-data-review-01a162bd-cycle2",
+  "contract": "C1",
+  "files": [
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "sha256": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08"
+    },
+    {
+      "path": "src/data/validation.ts",
+      "sha256": "915e83c1ec9c87c9f7927551b7bc2b839b31e9210dca3b688d94e4c02974949d"
+    },
+    {
+      "path": "src/data/watch-repository.ts",
+      "sha256": "29e24db1be644c809b2026389b5d730f507781a5d8412be76f6186c9b821bb29"
+    },
+    {
+      "path": "src/watch/collector.ts",
+      "sha256": "64f8882d20935c444ea6a3c8730de45d91e93cd574e356905c71d5b951a317db"
+    },
+    {
+      "path": "src/watch/engine.ts",
+      "sha256": "8b912aaefe04daf1206c6a2c1f98230d034c4bc19721e7d8a181c5418bb3b9a6"
+    },
+    {
+      "path": "tests/data/validation.test.ts",
+      "sha256": "82434d403bfce66b4eb241d52cb7a5a869fa7b3edf4e9a580c0d1e2f33dc39c0"
+    },
+    {
+      "path": "tests/data/watch-postgres.test.ts",
+      "sha256": "ebc69ded1ef667fa39c725c30a0fa93a3691ec46a41e33fd85d286da896c5dc4"
+    },
+    {
+      "path": "tests/watch/collector.test.ts",
+      "sha256": "776c2b35706b1ba4cd226bde15648acd709bc4146f951833354bbeec602d531d"
+    },
+    {
+      "path": "tests/watch/live-boamp.ts",
+      "sha256": "e1b05a8fb21c7b31c4d5209a934cec98abf34510eae568c5c0f17061b5d36667"
+    }
+  ],
+  "scopeSha256": "7d6afe5595271bdfa766609952a6041a6cfb042989acfc952a03776928fafac9"
+}

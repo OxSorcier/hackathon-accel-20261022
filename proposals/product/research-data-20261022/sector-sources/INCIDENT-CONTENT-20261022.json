@@ -1,0 +1,12 @@
+{
+  "url": "https://www.aria.developpement-durable.gouv.fr/accident/66803/",
+  "collected_at": "2026-10-22T11:01:19.421912+00:00",
+  "sha256": "10a88142254b92d2f6b83991d8a32a1d241639d7e24fe5cc6843a7c08d5a9d1c",
+  "status": 200,
+  "title": "Incendie dans une usine de fabrication de sciure",
+  "article_start_present": true,
+  "duration_15_days_verified": true,
+  "fragment_raw_encoding": "15 days searched after HTML entity and whitespace normalization",
+  "verified_short_excerpt": "un arrêt de production pendant 15 jours",
+  "raw_source_retention": "Original HTML kept temporarily for validation; not included in the shared source card."
+}

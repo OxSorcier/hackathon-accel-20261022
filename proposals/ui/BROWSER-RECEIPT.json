@@ -1,0 +1,119 @@
+{
+  "schema": "accel-ui-browser/1",
+  "createdAt": "2026-10-22T09:10:23.902830+00:00",
+  "reviewedSourceManifest": "proposals/ui/REVIEW-INPUT-v3.json",
+  "manifestSha256": "3c77176eb72f28eaf824fd18302d690cbc3ac47b5983d43bf7ae95884c9a30f7",
+  "driver": "Aside CLI REPL 1.26.1015.732, local host",
+  "reference": "design/A-bureau-decisions.png",
+  "fallbacks": {
+    "AsideHostAccess": "Sandbox connection failed; authorized host access succeeded",
+    "AsideSetViewportSize": "Unavailable in this REPL; window.resizeTo did not provide a reliable narrow viewport",
+    "ChromeDevTools": "NOT_RUN: browser profile already in use; no existing browser stopped",
+    "ComputerUseChrome": "NOT_RUN: initialization timeout",
+    "ResponsiveMethod": "Same-origin iframe viewport in Aside; dimensions measured from frame.contentWindow; no phone or touch emulation"
+  },
+  "measurements": [
+    {
+      "environment": "Aside main viewport",
+      "width": 1440,
+      "height": 900,
+      "documentWidth": 1440,
+      "columns": [
+        {
+          "name": "sidebar",
+          "x": 0,
+          "width": 180
+        },
+        {
+          "name": "main",
+          "x": 204,
+          "width": 870
+        },
+        {
+          "name": "watch",
+          "x": 1098,
+          "width": 318
+        }
+      ]
+    },
+    {
+      "environment": "Aside iframe",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "mainWidth": 296,
+      "logoutVisible": true
+    },
+    {
+      "environment": "Aside iframe",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "mainWidth": 366
+    },
+    {
+      "environment": "Aside iframe",
+      "width": 768,
+      "height": 844,
+      "documentWidth": 768,
+      "mainWidth": 574
+    }
+  ],
+  "syntheticChecks": [
+    {
+      "case": "Conditional option selection",
+      "result": "Approval disabled; condition notice displayed"
+    },
+    {
+      "case": "Human confirmation and approved decision",
+      "result": "Confirmation dialog, disabled buttons while pending, decision moved to Terminé"
+    },
+    {
+      "case": "Stale plan at load",
+      "result": "Stale notice, approval and rejection disabled"
+    },
+    {
+      "case": "Server stale conflict during confirmation",
+      "result": "Dialog closed, error shown, R1 readback and stale plan displayed"
+    },
+    {
+      "case": "Question",
+      "result": "Sending state then needs_input run shown with test label"
+    },
+    {
+      "case": "Watch",
+      "result": "Topic and URL entered; explicit synthetic draft shown with source not consulted"
+    },
+    {
+      "case": "Loading",
+      "result": "Loading context shown; commands disabled"
+    },
+    {
+      "case": "Read failure",
+      "result": "Error visible; no fabricated data; commands disabled"
+    },
+    {
+      "case": "Responsive",
+      "result": "320, 390 and 768 CSS pixel viewports measured without horizontal overflow; logout and refresh name visible"
+    }
+  ],
+  "connectedReadOnly": {
+    "url": "http://127.0.0.1:3000/",
+    "result": "CO-DEMO/R0, login form and two persisted BOAMP watches displayed; public sources explicitly partial with publication and collection times",
+    "mutationsPerformed": false,
+    "realModelInference": "NOT_RUN",
+    "Aiven": "NOT_RUN"
+  },
+  "evidenceDirectory": "proposals/ui/evidence",
+  "historicalEvidence": [
+    "accel-ui-error-v1.png and accel-ui-loading-v1.png precede the final copy correction",
+    "accel-ui-320-v2.png uses the final App/CSS; v3 changes only HTTP adapter and tests"
+  ],
+  "limits": [
+    "Synthetic UI scenarios are not business-engine, provider or persistence proof",
+    "Integrated authenticated mutations and final full model/tool/proposal journey reserved to integrator",
+    "No Safari, Firefox, real phone or touch tests",
+    "No exact Figma pixel match claimed; direction A adapted to actual C1 fields",
+    "Inter is a local-font preference with system fallback; no network font dependency"
+  ]
+}

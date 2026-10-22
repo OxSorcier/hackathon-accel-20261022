@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-22T12:01:08.610384+02:00",
+  "status": "DOCUMENTARY_DELIVERY_COMPLETE",
+  "objective": "Sponsors, credits, uses and honest README block for Accel",
+  "source_resources": "https://builderbase.com/track-dashboard/accel-ai-innovate-paris/resources",
+  "source_page_read_with": "Aside local, host-approved read-only access",
+  "pdfs_read": 6,
+  "pdf_pages_extracted": 8,
+  "sponsor_offers": 14,
+  "code_cards_read_without_show": 3,
+  "application_code_changed": false,
+  "readme_changed": false,
+  "activations_or_subscriptions": false,
+  "runtime_tests_run_by_this_chat": false,
+  "research_recommendation_review": "NOT_RUN: no delegation in this mandate",
+  "tracker": {
+    "id": "ERW-133",
+    "marker": "ACCEL-TECHNOLOGY-USAGE-20261022-V1",
+    "readback_verified": true,
+    "status_changed": false
+  },
+  "archive": {
+    "folder_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+    "markdown_id": "1c9S673m4AcspFL2MmS2lBW0ZBRm-2jno",
+    "html_id": "1SGXDOdLXo-IMiAOYIYgEWvprqI7Z45Zm",
+    "remote_bytes_identical": true,
+    "shared": false
+  },
+  "files": [
+    {
+      "path": "proposals/product/TECHNOLOGY-USAGE.md",
+      "sha256": "caf825cbcab18ff65174ec7df6204d9b56ac9e88cef73febc6514e240b7d8be3"
+    },
+    {
+      "path": "proposals/product/TECHNOLOGY-USAGE.html",
+      "sha256": "f6146705c155db328e73201e9a7cf47f7c2db21b0be7a574918773cc6dc564cd"
+    },
+    {
+      "path": "proposals/product/README-TECHNOLOGY-USAGE.md",
+      "sha256": "db2782b00ee1c49937db238a2848b53667eeb233bda515133ce6fa6c4b1ee1a2"
+    }
+  ],
+  "checks": "TECHNOLOGY-USAGE-CHECKS.json",
+  "limits": [
+    "Participant offers differ from winner prizes",
+    "Some credits announced but not activated",
+    "Local server / Aiven database real flow receipt read, final UI/data reception and Runtime pending",
+    "PDF extraction only; source-page visual QA not run"
+  ]
+}

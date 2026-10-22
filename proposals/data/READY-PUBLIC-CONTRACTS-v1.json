@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T12:38:40.119543+00:00",
+  "status": "READY_AIVEN_SCRATCH_TESTED_TWO_REVIEWS_INTEGRATOR_RECEPTION_PENDING",
+  "realizerModel": {
+    "configured": "gpt-6.1-sol",
+    "served": "UNATTESTED"
+  },
+  "files": [
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "0e329c828e36783a0f0c2bfaadf245e48976439568f43e086106a2ab829d80f6"
+    },
+    {
+      "path": "tests/data/research-public-contracts-postgres.test.ts",
+      "sha256": "1d02622ea63a92c8850a8043384e3644675ee313143542bacee6f8108470980f"
+    }
+  ],
+  "scopeSha256": "4ce9e6bf7061cb1acfe00262c0341d675af94827789ef8c5161c8cb2bda9a455",
+  "digestRecipe": "SHA256 JSON LIST of pins sorted path, keys sorted, separators comma/colon, UTF8 no trailing newline",
+  "reviewInput": "proposals/data/REVIEW-INPUT-PUBLIC-CONTRACTS-v1.json",
+  "reviews": "proposals/data/PUBLIC-CONTRACTS-REVIEWS-v1.json",
+  "tests": {
+    "aivenPostgres": 34,
+    "newPolicyPostgres": 10,
+    "existingResearchPostgres": 20,
+    "existingServicePostgres": 4,
+    "pureDataWatch": 29,
+    "strictTypecheck": "PASS",
+    "environment": "Random isolated schemas on existing Aiven, TLS verify-full/realCA, all dropped; no provider/model call"
+  },
+  "commands": [
+    "npm run typecheck",
+    "Authorized in-memory DATABASE_URL loader to Vitest: research-public-contracts-postgres, research-postgres, research-service-postgres; DATA_WATCH_TEST_DATABASE_URL only in child process",
+    "Vitest: validation, industrial-relations, collector, keenable"
+  ],
+  "behavior": [
+    "Opt-in restricted to exact soissons-project/v1 and public-contracts/v1; no wildcard or model-selected policy",
+    "Soissons received partial Fetch behavior unchanged",
+    "For configured public-contracts/v1/live, select only validated direct public native nontruncated dated BOAMP api_record observations, for partial AND success",
+    "No eligible record means nonreusable. Raw collection status/bodies and exact source provenance remain historical",
+    "Observation is not qualified CRM demand or company applicability. Existing freshness, authority, scope, ten-record boundary and service permission remain",
+    "Activating this policy over existing projections must not retain ineligible reusable refs, reset observation time, re-collect, revive stale state or cross the historical publication barrier",
+    "Changed eligible subset invalidates dependencies, identical material retains generation and exact refs"
+  ],
+  "preserved": {
+    "collector16pins": "UNCHANGED",
+    "industrial5pins": "UNCHANGED",
+    "execution2pins": "UNCHANGED",
+    "researchV2Historical4pins": "history/research-v2",
+    "serviceV1Historical2pins": "history/research-service-v1",
+    "serviceCurrentTestPin": "a13685596e8fec4e6627814f14c114cb2cbbabd3ffbe71500e0ddf270d11cfe4"
+  },
+  "integrationRequirements": [
+    "Explicit server policy public-contracts/v1/live acceptPartialObservations true; Soissons unchanged",
+    "Server bounds each of BOAMP/Keenable to3 via existing collector, combined<=10; receive this configuration separately",
+    "Only existing integrator performs bounded live call on isolated3003 through existing worker",
+    "Principal/company/profile whitelist remains server-bound; service lookup never collects",
+    "Unit READY is not proof of live collection, automatic report, qualified commercial demand or simulated execution integration"
+  ],
+  "limits": [
+    "No schema/dependency/provider/worker change",
+    "Aiven tests only in random scratch schemas removed after tests; local PostgreSQL unavailable and not restarted",
+    "Actual live activation/model/report NOT_RUN by data owner"
+  ]
+}

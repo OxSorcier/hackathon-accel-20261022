@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "PROPOSED_FOR_FLOW_AND_COPY_VALIDATION",
+  "owner": "ui",
+  "sources": ["docs/PRODUCT-VISION.md, A5", "docs/CONTRACTS.md, extension dossier", "src/contracts/index.ts", "design/A-bureau-decisions.png"],
+  "navigation": ["À décider", "En cours", "Terminé", "Veilles"],
+  "stableIdentity": "caseId et caseRevision serveur. Le titre est une présentation, jamais une nouvelle identité.",
+  "impactNature": {
+    "targetLabels": ["Risque", "Opportunité", "Effet mixte"],
+    "independentFromProgress": true,
+    "currentContract": "Aucune nature risque/opportunité/mixte n'est fournie dans DecisionCase. Ne pas la déduire du texte. Afficher seulement À vérifier ou Aucune exposition connue selon qualification. Le calcul commercial reste indisponible."
+  },
+  "proposedFlow": [
+    {"id": "case-source", "entry": "Veilles, avis public reçu", "action": "Examiner ce signal", "effect": "Ouvrir la preuve reçue, ses dates, sa provenance et ses limites. Aucun dossier créé à ce stade."},
+    {"id": "case-relation", "entry": "Preuve publique", "action": "Préparer le dossier", "effect": "Choisir un produit ou fournisseur candidat reçu de la société, ou Aucun lien connu. Saisir une justification. Le navigateur transmet uniquement EvidenceRef, relation et clé d'opération."},
+    {"id": "case-readback", "entry": "Réponse de création du serveur", "action": "Consulter le dossier", "effect": "Afficher la relation À vérifier ou Aucun lien établi, les engagements candidats calculés par le serveur et le triplet révision métier, politique, dossier. Une relation candidate ne modifie pas la couverture."},
+    {"id": "case-analysis", "entry": "Dossier courant", "action": "Analyser ce dossier", "effect": "Transmettre expectedCaseRevision, question et clé stable. Montrer attente, erreur, besoin de précision ou proposition. Aucun succès modèle avant résultat réel."},
+    {"id": "case-decision", "entry": "Proposition conservée", "action": "Examiner la décision", "effect": "Relier fait public, relation, engagements, options calculées et conditions. Approbation bloquée si relation non vérifiée. Refus humain possible sur version courante. Aucun stock réservé ni offre envoyée."},
+    {"id": "case-revision", "entry": "Dossier existant", "action": "Réviser le dossier", "effect": "Choisir une autre preuve reçue ou corriger la relation, conserver le texte et l'historique précédents. Le serveur crée une nouvelle caseRevision et périme les anciennes propositions. Le navigateur ne recycle pas leur référence."}
+  ],
+  "detailBlocks": ["Preuve publique", "Lien avec notre entreprise", "Engagements candidats", "Options et décision"],
+  "necessaryBranches": ["Lecture ou collecte indisponible", "Source partielle", "Aucun lien connu", "Relation à vérifier", "Aucun engagement candidat", "Analyse sans résultat modèle", "Contexte métier ou dossier périmé", "Erreur de décision ou résultat incertain", "Révision concurrente refusée"],
+  "integratorDependencies": [
+    "Routes dossiers exécutables et tests de leur autorité, versions et idempotence.",
+    "caseRef conservé et égal dans dossier, run, proposition, mémoire et reçu de décision.",
+    "DécisionsView.cases courant, historique GET /api/cases/:id et références aux preuves reçues.",
+    "Champ de nature d'impact et calcul commercial futurs avant de revendiquer un parcours opportunité complet.",
+    "Mémoire attribuée lisible par l'UI seulement quand une route dédiée existe."
+  ],
+  "currentWork": "Le test connecté et le raccord des sujets de veille avancent. Les adaptateurs C1 additifs peuvent être préparés sans introduire de nouvelles cartes ou de faux chiffres.",
+  "publication": "Aucune publication ni modification de la copie stable 3001 requise par ce document."
+}

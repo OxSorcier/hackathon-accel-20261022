@@ -1,0 +1,266 @@
+{
+  "schema": "accel-demo-fixtures/1",
+  "company_id": "CO-DEMO",
+  "data_origin": "synthetic",
+  "snapshot_revision": "R0",
+  "as_of": "2026-10-22T08:55:00+02:00",
+  "tables": {
+    "company": [
+      {
+        "id": "CO-DEMO",
+        "name": "Demo Negoce",
+        "sector": "negoce de materiaux",
+        "reference_date": "2026-10-22",
+        "data_origin": "synthetic",
+        "timezone": "Europe/Paris"
+      }
+    ],
+    "employees": [
+      {
+        "id": "EMP-PAUL",
+        "name": "Paul Martin",
+        "role": "direction",
+        "email": "paul@demo-negoce.example",
+        "approval_ceiling_eur": 2000
+      },
+      {
+        "id": "EMP-CLAIRE",
+        "name": "Claire Bernard",
+        "role": "achats",
+        "email": "claire@demo-negoce.example",
+        "approval_ceiling_eur": 150
+      },
+      {
+        "id": "EMP-ALEX",
+        "name": "Alex Petit",
+        "role": "logistique",
+        "email": "alex@demo-negoce.example",
+        "approval_ceiling_eur": 0
+      }
+    ],
+    "suppliers": [
+      {
+        "id": "SUP-1",
+        "name": "Isolant Alpha Fictif",
+        "email": "contact@alpha-fictif.example"
+      },
+      {
+        "id": "SUP-2",
+        "name": "Isolant Beta Fictif",
+        "email": "contact@beta-fictif.example"
+      },
+      {
+        "id": "SUP-3",
+        "name": "Depot Secours Fictif",
+        "email": "contact@secours-fictif.example"
+      }
+    ],
+    "products": [
+      {
+        "id": "SKU-ISO100",
+        "label": "Isolant reference 100",
+        "unit": "palette",
+        "substitution_allowed": false
+      },
+      {
+        "id": "SKU-ISO120",
+        "label": "Isolant reference 120",
+        "unit": "palette",
+        "substitution_allowed": false
+      }
+    ],
+    "depots": [
+      {
+        "id": "DEP-LILLE",
+        "label": "Lille"
+      },
+      {
+        "id": "DEP-CENTRE",
+        "label": "Centre"
+      },
+      {
+        "id": "DEP-SUD",
+        "label": "Sud"
+      }
+    ],
+    "customers": [
+      {
+        "id": "CLI-A",
+        "name": "Entreprise Chantier A Fictive",
+        "sales_owner_id": "EMP-PAUL"
+      },
+      {
+        "id": "CLI-B",
+        "name": "Entreprise Chantier B Fictive",
+        "sales_owner_id": "EMP-PAUL"
+      }
+    ],
+    "orders": [
+      {
+        "id": "ORD-A",
+        "customer_id": "CLI-A",
+        "site": "Chantier A",
+        "depot_id": "DEP-LILLE",
+        "need_date": "2026-10-23",
+        "status": "confirmed"
+      },
+      {
+        "id": "ORD-B",
+        "customer_id": "CLI-B",
+        "site": "Chantier B",
+        "depot_id": "DEP-CENTRE",
+        "need_date": "2026-11-05",
+        "status": "confirmed"
+      }
+    ],
+    "order_lines": [
+      {
+        "id": "OL-A",
+        "order_id": "ORD-A",
+        "product_id": "SKU-ISO100",
+        "quantity": 8,
+        "unit": "palette"
+      },
+      {
+        "id": "OL-B",
+        "order_id": "ORD-B",
+        "product_id": "SKU-ISO100",
+        "quantity": 8,
+        "unit": "palette"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "ST-L100",
+        "depot_id": "DEP-LILLE",
+        "product_id": "SKU-ISO100",
+        "physical_quantity": 0,
+        "unit": "palette"
+      },
+      {
+        "id": "ST-C100",
+        "depot_id": "DEP-CENTRE",
+        "product_id": "SKU-ISO100",
+        "physical_quantity": 8,
+        "unit": "palette"
+      },
+      {
+        "id": "ST-S100",
+        "depot_id": "DEP-SUD",
+        "product_id": "SKU-ISO100",
+        "physical_quantity": 0,
+        "unit": "palette"
+      },
+      {
+        "id": "ST-S120",
+        "depot_id": "DEP-SUD",
+        "product_id": "SKU-ISO120",
+        "physical_quantity": 8,
+        "unit": "palette"
+      }
+    ],
+    "reservations": [
+      {
+        "id": "RES-B",
+        "stock_id": "ST-C100",
+        "order_line_id": "OL-B",
+        "quantity": 8,
+        "unit": "palette",
+        "status": "active"
+      }
+    ],
+    "purchase_orders": [
+      {
+        "id": "PO-1",
+        "supplier_id": "SUP-1",
+        "status": "confirmed"
+      },
+      {
+        "id": "PO-2",
+        "supplier_id": "SUP-2",
+        "status": "planned_unconfirmed"
+      }
+    ],
+    "purchase_order_lines": [
+      {
+        "id": "POL-1",
+        "purchase_order_id": "PO-1",
+        "product_id": "SKU-ISO100",
+        "depot_id": "DEP-LILLE",
+        "quantity": 8,
+        "unit": "palette",
+        "expected_date": "2026-10-23",
+        "unit_cost_eur": 120
+      },
+      {
+        "id": "POL-2",
+        "purchase_order_id": "PO-2",
+        "product_id": "SKU-ISO100",
+        "depot_id": "DEP-CENTRE",
+        "quantity": 8,
+        "unit": "palette",
+        "expected_date": "2026-10-29",
+        "unit_cost_eur": 120
+      }
+    ],
+    "inbound_allocations": [
+      {
+        "id": "ALLOC-A",
+        "purchase_order_line_id": "POL-1",
+        "order_line_id": "OL-A",
+        "quantity": 8,
+        "unit": "palette"
+      }
+    ],
+    "transport_quotes": [
+      {
+        "id": "TR-C-L",
+        "from_depot_id": "DEP-CENTRE",
+        "to_depot_id": "DEP-LILLE",
+        "product_id": "SKU-ISO100",
+        "capacity": 8,
+        "unit": "palette",
+        "lead_days": 1,
+        "cost_eur": 120,
+        "valid_on": "2026-10-22",
+        "quote_status": "synthetic_confirmed"
+      }
+    ],
+    "emergency_quotes": [
+      {
+        "id": "URG-1",
+        "supplier_id": "SUP-3",
+        "product_id": "SKU-ISO100",
+        "available_quantity": 8,
+        "unit": "palette",
+        "destination_depot_id": "DEP-LILLE",
+        "lead_days": 1,
+        "unit_price_eur": 155,
+        "freight_eur": 180,
+        "valid_on": "2026-10-22",
+        "quote_status": "synthetic_confirmed"
+      }
+    ],
+    "crm_opportunities": [
+      {
+        "id": "OPP-A",
+        "customer_id": "CLI-A",
+        "order_id": "ORD-A",
+        "owner_id": "EMP-PAUL",
+        "stage": "confirmed_order",
+        "note": "Client demande une date fiable. Aucune priorite autorisant a retarder B."
+      }
+    ],
+    "watch_drafts": [
+      {
+        "id": "WATCH-1",
+        "requested_by": "EMP-PAUL",
+        "status": "draft",
+        "public_topic": "isolants France perturbations production",
+        "cadence_minutes": 15,
+        "alert_condition": "commande exposee a verifier",
+        "approved": false
+      }
+    ]
+  }
+}

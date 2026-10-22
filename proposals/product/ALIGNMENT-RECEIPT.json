@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-22T11:22:07.232394+02:00",
+  "status": "DOCUMENTARY_DELTA_DELIVERED_IMPLEMENTATION_GAPS_OPEN",
+  "authority": "Demande directe Erwan : README, alignement de la vision, impacts UX/UI et systeme, projection de communique de levee. Archivage et suivi selon AGENTS.md.",
+  "source_checkpoint": "2026-10-22T11:07:10.911793+02:00",
+  "source_manifest": "proposals/product/SOURCE-MANIFEST.json",
+  "document_checks": "proposals/product/DOCUMENT-CHECKS.json",
+  "own_writes": [
+    "README.md",
+    "START-HERE.md",
+    "docs/HANDOFF.md",
+    "docs/PRODUCT-VISION.md",
+    "docs/PRODUCT-VISION.html",
+    "proposals/product/"
+  ],
+  "application_code_changed_by_this_chat": false,
+  "fixtures_or_shared_contract_changed_by_this_chat": false,
+  "product_tests_executed_by_this_chat": false,
+  "independent_code_reviews": "NOT_APPLICABLE_DOCUMENTARY_ONLY",
+  "archived_files": [
+    {
+      "path": "README.md",
+      "sha256": "6e068bb44a5685eec5847afe210e9db11e93a6d82209b024097e02f00c504791",
+      "bytes": 10050,
+      "drive_id": "1cLjDyjKzbs9yDmbtSp1FLb27AYt9J__4",
+      "remote_bytes_identical": true,
+      "shared": false
+    },
+    {
+      "path": "docs/PRODUCT-VISION.md",
+      "sha256": "3e114f5b70eecb69cca978f8e1a4274a0ca5ff65e015a794a1e1d0adbbcfc278",
+      "bytes": 19408,
+      "drive_id": "1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_",
+      "remote_bytes_identical": true,
+      "shared": false
+    },
+    {
+      "path": "docs/PRODUCT-VISION.html",
+      "sha256": "e353ab51a8b8ea6dbf60d6b31e04aa3612f1cc25a1b36ff9b0b1774221bd54c1",
+      "bytes": 178756,
+      "drive_id": "1cAFkWyF8YQNZTuQg-TXsxWMPrX4O7BYB",
+      "remote_bytes_identical": true,
+      "shared": false
+    }
+  ],
+  "archive_folder_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+  "tracker": {
+    "id": "ERW-133",
+    "marker": "ACCEL-VISION-ALIGNMENT-20261022-V1",
+    "status_changed": false,
+    "marker_readback_verified": true
+  },
+  "implementation_gaps": [
+    "External evidence to company exposure and durable decision case",
+    "Risk/opportunity/mixed qualification and commercial feasibility",
+    "UI continuity for evidence, impact and revised proposal"
+  ],
+  "source_symbols": {
+    "src/contracts/index.ts": [
+      "AgentRunnerInput",
+      "Proposal",
+      "BusinessOption",
+      "SourceEvidence"
+    ],
+    "src/watch/engine.ts": [
+      "createWatchEngine",
+      "runOnce"
+    ],
+    "src/server/watch-service.ts": [
+      "createWatchServices"
+    ],
+    "src/agent/runner.ts": [
+      "createAgentRunner"
+    ],
+    "src/agent/context.ts": [
+      "ModelContext",
+      "buildModelContext",
+      "releasedCommitments"
+    ],
+    "src/domain/engine.ts": [
+      "evaluateOptions"
+    ],
+    "src/ui/App.tsx": [
+      "App",
+      "ProposalDetail"
+    ],
+    "src/ui/api.ts": [
+      "mapProposal"
+    ]
+  },
+  "builder_reception": "TRANSMITTED_4_EXPLICIT_ACK_1_PENDING_3",
+  "relay_receipt": "proposals/product/RELAY-RECEIPT.json",
+  "next_action": "Les proprietaires recoivent les criteres et reconcilient leur perimetre ; integrateur pour extensions, assemblage et preuves avant de declarer le build aligne.",
+  "public_publication": false,
+  "commit_push": false
+}

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "status": "TWO_ROLES_RECEIVED_NO_RETAINED_FINDING",
+  "checkedAt": "2026-10-22T11:36:51.265872+00:00",
+  "scope": "proposals/agent/INDUSTRIAL-REVIEW-SCOPE.json",
+  "sourceFingerprint": "f090e5d773f37d18a09f9137d3cf0f0c051076afb74585bc66c1ce6d264c9d18",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "servedModels": "UNATTESTED",
+  "reviewers": [
+    {
+      "agent": "/root/industrial_counter_review",
+      "modelRequested": "gpt-6.1-sol",
+      "effort": "high",
+      "isolation": "fork_turns:none",
+      "cycles": 2,
+      "tests": "14/14 PASS",
+      "strictTypecheck": "PASS",
+      "hashes": "10/10 MATCH before/after"
+    },
+    {
+      "agent": "/root/industrial_architecture_review",
+      "modelRequested": "gpt-6-astra",
+      "effort": "high",
+      "isolation": "fork_turns:none",
+      "cycles": 2,
+      "tests": "14/14 PASS",
+      "strictTypecheck": "PASS",
+      "hashes": "10/10 MATCH before/after"
+    }
+  ],
+  "findingsClosed": [
+    "Raw SCENARIO demand excluded in domain was incorrectly reintroduced by model projection. RED then GREEN regression.",
+    "CRM draft backed by cancelled or unconfirmed inbound could consume demand. RED then GREEN regression."
+  ],
+  "limits": [
+    "Pure calculation/projection only. No industrial runtime model, server assembly, actual demo execution or Aiven proof.",
+    "Full portfolio test all10000 protected; observed test durations5.6s to21.05s under concurrent host load.",
+    "Human authentication, current company lock, shared snapshot/ledger revision and exact plan revalidation remain server responsibilities."
+  ]
+}

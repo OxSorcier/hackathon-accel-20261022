@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "date": "2026-10-22",
+  "session_id": "01a162cd-6303-7891-9160-54e6b70a3ffc",
+  "status": "visual_proposals_generated_and_inspected",
+  "objective": "Images du parcours élargi et rapprochement avec la vision courante",
+  "tool": "built-in image_gen",
+  "direction": "A conservée",
+  "current_vision": "Changements du marché, relations avec l'entreprise, risques, opportunités et effets mixtes, options réalisables, décision et réévaluation. Premier terrain BTP et bois.",
+  "delta_from_v1": "La première série Figma montrait surtout le risque de retard fournisseur. Ces images ajoutent la file commune de risques/opportunités/mixtes et une piste commerciale à qualifier. Elles ne changent aucun contrat applicatif.",
+  "artifacts": [
+    {
+      "path": "01-parcours.png",
+      "role": "Parcours conceptuel 01 à 06, boucle de réévaluation vers 02"
+    },
+    {
+      "path": "02-accueil.png",
+      "role": "Accueil proposé avec nature d'impact distincte des états de travail"
+    },
+    {
+      "path": "03-opportunite.png",
+      "role": "Opportunité à qualifier, données manquantes et réservations préservées"
+    }
+  ],
+  "sources_sha256": {
+    "docs/PRODUCT-VISION.md": "3e114f5b70eecb69cca978f8e1a4274a0ca5ff65e015a794a1e1d0adbbcfc278",
+    "docs/HANDOFF.md": "03c4ebe3d54eb6bfccf7593647f85c2028cb7b81669e380064459be84070519c",
+    "fixtures/company/dataset.json": "bad22e5b53b82c793f34aff5e53d41a8f155d16f6938bc9d2e871374a114c4c9",
+    "design/A-bureau-decisions.png": "0622ae63f8ebaa837ef8a373bd8283c66ee349d1c8bc5f44602287e64a1ba8fc"
+  },
+  "semantic_reception": {
+    "nominal": "01 Surveiller, 02 établir ou vérifier les relations métier, 03 qualifier, 04 comparer, 05 décision de Paul, 06 conserver et réévaluer. Nouvelle information : retour 02.",
+    "opportunity_case": "Marché régional fictif, besoin et compatibilité inconnus. Centre : huit palettes ISO100 toutes réservées à B, zéro libre. Sud ISO120 : compatibilité à vérifier. Préparation d'offre indisponible tant que les faits manquent.",
+    "counterpath": "Sans relation établie, rester à vérifier. Sans capacité confirmée, demander une nouvelle analyse. Préparer une offre ne réserve et n'envoie rien.",
+    "visual_check": "Trois images effectivement inspectées. Typographie lisible, shell A conservé, propositions et données fictives visibles.",
+    "correction": "Premier schéma de flow rejeté pour connecteurs erronés. Version retenue en parcours serpent 01-02-03-04-05-06, retour 06 vers 02. Délais inventés remplacés par À calculer.",
+    "limits": "Illustrations conceptuelles. Le schéma résume les états et ne montre pas tous les écrans de refus/erreur. Dates et compteurs de maquette ne constituent pas des résultats d'exécution."
+  },
+  "edit_prompt": "Edit the attached flow infographic. This is the edit target, not merely a style reference. Make one targeted structural correction: the workflow connections must be unambiguous and semantically correct. Preserve the existing Direction A style, typography, colors, title, proposed/fictitious/date tag, exact six card contents, card styling, and the bottom agent strip.\n\nRearrange the SAME six cards into a spacious TWO-COLUMN, THREE-ROW snake layout, on a roughly square canvas, with enough exterior margin to route arrows. Positions:\ntop row: 01 Surveiller on LEFT, 02 Relier à notre entreprise on RIGHT.\nmiddle row: 04 Comparer les options on LEFT, 03 Qualifier l’impact on RIGHT.\nbottom row: 05 Paul décide on LEFT, 06 Suivre et réévaluer on RIGHT.\n\nThe main path must be EXACTLY: 01 → 02, then 02 ↓ 03, then 03 ← 04 (the arrowhead points LEFT into card 04: travel starts at card 03 and ends at card 04), then 04 ↓ 05, then 05 → 06.\nTo be totally clear: 01 to 02 to 03 to 04 to 05 to 06, in that order. No other main path arrows.\nOne distinct return loop starts at 06 and runs in the OUTSIDE RIGHT margin up to 02, with its arrowhead entering card 02. Label it clearly \"Nouvelle information : retour à l’analyse\". Do not route the return through step 05. Do not draw any arrow directly from 05 to 02.\nAll connectors must touch the intended cards without crossing through other cards, text or the agent strip. Slightly increase whitespace as required. Maintain large readable French text.\n\nMinor text correction only in step04: replace sample \"2 semaines\" and \"5 semaines\" with \"À calculer\" so no actual lead time is claimed by this conceptual diagram. Correct \"un meilleure condition\" to \"une meilleure condition\". No new metrics or content. The result remains labelled Proposition v2 and Données fictives.",
+  "product_code_modified": false,
+  "figma_v1_preserved": true,
+  "figma_v2_native": "NOT_CREATED",
+  "runtime": "NOT_RUN",
+  "user_visual_acceptance": "pending",
+  "prompt_file": "IMAGE-PROMPTS.json",
+  "previous_receipt": "../figma-flow-v1/RECEIPT.json"
+}

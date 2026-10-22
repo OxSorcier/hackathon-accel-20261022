@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-22T10:39:09.778Z",
+  "before": {
+    "origin": "http://127.0.0.1:3000",
+    "state": {
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "revision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+      "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+      "caseRevision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca",
+      "confirmationEventId": "e925cb58-a2fd-44d3-bb01-237cfdfe44ad",
+      "runId": "6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+      "proposalId": "proposal:6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+      "proposalStatus": "approved",
+      "traceCount": 16,
+      "caseVersionCount": 4,
+      "hashes": {
+        "company": "7065ff20502d028314f4962c72266f99f0fd7ca229db417c15c12aa9591f5bdc",
+        "case": "8fa402dca9cf3d18534994d8de5791e38dbcb065bda0539e2d667bda27625956",
+        "caseHistory": "7228daff85a57ccb81b19987420b365bb0df2955656cf3c53eec80eec384d50d",
+        "run": "974b982a23821f821045ccdf703d3d641e0e9eada465f3115a62b40761794296",
+        "traces": "b7c87a9d4d4d0c65cda7c39585b5e5abe95eef061637dea93679ab09b1197161",
+        "proposal": "6392356ffa698d1ab58b182804dfc08c8325f0deef66596b9560eb39b3ccf946",
+        "inventory": "74c4ccc3122404c8fc98d27114b1df3cb797cd863233a83a10677a2b0c3b0ea6"
+      }
+    }
+  },
+  "status": "FINAL_APPROVED_STATE_PRESERVED_AFTER_RESTART",
+  "after": {
+    "origin": "http://127.0.0.1:3001",
+    "state": {
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "revision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+      "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+      "caseRevision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca",
+      "confirmationEventId": "e925cb58-a2fd-44d3-bb01-237cfdfe44ad",
+      "runId": "6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+      "proposalId": "proposal:6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+      "proposalStatus": "approved",
+      "traceCount": 16,
+      "caseVersionCount": 4,
+      "hashes": {
+        "company": "7065ff20502d028314f4962c72266f99f0fd7ca229db417c15c12aa9591f5bdc",
+        "case": "8fa402dca9cf3d18534994d8de5791e38dbcb065bda0539e2d667bda27625956",
+        "caseHistory": "7228daff85a57ccb81b19987420b365bb0df2955656cf3c53eec80eec384d50d",
+        "run": "974b982a23821f821045ccdf703d3d641e0e9eada465f3115a62b40761794296",
+        "traces": "b7c87a9d4d4d0c65cda7c39585b5e5abe95eef061637dea93679ab09b1197161",
+        "proposal": "6392356ffa698d1ab58b182804dfc08c8325f0deef66596b9560eb39b3ccf946",
+        "inventory": "74c4ccc3122404c8fc98d27114b1df3cb797cd863233a83a10677a2b0c3b0ea6"
+      }
+    }
+  },
+  "passed": true,
+  "noModelOrCollectionCall": true
+}

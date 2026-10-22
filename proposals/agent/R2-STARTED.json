@@ -1,0 +1,9 @@
+{
+  "status": "STARTED_NO_AUTOMATIC_REPEAT",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "companyId": "CO-RESEARCH-R1-EMPTY",
+  "startedAt": "2026-10-22T12:09:40.933Z",
+  "sourceFingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631",
+  "initialSnapshotHash": "5d26dc25e05cf0c421c2a28a47cebd86b499821ce4befb97569681cfd64b1f6c",
+  "r1Hash": "8ca199c424abf11a70dfd91718d44d6764b363d2599384a35c6d76d1c6f17d20"
+}

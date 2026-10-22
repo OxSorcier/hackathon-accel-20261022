@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "status": "AMENDMENT_READY_FOR_READ_ONLY_REVALIDATION",
+  "createdAt": "2026-10-22T11:38:27.357534+00:00",
+  "scope": "R1 oracle correction and one remaining restart, no third model run",
+  "files": [
+    {
+      "path": ".local/research-reception/shared.ts",
+      "sha256": "3f13ed1dda09eae140ccca4276c84df399befe69c6a7f0daedbd297b2c0c366f"
+    },
+    {
+      "path": ".local/research-reception/serve.ts",
+      "sha256": "f1d0f1f8fe3e6a0fad9ba4969b8cf75482e35094eacfae4d6813615bf19e27a8"
+    },
+    {
+      "path": ".local/research-reception/run.ts",
+      "sha256": "a4a9078a58d4723cd1359fadbcddea165466790f658994ffccaf0ea5bba8afd2"
+    }
+  ],
+  "runtimeManifest": "proposals/agent/R1-FROZEN.json",
+  "runtimeManifestSha256": "8d5dd09d6a4c0ca15bb9f5ab61c0adcea46544a32aca2914e1430d311f8749f4",
+  "oracle": "proposals/agent/R1-ORACLE-CORRECTION.json",
+  "oracleSha256": "6379046fd7c4482c748ab0635164137245d2067820b9641617dc1afe0b692088",
+  "reconciledFirst": "proposals/agent/R1-FIRST.json",
+  "originalNegative": "proposals/agent/R1-FIRST-FAILURE.json",
+  "expectation": "Raw5 stored; current3 only method fetch and truncated false from partial occurrence under received canonical policy. No product/source/time/model changes.",
+  "firstSession": "One existing session row remained because DELETE JSON request had no body. New login must change rowcount1to2; cleanup DELETE now sends empty object. Cookie/firstPID/IPC metrics not retained; preserve limits.",
+  "checks": "Strict standalone TS PASS before final session-count/body amendment, rerun required"
+}

@@ -1,0 +1,59 @@
+{
+  "status": "DATA_CONSISTENCY_CHECKED",
+  "checked_at": "2026-10-22T11:07:33.065515+00:00",
+  "data_origin": "synthetic",
+  "dataset_sha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+  "bytes": 4746932,
+  "table_counts": {
+    "company": 1,
+    "employees": 3,
+    "suppliers": 40,
+    "products": 200,
+    "depots": 6,
+    "customers": 400,
+    "orders": 2502,
+    "order_lines": 10000,
+    "inventory": 764,
+    "reservations": 9999,
+    "purchase_orders": 8,
+    "purchase_order_lines": 8,
+    "inbound_allocations": 13,
+    "transport_quotes": 3,
+    "emergency_quotes": 5,
+    "crm_opportunities": 81,
+    "watch_drafts": 1,
+    "construction_projects": 24,
+    "product_supply_links": 202
+  },
+  "total_rows": 24260,
+  "orders_by_site_country": {
+    "FR": 2086,
+    "BE": 416
+  },
+  "order_line_count": 10000,
+  "checks_passed": 30206,
+  "checks_summary": [
+    "unique native IDs within each table",
+    "foreign keys",
+    "reservation product, unit and site match",
+    "no stock or order over-reservation",
+    "positive exact-unit quantities",
+    "valid need dates",
+    "project customer matches order customer",
+    "inbound allocation capacities, dates, units and confirmation",
+    "baseline coverage exactly once",
+    "one qualified CRM request and 79 unqualified leads",
+    "current provenance precedes as_of; operator tables excluded"
+  ],
+  "erp_api": "NOT_RUN",
+  "crm_api": "NOT_RUN",
+  "aiven_import": "NOT_RUN",
+  "model_large_context_test": "NOT_RUN",
+  "volume_benchmark": "NOT_RUN",
+  "limitations": [
+    "One current snapshot only, not history.",
+    "Eight purchase lines, including two planned unconfirmed lines that cannot cover commitments.",
+    "Finishing capacity and customer acceptance are not modelled; one synthetic selling price and a separate quoted logistics cost are provided.",
+    "10k lines are data preparation, not evidence of a scalable agent."
+  ]
+}

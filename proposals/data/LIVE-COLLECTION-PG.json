@@ -1,0 +1,80 @@
+{
+  "observedAt": "2026-10-22T08:50:10.098Z",
+  "environment": "temporary local PostgreSQL 17.6, public BOAMP direct, no browser",
+  "companyId": "CO-DEMO",
+  "first": "completed",
+  "second": "completed",
+  "reconnected": true,
+  "occurrences": [
+    {
+      "id": "occ:ac0097c312002a05f431e22e04a7b4c03602c463e49e923b7d78637209a54b18",
+      "operationKey": "manual:explicit-second-collection",
+      "status": "completed",
+      "collectionStatus": "partial",
+      "startedAt": "2026-10-22T08:50:09.656Z",
+      "completedAt": "2026-10-22T08:50:10.094Z",
+      "sourceResults": [
+        {
+          "url": "https://www.boamp.fr/api/explore/v2.1/catalog/datasets/boamp/records",
+          "status": "partial",
+          "error": "BOUNDED_OR_INVALID_RECORDS",
+          "evidence": [
+            {
+              "id": "boamp:26-31105",
+              "publishedAt": "2026-03-27T00:00:00.000Z",
+              "collectedAt": "2026-10-22T08:50:10.094Z",
+              "contentHash": "d8071d4ac4663d4c173d389cfcf9fd6bd55de93f0777bd72e6f1b749ae2da769",
+              "mode": "direct"
+            },
+            {
+              "id": "boamp:26-30144",
+              "publishedAt": "2026-03-25T00:00:00.000Z",
+              "collectedAt": "2026-10-22T08:50:10.094Z",
+              "contentHash": "afbb4ca20baee67fca2757573aaf4d3f5a566a0a56ffeb9b2adcb5b902a3cf50",
+              "mode": "direct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scheduled:watch:170e7aebb22bb24f1a553311284202d519638fe0f0b85a90561240bb6c35d1d2:20261022085009.205000",
+      "operationKey": "schedule:20261022085009.205000",
+      "status": "completed",
+      "collectionStatus": "partial",
+      "startedAt": "2026-10-22T08:50:09.213Z",
+      "completedAt": "2026-10-22T08:50:09.638Z",
+      "sourceResults": [
+        {
+          "url": "https://www.boamp.fr/api/explore/v2.1/catalog/datasets/boamp/records",
+          "status": "partial",
+          "error": "BOUNDED_OR_INVALID_RECORDS",
+          "evidence": [
+            {
+              "id": "boamp:26-31105",
+              "publishedAt": "2026-03-27T00:00:00.000Z",
+              "collectedAt": "2026-10-22T08:50:09.638Z",
+              "contentHash": "d8071d4ac4663d4c173d389cfcf9fd6bd55de93f0777bd72e6f1b749ae2da769",
+              "mode": "direct"
+            },
+            {
+              "id": "boamp:26-30144",
+              "publishedAt": "2026-03-25T00:00:00.000Z",
+              "collectedAt": "2026-10-22T08:50:09.638Z",
+              "contentHash": "afbb4ca20baee67fca2757573aaf4d3f5a566a0a56ffeb9b2adcb5b902a3cf50",
+              "mode": "direct"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "deduplicatedEvidenceCount": 2,
+  "limits": [
+    "Not Aiven",
+    "No deployed HTTP server or scheduler lifecycle tested here",
+    "BOAMP opportunities do not establish a fictional supplier delay",
+    "Subject match may include respiratory protection equipment",
+    "Bounded partial result is not an exhaustive current survey"
+  ]
+}

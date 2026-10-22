@@ -1,0 +1,210 @@
+{
+  "schema": "accel-builder-ready/2",
+  "role": "agent",
+  "status": "READY_FOR_INTEGRATION",
+  "ready": true,
+  "version": "agent-case-confirmed-english-20261022-v3",
+  "createdAt": "2026-10-22T09:52:27.316705+00:00",
+  "threadId": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+  "projectPath": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "objective": "Connect released public observations to company-scoped, versioned conditional risk calculations and proposals; distinguish declared delay from internally confirmed synthetic facts.",
+  "sourceFingerprint": "519649f7b18c69121d03513f587c681d958cac7dc7c7a33ef8bcca05b252242d",
+  "manifest": "proposals/agent/CASE-REVIEW-SCOPE.json",
+  "files": [
+    {
+      "path": "src/domain/model.ts",
+      "sha256": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2"
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "sha256": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057"
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "sha256": "8a030ab828e853644f3141a8e0bf5493767d74e44eb0de662266d230d850e9f7"
+    },
+    {
+      "path": "src/domain/index.ts",
+      "sha256": "0a7d9e06b1fc235cafe3d4dd65f912a2f41e314d731dd1c8910baf63b6e6bcfd"
+    },
+    {
+      "path": "src/agent/case-context.ts",
+      "sha256": "7a0e3b29e1104f7fb222d46f9b814a864257e650c22e56b677431e47c4ca7be8"
+    },
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "e31ec3af0c61c6791093bdba9acaa1ba0a4b48a1d33e2592ab4b8c1626fa319b"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "c02dc079acef046767432ef0e57fd88572d1916b4f916b40efac7b0263753379"
+    },
+    {
+      "path": "src/agent/index.ts",
+      "sha256": "8726531f42c5e56268d7b9757b285768af2a1693d4107b1dbea977cd5accbc48"
+    },
+    {
+      "path": "tests/domain/engine.test.ts",
+      "sha256": "443610cf8528c5560714e0cc62019409894dc7877d4094c46e01a91be5e38e94"
+    },
+    {
+      "path": "tests/domain/case.test.ts",
+      "sha256": "556b50d1da368f6cd890fe27091884ef1b9df4cb8714852aeec55d732796bccb"
+    },
+    {
+      "path": "tests/agent/runner.test.ts",
+      "sha256": "15359aad0aaa31545a12d5748c75085b902f75dc947b283c884353707f31456b"
+    },
+    {
+      "path": "tests/agent/case.test.ts",
+      "sha256": "ff74a09b683e9791e6a1c868cad98a89c3bc8b77d46f96812408005c076a6a26"
+    },
+    {
+      "path": "tests/agent/usage.test.ts",
+      "sha256": "9362c67437474cae31c743d4dd35245375c26b69c884337ebafef4a639b51eb9"
+    },
+    {
+      "path": "tests/agent/language.test.ts",
+      "sha256": "4ec922d708e668601570d115a6ed5a58c0ca7cff22aa78673edabbf33c52a1bf"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "0f67dae2f11a01a07f95c6e9e88f145a434a82d70c4e0e94ed1be7b21fd48a56"
+    },
+    {
+      "path": "docs/CONTRACTS.md",
+      "sha256": "df74345ba177ee25ed0c1a5d9b1a95ff616372cb40b719cf2054098e9d779148"
+    }
+  ],
+  "reviewArtifacts": [
+    {
+      "path": "proposals/agent/CASE-REVIEWS.json",
+      "sha256": "c0266cd24eba7bc8d2ea7c6c88b5595c3739356d87a286b5b58bfdab47545e11"
+    },
+    {
+      "path": "proposals/agent/CASE-REVIEWS-R1.json",
+      "sha256": "3ab335578d9101bf7a3cc94f052bbbfe65d45f5b0682777aac451ff00e280d42"
+    },
+    {
+      "path": "proposals/agent/CASE-REVIEW-SCOPE.json",
+      "sha256": "76ffbd8a7ebb8aa624a9c3e33d8d86b2894aeff2060cb6ac071550bfad5b7954"
+    },
+    {
+      "path": "proposals/agent/CASE-REVIEW-SCOPE-R2.json",
+      "sha256": "59831618bab59139a46612bacc2f514e7af4450075d91f6eaa1b2fdf15a60cff"
+    },
+    {
+      "path": "proposals/agent/CASE-REVIEW-SCOPE-R1.json",
+      "sha256": "c851c909dac570fd0359784e35b9151808eef89fcbdad9f007999f2eb18f388e"
+    }
+  ],
+  "initialReceipt": {
+    "path": "proposals/agent/READY.json",
+    "unchanged": true,
+    "sha256": "67a3c29992e0c67abfc05d60e9aba67f80535ec2f45518dc1426e45649647f58",
+    "archive": "proposals/agent/READY-INITIAL.json",
+    "integratorReception": "proposals/integration/RECEIVED-AGENT.json, 20 matches at 2026-10-22T09:04:30.119Z"
+  },
+  "realizer": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "attestation": "session turn_context at realization, no provider-level served-model attestation"
+  },
+  "reviews": {
+    "status": "COMPLETE_FOR_EXACT_OWNED_SOURCE",
+    "receipt": "proposals/agent/CASE-REVIEWS.json",
+    "cycles": 2
+  },
+  "exports": {
+    "domain": [
+      "evaluateCaseBusiness",
+      "parseRiskAssumption",
+      "parseInternalConfirmation",
+      "evaluateBusiness",
+      "businessEngine"
+    ],
+    "agent": [
+      "createAgentRunner",
+      "buildModelContext",
+      "recallMemories"
+    ],
+    "requiredServerCallbacks": [
+      "currentVersion",
+      "currentCaseRef for every case run"
+    ],
+    "optionalDurablePort": "writeTrace under current server fence; finishRun persists returned result"
+  },
+  "implemented": [
+    "Positive projection validates caseRef/evidence hash/provenance/relationship/candidates/R/P and company scope; no construction data reaches the model.",
+    "No relation or no candidates returns needs_input without inference or proposal.",
+    "Declared inbound delay compares actualCoverage with a clone changing only the specified expected_date; no durable mutation.",
+    "InternalConfirmation structurally validates exact company/case/R/P, confirmed purchase, line/product/current durable date, synthetic origin and attribution; server must separately verify its immutable event.",
+    "Confirmed internal branch evaluates current durable snapshot and retains feasibility with informative EXTERNAL_RELATION_UNVERIFIED.",
+    "Hypothesis and confirmation are mutually exclusive; hypothetical proposals keep blocking conditions.",
+    "No model confirmation or approval tool; preparation is pending and non-executing.",
+    "Case and business versions checked before provider and around every tool/proposal; exact case memory isolated from other cases and plain questions.",
+    "English deterministic authored product copy, source evidence and business records preserved.",
+    "Provider usage counters normalized without invented cost or private reasoning; missing usage stays absent."
+  ],
+  "checks": [
+    {
+      "command": "node node_modules/vitest/vitest.mjs run tests/agent tests/domain tests/integration/scenarios.test.ts",
+      "status": "PASS",
+      "tests": 50,
+      "environment": "local synthetic fixtures and scripted test providers",
+      "observedAt": "2026-10-22T09:49:58Z"
+    },
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "status": "PASS",
+      "environment": "current assembled local checkout"
+    },
+    {
+      "command": "SHA-256 verification of CASE-REVIEW-SCOPE.json",
+      "status": "PASS",
+      "files": 16,
+      "evidence": "Both reviewers before/after, builder again immediately before receipt"
+    }
+  ],
+  "states": {
+    "implemented": true,
+    "testedLocally": true,
+    "reviewedExactFinalSource": true,
+    "testedOnAivenByThisBuilder": "NOT_RUN",
+    "realInferenceByThisBuilder": "NOT_RUN",
+    "integratedAcceptanceOfThisFinalVersion": "NOT_RUN",
+    "committed": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "receivedExternalEvidence": [
+    {
+      "path": "proposals/integration/AIVEN-PRODUCT-SMOKE.json",
+      "scope": "Integrator product pool, TLS, migrations, explicit synthetic seed and reconnect; not an agent-builder execution."
+    },
+    {
+      "path": "proposals/integration/OPENAI-REAL-QUESTION.json",
+      "runId": "4c73b502-7db7-4d5b-a284-ed01ba55d914",
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "scope": "Earlier candidate question-only OpenAI/Aiven approval/readback succeeded; does not prove this final delta or the public-observation case chain."
+    }
+  ],
+  "limits": [
+    "Real-provider, Aiven, restart, fencing, HTTP and browser reception remain integrator-owned checks.",
+    "Structurally valid confirmation JSON never grants authority. Store must reread immutable event and current tuple, recalculate feasibility and check role/ceiling.",
+    "Public evidence does not establish the commercial relationship or supplier delay.",
+    "Commercial opportunity and mixed-impact calculations remain outside this received tranche.",
+    "The company harness is synthetic; real company onboarding/legal identity is not implemented by these modules.",
+    "Clarification messages are generic English rather than the precise free provider question.",
+    "Initial READY is preserved; this receipt supersedes its source hashes only for the explicitly released delta.",
+    "No commit, push, deployment, new dependency, service, account, secret read or paid resource created by this builder.",
+    "Task continuity checked manually because this chat has read-only access to .codex."
+  ],
+  "nextAction": {
+    "ownerThread": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "action": "Verify this receipt and all source/dependency hashes, receive exact modules, restart the candidate and test real observation -> case -> hypothetical proposal/refusal -> operator confirmation -> current-snapshot proposal -> approved readback and restart. Keep old preview/history intact."
+  },
+  "frozenAfterReceipt": true
+}

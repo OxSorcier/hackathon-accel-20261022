@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "status": "SCRIPTS_REVIEWED_WAITING_CORRECTED_SERVER_CHECKPOINT",
+  "ownerThreadId": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+  "integratorThreadId": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "scriptReview": "proposals/agent/R1-SCRIPT-REVIEW-SCOPE.json",
+  "scripts": [
+    ".local/research-reception/shared.ts",
+    ".local/research-reception/serve.ts",
+    ".local/research-reception/run.ts"
+  ],
+  "runtimeRoot": null,
+  "entry": "dist/server/server/start.js export start()",
+  "transfer": [
+    "Only existing CO-PARCOURS-PAUL-V2 snapshot, one named watch, one named acquired occurrence and its exact evidence tuples from public.",
+    "New isolated Aiven schema, selected once, no sessions/runs/proposals/memories copied.",
+    "Witness company created by canonical syntheticSnapshot with a distinct native identity."
+  ],
+  "phases": [
+    "setup: check copied watch next_run_at is future, create fresh isolated schema, apply exact frozen migrations and initial transfer once.",
+    "first: canonical entry on3002, fresh authenticated Paul session, actual research analysis and lookup through actual worker and real OpenAI. Stop application and confirm process exit.",
+    "restart: new process on3002 with same pins/schema, no transfer or seed, new session/new run and identical question."
+  ],
+  "guards": [
+    "Never enqueue public or change3001.",
+    "Credentials loaded privately through existing node env-file flags, no credential values printed, copied or written.",
+    "Only DATABASE_URL search_path and local process config adapted in memory.",
+    "No model or port is injected; global fetch observes actual OpenAI transport and blocks unexpected external traffic after counting attempts.",
+    "Require future watch deadline before each startup; otherwise stop and notify integrator.",
+    "First model request has exactly system+user, no memoryIDs or research refs/hashes; evidence must appear subsequently in actual tool messages.",
+    "Compare retrieved source native IDs/hashes, snapshot unchanged, no business proposal, witness has no observations.",
+    "Count actual OpenAI requests and research attempts separately; preserve real usage and timing in model_result traces.",
+    "A failed/lost run is retained; expected row counts refuse an automatic repeated model call.",
+    "Results remain candidate until both server reviews and final data receipt are received."
+  ],
+  "R2": "Integrator reuses this same schema after R1; no competing environment.",
+  "externalAuthorityPins": [
+    "R1_EXPECTED_MANIFEST_SHA256 supplied as an independently observed literal at invocation",
+    "R1_EXPECTED_SERVER_CHECKPOINT_SHA256 supplied as the exact received integrator checkpoint SHA",
+    "Runtime root must equal root in that exact checkpoint; all checkpoint sources and runtime JS/migrations are rechecked.",
+    "Full manifest digest must match across setup, first and restart."
+  ],
+  "runtimeStatus": "Will use the next corrected frozen checkpoint before either of the two authorized real runs.",
+  "publicationImport": {
+    "source": "Direct data-owner message, received in this chat",
+    "migration": "migrations/007_research_publication_order.sql",
+    "sha256": "367b1f3733a10e157a5613093269e0c962c442ae70d193c4c26bce3fc05ed7b0",
+    "rule": "Apply migrations on empty isolated schema first. Under company FOR UPDATE, import the single terminal occurrence without copying publication_seq. Trigger assigns >0; original collection/publication dates remain unchanged. Ordinal proves reception in this schema only."
+  }
+}

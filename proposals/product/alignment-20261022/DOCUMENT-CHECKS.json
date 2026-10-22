@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-22T10:12:08.667817+00:00",
+  "status": "PASS",
+  "markdownRenderedHtmlSameText": true,
+  "noEmDash": true,
+  "localSourceLinksChecked": true,
+  "aside": {
+    "desktop": "1440x900, no horizontal overflow; Inter loaded",
+    "screenshot": "report-aside-desktop.png",
+    "resize": "UNAVAILABLE: not a function",
+    "fileNavigation": "UNAVAILABLE: local file access not enabled",
+    "testedVia": "loopback HTTP, limited artifact directory"
+  },
+  "chromium": "Isolated bundled Chromium 390/768/1440; offline file URL, embedded fonts, no external display requests, internal navigation passed. See RENDER-CHECKS.json.",
+  "visualInspection": "Desktop, mobile and mobile website-copy images inspected. Tables scroll locally.",
+  "applicationCodeChanged": false,
+  "productTestsRerun": false,
+  "localDomainSmoke": "One baseline evaluation on the 10000-line candidate, see LOCAL-DOMAIN-SMOKE.json.",
+  "archive": "pending remote readback"
+}

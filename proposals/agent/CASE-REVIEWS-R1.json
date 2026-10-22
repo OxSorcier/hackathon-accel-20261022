@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "scopeManifest": "proposals/agent/CASE-REVIEW-SCOPE-R2.json",
+  "sourceFingerprint": "5098603ec7c0f95e5f2593ff32ca52a7c93237b64f5be43070c3848b0c3ef040",
+  "isolation": "two separate fresh contexts with fork_turns none",
+  "servedModelAttestation": "unavailable, identities refer to requested models",
+  "realizer": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh"
+  },
+  "roles": [
+    {
+      "role": "counterexample",
+      "task": "/root/case_final_counter",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "hashes": "15 of 15 match before and after",
+      "tests": "45 existing test callbacks passed through an in-memory registration harness; not claimed as a Vitest runner execution",
+      "findings": [
+        {
+          "priority": "P2",
+          "code": "FREE_PROVIDER_PRODUCT_COPY",
+          "file": "src/agent/runner.ts",
+          "effect": "Provider final message and plain-question title/summary could be French despite SYSTEM.",
+          "status": "CONFIRMED_AND_CORRECTED_PENDING_REVALIDATION",
+          "regression": "tests/agent/language.test.ts: 2 failed before fix, 2 passed after fix"
+        }
+      ]
+    },
+    {
+      "role": "architecture",
+      "task": "/root/case_final_architecture",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "hashes": "15 of 15 match before and after",
+      "tests": "45 of 45 passed using Vitest no-cache/configLoader native",
+      "findings": [],
+      "limit": "Real-provider language adherence was not observed."
+    }
+  ],
+  "correctedVersion": {
+    "manifest": "proposals/agent/CASE-REVIEW-SCOPE.json",
+    "sourceFingerprint": "519649f7b18c69121d03513f587c681d958cac7dc7c7a33ef8bcca05b252242d"
+  },
+  "limits": [
+    "No real provider, PostgreSQL/Aiven or browser executed in either review.",
+    "Server consumers read for context are outside frozen owned scope and can evolve concurrently."
+  ]
+}

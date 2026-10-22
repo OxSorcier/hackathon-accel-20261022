@@ -1,0 +1,39 @@
+{
+  "version": 4,
+  "status": "BOUNDED_NEW_FAILURE_DIAGNOSTIC_REVIEW",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "files": [
+    {
+      "path": ".local/research-reception/r2-reconcile.ts",
+      "sha256": "88ee2099ed1bdb36d4a52da6bc812b2f4d03a3adf08d04c7687e0b7b3f8e03ec"
+    },
+    {
+      "path": ".local/research-reception/shared.ts",
+      "sha256": "3f13ed1dda09eae140ccca4276c84df399befe69c6a7f0daedbd297b2c0c366f"
+    },
+    {
+      "path": ".local/research-reception/r2.ts",
+      "sha256": "777c05f632027195b153d77154a81d5e5b15f99d7b3f984c97af9703dfd9b994"
+    },
+    {
+      "path": "proposals/agent/R2-ORACLE-CORRECTION.json",
+      "sha256": "02fab0d1bcc9471c150f62e3bc8fe43cb30d467442913e3fdfe9cda72fbc53ca"
+    },
+    {
+      "path": "proposals/agent/R2-READONLY-DIAGNOSIS.json",
+      "sha256": "94627e1f88710075173b4171510527662ce7c5afadf7adac4e2d08f8e7b51c67"
+    },
+    {
+      "path": "proposals/agent/R2-FAILURE.json",
+      "sha256": "3020a6a96178bb6a07adb8375494976a27d288096513af98c22a461775e6596d"
+    },
+    {
+      "path": "proposals/agent/R2-STARTED.json",
+      "sha256": "335178494cfe35a09c88d87b31d46ac9f6ce0be4e9afdfdfb1f9a5d8a05ae65c"
+    }
+  ],
+  "frozenRuntime": "proposals/agent/R1-FROZEN.json",
+  "runtimeFingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631",
+  "purpose": "Read-only independent diagnostic of the actual R2 failure and review of a one-shot finalizer for the single remaining authorized new-key test. Not a fourth execute/review loop of r2.ts.",
+  "execute": "NOT_RUN_PENDING_REVIEWS_AND_INTEGRATOR_RECEIPT"
+}

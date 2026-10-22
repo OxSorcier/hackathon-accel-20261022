@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "observedAt": "2026-10-22T12:33:43.169Z",
+  "allExactContentMatch": true,
+  "method": "Full raw UTF-8 remote content compared with local valid UTF-8 file content; local SHA-256 and byte sizes retained.",
+  "files": [
+    {
+      "label": "vision-md",
+      "path": "docs/PRODUCT-VISION.md",
+      "nativeId": "1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_",
+      "url": "https://drive.google.com/file/d/1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_/view",
+      "sha256": "629ff7c0b225117b686a3b31738550e69fa4bc99017f56519212fb7f7725c627",
+      "bytes": 18050,
+      "validUtf8TextByteEquivalent": true,
+      "exactContentMatch": true
+    },
+    {
+      "label": "vision-html",
+      "path": "docs/PRODUCT-VISION.html",
+      "nativeId": "1cAFkWyF8YQNZTuQg-TXsxWMPrX4O7BYB",
+      "url": "https://drive.google.com/file/d/1cAFkWyF8YQNZTuQg-TXsxWMPrX4O7BYB/view",
+      "sha256": "e08b0f992f23b16cf8329e1697051ee48a7b3e12440507864cc49ab40f054037",
+      "bytes": 176699,
+      "validUtf8TextByteEquivalent": true,
+      "exactContentMatch": true
+    },
+    {
+      "label": "demo-md",
+      "path": "proposals/product/alignment-20261022/DEMO-SCRIPT.md",
+      "nativeId": "1PJ9jbqHj0BSALsGPYZbPwNU2vhW4IExD",
+      "url": "https://drive.google.com/file/d/1PJ9jbqHj0BSALsGPYZbPwNU2vhW4IExD/view",
+      "sha256": "444b5eb588242a636160e90520a3c8d1a433321c17e3f3c308e9a7619ff79058",
+      "bytes": 16343,
+      "validUtf8TextByteEquivalent": true,
+      "exactContentMatch": true
+    },
+    {
+      "label": "demo-html",
+      "path": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+      "nativeId": "1ciaHiAmd67s1MLK4-DO4Y6vr0INg33RE",
+      "url": "https://drive.google.com/file/d/1ciaHiAmd67s1MLK4-DO4Y6vr0INg33RE/view",
+      "sha256": "7204842998ca208151bfec863b9647c2dac7aa99ad1ba5ced10396dc235f3d5f",
+      "bytes": 174939,
+      "validUtf8TextByteEquivalent": true,
+      "exactContentMatch": true
+    }
+  ]
+}

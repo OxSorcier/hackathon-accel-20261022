@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "closedAt": "2026-10-22T09:00:07.335Z",
+  "http": 200,
+  "watchId": "watch:d4e4eae6563d8bb6f0b928a748d0847192ccd47ee3cb1f722e121588b26773f4",
+  "cadenceMinutes": 5,
+  "error": null,
+  "condition": "Chrome app tab closed; Aside one-shot tabs already closed. No app browser tab until two occurrences finish."
+}

@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-22T11:42:46.720159+02:00",
+  "status": "DOCUMENTARY_DELTA_ARCHIVED_AND_REFERENCED_IMPLEMENTATION_PROPOSED",
+  "session_id": "01a162f6-8e54-7190-9b3b-fb79ba9f7b6b",
+  "vision_owner": "Erwan",
+  "tracker": "ERW-133",
+  "supersedes": null,
+  "complements": "docs/PRODUCT-VISION.md",
+  "product_code_changed": false,
+  "owners_not_messaged_at_document_generation": true,
+  "owners_not_messaged": false,
+  "authorized_transmission_receipt": "proposals/product/MEMOIRE-RECHERCHE-TRACES-TRANSMISSION.json",
+  "tests": {
+    "command": "node --import tsx ./node_modules/vitest/vitest.mjs run tests/agent/runner.test.ts tests/agent/usage.test.ts tests/agent/case.test.ts",
+    "passed": 22,
+    "failed": 1,
+    "runner_and_usage_passed": 13,
+    "failure": "case.test.ts:145 expected proposal, received uncertain",
+    "environment": "local injected test providers; shared active checkout",
+    "research_memory_end_to_end": "NOT_RUN",
+    "aiven": "NOT_RUN_BY_THIS_CHAT",
+    "real_model": "NOT_RUN_BY_THIS_CHAT"
+  },
+  "sources": [
+    {
+      "path": "src/agent/context.ts",
+      "sha256_at_document_generation": "e31ec3af0c61c6791093bdba9acaa1ba0a4b48a1d33e2592ab4b8c1626fa319b"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256_at_document_generation": "c97ea7c55c5f454fdf90f09c6f718b0793f0d715d0baf791147153848b61f14d"
+    },
+    {
+      "path": "src/data/watch-repository.ts",
+      "sha256_at_document_generation": "29e24db1be644c809b2026389b5d730f507781a5d8412be76f6186c9b821bb29"
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256_at_document_generation": "ee5b16ff04cee578c9639d47ce8b7c30343b6ff635b3e7de531e15b480dc8dea"
+    },
+    {
+      "path": "src/server/worker.ts",
+      "sha256_at_document_generation": "6eca89254140f7062aee8e6b3a6d3072d1f79a56eb6c08537a95a3d2a27962fe"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256_at_document_generation": "0f67dae2f11a01a07f95c6e9e88f145a434a82d70c4e0e94ed1be7b21fd48a56"
+    },
+    {
+      "path": "tests/agent/runner.test.ts",
+      "sha256_at_document_generation": "15359aad0aaa31545a12d5748c75085b902f75dc947b283c884353707f31456b"
+    },
+    {
+      "path": "tests/agent/usage.test.ts",
+      "sha256_at_document_generation": "9362c67437474cae31c743d4dd35245375c26b69c884337ebafef4a639b51eb9"
+    },
+    {
+      "path": "tests/agent/case.test.ts",
+      "sha256_at_document_generation": "d585148fe57ff65f6e7089ba8fe2b6beb627d2c27a2ddee91bb76e3faa2d85b1"
+    },
+    {
+      "path": "package.json",
+      "sha256_at_document_generation": "b89be02ce5d1b43ad6ae260d5565f90060aac0f2f2b380bc534d4976a9462be5"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "proposals/product/MEMOIRE-RECHERCHE-TRACES.md",
+      "sha256": "40f7688443fac56ec2d5ef37fabbc690490e51916430d780dc127a57757d5a56",
+      "bytes": 11117
+    },
+    {
+      "path": "proposals/product/MEMOIRE-RECHERCHE-TRACES.html",
+      "sha256": "4749c2b0e47cec108f1ded8cb7fe13ffbfd2b2d8bdac7406cc11138bc7ef4ca3",
+      "bytes": 169084
+    }
+  ],
+  "document_checks": {
+    "status": "PASS",
+    "detail": "MEMOIRE-RECHERCHE-TRACES-DOCUMENT-CHECKS.json",
+    "markdown_html_text_identical": true,
+    "no_em_dash": true,
+    "aside_desktop": "PASS_1440x900",
+    "aside_resize": "UNAVAILABLE",
+    "chrome_devtools": "UNAVAILABLE_PROFILE_IN_USE",
+    "isolated_chromium_widths": [
+      390,
+      768,
+      1440
+    ],
+    "external_display_requests": 0,
+    "visual_inspection": "Desktop, mobile et table mobile inspectes ; tables dans leur scroll local."
+  },
+  "archive": {
+    "status": "VERIFIED_REMOTE_BYTES",
+    "folder_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+    "files": [
+      {
+        "format": "md",
+        "drive_id": "1KJAY_7xs2pu1AnHj1qanABI7bk_pTIM8",
+        "url": "https://drive.google.com/file/d/1KJAY_7xs2pu1AnHj1qanABI7bk_pTIM8/view?usp=drivesdk",
+        "remote_bytes_identical": true,
+        "shared": false,
+        "parent_verified": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "sha256": "40f7688443fac56ec2d5ef37fabbc690490e51916430d780dc127a57757d5a56"
+      },
+      {
+        "format": "html",
+        "drive_id": "1Ywt0V-HRdBOm3D5cwLXQOMF_Fe7PbOj6",
+        "url": "https://drive.google.com/file/d/1Ywt0V-HRdBOm3D5cwLXQOMF_Fe7PbOj6/view?usp=drivesdk",
+        "remote_bytes_identical": true,
+        "shared": false,
+        "parent_verified": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "sha256": "4749c2b0e47cec108f1ded8cb7fe13ffbfd2b2d8bdac7406cc11138bc7ef4ca3"
+      }
+    ]
+  },
+  "tracker_reference": {
+    "status": "PUBLISHED_READBACK_VERIFIED",
+    "issue_id": "ERW-133",
+    "comment_id": "a21b03bd-5d06-4615-8c8c-242c06e8cb60",
+    "marker": "ACCEL-MEMOIRE-RECHERCHE-TRACES-20261022-V1"
+  },
+  "next_owner": "Integrateur pour contrat, reception et chaine ; donnees/agent/UI sur leurs chemins",
+  "archive_verified_at": "2026-10-22T11:47:55.896138+02:00",
+  "source_changes_after_document_generation": [
+    "src/agent/runner.ts",
+    "src/server/store.ts",
+    "src/server/worker.ts",
+    "tests/agent/case.test.ts"
+  ]
+}

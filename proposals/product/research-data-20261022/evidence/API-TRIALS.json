@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "scope": "Public API feasibility, not product integration or benchmark",
+  "observedOn": "2026-10-22",
+  "trials": [
+    {
+      "id": "search-lucens-filtered",
+      "authentication": "public_keyless",
+      "httpStatus": 200,
+      "request": {
+        "query": "Lucens incendie septembre 2026",
+        "site": "isover.ch",
+        "mode": "realtime",
+        "published_after": "2026-09-01",
+        "max_results": 5,
+        "snippet_max_length": 400
+      },
+      "observedResponse": {
+        "keys": [
+          "query",
+          "mode",
+          "results"
+        ],
+        "title": null,
+        "url": null,
+        "resultCount": 0,
+        "resultUrls": [],
+        "providerPublishedAt": null,
+        "contentCharacters": null,
+        "contentSha256": null,
+        "error": null,
+        "message": null
+      },
+      "responseSha256": "93e4f6d0466f1c7ae18dd71eb03aa07ba65a00dd4c976ddf6da0bda88445a480",
+      "responseDate": "Thu, 22 Oct 2026 09:26:27 GMT",
+      "rateHeaders": [
+        "x-ratelimit-limit: 1000",
+        "x-ratelimit-remaining: 995",
+        "x-ratelimit-reset: 2026-10-22T10:12:56.253Z"
+      ]
+    },
+    {
+      "id": "fetch-lucens-indexed",
+      "authentication": "public_keyless",
+      "httpStatus": 403,
+      "request": {
+        "url": "https://www.isover.ch/de/news/information-zum-vorfall-der-nacht-vom-24-auf-den-25-september-2026",
+        "max_chars": 16000
+      },
+      "observedResponse": {
+        "keys": [
+          "error",
+          "message"
+        ],
+        "title": null,
+        "url": null,
+        "resultCount": null,
+        "resultUrls": null,
+        "providerPublishedAt": null,
+        "contentCharacters": null,
+        "contentSha256": null,
+        "error": "Upstream forbidden",
+        "message": "The target server denied access to this URL"
+      },
+      "responseSha256": "4e7ce1cdd15337c3728b96a62cd2bbfddff569b43cdd0e1b43fd8734e8d68041",
+      "responseDate": "Thu, 22 Oct 2026 09:26:33 GMT",
+      "rateHeaders": [
+        "x-ratelimit-limit: 1000",
+        "x-ratelimit-remaining: 998",
+        "x-ratelimit-reset: 2026-10-22T10:26:27.475Z"
+      ]
+    },
+    {
+      "id": "fetch-lucens-live",
+      "authentication": "public_keyless",
+      "httpStatus": 403,
+      "request": {
+        "url": "https://www.isover.ch/de/news/information-zum-vorfall-der-nacht-vom-24-auf-den-25-september-2026",
+        "max_chars": 16000,
+        "live": true
+      },
+      "observedResponse": {
+        "keys": [
+          "error",
+          "message"
+        ],
+        "title": null,
+        "url": null,
+        "resultCount": null,
+        "resultUrls": null,
+        "providerPublishedAt": null,
+        "contentCharacters": null,
+        "contentSha256": null,
+        "error": "Upstream forbidden",
+        "message": "The target server denied access to this URL"
+      },
+      "responseSha256": "4e7ce1cdd15337c3728b96a62cd2bbfddff569b43cdd0e1b43fd8734e8d68041",
+      "responseDate": "Thu, 22 Oct 2026 09:26:31 GMT",
+      "rateHeaders": [
+        "x-ratelimit-limit: 1000",
+        "x-ratelimit-remaining: 999",
+        "x-ratelimit-reset: 2026-10-22T10:26:27.475Z"
+      ]
+    },
+    {
+      "id": "fetch-rockwool-march",
+      "authentication": "public_keyless",
+      "httpStatus": 200,
+      "request": {
+        "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+        "max_chars": 12000
+      },
+      "observedResponse": {
+        "keys": [
+          "url",
+          "title",
+          "content",
+          "description",
+          "author",
+          "published_at"
+        ],
+        "title": "Actualit&#xE9; du 05 mars 2026",
+        "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+        "resultCount": null,
+        "resultUrls": null,
+        "providerPublishedAt": 1772781600,
+        "contentCharacters": 1173,
+        "contentSha256": "d6ef01a263e4ab5bca7e4db01ad9445f208a1b89e6eb7dc71584ed8c8198c80a",
+        "error": null,
+        "message": null
+      },
+      "responseSha256": "f19b69471bfb7363953e4101601c738143d8906f2cd0b80ce580e628728b9e83",
+      "responseDate": "Thu, 22 Oct 2026 09:28:45 GMT",
+      "rateHeaders": [
+        "x-ratelimit-limit: 1000",
+        "x-ratelimit-remaining: 995",
+        "x-ratelimit-reset: 2026-10-22T10:26:27.475Z"
+      ]
+    },
+    {
+      "id": "fetch-rockwool-incident",
+      "authentication": "public_keyless",
+      "httpStatus": 200,
+      "request": {
+        "url": "https://www.rockwool.com/fr/a-propos-de-rockwool/presse-et-medias/2025/incident-ma%C3%AEtris%C3%A9-dans-une-zone-de-stockage-de-lusine-rockwool-de-saint-%C3%A9loy-les-mines/",
+        "max_chars": 12000
+      },
+      "observedResponse": {
+        "keys": [
+          "url",
+          "title",
+          "content",
+          "description",
+          "published_at"
+        ],
+        "title": "Incident maîtrisé dans une zone de stockage de l’usine ROCKWOOL de Saint-Éloy-les-Mines",
+        "url": "https://www.rockwool.com/fr/a-propos-de-rockwool/presse-et-medias/2025/incident-ma%C3%AEtris%C3%A9-dans-une-zone-de-stockage-de-lusine-rockwool-de-saint-%C3%A9loy-les-mines/",
+        "resultCount": null,
+        "resultUrls": null,
+        "providerPublishedAt": 1766567687,
+        "contentCharacters": 772,
+        "contentSha256": "6345dacdb6269a7c5a90d96d95f783e23ffbefb5eeb352fda96eedfb04516f5d",
+        "error": null,
+        "message": null
+      },
+      "responseSha256": "d1fbb01ec3064f696d027c3e2bd20f0bd5b653ebc4c5ffc7f600e75e83e48594",
+      "responseDate": "Thu, 22 Oct 2026 09:28:46 GMT",
+      "rateHeaders": [
+        "x-ratelimit-limit: 1000",
+        "x-ratelimit-remaining: 996",
+        "x-ratelimit-reset: 2026-10-22T10:26:27.475Z"
+      ]
+    },
+    {
+      "id": "fetch-rpc-guide",
+      "authentication": "public_keyless",
+      "httpStatus": 200,
+      "request": {
+        "url": "https://rpc-construction.ecologie.gouv.fr/rpc-20243110",
+        "max_chars": 12000
+      },
+      "observedResponse": {
+        "keys": [
+          "url",
+          "title",
+          "content",
+          "description"
+        ],
+        "title": "Le RPC 2024/3110 | Règlement (UE) sur les Produits de Construction",
+        "url": "https://rpc-construction.ecologie.gouv.fr/rpc-20243110",
+        "resultCount": null,
+        "resultUrls": null,
+        "providerPublishedAt": null,
+        "contentCharacters": 1898,
+        "contentSha256": "578964bd7d922da5f08884945e7a09fde3f15e319ef26c28ac6692147cc5f163",
+        "error": null,
+        "message": null
+      },
+      "responseSha256": "9d0a3dcdd082ea470c5bd90989ec996acf73d1f03becc230ca6849a7d6170f9d",
+      "responseDate": "Thu, 22 Oct 2026 09:28:45 GMT",
+      "rateHeaders": [
+        "x-ratelimit-limit: 1000",
+        "x-ratelimit-remaining: 997",
+        "x-ratelimit-reset: 2026-10-22T10:26:27.475Z"
+      ]
+    },
+    {
+      "id": "fetch-rockwool-july",
+      "authentication": "public_keyless",
+      "httpStatus": 200,
+      "request": {
+        "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+        "max_chars": 12000
+      },
+      "observedResponse": {
+        "keys": [
+          "url",
+          "title",
+          "content",
+          "description",
+          "author",
+          "published_at"
+        ],
+        "title": "Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit",
+        "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+        "resultCount": null,
+        "resultUrls": null,
+        "providerPublishedAt": 1783692299,
+        "contentCharacters": 1301,
+        "contentSha256": "d593ae031487a2629579f62a75abcdabf477f96fe7411d9eaaa4ff2f9e46a483",
+        "error": null,
+        "message": null
+      },
+      "responseSha256": "a773ee5f48c4c5a941374de56b9cc31c9993d747959764db44e4e1eabe37eae5",
+      "responseDate": "Thu, 22 Oct 2026 09:30:10 GMT",
+      "rateHeaders": [
+        "x-ratelimit-limit: 1000",
+        "x-ratelimit-remaining: 994",
+        "x-ratelimit-reset: 2026-10-22T10:26:27.475Z"
+      ]
+    },
+    {
+      "id": "search-rockwool-pro",
+      "authentication": "public_keyless",
+      "httpStatus": 200,
+      "request": {
+        "query": "Courmelles usine ROCKWOOL calendrier 2028",
+        "site": "rockwool.com",
+        "mode": "pro",
+        "published_after": "2026-01-01",
+        "max_results": 5,
+        "snippet_max_length": 400
+      },
+      "observedResponse": {
+        "keys": [
+          "query",
+          "mode",
+          "results"
+        ],
+        "title": null,
+        "url": null,
+        "resultCount": 5,
+        "resultUrls": [
+          "https://rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026",
+          "https://rockwool.com/fr/soissons/actualites/actualite-du-02-janvier-2026",
+          "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+          "https://rockwool.com/uk/about-us/news/2025/rockwool-broadens-industry-education-offering-with-launch-of-new-training-academy",
+          "https://rockwool.com/fr/soissons/actualites/actualite-du-29-juin-2026"
+        ],
+        "providerPublishedAt": null,
+        "contentCharacters": null,
+        "contentSha256": null,
+        "error": null,
+        "message": null
+      },
+      "responseSha256": "7ea908d144056efa1a0df36bcc47fc4865afbf504bbb7cb39ee5f44492d0ca66",
+      "responseDate": "Thu, 22 Oct 2026 09:30:11 GMT",
+      "rateHeaders": [
+        "x-ratelimit-limit: 1000",
+        "x-ratelimit-remaining: 994",
+        "x-ratelimit-reset: 2026-10-22T10:12:56.253Z"
+      ]
+    }
+  ]
+}

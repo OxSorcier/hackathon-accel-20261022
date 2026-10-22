@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "status": "READY_FOR_INTEGRATOR_REVIEW",
+  "ready": false,
+  "date": "2026-10-22",
+  "scope": "Local context_manifest recorded semantics and analysis-mode badge copy against isolated CASE flow. Main research UI excluded. No new run or business execution.",
+  "manifest": "proposals/ui/context-manifest-delta/REVIEW-INPUT.json",
+  "manifestSha256": "c72ecf68492ed61517149bfbcec378692bb3c666619dba0e14be047c93864309",
+  "snapshots": [
+    {
+      "path": "src/ui/api.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/api.ts.snapshot",
+      "sha256": "a8706384bb8a38a356ec50bd63e96fae3f71dd5d3c23f756c9368852f5b4e261"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/types.ts.snapshot",
+      "sha256": "8eb3a73e588d2a3197ca27a452cca80bca4b345ee51cf2e584215f1ef2caf84a"
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "snapshot": "proposals/ui/context-manifest-delta/src/ui/App.tsx.snapshot",
+      "sha256": "b4fabde686467c03021db659b0477d065988846ba23e88af25cb7ced6f6b83c7"
+    },
+    {
+      "path": "tests/ui/context-manifest.test.ts",
+      "snapshot": "proposals/ui/context-manifest-delta/tests/ui/context-manifest.test.ts.snapshot",
+      "sha256": "5727c9bc13ecfc55a9160ebe2335a3e9761779851ddf1b459e4de7a5d3414c82"
+    }
+  ],
+  "behavior": "A validated local context_manifest event displays Context assembled and Recorded. Incomplete records remain unknown. Provider requests keep their existing statuses. Analysis provenance badges say Live analysis or Test analysis. Approved keeps its server business meaning and does not imply execution.",
+  "validation": {
+    "targetedUiTests": "2 PASS on main source containing the same display delta",
+    "typecheck": "PASS on main source",
+    "isolatedFlowBrowser": "NOT_RUN by UI owner"
+  },
+  "review": {
+    "status": "PENDING_INTEGRATOR_PANEL",
+    "instruction": "The integrator panel may cover these exact immutable bytes. No competing panel is launched for this isolated micro-delta."
+  },
+  "nextAction": "Integrator reviews the four immutable snapshots, copies only these files into the isolated flow source and verifies the saved trace without a new model call.",
+  "publication": "No commit, push or deploy."
+}

@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "status": "FRAMING_RECEIVED_PROPOSED_FOR_INTEGRATOR_NOT_FINAL_CODE_REVIEW",
+  "receivedAt": "2026-10-22T10:15:41.751610+00:00",
+  "role": "pre-code architecture framing",
+  "requestedModel": "gpt-6-astra",
+  "requestedEffort": "high",
+  "servedModelAttestation": "unavailable",
+  "isolation": "fresh context, fork_turns none",
+  "task": "/root/research_contract_framing",
+  "authority": "Integrator owns canonical types, SQL and assembly. No source file modified by framing.",
+  "scope": "Reuse attributed evidence from existing occurrences, not a qualified-conclusion registry or decision-memory replacement.",
+  "proposedMinimalContract": [
+    "ReleasedResearchScope: server company/run, admitted public profiles/watches, resolved entities, versioned freshness policy, execution mode.",
+    "ResearchEvidence: existing EvidenceRef and SourceEvidence plus first/last observed and source_observation_only qualification.",
+    "ResearchReadSet: scope token, exact refs, freshness policy version, read time and valid-until; emitted by server for run.",
+    "ResearchLookupResult: found/empty/partial/error, reusable evidence, exclusions and read-set.",
+    "ResearchRefreshResult: durable operation/occurrence identity, explicit uncertain state and observed external-call count."
+  ],
+  "proposedPorts": [
+    "lookupResearch()",
+    "refreshResearch({readSet, reason, operationKey}) with server admission and public query construction",
+    "validateResearch(readSet)"
+  ],
+  "versionRules": [
+    "Use exact refs plus scope/profile/entity generation, not global company generation. Empty lookup and new contradicting evidence must be covered.",
+    "Identical recollection does not change generation. Temporal expiry and freshness-policy version remain separate currentness checks.",
+    "Define accepted correction ordering rather than selecting maximum publishedAt; existing evidence storage has no current-version pointer.",
+    "Server records dependencies actually released to the run. Model cannot remove dependencies from proposal.",
+    "Runner checks before/after provider/tool/prepare. Server repeats under publication transaction and approval locks.",
+    "Use compatible lock order: company, research scope, case, run/proposal.",
+    "Correction makes dependent evidence require review and pending plans stale; historical approved decisions stay historical."
+  ],
+  "refreshProposal": "For first slice prefer durable refresh, then stale_context and a new run on released versions. Continuing in the same run requires dropping old evaluations/proposal/batch and old model messages, rebuilding context, and current case/business checks. Replacing a token alone is unsafe.",
+  "qualificationRules": [
+    "Valid extraction/hash does not make a semantic claim or company link verified.",
+    "Last-seen freshness does not change publication, event or statistical period.",
+    "Missing publication remains unknown. Latest failed collection stays visible and does not silently replace a last successful proof.",
+    "Freshness policy and correction authority must be explicitly received."
+  ],
+  "acceptanceRequirements": [
+    "R1: persist via data path, close session/clients, new session/run with no old answer/summary in initial context, lookup obtains native refs/hash from database. Repeat after restart without reseed.",
+    "Negative control: isolated database lacks proof, same test yields explicit missing result.",
+    "R2: changed source same identity, preserve v1, link v2, revise current retrieval and dependent case/plan. Identical v2 no extra version.",
+    "Race tests during provider, after evaluation, before publish and before approve.",
+    "Foreign company, homonym, missing/stale/partial/error/uncertain and crash after external intent.",
+    "Count model and search separately; no claimed gain without measured baseline."
+  ],
+  "concreteBlocker": {
+    "file": "src/server/cases.ts",
+    "symbol": "CaseRepository.evidence",
+    "detail": "Existing evidence boundary refuses mode other than direct. Controlled scenario is mode:test. Require an explicit isolated test path for dependent plan testing; never label fictional source direct for PASS."
+  },
+  "openDecisions": [
+    "Evidence memory scope accepted, without qualified-conclusion claims.",
+    "Versioned freshness policy and correction authority.",
+    "Refresh terminal/new run vs full reset in same run.",
+    "Explicit research result/success without business proposal; generic needs_input alone misdescribes a completed reuse."
+  ],
+  "testsExecuted": "NOT_RUN",
+  "externalCalls": "NONE",
+  "secretsRead": false,
+  "coverage": [
+    "src/agent/context.ts",
+    "src/agent/runner.ts",
+    "src/data/watch-repository.ts",
+    "src/server/store.ts",
+    "src/server/cases.ts",
+    "src/server/worker.ts",
+    "src/contracts/index.ts",
+    "project ownership/contracts",
+    "agent/data/product research proposals and selected tests"
+  ],
+  "sourceHashesAtReviewEnd": {
+    "src/contracts/index.ts": "0f67dae2f11a01a07f95c6e9e88f145a434a82d70c4e0e94ed1be7b21fd48a56",
+    "src/agent/context.ts": "e31ec3af0c61c6791093bdba9acaa1ba0a4b48a1d33e2592ab4b8c1626fa319b",
+    "src/agent/runner.ts": "c02dc079acef046767432ef0e57fd88572d1916b4f916b40efac7b0263753379",
+    "src/data/watch-repository.ts": "612fdcd619280545986d32830a2437dbfb09cb774266d07a7cd4830496e10040",
+    "src/server/store.ts": "0fbc67eafcafa1d4a2cb37e4cb32857e6dea3e305d4636fcc82708bbfb8b5066",
+    "src/server/cases.ts": "e42841627b8aa73f95c065342f875cb69ee6ee7099bf94f6b4aec8fc412fdeef",
+    "src/server/worker.ts": "47e2316ca00e19715abb30f3ff9f055dc099ad3df3ac1a7357b66eb63f63fa78"
+  },
+  "limits": [
+    "Cadrage proposed, no canonical contract publication.",
+    "No R1/R2 reception and no final code review.",
+    "No writes, services, secrets or delegated sub-review."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "frozenAt": "2026-10-22T12:34:57.958489+00:00",
+  "scope": "Received public-contracts/v1/live native BOAMP observation policy",
+  "snapshot": "/tmp/accel-public-contract-policy-review-v1",
+  "files": [
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "0e329c828e36783a0f0c2bfaadf245e48976439568f43e086106a2ab829d80f6"
+    },
+    {
+      "path": "tests/data/research-public-contracts-postgres.test.ts",
+      "sha256": "1d02622ea63a92c8850a8043384e3644675ee313143542bacee6f8108470980f"
+    }
+  ],
+  "scopeSha256": "4ce9e6bf7061cb1acfe00262c0341d675af94827789ef8c5161c8cb2bda9a455",
+  "digestRecipe": "SHA256 JSON LIST of pins sorted path, keys sorted, separators comma/colon, UTF8 no trailing newline",
+  "contextPins": [
+    {
+      "path": "src/contracts/research.ts",
+      "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214"
+    },
+    {
+      "path": "src/data/validation.ts",
+      "sha256": "070a87444889f0341adec582a929fbe1955e8b99bf01ca499365451c14cc799e"
+    },
+    {
+      "path": "src/watch/source-policy.ts",
+      "sha256": "a4aae81d72c93a3cf46f6fe91a2ec1db0a2b309bbd1eb52860f588b02aa41f3b"
+    },
+    {
+      "path": "tests/data/research-postgres.test.ts",
+      "sha256": "a70c9c81721541c76a2af6b0c65a385028bf108b8037548d4bf656095881c40b"
+    },
+    {
+      "path": "tests/data/research-service-postgres.test.ts",
+      "sha256": "a13685596e8fec4e6627814f14c114cb2cbbabd3ffbe71500e0ddf270d11cfe4"
+    }
+  ],
+  "requestedBehavior": [
+    "Opt-in restricted to exact soissons-project/v1 and public-contracts/v1; no wildcard or model-selected policy",
+    "Soissons received partial Fetch behavior unchanged",
+    "For configured public-contracts/v1/live, select only validated direct public native nontruncated dated BOAMP api_record observations, for partial AND success",
+    "No eligible record means nonreusable. Raw collection status/bodies and exact source provenance remain historical",
+    "Observation is not qualified CRM demand or company applicability. Existing freshness, authority, scope, ten-record boundary and service permission remain",
+    "Activating this policy over existing projections must not retain ineligible reusable refs, reset observation time, re-collect, revive stale state or cross the historical publication barrier",
+    "Changed eligible subset invalidates dependencies, identical material retains generation and exact refs"
+  ],
+  "testsObservedByRealizer": {
+    "aivenPostgres": 34,
+    "newPolicyPostgres": 10,
+    "existingResearchPostgres": 20,
+    "existingServicePostgres": 4,
+    "pureDataWatch": 29,
+    "strictTypecheck": "PASS",
+    "environment": "Random isolated schemas on existing Aiven, TLS verify-full/realCA, all dropped; no provider/model call"
+  },
+  "limits": [
+    "Actual collector limit/configuration and only live provider probe are integrator-owned",
+    "No worker, migration, dependency or collector change",
+    "Final independent reviews pending"
+  ]
+}

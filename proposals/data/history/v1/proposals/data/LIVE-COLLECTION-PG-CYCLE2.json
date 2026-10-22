@@ -1,0 +1,115 @@
+{
+  "observedAt": "2026-10-22T08:55:20.117Z",
+  "scopeSha256": "7d6afe5595271bdfa766609952a6041a6cfb042989acfc952a03776928fafac9",
+  "environment": "temporary local PostgreSQL 17.6, BOAMP direct, no browser",
+  "first": "completed",
+  "second": "completed",
+  "reconnected": true,
+  "deduplicatedEvidenceCount": 2,
+  "occurrences": [
+    {
+      "id": "occ:e9dd93ec9d1fd180df4fd0c44f6c81272b12ee74885589416ceec709e452b060",
+      "watchId": "watch:170e7aebb22bb24f1a553311284202d519638fe0f0b85a90561240bb6c35d1d2",
+      "companyId": "CO-DEMO",
+      "operationKey": "manual:second",
+      "status": "completed",
+      "scheduledAt": "2026-10-22T08:55:19.814Z",
+      "startedAt": "2026-10-22T08:55:19.818Z",
+      "completedAt": "2026-10-22T08:55:20.111Z",
+      "fence": 1,
+      "leaseUntil": null,
+      "result": {
+        "status": "partial",
+        "sources": [
+          {
+            "url": "https://www.boamp.fr/api/explore/v2.1/catalog/datasets/boamp/records",
+            "status": "partial",
+            "evidence": [
+              {
+                "id": "boamp:26-31105",
+                "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-31105%22",
+                "title": "Fourniture de pièces détachées pour appareils respiratoires isolants et prestations de maintenance associées",
+                "content": "DILA, BOAMP. Avis 26-31105.\nFourniture de pièces détachées pour appareils respiratoires isolants et prestations de maintenance associées\nAcheteur public : SDIS76 - Service Départemental d'Incendie et de Secours de la Seine-Maritime\nFichier DILA : 26-31105\nPublication : 2026-03-27T00:00:00.000Z\nPiste publique à qualifier. Aucun lien commercial vérifié avec les fournisseurs fictifs.",
+                "contentHash": "d8071d4ac4663d4c173d389cfcf9fd6bd55de93f0777bd72e6f1b749ae2da769",
+                "dataOrigin": "public",
+                "mode": "direct",
+                "publishedAt": "2026-03-27T00:00:00.000Z",
+                "collectedAt": "2026-10-22T08:55:20.111Z"
+              },
+              {
+                "id": "boamp:26-30144",
+                "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-30144%22",
+                "title": "Fourniture et livraison de pièces détachées, consommables et/ou accessoires pour appareils respiratoires isolants, au profit du bataillon de marins-pompiers de Marseille, en 2 lots",
+                "content": "DILA, BOAMP. Avis 26-30144.\nFourniture et livraison de pièces détachées, consommables et/ou accessoires pour appareils respiratoires isolants, au profit du bataillon de marins-pompiers de Marseille, en 2 lots\nAcheteur public : Ville de Marseille\nFichier DILA : 26-30144\nPublication : 2026-03-25T00:00:00.000Z\nPiste publique à qualifier. Aucun lien commercial vérifié avec les fournisseurs fictifs.",
+                "contentHash": "afbb4ca20baee67fca2757573aaf4d3f5a566a0a56ffeb9b2adcb5b902a3cf50",
+                "dataOrigin": "public",
+                "mode": "direct",
+                "publishedAt": "2026-03-25T00:00:00.000Z",
+                "collectedAt": "2026-10-22T08:55:20.111Z"
+              }
+            ],
+            "error": "BOUNDED_OR_INVALID_RECORDS"
+          }
+        ],
+        "startedAt": "2026-10-22T08:55:19.819Z",
+        "completedAt": "2026-10-22T08:55:20.111Z"
+      },
+      "error": null
+    },
+    {
+      "id": "scheduled:watch:170e7aebb22bb24f1a553311284202d519638fe0f0b85a90561240bb6c35d1d2:20261022085519.653000",
+      "watchId": "watch:170e7aebb22bb24f1a553311284202d519638fe0f0b85a90561240bb6c35d1d2",
+      "companyId": "CO-DEMO",
+      "operationKey": "schedule:20261022085519.653000",
+      "status": "completed",
+      "scheduledAt": "2026-10-22T08:55:19.653Z",
+      "startedAt": "2026-10-22T08:55:19.659Z",
+      "completedAt": "2026-10-22T08:55:19.810Z",
+      "fence": 1,
+      "leaseUntil": null,
+      "result": {
+        "status": "partial",
+        "sources": [
+          {
+            "url": "https://www.boamp.fr/api/explore/v2.1/catalog/datasets/boamp/records",
+            "status": "partial",
+            "evidence": [
+              {
+                "id": "boamp:26-31105",
+                "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-31105%22",
+                "title": "Fourniture de pièces détachées pour appareils respiratoires isolants et prestations de maintenance associées",
+                "content": "DILA, BOAMP. Avis 26-31105.\nFourniture de pièces détachées pour appareils respiratoires isolants et prestations de maintenance associées\nAcheteur public : SDIS76 - Service Départemental d'Incendie et de Secours de la Seine-Maritime\nFichier DILA : 26-31105\nPublication : 2026-03-27T00:00:00.000Z\nPiste publique à qualifier. Aucun lien commercial vérifié avec les fournisseurs fictifs.",
+                "contentHash": "d8071d4ac4663d4c173d389cfcf9fd6bd55de93f0777bd72e6f1b749ae2da769",
+                "dataOrigin": "public",
+                "mode": "direct",
+                "publishedAt": "2026-03-27T00:00:00.000Z",
+                "collectedAt": "2026-10-22T08:55:19.809Z"
+              },
+              {
+                "id": "boamp:26-30144",
+                "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-30144%22",
+                "title": "Fourniture et livraison de pièces détachées, consommables et/ou accessoires pour appareils respiratoires isolants, au profit du bataillon de marins-pompiers de Marseille, en 2 lots",
+                "content": "DILA, BOAMP. Avis 26-30144.\nFourniture et livraison de pièces détachées, consommables et/ou accessoires pour appareils respiratoires isolants, au profit du bataillon de marins-pompiers de Marseille, en 2 lots\nAcheteur public : Ville de Marseille\nFichier DILA : 26-30144\nPublication : 2026-03-25T00:00:00.000Z\nPiste publique à qualifier. Aucun lien commercial vérifié avec les fournisseurs fictifs.",
+                "contentHash": "afbb4ca20baee67fca2757573aaf4d3f5a566a0a56ffeb9b2adcb5b902a3cf50",
+                "dataOrigin": "public",
+                "mode": "direct",
+                "publishedAt": "2026-03-25T00:00:00.000Z",
+                "collectedAt": "2026-10-22T08:55:19.809Z"
+              }
+            ],
+            "error": "BOUNDED_OR_INVALID_RECORDS"
+          }
+        ],
+        "startedAt": "2026-10-22T08:55:19.662Z",
+        "completedAt": "2026-10-22T08:55:19.809Z"
+      },
+      "error": null
+    }
+  ],
+  "limits": [
+    "Not Aiven",
+    "No deployed HTTP lifecycle or model inference",
+    "Public BOAMP records do not prove supplier disruption",
+    "Bounded partial results and old publication dates remain visible"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "testedAt": "2026-10-22T10:41:35.421Z",
+  "status": "node_client_tested_on_modal",
+  "clientScopeRevision": 2,
+  "sourceUrl": "https://www.rockwool.com/siteassets/investors/financial-reports/2026/q2-h1-2026-financial-report.pdf",
+  "documentHash": "a46561052fe30f7e4ab152b144fa23fc1c50e5a5f931c8279141793dbba9f57b",
+  "pageCount": 17,
+  "characterCount": 40113,
+  "extractionStatus": "complete",
+  "extractorVersion": "pypdf/6.21.2+accel.1",
+  "requestLatencyMs": 5656,
+  "allDtoAndHashChecks": true,
+  "sourcePage3Check": true,
+  "manifestHashesStableBeforeAndAfter": true,
+  "authentication": "Server-only runtime Proxy Token after deployment token revocation",
+  "limits": "Real Node adapter to Modal only. Application route, Aiven persistence, cache, model citation and UI not proved by this test."
+}

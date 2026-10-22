@@ -1,0 +1,29 @@
+{
+  "browser": "Isolated Chromium 1440/768/390; local file tested. Aside file access and viewport control unavailable in the previously checked API.",
+  "results": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "tables": 1,
+      "externalResources": 0,
+      "mainTop": 372.875
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "tables": 1,
+      "externalResources": 0,
+      "mainTop": 353.703125
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "tables": 1,
+      "externalResources": 0,
+      "mainTop": 350.265625
+    }
+  ]
+}

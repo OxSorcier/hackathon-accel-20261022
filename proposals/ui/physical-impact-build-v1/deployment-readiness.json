@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "observed_date": "2026-10-22",
+  "scope": "Read-only domain and hosting readiness. No deployment, DNS mutation, account creation, commit or push performed.",
+  "status": "EXISTING_STATIC_HOSTING_ACCESS_VERIFIED",
+  "domain": {
+    "name": "physical-impact.com",
+    "registrar": "Namecheap",
+    "registered_at": "2026-10-22T11:54:16Z",
+    "nameservers": ["dns1.registrar-servers.com", "dns2.registrar-servers.com"],
+    "namecheap_authenticated_profile": "MrHarveyDt",
+    "observed_dns": [
+      { "host": "@", "type": "A", "value": "76.76.21.21", "ttl_seconds": 60 },
+      { "host": "www", "type": "A", "value": "76.76.21.21", "ttl_seconds": 60 }
+    ],
+    "https_apex": { "status": 200, "server": "Vercel", "title": "Physical Impact | From market changes to business action" },
+    "dns_change_required_for_existing_project": false
+  },
+  "vercel": {
+    "cli_version": "50.40.0",
+    "authenticated_user": "aironetwo345-1968",
+    "scope": "erwan-gallos-projects",
+    "org_id": "team_3EblBi8fygjmpKE76k0abtxB",
+    "project_name": "physical-impact",
+    "project_id": "prj_29Ll1mw7Csrbz07CjM2jkGhQAH6O",
+    "production_url": "https://physical-impact.com",
+    "node_version": "24.x",
+    "framework": "Other",
+    "root_directory": ".",
+    "build_command": "Default: npm run vercel-build or npm run build",
+    "output_directory": "Default: public if present, otherwise .",
+    "current_deployment": {
+      "id": "dpl_E6yMMBDaiApTd8BZTuEFbmv4LCee",
+      "url": "https://physical-impact-3k96fbkfr-erwan-gallos-projects.vercel.app",
+      "target": "production",
+      "status": "Ready",
+      "created_at": "2026-10-22T12:03:25Z"
+    }
+  },
+  "safe_candidate_path": {
+    "source_output": "dist/client, according to vite.config.ts. Use only the exact reviewed frontend candidate.",
+    "staging": "Use a fresh isolated temporary directory, never deploy the repository root or dist/server.",
+    "local_link_file": ".vercel/project.json with only projectId=prj_29Ll1mw7Csrbz07CjM2jkGhQAH6O, orgId=team_3EblBi8fygjmpKE76k0abtxB and projectName=physical-impact.",
+    "static_output": "Copy reviewed frontend files to .vercel/output/static. Add .vercel/output/config.json with version 3 and only the received static routing rules.",
+    "candidate_command": "vercel deploy --cwd <isolated-stage> --prebuilt --prod --skip-domain --scope erwan-gallos-projects --non-interactive --yes",
+    "verification": "Verify candidate with vercel curl and browser before promotion. Preserve deployment URL and exact file hashes.",
+    "promotion_command": "vercel promote <verified-candidate-deployment-url> --scope erwan-gallos-projects --non-interactive --yes",
+    "rollback_reference": "https://physical-impact-3k96fbkfr-erwan-gallos-projects.vercel.app",
+    "remote_project_settings_mutation_required": false,
+    "secrets_required_in_static_bundle": false
+  },
+  "aiven": {
+    "organization": "a5ec0ff0b365",
+    "project": "accel-20261022",
+    "services_page_observed": "https://console.aiven.io/account/a5ec0ff0b365/project/accel-20261022/services",
+    "observed_services": [{ "name": "accel-postgres", "type": "PostgreSQL", "status": "Running", "plan": "Hobbyist 1 CPU / 2 GB RAM / 8 GB storage", "region": "Google Cloud europe-west9, Paris" }],
+    "runtime_application_observed": false,
+    "runtime_product_path": "NOT_RUN. Deploy application button exists, but no application/service was created or tested in this mandate.",
+    "limit": "A static Vercel frontend demo does not prove Fastify, model, PostgreSQL or Aiven Runtime integration. Keep the frontend demo explicit."
+  },
+  "cloudflare": {
+    "authenticated_profile": "erwan@briques.ai",
+    "account_id": "800ce84aec66f3891be21d30757ead9a",
+    "physical_impact_zone_found": false,
+    "pages_projects_observed": ["dearwulfie-preview"],
+    "decision": "Do not use Cloudflare or change nameservers for this publication. Existing Vercel project and Namecheap DNS are already operational."
+  },
+  "methods_read": [
+    "START-HERE.md",
+    "docs/HANDOFF.md",
+    "docs/OWNERSHIP.md",
+    "docs/ACCES-CREDITS.md",
+    "/Users/erwan/.codex/skills/plan-validate-execute-learn/references/capability-discovery.md",
+    "cloudflare/SKILL.md",
+    "vercel-cli/SKILL.md",
+    "vercel-cli/references/domains-and-dns.md",
+    "vercel-cli/references/deployment.md",
+    "aside guide repl"
+  ],
+  "sources": [
+    "https://rdap.verisign.com/com/v1/domain/physical-impact.com",
+    "https://dns.google/resolve?name=physical-impact.com&type=NS",
+    "https://dns.google/resolve?name=physical-impact.com&type=A",
+    "https://ap.www.namecheap.com/Domains/DomainControlPanel/physical-impact.com/advancedns",
+    "https://physical-impact.com",
+    "Vercel CLI: whoami, project ls, project inspect physical-impact, domains ls, domains inspect physical-impact.com, inspect https://physical-impact.com",
+    "https://vercel.com/docs/build-output-api",
+    "https://vercel.com/docs/build-output-api/configuration"
+  ],
+  "remaining": [
+    "Root supplies and freezes the exact reviewed frontend candidate.",
+    "Root prepares an isolated static Build Output API package and deploys the candidate with skip-domain.",
+    "Root verifies the candidate, promotes it under received user authorization, then verifies physical-impact.com."
+  ]
+}

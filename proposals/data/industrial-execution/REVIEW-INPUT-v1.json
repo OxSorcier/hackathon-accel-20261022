@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "frozenAt": "2026-10-22T12:22:44.665368+00:00",
+  "scope": "Approved industrial simulated execution persistence",
+  "snapshot": "/tmp/accel-industrial-execution-review-v1",
+  "files": [
+    {
+      "path": "src/server/industrial-execution.ts",
+      "sha256": "9fc63c284c3f73b142c9d6315bd96ad56f31462d3194e8bf09aac10839281cf9"
+    },
+    {
+      "path": "tests/integration/industrial-execution.test.ts",
+      "sha256": "5bdc2b8fefc2e73fe5c84f7153eb3a19abba787390c9e9297ca1bd60734a7a60"
+    }
+  ],
+  "scopeSha256": "687691d229d460c4864c013076d3e9bccd6691b469ff92a74fc8ca35eb7c2bad",
+  "digestRecipe": "SHA256 JSON LIST of pins sorted path, keys sorted, separators comma/colon, UTF8 no trailing newline",
+  "contextPins": [
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "2e22d97141cde9426df6221433e2ba82d86edf8a3a93376378ce8487293e2ace"
+    },
+    {
+      "path": "src/contracts/industrial-api.ts",
+      "sha256": "cce92904ad3a26dc26a832483e85029573895ae45edeacff669d034d6e6ce1c6"
+    },
+    {
+      "path": "src/domain/industrial.ts",
+      "sha256": "87ddba8bec62406f71121af51d6fd5c17e3da795c9bca9fb303b87765f2f53ed"
+    },
+    {
+      "path": "migrations/009_industrial.sql",
+      "sha256": "15e1b736235dd4e91a63aac69dce70a9ec453861ca5015cec0f0a30fe270eaff"
+    }
+  ],
+  "testsObserved": {
+    "aivenPostgres": 9,
+    "strictTypecheck": "PASS",
+    "isolation": "Random industrial_execution_UUID schema created/dropped, TLS verify-full/realCA, no stable schema touched",
+    "ackTests": "Application ACK and recovery unavailability injected; not a real network cut"
+  },
+  "integrationRequirements": [
+    "Root callback receives same PoolClient and returns canonical current snapshot, stored approval, deterministic exact plan, all-revision executionState and current context",
+    "Root owns authenticated actor/current authority, original-time plan identity plus present-time admissibility, source freshness, event/release/current policy checks",
+    "Writer validates local role/ceiling/basis/head/hash/version, serializes under company lock, does all SQL effects and receipt atomically",
+    "Root owns route/worker assembly and final UI/model/runtime reception",
+    "Only new supplyStepId allocations are persisted; whole-portfolio coverage is not a delta",
+    "Reports/releases/approvals immutable; new revision marks their basis stale, pending generic runs/intents are invalidated",
+    "No external ERP/provider call, service or worker in this unit"
+  ],
+  "negativeHistory": [
+    {
+      "run": "2026-10-22T12:15:24Z",
+      "result": "9failed",
+      "cause": "Test plan computed before SQL JSONB normalization; assertions expected codes in generic messages"
+    },
+    {
+      "run": "2026-10-22T12:17:10Z",
+      "result": "8passed1failed",
+      "cause": "Restart test evaluated at09Z with snapshot updated at10Z; explicit rebased release/current evaluation fixes fixture"
+    },
+    {
+      "run": "2026-10-22T12:19:36Z",
+      "result": "9passed",
+      "note": "Prior to removing report status mutation; final code preserves historical report bytes"
+    }
+  ],
+  "limitations": [
+    "Independent final reviews pending",
+    "Production/integrated report approval simulation not yet proved by this test unit",
+    "Local Colima/PostgreSQL unavailable; no restart was attempted"
+  ]
+}

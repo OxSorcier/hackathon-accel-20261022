@@ -1,0 +1,67 @@
+{
+  "version": 5,
+  "date": "2026-10-22",
+  "status": "THREE_ADAPTOPS_PRODUCT_VISION_PROPOSALS_INSPECTED",
+  "authority": "Direct user-provided AdaptOps name, tagline and full target loop in this chat",
+  "generation_mode": "built-in image_gen",
+  "files": [
+    {
+      "path": "proposals/ui/pitch-slide-v5-adaptops/A-company-brief.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "dfd5c3e8ad4976a908786829161db1ae38409c1a5344eaa29dc6f532628fafb9"
+    },
+    {
+      "path": "proposals/ui/pitch-slide-v5-adaptops/B-coordinated-response.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "90b7e82540f9609faacbe01428cf55a3855786394a131b7fe3f5d8fc34cf6761"
+    },
+    {
+      "path": "proposals/ui/pitch-slide-v5-adaptops/C-adaptation-loop.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ca90eefb937e90cf4a54c3fbc8db2f37ef4997e306d365de775dc15295a3b65e"
+    }
+  ],
+  "prompt_files": [
+    "PROMPTS.json",
+    "EDIT-PROMPTS.json"
+  ],
+  "supersedes": "../pitch-slide-v4/RECEIPT.json",
+  "recommended_direction": "B-coordinated-response",
+  "variants": {
+    "A": "An already prepared company brief as the product entry point",
+    "B": "One coordinated response across procurement, operations, sales and finance",
+    "C": "Prepared brief, shared plan, approved action and durable feedback loop"
+  },
+  "target_coverage": {
+    "company_knowledge": "Company context with ERP/CRM/WMS and prior research",
+    "environment": "What changed in the synthetic industrial/demand scenario",
+    "impact": "Commitments to protect and opportunity to assess",
+    "shared_plan": "Four departmental action rows in one coordinated response",
+    "execution": "Human approval and execution control, product target only",
+    "memory": "Verify results, save knowledge and reassess; C includes a returning line"
+  },
+  "checks": [
+    "Three final 16:9 PNG files read back with hashes",
+    "All visible English copy and brand/tagline inspected",
+    "No clipping or accidental overlap observed in final outputs",
+    "Removed unrequested decorative photo from A",
+    "Corrected malformed example label in B",
+    "Corrected text overprint and pre-approval state label in C",
+    "Who, why now and planned first-user route retained"
+  ],
+  "runtime_evidence_source": {
+    "path": "docs/STATUS.md",
+    "sha256": "73c45e85a2586f0528d5ec3f6691ae64a796039bdb2b3f644612add60269ac48",
+    "scope": "Existing corrected risk flow with human approval and Aiven persistence; no new application test in this design task"
+  },
+  "limits": [
+    "Raster design proposals, not native editable slides",
+    "Full coordinated opportunity, connected execution and reusable-memory loop remains product target, not proved implementation",
+    "Synthetic scenario and product-vision scope visibly identified",
+    "No measured baseline or public submission link created",
+    "No application code, shared owner document, publication or external message changed"
+  ]
+}

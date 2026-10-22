@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "session_id": "01a16342-aae4-7882-9b65-698e60c2c0a3",
+  "status": "VISUAL_PROPOSAL_NOT_IMPLEMENTED",
+  "direction": "Approved Direction A retained. English UI, AdaptOps.",
+  "artifacts": [
+    {
+      "path": "01-cockpit.png",
+      "sha256": "652062067692c1330d87fbbc1a6d4588fae4e37712fd73004df66ba2fc1ec35b"
+    },
+    {
+      "path": "02-demo-flow.png",
+      "sha256": "bd1434dd015a938fe5454055934a2c64c53acd842a1db8327ef6049e581f6ab4"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "prompts": "PROMPTS.json",
+  "visualInspection": "Both final images inspected. Removed invented company counts. Storyboard navigation corrected to match cockpit. Correct 01 to 02 to 03 to 04 connectors. EUR 1420 is a proposed cost, not a gain. Opportunity remains unqualified; approval and execution are separate.",
+  "dataBoundary": {
+    "public": "Current risk-flow receipt reports an actually collected public source with freshness and relationship limits.",
+    "company": "Synthetic company data and operator event. No real commercial relationship established by an article.",
+    "engine": "Real model, business calculations and PostgreSQL reception reported in docs/STATUS.md. No new model run by this chat."
+  },
+  "browserObservation": {
+    "browser": "Aside local",
+    "url": "http://127.0.0.1:3001/",
+    "mode": "Read-only existing tab. No analysis, approval, reset or execution.",
+    "observed": "Saved approved EUR1420 synthetic risk proposal. Public source and internal confirmation separated; approval note says no purchase or stock transfer confirmed.",
+    "screenshot": "03-existing-app-3001.png"
+  },
+  "limits": [
+    "Images are a target, not a running cockpit or completed opportunity/execution integration.",
+    "Existing app was observed, not rebuilt or retested end-to-end by this chat.",
+    "No message sent to owner chats. User requested keeping visuals here and improving their clarity first."
+  ],
+  "next": "Refine three comparable cockpit compositions in the same Direction A. Implementation and owner relay held at the user's request."
+}

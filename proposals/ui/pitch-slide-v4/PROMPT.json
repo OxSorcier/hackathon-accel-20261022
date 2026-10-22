@@ -1,0 +1,15 @@
+{
+  "version": 4,
+  "date": "2026-10-22",
+  "language": "en",
+  "status": "design_proposal",
+  "generation_mode": "built-in image_gen",
+  "source": "../pitch-slide-v3/pitch-adaptation-v3.png",
+  "feedback": "The single slide must be impactful and explain connecting data to action, not only revealing insights",
+  "changes": [
+    "Action-led headline",
+    "Outcome-led subtitle",
+    "Human-reviewed action block"
+  ],
+  "prompt": "Edit the supplied single-slide design as a precise copy refinement. Preserve its 16:9 canvas, white space, typography, color palette, columns, product UI treatment, left and middle product blocks, WHO / WHY NOW / FIRST USERS footer and small proof note. Keep its airy art direction and use English throughout. This is a proposed product-vision slide, not a claim of autonomous real-world execution.\n\nMake exactly these three content-group changes:\n1. Replace the headline with:\n\"Act on market changes.\"\nKeep the same visual prominence and type quality. Balance the line wrapping naturally in the existing top-left title region. The words \"market changes\" retain the existing subtle mint/petrol color treatment.\n\n2. Replace the subtitle with:\n\"Connect industry signals with your company data to protect commitments, pursue opportunities and decide what to do next.\"\nUse two balanced, comfortable lines if possible. Do not shrink below the present subtitle type size.\n\n3. Refine the RIGHT-HAND product block to make action explicit while preserving human authority:\nTitle: \"Decide and act\"\nDescription: \"Review calculated options, approve the next steps and track outcomes.\"\nProduct fragment heading: \"Proposed actions\"\nFirst row: \"Protect a commitment\"\nSecond row: \"Pursue new demand\"\nPrimary button: \"Review & approve\"\nKeep all three rows clean, legible and within the existing column. Preserve the polished product-fragment style. The actions are proposed and reviewed, not automatically executed. No new claims of purchases sent, stock moved, confirmed sales or measured results.\n\nDo not change any other copy or component. No extra label, no new company name, no new metric, no invented URL, no robot, no decorative illustration, no additional explanatory paragraph. No em dash. Return only the full-bleed finished slide."
+}

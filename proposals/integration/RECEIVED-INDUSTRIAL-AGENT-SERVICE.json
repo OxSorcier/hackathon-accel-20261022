@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "status": "OWNED_PINS_RECEIVED_INTEGRATION_RUNTIME_PENDING",
+  "checkedAt": "2026-10-22T12:03:11.912531+00:00",
+  "units": [
+    {
+      "receipt": "proposals/agent/INDUSTRIAL-READY.json",
+      "receiptHash": "716a30d1bc6069af1b56110317b2824be9c63ce7591d6fd4538fbb4ba21d965e",
+      "matches": [
+        {
+          "path": "src/domain/industrial.ts",
+          "expected": "87ddba8bec62406f71121af51d6fd5c17e3da795c9bca9fb303b87765f2f53ed",
+          "actual": "87ddba8bec62406f71121af51d6fd5c17e3da795c9bca9fb303b87765f2f53ed",
+          "match": true
+        },
+        {
+          "path": "src/agent/industrial-context.ts",
+          "expected": "1b10459579998d7cce530a49d6d775ad3fd0b766e151943c00ac7d20ceabc9c6",
+          "actual": "1b10459579998d7cce530a49d6d775ad3fd0b766e151943c00ac7d20ceabc9c6",
+          "match": true
+        },
+        {
+          "path": "tests/domain/industrial-fixture.ts",
+          "expected": "92c5e91cfc890d1d717130780683cb90d3b9301a48d4b015822e8d08a183c79e",
+          "actual": "92c5e91cfc890d1d717130780683cb90d3b9301a48d4b015822e8d08a183c79e",
+          "match": true
+        },
+        {
+          "path": "tests/domain/industrial.test.ts",
+          "expected": "d2a77232a01c848ffeaf68ee4638f3438f7bcfb0fd80a713c425acd336dc8488",
+          "actual": "d2a77232a01c848ffeaf68ee4638f3438f7bcfb0fd80a713c425acd336dc8488",
+          "match": true
+        },
+        {
+          "path": "tests/agent/industrial-context.test.ts",
+          "expected": "7b90fcc2e64916030bf7641eb95450b8ade64c568abf7e7d35cd81c3776003df",
+          "actual": "7b90fcc2e64916030bf7641eb95450b8ade64c568abf7e7d35cd81c3776003df",
+          "match": true
+        }
+      ],
+      "status": "HASHES_MATCH"
+    },
+    {
+      "receipt": "proposals/agent/SCOPED-AGENT-READY.json",
+      "receiptHash": "63e141d5b2de31b5f02b0eddacaa6d5c27e58bd2d9fb628421cfae54f8e51520",
+      "matches": [
+        {
+          "path": "src/agent/context.ts",
+          "expected": "edcf50b10913dbec3c69a56772407c7c3c2effd6283b70ae0e0b7ba872ca6537",
+          "actual": "edcf50b10913dbec3c69a56772407c7c3c2effd6283b70ae0e0b7ba872ca6537",
+          "match": true
+        },
+        {
+          "path": "src/agent/runner.ts",
+          "expected": "d138898456b8672b19443ae25b37e0af21be262bec0374495450033f68324327",
+          "actual": "d138898456b8672b19443ae25b37e0af21be262bec0374495450033f68324327",
+          "match": true
+        },
+        {
+          "path": "src/agent/specialized-runner.ts",
+          "expected": "208e714a0510030013207b28563474cdb86504e67e71e33fa3cf84b832863045",
+          "actual": "208e714a0510030013207b28563474cdb86504e67e71e33fa3cf84b832863045",
+          "match": true
+        },
+        {
+          "path": "tests/agent/industrial-runner.test.ts",
+          "expected": "3754b2a72358152972ef52ab386f09c3b0cf9f88f3b94db7ba9375bfdf461751",
+          "actual": "3754b2a72358152972ef52ab386f09c3b0cf9f88f3b94db7ba9375bfdf461751",
+          "match": true
+        }
+      ],
+      "status": "HASHES_MATCH"
+    },
+    {
+      "receipt": "proposals/data/READY-RESEARCH-SERVICE-v1.json",
+      "receiptHash": "af1f5e02b4371b043f19481df2df5f9529144df46b6a8f4da1dfe9b4ae4e628c",
+      "matches": [
+        {
+          "path": "src/data/research-repository.ts",
+          "expected": "486702dc451a01bd73ef3c8c8364e04e4478b6b9c8ef2dabb6dd9c1e78bce59f",
+          "actual": "486702dc451a01bd73ef3c8c8364e04e4478b6b9c8ef2dabb6dd9c1e78bce59f",
+          "match": true
+        },
+        {
+          "path": "tests/data/research-service-postgres.test.ts",
+          "expected": "a13685596e8fec4e6627814f14c114cb2cbbabd3ffbe71500e0ddf270d11cfe4",
+          "actual": "a13685596e8fec4e6627814f14c114cb2cbbabd3ffbe71500e0ddf270d11cfe4",
+          "match": true
+        }
+      ],
+      "status": "HASHES_MATCH"
+    }
+  ],
+  "limits": [
+    "Unit reviews apply to their own pins and stated dependencies. Integrated server ports and runtime are not proved.",
+    "No real model or collector call made by this reception."
+  ]
+}

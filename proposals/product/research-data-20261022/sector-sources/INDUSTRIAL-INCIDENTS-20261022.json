@@ -1,0 +1,137 @@
+{
+  "version": 2,
+  "created_at": "2026-10-22T11:03:28.677298+00:00",
+  "status": "TWO_HISTORICAL_ORIGINALS_QUALIFIED_PRODUCT_MAPPING_PENDING",
+  "scope": "Bounded qualification of an industrial-incident source; supplements the existing source register. No new broad research, product ingestion or automatic source release.",
+  "authority": {
+    "original_task": "Erwan asked for deep sector/government/timber research and full chain coordination in the product chat.",
+    "coordination_user_thread": "01a162cf-0150-7091-8394-f5dbca7b53a9",
+    "coordination_user_message": "01a1633d-e3b7-7a03-baee-5c43eb1bc679"
+  },
+  "sources": [
+    {
+      "id": "aria:66803",
+      "url": "https://www.aria.developpement-durable.gouv.fr/accident/66803/",
+      "publisher": "ARIA, official French technological-accident register",
+      "source_kind": "government_retrospective_record",
+      "read_status": "ORIGINAL_HTTP_200_CONTENT_VERIFIED",
+      "access_evidence": "INCIDENT-ACCESS-20261022.json",
+      "content_evidence": "INCIDENT-CONTENT-20261022.json",
+      "raw_html_sha256": "10a88142254b92d2f6b83991d8a32a1d241639d7e24fe5cc6843a7c08d5a9d1c",
+      "hash_scope": "Raw HTTP response bytes; not a product collector contentHash.",
+      "collected_at": "2026-10-22T11:01:19.421912+00:00",
+      "event_date": "2026-04-03",
+      "event_time_local_approx": "09:30",
+      "publication_metadata_declared": "2026-04-03T00:00:00+00:00",
+      "modified_metadata_declared": "2026-09-15T23:00:05+00:00",
+      "first_publication_verified": false,
+      "temporal_limit": "Metadata alone does not prove which facts were public on the event day. The current retrospective text contains the later duration of the stoppage. No contemporaneous alert or prediction claimed.",
+      "establishment": {
+        "country": "FR",
+        "department": "43",
+        "commune": "Craponne-sur-Arzon",
+        "legal_name": null,
+        "siren_siret": null,
+        "activity_code_as_published": "C16.10",
+        "products_as_published": "Technical wood sawdust",
+        "site_description": "Wood-sawdust production plant; drying tunnel and silos affected.",
+        "identity_limit": "The record does not name a legal entity. Do not attach a real commercial counterparty by city or activity alone."
+      },
+      "operational_consequences_reported": [
+        {
+          "fact": "A fire damaged the production site and caused production to stop for fifteen days.",
+          "duration": 15,
+          "unit": "days_as_reported",
+          "calendar_definition": "not specified"
+        },
+        {
+          "fact": "Three silos, each with a capacity of 50 cubic metres, and part of the roof were affected.",
+          "capacity_not_loss_quantity": true
+        }
+      ],
+      "not_established": [
+        "The actual material volume lost; silo capacity is not inventory loss.",
+        "A dated restart confirmation or operational state on 22 October.",
+        "Any timber/panel/insulation SKU equivalence.",
+        "Any supplier, competitor, customer or geographical-neighbour link to the synthetic customer.",
+        "A demand increase, selling price, margin, available alternative stock or actual delivery delay."
+      ],
+      "recommended_use": "Explicitly dated recorded or retrospective scenario only. Never present as a current October interruption or imply the fifteen-day outcome was known in advance.",
+      "company_fields_needed": [
+        "Explicitly attributed synthetic scenario relation or verified legal/site relationship",
+        "Exact material/SKU mapping and unit; source describes technical sawdust",
+        "Affected purchase line, arrival dates, quantities and current internal confirmation",
+        "All current commitments, reservations, usable stock and logistics options",
+        "For the positive branch: separately qualified CRM demand, compatible product, quantity, delivery date and commercial terms",
+        "For a competitor-neighbour premise: independent evidence or explicit fictional scenario data"
+      ],
+      "release_policy": "Builder source card only. Data owner must receive and validate original public evidence through the accepted product intake; card/receipts are not product knowledge."
+    },
+    {
+      "id": "rockwool:saint-eloy:20251223",
+      "url": "https://www.rockwool.com/fr/a-propos-de-rockwool/presse-et-medias/2025/incident-ma%C3%AEtris%C3%A9-dans-une-zone-de-stockage-de-lusine-rockwool-de-saint-%C3%A9loy-les-mines/",
+      "publisher": "ROCKWOOL France",
+      "source_kind": "manufacturer_incident_statement",
+      "read_status": "ORIGINAL_HTTP_200_CONTENT_VERIFIED",
+      "raw_html_sha256": "bc237d78aab6a22b52e8e1307a7480c1c94655f9068590afefd90d281b68e2d2",
+      "hash_scope": "Raw HTTP response bytes; not a product collector contentHash.",
+      "collected_at": "2026-10-22T11:05:07.502740+00:00",
+      "event_date": "2025-12-23",
+      "event_time_local_approx": "11:30",
+      "publication_metadata_declared": "2025-12-24T09:14:47.2100000Z",
+      "modified_metadata_declared": "2025-12-24T09:17:46.0000000Z",
+      "first_publication_verified": false,
+      "temporal_limit": "Historical statement. No independently archived first version or current October operating status received.",
+      "establishment": {
+        "country": "FR",
+        "department": "63",
+        "commune": "Saint-Eloy-les-Mines",
+        "publisher_named_site": "ROCKWOOL Saint-Eloy-les-Mines",
+        "legal_site_identifier": null,
+        "site_description": "Building used for finished-product storage.",
+        "products_as_published": "Finished products, no SKU named; packaging materials mainly affected."
+      },
+      "operational_consequences_reported": [
+        {
+          "fact": "The manufacturer reports a contained storage fire and damage to part of its stock."
+        },
+        {
+          "fact": "The manufacturer states that industrial activity at the site was unaffected."
+        }
+      ],
+      "not_established": [
+        "Production shutdown; this would contradict the published statement.",
+        "Specific products, damaged quantities, lots or customer delivery delays.",
+        "That all stock or all deliveries were unaffected merely because production continued.",
+        "Any actual supplier/competitor/customer relationship with the synthetic company.",
+        "Any competitor-neighbour damage, incremental demand, commercial price or margin."
+      ],
+      "recommended_use": "Recorded insulation/materials scenario or negative control against an unsupported production-shutdown claim. A stock-delivery risk still requires an exact internal lot/order relationship and current confirmation.",
+      "company_fields_needed": [
+        "Attributed synthetic relation or verified legal/site relationship",
+        "Affected order/lot and actual stock origin/location",
+        "Separate internal confirmation of availability or delay",
+        "Compatible free stock after all commitments, logistics and quote terms",
+        "Qualified CRM need/quantity/date/price for any positive branch"
+      ],
+      "release_policy": "Public facts can enter only through accepted source intake. Relationship, demand and numbers are separately attributed company/scenario facts."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "url": "https://www.isover.ch/de/news/information-zum-vorfall-der-nacht-vom-24-auf-den-25-september-2026",
+      "publisher": "Saint-Gobain Isover SA",
+      "reason": "Original still returns HTTP403 through both web reader and ordinary host GET; no bypass. Search index reports normal operation after packaging-material fire, so it must not be used as evidence of production shutdown.",
+      "status": "ORIGINAL_NOT_RECEIVED"
+    }
+  ],
+  "previous_boundary": "ROCKWOOL future plant construction does not establish next-day disruption.",
+  "next_owner_actions": {
+    "data": "Test accepted product intake of original and preserve dates, anonymous identity and retrospective scope.",
+    "integrator": "Receive matching synthetic business relations and chronology before source/case binding; preserve independent source and company evidence.",
+    "portfolio": "Choose a genuinely matching product/scenario or reject this source for the chosen customer. Do not relabel insulation as sawdust.",
+    "product_owner": "Use a recorded scenario label if this historical incident is selected; otherwise keep the controlled fire separate from real-source proof."
+  },
+  "updated_at": "2026-10-22T11:07:07.990972+00:00",
+  "preferred_materials_case": "ROCKWOOL is closer to the existing insulation demonstrator, but supports stock damage with production continuing, not a production shutdown. ARIA supports a historical 15-day stop for technical sawdust, which requires a different material mapping."
+}

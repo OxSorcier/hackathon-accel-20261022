@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "status": "TWO_FRESH_EXACT_REVIEWS_NO_FINDINGS",
+  "scopeSha256": "687691d229d460c4864c013076d3e9bccd6691b469ff92a74fc8ca35eb7c2bad",
+  "snapshot": "/tmp/accel-industrial-execution-review-v1",
+  "cycle": 1,
+  "reviewers": [
+    {
+      "task": "/root/industrial_execution_counter_review",
+      "role": "same_coder_model_counter_review",
+      "configuredModel": "gpt-6.1-sol",
+      "servedModel": "UNATTESTED",
+      "newContext": true,
+      "exactDigestVerified": true,
+      "findings": [],
+      "writes": 0,
+      "database": "NOT_RUN",
+      "network": "NOT_RUN"
+    },
+    {
+      "task": "/root/industrial_execution_architecture_review",
+      "role": "architecture_review",
+      "configuredModel": "gpt-6-astra",
+      "servedModel": "UNATTESTED",
+      "newContext": true,
+      "exactDigestVerified": true,
+      "findings": [],
+      "writes": 0,
+      "database": "NOT_RUN",
+      "network": "NOT_RUN"
+    }
+  ],
+  "coverage": [
+    "Full writer and test files",
+    "Contracts, migration009, business calculation, store transaction and fixtures",
+    "Idempotence before revision, company lock, approval identity and current heads, ceiling, atomic writes/readback, delta allocations only, historical reports and approvals unchanged, ACK recovery read-only"
+  ],
+  "realizerTests": {
+    "aivenPostgres": 9,
+    "strictTypecheck": "PASS",
+    "isolation": "Random industrial_execution_UUID schema created/dropped, TLS verify-full/realCA, no stable schema touched",
+    "ackTests": "Application ACK and recovery unavailability injected; not a real network cut"
+  },
+  "limitations": [
+    "Reviewers independently recomputed hashes only; PostgreSQL/Aiven and network tests NOT_RUN in review contexts",
+    "Actual authority, current source/release/policy admissibility and original-time plan identity remain the integrator callback responsibility",
+    "Integrated route/worker/model/UI reception NOT_RUN by this unit"
+  ],
+  "realizerModel": {
+    "configured": "gpt-6.1-sol",
+    "served": "UNATTESTED"
+  }
+}

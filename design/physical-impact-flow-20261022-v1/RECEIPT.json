@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "status": "saved_visual_references",
+  "product": "Physical Impact",
+  "demoCompany": "Rivebois Matériaux",
+  "images": [
+    {
+      "file": "01-overview.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "ccd2b2f011ee74a687f81bd1fe3cce79ba3eee50b760f1e15d29d91e61b41827"
+    },
+    {
+      "file": "02-watchtower.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "cdf04980b47f3c75525094a7adea55977edc4a41c74f4299d50ebdaf6ddc877b"
+    },
+    {
+      "file": "03-dossier-chat.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "5d04898044b4fa4c617313c559a2962c5920fd2ac785f5dd5d2ba6405bc14974"
+    },
+    {
+      "file": "04-actions.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "82dc6b3f34027e569480687eebaf45b2114f55c442b510fa284dea1ceccdc4df"
+    },
+    {
+      "file": "05-company.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "b64c843478f47f5c427d6be1a0cebdc1fcac4e5340a444cc63c9d84b354f141d"
+    },
+    {
+      "file": "06-data-connections.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "962fafde77c9aed145b1fa68304f5522faad165e8cdf23b5c24be5260b5190c6"
+    }
+  ],
+  "prompts": "PROMPTS.json",
+  "functionalProof": "proposals/ui/physical-impact-build-v1/READY.json"
+}

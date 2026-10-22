@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "operatorOnly": true,
+  "method": "Independent foreign-key and transport alias arithmetic from raw authored v2 files. No production engine.",
+  "coreDatasetSha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+  "contextSha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e",
+  "projectOwners": 24,
+  "dependencies": 5,
+  "qualifiedDemand": 1,
+  "transportAliasCount": 2,
+  "errors": []
+}

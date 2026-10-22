@@ -1,0 +1,80 @@
+{
+  "version": 2,
+  "status": "TWO_INDEPENDENT_ROLES_CLOSED_NO_RETAINED_FINDING",
+  "checkedAt": "2026-10-22T12:25:14.461543+00:00",
+  "scope": "proposals/agent/R2-AMENDMENT-REVIEW-SCOPE.json",
+  "scopeSha256": "93fed1820f56dd9fe99d42ce13ed918ca25c3880c6c4baf4f17e683c596279c6",
+  "finalizerSha256": "88ee2099ed1bdb36d4a52da6bc812b2f4d03a3adf08d04c7687e0b7b3f8e03ec",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "servedModels": "UNATTESTED",
+  "reviews": [
+    {
+      "agent": "/root/r2_finalizer_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "effortRequested": "high",
+      "isolation": "fork_turns:none",
+      "verdict": "PASS_NO_RETAINED_FINDING",
+      "controls": [
+        "plan correct pins PASS",
+        "plan bad pin expected refusal, files unchanged",
+        "strict targeted PASS",
+        "7 scope pins unchanged"
+      ]
+    },
+    {
+      "agent": "/root/r2_finalizer_architecture",
+      "modelRequested": "gpt-6-astra",
+      "effortRequested": "high",
+      "isolation": "fork_turns:none",
+      "verdict": "PASS_NO_RETAINED_FINDING",
+      "controls": [
+        "plan correct pins PASS",
+        "plan bad pin expected refusal, files unchanged",
+        "strict targeted PASS",
+        "permuted rows accepted; changed content/deletion/duplicate/internal trace reorder detected",
+        "7 scope pins unchanged"
+      ]
+    }
+  ],
+  "findingsClosed": [
+    "Protected native row sets must be canonically ordered, preserving internal business arrays. Reproduction and corrected real-diagnostic probes PASS.",
+    "Plan mode must never write an execution negative. Correct/bad pin probes PASS without writes."
+  ],
+  "preservedLocalControlNegative": "R2-FINALIZER-FAILURE.json, R2_FINALIZER_HASH during read-only local plan against concurrently outdated pin, HTTP/DB0. Distinct from execute negative and original R2 failure.",
+  "integratorRuleReceived": "Integrator message accepts sorted tuple rule and only-new-key continuation after these two exact reviews.",
+  "limits": [
+    "Reviews did not access DB/network/execute. Runtime mutation remains pending once.",
+    "Requested and served models are not independently attested."
+  ],
+  "traceOracleDelta": {
+    "scopeVersion": 4,
+    "scopeSha256": "bc40440ffba1a27e46e14e3fd2ebd7694f331f6f914347cfaac17b74f209421d",
+    "supplement": "proposals/agent/R2-TRACE-ORACLE-SUPPLEMENT.json",
+    "negativePreserved": "proposals/agent/R2-FINALIZER-EXECUTION-FAILURE.json",
+    "causeIndependentlyReproduced": "Installed Zod4.6.7 requires optional() when undefined-valued key is absent. Native fresh manifest legitimately omits caseRef.",
+    "roles": [
+      {
+        "agent": "/root/r2_finalizer_counter",
+        "verdict": "PASS",
+        "controls": [
+          "exact helper native run accepted, prior memory/case/errors rejected",
+          "plan correct PASS, bad pin refusal no writes",
+          "strict PASS",
+          "pins before/after unchanged"
+        ]
+      },
+      {
+        "agent": "/root/r2_finalizer_architecture",
+        "verdict": "PASS",
+        "controls": [
+          "exact helper native run accepted, prior memory/case/errors rejected",
+          "plan PASS files unchanged",
+          "strict PASS",
+          "scope and45runtime pins match"
+        ]
+      }
+    ],
+    "mutationBeforeFailure": 0,
+    "originalScenarioRepeats": 0
+  }
+}

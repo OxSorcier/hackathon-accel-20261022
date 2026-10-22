@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "checkedAt": "2026-10-22T10:05:19.286260+00:00",
+  "scopeSha256": "a2daad5f79d995b51656a7682e8824a6f5b6a708e4de1feb9e1aa4f5885a0d90",
+  "cycles": 3,
+  "coder": {
+    "configuredModel": "gpt-6.1-sol",
+    "servedModel": "UNATTESTED"
+  },
+  "reviewers": [
+    {
+      "role": "same-model-counter-review",
+      "agent": "/root/keenable_counter_review_v2",
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high",
+      "freshContext": true,
+      "servedModel": "UNATTESTED",
+      "finalVerdict": "NO_RETAINED_FINDING",
+      "exactScopeSha256": "a2daad5f79d995b51656a7682e8824a6f5b6a708e4de1feb9e1aa4f5885a0d90",
+      "executed": [
+        "21 pure test callbacks in a read-only in-memory harness, not Vitest",
+        "Terminal invalid-scope recovery and transient SQL publication retry probes"
+      ],
+      "notRun": [
+        "PostgreSQL",
+        "Aiven",
+        "network",
+        "integrated product flow"
+      ]
+    },
+    {
+      "role": "contracts-and-architecture",
+      "agent": "/root/keenable_architecture_review_v2",
+      "requestedModel": "gpt-6-astra",
+      "effort": "high",
+      "freshContext": true,
+      "servedModel": "UNATTESTED",
+      "finalVerdict": "NO_RETAINED_FINDING",
+      "exactScopeSha256": "a2daad5f79d995b51656a7682e8824a6f5b6a708e4de1feb9e1aa4f5885a0d90",
+      "executed": [
+        "21 pure test callbacks in a read-only in-memory harness, not Vitest",
+        "Independent terminal and transient publication probes"
+      ],
+      "notRun": [
+        "PostgreSQL",
+        "Aiven",
+        "network",
+        "integrated product flow"
+      ]
+    }
+  ],
+  "independence": "Separate fork_turns:none contexts; no coder transcript or other reviewer conclusions provided; no delegation or writes by reviewers. Revalidation by the same original independent reviewers after grouped corrections.",
+  "cycleHistory": [
+    {
+      "scopeSha256": "001d4f3e2a8f04f2ee0c1d32e6762d686b2dfce8c3a2b73ef2686e361bbb161d",
+      "retainedIssues": [
+        "Final evidence body can exceed storage bound",
+        "Result not bound to claimed watch profile/providers",
+        "Snippet truncation not declared",
+        "Some HTTP waits escape cancellation budget",
+        "Impossible timestamp silently normalized",
+        "Transient publication failure recollects instead of retrying same result",
+        "Late Fetch normalization can misattribute body as snippet"
+      ],
+      "resolution": "Grouped fixes with regression tests; revalidated in cycles 2 and 3"
+    },
+    {
+      "scopeSha256": "5ea74d135b0c1cd28c581398c315f16e3a20e733d90646ce6ce85e48e06001b4",
+      "retainedIssues": [
+        "Terminal validation rejection blocks pending publication queue",
+        "Profile EU domain missing from general evidence URL policy"
+      ],
+      "resolution": "Both regressions observed red, corrected, then green; final revalidation cycle 3"
+    }
+  ],
+  "datePolicy": "Conflicting Search, Fetch and visible publisher dates are retained in content; canonical date null when inconsistent. Indexed copy and unverified freshness explicitly labeled.",
+  "limits": [
+    "Shared model family can share blind spots",
+    "No proof of exhaustive coverage, legal applicability, production deployment or business gain"
+  ]
+}

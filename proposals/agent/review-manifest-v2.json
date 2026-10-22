@@ -1,0 +1,12 @@
+{
+  "src/agent/context.ts": "0f801c871094c3f9e0dc7f83edb3c641e0d9b05d8c0ed07291e80c331cdc5f50",
+  "src/agent/index.ts": "8968194b55933d457fb6c736512dc2c35ab9ed6aa3c5d5bf9cd645dda17f5074",
+  "src/agent/runner.ts": "671421ad3f50d82655ace80135c885c26372ee4c26ace0c99e634c3620198e0e",
+  "src/contracts/index.ts": "e1eec6ee3fe568ba6921db8d6fb345755eef2f90b3299a0eb7372d3c8bbe055b",
+  "src/domain/contract.ts": "1fb509579d5bc2f40176b1b7c97d3adc4399e09188fc13e2186c032df3bc79ef",
+  "src/domain/engine.ts": "768bb471b6f5f05b0b00bb6e0264ad44bd26f3bc134c7e4925ec2945f0e94b7d",
+  "src/domain/index.ts": "52308544e7b44b7ee2837d015a2d2b0633089cd381fbfd2857eb4e465c51d98c",
+  "src/domain/model.ts": "07b26a2d680bd297aa4e073cc4005eb79bbfbc180a2cc1c20cf9cffc840a5364",
+  "tests/agent/runner.test.ts": "45ca1fdf8de3e18033d34e68c81d1a80bdfb4d36f82326f88cbc93815e17dc1b",
+  "tests/domain/engine.test.ts": "415ee1ae6cb12cb71e8dc39085f6776d7e0a0f08217e33fe151969d6dec733ef"
+}

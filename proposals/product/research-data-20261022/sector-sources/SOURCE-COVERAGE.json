@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "checked_at": "2026-10-22T09:54:02.003706+00:00",
+  "mode": "Research for a decision; recommendations provisional without independent review",
+  "primary_sources": [
+    {
+      "id": "business_search",
+      "url": "https://recherche-entreprises.api.gouv.fr/docs/",
+      "evidence": "Official documentation and bounded HTTP GET",
+      "decisive_claim": "Open search can return legal-entity and establishment identifiers.",
+      "status": "supported",
+      "limit": "Not complete Sirene; candidate entity does not establish a commercial relationship."
+    },
+    {
+      "id": "business_access",
+      "url": "https://annuaire-entreprises.data.gouv.fr/donnees/api-entreprises",
+      "evidence": "Official explanatory page read",
+      "decisive_claim": "Open search and restricted API Entreprise are distinct services.",
+      "status": "supported",
+      "limit": "Do not assume full administrative data access."
+    },
+    {
+      "id": "bodacc",
+      "url": "https://www.bodacc.fr/explore/dataset/annonces-commerciales/api",
+      "evidence": "Official dataset and bounded HTTP GET",
+      "decisive_claim": "Structured official notices are accessible.",
+      "status": "supported",
+      "limit": "One unfiltered record; timber relevance and ongoing ingestion not measured."
+    },
+    {
+      "id": "boamp",
+      "url": "https://www.data.gouv.fr/dataservices/api-bulletin-officiel-des-annonces-des-marches-publics-boamp",
+      "evidence": "Official API description read; previous product receipt reused",
+      "decisive_claim": "BOAMP offers an open filterable API.",
+      "status": "supported",
+      "limit": "Notice coverage is not universal; no new collector run by this chat."
+    },
+    {
+      "id": "sitadel",
+      "url": "https://www.data.gouv.fr/api/1/datasets/liste-des-permis-de-construire-et-autres-autorisations-durbanisme/",
+      "evidence": "Bounded metadata GET",
+      "decisive_claim": "CSV resource references and metadata are retrievable.",
+      "status": "supported",
+      "limit": "Full CSV and variable dictionaries not imported; product ingestion NOT_RUN."
+    },
+    {
+      "id": "sitadel_page",
+      "url": "https://www.statistiques.developpement-durable.gouv.fr/liste-des-permis-de-construire-et-autres-autorisations-durbanisme",
+      "evidence": "Web original opened",
+      "decisive_claim": "Descriptive page currently displays maintenance.",
+      "status": "observed",
+      "limit": "Use received producer metadata; do not imply full page read."
+    },
+    {
+      "id": "sdes_calendar",
+      "url": "https://www.statistiques.developpement-durable.gouv.fr/agenda-des-parutions",
+      "evidence": "Official calendar read",
+      "decisive_claim": "Scheduled publication and data availability are distinct.",
+      "status": "supported",
+      "limit": "Future publication is not data already received."
+    },
+    {
+      "id": "fnb",
+      "url": "https://www.fnbois.com/",
+      "evidence": "Original HTML, robots and advertised feed GETs",
+      "decisive_claim": "An advertised RSS feed returned ten parseable items.",
+      "status": "observed",
+      "limit": "No member extranet or commercial reuse licence established."
+    },
+    {
+      "id": "fbf",
+      "url": "https://observatoire.franceboisforet.com/",
+      "evidence": "Original HTML, robots and advertised feed GETs",
+      "decisive_claim": "An advertised RSS feed returned ten parseable items.",
+      "status": "observed",
+      "limit": "No completeness, freshness SLA or product ingestion claim."
+    },
+    {
+      "id": "isibois",
+      "url": "https://observatoire.franceboisforet.com/isibois-importation-des-sciages-resineux-octobre-2026/",
+      "evidence": "Original page and linked ten-page PDF opened",
+      "decisive_claim": "October publication describes import observations through June.",
+      "status": "supported",
+      "limit": "Do not equate publication and observation dates; no SKU quote or availability implied."
+    },
+    {
+      "id": "conjoncture",
+      "url": "https://observatoire.franceboisforet.com/wp-content/uploads/2014/06/Conjonture-filiere_juillet-2026-v2_web.pdf",
+      "evidence": "Ten-page original report read",
+      "decisive_claim": "Report uses multiple statistical periods and distinguishes species/end uses.",
+      "status": "supported",
+      "limit": "Underlying numerical series and macroeconomic statements not independently reconciled; not used as confirmed operational facts."
+    },
+    {
+      "id": "fibois",
+      "url": "https://fibois-grandest.com/actualite/",
+      "evidence": "Original listing, linked article, robots and homepage GET",
+      "decisive_claim": "Public regional information is accessible; inspected homepage advertised no feed.",
+      "status": "observed",
+      "limit": "No feed found in that HTML does not prove feed absence; no reuse licence determined."
+    },
+    {
+      "id": "forest_health",
+      "url": "https://fibois-grandest.com/secheresse-canicule-forets-grand-est/",
+      "evidence": "Original article read",
+      "decisive_claim": "A new article can rely on older underlying health information.",
+      "status": "supported",
+      "limit": "Original health data not independently checked; article is context."
+    },
+    {
+      "id": "draaf",
+      "url": "https://draaf.nouvelle-aquitaine.agriculture.gouv.fr/lutte-contre-le-nematode-du-pin-la-foire-aux-questions-a3881.html",
+      "evidence": "Official FAQ original read",
+      "decisive_claim": "Wood movement conditions depend on location and treatment.",
+      "status": "supported",
+      "limit": "Current orders, geography and applicability to any company lot unreceived."
+    },
+    {
+      "id": "onf",
+      "url": "https://www.onf.fr/produits-services/+/1fd7::lettre-conjoncture-bois-onf.html",
+      "evidence": "Original publication page and official sale guidance read; linked sales portal opened",
+      "decisive_claim": "ONF publishes market context and operates a wood sale portal.",
+      "status": "supported",
+      "limit": "Sales catalogue content and live lot availability not received; automation NOT_RUN."
+    },
+    {
+      "id": "boursabois",
+      "url": "https://www.fnbois.com/boursabois-la-bourse-en-ligne-des-bois-prend-son-envol/",
+      "evidence": "Official federation description read",
+      "decisive_claim": "Platform described as displaying offers and buyers needs.",
+      "status": "reported",
+      "limit": "No current listing, API, access terms or fulfilment trial."
+    },
+    {
+      "id": "fordaq",
+      "url": "https://bois.fordaq.com/",
+      "evidence": "Original homepage read; terms link failed",
+      "decisive_claim": "Public browsing and fuller account/premium access are differentiated.",
+      "status": "supported",
+      "limit": "API, licensed delivery and automated reuse unresolved."
+    },
+    {
+      "id": "bois_international",
+      "url": "https://www.leboisinternational.com/",
+      "evidence": "Discovery then failed web and Aside original access",
+      "decisive_claim": "Aside returned ERR_CERT_DATE_INVALID.",
+      "status": "access_unreceived",
+      "limit": "No article or terms received; certificate warning not bypassed."
+    },
+    {
+      "id": "inies",
+      "url": "https://www.inies.fr/le-webservice/demander-un-acces/",
+      "evidence": "Official access page read",
+      "decisive_claim": "Webservice requires an access application and approval under its conditions.",
+      "status": "supported",
+      "limit": "No account, licence, request or API call; FDES is not universal product conformity."
+    },
+    {
+      "id": "vigicrues",
+      "url": "https://www.vigicrues.gouv.fr/categorie/4",
+      "evidence": "Official RSS explanation read",
+      "decisive_claim": "Vigilance and website-update RSS feeds have different functions.",
+      "status": "supported",
+      "limit": "Live feed and actual site/route impact not tested."
+    },
+    {
+      "id": "cnil",
+      "url": "https://www.cnil.fr/sites/cnil/files/2024-06/recommandations_reutilisateurs_donnees_publiees_sur_internet.pdf",
+      "evidence": "Original recommendations, printed pages 26-27 read",
+      "decisive_claim": "Suitable APIs and bounded collection are recommended for personal data.",
+      "status": "supported",
+      "limit": "Not a blanket scraping licence or a determination for each proposed data use."
+    },
+    {
+      "id": "prewave",
+      "url": "https://www.prewave.com/",
+      "evidence": "Current original product page read",
+      "decisive_claim": "Vendor advertises ERP context and quantified disruption risk.",
+      "status": "vendor_claim",
+      "limit": "No efficacy, pricing, current customer or comparative product trial established."
+    },
+    {
+      "id": "everstream",
+      "url": "https://www.everstream.ai/solutions/risk-optimized-planning/",
+      "evidence": "Current original product page read",
+      "decisive_claim": "Vendor advertises risk-aware scenario modelling and inventory replanning.",
+      "status": "vendor_claim",
+      "limit": "No efficacy, pricing, current customer or comparative product trial established."
+    }
+  ],
+  "internal_sources": [
+    "docs/PRODUCT-VISION.md",
+    "docs/STATUS.md",
+    "docs/OWNERSHIP.md",
+    "proposals/product/research-data-20261022/RECHERCHE-DATA-DELTA.md",
+    "proposals/product/MEMOIRE-RECHERCHE-TRACES.md",
+    "proposals/integration/OPENAI-REAL-QUESTION.json"
+  ],
+  "read_only_product_scope": true,
+  "independent_research_review": "NOT_RUN",
+  "coverage_limits": [
+    "Not an exhaustive government or timber catalogue",
+    "No authenticated publisher access",
+    "No full Sitadel CSV import",
+    "No live ONF lot or marketplace/API trial",
+    "No relevance benchmark, commercial value or customer outcome measured",
+    "Product full-chain acceptance owned by integrator"
+  ]
+}

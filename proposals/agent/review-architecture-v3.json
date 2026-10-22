@@ -1,0 +1,19 @@
+{
+  "schema":"accel-agent-review/1",
+  "manifest":"proposals/agent/review-manifest-v3.json",
+  "role":"architecture",
+  "requestedModel":"gpt-6-astra",
+  "requestedEffort":"high",
+  "servedModel":"unverified",
+  "reviewer":"/root/agent_architecture",
+  "cycle":3,
+  "hashesVerifiedBeforeAndAfter":true,
+  "existingTestsPassed":26,
+  "previousP1Findings":"resolved: distinct tuple references, conditional approval refused, indirect displacement of B detected, interchangeable physical stock accepted",
+  "retainedFinding":{"priority":"P2","summary":"The received two-day replacement margin belongs to B but was also applied to C.","reproduction":"B remains reserved and physically covered; transfer consumes a second stock reserved for C; confirmed C replacement arrives November 4, its need date; v3 rejects by inventing November 2 deadline for C.","disposition":"confirmed and corrected in final delta; scope B preserved in typed policy; targeted revalidation within cycle 3 requested"},
+  "diagnostic":{"cause":"conversion from exact C1 prose to a global margin discarded the named commitment B","receivedDecision":"policy scope is B, so no new product decision is required","targetedDelta":"typed replacementOrderLineIds and canonical mapping to ORD-B lines; C retains its received need date","testExpectationChange":"indirect case can now remain feasible by keeping B physically covered before November 3 and assigning confirmed November 4 inbound to C"},
+  "databaseProbes":"real PgStore.decide with memory-only SQL",
+  "realProvider":"NOT_RUN",
+  "PostgreSQL_Aiven":"NOT_RUN",
+  "externalCalls":"none"
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "requested_url": "https://physical-impact.com/",
+    "final_url": "https://physical-impact.com/",
+    "http_status": 200,
+    "title": [
+      "Physical Impact | Your market changes. Your business adapts."
+    ],
+    "scripts": [],
+    "sha256": "a736696feadf0807715e763b555d46e752af3fdee1b6d67ce36a5f9aa2259626"
+  },
+  {
+    "requested_url": "https://physical-impact.com/demo",
+    "final_url": "https://physical-impact.com/demo",
+    "http_status": 200,
+    "title": [
+      "Physical Impact | Demo"
+    ],
+    "scripts": [
+      "/assets/index-Cetc72Ly.js"
+    ],
+    "sha256": "92843479b7cf3d0357f5f69f52935b027fc7df1de96a4a0b101ea862ac8f05ce"
+  },
+  {
+    "requested_url": "https://physical-impact.com/demo/",
+    "final_url": "https://physical-impact.com/demo",
+    "http_status": 200,
+    "title": [
+      "Physical Impact | Demo"
+    ],
+    "scripts": [
+      "/assets/index-Cetc72Ly.js"
+    ],
+    "sha256": "92843479b7cf3d0357f5f69f52935b027fc7df1de96a4a0b101ea862ac8f05ce"
+  },
+  {
+    "requested_url": "https://www.physical-impact.com/",
+    "final_url": "https://www.physical-impact.com/",
+    "http_status": 200,
+    "title": [
+      "Physical Impact | Your market changes. Your business adapts."
+    ],
+    "scripts": [],
+    "sha256": "a736696feadf0807715e763b555d46e752af3fdee1b6d67ce36a5f9aa2259626"
+  },
+  {
+    "requested_url": "https://www.physical-impact.com/demo",
+    "final_url": "https://www.physical-impact.com/demo",
+    "http_status": 200,
+    "title": [
+      "Physical Impact | Demo"
+    ],
+    "scripts": [
+      "/assets/index-Cetc72Ly.js"
+    ],
+    "sha256": "92843479b7cf3d0357f5f69f52935b027fc7df1de96a4a0b101ea862ac8f05ce"
+  },
+  {
+    "requested_url": "https://www.physical-impact.com/demo/",
+    "final_url": "https://www.physical-impact.com/demo",
+    "http_status": 200,
+    "title": [
+      "Physical Impact | Demo"
+    ],
+    "scripts": [
+      "/assets/index-Cetc72Ly.js"
+    ],
+    "sha256": "92843479b7cf3d0357f5f69f52935b027fc7df1de96a4a0b101ea862ac8f05ce"
+  }
+]

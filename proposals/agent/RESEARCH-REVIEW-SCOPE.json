@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T10:28:09.267395+00:00",
+  "scope": "Research evidence memory agent tools, controlled CASE projection and dependency guards",
+  "sourceFingerprint": "3c08427ebcd7d62f03e7aa7ad61b8cf5d4735f8c61f60645bb72b9bcda6bccc2",
+  "files": [
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "a9814f0a4d5caaee272fece02aee8fa661a6c28d30b3d4ce59b69a3549e09b7b"
+    },
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "afe174984fd3297cb4612b7966e572abe22386cf28bfa6e456b8d07a7c021000"
+    },
+    {
+      "path": "src/agent/case-context.ts",
+      "sha256": "151e7ccb950db6fbbeb907d9e70d005250a6464c8c0f827c847987c82a4c407f"
+    },
+    {
+      "path": "src/agent/research-context.ts",
+      "sha256": "b6bb1a985878d0a9787cc6e55ae15a090a497ca9ef8bd73b3f14ef2fe7080d96"
+    },
+    {
+      "path": "src/agent/index.ts",
+      "sha256": "8726531f42c5e56268d7b9757b285768af2a1693d4107b1dbea977cd5accbc48"
+    },
+    {
+      "path": "tests/agent/research.test.ts",
+      "sha256": "d5d8c0a9555560403effe8f6f00e08b5097d9a2a40aa9ea76e99a950ed323220"
+    },
+    {
+      "path": "tests/agent/case.test.ts",
+      "sha256": "16c2f5307523543bf4de4d72bbad4d3ae211eb269206a3a2ec7785a25444eff9"
+    },
+    {
+      "path": "tests/agent/confirmation-projection.test.ts",
+      "sha256": "dba770ecdae617d9700ee552181b5c44a343021920520b2fa49d0442972844f9"
+    },
+    {
+      "path": "tests/agent/runner.test.ts",
+      "sha256": "15359aad0aaa31545a12d5748c75085b902f75dc947b283c884353707f31456b"
+    },
+    {
+      "path": "tests/agent/language.test.ts",
+      "sha256": "4ec922d708e668601570d115a6ed5a58c0ca7cff22aa78673edabbf33c52a1bf"
+    },
+    {
+      "path": "tests/agent/usage.test.ts",
+      "sha256": "9362c67437474cae31c743d4dd35245375c26b69c884337ebafef4a639b51eb9"
+    },
+    {
+      "path": "src/contracts/research.ts",
+      "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "748532e783acab084503b0214fe96d49d3116b82389617e1cc1f36584e990a40"
+    },
+    {
+      "path": "proposals/integration/RESEARCH-CONTRACT.json",
+      "sha256": "a407cb9d22ca15b25d32d35a8aed0d7d13ebd99fe89a909253a907c7984c9f9d"
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "sha256": "018748a36911b677956174a6375ca7ca4a86ed7ad58e017877e9ed857601c779"
+    },
+    {
+      "path": "src/domain/model.ts",
+      "sha256": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2"
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "sha256": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057"
+    },
+    {
+      "path": "src/domain/index.ts",
+      "sha256": "0a7d9e06b1fc235cafe3d4dd65f912a2f41e314d731dd1c8910baf63b6e6bcfd"
+    }
+  ],
+  "baseline": "proposals/agent/research-baseline/manifest.json",
+  "realizer": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "attestation": "latest session turn_context model/effort observed in this turn"
+  },
+  "domainException": "Only domain/contract.ts exposureOrderLineIds projection was released separately; exact parser is covered by integrator independent panel. Main and isolated flow hash 018748a36911b677956174a6375ca7ca4a86ed7ad58e017877e9ed857601c779."
+}

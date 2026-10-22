@@ -1,0 +1,84 @@
+{
+  "browser": "isolated Chromium via bundled Playwright",
+  "results": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "headings": [
+        "Vision reçue",
+        "Une histoire industrielle, avec risques et opportunités",
+        "Conséquences pour le parcours et l'interface",
+        "Lecture ciblée du système actuel",
+        "Écarts et critères de réception proposés",
+        "Correspondance avec le challenge",
+        "Projection de communiqué",
+        "Sources, statut et prochaine action"
+      ],
+      "tables": 5,
+      "externalResources": 0,
+      "mainTop": 430.0625,
+      "firstHeadingTop": 478.0625,
+      "missingAnchors": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "headings": [
+        "Vision reçue",
+        "Une histoire industrielle, avec risques et opportunités",
+        "Conséquences pour le parcours et l'interface",
+        "Lecture ciblée du système actuel",
+        "Écarts et critères de réception proposés",
+        "Correspondance avec le challenge",
+        "Projection de communiqué",
+        "Sources, statut et prochaine action"
+      ],
+      "tables": 5,
+      "externalResources": 0,
+      "mainTop": 391.71875,
+      "firstHeadingTop": 439.71875,
+      "missingAnchors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "headings": [
+        "Vision reçue",
+        "Une histoire industrielle, avec risques et opportunités",
+        "Conséquences pour le parcours et l'interface",
+        "Lecture ciblée du système actuel",
+        "Écarts et critères de réception proposés",
+        "Correspondance avec le challenge",
+        "Projection de communiqué",
+        "Sources, statut et prochaine action"
+      ],
+      "tables": 5,
+      "externalResources": 0,
+      "mainTop": 387.65625,
+      "firstHeadingTop": 435.65625,
+      "missingAnchors": []
+    }
+  ],
+  "remoteMarkdownIdentical": true,
+  "markdownSha256": "3e114f5b70eecb69cca978f8e1a4274a0ca5ff65e015a794a1e1d0adbbcfc278",
+  "content_fragments_checked": 152,
+  "markdown_html_same_content": true,
+  "readme_relative_links_valid": true,
+  "no_em_dash_in_deliverables": true,
+  "no_prior_work_chronology_in_readme": true,
+  "source_changes_since_snapshot": [
+    "README.md",
+    "START-HERE.md",
+    "docs/HANDOFF.md",
+    "docs/STATUS.md",
+    "src/ui/types.ts",
+    "src/ui/App.tsx",
+    "src/ui/api.ts"
+  ]
+}

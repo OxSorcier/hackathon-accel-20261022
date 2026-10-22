@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/flow-reception-source-v3",
+  "base": "/Users/erwan/Projects/hackathon-accel-20261022/.local/flow-reception-source-v1",
+  "scope": "Local context_manifest recorded semantics and analysis-mode badge copy against isolated CASE flow. Main research UI excluded. No new run or business execution.",
+  "createdAt": "2026-10-22T11:13:15.282089+00:00",
+  "files": [
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "5a4d4d33fa47d57547eec4d7e9b42eec585209b3d4a18656ef9e4bfe9fa147fc"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "8eb3a73e588d2a3197ca27a452cca80bca4b345ee51cf2e584215f1ef2caf84a"
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "sha256": "b4fabde686467c03021db659b0477d065988846ba23e88af25cb7ced6f6b83c7"
+    },
+    {
+      "path": "tests/ui/context-manifest.test.ts",
+      "sha256": "da7e23852ae43d325659c1b600710cd0b04adf2a79294ea493fcd32bf077a416"
+    }
+  ],
+  "uiManifest": "proposals/ui/context-manifest-delta/REVIEW-INPUT.json",
+  "uiManifestSha256": "a9f0d7a7fb176c4950c35977573d19708e338531abe1848f73922ef9eaa262a5"
+}

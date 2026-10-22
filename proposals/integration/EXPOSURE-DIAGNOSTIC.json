@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-22T10:20:37.853636+00:00",
+  "status": "DIAGNOSED_CORRECTION_IN_PROGRESS_NOT_RELEASED",
+  "cyclesBeforeDiagnostic": 3,
+  "cause": "Previous-date-only exposure loses free inbound beneficiaries on a new attributed confirmation. Artificial deadline replay also changed actual beneficiaries and was removed.",
+  "decision": "Persist server-calculated historical exposureOrderLineIds in the immutable confirmation event. Inherit only from a current verified same-line event; project to current confirmed same-product/unit commitments. Keep actual previousExpectedDate unchanged.",
+  "framing": "case_contract_framing fresh diagnostic return; not final code review",
+  "regressions": [
+    "free inbound without explicit allocation",
+    "later actual beneficiary preserved",
+    "24 to27 to27 to28 preserves C only with attributed history",
+    "legacy broad candidates refresh once and revoke active confirmation"
+  ],
+  "next": "New bounded continuity delta and both independent exact-code reviews; retain previous negative evidence."
+}

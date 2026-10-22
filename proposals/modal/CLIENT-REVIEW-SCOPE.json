@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "unit": "modal-pdf-node-client",
+  "realizerModel": "gpt-6.1-sol",
+  "files": [
+    {
+      "path": "src/server/pdf-client.ts",
+      "sha256": "7534e0159adcdbac2c1310e5641d9b66e8dd07ab6eeecf797cf6eb767bd50ab4"
+    },
+    {
+      "path": "tests/server/pdf-client.test.ts",
+      "sha256": "6467b089d13c4ce9d4c62d8f493fdb6162800b34c977fa0faaf1876b43a5f125"
+    },
+    {
+      "path": "proposals/modal/CONTRACT.json",
+      "sha256": "b4d2d366464e47f1b092282a3c2adac91cebb0347fc2a78eb16e59fe2969431f"
+    }
+  ]
+}

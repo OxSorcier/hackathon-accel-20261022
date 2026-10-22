@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-22T10:02:28.283374+00:00",
+  "status": "CURRENT_TECHNICAL_RISK_SCENARIO_RECEIVED_BROADER_COMPANY_AWARE_LOOP_OPEN",
+  "chain": {
+    "source": "Original ROCKWOOL July publication read through Keenable; no supplier relationship or commercial delay established by that article.",
+    "company_scope": "CO-PARCOURS-PAUL-V2",
+    "internal_confirmation": "Operator confirmation is explicitly synthetic, event-backed and versioned.",
+    "case_id": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "run_id": "b706f102-f547-47b8-94ec-a623f6e6c1c3",
+    "proposal_id": "proposal:b706f102-f547-47b8-94ec-a623f6e6c1c3",
+    "case_ref": {
+      "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+      "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+    },
+    "business_revision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+    "option": {
+      "id": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+      "cost_eur": 1420,
+      "quantity": 8,
+      "unit": "palette"
+    },
+    "approved_readback": true,
+    "inventory_unchanged": true,
+    "limits": [
+      "Company and internal confirmation are synthetic.",
+      "No public-source causal or commercial supplier relationship asserted.",
+      "No stock transfer or purchase executed.",
+      "Final UI/browser reception remains separate."
+    ]
+  },
+  "review_scope": {
+    "status": "BOTH_ROLES_REVALIDATED",
+    "requested_models": [
+      "gpt-6.1-sol",
+      "gpt-6-astra"
+    ],
+    "served_model_attestation": "unavailable",
+    "manifest": "proposals/integration/REVIEW-INPUT-case-v3.json",
+    "manifest_sha256": "9574939bfdfdfc273a6a1a89e6b16e1a9ce18b7451ea545adc52905bbc32fe11"
+  },
+  "proof_files": [
+    {
+      "path": "proposals/integration/REAL-CASE-FLOW.json",
+      "sha256": "8e3c5ac559b2335283a395d3e1c8ab2649a995cfe8da17461101ede6494e0c97"
+    },
+    {
+      "path": "proposals/integration/CASE-REVIEWS.json",
+      "sha256": "9daff71a92c2661c01c480de018ac6a44e22ef698b11933700fcfdf9d2ecdaca"
+    }
+  ],
+  "remaining": [
+    "Demonstrate a relevant sector signal assessed against an already contextualised company and valid prior research, with automatic proposal preparation when adequate facts exist",
+    "Receive research-memory R1/R2 on new runs, restart and Aiven",
+    "Receive a qualified positive commercial opportunity and its calculation, including protection of existing commitments",
+    "Receive industrial portfolio import and bounded model context; large source/case workload not proved by the small risk flow",
+    "Keep supplier-delay scenario separate from future-capacity announcement; no commercial causal relationship inferred",
+    "Aiven Runtime deployment and external ERP/CRM integration not proved by local preview"
+  ],
+  "business_relevance": {
+    "status": "OPEN",
+    "finding": "The future plant construction publication does not establish the near-term supplier delay; the emergency proposal is grounded in a separate synthetic internal confirmation.",
+    "implication": "Technical source/case/calculation/approval continuity is demonstrated; causal relevance of this public signal to the current company commitments is not.",
+    "requested_next_slice": "Receive the actual publication impact (future capacity or no current exposure), then choose a semantically matching source and client facts for the industrial demonstration.",
+    "integrator_notified_at": "2026-10-22T10:03:58.738797+00:00"
+  },
+  "updated_at": "2026-10-22T11:43:14.721521+00:00",
+  "runtime_version_limit": "Recorded run and approval belong to their recorded version. New collector and case-targeting changes require their own exact-version readback; they are not certified by the historical successful run.",
+  "ui_readback_report": {
+    "thread_id": "01a162bd-facf-7b63-861b-9bbf7f402938",
+    "message_id": "msg_011f022d67b944f4016ad9dfacb3048191b0d3692d4bb30c79",
+    "observed": "UI owner reports approved EUR 1420 proposal displayed with source and synthetic internal confirmation; final UI reviews completed and delta frozen."
+  },
+  "final_runtime": {
+    "origin": "http://127.0.0.1:3001",
+    "company_id": "CO-PARCOURS-PAUL-V2",
+    "case_id": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "case_revision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca",
+    "business_revision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+    "run_id": "6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+    "proposal_id": "proposal:6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+    "proposal_status": "approved",
+    "trace_count": 16,
+    "case_version_count": 4,
+    "restart_state_hashes_equal": true,
+    "http_html_status": 200,
+    "http_asset_status": 200,
+    "exact_frozen_client_bytes": true,
+    "assembled_checks": {
+      "tests": 173,
+      "postgresqlSuites": "PASS_LOCAL_DISPOSABLE_SCHEMAS",
+      "typecheck": "PASS",
+      "build": "PASS",
+      "clientJs": "index-R0XcSArE.js",
+      "clientCss": "index-D1Fgjz82.css"
+    },
+    "ui_qa_report": "Integrator reports successful Aside generic question, calculated EUR1420 option, approval from UI, A covered and B protected; wrong-target proposal preserved stale."
+  },
+  "final_evidence_files": [
+    {
+      "path": "proposals/integration/FINAL-SOURCE-CASE.json",
+      "sha256": "772406d05f2ad2e04c18c7ad3cdceb8a68d4d30dc80e20cb6a3a8085019dbdb2"
+    },
+    {
+      "path": "proposals/integration/FINAL-PREVIEW-RESTART.json",
+      "sha256": "500bac82b684952feab8edb17d2f52d9fda215ded0a3bee32f8132c92ba60315"
+    },
+    {
+      "path": "proposals/integration/FINAL-PREVIEW-HTTP.json",
+      "sha256": "b0b736793428ff34f000b2ea3f667b356b77a3cc7f1b4913587cfac9f2e910ee"
+    },
+    {
+      "path": "proposals/integration/FLOW-CODE-RECEIVED.json",
+      "sha256": "6a6c5d9ee21c8c541fefcd33d65f4b855ed523a704f00a000f7bd1cdaf6741f8"
+    }
+  ],
+  "company_aware_loop_audit": {
+    "observed_at": "2026-10-22T10:50:23.720912+00:00",
+    "scope": "Targeted local execution-path reading; no product code or provider call by this chat.",
+    "finding": "Watch publication synchronizes research generation and invalidates dependencies, but no automatic business-analysis dispatch was found in the inspected path. Research analyses are explicitly queued from HTTP.",
+    "paths": [
+      {
+        "path": "src/server/start.ts",
+        "sha256": "e81f0e741c1dc5fdcf16cf0383d5040d59b6a5826780e841053ca12c68b54f4e",
+        "symbol": "start/createWatchServices wiring"
+      },
+      {
+        "path": "src/server/watch-service.ts",
+        "sha256": "e495c374bfbb29dbdd7f6d17a553cbbb5f05ed3d73ee489654799c8a56fdbca0",
+        "symbol": "createSerializedWatchRepository finish/fail"
+      },
+      {
+        "path": "src/server/research-service.ts",
+        "sha256": "b86e9d6476a3e0cbea37dbd70026f159ca37c9ca909282e4fd3d5e748a019b95",
+        "symbol": "synchronizeWatch"
+      },
+      {
+        "path": "src/server/app.ts",
+        "sha256": "e13fd2940ec288303ed2fbb9639f85a428a3c73e20ba7499100b3264ae040f1a",
+        "symbol": "POST /api/research/:profileId/analyze"
+      },
+      {
+        "path": "src/server/worker.ts",
+        "sha256": "5fd89db0595acdd85e68c2915864e94051e471bc1d54d7b303dcfda93d06f8ea",
+        "symbol": "createRunWorker"
+      }
+    ],
+    "integrator_notified": true,
+    "required_next": "Receive the missing automatic dispatch with authority, budget, idempotence and restart framing, then exact-code reviews and a demonstrated relevant signal-to-proposal case."
+  },
+  "positive_case_intake": {
+    "observed_at": "2026-10-22T10:57:36.399412+00:00",
+    "fixture": "fixtures/company/dataset.json",
+    "fixture_sha256": "bad22e5b53b82c793f34aff5e53d41a8f155d16f6938bc9d2e871374a114c4c9",
+    "observation": "The initial CRM opportunity OPP-A is a confirmed-order service note tied to ORD-A. It has no new demand, selling price or incremental opportunity data. It does not establish a positive commercial test case.",
+    "agent_notified": true,
+    "next_slice": "Existing domain/agent builder is asked to reconcile prepared OPP acceptance cases with shared contract and propose the smallest calculated positive path. Integrator reports a separately owned attributed enrichment of one existing industrial CRM lead; no duplicate portfolio requested."
+  },
+  "document_ownership": {
+    "owner_vision_and_demo_current_claimed_thread": "01a16316-d948-7672-b47f-395e6d411d33",
+    "files_reserved": [
+      "docs/PRODUCT-VISION.md",
+      "docs/PRODUCT-VISION.html",
+      "proposals/product/alignment-20261022/DEMO-SCRIPT.md"
+    ],
+    "this_chat_will_not_write_reserved_files_during_delta": true,
+    "research_owner_scope": "proposals/product/research-data-20261022/sector-sources/"
+  },
+  "industrial_v2_progress": {
+    "observed_at": "2026-10-22T11:17:34.923093+00:00",
+    "shared_contract": {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "c638d5c1c7fe4205c26318642c21e0b0375149490d81ffde9a4c1242cca04845",
+      "receipt_version": 2,
+      "receipt_status": "CANDIDATE_SHARED_DTO_TYPECHECKED_NOT_FINAL_REVIEWED"
+    },
+    "implemented_contract_shape": [
+      "qualified synthetic CRM demand with quantity, date and attributed prices",
+      "supplier sites and dependencies",
+      "joint risk/opportunity calculation and bounded model projection",
+      "durable budgeted analysis intent",
+      "approval distinct from simulated execution"
+    ],
+    "reported_progress": {
+      "integrator": "Existing owner core frozen: 10000 sales lines, six sites, one qualified CRM demand; isolated Aiven import in progress, final readback not yet received",
+      "data": "Industrial relation and trigger storage modules owned by existing data builder; no second worker/scheduler",
+      "agent": "Full commitment calculation and one shared supply capacity despite quote aliases",
+      "ui": "Existing owner handles brief/report and action display; direction A retained"
+    },
+    "test_boundaries": {
+      "industrial_event": "Declared synthetic scenario, testOnly true, kind industrial_fire",
+      "public_evidence": "Historical public originals remain separately attributed; no current incident, supplier/SKU exposure or demand inferred",
+      "causality": "Existing QA owner adds regression: CRM demand predating incident must not be described as caused by it",
+      "execution": "Demo ERP/CRM records only, no real supplier action or immediate destination stock receipt"
+    },
+    "remaining_evidence": [
+      "isolated Aiven core/context import counts and hashes",
+      "R1/R2 exact candidate, new real runs, source correction and restart",
+      "new relevant publication or released event to exactly one durable bounded analysis intent",
+      "joint calculated risk/opportunity report on full portfolio, protected commitments and qualified CRM economics",
+      "UI report to approval to distinct simulated execution, stale/duplicate/restart checks",
+      "two independent exact-code reviews and Aside QA on the received integrated candidate"
+    ],
+    "reserved_owner_files": "No root writes to current vision, demo, product code, shared contracts or fixture imports",
+    "status": "CONTRACT_CANDIDATE_BUILD_IN_PROGRESS_NOT_INTEGRATED_RECEPTION",
+    "aiven_core_readback": {
+      "receipt": ".local/qa-adaptops-v2/AIVEN-CORE-READBACK.json",
+      "sha256": "cfe6d7af940846c13bf864a5cbf0f69c3440a0125314eb22e2f304780ee18075",
+      "scope": "Core ERP/CRM only. Industrial sidecar, report and execution remain separate acceptance.",
+      "independent_owner": "01a15f24-8d9c-7fd2-8a00-1b039732248f",
+      "receipt_read": true
+    },
+    "http_contract": {
+      "path": "proposals/integration/INDUSTRIAL-HTTP-CONTRACT.json",
+      "status": "CANDIDATE_TYPED_HTTP_CONTRACT_ENDPOINTS_NOT_RUN",
+      "dto": "src/contracts/industrial-api.ts"
+    }
+  },
+  "source_owner_reception_dependency": {
+    "observed_at": "2026-10-22T11:34:31.505737+00:00",
+    "status": "WAITING_EXACT_INTEGRATED_CANDIDATE",
+    "research_sources_frozen": true,
+    "research_delivery_complete": true,
+    "project_build_continues": true,
+    "integrator_thread": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "erp_report_coordinator_thread": "01a162cf-0150-7091-8394-f5dbca7b53a9",
+    "coordinator_acknowledgement": "Bounded source deliverable received; no new general research. Coordinator retains end-to-end report and simulated action acceptance.",
+    "next_feasible_action": "Read the integrator exact frozen candidate and runtime receipts when published; current code under construction must not be presented as received.",
+    "user_approval_required": false,
+    "broad_objective_complete": false
+  },
+  "research_method_delta": {
+    "date": "2026-10-22T11:43:14.721460+00:00",
+    "status": "DELIVERED_LOCAL_SKILL_UPDATED",
+    "report": "RESEARCH-METHOD-RETROSPECTIVE.html",
+    "receipt": "RECEPTION.json#method_update",
+    "scope": "RSS and direct-access discovery; temporal and business relevance; competitor work deferred by user. No product collector changed."
+  },
+  "latest_builder_reports": {
+    "observed_at": "2026-10-22T11:43:14.721519+00:00",
+    "agent": "Reports industrial module two reviews and 14 tests; R1 first run read-only reconciled, second restart run pending. These are builder reports, not integrated candidate reception.",
+    "data": "Reports stable demo only one weekly watch, latest collection partial with old articles; integrator notified by data owner to prove one sector test on industrial candidate using existing worker. Trigger alone is not report wiring.",
+    "ui": "Existing UI owner freezes App/style/composition after receiving instruction that front continues on the user side; API adapters continue. No root UI changes.",
+    "integrated_checkpoint": "NOT_YET_RECEIVED_BY_THIS_CHAT"
+  }
+}

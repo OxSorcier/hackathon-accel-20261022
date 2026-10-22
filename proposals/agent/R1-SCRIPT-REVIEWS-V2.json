@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "receivedAt": "2026-10-22T11:05:34.363870+00:00",
+  "status": "TWO_INDEPENDENT_SCRIPT_REVIEWS_COMPLETE_NO_RETAINED_FINDING",
+  "scope": "proposals/agent/R1-SCRIPT-REVIEW-SCOPE.json",
+  "sourceFingerprint": "bcd3e7fd5fbbb8b224cae8e69f3ee4524478bebdc988cd12d4697040fdf28bb2",
+  "files": [
+    {
+      "path": ".local/research-reception/shared.ts",
+      "sha256": "3f13ed1dda09eae140ccca4276c84df399befe69c6a7f0daedbd297b2c0c366f"
+    },
+    {
+      "path": ".local/research-reception/serve.ts",
+      "sha256": "f1d0f1f8fe3e6a0fad9ba4969b8cf75482e35094eacfae4d6813615bf19e27a8"
+    },
+    {
+      "path": ".local/research-reception/run.ts",
+      "sha256": "dfbd3b67b746d871486bd923b726901c5be43d62035d5603f39490dd829eb69a"
+    }
+  ],
+  "realizer": "gpt-6.1-sol/xhigh",
+  "servedReviewerModels": "NOT_INDEPENDENTLY_ATTESTED",
+  "reviews": [
+    {
+      "agent": "/root/r1_script_counter",
+      "role": "counter",
+      "modelRequested": "gpt-6.1-sol",
+      "effort": "high",
+      "isolation": "fresh fork_turns none, read-only",
+      "cycles": 2,
+      "initialFindings": [
+        "Initial system message not checked",
+        "Pins not bound to the received server checkpoint",
+        "Transport did not prohibit a retry after failure"
+      ],
+      "finalVerdict": "All three findings closed, no new finding retained",
+      "typecheck": "PASS",
+      "hashesBeforeAfter": "MATCH_3_OF_3"
+    },
+    {
+      "agent": "/root/r1_script_architecture",
+      "role": "architecture",
+      "modelRequested": "gpt-6-astra",
+      "effort": "high",
+      "isolation": "fresh fork_turns none, read-only",
+      "cycles": 2,
+      "initialFindings": [
+        "Restart could accept different runtime pins under the same declared fingerprint",
+        "Cleanup could retain a live child after stopped metrics"
+      ],
+      "finalVerdict": "Both findings closed, no new defect retained",
+      "typecheck": "PASS",
+      "hashesBeforeAfter": "MATCH_3_OF_3"
+    }
+  ],
+  "limits": [
+    "No reviewer DB, network, env read or actual process/model launch.",
+    "Runtime server review is separate.",
+    "Future corrected frozen server checkpoint must be received and externally pinned before R1.",
+    "Actual model_result usage/timings and process interruption remain to observe."
+  ]
+}

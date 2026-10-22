@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-22T11:07:10.911793+02:00",
+  "scope": "Sources ciblees pour alignement documentaire. Aucun test produit execute par ce chat.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "48ef11ae1ec62da2dd4cc9d262aaca9e68f28b17a1e817e0b157053a56c655b4"
+    },
+    {
+      "path": "START-HERE.md",
+      "sha256": "6ea5ac819f37b0b28253065960c5a2034d55a4871c39494133c00bdb253feabc"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "sha256": "c65cdb3d5125849171536548c8892eb5a6813675c203f520b8b4810436127bab"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "56e093761ebf9233b3eef51af323e6857ab5d3089b4523083ca135a35118da83"
+    },
+    {
+      "path": "docs/CONTRACTS.md",
+      "sha256": "01dc0923fb6d2f31d7e38700f99847a2898a4590a8d33c912914f46cd79b4b58"
+    },
+    {
+      "path": "docs/OWNERSHIP.md",
+      "sha256": "7bbeffee06857c261ce9ad95e0b871b47c76840c307a02c6b7309b57466b523a"
+    },
+    {
+      "path": "docs/BUILD-PLAN.md",
+      "sha256": "38514465ca159c7d9a9ca186b51cef11316bcb194bbbbb05ab999094051c24f1"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "e1eec6ee3fe568ba6921db8d6fb345755eef2f90b3299a0eb7372d3c8bbe055b"
+    },
+    {
+      "path": "src/server/watch-service.ts",
+      "sha256": "5b7559bfc30d1645e0c836a2071a3ddbc5404ea32bbbb6ca66bfba7f7f69038a"
+    },
+    {
+      "path": "src/watch/engine.ts",
+      "sha256": "8b912aaefe04daf1206c6a2c1f98230d034c4bc19721e7d8a181c5418bb3b9a6"
+    },
+    {
+      "path": "src/watch/collector.ts",
+      "sha256": "64f8882d20935c444ea6a3c8730de45d91e93cd574e356905c71d5b951a317db"
+    },
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "a93fb70759b89517d8d268299cd70a9639b2efde37c4f4160a1d0153b27fa357"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "671421ad3f50d82655ace80135c885c26372ee4c26ace0c99e634c3620198e0e"
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "sha256": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057"
+    },
+    {
+      "path": "src/domain/model.ts",
+      "sha256": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "ed5dc10b4090cdc4b769383dca8cc6ea645053793b9896b4cc261ac3a042d42d"
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "sha256": "329d53641db58e927b18758ec84ad2887b847909d0f55dc2ce4d2df9ed68e419"
+    },
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "d62514d9a11d382a72e5f160ef088c3f0d05654c7da50ea1093d80216507a337"
+    },
+    {
+      "path": "tests/agent/runner.test.ts",
+      "sha256": "15359aad0aaa31545a12d5748c75085b902f75dc947b283c884353707f31456b"
+    },
+    {
+      "path": "tests/watch/collector.test.ts",
+      "sha256": "776c2b35706b1ba4cd226bde15648acd709bc4146f951833354bbeec602d531d"
+    },
+    {
+      "path": "tests/domain/engine.test.ts",
+      "sha256": "443610cf8528c5560714e0cc62019409894dc7877d4094c46e01a91be5e38e94"
+    }
+  ]
+}

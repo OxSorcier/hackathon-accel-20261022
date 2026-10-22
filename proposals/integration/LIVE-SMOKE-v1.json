@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T08:55:08.845Z",
+  "origin": "http://127.0.0.1:3000",
+  "health": {
+    "status": "alive",
+    "version": "0.1.0",
+    "contractVersion": "C1"
+  },
+  "company": {
+    "id": "CO-DEMO",
+    "revision": "R0",
+    "origin": "synthetic"
+  },
+  "runs": [
+    {
+      "id": "255c2429-bfcf-4052-9e82-ff04876dba7f",
+      "status": "needs_input",
+      "model": null,
+      "traces": 0,
+      "createdAt": "2026-10-22T08:48:30.234Z",
+      "completedAt": "2026-10-22T08:48:30.958Z"
+    }
+  ],
+  "sources": [
+    {
+      "id": "scheduled:watch:cdfbdb64d1e023f240c7f7cf68f4213c1fac5328189a8937908821b2ad01dd0d:20261022085021.694000",
+      "status": "completed",
+      "startedAt": "2026-10-22T08:50:22.720Z",
+      "completedAt": "2026-10-22T08:50:23.482Z",
+      "resultStatus": "partial",
+      "sourceCount": 1,
+      "evidenceCount": 20,
+      "firstEvidence": {
+        "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-31105%22",
+        "publishedAt": "2026-03-27T00:00:00.000Z",
+        "collectedAt": "2026-10-22T08:50:23.480Z"
+      }
+    }
+  ],
+  "limits": [
+    "Local PostgreSQL only",
+    "No real model inference",
+    "Initial compiled build, constructors still updating"
+  ]
+}

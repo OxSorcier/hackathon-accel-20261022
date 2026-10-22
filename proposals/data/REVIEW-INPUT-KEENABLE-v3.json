@@ -1,0 +1,72 @@
+{
+  "version": 3,
+  "scopeSha256": "5ea74d135b0c1cd28c581398c315f16e3a20e733d90646ce6ce85e48e06001b4",
+  "files": [
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "sha256": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08"
+    },
+    {
+      "path": "src/data/validation.ts",
+      "sha256": "070a87444889f0341adec582a929fbe1955e8b99bf01ca499365451c14cc799e"
+    },
+    {
+      "path": "src/data/watch-repository.ts",
+      "sha256": "612fdcd619280545986d32830a2437dbfb09cb774266d07a7cd4830496e10040"
+    },
+    {
+      "path": "src/watch/collection-status.ts",
+      "sha256": "d488455a87d17d1cb32862dc22c298ecff7e181ca7059027ddd1260d14dcba3d"
+    },
+    {
+      "path": "src/watch/collector.ts",
+      "sha256": "01ef6cdf0c29256c859e926a1789883ca8513d88a206ca17fd5173752a2121d2"
+    },
+    {
+      "path": "src/watch/engine.ts",
+      "sha256": "665012333412809a3999886fe74da75e2c4467995c42127b8378da3660b3e90f"
+    },
+    {
+      "path": "src/watch/http.ts",
+      "sha256": "a8adbde861c5c8176852487fb3980ee9aff8dfc73384985ad120027e3fbe0c81"
+    },
+    {
+      "path": "src/watch/keenable.ts",
+      "sha256": "8d0c97d2ac8d50848a09490744e32976f9dff9f22a0ec36a2d4239b98376d5ce"
+    },
+    {
+      "path": "src/watch/source-policy.ts",
+      "sha256": "d4187f7feec3c900928c6d4eb374e771176a542c9515fb7edd1d046dea83e38b"
+    },
+    {
+      "path": "tests/data/validation.test.ts",
+      "sha256": "0b22e3fa42459b5b47c39090f325af1661eb86aa9bf45afe775d5ad11b549818"
+    },
+    {
+      "path": "tests/data/watch-postgres.test.ts",
+      "sha256": "e2543d984ff5141cf45a4b845441b359150187503aab53153bb96fc2fa502a41"
+    },
+    {
+      "path": "tests/watch/collector.test.ts",
+      "sha256": "b6097347de53fcc8f3dc4b85e0addc68358e3b8b962270414519212383d64855"
+    },
+    {
+      "path": "tests/watch/keenable.test.ts",
+      "sha256": "77e47f9a6f1d435458e0720ae2b5e9397553cc06e3b2404a3df863d675034c7f"
+    },
+    {
+      "path": "tests/watch/live-boamp.ts",
+      "sha256": "e1b05a8fb21c7b31c4d5209a934cec98abf34510eae568c5c0f17061b5d36667"
+    },
+    {
+      "path": "tests/watch/live-coverage.ts",
+      "sha256": "ecbbb82f64455203c368bd367d0d3d877babecd6192e1be47ca1b40e02b0bd04"
+    },
+    {
+      "path": "tests/watch/live-keenable.ts",
+      "sha256": "f7555c9dc5f06121115a515235055c5734efb3935f64656187fcddde1c4e5e2a"
+    }
+  ],
+  "snapshot": "/tmp/accel-data-keenable-review-v3",
+  "digestRecipe": "sha256 of compact sorted-key JSON list of path/sha256 pins, sorted by relative path, without newline"
+}

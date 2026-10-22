@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "status": "TWO_ROLES_RECEIVED_NO_RETAINED_FINDING",
+  "scope": "proposals/agent/SCOPED-AGENT-REVIEW-SCOPE.json",
+  "sourceFingerprint": "0016d2f008e6d00c244e842515b6dd66702300ec67fafb9f30037d891733ef76",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "servedModels": "UNATTESTED",
+  "checkedAt": "2026-10-22T11:57:32.300776+00:00",
+  "reviews": [
+    {
+      "agent": "/root/scoped_agent_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "effort": "high",
+      "isolation": "fork_turns:none",
+      "cycles": 3,
+      "finalChecks": "12/12 hashes MATCH before/after; narrow1 test+strict PASS; full72 tests PASS cycle2"
+    },
+    {
+      "agent": "/root/scoped_agent_architecture",
+      "modelRequested": "gpt-6-astra",
+      "effort": "high",
+      "isolation": "fork_turns:none",
+      "cycles": 3,
+      "finalChecks": "12/12 hashes MATCH before/after; narrow1 test+strict PASS; full72 tests PASS cycle2"
+    }
+  ],
+  "findingsClosed": [
+    "Post-prepare trace failure must preserve terminal report and trace as uncertain, never erase a possible durable result.",
+    "Last post-prepare currentness exception cannot produce a successful proposal."
+  ],
+  "finalDelta": "Selected historical report carries its own businessRevision and policyVersion, separate from overview current revision.",
+  "limits": [
+    "No integrated industrial provider, actual server port, persistent budget or execution exercised in this unit receipt.",
+    "Server finish must treat uncertain report as reconciliation material, not ready publication.",
+    "R1 and R2 use immutable historical v3, not this main runner."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema":"accel-agent-review/1",
+  "manifest":"proposals/agent/review-manifest-v2.json",
+  "isolation":"two independent reviewer contexts, no implementation transcript or cross-review conclusions",
+  "adversarial":{"reviewer":"/root/agent_adversarial","requestedModel":"gpt-6.1-sol","requestedEffort":"high","servedModel":"unverified","existingTestsPassed":22,"v1Counterexamples":"all corrected","hashesVerifiedBeforeAndAfter":true},
+  "architecture":{"reviewer":"/root/agent_architecture","requestedModel":"gpt-6-astra","requestedEffort":"high","servedModel":"unverified","existingTestsPassed":22,"v1Counterexamples":"all corrected","hashesVerifiedBeforeAndAfter":true},
+  "findings":[
+    {"id":"V2-IDENTITY","priority":"P1","reportedBy":["adversarial","architecture"],"summary":"Colon-bearing target and quote IDs produce duplicate option IDs, allowing wrong-target approval.","reproduction":"Targets A and A:X, quotes X:Q and Q, feasible and conditional options both emergency:A:X:Q.","disposition":"reproduced; v3 uses SHA-256 of typed JSON tuples plus an aggregation uniqueness check"},
+    {"id":"V2-SOURCE","priority":"P1","reportedBy":["adversarial"],"summary":"A future inbound sharing an inventory ID is treated as physical stock.","reproduction":"Rename POL-2 to ST-C100; zero physical source stock and future confirmed inbound; v2 can transfer it early.","disposition":"reproduced; v3 parser refuses ambiguous resource IDs across inventory, inbound and quotes"},
+    {"id":"V2-INDIRECT","priority":"P1","reportedBy":["architecture"],"summary":"A second physical stock can be reassigned to C while B silently loses its replacement margin. Source-ID changes can also cause false rejection for interchangeable physical stock.","disposition":"reproduced; v3 follows total physical coverage per commitment and iterates replacement deadlines until no additional displaced commitment is discovered"}
+  ],
+  "regressionsObservedBeforeCorrection":4,
+  "externalCalls":"none",
+  "database":"memory-only SQL probes",
+  "realProvider":"NOT_RUN",
+  "Aiven":"NOT_RUN"
+}

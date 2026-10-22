@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "status": "LOCAL_DATA_HANDOFF_COMPLETE_INTEGRATED_RECEPTION_PENDING",
+  "ready": "READY-RESEARCH-v2.json",
+  "scopeSha256": "9008ba459e68d33a7fbad13d94f25ad97da4d890a13932e443b3f541ed437a2c",
+  "verified": [
+    "Same timestamp success/fail/refresh/newfail ordering",
+    "Callback failure rolls back generation and cursor in own or supplied transaction",
+    "Identical recollection advances freshness and cursor while exact previous refs remain pinned",
+    "Historical migration, missing-scope barrier and replay preserve proofs without asserting historical order",
+    "Bigint values above JS safe integer transported exactly as decimal strings",
+    "Lease/fence/idempotence and terminal immutability"
+  ],
+  "pending": [
+    "Integrator exact4pin reception and canonical007",
+    "Integrated server panels and existing-owner R1/R2 real-model/Aiven acceptance"
+  ],
+  "industrial": "Separate new paths in progress; not included in this freeze"
+}

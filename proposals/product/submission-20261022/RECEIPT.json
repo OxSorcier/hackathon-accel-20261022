@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "status": "LOCAL_DOCUMENTS_VERIFIED_ARCHIVE_PENDING",
+  "readmeStatus": "ROOT_README_UPDATED_PREVIOUS_PRESERVED",
+  "scope": "Submission documents and README only. No product-code edit, provider call, commit, push, visibility change or submission.",
+  "sources": [
+    {
+      "path": "proposals/integration/REAL-CASE-FLOW.json",
+      "sha256": "8e3c5ac559b2335283a395d3e1c8ab2649a995cfe8da17461101ede6494e0c97"
+    },
+    {
+      "path": "proposals/integration/FINAL-UI-FLOW.json",
+      "sha256": "2979f26c51f5915e662c06fb6cec4c3c093b2d4f57e957307726372cb72e6b79"
+    },
+    {
+      "path": "proposals/integration/FINAL-PREVIEW-RESTART.json",
+      "sha256": "500bac82b684952feab8edb17d2f52d9fda215ded0a3bee32f8132c92ba60315"
+    },
+    {
+      "path": "proposals/integration/FINAL-3001-QA.json",
+      "sha256": "1aa7bdae3715df16b5326d96e9f3dbb0d8eeb2c4d1b9e86fec66451ce7bd46fb"
+    },
+    {
+      "path": "proposals/integration/INDUSTRIAL-CORE-AIVEN.json",
+      "sha256": "4534165351e0fff576d8ee4439886494c78d92544aecc8650b0615aa40216a78"
+    },
+    {
+      "path": "proposals/modal/AIVEN-DOCUMENTS-LIVE.json",
+      "sha256": "c22c43dcdc630bbf00e611b1194caef71d5cbf9adc4213b8f6e91397744807f3"
+    },
+    {
+      "path": "proposals/agent/R1-RECEPTION.json",
+      "sha256": "00dc83b8427dd0b24bc5093da05fd60ae4b63955c4eb643d9b299944d14ce489"
+    }
+  ],
+  "files": [
+    {
+      "path": "proposals/product/submission-20261022/DATA-LAYER.html",
+      "sha256": "761ebe30806ca9f999a63861081f0f62a54bc10aaa7ea03e82f20e7e32764bd8"
+    },
+    {
+      "path": "proposals/product/submission-20261022/DATA-LAYER.md",
+      "sha256": "0dea8fdbf3c4df4d22d055ef83feb3239ec7abd7e41a8062740e8e997373ddab"
+    },
+    {
+      "path": "proposals/product/submission-20261022/EVIDENCE-DATA.json",
+      "sha256": "918f70b67549ff1ebb95d4a129e5cef55f4377ada925140bbb0a940f3a8ecf00"
+    },
+    {
+      "path": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.html",
+      "sha256": "b09d52a71cea752db76315d4e67251cdb3f3bd4e9abcfb5aebe2fa5231d0540c"
+    },
+    {
+      "path": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md",
+      "sha256": "1c3b9876020d393ec89e9c72456b932172f7be5cebebdc6c838038455c17f426"
+    },
+    {
+      "path": "proposals/product/submission-20261022/EVIDENCE-IT-WORKS.pdf",
+      "sha256": "3bcadd57b5e0a95ce75153457da3dda6f28ce4c97299d586dec86e733fdb1dc1"
+    },
+    {
+      "path": "proposals/product/submission-20261022/LINK-CHECKS.json",
+      "sha256": "55404b2274078a63b0f43aa2ec69a1b13b88098c355f0d5243463ffe29d4ccd5"
+    },
+    {
+      "path": "proposals/product/submission-20261022/ONE-PAGER.html",
+      "sha256": "2f14805c0c20299c27f716eaa1a56bad539bf228880dd579ab6aa810a759a2bb"
+    },
+    {
+      "path": "proposals/product/submission-20261022/ONE-PAGER.md",
+      "sha256": "633e5c88ab360231f3016857e5d7225133790b10e7f15a604f89fc99a147b58a"
+    },
+    {
+      "path": "proposals/product/submission-20261022/PITCH.txt",
+      "sha256": "dab0b14e677382b48c6a4928db5e847faa2ef65e22925f21566949051174f3a7"
+    },
+    {
+      "path": "proposals/product/submission-20261022/README-before-physical-impact.md",
+      "sha256": "a3323d5274ad9120d3ab62271c32edbe5f784b6a063021d72b59af9aaddb3e5d"
+    },
+    {
+      "path": "proposals/product/submission-20261022/RENDER-CHECKS.json",
+      "sha256": "f9864693252595140ab16cc77e3a2c3902adeb48bf553c8ddf1f241ef6df7e7e"
+    },
+    {
+      "path": "proposals/product/submission-20261022/SUBMISSION-COPY.html",
+      "sha256": "ecf1e91c4252d31c46d685daf4e571adfb55adbd997c1ee4a17318811e203b70"
+    },
+    {
+      "path": "proposals/product/submission-20261022/SUBMISSION-COPY.md",
+      "sha256": "bc52351edddb8b7705ae352408abafce1d334240d00ca01cc27356076e701c32"
+    },
+    {
+      "path": "README.md",
+      "sha256": "202b32fb6f3fc9cf1dcedb196c4d8451452494fa9c9bbaac2a97015b34c3073c"
+    }
+  ],
+  "pdf": {
+    "pages": 2,
+    "sizeBytes": 70144,
+    "metadata": {
+      "/Title": "Physical Impact: evidence it works",
+      "/Creator": "Physical Impact",
+      "/Producer": "Physical Impact",
+      "/CreationDate": "D:20261022122611+00'00'",
+      "/ModDate": "D:20261022122611+00'00'",
+      "/Author": "Erwan Gallo - Physical Impact",
+      "/Subject": "Recorded case comparison, durable agent state, research reuse and data-layer measurements. Accel AI Innovate Paris, 22 October 2026."
+    },
+    "embeddedMeasurements": true,
+    "localServerLinksRemoved": true,
+    "allPagesVisuallyInspected": true
+  },
+  "markdownHtmlParity": true,
+  "relativeLinksChecked": 27,
+  "fontFaces": 4,
+  "publicGitOperations": "NOT_RUN",
+  "submission": "NOT_RUN"
+}

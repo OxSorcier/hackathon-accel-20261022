@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "receivedAt": "2026-10-22T11:22:47.057708+00:00",
+  "status": "HASHES_MATCH_SERVER_REVALIDATION_PENDING",
+  "units": [
+    {
+      "receipt": "proposals/data/READY-RESEARCH-v2.json",
+      "receiptSha256": "43f069ecadfff6f9cb6fe2707e16d74c990b441e4e3feeb37a01cf37b86d678c",
+      "pinsMatched": 4
+    },
+    {
+      "receipt": "proposals/agent/MEMORY-PROVENANCE-READY.json",
+      "receiptSha256": "88908aa70d8d01646253355738a0fdebb0f1b5091c780e3a99645dfbd1767f50",
+      "pinsMatched": 8
+    },
+    {
+      "receipt": "proposals/ui/research/READY.json",
+      "receiptSha256": "2c0c5b68e9b3f2a74e1f8fb9d1d1a394cfbf654da5f37af3bae7d1c7c1b31f1c",
+      "pinsMatched": 22
+    }
+  ],
+  "rootSnapshot": "/Users/erwan/Projects/hackathon-accel-20261022/.local/research-server-review-v2"
+}

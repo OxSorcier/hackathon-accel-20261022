@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "observedDate": "2026-10-22",
+  "status": "PUBLIC_DEMO_FLOW_PASS",
+  "url": "https://physical-impact.com/demo",
+  "deployment": "dpl_8UeicEXAu5BNKXYDbLiJaYGsccWK",
+  "bundle": "assets/index-Cetc72Ly.js",
+  "mode": "explicit_browser_demo",
+  "buildOwnerThread": "01a16346-9b6f-7b70-afc7-57775e697a94",
+  "qaThread": "01a1638a-f887-7903-a5ea-a83038c165ce",
+  "browsers": {
+    "local": "Aside, separate static-candidate origin",
+    "public": "Codex in-app browser, separate from the build owner's Aside session",
+    "chromeDevtools": "NOT_RUN: profile already in use; native Chrome browser connection unavailable"
+  },
+  "observedPublicChecks": {
+    "overview": "PASS",
+    "watchtower": "PASS",
+    "watchtowerToImpactDossier": "PASS",
+    "contextualChatQuestionAndAnswer": "PASS",
+    "actionsAndCoordinatedPlan": "PASS",
+    "explicitApprovalConfirmation": "PASS",
+    "savedApprovalReceipt": "PASS",
+    "separateExecutionConfirmation": "PASS",
+    "savedSimulatedExecutionReceipt": "PASS",
+    "reloadPreservesExecution": "PASS: Response executed retained after reload",
+    "restartReturnsInitialState": "PASS: one decision to review and Response ready restored",
+    "consoleErrorsOrWarnings": "None returned by the public tab log reader",
+    "trailingSlash": "PASS: unauthenticated host GET /demo/ follows to final app HTML"
+  },
+  "screenshot": "QA-PUBLIC-01a1638a.png",
+  "localEvidence": "Aside session 2026-10-22_1FYumaf8nz7dAlmE/artifacts/physical-impact-local-checks.json",
+  "limits": [
+    "Data and chat are scripted in this explicit browser demo.",
+    "Saved decisions and simulation results are browser-local.",
+    "This receipt does not establish real supplier, customer, ERP, model or backend integration for the public demo.",
+    "No code changed in this QA chat. Exact source reviews and compilation belong to the existing build owner.",
+    "Mobile and cross-browser acceptance were not executed by this QA chat."
+  ]
+}

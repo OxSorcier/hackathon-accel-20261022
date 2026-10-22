@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "unit": "pdf-http-routes",
+  "realizerModel": "gpt-6.1-sol",
+  "files": [
+    {
+      "path": "src/server/pdf-routes.ts",
+      "sha256": "8fd23cb260bc11e64a1a9cf470e4b456934653f9316cdcac492edf1673b01d79"
+    },
+    {
+      "path": "tests/server/pdf-routes.test.ts",
+      "sha256": "4bb6574b9e5649bebeb127520a8d13bc0c5689ceb3150c982bc355e8b09ecb18"
+    },
+    {
+      "path": "src/server/pdf-documents.ts",
+      "sha256": "60c1bc24ed2995d3081aa56cbfcda82ec3a1923972bdde0957e2b0b7eae50120"
+    },
+    {
+      "path": "src/server/errors.ts",
+      "sha256": "74e7f5b864a68dc9103e809941034a66cb89747ce7a7fcdcde0438519ec84882"
+    },
+    {
+      "path": "src/server/auth.ts",
+      "sha256": "8dd8d5ab526a98501331735b04703cc40ce0a3817848b544aec615877a28c911"
+    }
+  ],
+  "recordedAt": "2026-10-22T11:18:34.277675+00:00"
+}

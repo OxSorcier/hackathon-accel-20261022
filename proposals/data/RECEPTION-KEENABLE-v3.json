@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "observedAt": "2026-10-22T10:51:13.718160+00:00",
+  "status": "EXACT_MODULE_RECEIVED_AND_FINAL_SOURCE_TO_PROPOSAL_READ_BACK",
+  "scopeSha256": "2460d70ffb886c4ce1a65fd0e3030b9a9db485935a480922b8ec55f3da0c073e",
+  "ready": {
+    "path": "proposals/data/READY-KEENABLE-v3.json",
+    "sha256": "4df384d191640ac25cf2575f5c2f79b0a3dbbed243a9932916f53b5f528c7aa6"
+  },
+  "acknowledgment": {
+    "path": "proposals/integration/RECEIVED-DATA-KEENABLE-v3.json",
+    "sha256": "26555f48ba7f673b1a4e5dfeffeef6ad7cb88f82601a8d389539ac685f58c373",
+    "all16CurrentPinsMatch": true
+  },
+  "finalFlow": "proposals/data/KEENABLE-FINAL-FLOW-READBACK.json",
+  "sourceCaseHistory": "proposals/integration/FINAL-SOURCE-CASE.json",
+  "priorReception": "proposals/data/RECEPTION-KEENABLE-v2.json",
+  "statusBoundaries": [
+    "Real public source and real direct model/tool flow observed",
+    "Business company and internal confirmation remain synthetic",
+    "No purchase or stock mutation executed",
+    "Keenable profile probes are partial, no universal coverage or legal compliance claimed",
+    "Source-to-proposal delivery is distinct from new research-memory R1/R2 integration"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "status": "Three visual proposals delivered",
+  "mode": "reference-led built-in image generation",
+  "assets": [
+    {
+      "variant": "A",
+      "file": "A-airy-split.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-e7924853-b4b7-4d58-b40c-e382a90e8d15.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "13712fdec842c06e3a562eb793a0dbafc8b51735bda0a2a6895e06b996644f5b",
+      "visual_review": "Inspected inline. English copy, brand, product loop, approval, audience, CTA and composition checked."
+    },
+    {
+      "variant": "B",
+      "file": "B-product-canvas.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-4b165725-9fb2-4925-aa3c-b1772f9c4547.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "0264c438bcdc4307cf4004a8a2bbbec709279232bffde1f82437d2948323cdd8",
+      "visual_review": "Inspected inline. English copy, brand, product loop, approval, audience, CTA and composition checked."
+    },
+    {
+      "variant": "C",
+      "file": "C-change-to-action.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-988c9487-6a3e-40c5-8366-9bcb466fee50.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "29e5af281e68bad11f753346cd7fe46e67d8169df43eea62f2c27c7dbc53a10e",
+      "visual_review": "Inspected inline. English copy, brand, product loop, approval, audience, CTA and composition checked."
+    }
+  ],
+  "recommendation": "A as landing page base, B as wide product explanation.",
+  "scope": "Raster design proposals only. No app code, working form or external publication changed.",
+  "prompt_file": "PROMPTS.json",
+  "brief_file": "BRIEF.md"
+}

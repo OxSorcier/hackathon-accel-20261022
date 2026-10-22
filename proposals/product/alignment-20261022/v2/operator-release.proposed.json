@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "status": "PROPOSED_OPERATOR_RELEASE_ONLY_NOT_IMPORTED",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "dataOrigin": "synthetic",
+  "baseRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "scenarioId": "SCENARIO-ADAPTOPS-FIRE-AND-DEMAND-V2",
+  "timeBasis": "Controlled logical demonstration clock. These are fictional records, not events observed in the real world.",
+  "authority": "The integrator must receive and map these facts to server-owned operator commands. This file grants no role, triggers no command and must not be sent wholesale to the product model.",
+  "releases": [
+    {
+      "releaseId": "REL-FIRE-ALPHA-V2",
+      "notBefore": "2026-10-22T09:00:00+02:00",
+      "facts": [
+        {
+          "eventId": "EV-FIRE-ALPHA-V2",
+          "kind": "industrial_fire",
+          "occurredAt": "2026-10-22T09:00:00+02:00",
+          "supplierId": "SUP-1",
+          "supplierSiteId": "PLANT-ALPHA-FR",
+          "productIds": [
+            "SKU-ISO100",
+            "SKU-IND-002"
+          ],
+          "statement": "A fire is declared at the synthetic Alpha site. Delivery effects are not confirmed by this alert.",
+          "status": "declared_synthetic_scenario",
+          "publicSourceEvidenceRef": null,
+          "provenance": {
+            "system": "SCENARIO",
+            "nativeId": "EV-FIRE-ALPHA-V2",
+            "version": "2",
+            "receivedAt": "2026-10-22T09:00:00+02:00",
+            "actorId": "OPERATOR"
+          }
+        }
+      ]
+    },
+    {
+      "releaseId": "REL-INBOUND-ALPHA-V2",
+      "notBefore": "2026-10-22T09:03:00+02:00",
+      "facts": [
+        {
+          "eventId": "CONFIRM-ALPHA-V2",
+          "kind": "confirmed_inbound_date",
+          "supplierId": "SUP-1",
+          "supplierSiteId": "PLANT-ALPHA-FR",
+          "purchaseOrderLineId": "POL-1",
+          "productId": "SKU-ISO100",
+          "previousExpectedDate": "2026-10-23",
+          "confirmedExpectedDate": "2026-11-20",
+          "confirmedAt": "2026-10-22T09:03:00+02:00",
+          "confirmationStatus": "synthetic_confirmed",
+          "basis": "Attributed operator release of a fictional supplier confirmation. Other Alpha purchase lines remain at their current dates unless separately confirmed.",
+          "provenance": {
+            "system": "SCENARIO",
+            "nativeId": "CONFIRM-ALPHA-V2",
+            "version": "2",
+            "receivedAt": "2026-10-22T09:03:00+02:00",
+            "actorId": "OPERATOR"
+          }
+        }
+      ]
+    },
+    {
+      "releaseId": "REL-COMPETITOR-AVAILABILITY-V2",
+      "notBefore": "2026-10-22T09:04:00+02:00",
+      "facts": [
+        {
+          "eventId": "CONFIRM-COMPETITOR-V2",
+          "kind": "competitor_fulfilment_unavailable",
+          "competitorId": "COMP-IND-001",
+          "supplierSiteId": "PLANT-ALPHA-FR",
+          "productId": "SKU-ISO100",
+          "unit": "palette",
+          "quantity": 20,
+          "requestedDeliveryDate": "2026-10-29",
+          "cannotFulfilBefore": "2026-10-30",
+          "confirmationStatus": "synthetic_confirmed",
+          "confirmedAt": "2026-10-22T09:04:00+02:00",
+          "relatedOpportunityId": "CRM-IND-000",
+          "basis": "Fictional attributed commercial confirmation, released separately from the fire alert. The current CRM request already exists; this fact neither creates a sale nor establishes real market demand.",
+          "provenance": {
+            "system": "SCENARIO",
+            "nativeId": "CONFIRM-COMPETITOR-V2",
+            "version": "2",
+            "receivedAt": "2026-10-22T09:04:00+02:00",
+            "actorId": "OPERATOR"
+          }
+        }
+      ]
+    }
+  ],
+  "forbiddenUses": [
+    "No bootstrap import or arbitrary disk tool read.",
+    "No public news feed impersonation and no attachment of real BOAMP or ARIA evidence as proof of these fictional events.",
+    "No automatic stock mutation, customer acceptance or purchase from a release file.",
+    "No expected recommendation, scoring oracle or hidden future fact inside the current company snapshot."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "accel-decision-desk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <27"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --env-file-if-exists=.env.access --import tsx --watch src/server/start.ts",
+    "dev:ui": "vite --host 127.0.0.1",
+    "build": "tsc -p tsconfig.server.json && vite build",
+    "start": "node --env-file-if-exists=.env --env-file-if-exists=.env.access dist/server/server/start.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:server": "vitest run tests/server tests/integration",
+    "operator": "node --env-file-if-exists=.env --env-file-if-exists=.env.access --import tsx src/server/operator.ts"
+  },
+  "dependencies": {
+    "@fastify/cookie": "11.1.3",
+    "@fastify/static": "10.1.7",
+    "fastify": "5.12.7",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-22T12:28:41.659Z",
+  "status": "REAL_SERVER_CAPTURE_PARSED_WITH_EXACT_UI_ADAPTER",
+  "source": "proposals/integration/INDUSTRIAL-WORKSPACE-DISPLAY-3003.json",
+  "sourceSha256": "b487442eedff516fc7e15d641765085ac0204f0860c476ecdcfcbe0d0b8d0960",
+  "candidate": "proposals/integration/INDUSTRIAL-READ-CANDIDATE.json",
+  "uiManifest": "proposals/ui/industrial/REVIEW-INPUT-v5.json",
+  "adapterFiles": [
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "96c7bcc84cb7e51abdb34719723e1bfd0ee8c76c4bc6641af62fd6c9ff5ae2e6",
+      "bytes": 48820
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "06e471068d976dcbdcb0aa82375f9a4e1c9310fed0ab03d11cf1588768fe0582",
+      "bytes": 6411
+    },
+    {
+      "path": "src/ui/industrial.ts",
+      "sha256": "0a3efa206e26b132de722f53b33530804e33f508f0e3186ffa7b3b7997d86cf6",
+      "bytes": 14727
+    },
+    {
+      "path": "src/ui/industrial-api.ts",
+      "sha256": "29b5154aecbd2417bb8cb01903c623899f1b87f84082cc68e6631186d93af707",
+      "bytes": 13564
+    },
+    {
+      "path": "src/ui/pending-commands.ts",
+      "sha256": "dd41f6b7774b74b72a10b908bc58bcd7b7acb598f23f8be5d0e3147d5dde671a",
+      "bytes": 1334
+    },
+    {
+      "path": "tests/ui/industrial-api.test.ts",
+      "sha256": "3713bc5f98fc1c8c2bce9b3bc881d597b882cc800e7e07dc3170643be6cc40e8",
+      "bytes": 32694
+    },
+    {
+      "path": "tests/ui/industrial-fixtures.ts",
+      "sha256": "712f91b012296f85adda0e1aa30bfcfffd6a0d094febf99c65e7f7451cb80a29",
+      "bytes": 7332
+    }
+  ],
+  "checks": [
+    "All seven main source pins match the reviewed manifest.",
+    "Exact captured envelope accepted through createHttpUiApi and strict industrial workspace schema.",
+    "Parsed object deep-equals the complete source data, including all native counts.",
+    "Empty events/reports/analyses and disconnected capabilities preserved.",
+    "Decision and simulation rejected NOT_READY before any transport mutation.",
+    "All64display labels and profile preserved exactly, Rivebois name actually supplied by server.",
+    "Native counts, business revision and context revision unchanged from first captured response."
+  ],
+  "counts": {
+    "commitmentLines": 10000,
+    "depots": 6,
+    "projects": 24,
+    "crmRecords": 81
+  },
+  "displayLabels": 64,
+  "companyNameAsActuallyReturned": "Rivebois Matériaux",
+  "transport": [
+    {
+      "path": "/api/company",
+      "method": "GET"
+    },
+    {
+      "path": "/api/decisions",
+      "method": "GET"
+    },
+    {
+      "path": "/api/industrial",
+      "method": "GET"
+    }
+  ],
+  "provenance": "Original HTTP/Aiven capture was performed by integrator. UI owner replayed the unchanged non-secret response locally with a synthetic authority bootstrap solely to exercise the adapter. No live authentication or HTTP call was performed by this probe.",
+  "limits": [
+    "No report/calculation/automatic analysis was present in this capture.",
+    "No proof of Physical Impact frontend, chatbot, model, source collection, decision or simulated business effect.",
+    "publicResearch/publicFeed/questionsConnected are not present in this captured response."
+  ],
+  "serverReceipt": {
+    "path": "proposals/integration/INDUSTRIAL-READ-CANDIDATE.json",
+    "sha256": "5fc4c6dc933cef2969aba895f11500624a9e107b9ffae7e03c899997923e63d3",
+    "version": 2,
+    "status": "AUTHENTICATED_RIVEBOIS_DISPLAY_OBSERVED_ON_AIVEN",
+    "pid": 32142,
+    "source": ".local/industrial-display-v2"
+  }
+}

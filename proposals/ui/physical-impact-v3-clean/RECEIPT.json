@@ -1,0 +1,46 @@
+{
+  "version": 3,
+  "date": "2026-10-22",
+  "status": "Three reference-led clean slide proposals inspected and delivered",
+  "mode": "Built-in imagegen, one call per variant",
+  "assets": [
+    {
+      "variant": "A",
+      "file": "A-four-pillars.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-bfb07fbe-727a-4fb4-a872-7ea31eab5b63.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d674a29415248cbb4e76879876a6d88736ce7cdb4ba7a4f217d4a802797f4eb9"
+    },
+    {
+      "variant": "B",
+      "file": "B-one-ready-response.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-d280bbd9-0e18-47f3-b743-585c751126b3.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "08172f09f6461fda4fbbcfb9199e60aadcbba7bf854aedf2c0c36f5d8fc7c4f1"
+    },
+    {
+      "variant": "C",
+      "file": "C-editorial-bento.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-95a77d7e-b393-4dbb-895f-6f9b1690a68a.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "65d4abf460e51c55e3aa79bfba6f7e582d83f3d73eeab5aade57760d02f1bfb9"
+    }
+  ],
+  "promptSet": "PROMPTS.json",
+  "brief": "BRIEF.md",
+  "recommendation": "A is closest to the supplied clean reference and offers the clearest promise/four-pillar balance. B foregrounds the prepared response; C is the editorial split alternative.",
+  "inspection": [
+    "All visible authored text is English",
+    "Physical Impact brand and received tagline retained",
+    "Same four full-vision pillars and jury footer across comparable 16:9 variants",
+    "Headless capability expressed by secondary existing-tools note only",
+    "Company knowledge, market risk/opportunity, shared plan, approval, execution, verification and decision retention remain visible",
+    "No benchmark, diagnostic, synthetic-data, internal readiness or infrastructure banner added",
+    "No numerical gain, acquired customer or named connector claim",
+    "Typography, card fit and margins visually inspected; no clipping observed"
+  ],
+  "scope": "Commercial product-vision raster proposals. No runtime, app code, sharing, submission or publication changed. Existing technical evidence retains its scope."
+}

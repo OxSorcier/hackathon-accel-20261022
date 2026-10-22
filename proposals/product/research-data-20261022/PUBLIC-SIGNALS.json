@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "status": "CANDIDATES_FOR_EXPLICIT_RELEASE",
+  "observedAt": "2026-10-22T09:31:55.181Z",
+  "origin": "public",
+  "signals": [
+    {
+      "id": "rockwool-courmelles-20260710",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+      "title": "ROCKWOOL annonce la poursuite du chantier de Courmelles",
+      "publisher": "ROCKWOOL",
+      "publisherVisibleDate": "2026-07-10",
+      "datePrecision": "day",
+      "providerPublishedAt": 1783692299,
+      "providerPublishedAtIso": "2026-07-10T14:04:59.000Z",
+      "collectedAt": "Thu, 22 Oct 2026 09:30:10 GMT",
+      "retrieval": "Keenable public fetch, indexed copy, HTTP 200",
+      "entity": {
+        "name": "ROCKWOOL",
+        "nativeLegalId": null,
+        "site": "Courmelles / Soissons",
+        "region": "Hauts-de-France",
+        "country": "FR",
+        "identityStatus": "publisher and site named; legal-entity identifier not established"
+      },
+      "observation": "Le communiqué du 10 juillet annonce la poursuite de la construction et décrit une nouvelle phase de fondations pendant cet été. Les décisions administratives sont rapportées par l’industriel.",
+      "evidenceType": "publisher_statement",
+      "currentStateNotObserved": true,
+      "commercialRelationsVerified": [],
+      "skuMatchesVerified": [],
+      "confirmedCommercialDelay": null,
+      "contentSha256": "d593ae031487a2629579f62a75abcdabf477f96fe7411d9eaaa4ff2f9e46a483"
+    },
+    {
+      "id": "rockwool-courmelles-20260305",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+      "title": "Calendrier prévisionnel publié de l’usine de Courmelles",
+      "publisher": "ROCKWOOL",
+      "publisherVisibleDate": "2026-03-05",
+      "datePrecision": "day",
+      "providerPublishedAt": 1772781600,
+      "providerPublishedAtIso": "2026-03-06T07:20:00.000Z",
+      "dateConflict": "Publisher displays 2026-03-05; provider metadata resolves to 2026-03-06T07:20:00Z. Do not merge silently.",
+      "collectedAt": "Thu, 22 Oct 2026 09:28:45 GMT",
+      "retrieval": "Keenable public fetch, indexed copy, HTTP 200",
+      "entity": {
+        "name": "ROCKWOOL",
+        "nativeLegalId": null,
+        "site": "Courmelles / Soissons",
+        "region": "Hauts-de-France",
+        "country": "FR"
+      },
+      "observation": "À la date de publication, le calendrier annonçait les bâtiments au second semestre 2026, les équipements en 2027 et un démarrage envisagé en 2028.",
+      "evidenceType": "publisher_forecast",
+      "currentStateNotObserved": true,
+      "commercialRelationsVerified": [],
+      "skuMatchesVerified": [],
+      "confirmedCommercialDelay": null,
+      "contentSha256": "d6ef01a263e4ab5bca7e4db01ad9445f208a1b89e6eb7dc71584ed8c8198c80a"
+    }
+  ]
+}

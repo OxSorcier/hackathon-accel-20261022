@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "status": "CANDIDATE_TYPED_HTTP_CONTRACT_ENDPOINTS_NOT_RUN",
+  "createdAt": "2026-10-22T11:40:43.428208+00:00",
+  "dto": "src/contracts/industrial-api.ts",
+  "sha256": "034b1d72d16bd9454f431de9180179d0752ed4c97cf147697f4c782d67f0bc03",
+  "envelope": "ApiResponse<T> fromcontracts/index.ts, same-session actor and exact Origin on mutations.",
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/industrial",
+      "response": "IndustrialWorkspace",
+      "authority": "Authenticated company session; no arbitrary company/profile in query."
+    },
+    {
+      "method": "GET",
+      "path": "/api/industrial/reports/:id",
+      "response": "IndustrialReportView",
+      "authority": "Authenticated same company, received report only."
+    },
+    {
+      "method": "POST",
+      "path": "/api/industrial/plans/:planId/decision",
+      "body": "IndustrialDecisionInput",
+      "response": "IndustrialApproval",
+      "authority": "Current direction/achats role and gross-spend ceiling, exact current basis/plan, operation idempotence."
+    },
+    {
+      "method": "POST",
+      "path": "/api/industrial/approvals/:approvalId/simulate",
+      "body": "IndustrialSimulationInput",
+      "response": "IndustrialDemoExecution",
+      "authority": "Explicit human action in received simulation, same current exact approved plan, atomic effects and replay readback."
+    },
+    {
+      "method": "POST",
+      "path": "/api/industrial/questions",
+      "body": "IndustrialQuestionInput: question,operationKey,reportId?",
+      "response": "AgentRun with optional industrialScope/basis/reportId; poll existing GET /api/runs/:id",
+      "authority": "Authenticated business actor, server company/context/report scope, bounded tools and current versions. No model approval or execution."
+    }
+  ],
+  "semantics": [
+    "Reports are prepared by the existing worker after a qualified operator-released event. Poll GET workspace for actual state, no fabricated report or synthetic success response.",
+    "Show scenario/testOnly and received ERP/CRM origin; the pre-existing qualified demand is independent of the later fire.",
+    "approved is a human decision. execution.status applied is the distinct committed simulation receipt. Pending HTTP is UI waiting, not a durable Executed claim.",
+    "The plan only creates future purchase/transfer orders, source holds/planned allocations and a draft CRM offer. No instant physical stock receipt, accepted sale, realised revenue or real supplier action.",
+    "All workspace counts originate in persisted native data. No 10k-line dump in the model path.",
+    "Report.assessment contains the calculated plans. planStates supplies decision, simulation and server permissions without duplicating the calculations.",
+    "Unknown/blocked/stale states remain explicit. Reuse a pending operationKey after transport uncertainty; first read durable state, never auto-execute a new command.",
+    "Industrial questions use the same received ERP/CRM/public-source scope and existing worker. The generic C1 full-commitment tools are disabled for this company.",
+    "Until connected, POST industrial/questions returns explicit503 and no queued job. Read-only first checkpoint capabilities are false."
+  ],
+  "deployment": "NOT_RUN",
+  "readiness": "Types are authoritatively proposed by integrator. Runtime routes and exact integrated sample follow after server implementation; UI may build typed parsers/components with honest loading/unavailable states."
+}

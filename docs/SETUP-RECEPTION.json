@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "scope": "Dossier produit et lancement des quatre chats; produit non recu",
+  "project_id": "8c1ddc08-8cfc-42cb-ad37-5b132ce345eb",
+  "path": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "archive_files_verified": 470,
+  "archive_bad_files": [],
+  "review": {
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "high",
+    "served_model": "NON_ATTESTE",
+    "context": "fork_turns none",
+    "r1_findings": [
+      "integrator owned paths incomplete",
+      "file count included directories"
+    ],
+    "r2": "Both findings closed; no documentary blocker for dispatch",
+    "agents_sha256": "c045ad064c2447b845ffa1f12a5b90395c8972790c8fa8f84aac0239f1635b8b",
+    "ownership_sha256": "7bbeffee06857c261ce9ad95e0b871b47c76840c307a02c6b7309b57466b523a",
+    "handoff_sha256": "c65cdb3d5125849171536548c8892eb5a6813675c203f520b8b4810436127bab",
+    "access_doc_added_after_review": true
+  },
+  "dispatch": {
+    "version": 1,
+    "product_project_id": "8c1ddc08-8cfc-42cb-ad37-5b132ce345eb",
+    "product_project_name": "Accel",
+    "product_path": "/Users/erwan/Projects/hackathon-accel-20261022",
+    "coordinator": {
+      "thread_id": "01a15f24-8d9c-7fd2-8a00-1b039732248f",
+      "title": "Hackathon Accel"
+    },
+    "access_owner": {
+      "thread_id": "01a16283-2006-7bd3-b07f-2ceaf2535784",
+      "title": "Reprendre et lancer le hackathon",
+      "scope": "Aiven/GitHub/modele; creation du depot prive vide par ce chat, aucun commit/push concurrent"
+    },
+    "threads": [
+      {
+        "role": "integration",
+        "title": "Accel : intégration et déploiement",
+        "thread_id": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+        "host_id": "local",
+        "status": "CREATED_PROGRESS_TO_RECEIVE"
+      },
+      {
+        "role": "data",
+        "title": "Accel : données et veille",
+        "thread_id": "01a162bd-e262-7fa2-a1f3-aab46f68fc1a",
+        "host_id": "local",
+        "status": "CREATED_PROGRESS_TO_RECEIVE"
+      },
+      {
+        "role": "agent",
+        "title": "Accel : métier et agents",
+        "thread_id": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+        "host_id": "local",
+        "status": "CREATED_PROGRESS_TO_RECEIVE"
+      },
+      {
+        "role": "ui",
+        "title": "Accel : interface A",
+        "thread_id": "01a162bd-facf-7b63-861b-9bbf7f402938",
+        "host_id": "local",
+        "status": "CREATED_PROGRESS_TO_RECEIVE"
+      }
+    ],
+    "state": "FOUR_BUILD_THREADS_CREATED",
+    "next_owner": "Integration pour les mises a jour apres ce lancement"
+  },
+  "product_checks": "NOT_RUN at setup reception",
+  "git_remote": "https://github.com/OxSorcier/hackathon-accel-20261022",
+  "git_remote_state": "private empty repository independently read; no push/CI/deployment received",
+  "credentials": "not stored",
+  "aiven": "Access owner reports authenticated console and 50 USD trial; sponsor pending",
+  "tracking_export": {
+    "local_path_and_private_repo_to_linear": "REJECTED_BY_AUTO_REVIEW",
+    "reason": "No explicit authorization for these data to Linear; retained in local product project.",
+    "safer_alternative": "Generic launch status without local coordinates or private repository link.",
+    "safer_alternative_received": true,
+    "history_and_status_preserved": true
+  }
+}

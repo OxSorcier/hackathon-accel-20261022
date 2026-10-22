@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "scope": "Bounded read-only public probes. No product connector installed; no account, paid service, publication or schedule created.",
+  "records": [
+    {
+      "label": "business_search",
+      "url": "https://recherche-entreprises.api.gouv.fr/search?q=scierie&per_page=1",
+      "fetched_at": "2026-10-22T09:47:13.806776+00:00",
+      "kind": "json",
+      "status": 200,
+      "final_url": "https://recherche-entreprises.api.gouv.fr/search?q=scierie&per_page=1",
+      "content_type": "application/json",
+      "bytes_read": 3690,
+      "sha256": "37b69dffa4fb13a5317e55f9176a5a8e25961a574efd55d055aba99e3fb15bb9",
+      "cap_reached": false,
+      "top_level_keys": [
+        "results",
+        "total_results",
+        "page",
+        "per_page",
+        "total_pages"
+      ],
+      "returned_count": 1,
+      "reported_total": 5998,
+      "first_record_keys": [
+        "siren",
+        "siren_conserve",
+        "nom_complet",
+        "nom_raison_sociale",
+        "sigle",
+        "nombre_etablissements",
+        "nombre_etablissements_ouverts",
+        "siege",
+        "activite_principale",
+        "activite_principale_naf25",
+        "categorie_entreprise",
+        "caractere_employeur",
+        "annee_categorie_entreprise",
+        "date_creation",
+        "date_fermeture",
+        "date_mise_a_jour",
+        "date_mise_a_jour_insee",
+        "date_mise_a_jour_rne",
+        "dirigeants",
+        "etat_administratif",
+        "nature_juridique",
+        "section_activite_principale",
+        "tranche_effectif_salarie",
+        "annee_tranche_effectif_salarie",
+        "statut_diffusion",
+        "matching_etablissements",
+        "finances",
+        "complements",
+        "tva"
+      ]
+    },
+    {
+      "label": "bodacc",
+      "url": "https://bodacc-datadila.opendatasoft.com/api/explore/v2.1/catalog/datasets/annonces-commerciales/records?limit=1",
+      "fetched_at": "2026-10-22T09:47:14.052908+00:00",
+      "kind": "json",
+      "status": 200,
+      "final_url": "https://bodacc-datadila.opendatasoft.com/api/explore/v2.1/catalog/datasets/annonces-commerciales/records?limit=1",
+      "content_type": "application/json; charset=utf-8",
+      "bytes_read": 1759,
+      "sha256": "0aa61002d9825b00d92ba9e664f65283d183dd9c09bc7b39568fbbce3ec719e2",
+      "cap_reached": false,
+      "top_level_keys": [
+        "total_count",
+        "results"
+      ],
+      "returned_count": 1,
+      "reported_total": 51155363,
+      "first_record_keys": [
+        "id",
+        "publicationavis",
+        "parution",
+        "dateparution",
+        "numeroannonce",
+        "typeavis",
+        "typeavis_lib",
+        "familleavis",
+        "familleavis_lib",
+        "numerodepartement",
+        "departement_nom_officiel",
+        "region_code",
+        "region_nom_officiel",
+        "tribunal",
+        "commercant",
+        "ville",
+        "registre",
+        "cp",
+        "pdf_parution_subfolder",
+        "ispdf_unitaire",
+        "listepersonnes",
+        "listeetablissements",
+        "jugement",
+        "acte",
+        "modificationsgenerales",
+        "radiationaurcs",
+        "depot",
+        "listeprecedentexploitant",
+        "listeprecedentproprietaire",
+        "divers",
+        "parutionavisprecedent",
+        "url_complete"
+      ]
+    },
+    {
+      "label": "sitadel_metadata",
+      "url": "https://www.data.gouv.fr/api/1/datasets/liste-des-permis-de-construire-et-autres-autorisations-durbanisme/",
+      "fetched_at": "2026-10-22T09:47:14.140329+00:00",
+      "kind": "json",
+      "status": 200,
+      "final_url": "https://www.data.gouv.fr/api/1/datasets/liste-des-permis-de-construire-et-autres-autorisations-durbanisme/",
+      "content_type": "application/json",
+      "bytes_read": 26678,
+      "sha256": "ad40726a554664e13688e44b0c27e4eca2b5be0e31391b65829ded6578ec02f5",
+      "cap_reached": false,
+      "top_level_keys": [
+        "access_audiences",
+        "access_type",
+        "access_type_reason",
+        "access_type_reason_category",
+        "acronym",
+        "archived",
+        "authorization_request_url",
+        "badges",
+        "contact_points",
+        "created_at",
+        "deleted",
+        "description",
+        "description_short",
+        "doi",
+        "extras",
+        "featured",
+        "frequency",
+        "frequency_date",
+        "geopf",
+        "harvest",
+        "id",
+        "internal",
+        "last_modified",
+        "last_update"
+      ],
+      "returned_count": 0,
+      "reported_total": null,
+      "dataset": {
+        "id": "689c42fa521ccf80ce954f83",
+        "title": "Liste des permis de construire et autres autorisations d’urbanisme",
+        "last_modified": "2026-09-29T13:00:06.785000+00:00",
+        "license": "fr-lo"
+      },
+      "resources": [
+        {
+          "title": "Liste des permis d'aménager",
+          "url": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=datafile&datafileRid=96883f50-538b-41f9-a059-c6eb97e6a23a",
+          "format": "html",
+          "last_modified": "2026-10-21T14:30:00+00:00"
+        },
+        {
+          "title": "Liste des permis d'aménager",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/96883f50-538b-41f9-a059-c6eb97e6a23a/csv",
+          "format": "csv",
+          "last_modified": "2026-09-29T13:00:06.575000+00:00"
+        },
+        {
+          "title": "Liste des permis de démolir",
+          "url": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=datafile&datafileRid=1a9a2f0c-56fe-4e69-84a7-fbbda2121f02",
+          "format": "html",
+          "last_modified": "2026-10-21T14:29:59+00:00"
+        },
+        {
+          "title": "Liste des permis de démolir",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/1a9a2f0c-56fe-4e69-84a7-fbbda2121f02/csv",
+          "format": "csv",
+          "last_modified": "2026-09-29T13:00:06.186000+00:00"
+        },
+        {
+          "title": "Liste des autorisations d'urbanisme créant des locaux non résidentiels",
+          "url": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=datafile&datafileRid=f8f0700f-806c-40a7-83b1-f21cf507e7c4",
+          "format": "html",
+          "last_modified": "2026-10-21T14:30:00+00:00"
+        },
+        {
+          "title": "Liste des autorisations d'urbanisme créant des locaux non résidentiels",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/f8f0700f-806c-40a7-83b1-f21cf507e7c4/csv",
+          "format": "csv",
+          "last_modified": "2026-09-29T13:00:05.771000+00:00"
+        },
+        {
+          "title": "Liste des autorisations d'urbanisme créant des logements",
+          "url": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=datafile&datafileRid=8b35affb-55fc-4c1f-915b-7750f974446a",
+          "format": "html",
+          "last_modified": "2026-10-15T08:29:57+00:00"
+        },
+        {
+          "title": "Liste des autorisations d'urbanisme créant des logements",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/8b35affb-55fc-4c1f-915b-7750f974446a/csv",
+          "format": "csv",
+          "last_modified": "2026-09-29T13:00:05.379000+00:00"
+        },
+        {
+          "title": "Dictionnaire des variables des permis de démolir",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/fafd6542-ecc2-4ee3-9130-f17f7de8da09",
+          "format": "xls",
+          "last_modified": "2026-06-12T12:38:01+00:00"
+        },
+        {
+          "title": "Dictionnaire des variables des permis de construire des locaux",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/38ca96c1-c8af-42db-bba1-13cd4bc713f3",
+          "format": "xls",
+          "last_modified": "2026-06-12T12:35:14+00:00"
+        },
+        {
+          "title": "Dictionnaire des variables des permis de construire des logements",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/ab799b04-0b03-4f96-949c-eb23c478a8e8",
+          "format": "xls",
+          "last_modified": "2026-06-12T12:36:11+00:00"
+        },
+        {
+          "title": "Dictionnaire des variables des permis d’aménager",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/6a73fdde-02b1-4c7f-a81c-3c02da6bc4f6",
+          "format": "xls",
+          "last_modified": "2026-06-12T12:33:54+00:00"
+        },
+        {
+          "title": "Note de présentation de la base ouverte Sitadel",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/52ce326b-45b2-42ce-a2e7-4a60554ef559",
+          "format": "pdf",
+          "last_modified": "2025-07-28T15:46:24+00:00"
+        }
+      ]
+    },
+    {
+      "label": "fnb_robots",
+      "url": "https://www.fnbois.com/robots.txt",
+      "fetched_at": "2026-10-22T09:47:14.247007+00:00",
+      "kind": "robots",
+      "status": 200,
+      "final_url": "https://www.fnbois.com/robots.txt",
+      "content_type": "text/plain",
+      "bytes_read": 1118,
+      "sha256": "cab1fa95ebeb4b7705cf9441fb63dc86bb4ae4136096390adfad4db3933aee09",
+      "cap_reached": false,
+      "rules": "User-agent: *\r\nDisallow: /wp-admin/\r\nAllow: /wp-admin/admin-ajax.php\r\n# URLs que je ne veux pas indexer\r\nDisallow: /wp-login.php\r\nDisallow: */trackback\r\nDisallow: /*/comments\r\nDisallow: /cgi-bin\r\nDisallow: /*.php$\r\nDisallow: /*.inc$\r\nDisallow: /*.gz\r\nDisallow: /*.cgi\r\n# URLs autorisées CSS JS Analytics pour les Bots\r\nAllow: /*css?*\r\nAllow: /*js?*\r\nAllow: /*?utm*\r\nAllow: /css/?\r\n# Autoriser Google Image\r\nUser-agent: Googlebot-Image\r\nAllow: /*\r\n\r\nSitemap: http://www.fnbois.com/sitemap_index.xml\r\nSitemap: http://www.fnbois.com/post-sitemap.xml\r\nSitemap: http://www.fnbois.com/page-sitemap.xml\r\nSitemap: http://www.fnbois.com/syndicats-locaux-sitemap.xml\r\nSitemap: http://www.fnbois.com/agenda-sitemap.xml\r\nSitemap: http://www.fnbois.com/activite-principale-sitemap.xml\r\nSitemap: http://www.fnbois.com/specialisation-essence-sitemap.xml\r\nSitemap: http://www.fnbois.com/essence-sitemap.xml\r\nSitemap: http://www.fnbois.com/departement-sitemap.xml\r\nSitemap: http://www.fnbois.com/clientele-sitemap.xml\r\nSitemap: http://www.fnbois.com/secteur-clientele-sitemap.xml\r\nSitemap: http://www.fnbois.com/produits-sitemap.xml\r\n"
+    },
+    {
+      "label": "fnb_homepage",
+      "url": "https://www.fnbois.com/",
+      "fetched_at": "2026-10-22T09:47:14.314401+00:00",
+      "kind": "html",
+      "status": 200,
+      "final_url": "https://www.fnbois.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes_read": 495218,
+      "sha256": "a59394a4251b5d3684b3c98858980c416c584afcc348f881f1849ea7b58ef738",
+      "cap_reached": false,
+      "advertised_feeds": [
+        {
+          "href": "https://www.fnbois.com/feed/",
+          "type": "application/rss+xml",
+          "title": "Fédération Nationale du Bois » Flux"
+        },
+        {
+          "href": "https://www.fnbois.com/comments/feed/",
+          "type": "application/rss+xml",
+          "title": "Fédération Nationale du Bois » Flux des commentaires"
+        }
+      ]
+    },
+    {
+      "label": "fnb_feed",
+      "url": "https://www.fnbois.com/feed/",
+      "fetched_at": "2026-10-22T09:47:16.105195+00:00",
+      "kind": "feed",
+      "status": 200,
+      "final_url": "https://www.fnbois.com/feed/",
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "bytes_read": 64265,
+      "sha256": "41274ac2262efe5a85ce3c59846df85604019905d4067ab08e724c4f24c9a3cd",
+      "cap_reached": false,
+      "root_tag": "rss",
+      "item_count": 10,
+      "examples": [
+        {
+          "title": "Panneaux de communication – « L’exploitant forestier, un métier au service de la forêt et du bois »",
+          "link": "https://www.fnbois.com/lexploitant-forestier-un-metier-au-service-de-la-foret-et-du-bois/",
+          "pubDate": "Tue, 20 Oct 2026 10:12:55 +0000"
+        },
+        {
+          "title": "Communiqué – Emballages professionnels bois : Les tarifs des éco organismes français 25 % plus chers que les Espagnols",
+          "link": "https://www.fnbois.com/communique-emballages-professionnels-bois-les-tarifs-des-eco-organismes-francais-25-plus-chers-que-les-espagnols/",
+          "pubDate": "Fri, 09 Oct 2026 09:33:16 +0000"
+        }
+      ]
+    },
+    {
+      "label": "fbf_robots",
+      "url": "https://observatoire.franceboisforet.com/robots.txt",
+      "fetched_at": "2026-10-22T09:47:16.713017+00:00",
+      "kind": "robots",
+      "status": 200,
+      "final_url": "https://observatoire.franceboisforet.com/robots.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes_read": 211,
+      "sha256": "4157e69b66451559f41616edd6479ed8c994cb5636aa61c1b057f0833c46ba9b",
+      "cap_reached": false,
+      "rules": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://observatoire.franceboisforet.com/wp-sitemap.xml\n\nUser-agent: *\nDisallow: /wp-content/uploads/wpo/wpo-plugins-tables-list.json\n"
+    },
+    {
+      "label": "fbf_homepage",
+      "url": "https://observatoire.franceboisforet.com/",
+      "fetched_at": "2026-10-22T09:47:18.865997+00:00",
+      "kind": "html",
+      "status": 200,
+      "final_url": "https://observatoire.franceboisforet.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes_read": 96594,
+      "sha256": "5d7cd75c3941487e906d3a4ed89dd3753e062f25b93cce33cebac1cc0969ce55",
+      "cap_reached": false,
+      "advertised_feeds": [
+        {
+          "href": "https://observatoire.franceboisforet.com/feed/",
+          "type": "application/rss+xml",
+          "title": "Observatoire économique » Flux"
+        },
+        {
+          "href": "https://observatoire.franceboisforet.com/comments/feed/",
+          "type": "application/rss+xml",
+          "title": "Observatoire économique » Flux des commentaires"
+        },
+        {
+          "href": "https://observatoire.franceboisforet.com/accueil/feed/",
+          "type": "application/rss+xml",
+          "title": "Observatoire économique » Accueil Flux des commentaires"
+        }
+      ]
+    },
+    {
+      "label": "fbf_feed",
+      "url": "https://observatoire.franceboisforet.com/feed/",
+      "fetched_at": "2026-10-22T09:47:21.680828+00:00",
+      "kind": "feed",
+      "status": 200,
+      "final_url": "https://observatoire.franceboisforet.com/feed/",
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "bytes_read": 36444,
+      "sha256": "ca7ad06a91eb16079ef2c33c4089cf5cb8db20aa55eefeb911b843f18adb0642",
+      "cap_reached": false,
+      "root_tag": "rss",
+      "item_count": 10,
+      "examples": [
+        {
+          "title": "IsiBois – Importation des sciages résineux – Octobre 2026",
+          "link": "https://observatoire.franceboisforet.com/isibois-importation-des-sciages-resineux-octobre-2026/?utm_source=rss&utm_medium=rss&utm_campaign=isibois-importation-des-sciages-resineux-octobre-2026",
+          "pubDate": "Fri, 16 Oct 2026 10:21:16 +0000"
+        },
+        {
+          "title": "Parution Isibois n°153 – Septembre 2026",
+          "link": "https://observatoire.franceboisforet.com/parution-isibois-n153-septembre-2026/?utm_source=rss&utm_medium=rss&utm_campaign=parution-isibois-n153-septembre-2026",
+          "pubDate": "Fri, 16 Oct 2026 10:15:08 +0000"
+        }
+      ]
+    },
+    {
+      "label": "fibois_robots",
+      "url": "https://fibois-grandest.com/robots.txt",
+      "fetched_at": "2026-10-22T09:47:23.611373+00:00",
+      "kind": "robots",
+      "status": 200,
+      "final_url": "https://fibois-grandest.com/robots.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes_read": 177,
+      "sha256": "d6d29d6c55157f3d59d9f3dfbf3cb2e3a3806a612bd0b24add88bec145ec7cc1",
+      "cap_reached": false,
+      "rules": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://fibois-grandest.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+    },
+    {
+      "label": "fibois_homepage",
+      "url": "https://fibois-grandest.com/",
+      "fetched_at": "2026-10-22T09:47:24.695887+00:00",
+      "kind": "html",
+      "status": 200,
+      "final_url": "https://fibois-grandest.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes_read": 109193,
+      "sha256": "ee6445cda53277b135406c8ec10b0b4740213a64a7a0dd4246f184e5bb5e2462",
+      "cap_reached": false,
+      "advertised_feeds": []
+    }
+  ]
+}

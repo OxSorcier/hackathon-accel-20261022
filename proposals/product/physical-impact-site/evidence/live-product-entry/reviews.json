@@ -1,0 +1,58 @@
+{
+  "codeModel": "Active parent runtime, exact served model identity not separately attested",
+  "reviewCycles": 2,
+  "reviewedFiles": {
+    "index.html": "a12260953f7792143a3baba97453b5a7043713b9b7aa3231deed389b3176ace2",
+    "styles.css": "34c1e89ed7a1d41c60fa4d1ad5ecb99d1cc44a03c2c556cee4f5aa0a1942f88a",
+    "live/index.html": "a6e294e74c0d131a99dc7017a833bce93eac4df620be8034a4dbb8aa1b35f299"
+  },
+  "reviews": [
+    {
+      "role": "same_model_counter_review",
+      "reviewer": "/root/live_entry_counter",
+      "requestedModel": "Inherited active parent runtime",
+      "servedModel": "Not separately attested",
+      "context": "fresh fork_turns none, high effort",
+      "status": "PASS final exact delta",
+      "findings": []
+    },
+    {
+      "role": "architecture_review",
+      "reviewer": "/root/live_entry_architecture",
+      "requestedModel": "gpt-6-astra",
+      "servedModel": "Not separately attested",
+      "context": "fresh fork_turns none, high effort",
+      "status": "PASS final exact delta",
+      "findings": []
+    }
+  ],
+  "checks": {
+    "browser": "Aside",
+    "responsiveMethod": "same-origin iframe; viewport size API unavailable",
+    "widthsBeforeFinalTabletDelta": [
+      320,
+      390,
+      561,
+      600,
+      820,
+      1100
+    ],
+    "widthsAfterFinalTabletDelta": [
+      561,
+      600,
+      800,
+      801
+    ],
+    "overflow": "none",
+    "links": "Live product /live/; all three Try it live /demo/; Explore the demo /demo/",
+    "keyboard": "Tab, Enter and visible focus passed",
+    "correction": "Section links hidden in scoped landing header through 800px to keep the tablet navigation on one line."
+  },
+  "notRun": [
+    "Physical devices",
+    "Safari",
+    "Firefox",
+    "Backend integration tests outside this static delta"
+  ],
+  "scope": "Landing header, CSS and future product placeholder only; app bundle and routing unchanged."
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "PRIVATE_REMOTE_BYTES_AND_PACKAGE_VERIFIED",
+  "checkedAt": "2026-10-22T11:48:31.207637+00:00",
+  "files": [
+    {
+      "file": "DISPLAY-PROFILE.md",
+      "id": "1tky8vMkna3HTFlGAsIVLaFk5JZWV5NTh",
+      "sha256": "0cceb3af3a80cca97cc080a9e0a75be2f0b7b09f7e24078cbb7a294d513927fe",
+      "bytes": 7065,
+      "byteIdentical": true
+    },
+    {
+      "file": "DISPLAY-PROFILE.html",
+      "id": "18TsqcqdY9l6-VNlUgR7Jw_b9hsNDBTA3",
+      "sha256": "8f2207e2512f18e6cabb9c0aea799844a3976237d0e1f49f9353b8e01227363c",
+      "bytes": 175261,
+      "byteIdentical": true
+    },
+    {
+      "file": "ADAPTOPS-DISPLAY-PROFILE-20261022-v1.zip",
+      "id": "1to4bf5mv9kzopmDjsoocBMhZOLU8-4BR",
+      "sha256": "5bf883c79faabda06983425eefef835d9f638a109e6965bb3ab5055074489064",
+      "bytes": 599767,
+      "byteIdentical": true
+    }
+  ],
+  "coldReadDirectory": "/var/folders/1p/h6m1c58x3lzg4080b8yzckn40000gn/T/adaptops-display-cold-read-n9s7hjlk",
+  "archiveEntries": 17,
+  "manifestEntriesVerified": 16,
+  "sharing": "All three metadata shared=false, existing private folder unchanged.",
+  "runtime": "NOT_RUN by this portfolio author"
+}

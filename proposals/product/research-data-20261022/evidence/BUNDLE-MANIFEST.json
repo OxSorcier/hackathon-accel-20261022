@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T09:46:19.452Z",
+  "contextSnapshots": [
+    {
+      "path": "docs/PRODUCT-VISION.md",
+      "capturedAt": "2026-10-22T09:46:19.446Z",
+      "sha256": "3e114f5b70eecb69cca978f8e1a4274a0ca5ff65e015a794a1e1d0adbbcfc278",
+      "status": "documentary snapshot, not current runtime evidence"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "capturedAt": "2026-10-22T09:46:19.448Z",
+      "sha256": "75e905e63f7993bc002b63a44f1a92ce96774a8b8e18d1114e3282d354a8844a",
+      "status": "documentary snapshot, not current runtime evidence"
+    },
+    {
+      "path": "proposals/integration/KEENABLE-CONTRACT.md",
+      "capturedAt": "2026-10-22T09:46:19.450Z",
+      "sha256": "ac1a8b50b1fcf3100000e2ce13525478d1dde7dee3c9e944ee4305e97c9a612f",
+      "status": "documentary snapshot, not current runtime evidence"
+    }
+  ],
+  "files": [
+    {
+      "path": "docs/PRODUCT-VISION.md",
+      "bytes": 19408,
+      "sha256": "3e114f5b70eecb69cca978f8e1a4274a0ca5ff65e015a794a1e1d0adbbcfc278"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 9437,
+      "sha256": "75e905e63f7993bc002b63a44f1a92ce96774a8b8e18d1114e3282d354a8844a"
+    },
+    {
+      "path": "proposals/integration/KEENABLE-CONTRACT.md",
+      "bytes": 2262,
+      "sha256": "ac1a8b50b1fcf3100000e2ce13525478d1dde7dee3c9e944ee4305e97c9a612f"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/PUBLIC-SIGNALS.json",
+      "bytes": 2834,
+      "sha256": "559b24e605faa28fc26a9d74791141ad3c1157e72730ce4203aff81373ea671c"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/RECHERCHE-DATA-DELTA.html",
+      "bytes": 184468,
+      "sha256": "bd89049d664eed5462749b6b8d85bb42525ccbd4565e9cbf225d65e9f28b1d84"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/RECHERCHE-DATA-DELTA.md",
+      "bytes": 19146,
+      "sha256": "ced29ff38eb68ce05469d99a1e175120b93c6d132478b51db15c4b91bf7d9a0b"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/REGULATORY-CANDIDATES.json",
+      "bytes": 5978,
+      "sha256": "2f09519976f748634dd4a0b4617a98eecaa02ef35b8213d304bcd42570477351"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/API-TRIALS.json",
+      "bytes": 9674,
+      "sha256": "9f282d72b07edb39c9dd0437115faa7037599ae3690c816e3a56fc0c81d96899"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/DRIVE-READBACK.json",
+      "bytes": 592,
+      "sha256": "d2150f000432183827833b2f9f241344728eb789cc7656a25ae5018afd22fb56"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/RENDER.json",
+      "bytes": 2346,
+      "sha256": "4c2da072c406d88288f5cc223df33f3e47e5cdd3f47bedd6fd4d084ec88b736e"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/SOURCES.json",
+      "bytes": 3811,
+      "sha256": "4881c8fd7f42494bef674eb8e2af916246bbe319ccc9d62e79de61f11dda6126"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/regulation-chrome-1440.png",
+      "bytes": 207947,
+      "sha256": "d4f4d5082671876884100d5ef6f7d32afafa19b799fadf102a10836a78a2e36a"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/regulation-chrome-390.png",
+      "bytes": 96523,
+      "sha256": "f3e3397b6ca5b1c9bee428e21785055eac262f3c1c6876a0d05628075d574b57"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/regulation-chrome-768.png",
+      "bytes": 165916,
+      "sha256": "a67431b1fb7016cbf77bd1229e47c238d8d7ea2207830f1c16f6cb1c291d544f"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/report-aside-1440.png",
+      "bytes": 286165,
+      "sha256": "4b03af17535d0f7bd28f80a8ff989c57f570f97ae386f7ba2a366fa56e3b8984"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/report-chrome-1440.png",
+      "bytes": 145771,
+      "sha256": "24c7840eb59f198f9fea25ec73623861af6b1fde59850048abcb2c44d78eba76"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/report-chrome-390.png",
+      "bytes": 87912,
+      "sha256": "9f01e1a9b4daacd88c09b57a6bd0d8bc577d7ec5beeda6a31c6b41513d8a84fb"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/evidence/report-chrome-768.png",
+      "bytes": 133324,
+      "sha256": "5fa6fb0556b082b42d34529d19260a1334e4e31f21325f1ca415d5a094e54309"
+    }
+  ],
+  "limitations": [
+    "No code, secret or preparation corpus included",
+    "Context snapshots do not prove runtime integration",
+    "Independent research review NOT_RUN"
+  ]
+}

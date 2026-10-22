@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "receivedAt": "2026-10-22",
+  "sourceThread": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "source": "Existing integrator, in the human-authorized coordination scope",
+  "automaticRun": "AgentRun.actorId equals intent.servicePrincipalId, run.industrialIntentId equals intent.id; same company and aligned report/run/intent basis. Service principal role analysis_only. Server constructs the binding under lock.",
+  "manualQuestion": "AgentRun.actorId remains the authenticated session actor. No automatic intent is invented.",
+  "history": "An old businessRevision remains readable in history; current admissibility becomes stale. History is not rejected merely because the company revision advanced.",
+  "runtime": "Contract clarification received. This is not a runtime proof."
+}

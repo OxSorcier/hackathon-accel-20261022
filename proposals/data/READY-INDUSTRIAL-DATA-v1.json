@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "status": "READY_LOCAL_TESTED_TWO_INDEPENDENT_REVIEWS_INTEGRATOR_RECEIPT_PENDING",
+  "scopeSha256": "3564295636d44b24edd453bfe1d650f00b9d34d86553b7383a7bbe8f5d1fd358",
+  "files": [
+    {
+      "path": "proposals/data/industrial-analysis-schema.sql",
+      "sha256": "204005bb5ce53e230b0473fb2f10f4f1423b809493c4fd0c0e9eb175f17b3eda"
+    },
+    {
+      "path": "src/data/analysis-trigger.ts",
+      "sha256": "b18d884c29edfbb86952547685a90f8320e726f4ee909aab08bc52235f0510a2"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "e7822f04664c7ee474dc70569535530f84f517559dce859931442d67e11b66ea"
+    },
+    {
+      "path": "tests/data/industrial-relations.test.ts",
+      "sha256": "2bb7eb6a902e0d7bb1949af38d0bb0315a84874a420418007687bf92847aa50e"
+    },
+    {
+      "path": "tests/data/industrial-trigger-postgres.test.ts",
+      "sha256": "6429e5a24bedafba55b0b9b3c6a3161972e24e735971385f5eb2131f934e8402"
+    }
+  ],
+  "reviewInput": "proposals/data/REVIEW-INPUT-INDUSTRIAL-v3.json",
+  "reviews": "proposals/data/INDUSTRIAL-DATA-REVIEWS-v1.json",
+  "tests": {
+    "dataWatch": 75,
+    "postgres": 46,
+    "industrialPostgres": 11,
+    "industrialPure": 8,
+    "strictTypecheck": "PASS",
+    "environment": "Disposable local PostgreSQL17.6 and existing received synthetic10k portfolio; no Aiven or real model claim"
+  },
+  "integrationRequirements": [
+    "Integrator alone applies canonical SQL, imports data, resolves principal and current basis, assembles existing worker and implements report/approval/execution",
+    "Call parseIndustrialContext(value,snapshot) for strict pure DTO/native relation validation; call currentIndustrialContext(value,snapshot,asOf) for the current positive context served to domain/model. The returned DTO is detached from inputs.",
+    "All trigger methods except read-only bounded listReady require a client inside the caller transaction. The module locks company before mutation.",
+    "resolvePrincipal and validateBasis are mandatory trusted SQL checks; principal must be active analysis_only for that company. No impersonation of Paul and no approval authority.",
+    "enqueue is called in the transaction that publishes a received qualified event/source basis. A freshness extension alone is not a new source identity.",
+    "promote uses the existing-worker enqueueRun SQL callback in that same transaction; maxRunsPerEvent persists across all versions of the event.",
+    "Commit reserveUsage before every actual provider or tool call and execute that effect outside SQL. Counters and elapsed deadline are durable; never reset on restart.",
+    "Root reconciles interrupted runs as uncertain and preserves previous approved/executed history; this data module neither restarts uncertain calls nor executes purchases/transfers.",
+    "Finish checks current principal/basis and persistent duration before done. Root atomically publishes a report only after its own final current-basis validation.",
+    "Research4pin module stays frozen. For analysis_only, pass server-received public refs/context and validate dependencies server-side; its human actor lookup/refresh roles are not implicitly extended."
+  ],
+  "ports": {
+    "parser": [
+      "parseIndustrialContext(value:unknown,snapshot:CompanySnapshot):IndustrialContext",
+      "currentIndustrialContext(value:unknown,snapshot:CompanySnapshot,asOf:string):IndustrialContext"
+    ],
+    "triggerFactory": "createIndustrialAnalysisTrigger({servicePrincipalId,resolvePrincipal,validateBasis,now?})",
+    "triggerMethods": [
+      "enqueue(client,input)",
+      "listReady(client,{limit:1..10})",
+      "promote(client,companyId,intentId,enqueueRun)",
+      "reserveUsage(client,companyId,intentId,runId,provider|tool)",
+      "finish(client,companyId,intentId,runId,done|stale|blocked|uncertain,reason?)",
+      "get(client,companyId,intentId)"
+    ]
+  },
+  "preserved": [
+    "Collector16pins READY-KEENABLE-v3",
+    "Research4pins READY-RESEARCH-v2",
+    "Existing portfolio data, native identities and single import owner",
+    "Stable3001"
+  ],
+  "notProved": [
+    "Industrial candidate worker binding and automatic real-provider effect",
+    "New public item or publisher content update",
+    "Integrated industrial calculated report and simulated execution",
+    "Current repeated browser-closed collection on industrial/Aiven candidate"
+  ],
+  "liveFeedCheckpoint": "proposals/data/LIVE-FEED-CHECKPOINT-v1.json"
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/flow-reception-source-v5",
+  "base": "/Users/erwan/Projects/hackathon-accel-20261022/.local/flow-reception-source-v4",
+  "scope": "Origin check on every mutation, including encoded URL paths. Risk flow receives only the already reviewed micro-UI bytes plus this guard.",
+  "files": [
+    {
+      "path": "src/server/app.ts",
+      "sha256": "538a5b88088631c28edc74942d9a32770eece1af8af5ec378e769fbbecee7be9"
+    },
+    {
+      "path": "tests/server/origin.test.ts",
+      "sha256": "2fd4f04a94173010158ed2a75300ca68aa9148f6c05e9a6a6d5d4137963f2930"
+    }
+  ],
+  "createdAt": "2026-10-22T11:19:59.820212+00:00"
+}

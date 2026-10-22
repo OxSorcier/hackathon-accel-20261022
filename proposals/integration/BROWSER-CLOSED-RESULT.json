@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "closedAt": "2026-10-22T09:00:07.335Z",
+  "checkedBeforeBrowserReopenAt": "2026-10-22T09:05:22.513Z",
+  "watchId": "watch:d4e4eae6563d8bb6f0b928a748d0847192ccd47ee3cb1f722e121588b26773f4",
+  "completedDuringClosedWindow": 2,
+  "occurrences": [
+    {
+      "id": "scheduled:watch:d4e4eae6563d8bb6f0b928a748d0847192ccd47ee3cb1f722e121588b26773f4:20261022090507.362000",
+      "operationKey": "schedule:20261022090507.362000",
+      "scheduledAt": "2026-10-22T09:05:07.362Z",
+      "startedAt": "2026-10-22T09:05:07.911Z",
+      "completedAt": "2026-10-22T09:05:08.456Z",
+      "status": "completed",
+      "collectionStatus": "partial",
+      "evidenceCount": 20
+    },
+    {
+      "id": "scheduled:watch:d4e4eae6563d8bb6f0b928a748d0847192ccd47ee3cb1f722e121588b26773f4:20261022090007.362000",
+      "operationKey": "schedule:20261022090007.362000",
+      "scheduledAt": "2026-10-22T09:00:07.362Z",
+      "startedAt": "2026-10-22T09:00:07.861Z",
+      "completedAt": "2026-10-22T09:00:09.147Z",
+      "status": "completed",
+      "collectionStatus": "partial",
+      "evidenceCount": 20
+    }
+  ],
+  "passed": true,
+  "limits": [
+    "Local PostgreSQL and server only",
+    "Collection is bounded/partial",
+    "No model inference or business proposal triggered by this watch"
+  ],
+  "browser": "Aside",
+  "browserReadback": "Aside after real server restart: 2 watches, 40 source rows, 1440x900, no horizontal overflow",
+  "browserReopenAttemptObservedAt": "2026-10-22T09:06:12.938Z",
+  "browserReadbackConfirmedAt": "2026-10-22T09:09:01.694Z",
+  "screenshot": "proposals/integration/aside-live-watches.png"
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "status": "POLICY_RECEIVED_IMPLEMENTATION_AND_ACTIVATION_PENDING",
+  "proposal": "proposals/data/PUBLIC-CONTRACTS-OBSERVATION-POLICY-v1.json",
+  "sha256": "81332fddc4b8e9ab9ef2de0871904bebac683debe75702961e3107c080799e9a",
+  "scope": {
+    "profileId": "public-contracts",
+    "profileVersion": "v1",
+    "namespace": "live"
+  },
+  "receivedAt": "2026-10-22T12:25:07.686867+00:00",
+  "conditions": [
+    "Retain raw collection status, exact sources/timestamps/native refs and source_observation_only.",
+    "BOAMP eligible predicate applies to this configured live profile for success and partial collections, avoiding excluded material becoming admissible through a success status.",
+    "Only root performs bounded actual collection after exact code reception; no new collector/scheduler."
+  ],
+  "actualCollection": "NOT_RUN"
+}

@@ -1,0 +1,48 @@
+{
+  "source": "proposals/integration/REAL-CASE-FLOW.json",
+  "recordedAt": "2026-10-22T09:55:30.586Z",
+  "targetOrder": "ORD-A",
+  "baselineDefinition": "Among options that cover order A, choose the lowest recorded cost while ignoring coverage of other orders. This is an analytical rule baseline, not a new model run.",
+  "baseline": {
+    "kind": "transfer",
+    "costEur": 120,
+    "status": "conditional",
+    "coverage": [
+      {
+        "orderId": "ORD-A",
+        "covered": 8,
+        "shortage": 0
+      },
+      {
+        "orderId": "ORD-B",
+        "covered": 0,
+        "shortage": 8
+      }
+    ]
+  },
+  "selected": {
+    "kind": "emergency_purchase",
+    "costEur": 1420,
+    "status": "feasible",
+    "coverage": [
+      {
+        "orderId": "ORD-A",
+        "covered": 8,
+        "shortage": 0
+      },
+      {
+        "orderId": "ORD-B",
+        "covered": 8,
+        "shortage": 0
+      }
+    ]
+  },
+  "approved": "approved",
+  "inventoryUnchangedDuringDecision": true,
+  "limits": [
+    "Company and internal confirmation are synthetic.",
+    "No public-source causal or commercial supplier relationship asserted.",
+    "No stock transfer or purchase executed.",
+    "Final UI/browser reception remains separate."
+  ]
+}

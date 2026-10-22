@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T12:26:25.472Z",
+  "status": "READY_FOR_INTEGRATOR_RECEIPT",
+  "ready": true,
+  "frozen": true,
+  "previous": [
+    "proposals/ui/industrial/READY.json",
+    "proposals/ui/industrial/READY-freshness-v1.json"
+  ],
+  "manifest": "proposals/ui/industrial/REVIEW-INPUT-v5.json",
+  "manifestSha256": "9717d6adde88a1af62b7ee3af3f7f81f27f801e36b730aaf61bfb2165ba277ea",
+  "source": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/industrial/source-v5",
+  "sourceFingerprint": "ad0c144b8bc88d5fff9f237cd06ec2509737576b2db9d70bff649a4eebdefe08",
+  "files": [
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "96c7bcc84cb7e51abdb34719723e1bfd0ee8c76c4bc6641af62fd6c9ff5ae2e6",
+      "bytes": 48820
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "06e471068d976dcbdcb0aa82375f9a4e1c9310fed0ab03d11cf1588768fe0582",
+      "bytes": 6411
+    },
+    {
+      "path": "src/ui/industrial.ts",
+      "sha256": "0a3efa206e26b132de722f53b33530804e33f508f0e3186ffa7b3b7997d86cf6",
+      "bytes": 14727
+    },
+    {
+      "path": "src/ui/industrial-api.ts",
+      "sha256": "29b5154aecbd2417bb8cb01903c623899f1b87f84082cc68e6631186d93af707",
+      "bytes": 13564
+    },
+    {
+      "path": "src/ui/pending-commands.ts",
+      "sha256": "dd41f6b7774b74b72a10b908bc58bcd7b7acb598f23f8be5d0e3147d5dde671a",
+      "bytes": 1334
+    },
+    {
+      "path": "tests/ui/industrial-api.test.ts",
+      "sha256": "3713bc5f98fc1c8c2bce9b3bc881d597b882cc800e7e07dc3170643be6cc40e8",
+      "bytes": 32694
+    },
+    {
+      "path": "tests/ui/industrial-fixtures.ts",
+      "sha256": "712f91b012296f85adda0e1aa30bfcfffd6a0d094febf99c65e7f7451cb80a29",
+      "bytes": 7332
+    }
+  ],
+  "scope": "New received optional central display/research/feed/question-availability DTO delta.",
+  "reviews": "proposals/ui/industrial/REVIEWS-central-dto.json",
+  "tests": {
+    "status": "PASS",
+    "industrial": 76,
+    "ownedUi": 193,
+    "receipt": "proposals/ui/industrial/TESTS-central-dto-all.json",
+    "scope": "Seven owned test suites; concurrent Physical Impact frontend tests excluded."
+  },
+  "typecheck": {
+    "targetedBoundary": "PASS",
+    "root": "PASS"
+  },
+  "implementation": [
+    "Strict optional server display profile with unique entityType/nativeId labels and same-company binding.",
+    "Canonical ResearchContext publicResearch reused through existing research schema.",
+    "Optional publicFeed schedule retained; profile matches publicResearch when both provided.",
+    "Optional questionsConnected retained with no default; explicit false blocks before POST.",
+    "No local alias import, public publisher rename, new UI composition, model/collector call or business action."
+  ],
+  "consumerRequirements": [
+    "Use only server display labels, keyed by entity type and native ID. They do not grant authority or replace native IDs.",
+    "Absent data is unknown, not an empty successful feed or an available question backend.",
+    "Render untrusted public content as text and use safeSourceUrl for links. Preserve published and collected dates.",
+    "Read ResearchContext.scope.namespace and evidence.mode; controlled/test and live/direct remain separate.",
+    "Feed cadence and last attempt describe collection state, not fresh publication or an automatic industrial report."
+  ],
+  "realReadEvidence": {
+    "receipt": "proposals/ui/industrial/REAL-READ-PARSER-CHECK.json",
+    "status": "Original unchanged server capture parsed by v4; new optional DTO fields not emitted there.",
+    "attribution": "Aiven/HTTP capture belongs to integrator, local parser replay to this owner."
+  },
+  "integration": "NEW_CENTRAL_DTO_RUNTIME_NOT_RUN",
+  "frontendOwner": "01a16346-9b6f-7b70-afc7-57775e697a94",
+  "publication": "No commit/push/deploy/merge or external business action."
+}

@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "status": "FIRST_CLEANUP_FAILED_READ_CHECKS_PASSED",
+  "cause": "Test request advertised application/json without a body on DELETE. Corrected test omitted Content-Type; no product code changed.",
+  "reconciled": true,
+  "receipt": "INDUSTRIAL-READ-CANDIDATE.json"
+}

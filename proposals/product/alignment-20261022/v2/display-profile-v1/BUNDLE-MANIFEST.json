@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "status": "PRIVATE_DISPLAY_PROPOSAL_NOT_APPLICATION_INPUT",
+  "files": [
+    {
+      "path": "proposals/integration/INDUSTRIAL-CORE-AIVEN.json",
+      "sha256": "4534165351e0fff576d8ee4439886494c78d92544aecc8650b0615aa40216a78",
+      "bytes": 2214
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/CORE-READY.json",
+      "sha256": "babc07971a1659db802e372751ac6e83fe4f23bf9d8dcf2a55c0b73a1b3199ca",
+      "bytes": 1909
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/INDUSTRIAL-READY-v2.json",
+      "sha256": "b955e5374c111bd7d5e1779c00028953980b88e1683280c26a80f14ca281bfea",
+      "bytes": 3390
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/ASIDE-CHECK.json",
+      "sha256": "df1ec2c62e7f84ef78ab2500ad4c3be9f99afe386c8a3b82c411440d3f3d2fb8",
+      "bytes": 378
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/DISPLAY-CHECKS.json",
+      "sha256": "6069d38a774c7c00793ce81aa7f1a153723064ace0f80f5c233d455bb0c85f15",
+      "bytes": 1551
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/DISPLAY-PROFILE.html",
+      "sha256": "8f2207e2512f18e6cabb9c0aea799844a3976237d0e1f49f9353b8e01227363c",
+      "bytes": 175261
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/DISPLAY-PROFILE.md",
+      "sha256": "0cceb3af3a80cca97cc080a9e0a75be2f0b7b09f7e24078cbb7a294d513927fe",
+      "bytes": 7065
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/DOCUMENT-CHECKS.json",
+      "sha256": "e9b67b6048848a2fb63316c896a119a5d031093540f70ed15a8145659e5b6023",
+      "bytes": 1058
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/READY.json",
+      "sha256": "b563fcf195e204c354ff272e7d94213cfa787fe2f0ea58fc8796db072e6b7e59",
+      "bytes": 1509
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/SOURCE-MANIFEST.json",
+      "sha256": "119b4a145993c3aaca91da09f6ca9f8a520ddbd4217ae5f973d3b67ad9e7632e",
+      "bytes": 1039
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/display-aliases.v1.json",
+      "sha256": "472a7b9558bda98e14b9a9a7f747fda6da95f1abc9598b500e6392b6c4052c25",
+      "bytes": 10355
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/display-profile-1440.png",
+      "sha256": "0d3f9b9e5ca35100bbcefbfd460be71f090b15aaf735c28e928f75e7d2c1928d",
+      "bytes": 113385
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/display-profile-390.png",
+      "sha256": "974985be57ce01a6cf13128201e0b991397077e04d62b07c4b582c72a5c2d735",
+      "bytes": 65329
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/display-profile-768.png",
+      "sha256": "c63993e90468d631a14c6d89f811d99ad0bea9c044a503ad394415096d669874",
+      "bytes": 89910
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/display-profile-aside-1440.png",
+      "sha256": "ca7960e4088ce06a22244770e68b19cba29acfe5dced3432160d9664ebce3f5b",
+      "bytes": 240164
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/display-profile.proposed.json",
+      "sha256": "7bdf2051da416bb75b3e0dd553dd660ca5035df2c2716dd04e3876af5657a257",
+      "bytes": 15255
+    }
+  ]
+}

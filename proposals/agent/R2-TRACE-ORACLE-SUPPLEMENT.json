@@ -1,0 +1,12 @@
+{
+  "status": "READ_ONLY_FAILURE_DIAGNOSED_NO_MUTATION",
+  "checkedAt": "2026-10-22T12:23:14.131394+00:00",
+  "negative": "proposals/agent/R2-FINALIZER-EXECUTION-FAILURE.json",
+  "negativeSha256": "4a20126658de8c63d54c99b9ecde8d2abef54591c0eaa0755728d7e4fb4bdb84",
+  "cause": "Zod4 undefined schema requires a present key; a fresh manifest correctly omits caseRef. Pure probe reproduces invalid_type nonoptional, and tool isError:false is received.",
+  "correction": "Use undefined optional for absent caseRef and run that exact check on the native frozen diagnosis in plan.",
+  "mutations": 0,
+  "latchCreated": false,
+  "originalScenarioRepeated": false,
+  "remaining": "Only the original new-operationKey v2 ingestion, after exact two-role revalidation."
+}

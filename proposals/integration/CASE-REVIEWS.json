@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "status": "BOTH_ROLES_REVALIDATED",
+  "implementationModel": "gpt-6.1-sol",
+  "implementationEffort": "xhigh",
+  "reviewers": [
+    {
+      "agent": "/root/case_counter_review",
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high"
+    },
+    {
+      "agent": "/root/case_architecture_review",
+      "requestedModel": "gpt-6-astra",
+      "effort": "high"
+    }
+  ],
+  "servedModelAttestation": "unavailable",
+  "isolation": "Two distinct initial fork-none contexts, independent of implementation and each other; targeted correction revalidation",
+  "cycles": 3,
+  "scopeManifest": "proposals/integration/REVIEW-INPUT-case-v3.json",
+  "scopeManifestSha256": "9574939bfdfdfc273a6a1a89e6b16e1a9ce18b7451ea545adc52905bbc32fe11",
+  "findings": [
+    {
+      "cycle": 1,
+      "issue": "Question and case analysis operation-key collision",
+      "state": "corrected",
+      "regression": "Observed ACCEPTED/23505 before fix; OPERATION_CONFLICT in both directions after fix"
+    },
+    {
+      "cycle": 2,
+      "issue": "Legacy decisions received migration timestamp as invented decision time",
+      "state": "corrected by additive migration005",
+      "regression": "Both reviewers reproduced old-row timestamp; both independently verified NULL historical / preserved interim / dated new rows and idempotent migrate"
+    }
+  ],
+  "checks": [
+    "35/35 hashes match before and after both final reviews",
+    "27 server/integration tests passed on v2; seven case tests passed on v3",
+    "Confirmation authority and Origin, concurrent same receipt with one event, rollback on event insertion failure",
+    "12 and 13 independently altered confirmation tuple fields refused",
+    "Positive approval from current confirmed internal snapshot succeeds; insufficient ceiling refused",
+    "Source revision and business mutation revoke authority; historical event cannot restore it"
+  ],
+  "limits": [
+    "Reviewers executed no external provider, Aiven or browser calls",
+    "Agent, UI and data modules have separate panels and receipts",
+    "The conditional framing review is separate from these final code reviews",
+    "No private reasoning or secret included"
+  ]
+}

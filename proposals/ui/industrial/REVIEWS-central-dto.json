@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "manifest": "proposals/ui/industrial/REVIEW-INPUT-v5.json",
+  "manifestSha256": "9717d6adde88a1af62b7ee3af3f7f81f27f801e36b730aaf61bfb2165ba277ea",
+  "scope": "New received optional central display/research/feed/question-availability DTO delta.",
+  "realizerModel": "gpt-6.1-sol",
+  "servedModelsAttested": false,
+  "cycles": 1,
+  "isolation": "Two distinct reviewers with fork_turns:none and effort high. Neither received coder conclusions, older verdicts or other reviewer findings.",
+  "roles": [
+    {
+      "role": "counter-review",
+      "agent": "/root/central_dto_counter",
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high",
+      "pinsVerified": 24,
+      "independentInMemoryProbes": 33,
+      "status": "NO_RETAINED_FINDINGS"
+    },
+    {
+      "role": "contracts-and-architecture",
+      "agent": "/root/central_dto_architecture",
+      "requestedModel": "gpt-6-astra",
+      "effort": "high",
+      "pinsVerified": 24,
+      "independentInMemoryProbes": 16,
+      "status": "NO_RETAINED_FINDINGS",
+      "receiptCorrection": "Original final incorrectly counted 16 dependencies. Reviewer corrected to 17 dependencies plus 7 sources; every SHA was already checked. Package lock and tsconfig were hash-only references."
+    }
+  ],
+  "checks": [
+    "Additive complete/partial/absent shapes preserve received data.",
+    "Malformed types, duplicate labels, foreign company and mismatched public proof/profile refused.",
+    "Canonical ResearchContext reused, including live/direct versus controlled/test provenance.",
+    "Explicit questionsConnected=false refuses before POST; absent remains unknown, route/server503 preserved.",
+    "Display base hashes are preserved strings, never claimed as runtime attestation."
+  ],
+  "limitations": [
+    "Reviewer probes used injected transport only; no service, server, Aiven or business calls.",
+    "The 76/193 Vitest counts and typechecks were executed by code owner, not rerun by reviewers.",
+    "Frontend and actual central DTO emission remain NOT_RUN by this owner."
+  ]
+}

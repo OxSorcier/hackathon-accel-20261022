@@ -1,0 +1,283 @@
+{
+  "checkedAt": "2026-10-22T10:32:30.931Z",
+  "status": "CORRECTED_SOURCE_AND_CASE_READY_FOR_GENERIC_UI_QA",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "previousCaseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f",
+  "occurrence": {
+    "id": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3",
+    "watchId": "watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "operationKey": "manual:1a952692-80de-437f-9d3d-2aeaf9be4a30",
+    "status": "completed",
+    "scheduledAt": "2026-10-22T10:32:27.514Z",
+    "startedAt": "2026-10-22T10:32:27.759Z",
+    "completedAt": "2026-10-22T10:32:29.677Z",
+    "fence": 1,
+    "leaseUntil": null,
+    "result": {
+      "status": "partial",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "evidence": [
+            {
+              "id": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+              "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+              "title": "Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit",
+              "content": "Original source: https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/\nTitle: Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit\nPublished: 2026-07-10T14:04:59.000Z\nKeenable retrieval: indexed copy; freshness not verified.\n**La Cour administrative d'appel de Douai a rejeté l'ensemble des recours déposés par les associations contre l'autorisation environnementale de notre usine et contre la déclaration d'utilité publique de la ligne électrique qui l'alimentera.**\n\nCette décision confirme celles rendues par le tribunal administratif d'Amiens, qui avait déjà validé ces deux autorisations. L'ensemble des arguments soulevés portant notamment sur l'étude d'impact, la santé et la qualité de l'air, la biodiversité, les ressources en eau ont été examinés et écartés par les deux juridictions.\n\nNous prenons acte de cette décision avec satisfaction. Elle reconnaît la rigueur du travail mené depuis l'origine de ce projet pour répondre aux exigences environnementales et sanitaires.\n\nNos équipes restent pleinement mobilisées pour mener à bien la construction de cette usine qui créera 130 emplois directs sur le territoire et s'appuiera sur une technologie de four électrique décarboné. Ces dernières semaines, les travaux de terrassement, de voirie et de réseaux, avec la mise en place progressive des premières infrastructures du site se sont ainsi poursuivis avec nos partenaires. Le chantier entre dans une nouvelle phase cet été avec la réalisation des fondations nécessaires à la réalisation des différents bâtiments.\nUntrusted public information. This collection establishes no commercial relationship.",
+              "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+              "dataOrigin": "public",
+              "mode": "direct",
+              "publishedAt": "2026-07-10T14:04:59.000Z",
+              "collectedAt": "2026-10-22T10:32:29.137Z",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch",
+                "method": "fetch",
+                "profileId": "soissons-project",
+                "indexedAt": null,
+                "truncated": false
+              },
+              "family": "supplier"
+            },
+            {
+              "id": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+              "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026/",
+              "title": "Actualité du 03 mars 2026",
+              "content": "Original source: https://www.rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026/\nTitle: Actualité du 03 mars 2026\nPublished: unknown\nDate conflict: Search 2026-03-04T07:20:00.000Z, Fetch 2026-03-04T07:20:00.000Z, visible publisher date 2026-03-03T00:00:00.000Z. Canonical publication date unknown; check the original.\nKeenable retrieval: indexed copy; freshness not verified.\n**La future usine ROCKWOOL de Courmelles aura une capacité de production d’environ 110 000 tonnes de laine de roche par an. Derrière ce chiffre, il y a des applications concrètes pour le secteur du bâtiment et la rénovation énergétique.**\n\nCe volume de production correspond, chaque année, à l’isolation de plus de 100 000 appartements de 50 m² ou de plus de 50 000 maisons de 100 m².\n\nÀ cette échelle, l’impact est direct. Il permet de contribuer à l’amélioration de la performance énergétique de nombreux logements, bâtiments publics et sites industriels. Une meilleure isolation signifie moins de consommation d’énergie, un meilleur confort thermique et une réduction des émissions liées au chauffage et à la climatisation.\n\nLe projet s’inscrit ainsi dans les objectifs nationaux de rénovation énergétique des bâtiments, qui nécessitent des volumes importants de matériaux isolants disponibles en France.\n\nLa laine de roche utilisée présente plusieurs caractéristiques reconnues. Elle est recyclable à l’infini, et se distingue par sa résistance au feu, ses performances thermiques et acoustiques, ainsi que par la durabilité de ses propriétés dans le temps.\n\nAvec cette future unité de production, l’objectif est de répondre à une demande croissante tout en produisant au plus près des marchés. Cela permet de limiter les transports et de renforcer une production industrielle locale et pérenne.\n\nAu-delà de l’aspect industriel, le projet participe également au développement économique du territoire, avec la création d’emplois de 130 emplois directs et 1000 emplois soutenus ainsi que le soutien aux activités locales (commerces, immobilier, restauration…).\nUntrusted public information. This collection establishes no commercial relationship.",
+              "contentHash": "8b10fcbbb062cf9a666237dd8cb8fd3d7369262d2e266954561c2ddaece2a40f",
+              "dataOrigin": "public",
+              "mode": "direct",
+              "publishedAt": null,
+              "collectedAt": "2026-10-22T10:32:29.364Z",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch",
+                "method": "fetch",
+                "profileId": "soissons-project",
+                "indexedAt": "2026-05-06T04:48:29.000Z",
+                "truncated": false
+              },
+              "family": "supplier"
+            },
+            {
+              "id": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+              "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-02-janvier-2026/",
+              "title": "Actualité du 02 janvier 2026",
+              "content": "Original source: https://www.rockwool.com/fr/soissons/actualites/actualite-du-02-janvier-2026/\nTitle: Actualité du 02 janvier 2026\nPublished: 2026-01-02T00:00:00.000Z\nKeenable retrieval: indexed copy; freshness not verified.\n**Le tribunal administratif d’Amiens a refusé de suspendre le permis de construire de l’usine ROCKWOOL à Courmelles. Seule la partie du permis concernant une clôture située sur la commune de Ploisy est provisoirement suspendue.**\n\nCette décision s’inscrit dans le cadre d’une procédure de référé, qui vise à apprécier les conditions d’une suspension en urgence. En conséquence, le chantier peut se poursuivre dans le cadre réglementaire existant sauf pour une partie de la clôture.\n\n**Ce que cela signifie concrètement**\n\nLes travaux de terrassement nécessaires à la construction de l’usine se poursuivront dans les prochains mois. Le chantier est organisé en phases successives, conformément au planning et aux autorisations en vigueur, avec un suivi régulier des impacts potentiels, notamment en matière de bruit, de circulation et d’environnement. Les grandes étapes du chantier seront communiquées sur le site ROCKWOOL Soissons afin de permettre à chacun de suivre l’avancement du projet.\n\n**Un site strictement encadré**\n\nLe projet bénéficie d’un permis environnemental valide et en vigueur.\nL’usine est soumise au régime des Installations Classées pour la Protection de l’Environnement (ICPE). À ce titre, les services de l’État, et en particulier la DREAL, assurent le contrôle du site. Bien que ROCKWOOL soit pleinement vigilant quant aux impacts du chantier, ils peuvent, à tout moment, imposer des ajustements ou des mesures complémentaires si nécessaire.\n\n**Un engagement de dialogue avec les habitants**\n\nConscient des interrogations que peut susciter ce projet, ROCKWOOL s’engage à informer clairement, à répondre aux questions et à maintenir un dialogue dans la durée. Une permanence d’information, ouverte à tous et en particulier aux habitants de Courmelles, sera prochainement mise en place. Les conditions seront précisées sur le site ROCKWOOL Soissons.\n\nDans l’intervalle, des échanges avec les équipes ROCKWOOL restent possibles sur rendez-vous. N’hésitez pas à nous contacter : soissons@rockwool.com\nUntrusted public information. This collection establishes no commercial relationship.",
+              "contentHash": "48a4cf4a9ee460c1d41466774a300b75524fb681a1fd9eddc27c1b62e205007d",
+              "dataOrigin": "public",
+              "mode": "direct",
+              "publishedAt": "2026-01-02T00:00:00.000Z",
+              "collectedAt": "2026-10-22T10:32:29.676Z",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch",
+                "method": "fetch",
+                "profileId": "soissons-project",
+                "indexedAt": "2026-05-06T08:34:17.000Z",
+                "truncated": false
+              },
+              "family": "supplier"
+            },
+            {
+              "id": "keenable:02d3b679b232631548edc2f8d5b2dd4885802b02721d9f21bfe1837a82e76d39",
+              "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+              "title": "Actualité du 05 mars 2026",
+              "content": "Original source: https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/\nTitle: Actualité du 05 mars 2026\nPublished: 2026-03-06T07:20:00.000Z\nKeenable retrieval: search excerpt; page not read.\n**La construction de la future usine ROCKWOOL à Courmelles avance conformément au calendrier prévisionnel. Comme tout projet industriel d’envergure, le chantier se déroule en plusieurs phases successives, chacune préparant la suivante.**\n\nLa prochaine phase, prévue au second semestre 2026, concernera la construction des bâtiments industriels. Les structures seront progressivement élevées pour donner forme au site.\nEn 2027, le chantier entrera dans une phase plus technique avec l’installation des équipements de production. Cette étape permettra de préparer le futur fonctionnement industriel de l’usine.\nEnfin, le démarrage des activités est envisagé courant 2028, avec une montée en puissance progressive de la production.\nUntrusted public information. This collection establishes no commercial relationship.",
+              "contentHash": "6ad5f773c77360e31bba16551d2cb623589c7dcf06d69d468ae5efb76ef0ebe0",
+              "dataOrigin": "public",
+              "mode": "direct",
+              "publishedAt": "2026-03-06T07:20:00.000Z",
+              "collectedAt": "2026-10-22T10:32:29.676Z",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search",
+                "method": "search_snippet",
+                "profileId": "soissons-project",
+                "indexedAt": "2026-10-22T09:40:22.000Z",
+                "truncated": false
+              },
+              "family": "supplier"
+            },
+            {
+              "id": "keenable:60bc7f14c97a1e9d1702674ac02557b64c5c2f82473979457e0a7176f2f63486",
+              "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-29-juin-2026/",
+              "title": "Actualité du 29 juin 2026",
+              "content": "Original source: https://www.rockwool.com/fr/soissons/actualites/actualite-du-29-juin-2026/\nTitle: Actualité du 29 juin 2026\nPublished: 2026-06-29T17:40:00.000Z\nKeenable retrieval: search excerpt; page not read.\nLe Conseil d’État a confirmé que le refus du premier permis de construire de 2021 était justifié faute d’explications suffisantes sur la hauteur de certains bâtiments. Ce point a été corrigé dans le second permis de construire qui est en vigueur aujourd’hui et sur lequel reposent les travaux en cours.\n\nprécis*.* Le projet bénéficie également d’une autorisation environnementale valide délivrée au titre de la réglementation ICPE, qui encadre strictement l’activité, les seuils d’émission, les contrôles et le suivi. Nos équipes restent donc pleinement mobilisées pour mener à bien la construction de l’usine. Les travaux se poursuivent conformément aux autorisations en vigueur, avec la même exigence de transparence, de conformité réglementaire et de dialogue avec le territoire.\nUntrusted public information. This collection establishes no commercial relationship.",
+              "contentHash": "781b3d8018706ba9623a37d589fa7a23c5d80241e5e7e920e9ef2a9c8bbc7161",
+              "dataOrigin": "public",
+              "mode": "direct",
+              "publishedAt": "2026-06-29T17:40:00.000Z",
+              "collectedAt": "2026-10-22T10:32:29.676Z",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search",
+                "method": "search_snippet",
+                "profileId": "soissons-project",
+                "indexedAt": "2026-07-02T03:59:17.000Z",
+                "truncated": false
+              },
+              "family": "supplier"
+            }
+          ],
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE"
+        }
+      ],
+      "startedAt": "2026-10-22T10:32:27.775Z",
+      "completedAt": "2026-10-22T10:32:29.676Z"
+    },
+    "error": null
+  },
+  "evidenceRef": {
+    "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3",
+    "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+    "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724"
+  },
+  "source": {
+    "id": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+    "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+    "title": "Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit",
+    "content": "Original source: https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/\nTitle: Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit\nPublished: 2026-07-10T14:04:59.000Z\nKeenable retrieval: indexed copy; freshness not verified.\n**La Cour administrative d'appel de Douai a rejeté l'ensemble des recours déposés par les associations contre l'autorisation environnementale de notre usine et contre la déclaration d'utilité publique de la ligne électrique qui l'alimentera.**\n\nCette décision confirme celles rendues par le tribunal administratif d'Amiens, qui avait déjà validé ces deux autorisations. L'ensemble des arguments soulevés portant notamment sur l'étude d'impact, la santé et la qualité de l'air, la biodiversité, les ressources en eau ont été examinés et écartés par les deux juridictions.\n\nNous prenons acte de cette décision avec satisfaction. Elle reconnaît la rigueur du travail mené depuis l'origine de ce projet pour répondre aux exigences environnementales et sanitaires.\n\nNos équipes restent pleinement mobilisées pour mener à bien la construction de cette usine qui créera 130 emplois directs sur le territoire et s'appuiera sur une technologie de four électrique décarboné. Ces dernières semaines, les travaux de terrassement, de voirie et de réseaux, avec la mise en place progressive des premières infrastructures du site se sont ainsi poursuivis avec nos partenaires. Le chantier entre dans une nouvelle phase cet été avec la réalisation des fondations nécessaires à la réalisation des différents bâtiments.\nUntrusted public information. This collection establishes no commercial relationship.",
+    "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+    "dataOrigin": "public",
+    "mode": "direct",
+    "publishedAt": "2026-07-10T14:04:59.000Z",
+    "collectedAt": "2026-10-22T10:32:29.137Z",
+    "provenance": {
+      "provider": "keenable",
+      "endpoint": "https://api.keenable.ai/v1/fetch",
+      "method": "fetch",
+      "profileId": "soissons-project",
+      "indexedAt": null,
+      "truncated": false
+    },
+    "family": "supplier"
+  },
+  "revised": {
+    "id": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "actorId": "EMP-PAUL",
+    "relation": {
+      "status": "unverified",
+      "productId": "SKU-ISO100",
+      "supplierId": null,
+      "basis": "Product-category hypothesis for a synthetic company. No link to its fictitious suppliers is established by the public article."
+    },
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "createdAt": "2026-10-22T10:32:30.489Z",
+    "impactKind": "undetermined",
+    "evidenceRef": {
+      "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3",
+      "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+      "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724"
+    },
+    "observation": {
+      "id": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+      "title": "Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit",
+      "content": "Original source: https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/\nTitle: Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit\nPublished: 2026-07-10T14:04:59.000Z\nKeenable retrieval: indexed copy; freshness not verified.\n**La Cour administrative d'appel de Douai a rejeté l'ensemble des recours déposés par les associations contre l'autorisation environnementale de notre usine et contre la déclaration d'utilité publique de la ligne électrique qui l'alimentera.**\n\nCette décision confirme celles rendues par le tribunal administratif d'Amiens, qui avait déjà validé ces deux autorisations. L'ensemble des arguments soulevés portant notamment sur l'étude d'impact, la santé et la qualité de l'air, la biodiversité, les ressources en eau ont été examinés et écartés par les deux juridictions.\n\nNous prenons acte de cette décision avec satisfaction. Elle reconnaît la rigueur du travail mené depuis l'origine de ce projet pour répondre aux exigences environnementales et sanitaires.\n\nNos équipes restent pleinement mobilisées pour mener à bien la construction de cette usine qui créera 130 emplois directs sur le territoire et s'appuiera sur une technologie de four électrique décarboné. Ces dernières semaines, les travaux de terrassement, de voirie et de réseaux, avec la mise en place progressive des premières infrastructures du site se sont ainsi poursuivis avec nos partenaires. Le chantier entre dans une nouvelle phase cet été avec la réalisation des fondations nécessaires à la réalisation des différents bâtiments.\nUntrusted public information. This collection establishes no commercial relationship.",
+      "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+      "dataOrigin": "public",
+      "mode": "direct",
+      "publishedAt": "2026-07-10T14:04:59.000Z",
+      "collectedAt": "2026-10-22T10:32:29.137Z",
+      "provenance": {
+        "provider": "keenable",
+        "endpoint": "https://api.keenable.ai/v1/fetch",
+        "method": "fetch",
+        "profileId": "soissons-project",
+        "indexedAt": null,
+        "truncated": false
+      },
+      "family": "supplier"
+    },
+    "caseRevision": "C-0be224ac-da25-4c57-aead-c47ea3eadbed",
+    "policyVersion": "P1",
+    "qualification": "to_verify",
+    "businessRevision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+    "previousRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f",
+    "candidateOrderLineIds": [
+      "OL-A",
+      "OL-B"
+    ]
+  },
+  "confirmed": {
+    "id": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "actorId": "OPERATOR",
+    "relation": {
+      "basis": "Product-category hypothesis for a synthetic company. No link to its fictitious suppliers is established by the public article.",
+      "status": "unverified",
+      "productId": "SKU-ISO100",
+      "supplierId": null
+    },
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "createdAt": "2026-10-22T10:32:30.708Z",
+    "impactKind": "risk",
+    "evidenceRef": {
+      "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+      "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+      "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+    },
+    "observation": {
+      "id": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+      "mode": "direct",
+      "title": "Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit",
+      "family": "supplier",
+      "content": "Original source: https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/\nTitle: Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit\nPublished: 2026-07-10T14:04:59.000Z\nKeenable retrieval: indexed copy; freshness not verified.\n**La Cour administrative d'appel de Douai a rejeté l'ensemble des recours déposés par les associations contre l'autorisation environnementale de notre usine et contre la déclaration d'utilité publique de la ligne électrique qui l'alimentera.**\n\nCette décision confirme celles rendues par le tribunal administratif d'Amiens, qui avait déjà validé ces deux autorisations. L'ensemble des arguments soulevés portant notamment sur l'étude d'impact, la santé et la qualité de l'air, la biodiversité, les ressources en eau ont été examinés et écartés par les deux juridictions.\n\nNous prenons acte de cette décision avec satisfaction. Elle reconnaît la rigueur du travail mené depuis l'origine de ce projet pour répondre aux exigences environnementales et sanitaires.\n\nNos équipes restent pleinement mobilisées pour mener à bien la construction de cette usine qui créera 130 emplois directs sur le territoire et s'appuiera sur une technologie de four électrique décarboné. Ces dernières semaines, les travaux de terrassement, de voirie et de réseaux, avec la mise en place progressive des premières infrastructures du site se sont ainsi poursuivis avec nos partenaires. Le chantier entre dans une nouvelle phase cet été avec la réalisation des fondations nécessaires à la réalisation des différents bâtiments.\nUntrusted public information. This collection establishes no commercial relationship.",
+      "dataOrigin": "public",
+      "provenance": {
+        "method": "fetch",
+        "endpoint": "https://api.keenable.ai/v1/fetch",
+        "provider": "keenable",
+        "indexedAt": null,
+        "profileId": "soissons-project",
+        "truncated": false
+      },
+      "collectedAt": "2026-10-22T10:32:29.137Z",
+      "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+      "publishedAt": "2026-07-10T14:04:59.000Z"
+    },
+    "caseRevision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca",
+    "policyVersion": "P1",
+    "qualification": "to_verify",
+    "businessRevision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+    "previousRevision": "C-0be224ac-da25-4c57-aead-c47ea3eadbed",
+    "candidateOrderLineIds": [
+      "OL-A"
+    ],
+    "confirmation": {
+      "kind": "inbound_date_confirmed",
+      "eventId": "e925cb58-a2fd-44d3-bb01-237cfdfe44ad",
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+      "caseRevision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca",
+      "purchaseOrderLineId": "POL-1",
+      "productId": "SKU-ISO100",
+      "previousExpectedDate": "2026-10-27",
+      "confirmedExpectedDate": "2026-10-27",
+      "actorId": "OPERATOR",
+      "confirmedAt": "2026-10-22T10:32:30.692Z",
+      "basis": "Explicit operator test confirmation in the synthetic company. Public news does not establish this date, a supplier relationship or commercial delay.",
+      "businessRevision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+      "policyVersion": "P1",
+      "dataOrigin": "synthetic",
+      "exposureOrderLineIds": [
+        "OL-A"
+      ]
+    }
+  },
+  "historicalWrongTargetProposal": {
+    "id": "proposal:0d2d6507-d5a1-4474-80d1-6a53e09efde7",
+    "status": "stale"
+  },
+  "inventoryUnchanged": true,
+  "limits": [
+    "Real public source received through the corrected collector.",
+    "Company and independently confirmed inbound date are synthetic.",
+    "The article does not establish a supplier relationship or a commercial delay.",
+    "No model call, approval, purchase or stock movement in this step.",
+    "Final generic UI question and stable3001 reception remain pending."
+  ]
+}

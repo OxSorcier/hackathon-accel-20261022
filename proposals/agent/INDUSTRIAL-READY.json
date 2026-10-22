@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "status": "READY_PURE_DOMAIN_AND_BOUNDED_PROJECTION_REVIEWED",
+  "sourceFingerprint": "f090e5d773f37d18a09f9137d3cf0f0c051076afb74585bc66c1ce6d264c9d18",
+  "files": [
+    {
+      "path": "src/domain/industrial.ts",
+      "sha256": "87ddba8bec62406f71121af51d6fd5c17e3da795c9bca9fb303b87765f2f53ed"
+    },
+    {
+      "path": "src/agent/industrial-context.ts",
+      "sha256": "1b10459579998d7cce530a49d6d775ad3fd0b766e151943c00ac7d20ceabc9c6"
+    },
+    {
+      "path": "tests/domain/industrial-fixture.ts",
+      "sha256": "92c5e91cfc890d1d717130780683cb90d3b9301a48d4b015822e8d08a183c79e"
+    },
+    {
+      "path": "tests/domain/industrial.test.ts",
+      "sha256": "d2a77232a01c848ffeaf68ee4638f3438f7bcfb0fd80a713c425acd336dc8488"
+    },
+    {
+      "path": "tests/agent/industrial-context.test.ts",
+      "sha256": "7b90fcc2e64916030bf7641eb95450b8ade64c568abf7e7d35cd81c3776003df"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "5553acf836a5fc074a2100f36ea619a22f91fc094def662ff61adfce2dbcc3fd"
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "sha256": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057"
+    },
+    {
+      "path": "src/domain/model.ts",
+      "sha256": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2"
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "sha256": "018748a36911b677956174a6375ca7ca4a86ed7ad58e017877e9ed857601c779"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "c8518566c9d3af65f782e8c69e24651d7ebc154af66000a58f29c1017d7fcbe8"
+    }
+  ],
+  "reviewReceipt": "proposals/agent/INDUSTRIAL-REVIEWS.json",
+  "exports": {
+    "src/domain/industrial.ts": [
+      "evaluateIndustrialPlan(input: IndustrialEvaluationInput): IndustrialAssessment",
+      "industrialInputHash(input: IndustrialEvaluationInput): string"
+    ],
+    "src/agent/industrial-context.ts": [
+      "projectIndustrialModelContext(input: IndustrialEvaluationInput, assessment: IndustrialAssessment): JsonObject"
+    ]
+  },
+  "contract": "industrial v3 sha5553acf836a5fc074a2100f36ea619a22f91fc094def662ff61adfce2dbcc3fd",
+  "tests": "14/14 PASS, strict PASS in both final reviewers",
+  "limits": [
+    "Pure calculation/projection only. No industrial runtime model, server assembly, actual demo execution or Aiven proof.",
+    "Full portfolio test all10000 protected; observed test durations5.6s to21.05s under concurrent host load.",
+    "Human authentication, current company lock, shared snapshot/ledger revision and exact plan revalidation remain server responsibilities."
+  ],
+  "runtimeStatus": "NOT_RUN"
+}

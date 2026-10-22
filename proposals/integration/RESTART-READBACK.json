@@ -1,0 +1,831 @@
+{
+  "checkedAt": "2026-10-22T09:58:45.060Z",
+  "environment": "Aiven product through restarted local candidate",
+  "passed": true,
+  "before": {
+    "companyHash": "5687c7d9546e6f2743fed835e3a2a2ed53e9b351ff22af1c02f67d7ec01b0cd8",
+    "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f",
+    "confirmationEventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c",
+    "versions": 2,
+    "runId": "b706f102-f547-47b8-94ec-a623f6e6c1c3",
+    "runStatus": "proposal",
+    "traceCount": 16,
+    "tracesHash": "b9d41bdc06272eb2d3ecc3603b09ac3152e1f6a2cc136fae00bbfc921417e06f",
+    "proposal": {
+      "id": "proposal:b706f102-f547-47b8-94ec-a623f6e6c1c3",
+      "runId": "b706f102-f547-47b8-94ec-a623f6e6c1c3",
+      "title": "Confirmed internal fact: Prepare an emergency purchase",
+      "status": "approved",
+      "caseRef": {
+        "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+        "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+      },
+      "summary": "Inbound date confirmed in the simulation by the operator. Link to the public news remains unverified. This proposal uses current durable synthetic records. The server must verify the confirmation event, current versions and permissions before recording approval. No purchase or transfer is executed.",
+      "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+      "revision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "createdAt": "2026-10-22T09:55:30.257Z",
+      "conditions": [
+        "EXTERNAL_RELATION_UNVERIFIED"
+      ],
+      "evaluation": {
+        "id": "case-run-evaluation:4779b4d07f2460a636c169bbd1b611bae0375f495d01c7e990692251cea0ec97",
+        "facts": {
+          "caseRef": {
+            "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+            "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+          },
+          "coverage": [
+            {
+              "unit": "palette",
+              "covered": 0,
+              "depotId": "DEP-LILLE",
+              "orderId": "ORD-A",
+              "needDate": "2026-10-23",
+              "quantity": 8,
+              "shortage": 8,
+              "unknowns": [],
+              "productId": "SKU-ISO100",
+              "allocations": [],
+              "orderLineId": "OL-A",
+              "requiredDate": "2026-10-23"
+            },
+            {
+              "unit": "palette",
+              "covered": 8,
+              "depotId": "DEP-CENTRE",
+              "orderId": "ORD-B",
+              "needDate": "2026-11-05",
+              "quantity": 8,
+              "shortage": 0,
+              "unknowns": [
+                "UNCONFIRMED_INBOUND:POL-2"
+              ],
+              "productId": "SKU-ISO100",
+              "allocations": [
+                {
+                  "quantity": 8,
+                  "sourceId": "ST-C100",
+                  "availableDate": "2026-10-22"
+                }
+              ],
+              "orderLineId": "OL-B",
+              "requiredDate": "2026-11-05"
+            }
+          ],
+          "dataOrigin": "synthetic",
+          "impactKind": "risk",
+          "evidenceRef": {
+            "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+            "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+            "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+          },
+          "confirmation": {
+            "kind": "inbound_date_confirmed",
+            "basis": "Operator test confirmation inside the synthetic company only. This date is not established by ROCKWOOL news.",
+            "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+            "actorId": "OPERATOR",
+            "eventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c",
+            "companyId": "CO-PARCOURS-PAUL-V2",
+            "productId": "SKU-ISO100",
+            "dataOrigin": "synthetic",
+            "confirmedAt": "2026-10-22T09:52:47.815Z",
+            "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f",
+            "policyVersion": "P1",
+            "businessRevision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+            "purchaseOrderLineId": "POL-1",
+            "previousExpectedDate": "2026-10-23",
+            "confirmedExpectedDate": "2026-10-27"
+          },
+          "coverageBasis": "confirmed_internal_synthetic",
+          "actualCoverage": [
+            {
+              "unit": "palette",
+              "covered": 0,
+              "depotId": "DEP-LILLE",
+              "orderId": "ORD-A",
+              "needDate": "2026-10-23",
+              "quantity": 8,
+              "shortage": 8,
+              "unknowns": [],
+              "productId": "SKU-ISO100",
+              "allocations": [],
+              "orderLineId": "OL-A",
+              "requiredDate": "2026-10-23"
+            },
+            {
+              "unit": "palette",
+              "covered": 8,
+              "depotId": "DEP-CENTRE",
+              "orderId": "ORD-B",
+              "needDate": "2026-11-05",
+              "quantity": 8,
+              "shortage": 0,
+              "unknowns": [
+                "UNCONFIRMED_INBOUND:POL-2"
+              ],
+              "productId": "SKU-ISO100",
+              "allocations": [
+                {
+                  "quantity": 8,
+                  "sourceId": "ST-C100",
+                  "availableDate": "2026-10-22"
+                }
+              ],
+              "orderLineId": "OL-B",
+              "requiredDate": "2026-11-05"
+            }
+          ],
+          "relationCondition": {
+            "code": "EXTERNAL_RELATION_UNVERIFIED",
+            "caseRef": {
+              "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+              "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+            },
+            "evidenceRef": {
+              "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+              "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+              "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+            }
+          },
+          "targetOrderLineId": "OL-A"
+        },
+        "options": [
+          {
+            "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+            "kind": "wait",
+            "label": "Keep current coverage",
+            "status": "rejected",
+            "costEur": 0,
+            "effects": {
+              "unit": "palette",
+              "quoteId": null,
+              "coverage": [
+                {
+                  "unit": "palette",
+                  "covered": 0,
+                  "depotId": "DEP-LILLE",
+                  "orderId": "ORD-A",
+                  "needDate": "2026-10-23",
+                  "quantity": 8,
+                  "shortage": 8,
+                  "unknowns": [],
+                  "productId": "SKU-ISO100",
+                  "allocations": [],
+                  "orderLineId": "OL-A",
+                  "requiredDate": "2026-10-23"
+                },
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-CENTRE",
+                  "orderId": "ORD-B",
+                  "needDate": "2026-11-05",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [
+                    "UNCONFIRMED_INBOUND:POL-2"
+                  ],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "ST-C100",
+                      "availableDate": "2026-10-22"
+                    }
+                  ],
+                  "orderLineId": "OL-B",
+                  "requiredDate": "2026-11-05"
+                }
+              ],
+              "quantity": 8,
+              "productId": "SKU-ISO100",
+              "toDepotId": "DEP-LILLE",
+              "arrivalDate": null,
+              "fromDepotId": null,
+              "simulationOnly": true,
+              "relationCondition": {
+                "code": "EXTERNAL_RELATION_UNVERIFIED",
+                "caseRef": {
+                  "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+                  "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+                },
+                "evidenceRef": {
+                  "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+                  "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+                  "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+                }
+              },
+              "targetOrderLineId": "OL-A",
+              "confirmationEventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c"
+            },
+            "reasons": [
+              "UNCOVERED:OL-A:8"
+            ],
+            "conditions": [
+              "UNCOVERED:OL-A:8",
+              "EXTERNAL_RELATION_UNVERIFIED"
+            ]
+          },
+          {
+            "id": "transfer:4ff795fd03fac9c64cdb9ed8764ceb1b0415b887413b18702014c99e06420f37",
+            "kind": "transfer",
+            "label": "Prepare a transfer",
+            "status": "conditional",
+            "costEur": 120,
+            "effects": {
+              "unit": "palette",
+              "quoteId": "TR-C-L",
+              "coverage": [
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-LILLE",
+                  "orderId": "ORD-A",
+                  "needDate": "2026-10-23",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "TR-C-L",
+                      "availableDate": "2026-10-23"
+                    }
+                  ],
+                  "orderLineId": "OL-A",
+                  "requiredDate": "2026-10-23"
+                },
+                {
+                  "unit": "palette",
+                  "covered": 0,
+                  "depotId": "DEP-CENTRE",
+                  "orderId": "ORD-B",
+                  "needDate": "2026-11-05",
+                  "quantity": 8,
+                  "shortage": 8,
+                  "unknowns": [
+                    "UNCONFIRMED_INBOUND:POL-2"
+                  ],
+                  "productId": "SKU-ISO100",
+                  "allocations": [],
+                  "orderLineId": "OL-B",
+                  "requiredDate": "2026-11-03"
+                }
+              ],
+              "quantity": 8,
+              "productId": "SKU-ISO100",
+              "toDepotId": "DEP-LILLE",
+              "arrivalDate": "2026-10-23",
+              "fromDepotId": "DEP-CENTRE",
+              "simulationOnly": true,
+              "relationCondition": {
+                "code": "EXTERNAL_RELATION_UNVERIFIED",
+                "caseRef": {
+                  "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+                  "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+                },
+                "evidenceRef": {
+                  "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+                  "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+                  "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+                }
+              },
+              "targetOrderLineId": "OL-A",
+              "confirmationEventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c"
+            },
+            "reasons": [
+              "UNCOVERED:OL-B:8"
+            ],
+            "conditions": [
+              "UNCONFIRMED_INBOUND:POL-2",
+              "UNCOVERED:OL-B:8",
+              "EXTERNAL_RELATION_UNVERIFIED"
+            ]
+          },
+          {
+            "id": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+            "kind": "emergency_purchase",
+            "label": "Prepare an emergency purchase",
+            "status": "feasible",
+            "costEur": 1420,
+            "effects": {
+              "unit": "palette",
+              "quoteId": "URG-1",
+              "coverage": [
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-LILLE",
+                  "orderId": "ORD-A",
+                  "needDate": "2026-10-23",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "URG-1",
+                      "availableDate": "2026-10-23"
+                    }
+                  ],
+                  "orderLineId": "OL-A",
+                  "requiredDate": "2026-10-23"
+                },
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-CENTRE",
+                  "orderId": "ORD-B",
+                  "needDate": "2026-11-05",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [
+                    "UNCONFIRMED_INBOUND:POL-2"
+                  ],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "ST-C100",
+                      "availableDate": "2026-10-22"
+                    }
+                  ],
+                  "orderLineId": "OL-B",
+                  "requiredDate": "2026-11-05"
+                }
+              ],
+              "quantity": 8,
+              "productId": "SKU-ISO100",
+              "toDepotId": "DEP-LILLE",
+              "arrivalDate": "2026-10-23",
+              "fromDepotId": null,
+              "simulationOnly": true,
+              "relationCondition": {
+                "code": "EXTERNAL_RELATION_UNVERIFIED",
+                "caseRef": {
+                  "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+                  "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+                },
+                "evidenceRef": {
+                  "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+                  "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+                  "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+                }
+              },
+              "targetOrderLineId": "OL-A",
+              "confirmationEventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c"
+            },
+            "reasons": [],
+            "conditions": [
+              "EXTERNAL_RELATION_UNVERIFIED"
+            ]
+          }
+        ],
+        "revision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+        "unknowns": [
+          "UNCONFIRMED_INBOUND:POL-2"
+        ],
+        "companyId": "CO-PARCOURS-PAUL-V2",
+        "constraints": [
+          "SAME_SKU_AND_UNIT",
+          "NO_STOCK_EFFECT",
+          "SERVER_DECISION_REQUIRED",
+          "EXTERNAL_RELATION_UNVERIFIED"
+        ],
+        "evaluatedAt": "2026-10-22T08:55:00+02:00",
+        "policyVersion": "P1"
+      },
+      "policyVersion": "P1"
+    },
+    "decision": {
+      "proposal_id": "proposal:b706f102-f547-47b8-94ec-a623f6e6c1c3",
+      "actor_id": "EMP-PAUL",
+      "operation_key": "74d0ff88-9dfb-4dcc-be8b-24620987b4ff",
+      "created_at": "2026-10-22T09:55:30.644Z"
+    },
+    "migrations": [
+      "001_core.sql",
+      "002_watch.sql",
+      "003_cases.sql",
+      "004_decision_telemetry.sql",
+      "005_unknown_historical_decision_dates.sql"
+    ]
+  },
+  "after": {
+    "companyHash": "5687c7d9546e6f2743fed835e3a2a2ed53e9b351ff22af1c02f67d7ec01b0cd8",
+    "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f",
+    "confirmationEventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c",
+    "versions": 2,
+    "runId": "b706f102-f547-47b8-94ec-a623f6e6c1c3",
+    "runStatus": "proposal",
+    "traceCount": 16,
+    "tracesHash": "b9d41bdc06272eb2d3ecc3603b09ac3152e1f6a2cc136fae00bbfc921417e06f",
+    "proposal": {
+      "id": "proposal:b706f102-f547-47b8-94ec-a623f6e6c1c3",
+      "runId": "b706f102-f547-47b8-94ec-a623f6e6c1c3",
+      "title": "Confirmed internal fact: Prepare an emergency purchase",
+      "status": "approved",
+      "caseRef": {
+        "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+        "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+      },
+      "summary": "Inbound date confirmed in the simulation by the operator. Link to the public news remains unverified. This proposal uses current durable synthetic records. The server must verify the confirmation event, current versions and permissions before recording approval. No purchase or transfer is executed.",
+      "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+      "revision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+      "companyId": "CO-PARCOURS-PAUL-V2",
+      "createdAt": "2026-10-22T09:55:30.257Z",
+      "conditions": [
+        "EXTERNAL_RELATION_UNVERIFIED"
+      ],
+      "evaluation": {
+        "id": "case-run-evaluation:4779b4d07f2460a636c169bbd1b611bae0375f495d01c7e990692251cea0ec97",
+        "facts": {
+          "caseRef": {
+            "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+            "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+          },
+          "coverage": [
+            {
+              "unit": "palette",
+              "covered": 0,
+              "depotId": "DEP-LILLE",
+              "orderId": "ORD-A",
+              "needDate": "2026-10-23",
+              "quantity": 8,
+              "shortage": 8,
+              "unknowns": [],
+              "productId": "SKU-ISO100",
+              "allocations": [],
+              "orderLineId": "OL-A",
+              "requiredDate": "2026-10-23"
+            },
+            {
+              "unit": "palette",
+              "covered": 8,
+              "depotId": "DEP-CENTRE",
+              "orderId": "ORD-B",
+              "needDate": "2026-11-05",
+              "quantity": 8,
+              "shortage": 0,
+              "unknowns": [
+                "UNCONFIRMED_INBOUND:POL-2"
+              ],
+              "productId": "SKU-ISO100",
+              "allocations": [
+                {
+                  "quantity": 8,
+                  "sourceId": "ST-C100",
+                  "availableDate": "2026-10-22"
+                }
+              ],
+              "orderLineId": "OL-B",
+              "requiredDate": "2026-11-05"
+            }
+          ],
+          "dataOrigin": "synthetic",
+          "impactKind": "risk",
+          "evidenceRef": {
+            "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+            "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+            "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+          },
+          "confirmation": {
+            "kind": "inbound_date_confirmed",
+            "basis": "Operator test confirmation inside the synthetic company only. This date is not established by ROCKWOOL news.",
+            "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+            "actorId": "OPERATOR",
+            "eventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c",
+            "companyId": "CO-PARCOURS-PAUL-V2",
+            "productId": "SKU-ISO100",
+            "dataOrigin": "synthetic",
+            "confirmedAt": "2026-10-22T09:52:47.815Z",
+            "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f",
+            "policyVersion": "P1",
+            "businessRevision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+            "purchaseOrderLineId": "POL-1",
+            "previousExpectedDate": "2026-10-23",
+            "confirmedExpectedDate": "2026-10-27"
+          },
+          "coverageBasis": "confirmed_internal_synthetic",
+          "actualCoverage": [
+            {
+              "unit": "palette",
+              "covered": 0,
+              "depotId": "DEP-LILLE",
+              "orderId": "ORD-A",
+              "needDate": "2026-10-23",
+              "quantity": 8,
+              "shortage": 8,
+              "unknowns": [],
+              "productId": "SKU-ISO100",
+              "allocations": [],
+              "orderLineId": "OL-A",
+              "requiredDate": "2026-10-23"
+            },
+            {
+              "unit": "palette",
+              "covered": 8,
+              "depotId": "DEP-CENTRE",
+              "orderId": "ORD-B",
+              "needDate": "2026-11-05",
+              "quantity": 8,
+              "shortage": 0,
+              "unknowns": [
+                "UNCONFIRMED_INBOUND:POL-2"
+              ],
+              "productId": "SKU-ISO100",
+              "allocations": [
+                {
+                  "quantity": 8,
+                  "sourceId": "ST-C100",
+                  "availableDate": "2026-10-22"
+                }
+              ],
+              "orderLineId": "OL-B",
+              "requiredDate": "2026-11-05"
+            }
+          ],
+          "relationCondition": {
+            "code": "EXTERNAL_RELATION_UNVERIFIED",
+            "caseRef": {
+              "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+              "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+            },
+            "evidenceRef": {
+              "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+              "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+              "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+            }
+          },
+          "targetOrderLineId": "OL-A"
+        },
+        "options": [
+          {
+            "id": "keep:a4257b64a1095b11c35a09853fa06ce91cd9fcd471013a9eae12032b43ac2879",
+            "kind": "wait",
+            "label": "Keep current coverage",
+            "status": "rejected",
+            "costEur": 0,
+            "effects": {
+              "unit": "palette",
+              "quoteId": null,
+              "coverage": [
+                {
+                  "unit": "palette",
+                  "covered": 0,
+                  "depotId": "DEP-LILLE",
+                  "orderId": "ORD-A",
+                  "needDate": "2026-10-23",
+                  "quantity": 8,
+                  "shortage": 8,
+                  "unknowns": [],
+                  "productId": "SKU-ISO100",
+                  "allocations": [],
+                  "orderLineId": "OL-A",
+                  "requiredDate": "2026-10-23"
+                },
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-CENTRE",
+                  "orderId": "ORD-B",
+                  "needDate": "2026-11-05",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [
+                    "UNCONFIRMED_INBOUND:POL-2"
+                  ],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "ST-C100",
+                      "availableDate": "2026-10-22"
+                    }
+                  ],
+                  "orderLineId": "OL-B",
+                  "requiredDate": "2026-11-05"
+                }
+              ],
+              "quantity": 8,
+              "productId": "SKU-ISO100",
+              "toDepotId": "DEP-LILLE",
+              "arrivalDate": null,
+              "fromDepotId": null,
+              "simulationOnly": true,
+              "relationCondition": {
+                "code": "EXTERNAL_RELATION_UNVERIFIED",
+                "caseRef": {
+                  "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+                  "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+                },
+                "evidenceRef": {
+                  "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+                  "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+                  "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+                }
+              },
+              "targetOrderLineId": "OL-A",
+              "confirmationEventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c"
+            },
+            "reasons": [
+              "UNCOVERED:OL-A:8"
+            ],
+            "conditions": [
+              "UNCOVERED:OL-A:8",
+              "EXTERNAL_RELATION_UNVERIFIED"
+            ]
+          },
+          {
+            "id": "transfer:4ff795fd03fac9c64cdb9ed8764ceb1b0415b887413b18702014c99e06420f37",
+            "kind": "transfer",
+            "label": "Prepare a transfer",
+            "status": "conditional",
+            "costEur": 120,
+            "effects": {
+              "unit": "palette",
+              "quoteId": "TR-C-L",
+              "coverage": [
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-LILLE",
+                  "orderId": "ORD-A",
+                  "needDate": "2026-10-23",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "TR-C-L",
+                      "availableDate": "2026-10-23"
+                    }
+                  ],
+                  "orderLineId": "OL-A",
+                  "requiredDate": "2026-10-23"
+                },
+                {
+                  "unit": "palette",
+                  "covered": 0,
+                  "depotId": "DEP-CENTRE",
+                  "orderId": "ORD-B",
+                  "needDate": "2026-11-05",
+                  "quantity": 8,
+                  "shortage": 8,
+                  "unknowns": [
+                    "UNCONFIRMED_INBOUND:POL-2"
+                  ],
+                  "productId": "SKU-ISO100",
+                  "allocations": [],
+                  "orderLineId": "OL-B",
+                  "requiredDate": "2026-11-03"
+                }
+              ],
+              "quantity": 8,
+              "productId": "SKU-ISO100",
+              "toDepotId": "DEP-LILLE",
+              "arrivalDate": "2026-10-23",
+              "fromDepotId": "DEP-CENTRE",
+              "simulationOnly": true,
+              "relationCondition": {
+                "code": "EXTERNAL_RELATION_UNVERIFIED",
+                "caseRef": {
+                  "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+                  "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+                },
+                "evidenceRef": {
+                  "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+                  "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+                  "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+                }
+              },
+              "targetOrderLineId": "OL-A",
+              "confirmationEventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c"
+            },
+            "reasons": [
+              "UNCOVERED:OL-B:8"
+            ],
+            "conditions": [
+              "UNCONFIRMED_INBOUND:POL-2",
+              "UNCOVERED:OL-B:8",
+              "EXTERNAL_RELATION_UNVERIFIED"
+            ]
+          },
+          {
+            "id": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+            "kind": "emergency_purchase",
+            "label": "Prepare an emergency purchase",
+            "status": "feasible",
+            "costEur": 1420,
+            "effects": {
+              "unit": "palette",
+              "quoteId": "URG-1",
+              "coverage": [
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-LILLE",
+                  "orderId": "ORD-A",
+                  "needDate": "2026-10-23",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "URG-1",
+                      "availableDate": "2026-10-23"
+                    }
+                  ],
+                  "orderLineId": "OL-A",
+                  "requiredDate": "2026-10-23"
+                },
+                {
+                  "unit": "palette",
+                  "covered": 8,
+                  "depotId": "DEP-CENTRE",
+                  "orderId": "ORD-B",
+                  "needDate": "2026-11-05",
+                  "quantity": 8,
+                  "shortage": 0,
+                  "unknowns": [
+                    "UNCONFIRMED_INBOUND:POL-2"
+                  ],
+                  "productId": "SKU-ISO100",
+                  "allocations": [
+                    {
+                      "quantity": 8,
+                      "sourceId": "ST-C100",
+                      "availableDate": "2026-10-22"
+                    }
+                  ],
+                  "orderLineId": "OL-B",
+                  "requiredDate": "2026-11-05"
+                }
+              ],
+              "quantity": 8,
+              "productId": "SKU-ISO100",
+              "toDepotId": "DEP-LILLE",
+              "arrivalDate": "2026-10-23",
+              "fromDepotId": null,
+              "simulationOnly": true,
+              "relationCondition": {
+                "code": "EXTERNAL_RELATION_UNVERIFIED",
+                "caseRef": {
+                  "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+                  "caseRevision": "C-8fa4783a-726e-4444-9413-e41dc2a3b40f"
+                },
+                "evidenceRef": {
+                  "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+                  "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+                  "occurrenceId": "scheduled:watch:919a1330b176e3bc2f060cf1caea20a9f7debbfb2d12c9c90fc31d6109e480a2:20261022095232.179000"
+                }
+              },
+              "targetOrderLineId": "OL-A",
+              "confirmationEventId": "6a03cf4f-295d-496d-92cc-c74c7fecea3c"
+            },
+            "reasons": [],
+            "conditions": [
+              "EXTERNAL_RELATION_UNVERIFIED"
+            ]
+          }
+        ],
+        "revision": "R-ee3de5cf-7a23-43c7-b0d3-293c896d9bd2",
+        "unknowns": [
+          "UNCONFIRMED_INBOUND:POL-2"
+        ],
+        "companyId": "CO-PARCOURS-PAUL-V2",
+        "constraints": [
+          "SAME_SKU_AND_UNIT",
+          "NO_STOCK_EFFECT",
+          "SERVER_DECISION_REQUIRED",
+          "EXTERNAL_RELATION_UNVERIFIED"
+        ],
+        "evaluatedAt": "2026-10-22T08:55:00+02:00",
+        "policyVersion": "P1"
+      },
+      "policyVersion": "P1"
+    },
+    "decision": {
+      "proposal_id": "proposal:b706f102-f547-47b8-94ec-a623f6e6c1c3",
+      "actor_id": "EMP-PAUL",
+      "operation_key": "74d0ff88-9dfb-4dcc-be8b-24620987b4ff",
+      "created_at": "2026-10-22T09:55:30.644Z"
+    },
+    "migrations": [
+      "001_core.sql",
+      "002_watch.sql",
+      "003_cases.sql",
+      "004_decision_telemetry.sql",
+      "005_unknown_historical_decision_dates.sql"
+    ]
+  }
+}

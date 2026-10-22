@@ -1,0 +1,5 @@
+{
+  "mode": "reference-led image editing",
+  "reference": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-ced25cd0-53a2-4d87-abb3-ee12140c6e05.png",
+  "prompt": "Make exactly one tiny text correction to this slide. In the company brief, replace ONLY the crowded second row heading, currently intended to read 'What it means for us', with the clearly readable shorter heading 'Business impact'. Ensure proper spelling, generous separation from the description to its right, and the same navy font as the other row labels. Everything else must remain unchanged pixel-for-pixel in composition, especially brand Physical Impact, main headline, full main paragraph, benefits, cycle, company report, all footer copy and the small secondary existing-tools caption. Do not add new content, labels or badges. Preserve dimensions, palette and typography. This is a one-label legibility correction."
+}

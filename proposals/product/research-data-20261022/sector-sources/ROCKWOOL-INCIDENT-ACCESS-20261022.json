@@ -1,0 +1,19 @@
+{
+  "id": "rockwool-20251224-control",
+  "url": "https://www.rockwool.com/fr/a-propos-de-rockwool/presse-et-medias/2025/incident-ma%C3%AEtris%C3%A9-dans-une-zone-de-stockage-de-lusine-rockwool-de-saint-%C3%A9loy-les-mines/",
+  "collected_at": "2026-10-22T11:05:07.502740+00:00",
+  "status": 200,
+  "final_url": "https://www.rockwool.com/fr/a-propos-de-rockwool/presse-et-medias/2025/incident-ma%C3%AEtris%C3%A9-dans-une-zone-de-stockage-de-lusine-rockwool-de-saint-%C3%A9loy-les-mines/",
+  "bytes_read": 271705,
+  "raw_html_sha256": "bc237d78aab6a22b52e8e1307a7480c1c94655f9068590afefd90d281b68e2d2",
+  "truncated": false,
+  "publication_metadata": [
+    "\"datePublished\": \"2025-12-24T09:14:47.2100000Z\"",
+    "\"dateModified\": \"2025-12-24T09:17:46.0000000Z\""
+  ],
+  "content_verified": {
+    "event_date": true,
+    "stock_damage": true,
+    "industrial_activity_unaffected": true
+  }
+}

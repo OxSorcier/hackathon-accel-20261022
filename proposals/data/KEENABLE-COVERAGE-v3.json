@@ -1,0 +1,464 @@
+{
+  "observedAt": "2026-10-22T09:57:25.781Z",
+  "environment": "real Keenable calls, bounded profile probes",
+  "results": [
+    {
+      "profileId": "insulation",
+      "family": "incident",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:18.942Z",
+      "completedAt": "2026-10-22T09:57:19.517Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:5b7b47fe92321fe74f0cd394fe2d2d4b9febf099d95a81976be0f4a297d7cfec",
+              "url": "https://www.rockwool.com/siteassets/rw-f/telechargements/catalogues-produits/rockwool_guide_solutions_toitures_terrasses_bardages.pdf",
+              "title": "Untitled",
+              "publishedAt": "2024-07-24T14:33:59.000Z",
+              "contentHash": "88d15cf862cfcae07576aea4cfed59806d81bccf394ef82a467829bfeb51490d",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch/public",
+                "method": "fetch",
+                "profileId": "insulation",
+                "indexedAt": "2026-05-07T01:41:35.000Z",
+                "truncated": true
+              }
+            },
+            {
+              "id": "keenable:ba61f89ff08636826c1602f2ea6ff6879d5e1564d54b73b1bb3c6322f302cbb7",
+              "url": "https://www.rockwool.com/fr/soissons",
+              "title": "Projet d'usine ROCKWOOL dans le Soissonnais",
+              "publishedAt": "2023-09-19T09:19:51.000Z",
+              "contentHash": "f3822bc9c22ccd2eac911663fc46eb4bc9bd7a270c80f306c13a8908c54b66c0",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "insulation",
+                "indexedAt": "2026-05-12T13:49:14.000Z",
+                "truncated": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "public-contracts",
+      "family": "public_contract",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:19.518Z",
+      "completedAt": "2026-10-22T09:57:20.029Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:7e478e87c78a383af4da3835676aa2c6a4d8be7ba4c5f4df7104dad126b60acd",
+              "url": "https://boamp.fr/telechargements/PDF/2022/BOAMP-J-AO_2022_190002/22-94993.pdf",
+              "title": "Annonce",
+              "publishedAt": "2022-07-09T10:31:15.000Z",
+              "contentHash": "4c5be2568153d73496587154c5428040a5c6c077a1c4b751deaf5b7fd0254dda",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "public-contracts",
+                "indexedAt": "2026-10-19T18:39:31.000Z",
+                "truncated": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "sector-news",
+      "family": "sector",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:20.029Z",
+      "completedAt": "2026-10-22T09:57:21.893Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:0492ced2cae5f024fbcafad58b7cfb556cc5cbf0602068f93908252734a074de",
+              "url": "https://batiactu.com/",
+              "title": "Actualité BTP, le portail d'information : Construction - Architecture - Immobilier",
+              "publishedAt": null,
+              "contentHash": "aa65bc993d4b88ba5fad02864c56d9f4b0500e426003fb2e9761a86fd16154de",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "sector-news",
+                "indexedAt": "2026-10-21T20:09:12.000Z",
+                "truncated": false
+              }
+            },
+            {
+              "id": "keenable:afd1e8c3735b634882ac37fd7b5b4a0b89404e72787cc723ec5c650d3fe211ad",
+              "url": "https://batiactu.com/tag/bouygues-construction",
+              "title": "Actualité Bouygues Construction",
+              "publishedAt": null,
+              "contentHash": "7ca3a4da75e8db71ed3fb0fa76e048ce87d1283dcf573de3d038b6238e3587f6",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "sector-news",
+                "indexedAt": "2026-05-16T20:23:07.000Z",
+                "truncated": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "regional-news",
+      "family": "regional",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:21.894Z",
+      "completedAt": "2026-10-22T09:57:22.389Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:39b64a0883da278be8b044ce5c10a48511576e28e7c5c3430c9ed83aba7aee52",
+              "url": "https://actu.fr/hauts-de-france/lille_59350/quartier-vauban-a-lille-cet-immeuble-rehabilite-pourra-accueillir-1-500-etudiants-de-l-ieseg_39044729.html",
+              "title": "Quartier Vauban à Lille, cet immeuble réhabilité pourra accueillir 1 500 étudiants de l'IESEG",
+              "publishedAt": "2021-01-30T08:14:02.000Z",
+              "contentHash": "39520bbf7a3c5daf7bdcb3bfd3eaa3cf65d915e7856831d3e29ff30b13548d11",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch/public",
+                "method": "fetch",
+                "profileId": "regional-news",
+                "indexedAt": "2026-08-07T10:32:30.000Z",
+                "truncated": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "supplier-statements",
+      "family": "supplier",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:22.389Z",
+      "completedAt": "2026-10-22T09:57:22.822Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:ba61f89ff08636826c1602f2ea6ff6879d5e1564d54b73b1bb3c6322f302cbb7",
+              "url": "https://www.rockwool.com/fr/soissons",
+              "title": "Projet d'usine ROCKWOOL dans le Soissonnais",
+              "publishedAt": "2023-09-19T09:19:51.000Z",
+              "contentHash": "f3822bc9c22ccd2eac911663fc46eb4bc9bd7a270c80f306c13a8908c54b66c0",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "supplier-statements",
+                "indexedAt": "2026-05-12T13:49:14.000Z",
+                "truncated": false
+              }
+            },
+            {
+              "id": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+              "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026/",
+              "title": "Actualit&#xE9; du 03 mars 2026",
+              "publishedAt": "2026-03-04T07:20:00.000Z",
+              "contentHash": "e17a529c5aadb34359cfbc123895b6ede555978f0e7b5176c0828827e870f063",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "supplier-statements",
+                "indexedAt": "2026-05-06T04:48:29.000Z",
+                "truncated": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "soissons-project",
+      "family": "supplier",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:22.822Z",
+      "completedAt": "2026-10-22T09:57:23.428Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+              "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+              "title": "Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit",
+              "publishedAt": "2026-07-10T14:04:59.000Z",
+              "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch/public",
+                "method": "fetch",
+                "profileId": "soissons-project",
+                "indexedAt": null,
+                "truncated": false
+              }
+            },
+            {
+              "id": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+              "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026/",
+              "title": "Actualit&#xE9; du 03 mars 2026",
+              "publishedAt": "2026-03-04T07:20:00.000Z",
+              "contentHash": "e17a529c5aadb34359cfbc123895b6ede555978f0e7b5176c0828827e870f063",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "soissons-project",
+                "indexedAt": "2026-05-06T04:48:29.000Z",
+                "truncated": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "industrial-incidents",
+      "family": "incident",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:23.428Z",
+      "completedAt": "2026-10-22T09:57:23.905Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:443d8303cd28a48eb65d9b4b1d8ae4ca3e324ba2ab87f4f27fc9e0e4ddf08141",
+              "url": "https://www.aria.developpement-durable.gouv.fr/accident/49622/",
+              "title": "Incendie de palettes de matériaux isolants minéraux dans une usine - La référence du retour d'expérience sur accidents technologiques",
+              "publishedAt": "2017-04-25T00:00:00.000Z",
+              "contentHash": "3b0f6cd3ce6566e36e40063749408369bcf64c03df38a3831fed5769f38612f5",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch/public",
+                "method": "fetch",
+                "profileId": "industrial-incidents",
+                "indexedAt": "2026-05-15T04:14:38.000Z",
+                "truncated": false
+              }
+            },
+            {
+              "id": "keenable:dc622f0eeb1aa1affc04984e2f4a855ea35cd8c6978707138e1df87ae2abdb99",
+              "url": "https://www.aria.developpement-durable.gouv.fr/accident/44276/",
+              "title": "Incendie dans une usine d'isolant thermique - La référence du retour d'expérience sur accidents technologiques",
+              "publishedAt": "2013-09-02T00:00:00.000Z",
+              "contentHash": "d1697ebee15bc58f69f98417b1ad71424c93516ae5c6d030c67943b4355fc349",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "industrial-incidents",
+                "indexedAt": "2026-05-11T02:35:11.000Z",
+                "truncated": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "construction-projects",
+      "family": "project",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:23.905Z",
+      "completedAt": "2026-10-22T09:57:24.762Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:9820ea039567f28d66fd647d1f1b653653c06b95ef1446a91582888bd19b63f7",
+              "url": "https://culture.gouv.fr/Regions/Drac-Provence-Alpes-Cote-d-Azur/Politique-et-actions-culturelles/Architecture-contemporaine-remarquable-en-Paca/Les-etudes/La-Cite-Beisson-a-Aix-en-Provence/Analyse-du-bati/Chantier-organisation-techniques-de-construction-et-materiaux",
+              "title": "Chantier : organisation, techniques de construction et matériaux | Ministère de la Culture",
+              "publishedAt": null,
+              "contentHash": "381d74ecefa2e634e72dc65eb1690150594d8909011e3b47aeef3b4b0e4298a6",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "construction-projects",
+                "indexedAt": "2026-08-07T13:31:57.000Z",
+                "truncated": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "regulation-fr",
+      "family": "regulation_fr",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:24.762Z",
+      "completedAt": "2026-10-22T09:57:25.167Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:1249d54c4da54113436be00083f620e1af92c8b0ac0b60b35903739fe90fc6ee",
+              "url": "https://www.ecologie.gouv.fr/politiques-publiques/reglementation-environnementale-re2020",
+              "title": "Réglementation environnementale RE2020 | Ministères Transition écologique, Aménagement du Territoire, Transports, Ville et Logement",
+              "publishedAt": null,
+              "contentHash": "983e5a815a85bac780307ac7810e35ce79b03144393a3e402f5e5707b2239d18",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch/public",
+                "method": "fetch",
+                "profileId": "regulation-fr",
+                "indexedAt": null,
+                "truncated": false
+              },
+              "regulation": {
+                "jurisdiction": "FR",
+                "officialIdentifier": null,
+                "entryIntoForceAt": null,
+                "appliesFrom": null,
+                "deadlineAt": null,
+                "scope": null,
+                "applicability": "to_verify"
+              }
+            },
+            {
+              "id": "keenable:4539e1dfc39ff3bf8579200abd7bbfa37d3ad9434d4c07a936fa3e173b467ea7",
+              "url": "https://legifrance.gouv.fr/jorf/id/JORFTEXT000053465244",
+              "title": "Décret n° 2026-80 du 11 février 2026 relatif aux matériaux et produits en contact avec les eaux destinées à la consommation humaine",
+              "publishedAt": null,
+              "contentHash": "0b86fbc1ea1fc7fa171b9a44c007e3ae9804bfd496c916f2a8b24ed1ced0bc62",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "regulation-fr",
+                "indexedAt": "2026-10-20T06:17:40.000Z",
+                "truncated": false
+              },
+              "regulation": {
+                "jurisdiction": "FR",
+                "officialIdentifier": "JORFTEXT000053465244",
+                "entryIntoForceAt": null,
+                "appliesFrom": null,
+                "deadlineAt": null,
+                "scope": null,
+                "applicability": "to_verify"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profileId": "regulation-eu",
+      "family": "regulation_eu",
+      "status": "partial",
+      "startedAt": "2026-10-22T09:57:25.167Z",
+      "completedAt": "2026-10-22T09:57:25.781Z",
+      "sources": [
+        {
+          "url": "https://api.keenable.ai/v1/search",
+          "status": "partial",
+          "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+          "evidence": [
+            {
+              "id": "keenable:62638555dfd40c076294b7b51fc92968c3c6564fdb49f019b6f08799c2a8fa30",
+              "url": "https://rpc-construction.ecologie.gouv.fr/rpc-20243110",
+              "title": "Le RPC 2024/3110 | Règlement (UE) sur les Produits de Construction",
+              "publishedAt": null,
+              "contentHash": "8c52ca5ae5822b6ca1bf6a524b5630186b440ae8f341842813ffc85732c9bba1",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/fetch/public",
+                "method": "fetch",
+                "profileId": "regulation-eu",
+                "indexedAt": null,
+                "truncated": false
+              },
+              "regulation": {
+                "jurisdiction": "EU",
+                "officialIdentifier": null,
+                "entryIntoForceAt": null,
+                "appliesFrom": null,
+                "deadlineAt": null,
+                "scope": null,
+                "applicability": "to_verify"
+              }
+            },
+            {
+              "id": "keenable:04c4e97b19bd294f27a2eabd0d96ff625911947a0d40cbd89e32266ec877d71e",
+              "url": "https://eur-lex.europa.eu/EN/legal-content/summary/construction-products.html",
+              "title": "Construction products | EUR-Lex",
+              "publishedAt": "2013-07-01T23:03:42.000Z",
+              "contentHash": "e602eac4df22c22e13c6436b638f400eba3d3f6a4aecef91be898a93f39c24c6",
+              "provenance": {
+                "provider": "keenable",
+                "endpoint": "https://api.keenable.ai/v1/search/public",
+                "method": "search_snippet",
+                "profileId": "regulation-eu",
+                "indexedAt": "2026-02-09T18:15:01.000Z",
+                "truncated": false
+              },
+              "regulation": {
+                "jurisdiction": "EU",
+                "officialIdentifier": null,
+                "entryIntoForceAt": null,
+                "appliesFrom": null,
+                "deadlineAt": null,
+                "scope": null,
+                "applicability": "to_verify"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "A profile is a public search policy, not proof that every relevant event is found",
+    "Partial and empty results do not establish absence",
+    "No legal applicability or deadlines activated",
+    "No connection to real company ERP data",
+    "No model or proposal generated by this probe"
+  ]
+}

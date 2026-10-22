@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "sessionId": "01a1636e-56c1-73d0-9c25-54d24df81053",
+  "title": "AdaptOps: prepared news briefing",
+  "status": "VISUAL_PROPOSAL_DELIVERED",
+  "tool": "built-in image_gen",
+  "file": "prepared-news-briefing.png",
+  "source": "/Users/erwan/.codex/generated_images/01a1636e-56c1-73d0-9c25-54d24df81053/exec-ed187712-dcfe-49b6-a7dd-47f4a697ee10.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "4de800999baf93fd0e6375d57ddd024a9b3e03b95319782754886683bc3909aa",
+  "prompts": "PROMPTS.json",
+  "parent": "../adaptops-flow-final-20261022-v1/RECEIPT.json",
+  "inspection": "Final generated image visually inspected. Clean navigation labels; news, affected entities, exposure, option evaluation, prepared next steps, rationale, evidence and human review are visible.",
+  "limits": "Raster proposal only; synthetic company and controlled event. Purchase availability remains unconfirmed. No application implementation, actual purchase, shared archive or deployment established by this image."
+}

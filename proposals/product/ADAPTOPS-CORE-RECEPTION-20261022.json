@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-22T11:10:56.494371+00:00",
+  "status": "CORE_BYTES_IDENTITIES_AND_COUNTS_VERIFIED_NOT_IMPORTED",
+  "sourceManifest": "proposals/product/alignment-20261022/v2/CORE-READY.json",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "files": [
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-10000.json",
+      "expected": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+      "actual": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+      "matches": true,
+      "bytes": 4746932
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-policy.json",
+      "expected": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2",
+      "actual": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2",
+      "matches": true,
+      "bytes": 1190
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/DATA-CHECKS.json",
+      "expected": "bcf02f8047635a57293e8e65950fe00de3f42d4660a2aa050e00febbaf1dd3c2",
+      "actual": "bcf02f8047635a57293e8e65950fe00de3f42d4660a2aa050e00febbaf1dd3c2",
+      "matches": true,
+      "bytes": 1933
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/LOCAL-DOMAIN-SMOKE.json",
+      "expected": "f5f52d41d1e7dd22320275bf327f4bff0cec8171211b9da7a075391ea80ea0b7",
+      "actual": "f5f52d41d1e7dd22320275bf327f4bff0cec8171211b9da7a075391ea80ea0b7",
+      "matches": true,
+      "bytes": 1197
+    }
+  ],
+  "tableCounts": {
+    "company": 1,
+    "employees": 3,
+    "suppliers": 40,
+    "products": 200,
+    "depots": 6,
+    "customers": 400,
+    "orders": 2502,
+    "order_lines": 10000,
+    "inventory": 764,
+    "reservations": 9999,
+    "purchase_orders": 8,
+    "purchase_order_lines": 8,
+    "inbound_allocations": 13,
+    "transport_quotes": 3,
+    "emergency_quotes": 5,
+    "crm_opportunities": 81,
+    "watch_drafts": 1,
+    "construction_projects": 24,
+    "product_supply_links": 202
+  },
+  "totalLogicalRecords": 24260,
+  "scope": "Independent byte, JSON, company/policy identity and count readback only; producer consistency/domain tests are not rerun here.",
+  "aivenImport": "NOT_RUN_BY_COORDINATOR",
+  "industrialContext": "PROPOSED_PENDING_CANONICAL_DTO",
+  "futureEvents": "Not imported; current snapshot excludes operator event tables."
+}

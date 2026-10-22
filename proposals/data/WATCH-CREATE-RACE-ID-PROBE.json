@@ -1,0 +1,15 @@
+{
+  "strategy": "Arbitrate deterministic primary id",
+  "rounds": 300,
+  "concurrency": 12,
+  "failures": [
+    {
+      "code": "23505",
+      "constraint": "accel_watch_definitions_company_id_operation_key_key"
+    },
+    {
+      "code": "23505",
+      "constraint": "accel_watch_definitions_company_id_operation_key_key"
+    }
+  ]
+}

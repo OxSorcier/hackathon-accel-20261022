@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T09:00:46.762Z",
+  "imageTag": "accel-local:0.1.0",
+  "imageIdPrefix": "518e13ce2333",
+  "readyHttp": 200,
+  "companyHttp": 200,
+  "assetHttp": 200,
+  "excluded": [
+    {
+      "path": ".preparation",
+      "present": false
+    },
+    {
+      "path": "operator",
+      "present": false
+    },
+    {
+      "path": "fixtures",
+      "present": false
+    },
+    {
+      "path": "proposals",
+      "present": false
+    },
+    {
+      "path": ".env",
+      "present": false
+    },
+    {
+      "path": "tests",
+      "present": false
+    }
+  ],
+  "environment": "local container with PostgreSQL 17.6; no model configured; not Aiven"
+}

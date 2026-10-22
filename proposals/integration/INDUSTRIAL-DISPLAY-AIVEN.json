@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "status": "DISPLAY_IMPORTED_CORE_UNCHANGED",
+  "schema": "adaptops_industrial_v2",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "displayVersion": 1,
+  "labels": 64,
+  "name": "Rivebois Matériaux",
+  "sourceSha256": "472a7b9558bda98e14b9a9a7f747fda6da95f1abc9598b500e6392b6c4052c25",
+  "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "coreUnchanged": true,
+  "checkedAt": "2026-10-22T12:25:45.472Z"
+}

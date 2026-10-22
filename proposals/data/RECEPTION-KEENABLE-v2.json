@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "checkedAt": "2026-10-22T10:10:21.132447+00:00",
+  "scopeSha256": "a2daad5f79d995b51656a7682e8824a6f5b6a708e4de1feb9e1aa4f5885a0d90",
+  "status": "EXACT_MODULE_RECEIVED_FINAL_RUNTIME_PENDING",
+  "moduleReady": {
+    "path": "proposals/data/READY-KEENABLE-v2.json",
+    "sha256": "a9e0507c0ded1fc0af592bfe7720bba00b8df8e43e0ac12fc5fc5f1d4cd16374"
+  },
+  "integratorAcknowledgment": {
+    "path": "proposals/integration/RECEIVED-DATA-KEENABLE.json",
+    "sha256": "9c6dbb726db5b92fe6351cada52a2fbd296977a9677e8fe3b2835305e8b67943",
+    "receivedAt": "2026-10-22T10:07:57.988Z",
+    "all16HashesMatch": true
+  },
+  "reviews": "proposals/data/KEENABLE-REVIEWS-v2.json",
+  "testResult": {
+    "total": 35,
+    "realLocalPostgres": 14,
+    "strictTypecheck": "PASS"
+  },
+  "priorRuntimeEvidence": "proposals/integration/REAL-CASE-FLOW.json",
+  "priorRuntimeLimits": "Earlier candidate source hash, actual model/tools and Aiven readback with synthetic internal confirmation. Final corrected collector reception is separate.",
+  "currentRuntime": "Integrator refreshing original evidence and revising the existing case, keeping history. Await its exact runtime receipt.",
+  "research": "Existing research dossier and sector supplement retained by their owners in ERW-133, no second register.",
+  "additionalSourceProposal": "proposals/data/NEXT-SOURCE-ADAPTERS.json",
+  "researchMemoryNextSlice": [
+    "proposals/data/RESEARCH-MEMORY-DELTA.md",
+    "proposals/data/RESEARCH-MEMORY-CONTROLLED-SCENARIO.json"
+  ],
+  "cleanUp": "The disposable data-test PostgreSQL container was stopped after tests. No integrator containers stopped."
+}

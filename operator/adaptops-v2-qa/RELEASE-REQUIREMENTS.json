@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "status": "WAITING",
+  "operator_only": true,
+  "not_an_additional_product_schema": true,
+  "required_receipts": [
+    "Frozen v2 portfolio file list, exact hashes, author and revision.",
+    "Company and policy identity, currency/quantity units, clock and table counts.",
+    "Relations between sites, suppliers, purchases, stock, reservations, commitments and CRM qualification.",
+    "Explicit unknowns and source or synthetic provenance; no silently invented facts.",
+    "Integrator acceptance of import/contract and scoped test company/schema.",
+    "Readback of actual Aiven import counts and identities.",
+    "Exact candidate runtime/version and authorized test actions.",
+    "Private operator delivery channel for future source/stock events, excluded from product context."
+  ],
+  "already_existing_candidate_is_not_v2_proof": "proposals/product/alignment-20261022/portfolio-10000.json",
+  "native_ids_and_quantities_fixed": false
+}

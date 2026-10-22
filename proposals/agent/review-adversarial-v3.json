@@ -1,0 +1,23 @@
+{
+  "schema":"accel-agent-review/1",
+  "manifest":"proposals/agent/review-manifest-v3.json",
+  "role":"adversarial",
+  "requestedModel":"gpt-6.1-sol",
+  "requestedEffort":"high",
+  "servedModel":"unverified",
+  "reviewer":"/root/agent_adversarial",
+  "isolation":"fresh context originally forked with none; only own review context retained for revalidation; no implementation transcript or other reviewer conclusions",
+  "cycle":3,
+  "hashesVerifiedBeforeAndAfter":true,
+  "verdict":"no retained finding in bounded final revalidation",
+  "v2Findings":[
+    {"id":"V2-IDENTITY","result":"resolved","evidence":"Colon-bearing target and quote IDs now produce distinct bounded references; canonical options remain unique; actual PgStore.decide with memory-only SQL refuses conditional proposal with INADMISSIBLE."},
+    {"id":"V2-SOURCE","result":"resolved","evidence":"Future inbound aliasing ST-C100 is rejected with AMBIGUOUS_RESOURCE_ID."}
+  ],
+  "reportedChecks":{"moduleTestsPassed":26,"integrationScenarioTestsPassed":3,"longNativeIdProbe":"500 characters, separators and Unicode; bounded references, pending proposal, canonical match and immutable source snapshot"},
+  "readCoverage":["changed domain implementation","related tests","current server decision consumer","current UI reference consumer"],
+  "externalCalls":"none",
+  "realProvider":"NOT_RUN",
+  "PostgreSQL_Aiven":"NOT_RUN by this reviewer",
+  "browser":"NOT_RUN"
+}

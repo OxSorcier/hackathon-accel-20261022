@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-22T10:12:08.664612+00:00",
+  "checkout": "build/accel-local; no product commit exists",
+  "observation": "Active shared checkout. These are packaging-time source hashes, not a claim of unchanged sources since initial reading. The domain smoke records its own before/after exact hashes.",
+  "sources": [
+    {
+      "path": "docs/PROMPT-REPRISE-GLOBALE.md",
+      "sha256": "64a00d8b0d1dc0ed09236e695d2f3d795c584d2500b6badbb79b93f4ec98a041"
+    },
+    {
+      "path": "START-HERE.md",
+      "sha256": "ad7ef6476b3e6202b83dc355edb2231fc5dcca96aee189488fb763ab382b16a3"
+    },
+    {
+      "path": "docs/PRODUCT-VISION.md",
+      "sha256": "d4d350e98ea648b68d2dc7c9bca6ffdfff7198ebc80bd79d81be737bd1639239"
+    },
+    {
+      "path": "README.md",
+      "sha256": "58c9d3848df4eca2664c3f53e5c62865454dd2b3cd582e28f8b2617c513da0fb"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "sha256": "03c4ebe3d54eb6bfccf7593647f85c2028cb7b81669e380064459be84070519c"
+    },
+    {
+      "path": "docs/OWNERSHIP.md",
+      "sha256": "7bbeffee06857c261ce9ad95e0b871b47c76840c307a02c6b7309b57466b523a"
+    },
+    {
+      "path": "docs/THREADS.json",
+      "sha256": "347f36156d0db86eb78898861f8f0597044ebcff237eafaa325c7b867a0f1c40"
+    },
+    {
+      "path": "docs/CONTRACTS.md",
+      "sha256": "df74345ba177ee25ed0c1a5d9b1a95ff616372cb40b719cf2054098e9d779148"
+    },
+    {
+      "path": "docs/BUILD-PLAN.md",
+      "sha256": "38514465ca159c7d9a9ca186b51cef11316bcb194bbbbb05ab999094051c24f1"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "b09b5042afd43328782f2397972c2d5d0407f39c57e001d40c969a838382bcca"
+    },
+    {
+      "path": "docs/brief-aside-20261022.md",
+      "sha256": "a6c520b59383c34c0069a5c01e93a55a8855f44617013d718987e61a7f0563ed"
+    },
+    {
+      "path": "proposals/product/RELAY-RECEIPT.json",
+      "sha256": "80c9ba613530f73182599d7c91d705503b063f3757ab4f2e63a24e4973cb7d97"
+    },
+    {
+      "path": "proposals/product/CHAIN-CHECKPOINT.json",
+      "sha256": "25babbda5c9237106fe7396d60b0322aaa0c8da3a7e0ff194642aa0304881c08"
+    },
+    {
+      "path": "proposals/product/MEMOIRE-RECHERCHE-TRACES.md",
+      "sha256": "40f7688443fac56ec2d5ef37fabbc690490e51916430d780dc127a57757d5a56"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/RECHERCHE-DATA-DELTA.md",
+      "sha256": "ced29ff38eb68ce05469d99a1e175120b93c6d132478b51db15c4b91bf7d9a0b"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.md",
+      "sha256": "fe04378faade01f2463d42ff3a73fa41a6175589ad2abf2e9c759cb3b7527a7d"
+    },
+    {
+      "path": "fixtures/company/dataset.json",
+      "sha256": "bad22e5b53b82c793f34aff5e53d41a8f155d16f6938bc9d2e871374a114c4c9"
+    },
+    {
+      "path": "fixtures/company/company-policy.json",
+      "sha256": "9a2670115f88a98109e1032788f622e9c370ddd2abad80322ccbd26b03896163"
+    },
+    {
+      "path": "proposals/integration/OPENAI-REAL-QUESTION.json",
+      "sha256": "00e36afe8e7437cf5b0aee7a77a3a598e191d2c68dcf1ec16925be3f2d98e8c6"
+    },
+    {
+      "path": "proposals/integration/REAL-CASE-FLOW.json",
+      "sha256": "8e3c5ac559b2335283a395d3e1c8ab2649a995cfe8da17461101ede6494e0c97"
+    }
+  ]
+}

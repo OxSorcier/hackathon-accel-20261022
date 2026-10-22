@@ -1,0 +1,229 @@
+{
+  "version": 2,
+  "status": "AUTHENTICATED_RIVEBOIS_DISPLAY_OBSERVED_ON_AIVEN",
+  "url": "http://127.0.0.1:3003",
+  "pid": 32142,
+  "source": ".local/industrial-display-v2",
+  "schema": "adaptops_industrial_v2",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "contextRevision": "IC-INDUSTRIAL-2-2",
+  "name": "Rivebois Matériaux",
+  "displayVersion": 1,
+  "labels": 64,
+  "counts": {
+    "depots": 6,
+    "orders": 2502,
+    "company": 1,
+    "products": 200,
+    "customers": 400,
+    "employees": 3,
+    "inventory": 764,
+    "suppliers": 40,
+    "order_lines": 10000,
+    "reservations": 9999,
+    "watch_drafts": 1,
+    "purchase_orders": 8,
+    "emergency_quotes": 5,
+    "transport_quotes": 3,
+    "crm_opportunities": 81,
+    "inbound_allocations": 13,
+    "product_supply_links": 202,
+    "purchase_order_lines": 8,
+    "construction_projects": 24
+  },
+  "capabilities": {
+    "automaticAnalysis": false,
+    "simulationOnly": true,
+    "publicEvidenceIsSeparate": true,
+    "decisionsConnected": false,
+    "simulationConnected": false
+  },
+  "checks": {
+    "authenticated": 200
+  },
+  "providerCalls": 0,
+  "sourceCollection": 0,
+  "files": [
+    {
+      "path": "dist/server/agent/case-context.js",
+      "sha256": "8bb9167294362a6db5fd2fd708955064925febf10905dec75c729219ee84eafb"
+    },
+    {
+      "path": "dist/server/agent/context.js",
+      "sha256": "59c7658f855f1306aefdde7705bc5d90598f067212a0c8079a96c9e343fd17d2"
+    },
+    {
+      "path": "dist/server/agent/index.js",
+      "sha256": "12df1ef23bd7dd9bdbb42b3006b40f9a94dcc161e34f06675ba374e0196f7fe5"
+    },
+    {
+      "path": "dist/server/agent/research-context.js",
+      "sha256": "6001878cb153758f71e5b3fb7fa6aed4aef7fd2a44d7602d7b02f79023099328"
+    },
+    {
+      "path": "dist/server/agent/runner.js",
+      "sha256": "2cd6c3f7fd0225879ab23c7809f4316f0a72d013b5ed91715f475a7cd0956dea"
+    },
+    {
+      "path": "dist/server/contracts/index.js",
+      "sha256": "7e0a7415d4a0593e25b2eed51f7a05edea4bc30f9bac905dd9581ed405a3d7b4"
+    },
+    {
+      "path": "dist/server/contracts/industrial-api.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "dist/server/contracts/industrial.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "dist/server/contracts/pdf.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "dist/server/contracts/research.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "dist/server/data/analysis-trigger.js",
+      "sha256": "729a3fbdf1645aa7aa639cfee7c831a9a137eac4f906f99436175745375a7d77"
+    },
+    {
+      "path": "dist/server/data/industrial-relations.js",
+      "sha256": "45c5af56c926ca31c7f60fb1f85819a642cc522337504cbf20e44c5af666d93b"
+    },
+    {
+      "path": "dist/server/data/research-repository.js",
+      "sha256": "d443a4551eba77c2fcc500483f954eb26ff7ce06137efc46e73a6a0ff98ace4b"
+    },
+    {
+      "path": "dist/server/data/validation.js",
+      "sha256": "b4a663d912f041f2146c79dd03de865df35ecbb20c8241ac3fef694c11afec7b"
+    },
+    {
+      "path": "dist/server/data/watch-repository.js",
+      "sha256": "6bb22c9f3b4f3d7531400dba420083ec72a59b645cab0aebf66b9d4902a0539c"
+    },
+    {
+      "path": "dist/server/domain/contract.js",
+      "sha256": "af7eb92287228f6f520f986539b4872eda49533a6410ffde00b6bad4969ac340"
+    },
+    {
+      "path": "dist/server/domain/engine.js",
+      "sha256": "a7f72c23eca212f7f84aecdedafe80d6dc30fa088121619e4545df4734f9fbcf"
+    },
+    {
+      "path": "dist/server/domain/index.js",
+      "sha256": "5fe254df369595a4ebd03e3cb69eb084e8793956f21db3017a2fef2bfc47a4c4"
+    },
+    {
+      "path": "dist/server/domain/model.js",
+      "sha256": "8d3d5ea735d9dab1625adb27375bcd6e22ea3da463a72d193a12e1019dc35314"
+    },
+    {
+      "path": "dist/server/server/app.js",
+      "sha256": "0e1264b8090802b015edbe5f4b72ee8526cfde7cf9b3847a7956317829b768db"
+    },
+    {
+      "path": "dist/server/server/auth.js",
+      "sha256": "f2aa04fc0ed877d834b49c6eb0ddcb1af4baed5f1fa8c5d9e42ef8647f842c23"
+    },
+    {
+      "path": "dist/server/server/cases.js",
+      "sha256": "2f823aff127d9df9a403b467b70924f2c937a97b768a26a08dc062b5c4270118"
+    },
+    {
+      "path": "dist/server/server/config.js",
+      "sha256": "7e533905e09f2b4f908087e07f9531a726366f6cac59149bc0906d8e1e69cba2"
+    },
+    {
+      "path": "dist/server/server/errors.js",
+      "sha256": "89d5467f8b5ef4ad287f7603fc2c58363cf39bf5a5ee544a199492c3b2c23668"
+    },
+    {
+      "path": "dist/server/server/industrial-boundary.js",
+      "sha256": "8afa7082de69478c5fa9e18ca83618851f16353b66f134a5c7d72d0ec9f9b8bb"
+    },
+    {
+      "path": "dist/server/server/industrial-display.js",
+      "sha256": "d6aa9b346389e1f748ee136d938e49abc33703eecc0f97d1fc70368dd3056b0d"
+    },
+    {
+      "path": "dist/server/server/industrial-read.js",
+      "sha256": "081538ee3e4e6224b56fccddf2d07fb7d226f6915d0831fe785eff4bb4593304"
+    },
+    {
+      "path": "dist/server/server/migrate.js",
+      "sha256": "a57480ae96a3fccb7c07c6cf14e8620b093021cc3863a25dc28d3d5239ac3a29"
+    },
+    {
+      "path": "dist/server/server/operator.js",
+      "sha256": "0939bf75af1b6d334574436ada93c95a673891e352d502efc782006ab13983b3"
+    },
+    {
+      "path": "dist/server/server/pdf-client.js",
+      "sha256": "c2ba70087f69f041e67634b80be342049ad28b66971742a1b912a5bd09413657"
+    },
+    {
+      "path": "dist/server/server/provider.js",
+      "sha256": "51ef5fe06722f3cede772590eb8d61a86e91a989196743ff92232a7a76ce51b3"
+    },
+    {
+      "path": "dist/server/server/research-context.js",
+      "sha256": "2d262b6f25590f6b817482b40e730f95450eea4b0a033cf50809c17ecff8e07c"
+    },
+    {
+      "path": "dist/server/server/research-service.js",
+      "sha256": "c77e8064ac09a93d740a008f079f127b25f2dc7b1ac40955c944a21e6791cd72"
+    },
+    {
+      "path": "dist/server/server/start.js",
+      "sha256": "351230392231f503d70022e982ddb414a2f8060a9e80ce7cacf8bec0c576212b"
+    },
+    {
+      "path": "dist/server/server/store.js",
+      "sha256": "759dc5e1c2c92bdc00f7b9023fe14ec36d5d4f0e565cedfe370ad83f75deab02"
+    },
+    {
+      "path": "dist/server/server/validation.js",
+      "sha256": "2ff95bf68f4a232548f8ca3f9864c678d045f7e75084846d0fb51c59467b8278"
+    },
+    {
+      "path": "dist/server/server/watch-service.js",
+      "sha256": "85373129b9d9c00633916938c244aea397731c9ebe28c28049964da9eeecefa7"
+    },
+    {
+      "path": "dist/server/server/worker.js",
+      "sha256": "76951db6eb56327b29f8aa1f43b1c6238b98267b5b5a34a20b37614b0ebdea3d"
+    },
+    {
+      "path": "dist/server/watch/collection-status.js",
+      "sha256": "20efd81f5b69ed5f8ed0259a8b646f13b9790d3b495d13a0399aba21d2169e43"
+    },
+    {
+      "path": "dist/server/watch/collector.js",
+      "sha256": "f67d69acaa686782e7ea3db5f9ce00108464af32e7e992a9baf7e688da289c59"
+    },
+    {
+      "path": "dist/server/watch/engine.js",
+      "sha256": "827f3174332b979c9be120de428c6ab43606b89b44b3a31164d387cd929f07b3"
+    },
+    {
+      "path": "dist/server/watch/http.js",
+      "sha256": "517b6a4b3cd177d452d4e53628142fd7e7fc147099d441cdcc4017904e05119b"
+    },
+    {
+      "path": "dist/server/watch/keenable.js",
+      "sha256": "e405962f73ceae0060ad8cfd0b5ad2f9d89cb05e48cfd0581ce6dc874368747f"
+    },
+    {
+      "path": "dist/server/watch/source-policy.js",
+      "sha256": "7c7a1460edc62f1d8de99934370106795e97298a990b7b22b283ced5f2f11b5d"
+    }
+  ],
+  "workspaceReceipt": "proposals/integration/INDUSTRIAL-WORKSPACE-DISPLAY-3003.json",
+  "previous": "proposals/integration/INDUSTRIAL-READ-CANDIDATE-v1.json",
+  "review": "proposals/integration/INDUSTRIAL-DISPLAY-REVIEWS.json",
+  "checkedAt": "2026-10-22T12:26:27.785Z"
+}

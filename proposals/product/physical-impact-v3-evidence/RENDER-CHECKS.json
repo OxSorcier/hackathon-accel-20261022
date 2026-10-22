@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-22T12:21:37.826Z",
+  "browser": "155.0.8059.85",
+  "mode": "Isolated headless Chrome; Aside used for app inspection. Aside file access unavailable; Chrome MCP profile already in use.",
+  "checks": [
+    {
+      "name": "vision",
+      "relative": "docs/PRODUCT-VISION.html",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainFont": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 3,
+      "title": "Physical Impact: product vision and demo alignment",
+      "headings": 9,
+      "tables": 3,
+      "localTableScroll": true,
+      "bodyTextLength": 16420,
+      "emDashes": false
+    },
+    {
+      "name": "vision",
+      "relative": "docs/PRODUCT-VISION.html",
+      "width": 768,
+      "documentWidth": 768,
+      "mainFont": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 3,
+      "title": "Physical Impact: product vision and demo alignment",
+      "headings": 9,
+      "tables": 3,
+      "localTableScroll": true,
+      "bodyTextLength": 16420,
+      "emDashes": false
+    },
+    {
+      "name": "vision",
+      "relative": "docs/PRODUCT-VISION.html",
+      "width": 390,
+      "documentWidth": 390,
+      "mainFont": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 3,
+      "title": "Physical Impact: product vision and demo alignment",
+      "headings": 9,
+      "tables": 3,
+      "localTableScroll": true,
+      "bodyTextLength": 16420,
+      "emDashes": false
+    },
+    {
+      "name": "demo",
+      "relative": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainFont": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 3,
+      "title": "Physical Impact: complete-journey demo brief",
+      "headings": 9,
+      "tables": 2,
+      "localTableScroll": true,
+      "bodyTextLength": 15017,
+      "emDashes": false
+    },
+    {
+      "name": "demo",
+      "relative": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+      "width": 768,
+      "documentWidth": 768,
+      "mainFont": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 3,
+      "title": "Physical Impact: complete-journey demo brief",
+      "headings": 9,
+      "tables": 2,
+      "localTableScroll": true,
+      "bodyTextLength": 15017,
+      "emDashes": false
+    },
+    {
+      "name": "demo",
+      "relative": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+      "width": 390,
+      "documentWidth": 390,
+      "mainFont": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 3,
+      "title": "Physical Impact: complete-journey demo brief",
+      "headings": 9,
+      "tables": 2,
+      "localTableScroll": true,
+      "bodyTextLength": 15017,
+      "emDashes": false
+    }
+  ],
+  "externalDisplayRequests": 0,
+  "visualInspection": "PASS",
+  "inspected": [
+    "vision-390.png",
+    "vision-1440-gaps.png",
+    "demo-390.png",
+    "demo-1440-gaps.png"
+  ]
+}

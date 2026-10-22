@@ -1,0 +1,6 @@
+{
+  "strategy": "Transaction advisory lock in materialized CTE before idempotent INSERT",
+  "rounds": 300,
+  "concurrency": 12,
+  "failures": []
+}

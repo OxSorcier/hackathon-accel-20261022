@@ -1,0 +1,16 @@
+{
+  "observedAt": "2026-10-22T10:57:33.832424+00:00",
+  "trigger": "New integrated PostgreSQL finding after data v1 reception",
+  "priorReady": "proposals/data/READY-RESEARCH-v1.json",
+  "symptom": "New adopted watch error with resultNULL left prior context reusable",
+  "cause": "Terminal-result query excluded resultNULL before checking occurrence state and chronology",
+  "redReproduction": "Actual local PG, reusable received where error expected;13other research tests passed",
+  "change": "Consider all terminal occurrences with completed_at. New failNULL creates explicit error generation without empty-result substitution. Older failure cannot overwrite newer received result. Preserve old canonical evidence.",
+  "currentRootVerification": {
+    "tests": 50,
+    "realLocalPostgres": 29,
+    "strictTypecheck": "PASS"
+  },
+  "reviewScopeSha256": "026f33d1aa4373925ef170fd59bd634808eff0cd9c1554a4b97e34405ab7affc",
+  "mandate": "Separate bounded diagnosis/correction requested by integrator, two fresh independent reviewers required before new READY"
+}

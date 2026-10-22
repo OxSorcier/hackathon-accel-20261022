@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "product_path": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "source_archive": "/Users/erwan/.codex/.chatgpt-projects/g-p-6acd1e2b630881918c37b331e317ea4c/deliveries/hackathon-experience-v0-20261018/KIT-ACCEL-20261022-v5.zip",
+  "source_archive_sha256": "c44eea191cc20e2e8d1f9bfe30780592d8a2ddf2ae085f2a1ebb89d799e59b51",
+  "preparation_files": 471,
+  "code_created": false,
+  "git_commits": 0,
+  "remote_repo": null,
+  "aiven": "ACCESS_TO_CONFIGURE",
+  "operator_excluded_from_runtime": true,
+  "model_context": "positive allowlist only; no file access",
+  "setup_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "c045ad064c2447b845ffa1f12a5b90395c8972790c8fa8f84aac0239f1635b8b"
+    },
+    {
+      "path": "START-HERE.md",
+      "sha256": "6ea5ac819f37b0b28253065960c5a2034d55a4871c39494133c00bdb253feabc"
+    },
+    {
+      "path": "README.md",
+      "sha256": "78e1139727f33ec8fecc387355a104fb66a0db25036e90ff9e77f52f938c29a9"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "sha256": "c65cdb3d5125849171536548c8892eb5a6813675c203f520b8b4810436127bab"
+    },
+    {
+      "path": "docs/OWNERSHIP.md",
+      "sha256": "7bbeffee06857c261ce9ad95e0b871b47c76840c307a02c6b7309b57466b523a"
+    },
+    {
+      "path": "docs/CONTRACTS.md",
+      "sha256": "5f7773cfcc080782bcb38c7523f78ed7d3482d8c90e3d00f53090b23f73c0334"
+    },
+    {
+      "path": "docs/BUILD-PLAN.md",
+      "sha256": "38514465ca159c7d9a9ca186b51cef11316bcb194bbbbb05ab999094051c24f1"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "5e4128564e955bcf12c8934f429a5d46f7a8fd5e6a3a527b2a2d4a9e7035644d"
+    },
+    {
+      "path": "docs/tasks/INTEGRATION.md",
+      "sha256": "3809af905fed8ebb7e9c04c24e45a41d4d0bae69d0a2e3a7da09161b76a2ba60"
+    },
+    {
+      "path": "docs/tasks/DATA-WATCH.md",
+      "sha256": "e77ca898ac58fc0bbe5dd12680190b7b856ed38fc45e1852b9a664e8a0d9150f"
+    },
+    {
+      "path": "docs/tasks/DOMAIN-AGENT.md",
+      "sha256": "d3150503c8f0b349b70c476fa5f3b8f5fc9e48e7a71f534dafb2d5bd222d531a"
+    },
+    {
+      "path": "docs/tasks/UI.md",
+      "sha256": "70c8551757bee28b66eb74b5fae3600a788aef42550f6387a0efc287f1972eb5"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "50273044b3fe75d057f3a958cc97e11e2e3cb35ba682f2f8fb14fd7595e0b2a1"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "ea02fa460f6d413c07fbff9d27998ad394b06bb656519a44a1472fc681d49b63"
+    },
+    {
+      "path": ".env.example",
+      "sha256": "92be8d3f6127c4f3d225448614c224195b616886c763d5bda56d10109a256b87"
+    },
+    {
+      "path": "docs/THREADS.json",
+      "sha256": "689a7906d6e645a0ad435b60cdd661828f1ebaa9c254fdfa399060b0ea35daf7"
+    }
+  ],
+  "preparation_directories": 93,
+  "coordination": "Acces Aiven/GitHub/modele : chat 01a16283-2006-7bd3-b07f-2ceaf2535784; autorisation humaine de coordination verifiee.",
+  "dispatch": {
+    "project_id": "8c1ddc08-8cfc-42cb-ad37-5b132ce345eb",
+    "threads_created": 4,
+    "creation_receipts_only": true
+  },
+  "files_added_after_cold_review": [
+    "docs/ACCES-CREDITS.md"
+  ],
+  "archive_manifest_files_verified": 470
+}

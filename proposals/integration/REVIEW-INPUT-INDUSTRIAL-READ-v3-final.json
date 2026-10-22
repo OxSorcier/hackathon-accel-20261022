@@ -1,0 +1,118 @@
+{
+  "version": 3,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/industrial-http-read-v3-final",
+  "base": "/Users/erwan/Projects/hackathon-accel-20261022/.local/industrial-http-read-v3",
+  "scope": "Authenticated bounded industrial GET and explicit operator import, atomic company-mode admission and claim boundaries. Reports/agent/automatic analysis/decisions/execution remain unavailable. Stable3001 and R1 runtime snapshots unchanged.",
+  "realizerModel": "gpt-6.1-sol",
+  "files": [
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "104d14d3677f9df853cb34f2d4c534a7ae53645c2cbde7c015694ccbadd49794"
+    },
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "2e22d97141cde9426df6221433e2ba82d86edf8a3a93376378ce8487293e2ace"
+    },
+    {
+      "path": "src/contracts/industrial-api.ts",
+      "sha256": "1d67b2c53bea0c055316c07adc4a63e3d1b0708c80bcd9d453999f3025ecb57c"
+    },
+    {
+      "path": "src/contracts/pdf.ts",
+      "sha256": "8df45c4c63087489d89f3ea27691f954eea7c95fd083d76e524f833061cea4de"
+    },
+    {
+      "path": "src/server/app.ts",
+      "sha256": "e8aec73df56a5405453bfd5b525227fc933ef4dfe0e358fe3f82cc7b906ebf11"
+    },
+    {
+      "path": "src/server/start.ts",
+      "sha256": "622508d06b0231a85a9ac8a7ee9f014181f65424ea1835aa80305f0760c99f4e"
+    },
+    {
+      "path": "src/server/industrial-read.ts",
+      "sha256": "b071d471b939ab929393900f5c7d1d7cb61065a2fc0072f3ed272ecd1b136340"
+    },
+    {
+      "path": "migrations/008_pdf_documents.sql",
+      "sha256": "3aee5af2e2877aef1077905c2ba54617ee90f5260c9a144bec6fe13bac0d1c4a"
+    },
+    {
+      "path": "migrations/009_industrial.sql",
+      "sha256": "15e1b736235dd4e91a63aac69dce70a9ec453861ca5015cec0f0a30fe270eaff"
+    },
+    {
+      "path": "migrations/010_industrial_analysis.sql",
+      "sha256": "204005bb5ce53e230b0473fb2f10f4f1423b809493c4fd0c0e9eb175f17b3eda"
+    },
+    {
+      "path": "tests/integration/industrial-read.test.ts",
+      "sha256": "b08e017d4da7cb53d3a32a21f4ca6ce123ddc964005cec33c72e37d7cdb98f7f"
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256": "82de576d7784b7f54cbe893b11cc1550ed6e84fbd9f644bb52b2f6697896f32b"
+    },
+    {
+      "path": "src/server/cases.ts",
+      "sha256": "4e5c190a83179de514b6fbcb48f6e6fba76277c33cfd844d71243642beea11d5"
+    },
+    {
+      "path": "src/server/industrial-boundary.ts",
+      "sha256": "b38153013259d9ac04e9159c827a54c4ef6df23bddb0650dcdc7d155473238ae"
+    },
+    {
+      "path": "tests/integration/research.test.ts",
+      "sha256": "90ca9b4af72c0b42f84c0184a37212d51575279b12b8477792cd7da82c513770"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "proposals/data/industrial-analysis-schema.sql",
+      "sha256": "204005bb5ce53e230b0473fb2f10f4f1423b809493c4fd0c0e9eb175f17b3eda"
+    },
+    {
+      "path": "src/data/analysis-trigger.ts",
+      "sha256": "b18d884c29edfbb86952547685a90f8320e726f4ee909aab08bc52235f0510a2"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "e7822f04664c7ee474dc70569535530f84f517559dce859931442d67e11b66ea"
+    },
+    {
+      "path": "tests/data/industrial-relations.test.ts",
+      "sha256": "2bb7eb6a902e0d7bb1949af38d0bb0315a84874a420418007687bf92847aa50e"
+    },
+    {
+      "path": "tests/data/industrial-trigger-postgres.test.ts",
+      "sha256": "6429e5a24bedafba55b0b9b3c6a3161972e24e735971385f5eb2131f934e8402"
+    }
+  ],
+  "receivedUnits": [
+    {
+      "receipt": "proposals/data/READY-INDUSTRIAL-DATA-v1.json",
+      "sha256": "3b07a803ce31599274bc478593bd06b2ed6bb5e92c7c3243c24ea34466797255",
+      "pins": 5
+    }
+  ],
+  "testResources": [
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-10000.json",
+      "sha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/portfolio-policy.json",
+      "sha256": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/industrial-context.v2.json",
+      "sha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/operator-event.v2.json",
+      "sha256": "12efd02dc12781fa7aa243db1064e5f15c7c948fc3d9eab8a33c1383c9f189b7"
+    }
+  ],
+  "createdAt": "2026-10-22T12:09:54.255881+00:00",
+  "revision": "cycle3-final-revalidation"
+}

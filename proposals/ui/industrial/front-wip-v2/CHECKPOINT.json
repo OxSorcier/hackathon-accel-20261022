@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "createdAt": "2026-10-22T12:11:42.935Z",
+  "status": "WIP_NOT_REVIEWED_NOT_INTEGRATED",
+  "reason": "Functional UI work resumed after visual-only owner clarification. Writes suspended again pending reconciliation of concurrent physical-model/pages modules.",
+  "changes": [
+    "Industrial questions routed through exact industrial API, received run polling and inline answer.",
+    "Server capability and report freshness gates on plan and confirmation.",
+    "Projected protection and simulation receipt semantics clarified."
+  ],
+  "files": [
+    {
+      "path": "src/ui/App.tsx",
+      "snapshot": "proposals/ui/industrial/front-wip-v2/src/ui/App.tsx.snapshot",
+      "sha256": "66327c33ff9bc205cbd03cf8936817f211867d3f77c4a40cfdb48d686fce63e2"
+    },
+    {
+      "path": "src/ui/IndustrialDesk.tsx",
+      "snapshot": "proposals/ui/industrial/front-wip-v2/src/ui/IndustrialDesk.tsx.snapshot",
+      "sha256": "233aa9c9bdd5da2e113e7e97c7190fd936285bcca6277ed65c055979810fe351"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "snapshot": "proposals/ui/industrial/front-wip-v2/src/ui/styles.css.snapshot",
+      "sha256": "004807ec8e24fcb87b80d1f43f247aee06ff96b1328aadb64f4c5275040132c4"
+    },
+    {
+      "path": "tests/ui/preview.tsx",
+      "snapshot": "proposals/ui/industrial/front-wip-v2/tests/ui/preview.tsx.snapshot",
+      "sha256": "98fff9084105cdb34ea45c99acc2e7497d80c935fdd003abe425563e7431112f"
+    }
+  ],
+  "previous": "proposals/ui/industrial/front-wip-20261022/CHECKPOINT.json",
+  "excluded": "Concurrent physical-model.ts and physical-pages.tsx and tests/physical-model.test.ts are not owned or adopted here."
+}

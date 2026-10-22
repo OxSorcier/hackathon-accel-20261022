@@ -1,0 +1,76 @@
+{
+  "version": 2,
+  "createdAt": "2026-10-22T11:19:59.548550+00:00",
+  "status": "LOCAL_DELIVERY_CHECKED_APPLICATION_RECEPTION_PENDING",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "contextRevision": "IC-INDUSTRIAL-2-2",
+  "qualificationRevision": "Q-INDUSTRIAL-2-1",
+  "predecessor": {
+    "path": "proposals/product/alignment-20261022/portfolio-10000.json",
+    "sha256": "cc498346bd374f920112cc3aa31673e4e623a635dd3063b151d7cc739c526606"
+  },
+  "sources": [
+    {
+      "path": "docs/PRODUCT-VISION.md",
+      "sha256": "b3d54b15cbdb62082bdb246b3408b353cb4b9088eb338cd4277111cd9085e758",
+      "bytes": 14267,
+      "status": "SNAPSHOT_READ_NOT_APPLICATION_RECEPTION"
+    },
+    {
+      "path": "docs/PRODUCT-VISION.html",
+      "sha256": "a2ccdb3db8fe9ac64a567fa2f3a0fcf3544496974d989ab03fec3cd321cfdbf0",
+      "bytes": 172752,
+      "status": "SNAPSHOT_READ_NOT_APPLICATION_RECEPTION"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "77b89ec1a87a210a62cc45b741a2502fa6ca417601fec9607752fb1a2c1464f1",
+      "bytes": 7119,
+      "status": "SNAPSHOT_READ_NOT_APPLICATION_RECEPTION"
+    },
+    {
+      "path": "docs/OWNERSHIP.md",
+      "sha256": "2ed72ab883513d08b38251948909e5e73e27d3efd6be169089fa59e287ac7809",
+      "bytes": 7579,
+      "status": "SNAPSHOT_READ_NOT_APPLICATION_RECEPTION"
+    },
+    {
+      "path": "docs/CONTRACTS.md",
+      "sha256": "df74345ba177ee25ed0c1a5d9b1a95ff616372cb40b719cf2054098e9d779148",
+      "bytes": 12369,
+      "status": "SNAPSHOT_READ_NOT_APPLICATION_RECEPTION"
+    },
+    {
+      "path": "proposals/product/research-data-20261022/sector-sources/INDUSTRIAL-INCIDENTS-20261022.json",
+      "sha256": "bae2bc472c354c448a5aa9072a4aaed5344e37360b1ae6897b8857b7657e4342",
+      "bytes": 8820,
+      "status": "SNAPSHOT_READ_NOT_APPLICATION_RECEPTION"
+    },
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "c638d5c1c7fe4205c26318642c21e0b0375149490d81ffde9a4c1242cca04845",
+      "bytes": 9575,
+      "status": "SNAPSHOT_READ_NOT_APPLICATION_RECEPTION"
+    }
+  ],
+  "keywords": [
+    "AdaptOps",
+    "ERP",
+    "CRM",
+    "industrial company",
+    "multi-site",
+    "risk",
+    "opportunity",
+    "market signals",
+    "10k",
+    "simulation"
+  ],
+  "runtimeAuthority": "docs/STATUS.md; owned by existing integrator",
+  "limits": [
+    "No real ERP or CRM API connector.",
+    "Core and industrial inputs tested locally; Aiven and full mixed-impact journey are separate owner receipts.",
+    "Historical source incidents are not fresh events.",
+    "Current company facts and operator scenario files have distinct roles."
+  ]
+}

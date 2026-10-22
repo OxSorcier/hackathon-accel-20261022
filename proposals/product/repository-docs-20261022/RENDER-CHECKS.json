@@ -1,0 +1,101 @@
+{
+  "browser": "Bundled Playwright Chromium, isolated headless context",
+  "aside": "Document snapshot read successfully. setViewportSize unavailable in Aside REPL.",
+  "chromeDevtools": "Profile already running; no shared browser process stopped or modified.",
+  "results": [
+    {
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "interLoaded": true,
+      "fontStatus": "loaded",
+      "headings": 7,
+      "missingAnchorTargets": [],
+      "localTableScroll": [
+        {
+          "width": 880,
+          "contentWidth": 880
+        },
+        {
+          "width": 880,
+          "contentWidth": 880
+        },
+        {
+          "width": 880,
+          "contentWidth": 880
+        },
+        {
+          "width": 880,
+          "contentWidth": 880
+        }
+      ],
+      "clippedText": 0,
+      "screenshot": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/product/repository-docs-20261022/guide-1440.png"
+    },
+    {
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "interLoaded": true,
+      "fontStatus": "loaded",
+      "headings": 7,
+      "missingAnchorTargets": [],
+      "localTableScroll": [
+        {
+          "width": 688,
+          "contentWidth": 688
+        },
+        {
+          "width": 688,
+          "contentWidth": 688
+        },
+        {
+          "width": 688,
+          "contentWidth": 688
+        },
+        {
+          "width": 688,
+          "contentWidth": 688
+        }
+      ],
+      "clippedText": 0,
+      "screenshot": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/product/repository-docs-20261022/guide-768.png"
+    },
+    {
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "interLoaded": true,
+      "fontStatus": "loaded",
+      "headings": 7,
+      "missingAnchorTargets": [],
+      "localTableScroll": [
+        {
+          "width": 350,
+          "contentWidth": 480
+        },
+        {
+          "width": 350,
+          "contentWidth": 480
+        },
+        {
+          "width": 350,
+          "contentWidth": 480
+        },
+        {
+          "width": 350,
+          "contentWidth": 480
+        }
+      ],
+      "clippedText": 0,
+      "screenshot": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/product/repository-docs-20261022/guide-390.png"
+    }
+  ],
+  "anchor": {
+    "hash": "#section-3",
+    "top": 0.296875
+  },
+  "externalRenderRequests": [],
+  "pageErrors": [],
+  "checkedAt": "2026-10-22T12:35:09.574Z"
+}

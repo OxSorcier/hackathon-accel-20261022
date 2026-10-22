@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "status": "COORDINATION_ACTIVE_CORE_AIVEN_VERIFIED_REPORT_INTEGRATION_OPEN",
+  "checkedAt": "2026-10-22T11:28:00Z",
+  "objective": "Existing AdaptOps owners, one synthetic industrial portfolio and one assembled report/action journey.",
+  "scope": "Coordination checkpoint and independent reception. Does not replace integrator STATUS or application runtime receipts.",
+  "artifacts": [
+    {
+      "path": "proposals/product/ADAPTOPS-DATA-REPORT-COORDINATION-20261022.md",
+      "fileId": "1YAfZM_cHQKmOdgwzOraN7IctGMHb9gBq",
+      "url": "https://drive.google.com/file/d/1YAfZM_cHQKmOdgwzOraN7IctGMHb9gBq/view",
+      "bytes": 10228,
+      "sha256": "b10a9cf7233a818e48c8832dca62ed2c57b77557ba23668f1e242b247834a62d"
+    },
+    {
+      "path": "proposals/product/ADAPTOPS-DATA-REPORT-COORDINATION-20261022.html",
+      "fileId": "1WgBXh3PZ9pcdubY1VLZnJs04vyg0jgno",
+      "url": "https://drive.google.com/file/d/1WgBXh3PZ9pcdubY1VLZnJs04vyg0jgno/view",
+      "bytes": 166144,
+      "sha256": "9f0d91478eda8ce93ed4c6775d90dfa369e60de701ad8505ca9a9f9268a5c335"
+    }
+  ],
+  "archive": {
+    "parentFolderId": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+    "owner": "Erwan Gallo",
+    "shared": false,
+    "existingProjectFilesMatched": true,
+    "downloadedBytesMatched": true,
+    "sharingChanged": false
+  },
+  "tracking": {
+    "issue": "ERW-133",
+    "commentId": "21a9045f-5b04-4f94-9974-e429e6af8ae2",
+    "statusChanged": false
+  },
+  "display": {
+    "browser": "Aside",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "font": "Inter embedded and loaded",
+    "subtitleColor": "rgba(255,255,255,0.86)",
+    "smallWidthsPreviouslyChecked": [
+      390,
+      768
+    ],
+    "structure": {
+      "html": 1,
+      "hero": 1,
+      "h1": 2,
+      "iframes": 0
+    },
+    "limitation": "Aside full-page screenshot repeated the initial viewport. DOM and structure received; no claim that this stitched capture verifies every section."
+  },
+  "data": {
+    "coreReception": "proposals/product/ADAPTOPS-CORE-RECEPTION-20261022.json",
+    "aivenIndependentQA": ".local/qa-adaptops-v2/AIVEN-CORE-READBACK.json",
+    "status": "PASS_CORE_IMPORT_READBACK",
+    "logicalRecords": 24260,
+    "orderLines": 10000,
+    "stableCompanyUnchanged": true
+  },
+  "industrialPins": {
+    "contextSha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e",
+    "operatorEventSha256": "12efd02dc12781fa7aa243db1064e5f15c7c948fc3d9eab8a33c1383c9f189b7",
+    "contractSha256": "c638d5c1c7fe4205c26318642c21e0b0375149490d81ffde9a4c1242cca04845",
+    "httpContractSha256": "5c7e3a7aed62245504e54c4e1fb5f5ae9ba76e41efaf45c937d4708b11c12beb"
+  },
+  "subsequentAmendments": [
+    {
+      "receivedAt": "2026-10-22T11:29:00Z",
+      "contractVersion": 3,
+      "contractSha256": "5553acf836a5fc074a2100f36ea619a22f91fc094def662ff61adfce2dbcc3fd",
+      "scope": "Mandatory durable execution ledger, current stock holds, future resources and remaining qualified demand across revisions. Supersedes contract v2 for consumers; data context/operator v2 unchanged.",
+      "consumerReception": "Business, data and QA owners acknowledged. Final exact consumer receipts still pending."
+    }
+  ],
+  "laterReceptions": {
+    "productIdentity": {
+      "name": "Physical Impact",
+      "previousName": "AdaptOps",
+      "nativeHumanMessage": "01a1636f-9788-7502-a002-f5f75cf43f3a",
+      "frontOwner": "01a16346-9b6f-7b70-afc7-57775e697a94",
+      "meaning": "Received frontend demo mode remains distinct from the real Aiven/provider/action acceptance. Historical paths and IDs stay intact."
+    },
+    "finalDisplayInput": {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/display-aliases.v1.json",
+      "sha256": "472a7b9558bda98e14b9a9a7f747fda6da95f1abc9598b500e6392b6c4052c25",
+      "labels": 64,
+      "receivedPinMatches": true,
+      "runtimeUse": "PENDING_INTEGRATOR"
+    },
+    "scopedAgentUnit": {
+      "receipt": "proposals/agent/SCOPED-AGENT-READY.json",
+      "sourceFingerprint": "0016d2f008e6d00c244e842515b6dd66702300ec67fafb9f30037d891733ef76",
+      "ownedPins": 4,
+      "dependencyPins": 8,
+      "allPinsMatchedAtReception": true,
+      "runtime": "NOT_RUN"
+    },
+    "industrialWorkspace": {
+      "receipt": "proposals/integration/INDUSTRIAL-READ-CANDIDATE.json",
+      "independentQA": ".local/qa-adaptops-v2/INDUSTRIAL-READ-3003.json",
+      "url": "http://127.0.0.1:3003",
+      "source": ".local/industrial-http-read-v3-clock",
+      "status": "AUTHENTICATED_AIVEN_READ_AND_INDEPENDENT_QA_PASS",
+      "scope": "Company and imported context only. Reports, analyses and events absent; automatic analysis, decisions and simulation capabilities false.",
+      "providerCalls": 0,
+      "collectionCalls": 0,
+      "actions": 0
+    },
+    "executionUnit": {
+      "status": "NINE_AIVEN_TESTS_PASS_FINAL_REVIEWS_PENDING",
+      "scope": "Atomic simulated effects, concurrency and recovery on the received synthetic portfolio. Not an integrated approved-action runtime proof."
+    }
+  },
+  "remaining": [
+    "Received joint risk/opportunity calculation and bounded agent projection",
+    "Durable event-to-analysis bridge and prepared report",
+    "Current-plan human decision and simulated execution/readback",
+    "Integrated UI acceptance, changed-data revision and recovery"
+  ],
+  "notAsserted": [
+    "Complete industrial journey",
+    "Real ERP action or realised revenue",
+    "Aiven Runtime deployment",
+    "Model volume benchmark"
+  ]
+}

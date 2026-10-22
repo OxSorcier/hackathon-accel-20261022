@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "scope": "Integration-owned code and assembly",
+  "files": [
+    {
+      "path": "package.json",
+      "sha256": "7cd98aa9612dc545e69d80431fe375ee3b2842dd5eb85336d368c7e6d9df5a2e"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5e19422d20ae4f3cb40789924b4db0e536a635acb454d1f7cadfba24e097cc7d"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "ec703413e71fb11906a4792d89bc88b8fc9be8bbc9c3d5610f28ec34b7ef4c2b"
+    },
+    {
+      "path": "tsconfig.server.json",
+      "sha256": "392d1e7a39cfd59ae0a8a7b9da2926b15ee4a253439ee180017fc16ae5d0f2c8"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "88b4d6dc966c699bcfc8e66b2eac8ffb3dfe6e0cdb6f29bea31364b9693c1206"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "4c03db90411595c3b7fbc9b24766d0a4b2429f5aa16fabb66d9dbf70abe3b67a"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "be1067a8e67ec7dc08861d74d877dab7ca616afc54cb2d3336854bcab12bf7db"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "ea02fa460f6d413c07fbff9d27998ad394b06bb656519a44a1472fc681d49b63"
+    },
+    {
+      "path": "index.html",
+      "sha256": "1705aef279bdd139b902cf45f1cab7689e62008dcd70b92e8998b23591abafdb"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "fcd3eadf921d9a85becca613e166fd2c03088a02bed1b05cb68a607ffe97c287"
+    },
+    {
+      "path": "src/server/app.ts",
+      "sha256": "d84df79a9df545c23b097b8f8550c0c709483c44bc1d631e5a9ee63460d2197b"
+    },
+    {
+      "path": "src/server/auth.ts",
+      "sha256": "8dd8d5ab526a98501331735b04703cc40ce0a3817848b544aec615877a28c911"
+    },
+    {
+      "path": "src/server/config.ts",
+      "sha256": "69d0543bc9b63718b1139ea734ff4cc2925f17f1c3bd087302a66bcd42816f1b"
+    },
+    {
+      "path": "src/server/migrate.ts",
+      "sha256": "7f89f2854bb56822c32d93c3122da93dae93406cecb5c99599dab291187cb2ba"
+    },
+    {
+      "path": "src/server/operator.ts",
+      "sha256": "ece10983cacc3a965faed9ebcc8bdeac487d1882190a42f8918e9558abdc06b9"
+    },
+    {
+      "path": "src/server/provider.ts",
+      "sha256": "a10471b9449901b647dd45f682c4d80773af5283550ec39ca00436e43652cb3b"
+    },
+    {
+      "path": "src/server/start.ts",
+      "sha256": "c983f1c09cdcca6da134fd58da4af4e4e1110619d75031a23e7cd9ea3bc55e9d"
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256": "b49c60d10cfdbe18d2edba76e3730c938f49ea74b6489f67cd369a5f3126c1b9"
+    },
+    {
+      "path": "src/server/validation.ts",
+      "sha256": "40d365ece821698276af19d278f47a1a78f3df10d3f47ee6939b0c085d9e703a"
+    },
+    {
+      "path": "src/server/watch-service.ts",
+      "sha256": "5b7559bfc30d1645e0c836a2071a3ddbc5404ea32bbbb6ca66bfba7f7f69038a"
+    },
+    {
+      "path": "src/server/worker.ts",
+      "sha256": "9b6963174b95c2c13844cc9eee7bb51849877ca2838fcc503786e3ab26ae4e45"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "e1eec6ee3fe568ba6921db8d6fb345755eef2f90b3299a0eb7372d3c8bbe055b"
+    },
+    {
+      "path": "tests/server/auth.test.ts",
+      "sha256": "bee3a39bb3c2a89a77c290c84f1b176e570abd9978bfd67b918fb3aada569bf5"
+    },
+    {
+      "path": "tests/server/provider.test.ts",
+      "sha256": "2157d68a94f2359c4e9339334f0d4ab9ee76aa6427d64aff2d62a35a9cd8004c"
+    },
+    {
+      "path": "tests/integration/scenarios.test.ts",
+      "sha256": "5d690cf53096861c4edf77002dd9a8492b7f71a62a3c2e9f5724af84a28237d8"
+    },
+    {
+      "path": "tests/integration/server.test.ts",
+      "sha256": "b78d8c31ed287dc572f3eb38475f136f600274c5955e0308fe1046ed4c96c457"
+    },
+    {
+      "path": "migrations/001_core.sql",
+      "sha256": "b59ca3d0468ace1fbefa9c7929459058685efe9fd6d602d42218807f7985c1f3"
+    },
+    {
+      "path": "migrations/002_watch.sql",
+      "sha256": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08"
+    }
+  ]
+}

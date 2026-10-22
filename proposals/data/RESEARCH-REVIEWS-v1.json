@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-22T10:49:29.302979+00:00",
+  "scopeSha256": "8f416b7e358d9f779eeb4adf75376198512d77aaf75faa6050f0f07edc59a479",
+  "cycles": 3,
+  "coder": {
+    "configuredModel": "gpt-6.1-sol",
+    "servedModel": "UNATTESTED"
+  },
+  "reviewers": [
+    {
+      "agent": "/root/research_counter_review",
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high",
+      "freshContext": true,
+      "servedModel": "UNATTESTED",
+      "verdict": "NO_REMAINING_FINDING"
+    },
+    {
+      "agent": "/root/research_architecture_review",
+      "requestedModel": "gpt-6-astra",
+      "effort": "high",
+      "freshContext": true,
+      "servedModel": "UNATTESTED",
+      "verdict": "NO_REMAINING_FINDING"
+    }
+  ],
+  "cycleHistory": [
+    {
+      "digest": "cf46f3f738e0789a7b2cb5c6c23a5120c32809e43202582ccd89325a782bbb81",
+      "retained": [
+        "Selected Fetch subset and eligibility omitted from generation signature",
+        "Ambiguous duplicate id/hash could restore a snippet as a reusable page"
+      ],
+      "resolution": "Regressions observed red on real local PostgreSQL; signature expanded and ambiguous identities rejected"
+    },
+    {
+      "digest": "7f30326c32708acc986458532074360875712fbbb34d850f4092deec6ee731f3",
+      "retained": [
+        "Old invalid adopted occurrence could erase a newer successful refresh"
+      ],
+      "additionalRootFinding": "Callback failure was being caught as a source normalization failure",
+      "resolution": "Both regressions observed red; chronological guard uses durable occurrence.completed_at, and persistence/callback are outside source-normalization catch"
+    }
+  ],
+  "finalReviewControls": "Both reviewers independently re-executed four reproductions using the actual module with in-memory SQL and transaction doubles; hashes and delta read. No network, DB, service, secret, writing or delegation by reviewers.",
+  "rootControls": {
+    "vitestTests": 49,
+    "realLocalPostgresTests": 28,
+    "researchPostgresTests": 13,
+    "strictScopedTypecheck": "PASS",
+    "candidateMigrationEquivalentTo006IgnoringCommentsAndWhitespace": true
+  },
+  "limits": [
+    "Model identities are requested/configured, not independently attested served models",
+    "Data tests are not full agent/model/Aiven R1/R2 acceptance",
+    "Same model family may retain shared blind spots"
+  ]
+}

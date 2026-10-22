@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "scope": "research fail NULL and durable publication ordering",
+  "snapshot": "/tmp/accel-research-order-review-v2",
+  "files": [
+    {
+      "path": "proposals/data/research-publication-order.sql",
+      "sha256": "367b1f3733a10e157a5613093269e0c962c442ae70d193c4c26bce3fc05ed7b0"
+    },
+    {
+      "path": "proposals/data/research-schema.sql",
+      "sha256": "79eb7786942be6009444932e7b7f8ee598e4e26811673664d93dcb2215c9816c"
+    },
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "640d75523cb81f88eb581aa169f5fefd8c94d72deee1a7f5b0da6dd5f21f0e6a"
+    },
+    {
+      "path": "tests/data/research-postgres.test.ts",
+      "sha256": "a70c9c81721541c76a2af6b0c65a385028bf108b8037548d4bf656095881c40b"
+    }
+  ],
+  "scopeSha256": "9008ba459e68d33a7fbad13d94f25ad97da4d890a13932e443b3f541ed437a2c",
+  "digestRecipe": "SHA256 of JSON list pins sorted by path; each item path,sha256; JSON sort_keys=True,separators=(comma,colon), UTF8 no trailing newline",
+  "testsObserved": {
+    "dataWatch": 56,
+    "postgres": 35,
+    "pure": 21,
+    "strictTypecheck": "pass"
+  },
+  "limitations": [
+    "Local disposable PostgreSQL, not Aiven",
+    "Independent final reviews pending",
+    "Integrator owns canonical migration007 and deployment",
+    "Historical numbering is not historical reception order"
+  ]
+}

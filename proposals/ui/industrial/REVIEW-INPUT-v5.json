@@ -1,0 +1,157 @@
+{
+  "version": "v5",
+  "createdAt": "2026-10-22T12:21:58.789Z",
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "source": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/industrial/source-v5",
+  "references": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/industrial/references-v5",
+  "baseHead": null,
+  "baseHeadReason": "Unborn repository; all reviewed files and dependencies are pinned individually.",
+  "status": "REVIEW_REQUESTED_NOT_INTEGRATED",
+  "realizerModel": "gpt-6.1-sol",
+  "servedModelAttested": false,
+  "scope": "Industrial HTTP adapters and received central read DTO delta: optional display, canonical publicResearch, publicFeed schedule and explicit questionsConnected. Strict schemas, correlation, recoverable commands, additive shared API/types and isolated HTTP tests.",
+  "expectedBehavior": [
+    "Read only the authenticated company and received reports/runs.",
+    "Preserve server calculations, projected coverage, missing economics and bounded-plan constraints without deriving an optimum or realized business effects.",
+    "Keep human approval and explicitly simulated execution separate.",
+    "Bind every mutation and receipt to actor/company/session, exact plan version/hash/basis, and operation key where present in the response contract.",
+    "Reject stale, disconnected, inconsistent and late reads. Require durable-state read after an uncertain response. Never automatically retry a mutation.",
+    "Company questions use the industrial route and exact received scope; unavailable server remains explicit."
+  ],
+  "excluded": [
+    "src/ui/App.tsx",
+    "src/ui/styles.css",
+    "src/ui/IndustrialDesk.tsx",
+    "Frontend composition and browser reception, now owned by the human frontend chat.",
+    "Server implementation, Aiven runtime, automatic analysis, business calculations and actual effects."
+  ],
+  "runtime": {
+    "testSuite": "193 owned UI tests passed including 76 isolated industrial HTTP tests; concurrent frontend tests excluded, no model/service/business action",
+    "typecheck": "PASS targeted boundary; root check recorded separately",
+    "liveIndustrial": "First real unchanged GET capture parsed locally through v4. New additive DTOs are not yet emitted by the server."
+  },
+  "files": [
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "96c7bcc84cb7e51abdb34719723e1bfd0ee8c76c4bc6641af62fd6c9ff5ae2e6",
+      "bytes": 48820
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "06e471068d976dcbdcb0aa82375f9a4e1c9310fed0ab03d11cf1588768fe0582",
+      "bytes": 6411
+    },
+    {
+      "path": "src/ui/industrial.ts",
+      "sha256": "0a3efa206e26b132de722f53b33530804e33f508f0e3186ffa7b3b7997d86cf6",
+      "bytes": 14727
+    },
+    {
+      "path": "src/ui/industrial-api.ts",
+      "sha256": "29b5154aecbd2417bb8cb01903c623899f1b87f84082cc68e6631186d93af707",
+      "bytes": 13564
+    },
+    {
+      "path": "src/ui/pending-commands.ts",
+      "sha256": "dd41f6b7774b74b72a10b908bc58bcd7b7acb598f23f8be5d0e3147d5dde671a",
+      "bytes": 1334
+    },
+    {
+      "path": "tests/ui/industrial-api.test.ts",
+      "sha256": "3713bc5f98fc1c8c2bce9b3bc881d597b882cc800e7e07dc3170643be6cc40e8",
+      "bytes": 32694
+    },
+    {
+      "path": "tests/ui/industrial-fixtures.ts",
+      "sha256": "712f91b012296f85adda0e1aa30bfcfffd6a0d094febf99c65e7f7451cb80a29",
+      "bytes": 7332
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/ui/research.ts",
+      "sha256": "29f1df16af9a6c3bb24d42904e8608c2946acd8e7b9272410067ed7815cf18e2",
+      "bytes": 5238
+    },
+    {
+      "path": "src/ui/format.ts",
+      "sha256": "6ab5f3efe789d4057a9b35da78f02ebd49c216a80b267a16c0f9be17537081ea",
+      "bytes": 2036
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "104d14d3677f9df853cb34f2d4c534a7ae53645c2cbde7c015694ccbadd49794",
+      "bytes": 9702
+    },
+    {
+      "path": "src/contracts/research.ts",
+      "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214",
+      "bytes": 1452
+    },
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "2e22d97141cde9426df6221433e2ba82d86edf8a3a93376378ce8487293e2ace",
+      "bytes": 12057
+    },
+    {
+      "path": "src/contracts/industrial-api.ts",
+      "sha256": "cce92904ad3a26dc26a832483e85029573895ae45edeacff669d034d6e6ce1c6",
+      "bytes": 2835
+    },
+    {
+      "path": "tests/ui/fixtures.ts",
+      "sha256": "3382ac8cf197fddbfeb0a162a5e16151c38e211ffee65a4958341afc1bfea8c9",
+      "bytes": 8323
+    },
+    {
+      "path": "tests/ui/research-fixtures.ts",
+      "sha256": "49c685890ccfb59e1f235557714f77452e5efbe14ba3c7ec296f4b637c5b274a",
+      "bytes": 2824
+    },
+    {
+      "path": "package.json",
+      "sha256": "b89be02ce5d1b43ad6ae260d5565f90060aac0f2f2b380bc534d4976a9462be5",
+      "bytes": 1170
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5e19422d20ae4f3cb40789924b4db0e536a635acb454d1f7cadfba24e097cc7d",
+      "bytes": 103851
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "ec703413e71fb11906a4792d89bc88b8fc9be8bbc9c3d5610f28ec34b7ef4c2b",
+      "bytes": 374
+    },
+    {
+      "path": "START-HERE.md",
+      "sha256": "ad7ef6476b3e6202b83dc355edb2231fc5dcca96aee189488fb763ab382b16a3",
+      "bytes": 2002
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "sha256": "03c4ebe3d54eb6bfccf7593647f85c2028cb7b81669e380064459be84070519c",
+      "bytes": 6078
+    },
+    {
+      "path": "docs/OWNERSHIP.md",
+      "sha256": "14d83372bfb9454792b75dd1c559ad71870306a6d46ed9ae5bb61fcf22ceecd9",
+      "bytes": 9684
+    },
+    {
+      "path": "docs/CONTRACTS.md",
+      "sha256": "df74345ba177ee25ed0c1a5d9b1a95ff616372cb40b719cf2054098e9d779148",
+      "bytes": 12369
+    },
+    {
+      "path": "proposals/integration/INDUSTRIAL-HTTP-CONTRACT.json",
+      "sha256": "0e4b459e2cbb27ff85cbd5618c80c81ebbb72f42003761da3d91554936c618aa",
+      "bytes": 3514
+    },
+    {
+      "path": "proposals/ui/industrial/CONTRACT-CLARIFICATIONS.json",
+      "sha256": "4ca954e9e652be25f0948f2c4c164818503d2bc6fb2f79810acb4cd2ccd16ce0",
+      "bytes": 797
+    }
+  ]
+}

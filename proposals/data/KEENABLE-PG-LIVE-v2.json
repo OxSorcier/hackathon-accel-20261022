@@ -1,0 +1,112 @@
+{
+  "observedAt": "2026-10-22T09:48:09.927Z",
+  "scopeSha256": "001d4f3e2a8f04f2ee0c1d32e6762d686b2dfce8c3a2b73ef2686e361bbb161d",
+  "environment": "real public Keenable, local PostgreSQL17.6",
+  "watchId": "watch:9babe9c4dad4ace2abab8fedd13aba1e75a2a9ddbb86cbb2cfebb770d5144974",
+  "status": "completed",
+  "reconnected": true,
+  "occurrence": {
+    "id": "scheduled:watch:9babe9c4dad4ace2abab8fedd13aba1e75a2a9ddbb86cbb2cfebb770d5144974:20261022094807.186000",
+    "status": "completed",
+    "collectionStatus": "partial",
+    "sources": [
+      {
+        "url": "https://api.keenable.ai/v1/search",
+        "status": "partial",
+        "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+        "evidence": [
+          {
+            "id": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+            "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+            "title": "Usine ROCKWOOL à Soissons : les recours rejetés, le chantier se poursuit",
+            "publishedAt": "2026-07-10T14:04:59.000Z",
+            "collectedAt": "2026-10-22T09:48:08.482Z",
+            "contentHash": "370e26db65cca64f5253926692379b714f8dd6e6f363df17a1e97c15a449605d",
+            "provenance": {
+              "provider": "keenable",
+              "endpoint": "https://api.keenable.ai/v1/fetch/public",
+              "method": "fetch",
+              "profileId": "soissons-project",
+              "indexedAt": null,
+              "truncated": false
+            },
+            "family": "supplier"
+          },
+          {
+            "id": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+            "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026/",
+            "title": "Actualité du 03 mars 2026",
+            "publishedAt": null,
+            "collectedAt": "2026-10-22T09:48:09.360Z",
+            "contentHash": "60c9d50f71e805821b59666c5adb1c6b33fb7eed6aab8fbb7b2c1415ddc81436",
+            "provenance": {
+              "provider": "keenable",
+              "endpoint": "https://api.keenable.ai/v1/fetch/public",
+              "method": "fetch",
+              "profileId": "soissons-project",
+              "indexedAt": "2026-05-06T04:48:29.000Z",
+              "truncated": false
+            },
+            "family": "supplier"
+          },
+          {
+            "id": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+            "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-02-janvier-2026/",
+            "title": "Actualité du 02 janvier 2026",
+            "publishedAt": "2026-01-02T00:00:00.000Z",
+            "collectedAt": "2026-10-22T09:48:09.898Z",
+            "contentHash": "0e312652686aa7f7c49a37bb159fac00b9dedd3808d1698bb3af17d2b3ee4b88",
+            "provenance": {
+              "provider": "keenable",
+              "endpoint": "https://api.keenable.ai/v1/fetch/public",
+              "method": "fetch",
+              "profileId": "soissons-project",
+              "indexedAt": "2026-05-06T08:34:17.000Z",
+              "truncated": false
+            },
+            "family": "supplier"
+          },
+          {
+            "id": "keenable:02d3b679b232631548edc2f8d5b2dd4885802b02721d9f21bfe1837a82e76d39",
+            "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+            "title": "Actualité du 05 mars 2026",
+            "publishedAt": "2026-03-06T07:20:00.000Z",
+            "collectedAt": "2026-10-22T09:48:09.898Z",
+            "contentHash": "6ad5f773c77360e31bba16551d2cb623589c7dcf06d69d468ae5efb76ef0ebe0",
+            "provenance": {
+              "provider": "keenable",
+              "endpoint": "https://api.keenable.ai/v1/search/public",
+              "method": "search_snippet",
+              "profileId": "soissons-project",
+              "indexedAt": "2026-10-22T09:40:22.000Z",
+              "truncated": false
+            },
+            "family": "supplier"
+          },
+          {
+            "id": "keenable:60bc7f14c97a1e9d1702674ac02557b64c5c2f82473979457e0a7176f2f63486",
+            "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-29-juin-2026/",
+            "title": "Actualité du 29 juin 2026",
+            "publishedAt": "2026-06-29T17:40:00.000Z",
+            "collectedAt": "2026-10-22T09:48:09.898Z",
+            "contentHash": "781b3d8018706ba9623a37d589fa7a23c5d80241e5e7e920e9ef2a9c8bbc7161",
+            "provenance": {
+              "provider": "keenable",
+              "endpoint": "https://api.keenable.ai/v1/search/public",
+              "method": "search_snippet",
+              "profileId": "soissons-project",
+              "indexedAt": "2026-07-02T03:59:17.000Z",
+              "truncated": false
+            },
+            "family": "supplier"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "No model invocation or calculated proposal in this data-module probe",
+    "Synthetic company business relationships remain unverified",
+    "No Aiven runtime proof"
+  ]
+}

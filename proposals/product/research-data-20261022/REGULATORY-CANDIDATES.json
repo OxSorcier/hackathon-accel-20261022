@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "status": "PROPOSED_MONITORING_FACTS_NOT_LEGAL_DETERMINATION",
+  "observedOn": "2026-10-22",
+  "companyApplicability": "NOT_DETERMINED",
+  "rules": [
+    {
+      "id": "EU-CPR-2024-3110",
+      "title": "Règlement produits de construction",
+      "jurisdiction": [
+        "EU",
+        "FR"
+      ],
+      "officialTextUrl": "https://eur-lex.europa.eu/eli/reg/2024/3110/oj/fra",
+      "officialExplanationUrl": "https://rpc-construction.ecologie.gouv.fr/rpc-20243110",
+      "legalPublicationDate": "2024-12-18",
+      "entryIntoForceDate": null,
+      "generalApplicationDate": "2026-01-08",
+      "explanationPublishedDate": "2025-02-24",
+      "explanationUpdatedDate": "2026-02-18",
+      "applicationCondition": "Transition par spécification technique harmonisée et famille de produits. La page ministérielle indique généralement douze mois après entrée en vigueur de la spécification, avec exceptions. Ancien régime conservé si aucune spécification couvrante publiée sous le nouveau règlement.",
+      "companyDeadline": null,
+      "missingCompanyFacts": [
+        "famille et référence fabricant de chaque SKU",
+        "usage prévu",
+        "spécification technique harmonisée et sa date",
+        "statut fabricant/importateur/distributeur"
+      ],
+      "proposedAlert": "Vérifier la norme et demander au fournisseur la déclaration applicable avant une offre ou substitution. Ne pas déclarer tous les SKU non conformes.",
+      "legalTextRead": "NOT_RECEIVED; official explanation read; EUR-Lex challenge",
+      "humanValidationRequired": true,
+      "dateEvidence": {
+        "legalPublication": "Ministry explanation read",
+        "generalApplication": "Article96 visible in search index only; final text not retrieved; verify before use"
+      }
+    },
+    {
+      "id": "FR-RE2020-2026-16",
+      "title": "Extension RE2020 à de nouveaux usages",
+      "jurisdiction": [
+        "FR-metropolitan"
+      ],
+      "officialTextUrl": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053378848",
+      "officialExplanationUrl": "https://www.ecologie.gouv.fr/politiques-publiques/reglementation-environnementale-re2020",
+      "legalPublicationDate": "2026-01-17",
+      "entryIntoForceDate": "2026-05-01",
+      "generalApplicationDate": "2026-05-01",
+      "explanationPublishedDate": "2020-11-18",
+      "explanationUpdatedDate": "2026-09-18",
+      "applicationCondition": "Constructions neuves des nouvelles catégories visées et date de dépôt du permis ou déclaration préalable, avec régime transitoire à vérifier dans le texte. Ce n’est pas une obligation uniforme pour tout stock ni toute rénovation.",
+      "companyDeadline": null,
+      "missingCompanyFacts": [
+        "usage du bâtiment",
+        "neuf ou rénovation",
+        "localisation",
+        "date de dépôt du permis ou déclaration préalable",
+        "exigences de performance du projet et documents produits"
+      ],
+      "proposedAlert": "Avant devis, qualifier le chantier et demander les performances/documentations nécessaires. Les jalons 2028/2031 restent à calculer selon le texte et le projet.",
+      "legalTextRead": "NOT_RECEIVED; ministry overview read; Légifrance403",
+      "humanValidationRequired": true,
+      "dateEvidence": {
+        "legalPublication": "Official gazette metadata visible in search index; full text not retrieved",
+        "entryIntoForce": "Ministry overview confirms extension date; full legal transitional rule not received"
+      }
+    },
+    {
+      "id": "EU-EUDR-2023-1115-amended-2025-2650",
+      "title": "Bois et produits visés par le règlement déforestation",
+      "jurisdiction": [
+        "EU",
+        "FR"
+      ],
+      "officialTextUrl": "https://eur-lex.europa.eu/eli/reg/2025/2650/oj/fra/pdf",
+      "officialExplanationUrl": "https://www.douane.gouv.fr/actualites/lutte-contre-la-deforestation-report-de-la-mise-en-application-du-reglement-ue-20231115",
+      "legislativeTextReadUrl": "https://data.consilium.europa.eu/doc/document/PE-60-2025-INIT/fr/pdf",
+      "legalPublicationDate": "2025-12-23",
+      "entryIntoForceDate": null,
+      "generalApplicationDate": "2026-12-30",
+      "explanationPublishedDate": "2025-12-24",
+      "explanationUpdatedDate": null,
+      "applicationCondition": "Produit de l’annexe I, rôle dans la chaîne, taille, dates de production et mise sur le marché. Le report au 30/06/2027 pour certains micro/petits opérateurs comporte une exception pour les produits déjà visés par le règlement bois 995/2010. Ne pas appliquer la date tardive à toute PME du bois.",
+      "companyDeadline": null,
+      "missingCompanyFacts": [
+        "code douanier et matière du produit",
+        "rôle opérateur/amont/aval/négociant",
+        "taille et date d’établissement",
+        "date de production et mise sur le marché",
+        "traçabilité et références documentaires reçues"
+      ],
+      "proposedAlert": "Déterminer l’applicabilité et préparer les pièces avant 30/12/2026. J-60/J-30/J-7 sont proposés après validation de l’échéance entreprise, jamais activés ici.",
+      "legalTextRead": "Douane explanation and Council PE-CONS60/25 articles37/38 read; final OJ PDF not retrieved. Council text is pre-publication. European Commission current overview read, including EUTR exception and2026/2102 distinction.",
+      "humanValidationRequired": true,
+      "additionalOfficialExplanationUrl": "https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en",
+      "latestScopeAmendment": {
+        "id": "EU-2026-2102",
+        "status": "European Commission explanation read; full act not received",
+        "newlyAddedProductsApplicationDate": "2027-12-30",
+        "scope": "Only newly added products; not a general timber postponement",
+        "requiredCheck": "Current Annex I and product customs code"
+      }
+    }
+  ],
+  "activation": "NONE"
+}

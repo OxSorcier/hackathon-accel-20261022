@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "status": "tested_on_aiven_and_modal",
+  "testedAt": "2026-10-22T10:59:57.876Z",
+  "documentScopeRevision": 1,
+  "isolation": "Disposable dedicated schema on the existing Aiven database; no public/preview/research schema touched; schema removed after test.",
+  "source": {
+    "url": "https://www.rockwool.com/siteassets/investors/financial-reports/2026/q2-h1-2026-financial-report.pdf",
+    "title": "Report on first half of 2026 for ROCKWOOL A/S",
+    "documentHash": "a46561052fe30f7e4ab152b144fa23fc1c50e5a5f931c8279141793dbba9f57b",
+    "byteLength": 530288
+  },
+  "result": {
+    "status": "done",
+    "pages": 17,
+    "characters": 40113,
+    "firstAcquisitionMs": 5756,
+    "modalAdapterCalls": 1,
+    "publicDownloads": 2,
+    "secondAcquisitionCacheHit": true,
+    "newPoolReadbackIdentical": true,
+    "sourceAndAllPagesIdentical": true,
+    "tls": "TLSv1.3"
+  },
+  "manifestHashesStable": true,
+  "limits": [
+    "New PostgreSQL pool and repository, not full application process restart.",
+    "No app HTTP route, model tool, UI citation or stable3001 integration asserted.",
+    "No load or scale benchmark."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "FROZEN_DISPLAY_INPUT_READY_FOR_EXPLICIT_INTEGRATOR_RECEPTION",
+  "createdAt": "2026-10-22T11:42:27.143Z",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "baseCoreSha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af",
+  "baseContextSha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e",
+  "files": [
+    {
+      "path": "proposals/product/alignment-20261022/v2/display-profile-v1/display-aliases.v1.json",
+      "sha256": "472a7b9558bda98e14b9a9a7f747fda6da95f1abc9598b500e6392b6c4052c25",
+      "bytes": 10355
+    }
+  ],
+  "labels": 64,
+  "formatOwner": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "sourceAuthority": {
+    "threadId": "01a16361-0550-7f93-b117-5ae28117b00a",
+    "humanMessageId": "01a16363-3406-7801-b051-40422a242c3c"
+  },
+  "checks": 13,
+  "applicationCode": "NONE_CHANGED",
+  "datasetReimport": "NONE",
+  "sourceDataUnchanged": true,
+  "scope": "Presentation-only aliases and rewording of existing activity. Original proposal kept separate; this is the only intake file.",
+  "runtimeImport": "NOT_RUN_BY_THIS_CHAT",
+  "integratedUi": "NOT_RUN",
+  "modelUse": "NOT_RUN",
+  "liveSourceCall": "NONE",
+  "limits": [
+    "No real organisation relation or uniqueness claim.",
+    "Names cannot select identity, grant rights, verify a source link or change a calculation.",
+    "No future event, public-source rename or URL/event-ID replacement.",
+    "Raw core and context remain under their historical receipts."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "status": "EARLY_C1_SHAPE_CORE_PREPARED_NOT_IMPORTED",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "revision": "R-INDUSTRIAL-CANDIDATE-2",
+  "dataOrigin": "synthetic",
+  "baseVersion": 1,
+  "basePath": "../portfolio-10000.json",
+  "rows": {
+    "company": 1,
+    "employees": 3,
+    "suppliers": 40,
+    "products": 200,
+    "depots": 6,
+    "customers": 400,
+    "orders": 2502,
+    "order_lines": 10000,
+    "inventory": 764,
+    "reservations": 9999,
+    "purchase_orders": 8,
+    "purchase_order_lines": 8,
+    "inbound_allocations": 13,
+    "transport_quotes": 3,
+    "emergency_quotes": 5,
+    "crm_opportunities": 81,
+    "watch_drafts": 1,
+    "construction_projects": 24,
+    "product_supply_links": 202
+  },
+  "reallocatedCurrentCoverage": [
+    {
+      "stockId": "ST-IND-DEP-LILLE-SKU-IND-002",
+      "depotId": "DEP-LILLE",
+      "productId": "SKU-IND-002",
+      "orderLineIds": [
+        "OL-IND-00000",
+        "OL-IND-03960",
+        "OL-IND-07920"
+      ],
+      "quantity": 3,
+      "previousFree": 100,
+      "inboundId": "POL-IND-ALPHA-01",
+      "expectedDate": "2026-11-13"
+    },
+    {
+      "stockId": "ST-IND-DEP-CENTRE-SKU-IND-002",
+      "depotId": "DEP-CENTRE",
+      "productId": "SKU-IND-002",
+      "orderLineIds": [
+        "OL-IND-02574",
+        "OL-IND-06534",
+        "OL-IND-03366"
+      ],
+      "quantity": 37,
+      "previousFree": 100,
+      "inboundId": "POL-IND-ALPHA-02",
+      "expectedDate": "2026-11-26"
+    },
+    {
+      "stockId": "ST-IND-DEP-NANTES-SKU-IND-002",
+      "depotId": "DEP-NANTES",
+      "productId": "SKU-IND-002",
+      "orderLineIds": [
+        "OL-IND-00396",
+        "OL-IND-04356",
+        "OL-IND-08316"
+      ],
+      "quantity": 51,
+      "previousFree": 100,
+      "inboundId": "POL-IND-ALPHA-03",
+      "expectedDate": "2026-11-22"
+    },
+    {
+      "stockId": "ST-IND-DEP-LYON-SKU-IND-002",
+      "depotId": "DEP-LYON",
+      "productId": "SKU-IND-002",
+      "orderLineIds": [
+        "OL-IND-02178",
+        "OL-IND-06138",
+        "OL-IND-02970"
+      ],
+      "quantity": 49,
+      "previousFree": 100,
+      "inboundId": "POL-IND-ALPHA-04",
+      "expectedDate": "2026-11-17"
+    }
+  ],
+  "crmQualified": "CRM-IND-000",
+  "unchangedKernel": [
+    "ORD-A",
+    "OL-A",
+    "ORD-B",
+    "OL-B",
+    "POL-1",
+    "POL-2",
+    "RES-B"
+  ],
+  "operatorEventsInCurrentSnapshot": false,
+  "additionalContext": "Proposed sidecar, pending industrial.ts",
+  "authority": "No new server role or approval ceiling. Source facts do not authenticate an actor.",
+  "preparedByThreadId": "01a16306-b164-72f3-83d9-9edd27ded2ef"
+}

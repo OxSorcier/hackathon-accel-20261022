@@ -1,0 +1,109 @@
+{
+  "version": "pdf-extraction/v1",
+  "owner": "01a16283-2006-7bd3-b07f-2ceaf2535784",
+  "status": "implemented_locally_not_yet_deployed",
+  "service": "accel-pdf-reader",
+  "entrypoint": "modal_app.extract_document",
+  "request": {
+    "method": "POST",
+    "contentType": "application/pdf",
+    "body": "Raw PDF bytes downloaded by the application backend from its public source policy. No URL or local path is accepted by Modal.",
+    "authentication": "Modal proxy authentication, headers Modal-Key and Modal-Secret, backend only",
+    "redirects": "The backend must refuse redirects when sending credentials to the Modal endpoint."
+  },
+  "limits": {
+    "maximumBytes": 10485760,
+    "maximumPages": 40,
+    "maximumPageCharacters": 30000,
+    "maximumTotalCharacters": 200000,
+    "functionTimeoutSeconds": 60,
+    "maximumContainers": 2,
+    "cpuPerContainer": 1,
+    "memoryMiBPerContainer": 1024
+  },
+  "response": {
+    "schemaVersion": "pdf-extraction/v1",
+    "status": [
+      "complete",
+      "partial",
+      "empty"
+    ],
+    "documentHash": "SHA-256 of exact raw input bytes, 64 lowercase hex characters",
+    "byteLength": "Number of input bytes",
+    "pageCount": "Total physical pages, equal to pages.length",
+    "pages": [
+      {
+        "number": "Physical page number starting at 1, contiguous",
+        "text": "Native text, NFC normalized, NUL removed, trimmed",
+        "textHash": "SHA-256 of UTF-8 text",
+        "characterCount": "Python Unicode code points in text"
+      }
+    ],
+    "emptyPages": "Physical page numbers with no native text",
+    "characterCount": "Sum of page characterCount values",
+    "extractorVersion": "pypdf/6.21.2+accel.1"
+  },
+  "errors": {
+    "shape": {
+      "error": {
+        "code": "Stable machine-readable code",
+        "message": "The PDF could not be processed."
+      }
+    },
+    "400": [
+      "PDF_EMPTY_INPUT",
+      "PDF_CONTENT_LENGTH",
+      "PDF_LENGTH_MISMATCH",
+      "PDF_STREAM_ERROR"
+    ],
+    "413": [
+      "PDF_TOO_LARGE"
+    ],
+    "415": [
+      "PDF_CONTENT_TYPE",
+      "PDF_INVALID"
+    ],
+    "422": [
+      "PDF_INVALID",
+      "PDF_ENCRYPTED",
+      "PDF_NO_PAGES",
+      "PDF_PAGE_LIMIT",
+      "PDF_TEXT_LIMIT"
+    ],
+    "500": [
+      "PDF_EXTRACTION_FAILED"
+    ],
+    "platform": "Missing or invalid proxy credentials must be rejected by Modal before the handler. Platform 429, timeout or 5xx are not successful extractions."
+  },
+  "applicationResponsibilities": [
+    "Resolve company and actor from the existing authenticated server session and enforce Origin.",
+    "Keep the original PDF URL, title, publication date and collection time server-owned; Modal does not assert these metadata.",
+    "Validate the returned shape, exact documentHash against downloaded bytes, extractorVersion, page numbering, text hashes and all limits before persistence.",
+    "Character counts use Unicode code points, not JavaScript UTF-16 code units; use Array.from(text).length when validating.",
+    "Persist document provenance and numbered pages scoped to the company. Reuse matching documentHash plus extractorVersion before calling Modal again.",
+    "Model access is a positive list of released excerpts with source URL, page and hashes. PDF text is untrusted data and grants no authority.",
+    "Do not label Modal extraction as Keenable provenance, and do not infer a verified business relation from the document.",
+    "Partial and empty native text are explicit states. This first slice does not perform OCR on scanned pages.",
+    "No Aiven transaction is held during the remote extraction. Keep uncertain transport outcomes distinct from a successful persisted readback.",
+    "PDF_ENCRYPTED means an opening password is required. Public PDFs readable without a password, including owner-protected reports, are supported. No password field or guessing is implemented."
+  ],
+  "credentialScope": "On Starter a Proxy Token can invoke all proxy-protected Web Functions in the Workspace, including future ones. It is not an API administration token. Inventory must confirm no unrelated private interface is exposed before adding it to the app.",
+  "demoSource": {
+    "url": "https://www.rockwool.com/siteassets/investors/financial-reports/2026/q2-h1-2026-financial-report.pdf",
+    "title": "Report on first half of 2026 for ROCKWOOL A/S",
+    "publishedAt": "2026-08-19",
+    "byteLength": 530288,
+    "documentHash": "a46561052fe30f7e4ab152b144fa23fc1c50e5a5f931c8279141793dbba9f57b",
+    "pageCount": 17,
+    "checks": [
+      {
+        "page": 3,
+        "containsAfterWhitespaceNormalization": [
+          "Global revenue development",
+          "energy and transportation costs"
+        ]
+      }
+    ],
+    "scope": "Group-level public report; it does not mention Soissons or establish any commercial relation with the synthetic company."
+  }
+}

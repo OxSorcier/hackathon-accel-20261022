@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-22T10:07:32.561700+00:00",
+  "status": "CANDIDATES_NOT_PRODUCT_EVENTS",
+  "context_policy": "Builder proposal only. Not automatically released to product model or loaded as customer facts.",
+  "candidates": [
+    {
+      "id": "draaf-nematode-20261008",
+      "publisher": "DRAAF Nouvelle-Aquitaine / SRAL",
+      "page_url": "https://draaf.nouvelle-aquitaine.agriculture.gouv.fr/nematode-du-pin-bulletin-d-information-du-8-octobre-2026-a4444.html",
+      "document_url": "https://draaf.nouvelle-aquitaine.agriculture.gouv.fr/IMG/pdf/bulletin_info_nematode_08102026-vf.pdf",
+      "published_on": "2026-10-12",
+      "document_date": "2026-10-08",
+      "observation_date": "2026-10-05",
+      "evidence_read": "Original HTML and ten-page PDF text",
+      "facts": [
+        {
+          "statement": "The bulletin describes authorisation requests for work on sensitive species during the cold period; identifying the destination establishment is part of the request information.",
+          "page": 2
+        },
+        {
+          "statement": "The bulletin reports ongoing management of identified trees and notes that a successor public contract is under examination.",
+          "page": 6
+        }
+      ],
+      "possible_link": "A customer lot or planned supply originating in the affected area, with matching species, material state, destination and valid current authorisations.",
+      "potential_actions": [
+        "Identify affected inbound lots and their actual regulatory status.",
+        "Request one missing origin/treatment/authorisation document from its responsible owner.",
+        "Recompute delivery dates or compatible alternatives only after the attributed constraints are established."
+      ],
+      "not_established": [
+        "Current complete legal requirements or boundaries",
+        "Any relationship with the synthetic company",
+        "A specific delayed shipment or stock volume",
+        "Eligibility to bid on a public contract whose offers are already under examination"
+      ]
+    },
+    {
+      "id": "region-fibre-excellence-20260907",
+      "publisher": "Région Occitanie",
+      "page_url": "https://www.laregion.fr/Fibre-Excellence-Carole-Delga-obtient-l-engagement-de-l-Etat-pour-financer-la",
+      "published_on": "2026-09-07",
+      "updated_on": "2026-09-08",
+      "evidence_read": "Original public regional statement",
+      "facts": [
+        {
+          "statement": "The region announces support for temporary continuation of activity and describes a request to be put to the court.",
+          "locator": "Opening and first section"
+        }
+      ],
+      "possible_link": "An attributed customer/supplier dependency on the named industrial establishment.",
+      "potential_actions": [
+        "Review a previous assumption of closure against the new attributed statement.",
+        "Obtain current court/industrial and commercial confirmation before changing deliveries."
+      ],
+      "not_established": [
+        "The later court ruling",
+        "Funding actually disbursed",
+        "Actual operation or deliveries on 22 October",
+        "Any existing synthetic supplier relationship"
+      ]
+    }
+  ],
+  "interpretation": "A source can reduce a previous risk hypothesis or support another action; a positive statement does not establish fulfilment."
+}

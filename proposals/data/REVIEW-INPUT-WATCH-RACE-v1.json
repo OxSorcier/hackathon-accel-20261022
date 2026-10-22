@@ -1,0 +1,18 @@
+{
+  "scopeSha256": "40b800f208fd634b3d370db3b24229a64ab1d2747c8c3ce044e8691108723de9",
+  "files": [
+    {
+      "path": "src/data/watch-repository.ts",
+      "sha256": "567b05c4d427b7df7d39211fd18d65b9e8172eb8db188f81c1ecb1ec6dafc437"
+    },
+    {
+      "path": "tests/data/watch-postgres.test.ts",
+      "sha256": "a788ad1295e396a65d61fddace822952fe73075d844ea5b3871e3a3295716f5e"
+    },
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "sha256": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08"
+    }
+  ],
+  "snapshot": "/tmp/accel-watch-race-review-v1"
+}

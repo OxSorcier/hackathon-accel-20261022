@@ -1,0 +1,14 @@
+--- a/src/domain/contract.ts
++++ b/src/domain/contract.ts
+@@ -93,8 +93,10 @@
+   if(!time || Number(time[2])>23 || Number(time[3])>59 || Number(time[4])>59 || !Number.isFinite(Date.parse(confirmedAt))) throw new DomainError('INVALID_CONFIRMATION_TIME');
+   calendarDate(time[1],'confirmedAt');
+   if(typeof raw.basis!=='string' || raw.basis.trim().length===0 || raw.basis.length>4000) throw new DomainError('INVALID_CONFIRMATION_BASIS');
++  const exposure = raw.exposureOrderLineIds;
++  if (exposure !== undefined && (!Array.isArray(exposure) || exposure.length > 10000 || exposure.some(value => typeof value !== 'string' || value.length === 0 || value.length > 160) || new Set(exposure).size !== exposure.length)) throw new DomainError('INVALID_CONFIRMATION_EXPOSURE');
+   return {kind:'inbound_date_confirmed',eventId:textField(raw.eventId,'eventId'),companyId:snapshot.companyId,caseId:ref.caseId,caseRevision:ref.caseRevision,
+-    purchaseOrderLineId,productId:line.product_id,previousExpectedDate,confirmedExpectedDate,actorId:textField(raw.actorId,'actorId'),confirmedAt,basis:raw.basis,businessRevision:snapshot.revision,policyVersion:snapshot.policyVersion,dataOrigin:'synthetic'};
++    purchaseOrderLineId,productId:line.product_id,previousExpectedDate,confirmedExpectedDate,actorId:textField(raw.actorId,'actorId'),confirmedAt,basis:raw.basis,businessRevision:snapshot.revision,policyVersion:snapshot.policyVersion,dataOrigin:'synthetic',...(exposure === undefined ? {} : {exposureOrderLineIds: [...exposure] as string[]})};
+ }
+ 
+ /** Compare actual and declared hypothetical coverage without writing either snapshot. */

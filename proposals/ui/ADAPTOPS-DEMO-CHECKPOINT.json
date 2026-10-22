@@ -1,0 +1,68 @@
+{
+  "version": 3,
+  "date": "2026-10-22",
+  "status": "BOUNDARIES_DELIVERED_FIRST_REAL_CAPTURE_PARSED_NEW_CENTRAL_DTO_REVIEW",
+  "humanAuthority": "Direct user message in 01a16316-d948-7672-b47f-395e6d411d33, verified through read_thread: update AdaptOps vision/demo, coordinate owners and prioritize application UX/UI.",
+  "direction": "Current frontend belongs to the native human Physical Impact mandate. Earlier direction A and raster proposals remain historical references; API owner makes no composition changes.",
+  "observation": {
+    "browser": "Aside local",
+    "url": "http://127.0.0.1:3001/",
+    "mode": "Read-only. No session change, analysis, approval, reset or execution.",
+    "screenshot": "proposals/ui/research/evidence/adaptops-real-3001-before.png",
+    "snapshot": "proposals/ui/research/evidence/adaptops-real-3001-before.snapshot.txt",
+    "width": 1440,
+    "documentWidth": 1440,
+    "mainRect": {
+      "x": 204,
+      "y": 96,
+      "width": 870
+    },
+    "observed": "Saved approved risk proposal with real public source, synthetic company records, 1420 EUR proposed purchase, conditional transfer, 16 trace events. Approval note explicitly states no purchase or stock transfer is confirmed. Generic question precedes saved work. Existing heading remains Signals & Decisions."
+  },
+  "priorities": [
+    {
+      "id": "prepared-company-home",
+      "priority": 1,
+      "existing": "Company snapshot, actor, revision, saved cases and proposals are supplied by the API.",
+      "proposedUi": "Brand header AdaptOps and a compact received-company overview, with saved work first and the question below it. Retain direction A and current navigation.",
+      "missingBackend": "A prepared automatic business report and collection-to-analysis trigger are not represented by the current UI contract.",
+      "status": "Typed industrial contract received. Adapter review in progress; integrated runtime and human frontend reception remain pending."
+    },
+    {
+      "id": "coordinated-plan",
+      "priority": 2,
+      "existing": "Risk case, source/business separation, coverage, options, cost and decision gates. Saved research UI currently under exact-code review.",
+      "proposedUi": "A common dossier that identifies proved relationships, positive/negative/mixed impacts and actions by team, from server-supplied results.",
+      "missingBackend": "Qualified CRM demand, free capacity, contribution after costs, positive/mixed impact evaluation and a common plan DTO.",
+      "status": "Typed industrial contract received. Adapter review in progress; integrated runtime and human frontend reception remain pending."
+    },
+    {
+      "id": "approved-action-result",
+      "priority": 3,
+      "existing": "Server approval and rejection receipts. Approval is explicitly separate from a purchase or movement of stock.",
+      "proposedUi": "Separate approved action, execution state and durable result readback, with retry or reconciliation only when supplied by the server.",
+      "missingBackend": "Execution command, authorization/idempotency contract, persistent action/result records and simulated effect readback.",
+      "status": "Typed industrial contract received. Adapter review in progress; integrated runtime and human frontend reception remain pending."
+    }
+  ],
+  "activeDelivery": {
+    "scope": "Optional central read DTO validation only",
+    "manifest": "proposals/ui/industrial/REVIEW-INPUT-v5.json",
+    "manifestSha256": "9717d6adde88a1af62b7ee3af3f7f81f27f801e36b730aaf61bfb2165ba277ea",
+    "state": "76 industrial/193 owned UI tests and root/targeted typecheck PASS. New fresh-context panel running."
+  },
+  "boundary": "3001 remains unchanged. Integrator owns shared contracts, root index title, candidate assembly and runtime reception. No commit/push/deploy.",
+  "updatedAt": "2026-10-22T12:23:24.516Z",
+  "history": "proposals/ui/industrial/ADAPTOPS-DEMO-CHECKPOINT-v2.json",
+  "priorDeliveries": {
+    "case": "proposals/ui/READY.json",
+    "savedResearch": "proposals/ui/research/READY.json"
+  },
+  "productName": "Physical Impact",
+  "frontendOwner": {
+    "threadId": "01a16346-9b6f-7b70-afc7-57775e697a94",
+    "title": "Faire le point par chantier",
+    "transfer": "proposals/ui/industrial/FRONT-TRANSFER.json"
+  },
+  "firstRealRead": "proposals/ui/industrial/REAL-READ-PARSER-CHECK.json"
+}

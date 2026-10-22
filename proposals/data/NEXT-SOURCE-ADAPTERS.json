@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "PROPOSED_NOT_IMPLEMENTED",
+  "existingResearch": "proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.md",
+  "owner": "Existing integrator for shared contract and assembly; existing data owner for adapters after contract reception",
+  "currentProductAdapters": ["boamp", "keenable"],
+  "extensionSeam": "Reuse CollectorInput, CollectionResult, SourceEvidence, the existing watch engine, company-scoped evidence table and occurrence scheduler. No second scheduler or source registry.",
+  "currentContractLimit": "SourceEvidence.provenance.provider is currently the explicit boamp|keenable union. A new RSS/API adapter requires an integrator-owned additive contract and source policy change. Do not mislabel a direct feed as Keenable or advertise arbitrary sources as plug-and-play.",
+  "suggestedNextSlice": [
+    {
+      "source": "FNB advertised RSS",
+      "researchEvidence": "Public feed read and parsed by the existing product research owner; 10 items observed",
+      "purpose": "Bounded direct sector updates without repeating web discovery",
+      "productStatus": "NOT_RUN",
+      "acceptance": "One bounded collection through existing scheduler; stable item identity, source URL, publication, retrieval, hash, unchanged de-duplication, changed-source version and error state"
+    },
+    {
+      "source": "Government company search",
+      "researchEvidence": "Public API HTTP 200 observed by existing product research owner",
+      "purpose": "Candidate entity and establishment resolution against the internal supplier master",
+      "productStatus": "NOT_RUN",
+      "acceptance": "Exact identifiers and homonym controls. A matched public company is not a confirmed supplier relationship. No commercial data in the public query."
+    }
+  ],
+  "otherCandidates": ["BODACC filtered notices", "Sitadel qualified regional demand", "France Bois Foret observatory RSS", "Official legal updates tied to company applicability"],
+  "dataLayers": {
+    "external": "Public APIs, feeds, issuer pages and search are complementary source routes, not interchangeable guarantees of coverage.",
+    "business": "Supplier master, orders, confirmations, stock, reservations and transport remain internal authoritative facts. Current application data are synthetic.",
+    "regulation": "Legal texts and guidance are external; applicability, roles, affected SKUs and company deadlines become qualified constraints only after validation.",
+    "commercial": "A qualified customer need, compatible product, free stock after reservations and an admissible priced delivery are required before a sales proposal. A public project alone is only a lead."
+  },
+  "limits": ["No new adapter in the exact Keenable freeze", "Research access success is distinct from product ingestion", "No complete regulatory or sector monitoring coverage claimed"]
+}

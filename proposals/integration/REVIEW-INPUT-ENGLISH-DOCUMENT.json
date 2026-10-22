@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "scope": "English HTML document language and title",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "e5e0d52744f844686b70bb6d116799587a84bcd90a2b2297b87637f9fc4d7b4f"
+    }
+  ]
+}

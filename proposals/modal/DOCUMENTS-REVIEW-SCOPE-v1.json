@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "revision": 1,
+  "unit": "pdf-document-storage",
+  "realizerModel": "gpt-6.1-sol",
+  "files": [
+    {
+      "path": "src/server/pdf-documents.ts",
+      "sha256": "7f7e11ff9452793fd8c4bc0035a4da1458dc7bf1cb7310693c54bf0ef8764497"
+    },
+    {
+      "path": "tests/integration/pdf-documents.test.ts",
+      "sha256": "02413389e827866988b257224248b5f6b1bf2a2948ca331865274ef413b7fc85"
+    },
+    {
+      "path": "proposals/modal/PDF-DOCUMENTS.sql",
+      "sha256": "3aee5af2e2877aef1077905c2ba54617ee90f5260c9a144bec6fe13bac0d1c4a"
+    },
+    {
+      "path": "src/server/pdf-client.ts",
+      "sha256": "7534e0159adcdbac2c1310e5641d9b66e8dd07ab6eeecf797cf6eb767bd50ab4"
+    },
+    {
+      "path": "proposals/modal/CONTRACT.json",
+      "sha256": "b4d2d366464e47f1b092282a3c2adac91cebb0347fc2a78eb16e59fe2969431f"
+    }
+  ]
+}

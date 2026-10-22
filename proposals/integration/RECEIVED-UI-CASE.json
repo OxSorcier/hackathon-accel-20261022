@@ -1,0 +1,86 @@
+{
+  "receivedAt": "2026-10-22T10:17:58.594059+00:00",
+  "receipt": "proposals/ui/READY.json",
+  "sourceFingerprint": "4c0c57ca0f8b82acdcfd0fcab4ca5289fda068d64fdc0ce8e17aad5a7fae8bac",
+  "allMatch": true,
+  "checks": [
+    {
+      "path": "src/ui/App.tsx",
+      "expected": "51f4372e68dc2ba4d544e5d9936a57908053792e93bdedf29f91eda60c02a581",
+      "actual": "51f4372e68dc2ba4d544e5d9936a57908053792e93bdedf29f91eda60c02a581",
+      "match": true
+    },
+    {
+      "path": "src/ui/CasePanel.tsx",
+      "expected": "cd77f57b7de7f4e5dd908b5da55273e43bdf526540384a656b615e2df767572f",
+      "actual": "cd77f57b7de7f4e5dd908b5da55273e43bdf526540384a656b615e2df767572f",
+      "match": true
+    },
+    {
+      "path": "src/ui/api.ts",
+      "expected": "c19a873725f648591e741ade90132851ef857199b5e043aae5b92b74d8c25a8a",
+      "actual": "c19a873725f648591e741ade90132851ef857199b5e043aae5b92b74d8c25a8a",
+      "match": true
+    },
+    {
+      "path": "src/ui/format.ts",
+      "expected": "9c55a328db8409b957e3e2a9111d4d7f8396b27c908471d1e02eec1362ec0bef",
+      "actual": "9c55a328db8409b957e3e2a9111d4d7f8396b27c908471d1e02eec1362ec0bef",
+      "match": true
+    },
+    {
+      "path": "src/ui/index.ts",
+      "expected": "93dacefe521e1a71ef4708549f47da3cbafc20c54a3c8da842bb70fb491c7663",
+      "actual": "93dacefe521e1a71ef4708549f47da3cbafc20c54a3c8da842bb70fb491c7663",
+      "match": true
+    },
+    {
+      "path": "src/ui/styles.css",
+      "expected": "f02961321fc188292ff26b3c7daf87fe92fbb07d7d0e1402053568b4e8f05cab",
+      "actual": "f02961321fc188292ff26b3c7daf87fe92fbb07d7d0e1402053568b4e8f05cab",
+      "match": true
+    },
+    {
+      "path": "src/ui/types.ts",
+      "expected": "c8fc1eceb87aeae8d93f34d3199248f3b5589cfeac3c892253e37a7dab28810a",
+      "actual": "c8fc1eceb87aeae8d93f34d3199248f3b5589cfeac3c892253e37a7dab28810a",
+      "match": true
+    },
+    {
+      "path": "tests/ui/api.test.ts",
+      "expected": "9e6b64b5fe9da341d64fdcb70d9cf4d672991cb660538c4cc5ef6a4dcedc34da",
+      "actual": "9e6b64b5fe9da341d64fdcb70d9cf4d672991cb660538c4cc5ef6a4dcedc34da",
+      "match": true
+    },
+    {
+      "path": "tests/ui/case-api.test.ts",
+      "expected": "a1f8b7c7cda487d84a0080ada52b9f952da75ac2e1b4d523b24257f19cf0815b",
+      "actual": "a1f8b7c7cda487d84a0080ada52b9f952da75ac2e1b4d523b24257f19cf0815b",
+      "match": true
+    },
+    {
+      "path": "tests/ui/fixtures.ts",
+      "expected": "3382ac8cf197fddbfeb0a162a5e16151c38e211ffee65a4958341afc1bfea8c9",
+      "actual": "3382ac8cf197fddbfeb0a162a5e16151c38e211ffee65a4958341afc1bfea8c9",
+      "match": true
+    },
+    {
+      "path": "tests/ui/preview.html",
+      "expected": "e3a2494290a035d87f27c6ae54b062cdde35baf79b4dfe977591216b9c912219",
+      "actual": "e3a2494290a035d87f27c6ae54b062cdde35baf79b4dfe977591216b9c912219",
+      "match": true
+    },
+    {
+      "path": "tests/ui/preview.tsx",
+      "expected": "3aa36d35dc3f116029bf866bb6745982a979b5dcfd07372fb89bb18cc3664597",
+      "actual": "3aa36d35dc3f116029bf866bb6745982a979b5dcfd07372fb89bb18cc3664597",
+      "match": true
+    },
+    {
+      "path": "tests/ui/responsive.html",
+      "expected": "c5bfd4cdf9bc51a011ed710da0d2e88151f17435356865bee176f9822a3017c1",
+      "actual": "c5bfd4cdf9bc51a011ed710da0d2e88151f17435356865bee176f9822a3017c1",
+      "match": true
+    }
+  ]
+}

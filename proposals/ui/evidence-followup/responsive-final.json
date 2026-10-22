@@ -1,0 +1,86 @@
+[
+  {
+    "requested": 320,
+    "viewport": 320,
+    "documentWidth": 320,
+    "caseWidth": 296,
+    "navLabels": [
+      {
+        "text": "Needs decision",
+        "whiteSpace": "normal",
+        "insideButton": true
+      },
+      {
+        "text": "In progress",
+        "whiteSpace": "normal",
+        "insideButton": true
+      },
+      {
+        "text": "Completed",
+        "whiteSpace": "normal",
+        "insideButton": true
+      },
+      {
+        "text": "Watches",
+        "whiteSpace": "normal",
+        "insideButton": true
+      }
+    ]
+  },
+  {
+    "requested": 390,
+    "viewport": 390,
+    "documentWidth": 390,
+    "caseWidth": 366,
+    "navLabels": [
+      {
+        "text": "Needs decision",
+        "whiteSpace": "normal",
+        "insideButton": true
+      },
+      {
+        "text": "In progress",
+        "whiteSpace": "normal",
+        "insideButton": true
+      },
+      {
+        "text": "Completed",
+        "whiteSpace": "normal",
+        "insideButton": true
+      },
+      {
+        "text": "Watches",
+        "whiteSpace": "normal",
+        "insideButton": true
+      }
+    ]
+  },
+  {
+    "requested": 768,
+    "viewport": 768,
+    "documentWidth": 768,
+    "caseWidth": 574,
+    "navLabels": [
+      {
+        "text": "Needs decision",
+        "whiteSpace": "nowrap",
+        "insideButton": true
+      },
+      {
+        "text": "In progress",
+        "whiteSpace": "nowrap",
+        "insideButton": true
+      },
+      {
+        "text": "Completed",
+        "whiteSpace": "nowrap",
+        "insideButton": true
+      },
+      {
+        "text": "Watches",
+        "whiteSpace": "nowrap",
+        "insideButton": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "boundaryReceipt": "proposals/ui/industrial/READY-freshness-v1.json",
+  "rootTypecheck": "PASS on final rerun after concurrent frontend type errors were resolved by its owner",
+  "boundaryTests": "65 industrial tests and 117 existing UI tests PASS; concurrent physical-model test was excluded from that run",
+  "meaning": "The root typecheck now passes. It does not review the new frontend, prove its live data connection or supersede the exact boundary review receipts.",
+  "frontendOwner": "01a16346-9b6f-7b70-afc7-57775e697a94",
+  "integratedIndustrialRuntime": "NOT_RUN by this UI boundary owner; exact candidate and central read DTOs pending"
+}

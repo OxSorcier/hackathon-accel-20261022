@@ -1,0 +1,159 @@
+{
+  "version": 2,
+  "title": "Physical Impact: clean centered website and live-demo entry",
+  "date": "2026-10-22T14:19:59.874535+02:00",
+  "status": "published_and_public_demo_entry_verified",
+  "scope": "Static presentation website, separate from the hackathon product application.",
+  "urls": [
+    "https://physical-impact.com/",
+    "https://www.physical-impact.com/"
+  ],
+  "vercel": {
+    "scope": "erwan-gallos-projects",
+    "project": "physical-impact",
+    "project_id": "prj_29Ll1mw7Csrbz07CjM2jkGhQAH6O",
+    "last_landing_only_deployment_id": "dpl_2WvwPN99vYQZkJa33t8FRZDABfVH",
+    "current_combined_deployment_id": "Owner receipt pending; public routes and exact HTML observed."
+  },
+  "dns": {
+    "provider": "Namecheap BasicDNS",
+    "records": [
+      {
+        "type": "A",
+        "host": "@",
+        "value": "76.76.21.21",
+        "ttl_seconds": 60
+      },
+      {
+        "type": "A",
+        "host": "www",
+        "value": "76.76.21.21",
+        "ttl_seconds": 60
+      }
+    ],
+    "record_save_readback": "PASS"
+  },
+  "source_sha256": {
+    "index.html": "a736696feadf0807715e763b555d46e752af3fdee1b6d67ce36a5f9aa2259626",
+    "styles.css": "7d7049e2778adee14b8d969626e3b1d3a519fca3069e72affa40e2746b797bb4",
+    "sitemap.xml": "7a63cd288812d305ac7af13175756c7b97cd97f8dde6bb732867f465a945c425",
+    "robots.txt": "1736b7640aefd8c934965a0c62e634171b6db72de28cc2a2b35f70bb57194f68",
+    "favicon.svg": "ba752bc89ffe2432afb8619e13e525391d1335f8105608d29bcc6b2b7d7da365",
+    "demo/index.html": "3993d8e3dc257b7aa3e4c07aeb6e8821c9c6a1f7b6c888cf44920f393b3bb7c6",
+    "assets/Inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "assets/inter-latin.woff2": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+  },
+  "checks": {
+    "static_routes_anchors_assets": "PASS",
+    "independent_chromium_home_demo_viewports": [
+      390,
+      768,
+      1440
+    ],
+    "aside_desktop_width": 1440,
+    "aside_responsive_iframe_widths": [
+      390,
+      768
+    ],
+    "overflow": "none at tested widths",
+    "local_demo_entry_and_return": "PASS",
+    "public_https_root": 200,
+    "public_https_www": 200,
+    "public_https_demo_root_www": 200,
+    "public_source_and_font_matches": true,
+    "font": "Local Inter Latin WOFF2 with OFL licence",
+    "keyboard_focus_and_skip": "PASS in independent Chromium check",
+    "reduced_motion": "PASS in independent Chromium check",
+    "cta_min_contrast": "4.91:1",
+    "public_demo_button_click": "PASS in Aside from root landing to Rivebois Overview",
+    "demo_root_www_and_slash_variants": "HTTPS 200 for all four route variants; /demo/ redirects to /demo",
+    "landing_html_preserved": "Exact SHA-256 a736696feadf0807715e763b555d46e752af3fdee1b6d67ce36a5f9aa2259626 on root and www"
+  },
+  "reviews": [
+    {
+      "role": "same_model_counter_review",
+      "reviewer": "/root/site_v2_counter",
+      "requested_model": "inherited active parent runtime",
+      "served_model_identity": "Not separately attested",
+      "context": "fresh fork_turns none, high effort",
+      "status": "final exact version reviewed",
+      "remaining_findings": []
+    },
+    {
+      "role": "architecture_review",
+      "reviewer": "/root/site_v2_architecture",
+      "requested_model": "gpt-6-astra",
+      "served_model_identity": "Not separately attested",
+      "context": "fresh fork_turns none, high effort",
+      "status": "final exact version and HTML delta reviewed",
+      "remaining_findings": [],
+      "correction": "Green CTA contrast fixed and independently calculated."
+    }
+  ],
+  "limits": [
+    "App UI under src/ui remains owned by its current builders; no files there modified.",
+    "Physical mobile device, Safari, Firefox and real screen reader NOT_RUN.",
+    "Aside viewport API unavailable; parent used responsive iframes and independent reviewer used isolated Chromium as fallback.",
+    "Only the public app entry and visible Overview were independently observed by this chat. Full scenario execution, persistence/reset and code reviews belong to the app owner receipts. No real backend integration result is asserted here."
+  ],
+  "authorization": {
+    "root": "User requested creation and publication after domain purchase.",
+    "www": "Explicit user approval received in this chat after automatic review initially rejected additional subdomain.",
+    "git_commit_push": "NOT_RUN",
+    "update": "User asked for the refactor in this chat after approving the live website. Existing publication authorization retained."
+  },
+  "hosting_choice": "Sites was consulted; its source helper performs Git commit/push. Vercel CLI prebuilt upload used instead to preserve the no-commit/no-push instruction.",
+  "sources_used": [
+    "docs/PRODUCT-VISION.md",
+    "proposals/product/alignment-20261022/v2/WEBSITE-COPY.md",
+    "User naming and publication instructions in this chat"
+  ],
+  "evidence_directory": "evidence/v2/",
+  "supersedes": "history/v1/READY.json",
+  "design_authority": [
+    "User-provided references in references/01-airy-enterprise-cards.png and references/02-centered-product-hero.png.",
+    "User asks for much cleaner UX/UI and a top live-test entry for the future demo."
+  ],
+  "demo_entry": {
+    "url": "https://physical-impact.com/demo",
+    "button_href": "/demo/",
+    "state": "interactive_demo_connected",
+    "frontend_app_connected": true,
+    "backend_product_connection": "Separate ongoing work, not asserted by this reception.",
+    "owner_thread_id": "01a16346-9b6f-7b70-afc7-57775e697a94",
+    "owner_thread_title": "Faire le point par chantier",
+    "observed_mode": "Demo: scenario data, conversation and simulated action flow.",
+    "observed_navigation": [
+      "Overview",
+      "Actions",
+      "Watchtower"
+    ],
+    "observed_company": "Rivebois Mat\u00e9riaux",
+    "observed_script": "/assets/index-Cetc72Ly.js",
+    "landing_unchanged": true,
+    "coming_soon_placeholder_active": false
+  },
+  "demo_connection_reception": {
+    "date": "2026-10-22T14:29:08.538955+02:00",
+    "evidence": "evidence/demo-connection/",
+    "source_changes_in_this_reception": false,
+    "deployment_by_this_chat": false,
+    "received_existing_owner_activation": true,
+    "meaning": "The existing landing href now opens the independently published interactive app."
+  },
+  "publication_contract": "Future landing publication must preserve the active /demo app route, its assets and the combined deployment configuration from owner thread 01a16346. Do not deploy the old standalone .vercel/output or the historical dist/demo/index.html placeholder over the live demo. Reconcile with the app owner before the next publication.",
+  "copy_alignment_assessment": {
+    "source": "docs/PRODUCT-VISION.md version 3 and current public site/app",
+    "clear": [
+      "Market signal to company impact to a coordinated response.",
+      "Purchasing, operations and sales work together."
+    ],
+    "underexplained": [
+      "Company knowledge exists before a new question.",
+      "Risks and opportunities are assessed together.",
+      "Approved actions and reassessment complete the target loop."
+    ],
+    "art_direction_changed": false,
+    "copy_changed": false
+  }
+}

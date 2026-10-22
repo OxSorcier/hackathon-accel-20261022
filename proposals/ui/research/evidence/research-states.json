@@ -1,0 +1,58 @@
+[
+  {
+    "name": "missing",
+    "uncertain": false,
+    "readFailure": false,
+    "disabled": false,
+    "alert": false
+  },
+  {
+    "name": "stale",
+    "uncertain": false,
+    "readFailure": false,
+    "disabled": false,
+    "alert": false
+  },
+  {
+    "name": "partial",
+    "uncertain": false,
+    "readFailure": false,
+    "disabled": false,
+    "alert": false
+  },
+  {
+    "name": "empty",
+    "uncertain": false,
+    "readFailure": false,
+    "disabled": false,
+    "alert": false
+  },
+  {
+    "name": "error",
+    "uncertain": false,
+    "readFailure": false,
+    "disabled": false,
+    "alert": false
+  },
+  {
+    "name": "uncertain",
+    "uncertain": true,
+    "readFailure": false,
+    "disabled": true,
+    "alert": false
+  },
+  {
+    "name": "command-uncertain",
+    "uncertain": false,
+    "readFailure": false,
+    "disabled": false,
+    "alert": true
+  },
+  {
+    "name": "read-error",
+    "uncertain": false,
+    "readFailure": true,
+    "disabled": true,
+    "alert": true
+  }
+]

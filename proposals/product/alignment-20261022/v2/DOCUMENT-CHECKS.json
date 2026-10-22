@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-10-22T11:18:04.280Z",
+  "browser": "isolated bundled Chromium; offline file URL",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "DATA-RECEIPT",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 9,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "DATA-RECEIPT",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 9,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "DATA-RECEIPT",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 9,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "PRESS-RELEASE",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 5,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "PRESS-RELEASE",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 5,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "PRESS-RELEASE",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 5,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "WEBSITE-COPY",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 7,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "WEBSITE-COPY",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 7,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "WEBSITE-COPY",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 7,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    }
+  ]
+}

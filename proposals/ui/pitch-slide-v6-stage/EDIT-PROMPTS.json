@@ -1,0 +1,21 @@
+{
+  "version": 6,
+  "purpose": "Consolidated visual and semantic cleanup after first inspection",
+  "edits": [
+    {
+      "key": "A-prepared-response",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-fe0024bc-b8c1-4498-bb1b-e3f6e772d9bf.png",
+      "prompt": "Refine this AdaptOps single slide with three precise content/layout fixes only. Preserve the 16:9 canvas, brand, tagline, one-line pitch, whitespace, proof comparison and entire WHO/WHY NOW/FIRST USERS/scope footer.\n1. In the Risks and opportunities box replace its four bullet sentences with exactly:\n\"Supply risk to assess\"\n\"Supplier relationship to verify\"\n\"New demand to qualify\"\n\"Available capacity to confirm\"\nKeep them comfortably spaced, with the first two amber and last two green. Do not add price, demand or event claims.\n2. Under the four plan roles use these concise exact descriptions, replacing the current optionality/support text:\nProcurement: \"Confirm alternative supply\"\nOperations: \"Protect existing deliveries\"\nSales: \"Qualify additional demand\"\nFinance: \"Review cost and margin\"\nKeep the role headings and fit the body cleanly.\n3. Correct the feedback connection: verified results should return to the company-brief/context area, not directly back into the Approve & execute button. Use one thin unobtrusive line routed in empty margins from the result area back to the top company brief, without crossing text or arrows ending at the approval button.\nNo other changes. All English text clean and readable. Return the full slide."
+    },
+    {
+      "key": "B-stage-story",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-b88d1f15-95a8-4e23-9319-5253359d4540.png",
+      "prompt": "Make one local refinement to the right-hand approval product moment in this AdaptOps slide, preserving EVERYTHING else exactly. In the list beneath the heading Approve & execute, replace the three grey placeholder action lines with these three legible concise action names, one per row:\n\"Confirm alternative supply\"\n\"Protect existing deliveries\"\n\"Qualify additional demand\"\nReplace each \"Approved\" status pill with \"Review\". Replace each green completed check icon in those three rows with a simple unselected checkbox outline. This is the proposed state BEFORE user approval, so no row may look already executed or approved. Preserve the heading, downstream verification/memory area, all positions and other slide content including the synthetic proof and footer. Keep exact 16:9 size, layout, style and spacing. Do not add anything else."
+    },
+    {
+      "key": "C-plan-and-proof",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-9841f5c9-7c90-47c5-86b5-c70745d5f43e.png",
+      "prompt": "Refine only the central product-story area of this AdaptOps single slide. Preserve the entire top brand/tagline/promise, the right-hand SYNTHETIC DATA TEST evidence column, all proof wording, the WHO/WHY NOW/FIRST USERS footer and scope note. Keep canvas 16:9, white/petrol/mint palette and typography.\nReplace the SEVEN narrow vertical mini-panels in the central left 70% with exactly THREE wider and much calmer product moments, with generous padding and readable type:\nMoment 1: title \"Your company brief is ready\", with \"ERP / CRM / WMS + prior research\" and the line \"Risks and opportunities\".\nMoment 2: title \"One coordinated plan\", with an open row/list of \"Procurement\", \"Operations\", \"Sales\", \"Finance\", then \"Protect deliveries. Qualify new demand.\"\nMoment 3: title \"Approve & execute\", followed by \"Verify results. Remember. Reassess.\" It is a proposed action control, do not show a completed external transaction.\nKeep minimal thin connections between these three moments and ONE returning line from results/memory to the company-brief moment. Keep the data caption under this area exactly: \"Public sources + company records. Evidence and memory in Aiven PostgreSQL.\"\nNo extra cards, paragraphs, icon wallpaper or invented details. Do not modify the right proof column, headline or footer. Return the complete slide."
+    }
+  ]
+}

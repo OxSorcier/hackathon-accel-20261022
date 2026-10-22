@@ -1,0 +1,167 @@
+{
+  "status": "RECONCILED_COMPLETED_FIRST_RUN_WITH_LIMITS",
+  "checkedAt": "2026-10-22T11:38:27.178Z",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "sourceFingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631",
+  "manifestDigest": "8d5dd09d6a4c0ca15bb9f5ab61c0adcea46544a32aca2914e1430d311f8749f4",
+  "oracleSha256": "6379046fd7c4482c748ab0635164137245d2067820b9641617dc1afe0b692088",
+  "pid": null,
+  "sessionHash": null,
+  "runId": "8102d357-fa5e-4bd3-8be4-81696141a940",
+  "actorId": "EMP-PAUL",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "question": "Consult the prior research already stored for the Soissons industrial project. Retrieve its attributed sources, publication and observation dates, and limits. Read research memory first. Do not refresh or prepare a business proposal.",
+  "createdAt": "2026-10-22T11:33:02.686Z",
+  "completedAt": "2026-10-22T11:33:12.534Z",
+  "model": "gpt-5.4-mini",
+  "runStatus": "needs_input",
+  "researchOutcome": "available",
+  "sources": [
+    {
+      "ref": {
+        "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+        "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+        "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+      },
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-10-juillet-2026/",
+      "publishedAt": "2026-07-10T14:04:59.000Z",
+      "collectedAt": "2026-10-22T10:32:29.137Z",
+      "qualification": "source_observation_only",
+      "conditions": [
+        "SOURCE_OBSERVATION_ONLY",
+        "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+        "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+        "PARTIAL_SOURCE_SET"
+      ]
+    },
+    {
+      "ref": {
+        "evidenceId": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+        "contentHash": "8b10fcbbb062cf9a666237dd8cb8fd3d7369262d2e266954561c2ddaece2a40f",
+        "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+      },
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026/",
+      "publishedAt": null,
+      "collectedAt": "2026-10-22T10:32:29.364Z",
+      "qualification": "source_observation_only",
+      "conditions": [
+        "SOURCE_OBSERVATION_ONLY",
+        "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+        "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+        "PARTIAL_SOURCE_SET"
+      ]
+    },
+    {
+      "ref": {
+        "evidenceId": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+        "contentHash": "48a4cf4a9ee460c1d41466774a300b75524fb681a1fd9eddc27c1b62e205007d",
+        "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+      },
+      "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-02-janvier-2026/",
+      "publishedAt": "2026-01-02T00:00:00.000Z",
+      "collectedAt": "2026-10-22T10:32:29.676Z",
+      "qualification": "source_observation_only",
+      "conditions": [
+        "SOURCE_OBSERVATION_ONLY",
+        "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+        "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+        "PARTIAL_SOURCE_SET"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "scope": {
+        "namespace": "live",
+        "profileId": "soissons-project",
+        "profileVersion": "v1"
+      },
+      "generation": 1,
+      "validUntil": "2026-10-23T10:32:29.676Z",
+      "evidenceRefs": [
+        {
+          "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+          "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+          "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+        },
+        {
+          "evidenceId": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+          "contentHash": "8b10fcbbb062cf9a666237dd8cb8fd3d7369262d2e266954561c2ddaece2a40f",
+          "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+        },
+        {
+          "evidenceId": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+          "contentHash": "48a4cf4a9ee460c1d41466774a300b75524fb681a1fd9eddc27c1b62e205007d",
+          "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+        }
+      ]
+    }
+  ],
+  "traces": [
+    {
+      "id": "8102d357-fa5e-4bd3-8be4-81696141a940:trace:3",
+      "tool": "model_result",
+      "startedAt": "2026-10-22T11:33:04.167Z",
+      "completedAt": "2026-10-22T11:33:06.405Z",
+      "output": {
+        "usage": {
+          "inputTokens": 1009,
+          "totalTokens": 1024,
+          "outputTokens": 15
+        },
+        "status": "tool_calls"
+      }
+    },
+    {
+      "id": "8102d357-fa5e-4bd3-8be4-81696141a940:trace:4",
+      "tool": "read_research_context",
+      "startedAt": "2026-10-22T11:33:06.657Z",
+      "completedAt": "2026-10-22T11:33:06.834Z",
+      "output": {
+        "state": "reusable",
+        "externalCalls": 0,
+        "refs": [
+          {
+            "evidenceId": "keenable:7f299e9208db7e6f5ad2592fda0977df1134600e8a02ede2d657a20c69c150f8",
+            "contentHash": "1a4d8c9fa2d63762fbd8b3b858da388829ed8f83174d3cdb849955dc0031e724",
+            "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+          },
+          {
+            "evidenceId": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+            "contentHash": "8b10fcbbb062cf9a666237dd8cb8fd3d7369262d2e266954561c2ddaece2a40f",
+            "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+          },
+          {
+            "evidenceId": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+            "contentHash": "48a4cf4a9ee460c1d41466774a300b75524fb681a1fd9eddc27c1b62e205007d",
+            "occurrenceId": "occ:13c9247ddfa06d84522d62edfb109d3bab58ed477bbbf5991d8e11e4fb3ee5e3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8102d357-fa5e-4bd3-8be4-81696141a940:trace:6",
+      "tool": "model_result",
+      "startedAt": "2026-10-22T11:33:07.007Z",
+      "completedAt": "2026-10-22T11:33:12.383Z",
+      "output": {
+        "usage": {
+          "inputTokens": 3868,
+          "totalTokens": 4754,
+          "outputTokens": 886
+        },
+        "status": "needs_input"
+      }
+    }
+  ],
+  "sessionRowsAfterFirst": 1,
+  "firstSessionCleanup": "DELETE request with JSON content type and no body did not delete session. Token not retained. No token copied, printed or reused. Second login must create a distinct second row.",
+  "negativeReceipt": "proposals/agent/R1-FIRST-FAILURE.json",
+  "metrics": "NOT_RETAINED",
+  "firstInitialContextEvidence": "Actual model call passed frozen serve.ts initial-system/user positive guard before network transport; context_manifest retained in run.",
+  "limits": [
+    "Original R1-FIRST-FAILURE preserved.",
+    "First model completed; process cleanup executed before parent nonzero exit. PID/session hashes and IPC transport metrics were not retained and cannot be reconstructed.",
+    "No new model, web request, mutation or reseed during this reconciliation."
+  ]
+}

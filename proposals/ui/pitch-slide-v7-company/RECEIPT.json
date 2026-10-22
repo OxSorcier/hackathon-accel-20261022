@@ -1,0 +1,53 @@
+{
+  "version": 7,
+  "date": "2026-10-22",
+  "status": "THREE_COMPANY_PITCH_IMAGES_INSPECTED",
+  "authority": "Direct user correction: pitch the product and business value, not the build or demo",
+  "generation_mode": "built-in image_gen",
+  "files": [
+    {
+      "path": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/pitch-slide-v7-company/A-company-promise.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "43fc670662c94063b758e25a25368b5a485d123c11a93b48bb503f9dee10d97b"
+    },
+    {
+      "path": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/pitch-slide-v7-company/B-response-ready.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0e27577b2894684b6d8d0a63db112867fee3bb127b6c9432d23abf7d5ee5ab6f"
+    },
+    {
+      "path": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/pitch-slide-v7-company/C-adaptation-business.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0e5903f92710d64de458496d960bb25f4125d76bde252940bc7410fa4b01d9e5"
+    }
+  ],
+  "recommended_direction": "A-company-promise",
+  "prompt_files": [
+    "PROMPTS.json",
+    "EDIT-PROMPTS.json"
+  ],
+  "supersedes": "../pitch-slide-v6-stage/RECEIPT.json",
+  "editorial_decision": "Commercial positioning, business benefits, audience, timing and first-user acquisition. Evaluation details belong in separate evidence, not this slide.",
+  "coverage": [
+    "AdaptOps brand and received tagline",
+    "Prepared response and company adaptation loop",
+    "Customer commitments, additional demand and cross-team coordination",
+    "Operations/procurement audience, first market timber/materials",
+    "Technology timing through research/context/action",
+    "Planned three-design-partner acquisition through founder introductions, then site expansion"
+  ],
+  "inspection": [
+    "All final images inspected for English copy, composition and fit",
+    "No test, benchmark, synthetic-data, cost or prototype panels in final visuals",
+    "No fabricated traction, savings, paying customer or deployment metrics",
+    "A unqualified always-current wording and small photo removed",
+    "B background photos removed and action/outcome copy changed to active product functions",
+    "C decorative wave background removed",
+    "No clipping or accidental overlap observed"
+  ],
+  "scope": "Company/product positioning. These images do not certify current implementation or acquired traction.",
+  "google_slides": "Deferred by user; no remote creation, sharing or submission performed"
+}

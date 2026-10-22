@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "date": "2026-10-22",
+  "session_id": "01a16342-aae4-7882-9b65-698e60c2c0a3",
+  "status": "VISUAL_CANDIDATES_AWAITING_USER_DIRECTION",
+  "humanRequest": "Keep visuals in this chat for now; make the app sleek, clean and immediately understandable.",
+  "designAuthority": "Direction A retained. AdaptOps English authored UI. Product scope unchanged.",
+  "method": {
+    "skill": "/Users/erwan/.codex/skills/ux-ui-visual-first/SKILL.md",
+    "tool": "built-in image_gen",
+    "comparison": "Three different compositions, same content, viewport and product constraints."
+  },
+  "artifacts": [
+    {
+      "path": "design/adaptops-demo-v2/A-decision-first.png",
+      "sha256": "b68a273e4d13f3d725ba1050af3defa1a500a3372825d79e60ed36000e4891e3"
+    },
+    {
+      "path": "design/adaptops-demo-v2/B-impact-workspace.png",
+      "sha256": "5cdb5a3624d65d80b39dcb198cfd19f478fbce14563a18fa36b71744e4dfc0b1"
+    },
+    {
+      "path": "design/adaptops-demo-v2/C-company-brief.png",
+      "sha256": "042dc11067cd8175066f436c9e0e3e6df623b17cee367ed287f1eb959c9a3d5e"
+    },
+    {
+      "path": "design/adaptops-demo-v2/PROMPTS.json",
+      "sha256": "fefc367ab12412dd7c87f191491ff0a9cc561e0f2c5e41d24d211f035adfacc5"
+    }
+  ],
+  "dimensions": {
+    "width": 1586,
+    "height": 992,
+    "verified": "sips readback of all three saved PNG files"
+  },
+  "visualInspection": {
+    "A": "Decision-first composition. Large primary case and proposed-cost summary. Opportunity secondary.",
+    "B": "List and inspector workspace. Shared risk/opportunity list; one selected dossier, protected reservation and proposed cost visible.",
+    "C": "Editorial brief. Sequential change, impact and next action with received company context.",
+    "shared": "All three generated outputs inspected. English text legible, navigation preserved, no invented numerical metrics observed, EUR1420 is a proposed purchase cost, opportunity remains to qualify. Images are not runtime evidence."
+  },
+  "recommendation": "B as the main cockpit; use C's change/impact/next-action hierarchy inside a dossier. Proposed, not a received user decision.",
+  "sourcePaths": [
+    "docs/STATUS.md",
+    "docs/PRODUCT-VISION.md",
+    "docs/OWNERSHIP.md",
+    "proposals/ui/ADAPTOPS-DEMO-CHECKPOINT.json",
+    "design/A-bureau-decisions.png",
+    "design/adaptops-demo-v1/RECEIPT.json"
+  ],
+  "dataBoundary": "Actual public collection with provenance and date limits; synthetic company and internal event; real model/calculation/database risk-flow evidence in current owner status. No new model, collection, approval, stock effect or end-to-end test run by this chat.",
+  "previous": "../adaptops-demo-v1/RECEIPT.json",
+  "ownerMessaging": "NOT_SENT. User declined relay for now.",
+  "application": "UNCHANGED by this visual scope. Further implementation held for visual direction per user request.",
+  "publicSharing": "NOT_RUN. Local copies only, no external archive or public publication claimed."
+}

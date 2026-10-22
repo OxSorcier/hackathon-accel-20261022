@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T09:00:46.988Z",
+  "role": "data",
+  "receiptHash": "85ec0ede29398d6e99a421d4c077e16379bca1cbfec585d4ecc8d9b26ed5385b",
+  "files": [
+    {
+      "path": "proposals/data/INTEGRATION.md",
+      "match": true
+    },
+    {
+      "path": "proposals/data/LIVE-COLLECTION-PG-CYCLE2.json",
+      "match": true
+    },
+    {
+      "path": "proposals/data/LIVE-COLLECTION-PG.json",
+      "match": true
+    },
+    {
+      "path": "proposals/data/REVIEW-INPUT-cycle1.json",
+      "match": true
+    },
+    {
+      "path": "proposals/data/REVIEW-INPUT.json",
+      "match": true
+    },
+    {
+      "path": "proposals/data/REVIEW-RECEIPT.json",
+      "match": true
+    },
+    {
+      "path": "proposals/data/VERIFICATION.json",
+      "match": true
+    },
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "match": true
+    },
+    {
+      "path": "src/data/validation.ts",
+      "match": true
+    },
+    {
+      "path": "src/data/watch-repository.ts",
+      "match": true
+    },
+    {
+      "path": "src/watch/collector.ts",
+      "match": true
+    },
+    {
+      "path": "src/watch/engine.ts",
+      "match": true
+    },
+    {
+      "path": "tests/data/validation.test.ts",
+      "match": true
+    },
+    {
+      "path": "tests/data/watch-postgres.test.ts",
+      "match": true
+    },
+    {
+      "path": "tests/watch/collector.test.ts",
+      "match": true
+    },
+    {
+      "path": "tests/watch/live-boamp.ts",
+      "match": true
+    }
+  ],
+  "allMatch": true
+}

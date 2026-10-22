@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "title": "Physical Impact: first public website",
+  "date": "2026-10-22T14:07:54.583891+02:00",
+  "status": "published_and_publicly_verified",
+  "scope": "Static presentation website, separate from the hackathon product application.",
+  "urls": [
+    "https://physical-impact.com/",
+    "https://www.physical-impact.com/"
+  ],
+  "vercel": {
+    "scope": "erwan-gallos-projects",
+    "project": "physical-impact",
+    "project_id": "prj_29Ll1mw7Csrbz07CjM2jkGhQAH6O",
+    "deployment_id": "dpl_E6yMMBDaiApTd8BZTuEFbmv4LCee"
+  },
+  "dns": {
+    "provider": "Namecheap BasicDNS",
+    "records": [
+      {
+        "type": "A",
+        "host": "@",
+        "value": "76.76.21.21",
+        "ttl_seconds": 60
+      },
+      {
+        "type": "A",
+        "host": "www",
+        "value": "76.76.21.21",
+        "ttl_seconds": 60
+      }
+    ],
+    "record_save_readback": "PASS"
+  },
+  "source_sha256": {
+    "index.html": "dcb7c470766c85b97d462e84ee5fda128c49313f49a15ec79c2ae80c28fbaeaf",
+    "styles.css": "4576a431d5e1586844f64fe14b374bf4e4d831e60a2fc2f948307753967218be",
+    "sitemap.xml": "7a63cd288812d305ac7af13175756c7b97cd97f8dde6bb732867f465a945c425",
+    "robots.txt": "1736b7640aefd8c934965a0c62e634171b6db72de28cc2a2b35f70bb57194f68",
+    "favicon.svg": "0bb1ec60552ec0ed2b3529740851a893a63284c7d108633c37a8a97826a7734e"
+  },
+  "checks": {
+    "public_https_root": 200,
+    "public_https_www": 200,
+    "public_html_matches_source": true,
+    "public_assets_match_source": true,
+    "aside_desktop_width": 1440,
+    "aside_desktop_scroll_width": 1440,
+    "aside_mobile_iframe_viewport_width": 390,
+    "aside_mobile_scroll_width": 390,
+    "public_example_anchor": "PASS",
+    "font_runtime_dependencies": "System fonts only",
+    "em_dash_scan": "PASS"
+  },
+  "reviews": [
+    {
+      "role": "same_model_counter_review",
+      "reviewer": "/root/site_counter_review",
+      "requested_model": "Inherited from active parent runtime",
+      "served_model_identity": "Not separately attested by collaboration tool",
+      "context": "fork_turns none, high effort",
+      "status": "reviewed_and_delta_revalidated",
+      "finding": "Preview disclosure contrast corrected; final contrast 6.73:1, or 5.86:1 on grid line."
+    },
+    {
+      "role": "architecture_review",
+      "reviewer": "/root/site_architecture_review",
+      "requested_model": "gpt-6-astra",
+      "served_model_identity": "Not separately attested by collaboration tool",
+      "context": "fork_turns none, high effort",
+      "status": "reviewed_and_delta_revalidated",
+      "findings": []
+    }
+  ],
+  "limits": [
+    "No product backend or application demo is hosted by this static landing page.",
+    "Mobile layout checked in a 390px iframe in Aside; physical mobile device, Safari and Firefox NOT_RUN.",
+    "Chrome emulation NOT_RUN: occupied MCP profile and Chrome unavailable through CUA.",
+    "Aside full-page screenshot stitching repeated the viewport; evidence retains normal viewport captures instead."
+  ],
+  "authorization": {
+    "root": "User requested creation and publication after domain purchase.",
+    "www": "Explicit user approval received in this chat after automatic review initially rejected additional subdomain.",
+    "git_commit_push": "NOT_RUN"
+  },
+  "hosting_choice": "Sites was consulted; its source helper performs Git commit/push. Vercel CLI prebuilt upload used instead to preserve the no-commit/no-push instruction.",
+  "sources_used": [
+    "docs/PRODUCT-VISION.md",
+    "proposals/product/alignment-20261022/v2/WEBSITE-COPY.md",
+    "User naming and publication instructions in this chat"
+  ],
+  "evidence_directory": "evidence/"
+}

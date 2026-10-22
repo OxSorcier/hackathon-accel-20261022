@@ -1,0 +1,96 @@
+{
+  "status": "CONTROLLED_AIVEN_SOURCE_REVISION_PASS_WITH_RECONCILIATION_LIMITS",
+  "checkedAt": "2026-10-22T12:25:20.576Z",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "companyId": "CO-RESEARCH-R1-EMPTY",
+  "sourceFingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631",
+  "sourceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+  "sourceVersions": [
+    "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892",
+    "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0"
+  ],
+  "currentGeneration": 2,
+  "currentRefs": [
+    {
+      "evidenceId": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c",
+      "contentHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+      "occurrenceId": "research-occurrence:43102889f98841057d3f1a6475ad48428750c1da0c6bf7b13331309c6143033e"
+    }
+  ],
+  "controlledCase": {
+    "id": "case:c9002e34-f613-4d00-976a-6653440d18d6",
+    "caseRevision": "C-1c582360-003d-49b9-80a0-1c024a78be22",
+    "confirmationEventId": "ae467271-153a-4e00-baac-9279cdb7a789",
+    "v1HistoryPreserved": true
+  },
+  "control": {
+    "runId": "da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+    "proposalId": "proposal:da2c42b5-9b11-4a92-aabf-b7834c6e4881",
+    "status": "approved",
+    "optionId": "emergency:a4dc7cd524ef29138c18c16d3f1025b330dbdcc2b1f736f8f3305b167494a9f5",
+    "costEur": 1420,
+    "protected": [
+      "OL-A",
+      "OL-B"
+    ]
+  },
+  "oldPlan": {
+    "runId": "21de755e-a2f2-4bea-974b-c3c1983c3649",
+    "proposalId": "proposal:21de755e-a2f2-4bea-974b-c3c1983c3649",
+    "status": "stale",
+    "businessRevision": "R-6173354a-2705-4d5b-b6c8-7271199f9d09",
+    "policyVersion": "P1",
+    "optionStillFeasible": true,
+    "approvalRefusal": "STALE_CONTEXT_ASSERTED_BEFORE_RECORDED_FAILURE_NOT_REPLAYED",
+    "oldCaseRefusal": "STALE_CONTEXT_ASSERTED_BEFORE_RECORDED_FAILURE_NOT_REPLAYED"
+  },
+  "newSession": {
+    "runId": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54",
+    "sourceHash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0",
+    "sourceFromTool": true,
+    "testOnly": true,
+    "nativeSessionDigests": "NOT_RETAINED_AFTER_ORIGINAL_PROCESS_FAILURE",
+    "distinctNativeSessions": "ASSERTED_BY_ORIGINAL_SCRIPT_BEFORE_FAILURE_NOT_RECONSTRUCTED",
+    "priorAnswerInjected": false
+  },
+  "duplicate": {
+    "sameOperationKey": {
+      "key": "r2-source-v2",
+      "executedInOriginalProcess": true,
+      "occurrencesBefore": 2,
+      "occurrencesAfter": 2,
+      "generation": 2,
+      "evidenceVersions": 2,
+      "returnedObjectNotRetained": true,
+      "reconciliation": "Canonical current refs and durable counts agree; original object-order digest was an invalid oracle."
+    },
+    "newOperationKeySameContent": {
+      "key": "r2-source-v2-new-command",
+      "generation": 2,
+      "refsUnchanged": true,
+      "evidenceVersions": 2,
+      "commandReceipts": 3,
+      "occurrenceReceipts": 3,
+      "note": "One additional command/acquisition receipt, no additional content version or current source reference."
+    }
+  },
+  "businessSnapshotHash": "d00c9de04e8c22f0be6d4b3e14f5be7702d97ed007db23afbd64280eed034d60",
+  "protectedStateHash": "b7f0cdd1fa9742be1c93da5ec052e33904e535d67a081ebd21e363dc11c65731",
+  "r1Unchanged": true,
+  "r1Hash": "8ca199c424abf11a70dfd91718d44d6764b363d2599384a35c6d76d1c6f17d20",
+  "actualOpenAiCalls": 0,
+  "httpAttempts": 0,
+  "collectionAttempts": 0,
+  "injectedProtocolInvocations": 10,
+  "newModelOrWorkerInvocations": 0,
+  "receipts": {
+    "originalNegative": "proposals/agent/R2-FAILURE.json",
+    "oracleAmendment": "proposals/agent/R2-ORACLE-CORRECTION.json",
+    "readOnlyDiagnosis": "proposals/agent/R2-READONLY-DIAGNOSIS.json"
+  },
+  "limits": [
+    "Controlled source change only. No publisher revision, actual model inference, browser authentication or ERP execution proved.",
+    "The original R2 process reached the duplicate assertion after three native runs, fresh connection/session lookup and stale approval/case refusals. Session digests and duplicate return object were not retained; these events are not replayed or invented.",
+    "R1 original first-process metric limits remain. No reset, seed, import, business confirmation, approval or analysis repeated."
+  ]
+}

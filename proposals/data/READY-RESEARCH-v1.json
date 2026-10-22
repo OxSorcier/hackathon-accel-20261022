@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "module": "research-evidence-memory",
+  "status": "READY_FOR_INTEGRATOR_RECEPTION",
+  "createdAt": "2026-10-22T10:49:29.302979+00:00",
+  "scopeSha256": "8f416b7e358d9f779eeb4adf75376198512d77aaf75faa6050f0f07edc59a479",
+  "files": [
+    {
+      "path": "proposals/data/research-schema.sql",
+      "sha256": "79eb7786942be6009444932e7b7f8ee598e4e26811673664d93dcb2215c9816c"
+    },
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "c23ba589f821e000a5c590c786f6010fd590e9641964c4d7612ff1f732ff1e87"
+    },
+    {
+      "path": "tests/data/research-postgres.test.ts",
+      "sha256": "6b0c8d198a821cf259e352837bc83fb498dbc0811c84607614362ba28114e05f"
+    }
+  ],
+  "canonicalContract": {
+    "path": "src/contracts/research.ts",
+    "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214"
+  },
+  "exports": [
+    "createResearchRepository(store,options)",
+    "ResearchStore",
+    "ResearchPolicy",
+    "ResearchCollection",
+    "ResearchRepositoryOptions",
+    "ResearchRepository"
+  ],
+  "methods": [
+    "lookup(actor,scope)",
+    "refresh(actor,scope,operationKey)",
+    "ingestControlled(operator,scope,evidence,operationKey)",
+    "validate(companyId,dependencies,client?)"
+  ],
+  "migrationCandidate": "proposals/data/research-schema.sql",
+  "canonicalMigration": "migrations/006_research.sql",
+  "signatureNotes": [
+    "ResearchStore is SqlPort plus transaction(callback(client:SqlPort))",
+    "ResearchRepositoryOptions requires profiles and per-attempt createCollection returning collect + exact HTTP counter",
+    "ResearchPolicy carries profileId/profileVersion/freshForMs plus optional server adoptWatchIds",
+    "acceptPartialObservations is allowed only for Soissons profileVersion v1; live partial complete nontruncated Fetch pages only; raw partial kept",
+    "onGenerationChange runs after projection save under the same companies FOR UPDATE lock; integration must invalidate dependents within this transaction"
+  ],
+  "implemented": [
+    "Company/profile/version/namespace projection over existing watch evidence and occurrences; no new raw content store or scheduler",
+    "Stable missing generation0, exact refs and freshness dependencies, generation on source/state/eligibility changes",
+    "Fresh reusable lookup/refresh without extra collection; explicit server-bound adoption of prior watch observations",
+    "Durable intent before external collection outside SQL transaction; uncertain interrupted attempt never automatically retried",
+    "Operator-only labeled controlled ingestion; v1/v2 retained, identical v2 keeps generation and exact pinned refs",
+    "Ambiguous identities rejected; old invalid sources cannot erase newer received sources; callback errors roll back normally"
+  ],
+  "verification": {
+    "vitestTotal": 49,
+    "realLocalPostgresTotal": 28,
+    "researchPostgresTests": 13,
+    "strictTypecheck": "PASS",
+    "independentReviews": "PASS_EXACT_SCOPE",
+    "rootIntegratedLocalTests": "Integrator separately reported3/3 against migrations001-006; actual proposal invalidation belongs to that owner receipt",
+    "AivenModelR1R2": "NOT_RUN_BY_DATA_OWNER"
+  },
+  "reviewReceipt": {
+    "path": "proposals/data/RESEARCH-REVIEWS-v1.json",
+    "sha256": "5d1a34b3f231dbb708cefa2c138bc12a12dbacbcb95757e2491589f11041c539"
+  },
+  "existingCollectorReceipt": "proposals/data/READY-KEENABLE-v3.json",
+  "collectorFilesChangedByThisSlice": false,
+  "nextIntegratorAction": "Verify3hashes, apply existing006 through canonical migrator, bind Soissons v1 policy24h and authorized existing watchId, use audited per-attempt HTTP wrapper, generation invalidation callback and publication company lock for adopted watch producers, then prove fresh-session R1 and controlled-change R2 with model/Aiven and exact guards at publish/approve.",
+  "limits": [
+    "Source observation only; no model output promoted to fact or legal applicability",
+    "Observation TTL does not prove publisher freshness or exhaustive search",
+    "Refresh interrupted with unknown outcome requires explicit operator reconciliation outside automatic retry; no reconciliation route provided by this module",
+    "For nonreusable contexts, validUntil:null permits version-only validation so lookup can reach refresh; integrator still gates business evaluation/publication on reusable fresh observations",
+    "Generation validation is server bound; integration imposes required dependencies, never trusts omitted model tokens",
+    "Controlled content is synthetic test material, mode:test, despite public tag required by existing SourceEvidence contract",
+    "HTTP counters in module tests are simulated; real counts must come from integrator fetch wrapper"
+  ]
+}

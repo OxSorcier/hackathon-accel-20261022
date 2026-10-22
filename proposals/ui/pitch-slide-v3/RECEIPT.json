@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "date": "2026-10-22",
+  "status": "REFERENCE_LED_RASTER_PROPOSAL_INSPECTED",
+  "image": {
+    "path": "proposals/ui/pitch-slide-v3/pitch-adaptation-v3.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "4e7f6b6f125aec42be6ef2c44349dc91221b8b635baefa1427897391c259b7ac"
+  },
+  "generation_mode": "built-in image_gen",
+  "prompt_files": [
+    "PROMPT.json",
+    "EDIT-PROMPT.json"
+  ],
+  "supersedes": "../pitch-slide-v2/RECEIPT.json",
+  "received_direction": "Airy product storytelling from two supplied references, with broader adaptation vision",
+  "layout": [
+    "Short company-level promise",
+    "Three explanatory product concepts: monitor, connect, prepare and reassess",
+    "Risks and opportunities have equal visible status",
+    "Who, why now and planned first-user acquisition retained in footer"
+  ],
+  "visual_review": [
+    "All English copy inspected",
+    "No cropping or accidental overlap observed",
+    "Targeted first-user acquisition correction inspected",
+    "Reference content and brands replaced",
+    "No new customer, savings, integration or scale proof claimed"
+  ],
+  "limits": [
+    "Raster product concept, not editable native slide",
+    "No selected company brand",
+    "Current prototype scope remains separate from the wider vision",
+    "Measured benchmark and public submission link remain pending",
+    "No publication, submission or external messaging performed"
+  ]
+}

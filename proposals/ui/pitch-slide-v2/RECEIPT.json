@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "date": "2026-10-22",
+  "status": "THREE_EDITORIAL_RASTER_PROPOSALS_INSPECTED",
+  "supersedes": "../pitch-slide-v1/RECEIPT.json",
+  "reason": "Human feedback: previous proposals looked AI-generated and criteria were too generic",
+  "files": [
+    {
+      "path": "proposals/ui/pitch-slide-v2/A-editorial.png",
+      "width": 1672,
+      "height": 940,
+      "sha256": "63b51da092321095286ff0599d7ed35b1e7b84a36acdad125ed6f70a5bf0ec42"
+    },
+    {
+      "path": "proposals/ui/pitch-slide-v2/B-typographic.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "94b22248ea047d5a8843f11fe99e83f37ae942cd8e668aab225fc83ecea7dc3e"
+    },
+    {
+      "path": "proposals/ui/pitch-slide-v2/C-decision-memo.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "95410a67a068fbd824b2311d77dfbc75889fcab10838a4b63fa1e44ce18bd971"
+    }
+  ],
+  "generation_mode": "built-in image_gen",
+  "prompt_set": "PROMPTS.json",
+  "recommended_direction": "B-typographic",
+  "visual_checks": [
+    "All three outputs inspected",
+    "English text checked",
+    "No cropped or overlapping text observed",
+    "No robots, illustrations or diagram wallpaper",
+    "Decision table checked against selected scope in REAL-CASE-FLOW.json"
+  ],
+  "source_run_scope": {
+    "checkedAt": "2026-10-22T09:55:30.586Z",
+    "status": "REAL_CASE_APPROVED_AND_READ_BACK",
+    "selectedKind": "emergency_purchase",
+    "selectedCostEur": 1420,
+    "selectedStatus": "feasible",
+    "proposalStatus": "approved",
+    "inventoryUnchangedDuringDecision": true,
+    "limits": [
+      "Company and internal confirmation are synthetic.",
+      "No public-source causal or commercial supplier relationship asserted.",
+      "No stock transfer or purchase executed.",
+      "Final UI/browser reception remains separate."
+    ]
+  },
+  "coverage": [
+    {
+      "requirement": "Who it is for",
+      "status": "COVERED",
+      "content": "Operations directors in multi-site timber and materials businesses"
+    },
+    {
+      "requirement": "Why now",
+      "status": "DRAFT_POSITIONING",
+      "content": "Tool-using agents combine sourced investigation with company calculations"
+    },
+    {
+      "requirement": "First-user acquisition",
+      "status": "PROPOSED_PLAN",
+      "content": "Three design partners by founder introductions; no signed users claimed"
+    },
+    {
+      "requirement": "Name and one-line pitch",
+      "status": "PARTIAL",
+      "content": "Pitch present; final brand remains open"
+    },
+    {
+      "requirement": "Product and data layer",
+      "status": "COVERED_AS_DRAFT",
+      "content": "Business decision case, public/company inputs, checked tools and PostgreSQL persistence"
+    },
+    {
+      "requirement": "Three-minute demo",
+      "status": "PENDING_FINAL_MEDIA_LINK",
+      "content": "Current slides illustrate a received synthetic run; they are not the MP4"
+    },
+    {
+      "requirement": "Evidence before/after or baseline",
+      "status": "PARTIAL",
+      "content": "A received case is represented; measured naive/no-company-data baseline remains pending"
+    },
+    {
+      "requirement": "One publicly viewable slide link",
+      "status": "NOT_CREATED",
+      "content": "Raster proposals only; no public document created or sharing changed"
+    }
+  ],
+  "limits": [
+    "Not editable native slides",
+    "Final brand not received",
+    "First-user acquisition plan is proposed",
+    "Final measured baseline not received",
+    "Public slide link and final MP4 not created by this task",
+    "No publication, external contact or submission performed"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "status": "CODE_CANDIDATE_FROZEN_FOR_TWO_REVIEWS",
+  "createdAt": "2026-10-22T11:31:50.831687+00:00",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "files": [
+    {
+      "path": "src/domain/industrial.ts",
+      "sha256": "0cdfd654c03d41ba508390c0038612ef3b471461e136f5a78899db83ed4ebaf7"
+    },
+    {
+      "path": "src/agent/industrial-context.ts",
+      "sha256": "44869ed3080f03b4269fe13fa782820bd7050127027e4dff96096c7f59350d14"
+    },
+    {
+      "path": "tests/domain/industrial-fixture.ts",
+      "sha256": "92c5e91cfc890d1d717130780683cb90d3b9301a48d4b015822e8d08a183c79e"
+    },
+    {
+      "path": "tests/domain/industrial.test.ts",
+      "sha256": "6447ab8364e845138fcbac72c6ba51ad1847cbe06d738aa3f9dafc9f52e6d21f"
+    },
+    {
+      "path": "tests/agent/industrial-context.test.ts",
+      "sha256": "93c02f42ee1fd8e44a6be774fec5032b4c4d4db8b830567b2d35b976a6149f2f"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "5553acf836a5fc074a2100f36ea619a22f91fc094def662ff61adfce2dbcc3fd"
+    },
+    {
+      "path": "src/domain/engine.ts",
+      "sha256": "9727934dfac1b565abc379c1c1f8cdbbf2636b9395437cebaa134b5b0faa1057"
+    },
+    {
+      "path": "src/domain/model.ts",
+      "sha256": "b0c8e815d9eaa207f51f2c783bab9c10649f6a459c7dcbd8007fe87921acf8d2"
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "sha256": "018748a36911b677956174a6375ca7ca4a86ed7ad58e017877e9ed857601c779"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "44f25b6d060439f5225c86d4df8881b3f6f00dbe1fa0976399eb70912b960e3a"
+    }
+  ],
+  "tests": {
+    "industrial": "12/12 PASS",
+    "strictTypecheck": "PASS",
+    "fullPortfolio": "10000/10000 protected, no worsening, feasible combined candidate; 5.646s latest measured test, prior loaded run17.821s"
+  },
+  "limits": [
+    "No runtime industrial worker/model/report/execution/Aiven assembly test yet.",
+    "R1 source freeze v3 is distinct and immutable.",
+    "Pure domain cannot authenticate operator/actor; server must supply authenticated release/current ledger under company lock and revalidate exact plan."
+  ],
+  "sourceFingerprint": "98a87f479602e3ca4a9b123dcb04a5d6edc2ea41eac35b3624596811b6aa011e"
+}

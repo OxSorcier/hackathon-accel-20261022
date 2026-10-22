@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "scope": "Attributed exposure continuity after diagnostic. Frozen flow source, separate from research work in main checkout.",
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/flow-reception-source-v1",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModel": "UNATTESTED",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "e5e0d52744f844686b70bb6d116799587a84bcd90a2b2297b87637f9fc4d7b4f"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "d0e38aa85d6a02f156dd0382068bc718ceae447c65c559bb11974d7a9e957da7"
+    },
+    {
+      "path": "src/domain/contract.ts",
+      "sha256": "018748a36911b677956174a6375ca7ca4a86ed7ad58e017877e9ed857601c779"
+    },
+    {
+      "path": "src/server/cases.ts",
+      "sha256": "f90a0818795871aff3293b1dd57907e173b5f081287eb8a403a22f063f7cfaf5"
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256": "0ee779618e110713382dc05375af88287d5e793b3d8e2c848a500125943bba02"
+    },
+    {
+      "path": "tests/integration/cases.test.ts",
+      "sha256": "2c71fe3945c2355299d7c0c3d5100790458506f6937b4985f0788f13895d8891"
+    },
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "8078d6492d98e68b111f80ad3d69747ccad8a0845e89212fd83babb155b3fc46"
+    },
+    {
+      "path": "tests/ui/confirmation-boundary.test.ts",
+      "sha256": "28d1f99b3d995fcc2ede3d5709e043e2d2a36ccf51b0b4f25dbaf7195b54e12b"
+    }
+  ],
+  "tests": {
+    "fullSuite": 164,
+    "typecheck": "PASS",
+    "build": "PASS"
+  },
+  "createdAt": "2026-10-22T10:22:30.360882+00:00"
+}

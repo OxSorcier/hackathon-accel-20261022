@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-22T12:35:28.462Z",
+  "browser": "Isolated Chromium via bundled Playwright; initial press inspection in Aside",
+  "scope": "Document rendering only, no product or provider call",
+  "checks": [
+    {
+      "doc": "PRESS-RELEASE",
+      "width": 390,
+      "documentWidth": 390,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 4,
+      "contentMatchesMarkdown": true,
+      "localLinksAndAnchors": true
+    },
+    {
+      "doc": "PRESS-RELEASE",
+      "width": 768,
+      "documentWidth": 768,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 4,
+      "contentMatchesMarkdown": true,
+      "localLinksAndAnchors": true
+    },
+    {
+      "doc": "PRESS-RELEASE",
+      "width": 1440,
+      "documentWidth": 1440,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 4,
+      "contentMatchesMarkdown": true,
+      "localLinksAndAnchors": true
+    },
+    {
+      "doc": "WEBSITE-COPY",
+      "width": 390,
+      "documentWidth": 390,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 4,
+      "contentMatchesMarkdown": true,
+      "localLinksAndAnchors": true
+    },
+    {
+      "doc": "WEBSITE-COPY",
+      "width": 768,
+      "documentWidth": 768,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 4,
+      "contentMatchesMarkdown": true,
+      "localLinksAndAnchors": true
+    },
+    {
+      "doc": "WEBSITE-COPY",
+      "width": 1440,
+      "documentWidth": 1440,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedInter": 4,
+      "contentMatchesMarkdown": true,
+      "localLinksAndAnchors": true
+    }
+  ],
+  "externalRequests": 0,
+  "files": [
+    {
+      "file": "PRESS-RELEASE.md",
+      "sha256": "2af873176cb432de4cbf697362b3751a9092851c2ae6d34e462e3d76c93ccad3"
+    },
+    {
+      "file": "PRESS-RELEASE.html",
+      "sha256": "8057a363fdfacedc94dd210b5ed8a84d9571167504de0e1c1bfcdbaf9ca64985"
+    },
+    {
+      "file": "WEBSITE-COPY.md",
+      "sha256": "5b7d3365fa314edd25382525a8a701d7bc9db8b1536ea274b03c9125d92f685e"
+    },
+    {
+      "file": "WEBSITE-COPY.html",
+      "sha256": "c1b9c52fa9c2846f0dc924902ab197ed7d9161d34c47165d6f4f10f7f551608e"
+    }
+  ],
+  "visualInspection": "PASS: press desktop and site mobile inspected after footer-size correction; all six viewport checks passed",
+  "backendJourney": "NOT_RUN",
+  "finalFooterChecks": [
+    {
+      "doc": "PRESS-RELEASE",
+      "width": 390,
+      "documentWidth": 390,
+      "logoWidth": 142,
+      "logoHeight": 24
+    },
+    {
+      "doc": "PRESS-RELEASE",
+      "width": 768,
+      "documentWidth": 768,
+      "logoWidth": 142,
+      "logoHeight": 24
+    },
+    {
+      "doc": "PRESS-RELEASE",
+      "width": 1440,
+      "documentWidth": 1440,
+      "logoWidth": 142,
+      "logoHeight": 24
+    },
+    {
+      "doc": "WEBSITE-COPY",
+      "width": 390,
+      "documentWidth": 390,
+      "logoWidth": 142,
+      "logoHeight": 24
+    },
+    {
+      "doc": "WEBSITE-COPY",
+      "width": 768,
+      "documentWidth": 768,
+      "logoWidth": 142,
+      "logoHeight": 24
+    },
+    {
+      "doc": "WEBSITE-COPY",
+      "width": 1440,
+      "documentWidth": 1440,
+      "logoWidth": 142,
+      "logoHeight": 24
+    }
+  ]
+}

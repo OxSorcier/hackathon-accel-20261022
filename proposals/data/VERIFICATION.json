@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "scopeSha256": "7d6afe5595271bdfa766609952a6041a6cfb042989acfc952a03776928fafac9",
+  "implementationModel": {
+    "configured": "gpt-6.1-sol",
+    "evidence": "current session turn_context",
+    "servedIdentity": "unverified"
+  },
+  "checks": [
+    {
+      "command": "node --test tests/watch/collector.test.ts",
+      "phase": "before implementation",
+      "status": "expected failure",
+      "detail": "ERR_MODULE_NOT_FOUND for absent collector module"
+    },
+    {
+      "command": "vitest run tests/data tests/watch with DATA_WATCH_TEST_DATABASE_URL for isolated local PostgreSQL",
+      "status": "passed",
+      "testFiles": 3,
+      "testsPassed": 17,
+      "postgresTestsPassed": 10
+    },
+    {
+      "command": "tsc --ignoreConfig --noEmit --strict --skipLibCheck --target es2023 --types node --module esnext --moduleResolution bundler --allowImportingTsExtensions src/data/*.ts src/watch/*.ts tests/data/*.ts tests/watch/*.ts",
+      "status": "passed"
+    },
+    {
+      "command": "tsc --noEmit",
+      "status": "passed",
+      "scope": "assembled checkout observed at this invocation; other owners may still modify their files"
+    },
+    {
+      "command": "node tests/watch/live-boamp.ts on authorized host",
+      "status": "passed",
+      "collectionStatus": "partial",
+      "observedAt": "2026-10-22T08:44:10.387Z",
+      "details": "two public records with dates and hashes; no supplier relationship inferred"
+    },
+    {
+      "command": "live collector + repository + engine, two direct public calls on isolated PostgreSQL 17.6; pool and repository reconstructed between calls",
+      "status": "passed",
+      "evidence": "proposals/data/LIVE-COLLECTION-PG-CYCLE2.json"
+    }
+  ],
+  "environmentFailuresPreserved": [
+    "Sandbox DNS resolution failed for BOAMP; same public read succeeded with authorized host access",
+    "Sandbox denied TCP connection to local test PostgreSQL; authorized host execution used",
+    "First host PostgreSQL connection refused by temporary test pg_hba.conf; fixed only in ephemeral container and rerun successfully"
+  ],
+  "notRun": [
+    "Aiven runtime",
+    "Deployed application",
+    "HTTP worker restart and browser-close acceptance of integrated server",
+    "Production supplier disruption confirmation",
+    "Model inference"
+  ],
+  "reviewStatus": "two independent roles revalidated final scope",
+  "previousScopeSha256": "b51efa7fe7cdf85d27fce8d283722a48cad7b2d04f7346a54135b1b1ac84940e",
+  "regressions": {
+    "observedRed": [
+      "HTTP body cancel count 0 instead of 1",
+      "mode array accepted without rejection",
+      "prior-attempt collection accepted",
+      "renewal with expired database lease and stale caller time accepted"
+    ],
+    "corrected": [
+      "cancel oversized Content-Length response",
+      "validate primitive mode union without coercion",
+      "bind collection start to latest claim attempt",
+      "database wall-clock lower bound for lease guards"
+    ]
+  },
+  "reviewReceipt": "proposals/data/REVIEW-RECEIPT.json",
+  "postgresVersion": "17.6",
+  "cleanup": {
+    "temporaryPostgresContainer": "removed after tests and reviews",
+    "testSchemas": "dropped by test and live probe cleanup"
+  }
+}

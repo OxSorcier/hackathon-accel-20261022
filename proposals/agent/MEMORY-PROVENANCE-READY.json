@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-22T11:04:35.447186+00:00",
+  "status": "LOCAL_TESTED_WAITING_INTEGRATOR_EXACT_TWO_ROLE_REVALIDATION",
+  "sourceFingerprint": "c3f50b0a670ee880b1bc877753e36fc436a7aafe710468adf66a0dde2411a475",
+  "files": [
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "262f0c97662f10a697cb071fab33b05ae692c16047a8e4dac12895b9bdcd89cf"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "0a81c114a7409da6410191755bb42a845d7b083c23294aa402a484c81dd9688e"
+    },
+    {
+      "path": "tests/agent/case.test.ts",
+      "sha256": "cc9fc43d595c9f44d7643bf7836833b4718c4383b7d71a195945eefac95385f5"
+    },
+    {
+      "path": "tests/agent/memory-provenance.test.ts",
+      "sha256": "e7e28788027cc3a02b088243bb47bde79f10ba081efef143b8f532b949b84d31"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "47a8a3c8bbce586209944e9ef89f94022361b4b4b65f08f305785683b8358458"
+    },
+    {
+      "path": "src/contracts/research.ts",
+      "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214"
+    },
+    {
+      "path": "src/agent/research-context.ts",
+      "sha256": "b6bb1a985878d0a9787cc6e55ae15a090a497ca9ef8bd73b3f14ef2fe7080d96"
+    },
+    {
+      "path": "src/agent/case-context.ts",
+      "sha256": "151e7ccb950db6fbbeb907d9e70d005250a6464c8c0f827c847987c82a4c407f"
+    }
+  ],
+  "baseline": "proposals/agent/memory-provenance-baseline",
+  "ownedDelta": [
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "262f0c97662f10a697cb071fab33b05ae692c16047a8e4dac12895b9bdcd89cf"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "0a81c114a7409da6410191755bb42a845d7b083c23294aa402a484c81dd9688e"
+    },
+    {
+      "path": "tests/agent/case.test.ts",
+      "sha256": "cc9fc43d595c9f44d7643bf7836833b4718c4383b7d71a195945eefac95385f5"
+    },
+    {
+      "path": "tests/agent/memory-provenance.test.ts",
+      "sha256": "e7e28788027cc3a02b088243bb47bde79f10ba081efef143b8f532b949b84d31"
+    }
+  ],
+  "behavior": [
+    "Research decision advice requires matching explicit namespace/profile/version and positive nonempty current provenance.",
+    "No research advice IDs enter the initial model context. Actual lookup must first produce reusable current research.",
+    "recall_decisions validates each attributed research dependency through the actual bound ResearchPort before releasing advice.",
+    "Controlled memories are excluded from live and free questions, including without a case.",
+    "Unknown/invalid metadata is excluded and not copied; legacy free-question advice retains prior attribution rules."
+  ],
+  "tests": {
+    "red": "5/5 new tests failed before the fix, including actual controlled no-case proposal then forbidden free-question advice",
+    "green": "45/45 agent tests PASS",
+    "typecheck": "PASS"
+  },
+  "limits": [
+    "The unit attribution fixture is explicitly not a database decision. Integrator owns the actual agent proposal -> store.decide -> memory -> later run combined acceptance.",
+    "R1 scripts have independent reviews; this new agent delta requires the common server panel on these exact bytes before final delivery."
+  ],
+  "reviewOwnerThread": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "R1": "Waiting next frozen corrected server package before the two bounded real OpenAI runs."
+}

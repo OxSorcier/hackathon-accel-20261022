@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "scope": "Industrial context parser and durable analysis trigger",
+  "snapshot": "/tmp/accel-industrial-data-review-v1",
+  "files": [
+    {
+      "path": "proposals/data/industrial-analysis-schema.sql",
+      "sha256": "204005bb5ce53e230b0473fb2f10f4f1423b809493c4fd0c0e9eb175f17b3eda"
+    },
+    {
+      "path": "src/data/analysis-trigger.ts",
+      "sha256": "b18d884c29edfbb86952547685a90f8320e726f4ee909aab08bc52235f0510a2"
+    },
+    {
+      "path": "src/data/industrial-relations.ts",
+      "sha256": "44f25b6d060439f5225c86d4df8881b3f6f00dbe1fa0976399eb70912b960e3a"
+    },
+    {
+      "path": "tests/data/industrial-relations.test.ts",
+      "sha256": "acc3c16e784ef7a05002675dfaf3f044166ff3af727e434b32489380b454873a"
+    },
+    {
+      "path": "tests/data/industrial-trigger-postgres.test.ts",
+      "sha256": "6429e5a24bedafba55b0b9b3c6a3161972e24e735971385f5eb2131f934e8402"
+    }
+  ],
+  "scopeSha256": "9dfe048e6c4d194aadbb8977bed8cda9273cd0f4065c03dec8583bc3b7ed2b57",
+  "digestRecipe": "SHA256 of JSON list pins sorted by path; each item path,sha256; JSON sort_keys=True,separators=(comma,colon), UTF8 no trailing newline",
+  "testsObserved": {
+    "dataWatch": 72,
+    "postgres": 46,
+    "industrialPostgres": 11,
+    "industrialPure": 5,
+    "strictTypecheck": "pass"
+  },
+  "integrationContract": [
+    "All trigger methods except bounded read-only listReady require caller transaction client, never a pool with autocommit",
+    "Company lock precedes all writes; caller commits reserveUsage before any external call",
+    "resolvePrincipal and validateBasis are mandatory server-owned SQL checks, no network or model grants rights",
+    "Root owns canonical migration, principal, existing-worker assembly, provider/tool counter binding and report/approval/execution"
+  ],
+  "limitations": [
+    "Local disposable PostgreSQL, not Aiven",
+    "No provider/model effect or scheduler created by data module",
+    "Independent final reviews pending",
+    "No industrial integrated report or execution claimed"
+  ]
+}

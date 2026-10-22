@@ -1,0 +1,93 @@
+{
+  "observedAt": "2026-10-22T09:40:58.454Z",
+  "kind": "real_keenable_collection",
+  "status": "partial",
+  "startedAt": "2026-10-22T09:40:55.622Z",
+  "completedAt": "2026-10-22T09:40:58.453Z",
+  "sources": [
+    {
+      "url": "https://api.keenable.ai/v1/search",
+      "status": "partial",
+      "error": "BOUNDED_OR_INCOMPLETE_SOURCE",
+      "evidence": [
+        {
+          "id": "keenable:d70c3416646a5eb71210b0763ab6dc8b104636083a8160aecc8322dc2e299e13",
+          "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-03-mars-2026/",
+          "title": "Actualité du 03 mars 2026",
+          "publishedAt": null,
+          "collectedAt": "2026-10-22T09:40:57.031Z",
+          "contentHash": "af6dacde6bbdf921f49d3e89fb3e2fd2d2cff18ae5b19b13e7ad9c815418bbdf",
+          "contentCharacters": 2093,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/fetch/public",
+            "method": "fetch",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-05-06T04:48:29.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        },
+        {
+          "id": "keenable:fe8672571b6027e02e5f20e84da441c0144c1eee3e41cff718f248619f69279e",
+          "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-02-janvier-2026/",
+          "title": "Actualité du 02 janvier 2026",
+          "publishedAt": "2026-01-02T00:00:00.000Z",
+          "collectedAt": "2026-10-22T09:40:57.777Z",
+          "contentHash": "48c6c87fd016a449d1376500b918d6c7a5fea5d4a6f3a9b28d10290f236ba11d",
+          "contentCharacters": 2333,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/fetch/public",
+            "method": "fetch",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-05-06T08:34:17.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        },
+        {
+          "id": "keenable:02d3b679b232631548edc2f8d5b2dd4885802b02721d9f21bfe1837a82e76d39",
+          "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-05-mars-2026/",
+          "title": "Actualité du 05 mars 2026",
+          "publishedAt": null,
+          "collectedAt": "2026-10-22T09:40:58.453Z",
+          "contentHash": "d8db2fd347296e0b06db868a2626b4adbae2c64e4f638a825dd2b1e929d2364b",
+          "contentCharacters": 1603,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/fetch/public",
+            "method": "fetch",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-10-22T09:40:22.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        },
+        {
+          "id": "keenable:60bc7f14c97a1e9d1702674ac02557b64c5c2f82473979457e0a7176f2f63486",
+          "url": "https://www.rockwool.com/fr/soissons/actualites/actualite-du-29-juin-2026/",
+          "title": "Actualité du 29 juin 2026",
+          "publishedAt": "2026-06-29T17:40:00.000Z",
+          "collectedAt": "2026-10-22T09:40:58.453Z",
+          "contentHash": "ef6239a2ad5dc8694ca76cbaef0ec624d68b793bf7ee62e85fee23ebb07533b9",
+          "contentCharacters": 1108,
+          "provenance": {
+            "provider": "keenable",
+            "endpoint": "https://api.keenable.ai/v1/search/public",
+            "method": "search_snippet",
+            "profileId": "soissons-project",
+            "indexedAt": "2026-07-02T03:59:17.000Z",
+            "truncated": false
+          },
+          "family": "supplier"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Public statements are dated; no present production capacity is inferred",
+    "No verified relationship with synthetic suppliers or SKUs",
+    "This probe does not execute a model or calculate a proposal"
+  ]
+}

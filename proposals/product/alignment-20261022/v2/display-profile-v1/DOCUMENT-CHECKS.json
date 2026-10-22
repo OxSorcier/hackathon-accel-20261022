@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-22T11:44:13.360Z",
+  "browser": "isolated bundled Chromium; offline file URL",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "DISPLAY-PROFILE",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 5,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "DISPLAY-PROFILE",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 5,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    },
+    {
+      "name": "DISPLAY-PROFILE",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "font": "Inter, -apple-system, \"system-ui\", \"Helvetica Neue\", Arial, sans-serif",
+      "sections": 5,
+      "contentMatchesMarkdown": true,
+      "externalDisplayRequests": 0
+    }
+  ]
+}

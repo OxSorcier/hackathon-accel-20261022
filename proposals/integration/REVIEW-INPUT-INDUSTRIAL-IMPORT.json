@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "scope": "Explicit C1 import into isolated existing Aiven schema and additive industrial contract candidate. No provider, automatic report or execution effect.",
+  "files": [
+    {
+      "path": ".local/industrial-import/import-core.mts",
+      "sha256": "edf559fc6999880b1a3c262c809dd1ad220c8d67ba0eb0b37fa859d81fbcbbcb"
+    },
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "c638d5c1c7fe4205c26318642c21e0b0375149490d81ffde9a4c1242cca04845"
+    }
+  ],
+  "sourceBase": ".local/flow-reception-source-v1",
+  "coreReceipt": "proposals/product/alignment-20261022/v2/CORE-READY.json",
+  "realizerModel": "gpt-6.1-sol"
+}

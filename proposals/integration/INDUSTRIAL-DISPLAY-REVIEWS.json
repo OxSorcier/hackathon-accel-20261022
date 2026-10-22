@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "status": "REVIEWED_TESTED_RECEIVED",
+  "source": "/Users/erwan/Projects/hackathon-accel-20261022/.local/industrial-display-v2",
+  "manifest": "proposals/integration/REVIEW-INPUT-INDUSTRIAL-DISPLAY-v2.json",
+  "sha256": "611d1695ba517686be4add9cf0ec6d484553f0479600f8006182ed4631768912",
+  "cycles": 2,
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedIdentity": "NOT_ATTESTED",
+  "reviewers": [
+    "industrial_display_counter:gpt-6.1-sol:fresh",
+    "industrial_display_architecture:gpt-6-astra:fresh"
+  ],
+  "findingsResolved": [
+    "Monotonic display head checked under company lock after idempotent receipt; old replay does not move current head."
+  ],
+  "tests": {
+    "v1DisplayAndReadAiven": "13 PASS",
+    "v2DisplayAiven": "4 PASS",
+    "build": "PASS",
+    "typecheck": "PASS"
+  },
+  "checkedAt": "2026-10-22T12:25:42.105126+00:00",
+  "scope": "Display only; no provider or collection, all industrial actions disconnected."
+}

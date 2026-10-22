@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "status": "PROPOSAL_REQUIRES_INTEGRATOR_RECEPTION_BEFORE_CODE_OR_ACTIVATION",
+  "scope": {
+    "profileId": "public-contracts",
+    "profileVersion": "v1",
+    "namespace": "live"
+  },
+  "problem": "The bounded BOAMP collection remains partial. Research currently permits a reusable observation subset only for soissons-project/v1. A BOAMP20 plus Keenable5 result also exceeds the research10-evidence boundary.",
+  "ownerBoundaries": {
+    "integrator": "Bound createPublicCollector limit at the server so combined evidence stays at most10, receive the explicit profile policy, configure it once and own the only live test.",
+    "data": "After reception only, implement and review the profile-specific eligibility extension using existing research storage/current/fingerprint logic. Preserve historical R1/service freezes and produce a distinct receipt.",
+    "noNewCollectorOrScheduler": true
+  },
+  "minimalRepositoryDeltaProposed": {
+    "configuration": "Keep acceptPartialObservations opt-in. Permit it only for the two exact received pairs soissons-project/v1 and public-contracts/v1. No wildcard, auto-enrolment or model-supplied policy.",
+    "soissons": "Preserve the received complete nontruncated Fetch predicate unchanged.",
+    "publicContractsEligibleEvidence": {
+      "dataOrigin": "public",
+      "mode": "direct",
+      "provider": "boamp",
+      "method": "api_record",
+      "profileId": "public-contracts",
+      "truncated": false,
+      "publishedAt": "Non-null validated native date, no future date; retain original publishedAt rather than collection time.",
+      "collectedAt": "Validated received collection time, inside its original CollectionResult time bounds.",
+      "identity": "Existing validated boamp:idweb, canonical native notice URL, body contentHash and exact EvidenceRef. No invented publisher, publication date or relation."
+    },
+    "ineligible": [
+      "Keenable search snippets",
+      "Keenable Fetch bodies under this specific BOAMP notice policy",
+      "Truncated BOAMP bodies",
+      "Missing or contradictory native publication date",
+      "Replay/test/controlled evidence or another profile/version",
+      "Any malformed result or mismatched source URL set"
+    ],
+    "receivedRawStatus": "Preserve partial in the occurrence/result. Do not convert a bounded collection to success.",
+    "researchProjection": "When at least one eligible record exists and the existing server freshness policy is valid, state reusable means the selected source observations may be read. It does not establish a complete search, company applicability or qualified commercial demand. With no eligible record, remain partial/nonreusable.",
+    "conditions": [
+      "SOURCE_OBSERVATION_ONLY",
+      "PARTIAL_SOURCE_SET",
+      "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+      "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+      "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND"
+    ],
+    "fingerprintAndHistory": "Reuse the current fingerprint and selected-reference mechanism. A changed eligible subset invalidates dependent plans; identical material preserves the generation and exact prior refs while freshness/cursor advance. Current fingerprint also includes excluded collection material, so its changes may conservatively invalidate the projection; this proposal does not silently weaken that rule.",
+    "noNewSchema": true,
+    "noArbitrarySqlOrFiles": true,
+    "serviceLookup": "Keep the received active same-company analysis_only principal and server profile whitelist checks. No service refresh or human-role fallback."
+  },
+  "businessBoundary": {
+    "permitted": "Cite the public notice with exact source/date/ref in a bounded briefing; qualify sector/regional interest and request company applicability if unresolved.",
+    "notEstablished": [
+      "A notice is not a confirmed request in our CRM",
+      "No public notice proves the synthetic fire or a supplier delay",
+      "No SKU compatibility, available stock, selling price, margin, rights or budget is granted by the public source",
+      "Plan authority still comes from current qualified internal records and the server calculation"
+    ]
+  },
+  "testsRequiredBeforeReady": [
+    "Partial raw result remains partial; exact dated BOAMP api_record subset becomes reusable only under received opt-in.",
+    "Unconfigured pair/version, controlled/test/replay, snippet, truncated body and missing native date remain nonreusable.",
+    "Combined evidence at10 passes the unchanged boundary;11 rejects. The integrator tests its configured real collection bound before the single live call.",
+    "Eligible subset change with stable id/hash changes generation; identical selected data preserves refs and no duplicate automatic intent.",
+    "Stored source bodies and raw snippets are preserved historically and excluded evidence never reappears as an admissible observation.",
+    "Existing Soissons, R1, service authorization, callback rollback, durable-order and freshness regressions pass.",
+    "Two fresh exact independent code reviews precede READY and activation."
+  ],
+  "currentState": {
+    "implementation": "NOT_RUN",
+    "activation": "NOT_RUN",
+    "providerCall": "NOT_RUN",
+    "singleLiveProbeOwner": "Existing integrator only on isolated industrial candidate3003"
+  }
+}

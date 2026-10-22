@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "scope": "Service-only authorized public research lookup, separate from historical R1",
+  "snapshot": "/tmp/accel-research-service-review-v1",
+  "files": [
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "486702dc451a01bd73ef3c8c8364e04e4478b6b9c8ef2dabb6dd9c1e78bce59f"
+    },
+    {
+      "path": "tests/data/research-service-postgres.test.ts",
+      "sha256": "a13685596e8fec4e6627814f14c114cb2cbbabd3ffbe71500e0ddf270d11cfe4"
+    }
+  ],
+  "scopeSha256": "196aedaa4d8b2c5a1b6d44538e144bca49146435efe536871dabac7009e02ca0",
+  "digestRecipe": "SHA256 JSON LIST of pins sorted path, keys sorted, separators comma/colon, UTF8 no trailing newline",
+  "testsObserved": {
+    "dataWatch": 79,
+    "postgres": 50,
+    "servicePostgres": 4,
+    "strictTypecheck": "PASS"
+  },
+  "historicalR1": {
+    "receipt": "READY-RESEARCH-v2.json",
+    "scopeSha256": "9008ba459e68d33a7fbad13d94f25ad97da4d890a13932e443b3f541ed437a2c",
+    "exact4PinsPreserved": "proposals/data/history/research-v2; immutable integrator R1/R2 snapshots retained"
+  },
+  "integrationRequirements": [
+    "Server binds company, profile and principal; none chosen by model",
+    "SQL authorizeServiceLookup callback is required, same company active analysis_only principal and explicit server profile whitelist",
+    "No role fallback or refresh/collector for service; live namespace only",
+    "Lookup uses existing current() for adoption/freshness bookkeeping and generation invalidation inside same company-locked transaction; zero source HTTP",
+    "Root owns real principal table/authorization binding and integrated runtime review"
+  ],
+  "limitations": [
+    "Local PostgreSQL tests only, no Aiven/model/provider claim",
+    "Independent final reviews pending"
+  ]
+}

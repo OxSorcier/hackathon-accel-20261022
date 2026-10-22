@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T09:57:05.745142+00:00",
+  "status": "EXACT_SOURCE_RECEIVED_AND_REAL_CASE_FLOW_REPORTED_BY_INTEGRATOR",
+  "builderThread": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+  "integratorThread": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "receipt": "proposals/agent/CASE-READY.json",
+  "receiptSha256": "91c22c7627ee977d0bb2a3d7c44f0d4c1ed6190e7822b2668def6bd284f23a52",
+  "sourceFingerprint": "519649f7b18c69121d03513f587c681d958cac7dc7c7a33ef8bcca05b252242d",
+  "integratorReceipt": {
+    "path": "proposals/integration/RECEIVED-AGENT-CASE.json",
+    "allMatch": true,
+    "checkedEntries": 21,
+    "currentBuilderRecheck": "all source, dependency and review artifact hashes still match"
+  },
+  "integratedEvidence": {
+    "path": "proposals/integration/REAL-CASE-FLOW.json",
+    "sha256": "8e3c5ac559b2335283a395d3e1c8ab2649a995cfe8da17461101ede6494e0c97",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "finalRunId": "b706f102-f547-47b8-94ec-a623f6e6c1c3",
+    "runStatus": "proposal",
+    "decisionStatus": "approved",
+    "readbackStatus": "approved",
+    "model": "gpt-5.4-mini",
+    "inventoryUnchangedDuringDecision": true,
+    "meaning": "Real public source and OpenAI tools produced a durable case proposal. Positive approval rests on a separately attributed synthetic internal confirmation; public relation stays unverified. No stock or purchase execution is proved."
+  },
+  "negativeEvidencePreserved": {
+    "runId": "c49c3e8a-2cce-4499-b115-cf97d879c408",
+    "status": "needs_input",
+    "proposalId": null,
+    "reason": "Model calculated an option then ended without prepare_proposal. Server did not invent a durable proposal."
+  },
+  "frozen": true,
+  "newSeparateDelta": {
+    "receipt": "proposals/agent/RESEARCH-INTAKE.json",
+    "status": "RECEIVED_WAITING_FOR_SHARED_CONTRACT_AND_SCOPE_RELEASE",
+    "R1": "NOT_RUN",
+    "R2": "NOT_RUN"
+  },
+  "limits": [
+    "These integrated executions belong to the integrator; builder independently read the receipts but did not repeat live calls.",
+    "Browser/UI, restart reception and deployment have their own remaining evidence and owners.",
+    "Real company onboarding or legal identity is outside this synthetic harness.",
+    "The exact CASE delivery remains frozen while integrator finishes UI/preview reception."
+  ]
+}

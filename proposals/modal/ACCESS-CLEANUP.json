@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "recordedAt": "2026-10-22T10:36:41.794580+00:00",
+  "workspace": "oxsorcier",
+  "status": "complete",
+  "authorization": {
+    "source": "Explicit user authorization relayed by the coordinator",
+    "scope": "Revoke only temporary deployment token accel-pdf-deploy; preserve runtime Proxy Token"
+  },
+  "deploymentToken": {
+    "profile": "accel-pdf-deploy",
+    "scheduledExpiry": "2026-10-23T00:18:34+02:00",
+    "exactIdentityMatchedInMemory": true,
+    "revoked": true,
+    "method": "Official Modal dashboard: API tokens, Delete token, Confirm",
+    "proof": {
+      "dashboardNotification": "API token deleted.",
+      "apiTokenCountAfter": 0,
+      "authenticationCommand": "modal token info with isolated deployment profile",
+      "authenticationExitCode": 1,
+      "authenticationError": "Token not found"
+    },
+    "privateConfig": ".local/modal-pdf-deploy.toml",
+    "privateConfigDeleted": true
+  },
+  "runtimeProxyToken": {
+    "name": "accel-pdf-reader",
+    "preserved": true,
+    "dashboardProxyTokenCount": 1,
+    "scope": "Workspace-wide, including future protected Web Functions",
+    "verification": "Read-only metadata inspection after deployment token revocation",
+    "credentialValuesReadOrRecorded": false
+  },
+  "billingObservation": {
+    "observedAt": "2026-10-22T12:33:54+02:00",
+    "currency": "USD",
+    "displayedBalance": "101.00",
+    "displayedTotalSpend": "0.00",
+    "displayedTotalUsage": "0.00",
+    "displayedCreditsUsed": "0",
+    "displayedCharges": "0",
+    "application": "main / accel-pdf-reader",
+    "displayedAppNetworkEgress": "114.21 KiB",
+    "reservation": "Displayed monetary values are rounded and billing data may update later. These readings do not establish zero compute consumption or zero cost."
+  },
+  "cleanupComputeCalls": 0,
+  "sharedCodeOrConfigFilesChanged": false,
+  "credentialValuesPersistedInReceipt": false
+}

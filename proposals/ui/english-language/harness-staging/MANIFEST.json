@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "authorization": "Erwan explicitly requested English for all UX/UI, README and hackathon harness outputs",
+  "files": [
+    {
+      "path": "/Users/erwan/.codex/.chatgpt-projects/g-p-6acd1e2b630881918c37b331e317ea4c/work/hackathon-skills-candidate-20261018/skills/hackathon-bootstrap/SKILL.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/00-SKILL.md",
+      "before_sha256": "c5c9178374dd6b55d0549ed787100a836365535e5e55dd40851652891110bd53",
+      "after_sha256": "04d8b04b83a51efb5c9cd817229cc0d054395e9c3b0731b0c4e2bb0583f1fb48"
+    },
+    {
+      "path": "/Users/erwan/.codex/skills/hackathon-bootstrap/SKILL.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/01-SKILL.md",
+      "before_sha256": "c5c9178374dd6b55d0549ed787100a836365535e5e55dd40851652891110bd53",
+      "after_sha256": "04d8b04b83a51efb5c9cd817229cc0d054395e9c3b0731b0c4e2bb0583f1fb48"
+    },
+    {
+      "path": "/Users/erwan/.codex/.chatgpt-projects/g-p-6acd1e2b630881918c37b331e317ea4c/work/hackathon-skills-candidate-20261018/skills/hackathon-ideation/SKILL.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/02-SKILL.md",
+      "before_sha256": "c2cbbc87d97b1216b0c5696bc4dec1533658682782360f324c1d5616c675c49c",
+      "after_sha256": "9c2d60447ce94195bbfd642e956e04ccd825e5bba70ae580bf5bdcbaab365c63"
+    },
+    {
+      "path": "/Users/erwan/.codex/skills/hackathon-ideation/SKILL.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/03-SKILL.md",
+      "before_sha256": "c2cbbc87d97b1216b0c5696bc4dec1533658682782360f324c1d5616c675c49c",
+      "after_sha256": "9c2d60447ce94195bbfd642e956e04ccd825e5bba70ae580bf5bdcbaab365c63"
+    },
+    {
+      "path": "/Users/erwan/.codex/.chatgpt-projects/g-p-6acd1e2b630881918c37b331e317ea4c/work/hackathon-skills-candidate-20261018/skills/demo-package/SKILL.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/04-SKILL.md",
+      "before_sha256": "61a1b3417b614580c19184af5d8b4e78bf9effa74f77ccab529e141e4ca8e71a",
+      "after_sha256": "026254f43fa34357fffa8953197c4aa67757f1452411c5eebe19a10e1e7f87e1"
+    },
+    {
+      "path": "/Users/erwan/.codex/skills/demo-package/SKILL.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/05-SKILL.md",
+      "before_sha256": "61a1b3417b614580c19184af5d8b4e78bf9effa74f77ccab529e141e4ca8e71a",
+      "after_sha256": "026254f43fa34357fffa8953197c4aa67757f1452411c5eebe19a10e1e7f87e1"
+    },
+    {
+      "path": "/Users/erwan/.codex/.chatgpt-projects/g-p-6acd1e2b630881918c37b331e317ea4c/work/hackathon-skills-candidate-20261018/skills/hackathon-bootstrap/references/language.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/06-language.md",
+      "before_sha256": null,
+      "after_sha256": "ee196454ae93c6ba8e81c245a1c06d43a34f26a5567783115abcba93efa7d2ab"
+    },
+    {
+      "path": "/Users/erwan/.codex/skills/hackathon-bootstrap/references/language.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/07-language.md",
+      "before_sha256": null,
+      "after_sha256": "ee196454ae93c6ba8e81c245a1c06d43a34f26a5567783115abcba93efa7d2ab"
+    },
+    {
+      "path": "/Users/erwan/.codex/.chatgpt-projects/g-p-6acd1e2b630881918c37b331e317ea4c/deliveries/hackathon-experience-v0-20261018/B-PROFIL.md",
+      "staged": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/english-language/harness-staging/08-B-PROFIL.md",
+      "before_sha256": "9e8675b7e99d4a8885490763df274e924325a6dc958e7e6d299b6d9a394fdcf0",
+      "after_sha256": "e2251dcbd765acead99e4731989bbc84fa438ca240664e52cd94c69707604f40"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "status": "READY_AIVEN_SCRATCH_TESTED_TWO_REVIEWS_INTEGRATOR_RECEPTION_PENDING",
+  "createdAt": "2026-10-22T12:28:57.364463+00:00",
+  "files": [
+    {
+      "path": "src/server/industrial-execution.ts",
+      "sha256": "9fc63c284c3f73b142c9d6315bd96ad56f31462d3194e8bf09aac10839281cf9"
+    },
+    {
+      "path": "tests/integration/industrial-execution.test.ts",
+      "sha256": "5bdc2b8fefc2e73fe5c84f7153eb3a19abba787390c9e9297ca1bd60734a7a60"
+    }
+  ],
+  "scopeSha256": "687691d229d460c4864c013076d3e9bccd6691b469ff92a74fc8ca35eb7c2bad",
+  "digestRecipe": "SHA256 JSON LIST of pins sorted path, keys sorted, separators comma/colon, UTF8 no trailing newline",
+  "reviewInput": "proposals/data/industrial-execution/REVIEW-INPUT-v1.json",
+  "reviews": "proposals/data/industrial-execution/REVIEWS-v1.json",
+  "tests": {
+    "aivenPostgres": 9,
+    "strictTypecheck": "PASS",
+    "isolation": "Random industrial_execution_UUID schema created/dropped, TLS verify-full/realCA, no stable schema touched",
+    "ackTests": "Application ACK and recovery unavailability injected; not a real network cut"
+  },
+  "negativeHistory": [
+    {
+      "run": "2026-10-22T12:15:24Z",
+      "result": "9failed",
+      "cause": "Test plan computed before SQL JSONB normalization; assertions expected codes in generic messages"
+    },
+    {
+      "run": "2026-10-22T12:17:10Z",
+      "result": "8passed1failed",
+      "cause": "Restart test evaluated at09Z with snapshot updated at10Z; explicit rebased release/current evaluation fixes fixture"
+    },
+    {
+      "run": "2026-10-22T12:19:36Z",
+      "result": "9passed",
+      "note": "Prior to removing report status mutation; final code preserves historical report bytes"
+    }
+  ],
+  "integrationRequirements": [
+    "Root callback receives same PoolClient and returns canonical current snapshot, stored approval, deterministic exact plan, all-revision executionState and current context",
+    "Root owns authenticated actor/current authority, original-time plan identity plus present-time admissibility, source freshness, event/release/current policy checks",
+    "Writer validates local role/ceiling/basis/head/hash/version, serializes under company lock, does all SQL effects and receipt atomically",
+    "Root owns route/worker assembly and final UI/model/runtime reception",
+    "Only new supplyStepId allocations are persisted; whole-portfolio coverage is not a delta",
+    "Reports/releases/approvals immutable; new revision marks their basis stale, pending generic runs/intents are invalidated",
+    "No external ERP/provider call, service or worker in this unit"
+  ],
+  "ports": {
+    "factory": "createIndustrialDemoExecutor({store,revalidate,now?}).execute(actor,approvalId,input)",
+    "reader": "readIndustrialExecutionState(client,companyId,businessRevision)",
+    "callback": "Same transaction PoolClient returns snapshot, stored approval, exact recalculated plan, all-revision executionState and current context"
+  },
+  "preservation": {
+    "physicalStock": "UNCHANGED",
+    "nativeInboundAllocations": "UNCHANGED_13_IN_10K_TEST",
+    "nativeReservations": "UNCHANGED_9999_IN_10K_TEST",
+    "orderLines": "UNCHANGED_10000_IN_10K_TEST",
+    "historicalReportsReleasesApprovals": "UNCHANGED",
+    "effects": "New simulated PO/POL, stock holds, capacity use, scheduled transfer, delta allocation and draft offer only"
+  },
+  "limits": [
+    "Aiven tests used an isolated random schema, not the stable or industrial product schema",
+    "Application ACK/recovery failure injected, not a real network cut",
+    "Local PostgreSQL unavailable and not restarted",
+    "Actual integrated approval-to-simulation reception belongs to integrator/QA",
+    "No external ERP/provider action, physical receipt, purchase or accepted sale"
+  ],
+  "realizerModel": {
+    "configured": "gpt-6.1-sol",
+    "served": "UNATTESTED"
+  }
+}

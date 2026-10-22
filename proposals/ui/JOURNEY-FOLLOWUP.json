@@ -1,0 +1,256 @@
+{
+  "checkedAt": "2026-10-22T10:09:13.518Z",
+  "scope": "UI builder browser checks; local injected UI tests are distinct from real API readback and integrator-owned effects.",
+  "currentBackendGate": "Integrator QA found a subsequent run selecting B instead of inbound-affected A. The integrator is fixing target selection and reviewing it before stable 3001 reception. This limits any claim of final end-to-end readiness.",
+  "earlierStable3001": {
+    "status": "HISTORICAL_OBSERVED",
+    "companyId": "CO-PARCOURS-PAUL",
+    "questionRunId": "00766490-559e-4c6f-9c90-840b4e7f6d9b",
+    "questionResult": "needs_input, provider not configured at that time; no model call",
+    "watchId": "watch:393b00d196fdeff08496a829592dc9aa148e094655cc2c6e3dc06cb34e4748b9",
+    "occurrenceId": "scheduled:watch:393b00d196fdeff08496a829592dc9aa148e094655cc2c6e3dc06cb34e4748b9:20261022092254.951000",
+    "collection": "Direct BOAMP collection, partial, 20 evidence records read back. Local PostgreSQL at this earlier stage. No reset."
+  },
+  "currentCandidate": {
+    "status": "BROWSER_OBSERVED_READ_ONLY",
+    "ui": "http://127.0.0.1:5175/",
+    "apiProxy": "http://127.0.0.1:3000",
+    "companyId": "CO-PARCOURS-PAUL-V2",
+    "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "approvedProposalId": "proposal:b706f102-f547-47b8-94ec-a623f6e6c1c3",
+    "approvedCostEur": 1420,
+    "source": "ROCKWOOL July 10 publication, received via Keenable Fetch",
+    "observed": [
+      "Current dossier, exact public evidence and dates, explicit internal synthetic confirmation, candidate commitments and their canonical dates.",
+      "Stale prior hypothesis proposal remains visible.",
+      "Approved EUR1420 emergency purchase proposal read in Completed; no new model or decision mutation performed by this UI check.",
+      "Changing to Materials and timber news automatically selects the only advertised compatible source, Keenable; no watch submitted."
+    ],
+    "integratorEvidence": "proposals/integration/REAL-CASE-FLOW.json",
+    "integratorProofBoundary": "Real model execution, operator confirmation, Aiven persistence and approval effects belong to the integrator receipt. The UI builder independently read their API/UI results."
+  },
+  "syntheticBrowser": [
+    "Case opening and four blocks.",
+    "Revise relation to none: saved version, no known exposure, previous proposal stale.",
+    "Case analyze returns explicit needs_input fixture.",
+    "Capabilities failure does not prevent a question: neutral request receipt plus terminal needs_input."
+  ],
+  "responsive": {
+    "browser": "Aside",
+    "method": "Same-origin iframe CSS viewports, not real phones or touch emulation",
+    "measurements": [
+      {
+        "requested": 320,
+        "viewport": 320,
+        "documentWidth": 320,
+        "caseWidth": 296,
+        "navLabels": [
+          {
+            "text": "Needs decision",
+            "whiteSpace": "normal",
+            "insideButton": true
+          },
+          {
+            "text": "In progress",
+            "whiteSpace": "normal",
+            "insideButton": true
+          },
+          {
+            "text": "Completed",
+            "whiteSpace": "normal",
+            "insideButton": true
+          },
+          {
+            "text": "Watches",
+            "whiteSpace": "normal",
+            "insideButton": true
+          }
+        ]
+      },
+      {
+        "requested": 390,
+        "viewport": 390,
+        "documentWidth": 390,
+        "caseWidth": 366,
+        "navLabels": [
+          {
+            "text": "Needs decision",
+            "whiteSpace": "normal",
+            "insideButton": true
+          },
+          {
+            "text": "In progress",
+            "whiteSpace": "normal",
+            "insideButton": true
+          },
+          {
+            "text": "Completed",
+            "whiteSpace": "normal",
+            "insideButton": true
+          },
+          {
+            "text": "Watches",
+            "whiteSpace": "normal",
+            "insideButton": true
+          }
+        ]
+      },
+      {
+        "requested": 768,
+        "viewport": 768,
+        "documentWidth": 768,
+        "caseWidth": 574,
+        "navLabels": [
+          {
+            "text": "Needs decision",
+            "whiteSpace": "nowrap",
+            "insideButton": true
+          },
+          {
+            "text": "In progress",
+            "whiteSpace": "nowrap",
+            "insideButton": true
+          },
+          {
+            "text": "Completed",
+            "whiteSpace": "nowrap",
+            "insideButton": true
+          },
+          {
+            "text": "Watches",
+            "whiteSpace": "nowrap",
+            "insideButton": true
+          }
+        ]
+      }
+    ],
+    "reference": "design/A-bureau-decisions.png",
+    "visual": "Direction A preserved. Narrow English labels wrap inside their navigation columns. No document horizontal overflow at 320,390,768 CSS px."
+  },
+  "evidence": [
+    {
+      "path": "proposals/ui/evidence-followup/case-detail-en.png",
+      "sha256": "dbca63fc5aaa8330b795523154af1b72f05c3b0a06ab696d63d5612dea2565d2"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-detail-en.snapshot.txt",
+      "sha256": "391b5b5ecb6696ca5432ae95f6e1e7154648b4983e4b05d9aec0c9bf168cadbd"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-needs-input-en.snapshot.txt",
+      "sha256": "40485d0079e968b382cc74a98d463d33ab9e679b7f8a58274ef71f2d59de826d"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-responsive-320-en.png",
+      "sha256": "b9b71d81fcc75dab7cbd8d3fb5e4e370efac401aedd99243da97d54d955eeccf"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-responsive-320-en.snapshot.txt",
+      "sha256": "9d721dd809a2d76d7f0a1e265cd5dd58feaa7b8ac552e8770617eaa3c866643a"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-responsive-390-en.png",
+      "sha256": "966834f0cd3aa69d5a993056e7aa9223c3910db6f20ae3cfd46724fd2d5ad17c"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-responsive-390-en.snapshot.txt",
+      "sha256": "41103989311049c8b8eb0ef63a81d2b5b3cc00d396a39be302c28927e74b6c3b"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-responsive-768-en.png",
+      "sha256": "95005396596b1dad85b310e85c6b5b59ba15ac3ba0152b00dda1e441de914616"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-responsive-768-en.snapshot.txt",
+      "sha256": "20d142542d80e705bf61293acf32255ad98e8ff004837e28a6a356db7bb1f0cb"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-revised-none-en.png",
+      "sha256": "2d168c57afc2fed5e814760051b6af70606ea9909f2b0c5a711a8ec60ca8ea3d"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/case-revised-none-en.snapshot.txt",
+      "sha256": "e1034f30e76c2aae068a886be41f84a43a73c2cf2662304dcf4eabf9a8256d2f"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/parcours-question-before-provider.png",
+      "sha256": "59e1dc34eebb5d22948f212c7f6f491d1f29440a6d94773ad9f987263d25c0f9"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/parcours-question-before-provider.snapshot.txt",
+      "sha256": "08dd8c1d2221b69c262ad6ae2f0e442fcdd8e773cc3941caa4dbdaa07694fa74"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/parcours-watch-created.png",
+      "sha256": "4c94c79998648d8d315c204f670707c0409f16e6249b3f568701d81c17357887"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/parcours-watch-created.snapshot.txt",
+      "sha256": "a8676b8b15c46deb4050c87ef36a756f83f791dcd9f6cae023a6781346514f8a"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/parcours-watch-readback.snapshot.txt",
+      "sha256": "cc46bdb5815796f2ed48521ed5a2a37cc696d4310193ce60dd1abd1b451bfdf8"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/question-capabilities-error-en.png",
+      "sha256": "d1ae269d3a10387199ff265152cdb63416b55695c7b0c4c1c8c12c3df64e1c7c"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/question-capabilities-error-en.snapshot.txt",
+      "sha256": "66960f72dc881324beb119205a69a4c1951abfece6579bdbce2ab3da7339be55"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/real-ui-readback.json",
+      "sha256": "449fa0bdf9c22bb3b1beca68881c3d66b4ca681e12feac023c2abdee32b4a775"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/responsive-final.json",
+      "sha256": "a62dfa14d470635474ed7d19663e754d8131b039a5f7624c441dfd57338c5d97"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-capabilities-error.png",
+      "sha256": "d2f482265cd9d2720b5b5cde84b11a9b1ec2b744f52260f80ff4c77f3e2d4b7a"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-capabilities-error.snapshot.txt",
+      "sha256": "4bae690909e3b3389be544ed12f80689333da49e8f12489cbd088d25f993729c"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-capabilities-ready.png",
+      "sha256": "969ec512956bf629d5a6855d64dbe2a5a0e6ab34f52ccd22fa69238664880fa9"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-capabilities-ready.snapshot.txt",
+      "sha256": "d39a1839d81d286c2d95fb8fca2f69b1a3faeeeabb84223008e13910bf3898f8"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-real-approved-proposal-en.png",
+      "sha256": "6d756adfb6bf557b6fc2068b63c400c6a40626291a54f99e776abf31c9dc51e6"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-real-approved-proposal-en.snapshot.txt",
+      "sha256": "592b7316f29b5519ad79b97437cbbebf006b28e4369fd9d9bda30d5022a4a489"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-real-candidate-en.png",
+      "sha256": "43125225a86b94479113901537d2545fad48f4e3e43101190479988847ca7307"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-real-candidate-en.snapshot.txt",
+      "sha256": "d9eaab1277d8f016b51c1ac5dde0f0f0600ca47b6ec4337030246eb7aa04d298"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-real-case-detail-en.png",
+      "sha256": "ce55b976fc49084957b01f4d81c1c8c78022cd73af75fff1e9da1d4bd9d8d5c8"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-real-case-detail-en.snapshot.txt",
+      "sha256": "97ede25cb7e1f368d9c6c98332d3b206dde05a28ca3b5059c29365778f4ce94f"
+    },
+    {
+      "path": "proposals/ui/evidence-followup/ui-real-topic-source-en.snapshot.txt",
+      "sha256": "8a92bf7952b5e089c3aef87f749b58ce60ecb57a350adb9c1f50b8f2ad482af7"
+    }
+  ]
+}

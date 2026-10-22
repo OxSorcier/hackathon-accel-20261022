@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "status": "CORE_TESTED_ON_AIVEN_AND_INDEPENDENT_READBACK_PASS",
+  "receivedAt": "2026-10-22T11:34:49.247215+00:00",
+  "apply": {
+    "version": 1,
+    "checkedAt": "2026-10-22T11:19:46.133Z",
+    "mode": "--apply",
+    "status": "imported_and_read_back",
+    "schema": "adaptops_industrial_v2",
+    "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+    "revision": "R-INDUSTRIAL-CANDIDATE-2",
+    "policyVersion": "P1",
+    "dataOrigin": "synthetic",
+    "files": [
+      {
+        "name": "portfolio-10000.json",
+        "sha256": "88305b739661df5cdb7f1686ad461afa05f7f1d5206bbaec7055eada3f6333af"
+      },
+      {
+        "name": "portfolio-policy.json",
+        "sha256": "b957fac59b39b9f553bf0c6b86eaa9c9b11076c5bf25cf154aae223150505ae2"
+      }
+    ],
+    "dataHash": "8ec5df0ed8499f7ca43936b4fbb09b9d99448fbf86859f5f9a4f7830e2d59083",
+    "actualHash": "8ec5df0ed8499f7ca43936b4fbb09b9d99448fbf86859f5f9a4f7830e2d59083",
+    "counts": {
+      "company": 1,
+      "employees": 3,
+      "suppliers": 40,
+      "products": 200,
+      "depots": 6,
+      "customers": 400,
+      "orders": 2502,
+      "order_lines": 10000,
+      "inventory": 764,
+      "reservations": 9999,
+      "purchase_orders": 8,
+      "purchase_order_lines": 8,
+      "inbound_allocations": 13,
+      "transport_quotes": 3,
+      "emergency_quotes": 5,
+      "crm_opportunities": 81,
+      "watch_drafts": 1,
+      "construction_projects": 24,
+      "product_supply_links": 202
+    },
+    "inserted": true,
+    "importCount": 1,
+    "freshConnectionReadback": true,
+    "stableCompanyUnchanged": true,
+    "tls": {
+      "ssl": true,
+      "version": "TLSv1.3"
+    },
+    "noProviderCalls": true,
+    "noSourceCollection": true,
+    "limits": [
+      "Core C1 only; industrial sidecar, report, automatic analysis and execution are not imported or asserted."
+    ]
+  },
+  "independentQA": ".local/qa-adaptops-v2/AIVEN-CORE-READBACK.json",
+  "independentQASha256": "cfe6d7af940846c13bf864a5cbf0f69c3440a0125314eb22e2f304780ee18075",
+  "reviewReceipt": "proposals/integration/INDUSTRIAL-IMPORT-REVIEWS.json",
+  "scope": "Only existing received C1 core. No sidecar event bootstrap, report, model-at-scale or execution proof."
+}

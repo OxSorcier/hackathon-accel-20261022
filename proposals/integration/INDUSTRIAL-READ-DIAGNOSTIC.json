@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "status": "DIAGNOSED_CORRECTION_REVALIDATION_PENDING",
+  "cycles": 3,
+  "cause": "C1 date-only transport quote validity was compared with UTC calendar while the native company timezone is Europe/Paris. Industrial timestamp quotes use explicit offsets.",
+  "evidence": [
+    "Both cycle3 independent probes reproduce current/pending after local midnight on C1 transport alias.",
+    "Source authority: dataset.tables.company[0].timezone and native quote valid_on."
+  ],
+  "decision": "Use one read instant and the native company calendar; unknown calendars cannot establish current C1 quote. No provider, authority or business scope change.",
+  "next": "Targeted confirmation by the existing two reviewers and exact candidate tests, then receive or diagnose any unresolved finding; no blind new panel."
+}

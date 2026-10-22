@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "status": "RECEIVED_CONTRACT_IMPLEMENTATION_NOT_RUN",
+  "scope": "R1/R2 research evidence memory",
+  "createdAt": "2026-10-22T10:16:34.980480+00:00",
+  "files": [
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "62775365b86b257cb7f7bcc6d36f4ef51579b9ded5c8f3a5ff511cfd5ecb588b"
+    },
+    {
+      "path": "src/contracts/research.ts",
+      "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214"
+    }
+  ],
+  "rules": [
+    "Canonical storage remains watch occurrences/evidence. No model answer is a fact.",
+    "ResearchScope is server bound, authorized profile version and live/controlled namespace. Model tools take no company/profile/URL arguments.",
+    "Scope generation changes for a changed source set/hash or changed result state, not identical recollection. Missing lookup generation0 is guarded too.",
+    "ResearchPort.lookup before refresh. refresh rechecks in durable storage; reusable/fresh returns without collector call.",
+    "Durable intent before external call; interrupted attempt is uncertain and never automatically retried.",
+    "ResearchContext max10 observations, bounded contents, source_observation_only. testOnly matches namespace and mode:test; live requires mode:direct.",
+    "Agent records and validates exact refs plus generation/freshness before and after provider/tools; refreshed generation returns stale_context and a new run. Never retain old evaluations under a new token.",
+    "No research proposal: existing needs_input plus explicit researchResult outcome available identifies successful retrieval without a business proposal. UI must label this object correctly.",
+    "All dependencies imposed from server scope plus returned lookups, persisted before publish and rechecked under company lock at publication/approval.",
+    "Controlled source ingestion is an operator-only explicit test path. Do not relax public direct-only case evidence.",
+    "R2 tests demonstrate source-change staleness, not an already-existing relation rejection. Historical proof and plans preserved."
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "version": 3,
+  "observedAt": "2026-10-22T12:21:31.080814+00:00",
+  "applicationCodeChanged": false,
+  "documents": [
+    {
+      "markdown": "docs/PRODUCT-VISION.md",
+      "html": "docs/PRODUCT-VISION.html",
+      "previous": "docs/history/PRODUCT-VISION-v2-before-physical-impact-20261022.md",
+      "sha256Markdown": "629ff7c0b225117b686a3b31738550e69fa4bc99017f56519212fb7f7725c627",
+      "sha256Html": "e08b0f992f23b16cf8329e1697051ee48a7b3e12440507864cc49ab40f054037",
+      "sameMainText": true,
+      "checkedLocalLinks": 22,
+      "embeddedFontFaces": 4
+    },
+    {
+      "markdown": "proposals/product/alignment-20261022/DEMO-SCRIPT.md",
+      "html": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+      "previous": "proposals/product/alignment-20261022/history/DEMO-SCRIPT-v2-before-physical-impact-20261022.md",
+      "sha256Markdown": "444b5eb588242a636160e90520a3c8d1a433321c17e3f3c308e9a7619ff79058",
+      "sha256Html": "7204842998ca208151bfec863b9647c2dac7aa99ad1ba5ced10396dc235f3d5f",
+      "sameMainText": true,
+      "checkedLocalLinks": 22,
+      "embeddedFontFaces": 4
+    }
+  ],
+  "status": "VISION_DEMO_ARCHIVED_AND_COORDINATION_RECEIVED",
+  "scope": "Document update, existing-owner coordination, concrete gap assessment and proposed application UX compositions. Full application delivery remains with existing owners.",
+  "archiveFolderId": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+  "nativeDocuments": [
+    {
+      "path": "docs/PRODUCT-VISION.md",
+      "nativeId": "1OufYkYFbwSC7Onj-iPCqhVTZYBMaUKm_"
+    },
+    {
+      "path": "docs/PRODUCT-VISION.html",
+      "nativeId": "1cAFkWyF8YQNZTuQg-TXsxWMPrX4O7BYB"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/DEMO-SCRIPT.md",
+      "nativeId": "1PJ9jbqHj0BSALsGPYZbPwNU2vhW4IExD"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+      "nativeId": "1ciaHiAmd67s1MLK4-DO4Y6vr0INg33RE"
+    }
+  ],
+  "remoteReadback": "proposals/product/physical-impact-v3-evidence/REMOTE-READBACK.json",
+  "renderChecks": "proposals/product/physical-impact-v3-evidence/RENDER-CHECKS.json",
+  "archiveDiscovery": {
+    "query": "Physical Impact",
+    "expectedDocumentsFound": 4,
+    "withinExistingFolder": true,
+    "audienceChanged": false
+  },
+  "tracker": {
+    "issue": "ERW-133",
+    "commentId": "c6afb2a8-68eb-407b-9797-67fc07e88e76",
+    "marker": "ADAPTOPS-VISION-DEMO-20261022-V2",
+    "commentReadBack": true,
+    "issueStateChanged": false
+  },
+  "ux": {
+    "status": "PROPOSED_NOT_IMPLEMENTED",
+    "recommended": "A",
+    "humanCompositionValidation": "PENDING_IN_EXISTING_UI_CHAT",
+    "nativeProposal": "proposals/ui/adaptops-home-proposal/PROPOSAL.json",
+    "archives": [
+      {
+        "path": "proposals/ui/adaptops-home-proposal/A-briefing-first-v2.png",
+        "nativeId": "1KnZTflLiLhvBczGLKnD3ByqRhqXQsBkA",
+        "url": "https://drive.google.com/file/d/1KnZTflLiLhvBczGLKnD3ByqRhqXQsBkA/view",
+        "remoteSize": 1645104,
+        "shared": false,
+        "verification": "REMOTE_METADATA_READ_BACK",
+        "localSha256": "d0f836bfddff083e8088caa44beb216eb03768d748e63b0daf51c2f751f0c935"
+      },
+      {
+        "path": "proposals/ui/adaptops-home-proposal/B-evidence-to-action-v2.png",
+        "nativeId": "1zxCH-xsW4DbiyFO9DdNDX835W9zb3tkN",
+        "url": "https://drive.google.com/file/d/1zxCH-xsW4DbiyFO9DdNDX835W9zb3tkN/view",
+        "remoteSize": 1643341,
+        "shared": false,
+        "verification": "REMOTE_METADATA_READ_BACK",
+        "localSha256": "0d83b924d30fc4d09ee59f15171050ca6a47982642b397ecd25f4c13ef4d1519"
+      },
+      {
+        "path": "proposals/ui/adaptops-home-proposal/C-case-reader-v2.png",
+        "nativeId": "1glgXbJjUiN5Zpi03NVxXB9luhE_Lx14s",
+        "url": "https://drive.google.com/file/d/1glgXbJjUiN5Zpi03NVxXB9luhE_Lx14s/view",
+        "remoteSize": 1581662,
+        "shared": false,
+        "verification": "REMOTE_METADATA_READ_BACK",
+        "localSha256": "001e39e0acc30e314344ffdb8195ca9acce87fa7584b5c1c8fff49dc11d606a9"
+      },
+      {
+        "path": "proposals/ui/adaptops-home-proposal/PROPOSAL.json",
+        "nativeId": "1vvN-_fk2sljcA20DrAm-v3XizGaOGFgt",
+        "url": "https://drive.google.com/file/d/1vvN-_fk2sljcA20DrAm-v3XizGaOGFgt/view",
+        "remoteSize": 2113,
+        "shared": false,
+        "verification": "REMOTE_METADATA_READ_BACK",
+        "localSha256": "fc18d796c36d079f27065c638a942da5e71027b449d38a854a2ee8e920d53884"
+      }
+    ],
+    "imagesVisuallyInspected": true,
+    "appRuntimeChanged": false
+  },
+  "coordination": [
+    {
+      "threadId": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+      "role": "Integration and exact-version reception",
+      "acknowledgement": "RECEIVED",
+      "checkpoint": "docs/STATUS.md"
+    },
+    {
+      "threadId": "01a162bd-facf-7b63-861b-9bbf7f402938",
+      "role": "Application UX/UI",
+      "acknowledgement": "RECEIVED",
+      "checkpoint": "proposals/ui/ADAPTOPS-DEMO-CHECKPOINT.json"
+    },
+    {
+      "threadId": "01a162bd-e262-7fa2-a1f3-aab46f68fc1a",
+      "role": "Data and watch",
+      "acknowledgement": "RECEIVED",
+      "checkpoint": "proposals/data/ADAPTOPS-DATA-CHECKPOINT-v1.json"
+    },
+    {
+      "threadId": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+      "role": "Business and agents",
+      "acknowledgement": "RECEIVED"
+    },
+    {
+      "threadId": "01a16306-b164-72f3-83d9-9edd27ded2ef",
+      "role": "Existing enriched portfolio owner",
+      "acknowledgement": "RECEIVED"
+    },
+    {
+      "threadId": "01a162cf-0150-7091-8394-f5dbca7b53a9",
+      "role": "ERP/CRM and industrial report coordination",
+      "acknowledgement": "RECEIVED",
+      "checkpoint": "proposals/product/ADAPTOPS-DATA-REPORT-COORDINATION-20261022.md"
+    },
+    {
+      "threadId": "01a162bd-6384-7031-82c3-fdb5efba174e",
+      "role": "Sector research and demo qualification",
+      "acknowledgement": "RECEIVED"
+    },
+    {
+      "threadId": "01a162cd-6303-7891-9160-54e6b70a3ffc",
+      "role": "Figma pitch slide, distinct from app UX",
+      "acknowledgement": "RECEIVED"
+    }
+  ],
+  "remainingFullApplicationProof": [
+    "Exact reviewed industrial import and relationship readback on Aiven; fresh local-process import reported by integrator.",
+    "Automatic relevant observation to prepared report trigger with durable deduplication and recovery.",
+    "Risk and qualified commercial opportunity calculated in one plan protecting existing commitments.",
+    "Approved simulated business action executed with current authority, idempotence and durable effect readback.",
+    "Exact integrated app UX reception, changed-data revision, restart and measured end-to-end rehearsal.",
+    "Aiven Runtime deployment and jury submission have no receipt in this document update."
+  ],
+  "completedAt": "2026-10-22T11:24:22.555Z",
+  "postDeliveryScopeClarification": {
+    "observedAt": "2026-10-22T11:27:46.393Z",
+    "sourceThreadId": "01a162bd-6384-7031-82c3-fdb5efba174e",
+    "evidenceLevel": "OWNER_REPORTED_NOT_REPLAYED_HERE",
+    "portfolioScale": {
+      "orderLines": 10000,
+      "programmes": 24,
+      "sites": 6
+    },
+    "opportunity": {
+      "pallets": 20,
+      "unitPriceEur": 190,
+      "potentialRevenueEur": 3800
+    },
+    "riskOption": {
+      "pallets": 8,
+      "expenditureEur": 1420
+    },
+    "qualification": "Portfolio volume is not affected volume. Show only commitments, sites and programmes supported by the actual calculation. Potential revenue and expenditure are not savings or project value. Unknown project values remain unknown.",
+    "forwardedTo": [
+      "UI owner",
+      "Integrator"
+    ]
+  },
+  "backendCoordination": {
+    "status": "ACTIVE_NOT_COMPLETE",
+    "authorisedByUserMessage": "01a16364-5792-7651-85ff-11f44e87a954",
+    "observedAt": "2026-10-22T12:01:06.303Z",
+    "scope": "Connect existing ERP, CRM and public evidence to industrial chatbot, prepared mixed-impact report, calculated plan, human decision, simulated execution and durable readback. Erwan retains frontend.",
+    "singleIntegrationOwner": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+    "existingDataReportCoordinator": "01a162cf-0150-7091-8394-f5dbca7b53a9",
+    "independentQaOwner": "01a15f24-8d9c-7fd2-8a00-1b039732248f",
+    "acknowledged": [
+      "integration",
+      "data_report_coordination",
+      "independent_qa",
+      "data_watch",
+      "business_agent",
+      "ui_frontend_ownership",
+      "live_feed_owner"
+    ],
+    "sentAwaitingAcknowledgement": [],
+    "targetGates": [
+      "exact received code and data",
+      "public evidence attribution and freshness",
+      "industrial chatbot question and follow-up",
+      "prepared risk/opportunity report and plan",
+      "authorised decision",
+      "simulated durable effect and idempotent readback",
+      "restart and stale-context behaviour",
+      "integrated UI on user-received frontend"
+    ],
+    "limitation": "Dispatch and acknowledgement are not integrated runtime proof.",
+    "candidate": {
+      "port": 3003,
+      "schema": "adaptops_industrial_v2",
+      "runtimeStatus": "AUTHENTICATED_WORKSPACE_READ_ONLY_RECEIVED",
+      "url": "http://127.0.0.1:3003",
+      "source": ".local/industrial-http-read-v3-clock",
+      "receipt": "proposals/integration/INDUSTRIAL-READ-CANDIDATE.json",
+      "conversation": "NOT_CONNECTED",
+      "report": "NOT_RUN",
+      "approvedExecution": "NOT_RUN"
+    },
+    "questionContract": {
+      "method": "POST",
+      "path": "/api/industrial/questions",
+      "poll": "/api/runs/:id",
+      "status": "PUBLISHED_RUNTIME_UNAVAILABLE",
+      "context": "server-resolved company/context/report",
+      "contractPath": "proposals/integration/INDUSTRIAL-HTTP-CONTRACT.json"
+    },
+    "pinCheck": {
+      "agentManifest": "proposals/agent/INDUSTRIAL-READY.json",
+      "pins": 10,
+      "matching": 8,
+      "changed": [
+        "src/contracts/industrial.ts",
+        "src/data/industrial-relations.ts"
+      ],
+      "resolution": "Integrator and module owners notified; receive final exact graph before integrated acceptance."
+    },
+    "chatbotReadbackRequirement": {
+      "observedAt": "2026-10-22T11:52:43.028Z",
+      "observedSource": "src/agent/specialized-runner.ts:26-33",
+      "state": "REQUESTED_MINIMAL_CANONICAL_READ_PROJECTION",
+      "requirement": "After approval and simulated execution, a follow-up question must read current server-owned decision and execution receipts with native IDs, states and revisions, not infer completed actions from calculation allocations.",
+      "authority": "Integrator owns contract and server; business/agent owner owns strict parser and tools. No model effects added.",
+      "execution": "NOT_RUN"
+    },
+    "receivedAgentModule": {
+      "manifest": "proposals/agent/SCOPED-AGENT-READY.json",
+      "reviews": "proposals/agent/SCOPED-AGENT-REVIEWS.json",
+      "state": "REVIEWED_MODULE_RUNTIME_NOT_RUN"
+    },
+    "singleFullJourneyOwner": "01a15f24-8d9c-7fd2-8a00-1b039732248f",
+    "frontendOwnerChat": "01a16346-9b6f-7b70-afc7-57775e697a94",
+    "currentDependencies": [
+      "First industrial HTTP correction and exact reviews",
+      "Server worker and industrial agent-port assembly",
+      "Data-owner durable simulated-effect persistence",
+      "Single live-collection attempt on received candidate",
+      "Single independent full-journey QA"
+    ],
+    "meaningLimits": [
+      "Protected commitments are projected coverage after a plan, not completed deliveries.",
+      "The plan is an admissible bounded candidate, not a demonstrated global optimum.",
+      "Public-source collection time is not publication freshness or proof of the synthetic incident."
+    ],
+    "productName": "Physical Impact",
+    "identitySource": "Native human correction in frontend owner chat; business IDs/schemas unchanged.",
+    "singleScenarioPolicy": "Only the independent QA owner mutates or probes the received backend candidate. Transverse and live owners reuse its runs and receipts.",
+    "frontendModeBoundary": "Public scripted Demo and connected backend are received separately. Live mode must use server IDs, facts and quantities, not overwrite the core from Demo copy."
+  },
+  "previousDocumentVersions": [
+    {
+      "version": 2,
+      "documents": [
+        {
+          "markdown": "docs/PRODUCT-VISION.md",
+          "html": "docs/PRODUCT-VISION.html",
+          "previous": "docs/history/PRODUCT-VISION-v1.1-before-adaptops-20261022.md",
+          "sha256Markdown": "b3d54b15cbdb62082bdb246b3408b353cb4b9088eb338cd4277111cd9085e758",
+          "sha256Html": "a2ccdb3db8fe9ac64a567fa2f3a0fcf3544496974d989ab03fec3cd321cfdbf0",
+          "sameMainText": true,
+          "checkedLocalLinks": 14,
+          "embeddedFontFaces": 4
+        },
+        {
+          "markdown": "proposals/product/alignment-20261022/DEMO-SCRIPT.md",
+          "html": "proposals/product/alignment-20261022/DEMO-SCRIPT.html",
+          "previous": "proposals/product/alignment-20261022/history/DEMO-SCRIPT-v1.md",
+          "sha256Markdown": "f15c9aa46a5b0de62dc10419cb11ef15914a8dda71d206c51866b8ff5b523c80",
+          "sha256Html": "18238d49f2ca31591f179b56049e801985fc77217e1873ee24ff414992ae7841",
+          "sameMainText": true,
+          "checkedLocalLinks": 14,
+          "embeddedFontFaces": 4
+        }
+      ],
+      "remoteReadback": "proposals/product/adaptops-v2-evidence/REMOTE-READBACK.json"
+    }
+  ],
+  "productName": "Physical Impact",
+  "currentDocumentArchiveStatus": "V3_ARCHIVED_AND_RAW_CONTENT_VERIFIED",
+  "trackerV3": {
+    "detailedUpdate": "REJECTED_BY_AUTOMATIC_APPROVAL_REVIEW",
+    "reason": "Extensive internal status and private Drive links were not accepted for export to Linear.",
+    "previousCommentPreserved": true,
+    "saferAlternative": "Minimal identity/document-version status only, without business data or private links.",
+    "minimalUpdateSucceeded": true,
+    "minimalCommentId": "fcdbd66a-3140-49c8-8f8f-959e37e90168",
+    "minimalReadBack": true
+  }
+}

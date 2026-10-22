@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "status": "IMPORTED_ON_AIVEN_CORE_UNCHANGED",
+  "schema": "adaptops_industrial_v2",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "contextRevision": "IC-INDUSTRIAL-2-2",
+  "qualificationRevision": "Q-INDUSTRIAL-2-1",
+  "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "policyVersion": "P1",
+  "sourceHash": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e",
+  "coreHash": "8ec5df0ed8499f7ca43936b4fbb09b9d99448fbf86859f5f9a4f7830e2d59083",
+  "contextVersionCount": 1,
+  "checkedAt": "2026-10-22T12:15:41.210Z",
+  "noProviderCalls": true,
+  "noSourceCollection": true
+}

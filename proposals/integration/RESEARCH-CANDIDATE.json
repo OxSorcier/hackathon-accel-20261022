@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "createdAt": "2026-10-22T11:31:28.573223+00:00",
+  "status": "CODE_RECEIVED_READY_FOR_TWO_R1_RUNTIME_RUNS",
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/research-server-review-v3",
+  "checkpoint": "proposals/integration/REVIEW-INPUT-RESEARCH-SERVER-v3.json",
+  "checkpointSha256": "7f66847ac1d5e1bdf9ac4b219517389f5529e20d5b4fdab7c5258b97b78889f7",
+  "reviews": "proposals/integration/RESEARCH-SERVER-REVIEWS.json",
+  "port": 3002,
+  "schema": "Owner creates one separate existing-Aiven schema, after007 before explicit transfer. No public/stable changes.",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "initialImport": "One acquired watch, occurrence occ13c924 and its exact five evidence tuples; no cases, proposals, answers or research scopes. Hold company lock before terminal INSERT. Boundary0, new publicationSeq>0. Preserve original source times/hashes.",
+  "protocol": "Two actual new runs/sessions, with stop/restart between them and no repeated seed/import/qualification. ResearchHTTP0 each; actual provider transport counters separate. Keep testOnly/live namespaces explicit.",
+  "testEvidence": {
+    "localFullTests": 291,
+    "build": "PASS",
+    "realOpenAI": "NOT_RUN",
+    "actualRestart": "NOT_RUN",
+    "AivenR1": "NOT_RUN"
+  },
+  "stable3001": "Unchanged risk preview v2."
+}

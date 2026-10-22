@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "unitScope": "PDF extraction service only; integrated application acceptance belongs to integrator and is still pending.",
+  "createdAt": "2026-10-22T10:29:57.116293+00:00",
+  "plan_path": null,
+  "changed_files": [
+    {
+      "path": "proposals/modal/CONTRACT.json",
+      "sha256": "b4d2d366464e47f1b092282a3c2adac91cebb0347fc2a78eb16e59fe2969431f"
+    },
+    {
+      "path": "services/modal-pdf/.gitignore",
+      "sha256": "f04bfb510c66b7762b29f556b8d9e5ae1174b4997a8d049af91ef7cd74e1978e"
+    },
+    {
+      "path": "services/modal-pdf/README.md",
+      "sha256": "59242f0d9e01cd4ef0816ac023b41d5c37d84616d18f244274f0073753e6ee3b"
+    },
+    {
+      "path": "services/modal-pdf/accel_pdf_http.py",
+      "sha256": "de29c651ec033303db2eda6772893aef37325e7f5d9a7273e33d6ed21df85d48"
+    },
+    {
+      "path": "services/modal-pdf/accel_pdf_reader.py",
+      "sha256": "8d40521109ad449dfa96c9a165e6058c91d7db885495f5a63d0312168de361af"
+    },
+    {
+      "path": "services/modal-pdf/modal_app.py",
+      "sha256": "450d82cbb0f23e06d8481d86f457e0c0431c701c95e1e25f95b4d308f68b4fd3"
+    },
+    {
+      "path": "services/modal-pdf/requirements.in",
+      "sha256": "73b413a9d4fe8b31ad507f02d1bc5067bc5379adafe31ded234f9417c16964a4"
+    },
+    {
+      "path": "services/modal-pdf/requirements.lock",
+      "sha256": "014d18e3faaa74a16ed92c7013567605ae19bfd0883c5d133ec6aee212d6af9e"
+    },
+    {
+      "path": "services/modal-pdf/tests/test_http.py",
+      "sha256": "a1b823c22fd04c6e3e1521b006ecf093bc00a1fc9e7a9451a45c1dba85880729"
+    },
+    {
+      "path": "services/modal-pdf/tests/test_reader.py",
+      "sha256": "e279117cfd31de8f4aca675a66020289d01f670d7d463e64703fadb4732ed41b"
+    }
+  ],
+  "u_ids_attempted": [
+    "pdf-service"
+  ],
+  "u_ids_completed": [
+    "pdf-service"
+  ],
+  "verification_results": {
+    "unitTests": "13 passed",
+    "modalRealPdf": "HTTP 200, 17 pages, 40113 characters",
+    "authentication": "Unauthenticated HTTP 401",
+    "malformedPdf": "HTTP 422/PDF_INVALID",
+    "finalHashes": "All 10 stable",
+    "reviews": "Two independent reviewers received; no retained finding on revision 2"
+  },
+  "verification_evidence": [
+    {
+      "unit": "pdf-service",
+      "behavior_changed": true,
+      "existing_tests_inspected": "New service, no existing tests in its owned directory.",
+      "tests_added_or_changed": [
+        "tests/test_reader.py",
+        "tests/test_http.py"
+      ],
+      "tests_used_unchanged": [],
+      "red_observation": [
+        "Initial tests failed on missing reader and HTTP modules before implementation.",
+        "A real public report initially exposed unsupported owner protection; implemented normal no-opening-password handling and added AES owner-protection coverage.",
+        "ToUnicode NFC regression asserted final accented character and failed before NUL-removal order was corrected."
+      ],
+      "commands": [
+        {
+          "command": "PYTHONPATH=. .venv/bin/python -m unittest discover -s tests -v",
+          "cwd": "services/modal-pdf",
+          "result": "13 tests pass"
+        },
+        {
+          "command": "Modal deploy from the private local deployment profile",
+          "result": "App deployed; explicit modules plus single-file entrypoint upload observed"
+        },
+        {
+          "command": "Bounded direct HTTPS probe, redirects refused, proxy authentication server-side",
+          "result": "Real report 200; no credentials 401; malformed PDF 422"
+        }
+      ],
+      "evidenceFiles": [
+        "proposals/modal/REVIEWS.json",
+        "proposals/modal/MODAL-LIVE.json",
+        "proposals/modal/REVIEW-SCOPE.json"
+      ],
+      "exceptionReason": null
+    }
+  ],
+  "implementation_engine_binding": null,
+  "requested_route": "native Codex session",
+  "actual_route": "native Codex session",
+  "requested_model": null,
+  "actual_model": "gpt-6.1-sol",
+  "actual_model_source": "Session turn_context",
+  "requested_effort": null,
+  "fallback_reason": null,
+  "run_id": null,
+  "source_kind": "prompt",
+  "source_digest": null,
+  "unit_receipts": [
+    {
+      "unit": "pdf-service",
+      "route": "native",
+      "model": "gpt-6.1-sol",
+      "detachedProcess": false,
+      "integration": "Owned paths frozen; Node/Aiven/UI integration pending with owner",
+      "verification": "Local and actual Modal verified",
+      "canonicalCommit": "None; explicit user request to commit/push not received",
+      "cleanup": "Deployment API token revoked, revocation checked in dashboard and CLI, private deployment profile deleted; runtime Proxy Token retained."
+    }
+  ],
+  "plan_checkpoint": null,
+  "blockers": [],
+  "recovery_path": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "settled_decision_conflicts": [],
+  "behavior_change": true,
+  "standalone_shipping_skipped": true,
+  "shippingScopeReason": "Bounded module returned to integrator under project ownership. No shared assembly, PR, commit or push in this unit. Required project code reviews were completed separately.",
+  "runtimeConfiguration": {
+    "privateFile": ".env.access",
+    "variables": [
+      "MODAL_PDF_URL",
+      "MODAL_PDF_PROXY_KEY",
+      "MODAL_PDF_PROXY_SECRET"
+    ],
+    "permissions": "0600",
+    "gitIgnored": true,
+    "noDeploymentTokenInApp": true
+  },
+  "nextOwner": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "nextAction": "Integrate real extraction with controlled PDF download, per-company persistence/readback, source page citations and unchanged-document reuse; verify in Aside.",
+  "cleanupReceipt": "proposals/modal/ACCESS-CLEANUP.json"
+}

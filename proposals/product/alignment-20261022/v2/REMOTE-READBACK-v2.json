@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "status": "REMOTE_BYTES_AND_BUNDLE_ENTRIES_VERIFIED",
+  "checkedAt": "2026-10-22T11:22:03.579346+00:00",
+  "files": [
+    {
+      "file": "DATA-RECEIPT.md",
+      "id": "1f81SzS3GH2pmMMQ1RfHVetXEmJP9npkH",
+      "bytes": 12445,
+      "sha256": "c70ade7029185791a527f2e3bf8035edef779ce3e3cf89785572406043212c84",
+      "byteIdentical": true
+    },
+    {
+      "file": "DATA-RECEIPT.html",
+      "id": "1LyArCUjo8TBgm-oxfIBCDnKDAdxH8_D6",
+      "bytes": 181188,
+      "sha256": "6dd80131b997bf7a908608ccf03d81afe8dc5e4a0b46171ef76cfd9929a9e365",
+      "byteIdentical": true
+    },
+    {
+      "file": "PRESS-RELEASE.md",
+      "id": "1S9R5eb0BcbYAPkVzJofY6zzsO2H7LSeF",
+      "bytes": 2747,
+      "sha256": "8c51cec396a0879ee4267fd0716cb3782b8f77a6b27c6e87fa2817b0dc4f61c2",
+      "byteIdentical": true
+    },
+    {
+      "file": "PRESS-RELEASE.html",
+      "id": "1FtvEKp6F9W2a8tTUBLfgqQqVzoS4UvKE",
+      "bytes": 170002,
+      "sha256": "417d150a0c95767e7fb517413a0ba4d37aa5a925ad41ed9c7e36ac81368113d1",
+      "byteIdentical": true
+    },
+    {
+      "file": "WEBSITE-COPY.md",
+      "id": "10NXJSqNCVYmSiH-Q6FDBi1qiNMtb9er9",
+      "bytes": 3227,
+      "sha256": "c8d83ea6e8b3941d947a143833ea1969e45aa410b55af599fce64f4c691fba5c",
+      "byteIdentical": true
+    },
+    {
+      "file": "WEBSITE-COPY.html",
+      "id": "1SPzAAwfKlJFpkd6rEYqVEIaRGXMaBLpc",
+      "bytes": 170875,
+      "sha256": "ef94eb520b2741deb526d4cbd8da67428f077b7e1ac20b4c5a7b3e1873b9eb5b",
+      "byteIdentical": true
+    },
+    {
+      "file": "ACCEL-ADAPTOPS-DATA-20261022-v2.zip",
+      "id": "1k8L93sikT7nbIGVlrOsZyzTMQOPIn3em",
+      "bytes": 3739448,
+      "sha256": "879df020885c4cbaace73ad906243d712a0519d00f76aa64c5e7dacfee97614b",
+      "byteIdentical": true
+    }
+  ],
+  "coldRetrievalDirectory": "/var/folders/1p/h6m1c58x3lzg4080b8yzckn40000gn/T/adaptops-v2-cold-read-6nr0x81b",
+  "archiveEntries": 81,
+  "manifestEntriesVerified": 80,
+  "folderId": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+  "sharing": "Existing private folder and seven file metadata shared=false; no audience change.",
+  "limits": [
+    "Retrieval proof does not establish application import, runtime deployment or business effect."
+  ]
+}

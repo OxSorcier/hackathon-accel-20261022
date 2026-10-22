@@ -1,0 +1,50 @@
+{
+  "status": "REVIEWED",
+  "realizationModelRequested": "gpt-6.1-sol",
+  "servedModel": "UNATTESTED",
+  "isolation": "Two distinct reviewers initially launched with fork_turns none and high effort. Independent reviews, followed by targeted revalidation of their own findings and final exact deltas.",
+  "versions": [
+    "v1 watch capabilities",
+    "v2 cases and English copy",
+    "v3 grouped corrections, with targeted v3b/v3c date and display fixes, v3d trace wording and v3e narrow navigation revalidation"
+  ],
+  "reviewers": [
+    {
+      "agent": "/root/case_ui_counter",
+      "role": "adversarial counter-review",
+      "modelRequested": "gpt-6.1-sol",
+      "effort": "high",
+      "servedModel": "UNATTESTED",
+      "finalManifest": "proposals/ui/REVIEW-FOLLOWUP-v3e.json",
+      "finalManifestSha256": "587cb5bd476c88ab14467ce44945104b6cbf61df7628bf1d48252a54d23e6bd7",
+      "verdict": "NO_RETAINED_FINDING",
+      "hashesBeforeAndAfter": "13/13 match",
+      "tests": "52 UI tests and typecheck passed on v3c. Later wording/CSS-only deltas read and hashed without repeating functional tests."
+    },
+    {
+      "agent": "/root/case_ui_architecture",
+      "role": "contracts and architecture",
+      "modelRequested": "gpt-6-astra",
+      "effort": "high",
+      "servedModel": "UNATTESTED",
+      "finalManifest": "proposals/ui/REVIEW-FOLLOWUP-v3e.json",
+      "finalManifestSha256": "587cb5bd476c88ab14467ce44945104b6cbf61df7628bf1d48252a54d23e6bd7",
+      "verdict": "NO_RETAINED_FINDING",
+      "hashesBeforeAndAfter": "13/13 match",
+      "tests": "52 UI tests and typecheck passed on v3c. Later wording/CSS-only deltas read and hashed; typecheck also passed on v3d."
+    }
+  ],
+  "retainedAndFixed": [
+    "Late workspace reads could overwrite command context; generation and session invalidation now cover the adapter cache.",
+    "Structured mutation HTTP 5xx lost uncertainty; generic failures now preserve it, with explicit preflight NOT_READY kept distinct.",
+    "Watch sources were independent from the topic profile; the UI reconciles/filter sources and the adapter validates the pair before POST.",
+    "A historical case proposal could make the whole workspace unavailable when its run left the latest 100; missing runs are hydrated, and read failure suspends only the affected decision.",
+    "An authored inbound label remained French; English display wording and unit formatting now preserve the raw records.",
+    "An order date explicitly null could fall back to a legacy line date; only the canonical order date is displayed."
+  ],
+  "redGreenEvidence": "Expected failures observed before cache/uncertainty, topic/source, historical-read, confirmation-presentation and canonical-date corrections; corresponding targeted tests then passed.",
+  "limits": [
+    "Reviewer browser, real provider and Aiven tests NOT_RUN; root browser evidence is separate.",
+    "Common model family and unattested served-model identity remain limitations."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "snapshot": "/tmp/accel-data-keenable-review-v2",
+  "files": [
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "sha256": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08"
+    },
+    {
+      "path": "src/data/validation.ts",
+      "sha256": "b57d601ae547d45dac5eb785c049974026aef1043bb8bb7633714f8fe03d9c0c"
+    },
+    {
+      "path": "src/data/watch-repository.ts",
+      "sha256": "29e24db1be644c809b2026389b5d730f507781a5d8412be76f6186c9b821bb29"
+    },
+    {
+      "path": "src/watch/collection-status.ts",
+      "sha256": "d488455a87d17d1cb32862dc22c298ecff7e181ca7059027ddd1260d14dcba3d"
+    },
+    {
+      "path": "src/watch/collector.ts",
+      "sha256": "41f70a5723c3f95d07fed5eca18007ecd3d59c21df737ac4ccd2537664e38046"
+    },
+    {
+      "path": "src/watch/engine.ts",
+      "sha256": "8b912aaefe04daf1206c6a2c1f98230d034c4bc19721e7d8a181c5418bb3b9a6"
+    },
+    {
+      "path": "src/watch/http.ts",
+      "sha256": "0472a13a3b51254d36cbc939260ad253bd7a62c4f6eed8869e889520ee5c4beb"
+    },
+    {
+      "path": "src/watch/keenable.ts",
+      "sha256": "87e948add1a0f64b780eafd17ecdd5a63b2bc51596ea5ee6005b677792588cb2"
+    },
+    {
+      "path": "src/watch/source-policy.ts",
+      "sha256": "3fc82411dacc34fc8c90ae4a11420ac12292c7354ac528f466ec131800dd0634"
+    },
+    {
+      "path": "tests/data/validation.test.ts",
+      "sha256": "82434d403bfce66b4eb241d52cb7a5a869fa7b3edf4e9a580c0d1e2f33dc39c0"
+    },
+    {
+      "path": "tests/data/watch-postgres.test.ts",
+      "sha256": "e67422afb570e299fde62aee19a938ca60f99dc2b508000623c9ffab656f2c09"
+    },
+    {
+      "path": "tests/watch/collector.test.ts",
+      "sha256": "776c2b35706b1ba4cd226bde15648acd709bc4146f951833354bbeec602d531d"
+    },
+    {
+      "path": "tests/watch/keenable.test.ts",
+      "sha256": "2d5d2765ebc1b95fee625ab35525184f52b01828e3457a280ca3a7d4826ae008"
+    },
+    {
+      "path": "tests/watch/live-boamp.ts",
+      "sha256": "e1b05a8fb21c7b31c4d5209a934cec98abf34510eae568c5c0f17061b5d36667"
+    },
+    {
+      "path": "tests/watch/live-coverage.ts",
+      "sha256": "ecbbb82f64455203c368bd367d0d3d877babecd6192e1be47ca1b40e02b0bd04"
+    },
+    {
+      "path": "tests/watch/live-keenable.ts",
+      "sha256": "f7555c9dc5f06121115a515235055c5734efb3935f64656187fcddde1c4e5e2a"
+    }
+  ],
+  "scopeSha256": "001d4f3e2a8f04f2ee0c1d32e6762d686b2dfce8c3a2b73ef2686e361bbb161d"
+}

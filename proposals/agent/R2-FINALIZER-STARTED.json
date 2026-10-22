@@ -1,0 +1,8 @@
+{
+  "status": "ONLY_NEW_COMMAND_REMAINING_NO_AUTOMATIC_REPEAT",
+  "checkedAt": "2026-10-22T12:25:20.150Z",
+  "schema": "r1_reception_20261022_1104ce6d364e",
+  "companyId": "CO-RESEARCH-R1-EMPTY",
+  "protectedStateHash": "b7f0cdd1fa9742be1c93da5ec052e33904e535d67a081ebd21e363dc11c65731",
+  "operationKey": "r2-source-v2-new-command"
+}

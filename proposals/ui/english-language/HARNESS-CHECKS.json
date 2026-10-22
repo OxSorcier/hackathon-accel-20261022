@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "skill": "hackathon-bootstrap",
+      "version": "0.3.2",
+      "version_present": true,
+      "source_matches": true,
+      "language_pointer_resolves": true
+    },
+    {
+      "skill": "hackathon-ideation",
+      "version": "0.2.1",
+      "version_present": true,
+      "source_matches": true,
+      "language_pointer_resolves": true
+    },
+    {
+      "skill": "demo-package",
+      "version": "0.1.1",
+      "version_present": true,
+      "source_matches": true,
+      "language_pointer_resolves": true
+    }
+  ],
+  "shared_policy_matches": true,
+  "scope": {
+    "ui": true,
+    "agent_output": true,
+    "readme": true,
+    "media": true,
+    "submission": true
+  },
+  "runtime_effectiveness": "NOT_RUN"
+}

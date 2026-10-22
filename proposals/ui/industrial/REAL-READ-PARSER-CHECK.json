@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-22T12:18:23.570Z",
+  "status": "REAL_SERVER_CAPTURE_PARSED_WITH_EXACT_UI_ADAPTER",
+  "source": "proposals/integration/INDUSTRIAL-WORKSPACE-READ-3003.json",
+  "sourceSha256": "60b6cc2b3fd6a483ab31ae230f2a3dca9fee7325ad01efaf10bcc343a9ddb78a",
+  "candidate": "proposals/integration/INDUSTRIAL-READ-CANDIDATE.json",
+  "uiManifest": "proposals/ui/industrial/REVIEW-INPUT-v4.json",
+  "checks": [
+    "Exact captured envelope accepted through createHttpUiApi and strict industrial workspace schema.",
+    "Parsed object deep-equals the complete source data, including all native counts.",
+    "Empty events/reports/analyses and disconnected capabilities preserved.",
+    "Decision and simulation rejected NOT_READY before any transport mutation."
+  ],
+  "counts": {
+    "commitmentLines": 10000,
+    "depots": 6,
+    "projects": 24,
+    "crmRecords": 81
+  },
+  "companyNameAsActuallyReturned": "Industrial Materials Group (synthetic)",
+  "transport": [
+    {
+      "path": "/api/company",
+      "method": "GET"
+    },
+    {
+      "path": "/api/decisions",
+      "method": "GET"
+    },
+    {
+      "path": "/api/industrial",
+      "method": "GET"
+    }
+  ],
+  "provenance": "Original HTTP/Aiven capture was performed by integrator. UI owner replayed the unchanged non-secret response locally with a synthetic authority bootstrap solely to exercise the adapter. No live authentication or HTTP call was performed by this probe.",
+  "limits": [
+    "No report/calculation/automatic analysis was present in this capture.",
+    "No proof of Physical Impact frontend, chatbot, model, source collection, decision or simulated business effect.",
+    "Display/publicResearch/questionsConnected remain future exact DTO deltas."
+  ],
+  "adapterFiles": [
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "a69fdaab3c27713c820891f7b19e36388080fb9fb6069aa00bfafa6f04d1b390",
+      "bytes": 48795
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "06e471068d976dcbdcb0aa82375f9a4e1c9310fed0ab03d11cf1588768fe0582",
+      "bytes": 6411
+    },
+    {
+      "path": "src/ui/industrial.ts",
+      "sha256": "7abc46cc3f55d099316eadbf1586d527407b634c983b1417e5f53f70c7e514a5",
+      "bytes": 13240
+    },
+    {
+      "path": "src/ui/industrial-api.ts",
+      "sha256": "f6fc1bc12c1a5c524d2a493ec7c9b8fd795d86b79aa397d17fde9f7b79b22427",
+      "bytes": 13427
+    },
+    {
+      "path": "src/ui/pending-commands.ts",
+      "sha256": "dd41f6b7774b74b72a10b908bc58bcd7b7acb598f23f8be5d0e3147d5dde671a",
+      "bytes": 1334
+    },
+    {
+      "path": "tests/ui/industrial-api.test.ts",
+      "sha256": "abde58773839497e0bf58578556b270aac087d72878dae034ab0bd1ca619705d",
+      "bytes": 29217
+    },
+    {
+      "path": "tests/ui/industrial-fixtures.ts",
+      "sha256": "712f91b012296f85adda0e1aa30bfcfffd6a0d094febf99c65e7f7451cb80a29",
+      "bytes": 7332
+    }
+  ],
+  "adapterSourceIdentity": "All seven main file hashes match reviewed v4; no production code change was needed for this captured response."
+}

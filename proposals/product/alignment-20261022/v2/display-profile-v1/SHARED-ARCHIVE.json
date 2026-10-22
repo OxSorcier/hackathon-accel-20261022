@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "status": "UPLOADED_PRIVATE_READBACK_PENDING",
+  "files": [
+    {
+      "local": "DISPLAY-PROFILE.md",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1tky8vMkna3HTFlGAsIVLaFk5JZWV5NTh",
+        "title": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.md",
+        "file_name": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.md",
+        "mime_type": "text/markdown",
+        "url": "https://drive.google.com/file/d/1tky8vMkna3HTFlGAsIVLaFk5JZWV5NTh/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1tky8vMkna3HTFlGAsIVLaFk5JZWV5NTh",
+          "title": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.md",
+          "file_name": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.md",
+          "mime_type": "text/markdown",
+          "url": "https://drive.google.com/file/d/1tky8vMkna3HTFlGAsIVLaFk5JZWV5NTh/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      },
+      "readback": {
+        "id": "1tky8vMkna3HTFlGAsIVLaFk5JZWV5NTh",
+        "title": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.md",
+        "mime_type": "text/markdown",
+        "size": "7065",
+        "url": "https://drive.google.com/file/d/1tky8vMkna3HTFlGAsIVLaFk5JZWV5NTh/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1tky8vMkna3HTFlGAsIVLaFk5JZWV5NTh/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": null,
+        "parent_ids": [
+          "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        ],
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": false,
+        "permissions": null,
+        "source_visibility_status": "not_shared"
+      }
+    },
+    {
+      "local": "DISPLAY-PROFILE.html",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "18TsqcqdY9l6-VNlUgR7Jw_b9hsNDBTA3",
+        "title": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.html",
+        "file_name": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.html",
+        "mime_type": "text/html",
+        "url": "https://drive.google.com/file/d/18TsqcqdY9l6-VNlUgR7Jw_b9hsNDBTA3/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "18TsqcqdY9l6-VNlUgR7Jw_b9hsNDBTA3",
+          "title": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.html",
+          "file_name": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.html",
+          "mime_type": "text/html",
+          "url": "https://drive.google.com/file/d/18TsqcqdY9l6-VNlUgR7Jw_b9hsNDBTA3/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      },
+      "readback": {
+        "id": "18TsqcqdY9l6-VNlUgR7Jw_b9hsNDBTA3",
+        "title": "AdaptOps - Rivebois company and display names - 2026-10-22 v1.html",
+        "mime_type": "text/html",
+        "size": "175261",
+        "url": "https://drive.google.com/file/d/18TsqcqdY9l6-VNlUgR7Jw_b9hsNDBTA3/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/18TsqcqdY9l6-VNlUgR7Jw_b9hsNDBTA3/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": null,
+        "parent_ids": [
+          "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        ],
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": false,
+        "permissions": null,
+        "source_visibility_status": "not_shared"
+      }
+    },
+    {
+      "local": "ADAPTOPS-DISPLAY-PROFILE-20261022-v1.zip",
+      "metadata": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1to4bf5mv9kzopmDjsoocBMhZOLU8-4BR",
+        "title": "AdaptOps - Rivebois display proposal and evidence - 2026-10-22 v1.zip",
+        "file_name": "AdaptOps - Rivebois display proposal and evidence - 2026-10-22 v1.zip",
+        "mime_type": "application/zip",
+        "url": "https://drive.google.com/file/d/1to4bf5mv9kzopmDjsoocBMhZOLU8-4BR/view?usp=drivesdk",
+        "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1to4bf5mv9kzopmDjsoocBMhZOLU8-4BR",
+          "title": "AdaptOps - Rivebois display proposal and evidence - 2026-10-22 v1.zip",
+          "file_name": "AdaptOps - Rivebois display proposal and evidence - 2026-10-22 v1.zip",
+          "mime_type": "application/zip",
+          "url": "https://drive.google.com/file/d/1to4bf5mv9kzopmDjsoocBMhZOLU8-4BR/view?usp=drivesdk",
+          "parent_id": "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        }
+      },
+      "readback": {
+        "id": "1to4bf5mv9kzopmDjsoocBMhZOLU8-4BR",
+        "title": "AdaptOps - Rivebois display proposal and evidence - 2026-10-22 v1.zip",
+        "mime_type": "application/zip",
+        "size": "599767",
+        "url": "https://drive.google.com/file/d/1to4bf5mv9kzopmDjsoocBMhZOLU8-4BR/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1to4bf5mv9kzopmDjsoocBMhZOLU8-4BR/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": null,
+        "parent_ids": [
+          "1Sm1Gy0ZvM5s8lpsrsKTsT8gdTtNNu0Dn"
+        ],
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": false,
+        "permissions": null,
+        "source_visibility_status": "not_shared"
+      }
+    }
+  ]
+}

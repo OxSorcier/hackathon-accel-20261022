@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "observedAt": "2026-10-22T10:42:19.268337+00:00",
+  "userUrl": "http://127.0.0.1:3001",
+  "frozenRuntime": ".local/preview-stable-v2",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "database": "Aiven PostgreSQL, verified TLS",
+  "clientAsset": "/assets/index-R0XcSArE.js",
+  "language": "en",
+  "status": "RECEIVED_FINAL_UI_APPROVAL_AND_3001_RESTART",
+  "codeReceipt": "proposals/integration/FLOW-CODE-RECEIVED.json",
+  "httpReceipt": "proposals/integration/FINAL-PREVIEW-HTTP.json",
+  "restartReceipt": "proposals/integration/FINAL-PREVIEW-RESTART.json",
+  "qaReceipt": "proposals/integration/FINAL-UI-FLOW.json",
+  "previousPreview": ".local/preview-stable-v1",
+  "previousReceipt": "proposals/integration/history/PREVIEW-v1.json",
+  "credentialsLocation": ".env and .env.access; no credential values in receipts",
+  "limits": [
+    "Company and internal date confirmation are synthetic; public news proves no commercial delay.",
+    "Approval records a decision; no purchase or stock movement executed.",
+    "Context-manifest trace label micro-correction remains a separate display follow-up; underlying trace is recorded.",
+    "Research/Modal/industrial extensions are separate active slices, not silently included."
+  ],
+  "finalQaReceipt": "proposals/integration/FINAL-3001-QA.json",
+  "screenshot": "proposals/integration/FINAL-3001-APPROVED.png"
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "status": "CANDIDATE_ADAPTER_CONTRACT_NOT_FINAL_REVIEWED",
+  "path": "src/contracts/pdf.ts",
+  "sha256": "8df45c4c63087489d89f3ea27691f954eea7c95fd083d76e524f833061cea4de",
+  "rules": [
+    "Bound server company/profile. Only already cached done documents from received PDF service.",
+    "Port list returns at most20 descriptors, no page bodies. read accepts SHA256 and1-2distinct page numbers within cached pageCount.",
+    "Read returns at most6000 Unicode codepoints per page, maximum12000total, explicit truncated flag, fullpage hash and excerpt hash distinct.",
+    "Page reference includes immutable document bytes hash and extractor version, one-based page and full pageTextHash.",
+    "Citation URL is the received fixed public URL with #page=N, never arbitrary PDF content link.",
+    "externalCalls=0 for reads. Never download/extract/retry through a model tool.",
+    "A received financial report proves its own text, not supplier delay, private company relationship or scenario fire.",
+    "Missing/pending/failed/uncertain document yields not_available with no text; storage errors sanitized and no implicit retry."
+  ]
+}

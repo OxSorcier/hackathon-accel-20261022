@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "status": "TWO_INDEPENDENT_ROLES_CLOSED_NO_RETAINED_FINDING",
+  "checkedAt": "2026-10-22T12:30:48.168563+00:00",
+  "scope": "proposals/agent/INDUSTRIAL-PORT-REVIEW-SCOPE.json",
+  "scopeVersion": 3,
+  "sourceFingerprint": "e5f9bceb0651db488308f63853e3ae138ecf5b1ccbcfa712758b10ae199aed30",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "servedModels": "UNATTESTED",
+  "cycles": 2,
+  "reviews": [
+    {
+      "agent": "/root/industrial_port_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "effortRequested": "high",
+      "isolation": "fork_turns:none",
+      "verdict": "PASS",
+      "tests": "11/11 PASS, strict PASS, independent dependency permutations/mutations PASS",
+      "pins": "17/17 MATCH before and after"
+    },
+    {
+      "agent": "/root/industrial_port_architecture",
+      "modelRequested": "gpt-6-astra",
+      "effortRequested": "high",
+      "isolation": "fork_turns:none",
+      "verdict": "PASS",
+      "tests": "11/11 PASS, strict PASS, actual specialized runner + real port + full10k + injected provider returns proposal/report with3 tools, native-calendar probe detects past Paris-day transfer independent of quote expiry",
+      "pins": "17/17 MATCH before and after"
+    }
+  ],
+  "findingsClosed": [
+    {
+      "finding": "Bound run research dependencies were not compared with loaded release dependencies",
+      "proof": "Test dropping dependencies resolves before fix (RED), then missing/changed generation rejected and exact matching deps prepared (GREEN). Both reviewers independently reproduced/revalidated."
+    },
+    {
+      "finding": "Current step dates must use the native company calendar and used native quote validity",
+      "proof": "Missing calendar test RED then GREEN. Paris21Z accepted/22:30Z refused. Independent probe isolates stale transfer calendar even with still-valid quotes."
+    }
+  ],
+  "limits": [
+    "Callbacks are injected for local tests. Real company lock, authority, worker, provider, Aiven and publication remain integrator-owned NOT_RUN in this port reception.",
+    "No SQL mutation/publication, dependency, worker, external call, commit or deployment added."
+  ]
+}

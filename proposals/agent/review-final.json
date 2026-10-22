@@ -1,0 +1,28 @@
+{
+  "schema":"accel-agent-review/1",
+  "manifest":"proposals/agent/review-manifest-final.json",
+  "reviewCorrectionCycles":3,
+  "reviewedVersions":["v1","v2","v3","final scoped correction within cycle 3"],
+  "isolation":"two distinct reviewers originally forked with none, high effort, no implementation transcript or other reviewer conclusions; each retained only its own review context for bounded revalidation",
+  "adversarial":{
+    "reviewer":"/root/agent_adversarial","requestedModel":"gpt-6.1-sol","requestedEffort":"high","servedModel":"unverified",
+    "verdict":"no retained finding in final scoped delta","hashesVerifiedBeforeAndAfter":true,
+    "reportedTestsPassed":30,
+    "checks":["canonical B-only mapping","B confirmed November 3 feasible, November 4 rejected","C confirmed on November 4 feasible, November 5 rejected","absent/duplicate policy scope rejected","unknown policy target rejected","resource alias and separator-bearing identities remain protected"]
+  },
+  "architecture":{
+    "reviewer":"/root/agent_architecture","requestedModel":"gpt-6-astra","requestedEffort":"high","servedModel":"unverified",
+    "verdict":"P2 policy scope resolved; no additional finding retained in targeted delta","hashesVerifiedBeforeAndAfter":true,
+    "reportedModuleTestsPassed":27,
+    "checks":["C replacement allowed at received need date","B confirmed November 3 feasible, November 4 rejected","B unconfirmed replacement conditional","indirect reallocation keeps B physically covered and C supplied by its received need date","renamed B line stays protected through ORD-B relation"]
+  },
+  "v1Findings":"all reproduced, corrected and revalidated",
+  "v2Findings":"all reproduced, corrected and revalidated",
+  "v3P2":"exact B-only policy scope restored; C has no invented margin",
+  "databaseProbes":"real consumer methods with memory-only SQL test doubles",
+  "externalCalls":"none",
+  "realProvider":"NOT_RUN",
+  "PostgreSQL_Aiven":"NOT_RUN by these reviewers",
+  "browser":"NOT_RUN",
+  "limitation":"Review independence concerns context and role. Both readers are in the GPT family; absence of a retained finding is not proof of absence of every bug."
+}

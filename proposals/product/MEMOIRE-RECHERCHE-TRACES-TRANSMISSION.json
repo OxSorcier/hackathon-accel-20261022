@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "current_status": {
+    "final_acceptance": {"state": "R1_R2_RECEIVED_WITH_EXPLICIT_LIMITS_FOLLOWUP_COMPLETE", "receiver": "proposals/integration/RECEIVED-RESEARCH-R1-R2.json", "received_at": "2026-10-22T12:27:20.710254+00:00", "r2_received_sha256": "895bf90d5ad7624c4bfad7f64f9a9ec10fd3bd240c80c6f20a11f909d23cab05", "received_digest_verified": true, "receiver_ack": "Native integrator message in this chat confirms final reception with all limits", "automation": "Deleted only accel-recevoir-les-deux-tests-de-m-moire through native automation tool, deleteStatus deleted", "remaining_product_work": "Existing industrial owners retain bounded model reads, prepared mixed report, current-basis approval, simulated action effect/readback and full recovery. Real ERP/CRM software connection and production scale not proved by R1/R2."},
+    "r2_completion": {"receipt": "proposals/agent/R2-RECEPTION.json", "checked_at": "2026-10-22T12:25:20.576Z", "state": "CONTROLLED_AIVEN_PASS_FINAL_INTEGRATOR_RECEPTION_REQUESTED", "schema": "r1_reception_20261022_1104ce6d364e", "company": "CO-RESEARCH-R1-EMPTY", "runtime_fingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631", "source_versions": 2, "generation": 2, "v1_history_preserved": true, "old_plan": "proposal:21de755e-a2f2-4bea-974b-c3c1983c3649 stale; same business revision and policy, option still feasible", "revised_readback_run": "fd12e7cf-27e8-48f7-8dcc-8a3523c9bc54", "new_operation_identical_v2": "r2-source-v2-new-command: generation2, two evidence versions and current refs unchanged; three acquisition receipts allowed", "actual_model_http_and_collection_calls": 0, "r1_unchanged": true, "limits": "Controlled injected provider only. Original session digests and duplicate return not retained. STALE_CONTEXT refusals asserted before original failure, not replayed. First R1 process metric/session limits retained.", "reviews": "R2-AMENDMENT-REVIEWS.json v2 plus scope-v4 trace supplement, two distinct fresh contexts, requested model identities unattested", "monitor_hash_check": "55 of55 match:45 frozen runtime files,7 scope files, scope-v4 digest, finalizer digest and server manifest", "receiver_followup": "SEND_ACCEPTED to integrator after final receipt; no new execution requested"},
+    "r2_oracle_correction": {"receipt": "proposals/agent/R2-ORACLE-CORRECTION.json", "checked_at": "2026-10-22T12:17:13.274339+00:00", "cause": "JSON stringify of reference objects depended on field insertion order changed by PostgreSQL JSONB", "rule": "Sorted occurrenceId/evidenceId/contentHash tuples plus independent generation/native-version/occurrence/projection assertions", "original_failure": "PRESERVED", "remaining_received_mutation": "Exact existing v2 under r2-source-v2-new-command; extra command/occurrence receipt allowed, current refs/generation2 and two evidence versions unchanged", "limits": "Original duplicate return and native session digests lost; earlier STALE_CONTEXT assertions not persisted as decisions and not replayed"},
+    "r2_finalizer_failure": {"receipt": "proposals/agent/R2-FINALIZER-FAILURE.json", "checked_at": "2026-10-22T12:20:27.506Z", "state": "FAILED_NO_AUTOMATIC_REPEAT", "code": "R2_FINALIZER_HASH", "http_attempts": 0, "collection_attempts": 0, "next_review": "proposals/agent/R2-AMENDMENT-REVIEW-SCOPE.json version2 bounded failure diagnostic and remaining single new-key test, no original execution replay", "mutation_stage": "NOT_VERIFIED_BY_THIS_MONITOR"},
+    "r2_readonly_diagnosis": {"path": "proposals/agent/R2-READONLY-DIAGNOSIS.json", "checked_at": "2026-10-22T12:14:32.521Z", "level": "PARTIAL_DATABASE_EVIDENCE_NOT_FINAL_ACCEPTANCE", "source_id": "keenable:a2abaca5b8189a822aa43eda63fad83c3fc6a43a85a6d18658a843a919e0060c", "stored_versions": 2, "current_controlled_generation": 2, "v1_hash": "75314d3594bf77b51416e014162b58fb2b23d6625a9e538068bcd0ada7818892", "v2_hash": "9cc51b5873be1af3344797caae4e7f765f91e9f4b2a8cc8e18efacbe275173d0", "owner_report": "Old proposal stale while option remains feasible; corrected comparison guard undergoing two reviews", "remaining": "Corrected reviewed continuation, new-operation identical-v2 content deduplication and final native run/proposal/session receipt not yet received. First failure retained"},
+    "r2_actual_failure": {"started_receipt": "proposals/agent/R2-STARTED.json", "failure_receipt": "proposals/agent/R2-FAILURE.json", "review_receipt": "proposals/agent/R2-SCRIPT-REVIEWS.json", "state": "FAILED_NO_AUTOMATIC_REPEAT", "code": "R2_DUPLICATE_PUBLICATION", "started_at": "2026-10-22T12:09:40.933Z", "failed_at": "2026-10-22T12:09:50.067Z", "actual_http_attempts": 0, "collection_attempts": 0, "deterministic_injected_protocol_invocations": 10, "actual_model_calls": 0, "review_status": "Two distinct fresh roles closed after3 cycles, served models unattested", "partial_observation": "Owner reports old plan became stale after source correction; detailed immutable run/proposal/version evidence not yet received", "next": "Owner diagnosing deduplication read-only, preserves failure and does not replay confirmation or analyses"},
+    "r2_script_correction_checkpoint": {"message_id": "msg_05208eebedaa8180016ad9fc9838148191a30accda7ee4009b", "state": "CORRECTING_AND_REVALIDATING_BEFORE_ANY_AIVEN_TEST_WRITE", "finding": "Missing case-version control binding in test, session readback path under revalidation", "actual_R2_execution": "NOT_RECEIVED"},
+    "r2_current_checkpoint": {"protocol": "proposals/agent/R2-PROTOCOL.json", "version": 2, "updated_at": "2026-10-22T12:03:24.438633+00:00", "state": "RECEIVED_BY_INTEGRATOR_SCRIPT_FROZEN_FOR_TWO_REVIEWS", "executor": "Existing agent owner, integrator remains receiver", "deduplication_relay": "RECEIVED_IN_WRITTEN_V2_AMENDMENT_NEW_OPERATION_KEY_REQUIRED", "causal_control": "Controlled v1 and real CaseRepository confirmation before both baseline plans; emergency1420 must protect A and B. During source-v2 correction R/P/business hash stay unchanged.", "actual_execution": "NOT_YET_RECEIVED", "actual_model_and_external_http": "ZERO_REQUIRED_DETERMINISTIC_CONTROLLED_PROVIDER"},
+    "r2_protocol_checkpoint": {"path": "proposals/agent/R2-PROTOCOL.json", "created_at": "2026-10-22T11:58:57.105454+00:00", "state": "PROPOSED_TO_INTEGRATOR_BEFORE_ANY_MUTATION", "proposed_executor": "Existing agent owner under integrator schema release", "schema": "r1_reception_20261022_1104ce6d364e", "company": "CO-RESEARCH-R1-EMPTY", "runtime": "Same R1 frozen v3, no scheduler startup", "provider": "Injected mode:test NO_MODEL_CALL, actual HTTP0 required", "limits": "Controlled Aiven/core protocol, no real model inference or HTTP/UI acceptance claimed", "required_content_deduplication": "Same v2 content with a new operation key must preserve generation/version/ref and evidence row count, beyond same-key operation idempotence", "deduplication_relay": "SEND_ACCEPTED to agent at 2026-10-22T12:01:29Z, integrator reception requested before mutation"},
+    "r2_handoff_followup": {"state": "SEND_ACCEPTED_ACK_PENDING", "owner_thread": "01a162bd-d470-7522-9d95-a03a82d9bd68", "sent_at": "2026-10-22T11:45:35Z", "schema": "r1_reception_20261022_1104ce6d364e", "action": "Execute remaining controlled source-v2 test on same stopped schema, or identify precise dependency in existing receipt; no extra model call or environment requested", "r1_receiver_ack_message": "msg_0a49b9c5652367d5016ad9f6c838a48191b8607c74e7d1ad44"},
+    "restart_receipt": {"path": "proposals/agent/R1-RESTART.json", "aggregate": "proposals/agent/R1-RECEPTION.json", "state": "CANDIDATE_R1_REAL_MODEL_PASS_WITH_FIRST_PROCESS_LIMITS", "run_id": "78476d66-190a-4db1-a92d-fe8ad205ee8f", "previous_run_id": "8102d357-fa5e-4bd3-8be4-81696141a940", "pid": 28260, "exit_code": 0, "session_count_before_after": [1,2], "same_sources": 3, "actual_model_http_calls_this_process": 2, "research_http_attempts_this_process": 0, "other_http_attempts": 0, "previous_answer_injected": false, "initial_transfer_repeated": false, "witness_company_observations": 0, "oracle_reviews": "proposals/agent/R1-ORACLE-AMENDMENT-REVIEWS.json", "limits": "First PID/session hash/transport counters remain NOT_RETAINED; first session closure not observed. Aggregate4 model_result traces and11720 supplied tokens do not reconstruct transport.", "next_owner": "Integrator R2 only on same isolated schema, process stopped"},
+    "first_runtime_reconciliation": {"receipt": "proposals/agent/R1-FIRST.json", "oracle": "proposals/agent/R1-ORACLE-CORRECTION.json", "status": "RECONCILED_COMPLETED_FIRST_RUN_WITH_LIMITS", "run_id": "8102d357-fa5e-4bd3-8be4-81696141a940", "company_id": "CO-PARCOURS-PAUL-V2", "schema": "r1_reception_20261022_1104ce6d364e", "sources": 3, "generation": 1, "model": "gpt-5.4-mini", "model_result_traces": 2, "read_tool": "read_research_context", "read_tool_external_calls": 0, "transport_counters": "NOT_RETAINED_FIRST_PROCESS", "pid_and_session_hash": "NOT_RETAINED", "first_session_deletion": "NOT_OBSERVED_ONE_ROW_REMAINED", "restart": "NOT_YET_RECEIVED", "limits_relay": "SEND_ACCEPTED to integrator at 2026-10-22T11:40:45Z", "no_model_replay_for_reconciliation": true},
+    "first_runtime_diagnostic": {"source_message_id": "msg_05208eebedaa8180016ad9f507fe0481919bd75c1073799e68", "level": "OWNER_DIAGNOSIS_NO_REPEAT", "expected_by_script": 5, "eligible_returned": 3, "cause": "Test wrongly expected incomplete search snippets already excluded by the received research contract", "action": "Correct test guard and reconcile existing stored run, preserve first failure and source bytes, no model replay", "remaining": "Actual run/session IDs, call counts, corrected script reviews and restart proof still to receive"},
+    "checked_at": "2026-10-22T12:27:46Z",
+    "data_receipt": "proposals/data/READY-RESEARCH-v1.json",
+    "data_reviews": "proposals/data/RESEARCH-REVIEWS-v1.json",
+    "data_state": "CORRECTED_BUNDLES_AND_SERVER_V3_REVIEWS_RECEIVED_FIRST_RUNTIME_CONTROL_FAILED",
+    "data_integrator_receipt": "proposals/integration/RECEIVED-DATA-RESEARCH.json, receivedAt 2026-10-22T10:50:38.456538+00:00, allMatch true",
+    "data_tests_per_receipt": "49 PASS including 28 local PostgreSQL, 13 research tests",
+    "data_review_state": "Two distinct fresh reviewers, three correction cycles, no remaining finding per receipt; served models unattested",
+    "R1": "TWO_REAL_RUNS_ACK_BY_INTEGRATOR_WITH_FIRST_PROCESS_LIMITS_PRESERVED",
+    "R2": "CONTROLLED_AIVEN_PASS_ACK_BY_INTEGRATOR_WITH_RECONCILIATION_LIMITS_PRESERVED",
+    "ui": "RESEARCH-MEMORY-RECEPTION v2 and research/READY read; 117 local tests and Aside synthetic harness per receipt. Integrator RECEIVED-RESEARCH-UNITS-v2 pins 22 UI files; complete Aiven R1/R2 NOT_RUN by UI.",
+    "next_dependency": "None for this memory followup. Integrator final receipt read and exact R2 digest verified. Industrial product acceptance remains open with existing owners, separate from this completed monitor.",
+    "open_review_findings_message_id": "msg_0a49b9c5652367d5016ad9eb3c78448191bb71c098280c4e14",
+    "correction_checkpoint": "Data confirms integrated failing case: empty failed watch left prior research reusable. Agent owns controlled decision provenance fix; previous reviewed packages remain historical. Both need new final reviewed receipts before durable acceptance.",
+    "ordering_checkpoint": "Data found same-millisecond reception timestamps; durable database reception order under Astra and integrator review, to preserve newer success and honor newer failure. Message msg_0cd1f8e0b3aceb3f016ad9edcbef1c8191ba887942f2e7fd97. No parallel design or implementation here.",
+    "execution_access_checkpoint": "Initial DNS failure preserved. Agent now reports authorized host Aiven access working, five existing occurrence proofs retrieved without collection; two script reviews completed after guard fixes. Full new-run/restart R1/R2 execution still not received. Message msg_05208eebedaa8180016ad9edd3a8e08191983afa45ae12b9f9. No monitor-side model or network test launched.",
+    "enterprise_check": "New AdaptOps coordination and current owner chat read: company already known, prepared risk/opportunity report, one coordinated plan and demo actions with readback. Existing 10000-line portfolio extended as linked v2, ONE-DEMAND-SAMPLE is PROPOSED_NOT_IMPORTED. Full server calculations with bounded model reads required. Existing industrial owners retain import/report work; this monitor retains research R1/R2 only.",
+    "enterprise_current_sources": ["proposals/product/ADAPTOPS-DATA-REPORT-COORDINATION-20261022.md", "proposals/product/alignment-20261022/v2/ONE-DEMAND-SAMPLE.proposed.json"],
+    "latest_memory_delta": "R1 actual-model restart and R2 controlled Aiven final receipts received by integrator. Same frozen runtime and amended finalizer independently hash-checked55/55; receiver R2 digest matches. Initial negatives and metric/session limits preserved. Native five-minute automation deleted after final reception.",
+    "targeted_migration_relay": {"to_thread": "01a162bd-ee93-7cc2-a93f-659950f41d93", "state": "ACK_RECEIVED_EXPLICIT", "reason": "New legacy-order uncertainty affects initial R1 qualification and acquisition versus resumed-run call counts", "sent_at": "2026-10-22T11:15:19Z", "ack_message_id": "msg_05208eebedaa8180016ad9f07804448191a960f66f932eb6eb"},
+    "runner_postgres_checkpoint": "Agent reports 7 local integrated tests passing across runner, PostgreSQL decision and controlled recall. OpenAI/new-process R1/R2 still pending, legacy qualification remains explicit.",
+    "callback_rollback_checkpoint": "Data final reviews retained an invalidation error absorbed after memory write. Owner reports PostgreSQL correction tested, including integrator transaction; final rereview pending. Message msg_0cd1f8e0b3aceb3f016ad9f112d32881919a8aa498fd501284. No durable R1/R2 acceptance inferred.",
+    "enterprise_local_import_checkpoint": "Integrator reports 10000-line local import and readback from a fresh process. Policy-version and sanitized-error guards still under review before Aiven. This is not an Aiven import or connected ERP/CRM. Message msg_0a49b9c5652367d5016ad9f0a6699c819185701cfca32f7493.",
+    "received_v2_assembly": {"receipt": "proposals/integration/RECEIVED-RESEARCH-UNITS-v2.json", "received_at": "2026-10-22T11:22:47.057708+00:00", "level": "RECEIPT_READ_HASHES_MATCH_SERVER_REVALIDATION_PENDING", "pins": 34, "snapshot": ".local/research-server-review-v2", "full_R1_R2": "NOT_RECEIVED"},
+    "server_v3_checkpoint": {"manifest": "proposals/integration/REVIEW-INPUT-RESEARCH-SERVER-v3.json", "created_at": "2026-10-22T11:28:40.604291+00:00", "snapshot": ".local/research-server-review-v3", "state": "CANDIDATE_AND_TWO_REVIEWS_READ_RUNTIME_ACCEPTANCE_NOT_PASSED", "base": ".local/research-server-review-v2", "review_receipt": "proposals/integration/RESEARCH-SERVER-REVIEWS.json", "manifest_sha256": "7f66847ac1d5e1bdf9ac4b219517389f5529e20d5b4fdab7c5258b97b78889f7", "limit": "Served model identities unattested per receipt; runtime hashes and actual behavior remain to reconcile"},
+    "first_runtime_failure": {"receipt": "proposals/agent/R1-FIRST-FAILURE.json", "checked_at": "2026-10-22T11:33:14.043Z", "phase": "first", "code": "WRONG_RETRIEVED_EVIDENCE", "schema": "r1_reception_20261022_1104ce6d364e", "source_fingerprint": "8548a1c1585d839747f9c3a9015167a7d6c06fd1a6534775935dc2cf3b0e7631", "manifest_digest": "8d5dd09d6a4c0ca15bb9f5ab61c0adcea46544a32aca2914e1430d311f8749f4", "no_automatic_model_retry": true, "diagnostic_request": "SEND_ACCEPTED to sole agent executor at 2026-10-22T11:36:12Z; actual session/run IDs, call counts and expected/returned set not yet received"},
+    "enterprise_aiven_import_report": "New owner report: 10000 lines and 24260 records imported on isolated Aiven, one import and stable company unchanged. Source import/readback receipt not inspected by this monitor yet; no ERP/CRM software connector or model-scale acceptance inferred. Message msg_0a49b9c5652367d5016ad9f254c3d48191998495bdd640ee48.",
+    "thread_cursors": {
+      "01a162bd-d470-7522-9d95-a03a82d9bd68": "3e3e8fa1-24fe-4df6-bad5-d5414a7a423a:385",
+      "01a162bd-ee93-7cc2-a93f-659950f41d93": "e592ad66-790d-4ae4-8373-faa0ded947a7:189",
+      "01a162bd-e262-7fa2-a1f3-aab46f68fc1a": "e6f1b2a8-f973-4e90-87e5-40226c1269a4:136",
+      "01a162bd-facf-7b63-861b-9bbf7f402938": "eba09586-2684-4005-b7f8-5c521c8d58b0:101",
+      "01a16306-b164-72f3-83d9-9edd27ded2ef": "212e9080-b0c2-43ac-818c-3a654fe5abd0:4"
+    }
+  },
+  "agent_package_checkpoint": {
+    "ready_receipt": "proposals/agent/RESEARCH-READY.json",
+    "reviews_receipt": "proposals/agent/RESEARCH-REVIEWS.json",
+    "source_fingerprint": "3c08427ebcd7d62f03e7aa7ad61b8cf5d4735f8c61f60645bb72b9bcda6bccc2",
+    "state": "LOCAL_REVIEWED_PACKAGE_EXACT_HASHES_VERIFIED_DURABLE_ACCEPTANCE_PENDING",
+    "current_hashes_verified": "MATCH_21_OF_21",
+    "review_roles": "counter_review gpt-6.1-sol and architecture gpt-6-astra, distinct fork_turns none contexts per receipt",
+    "review_verdict": "NO_RETAINED_FINDING_PER_RECEIPT",
+    "served_reviewer_models": "NOT_INDEPENDENTLY_ATTESTED",
+    "local_tests": "64 builder tests and 40 agent tests repeated by each reviewer per receipt",
+    "R1": "NOT_RUN_BY_THIS_BUILDER",
+    "R2": "NOT_RUN_BY_THIS_BUILDER",
+    "integrator_transmission": "RECEIVED-AGENT-RESEARCH.json read back, receivedAt 2026-10-22T10:37:11.407699+00:00, allMatch true; durable acceptance remains pending"
+  },
+  "partial_durable_checkpoint": {
+    "state": "LOCAL_PARTIAL_OWNER_REPORTED_NOT_R1_R2_ACCEPTANCE",
+    "test_file": "tests/integration/research.test.ts",
+    "integrator_message_id": "msg_0a49b9c5652367d5016ad9e736eb10819186f28354636258b2",
+    "R1": "Owner reports local PostgreSQL retrieval in another session with same sources and no external call; actual worker run, process restart and Aiven evidence still to receive",
+    "R2": "Owner reports an otherwise admissible plan becomes stale solely after source correction; exact command, environment, sessions and full evidence still to receive",
+    "negative_evidence": "Initial concurrency failure and missing company proof constraint were found. Owners report corrections and three integration tests passing; retain initial failures, exact server review and durable acceptance still to receive.",
+    "data_component_message_id": "msg_0cd1f8e0b3aceb3f016ad9e7b7ed98819189861adb95d029eb",
+    "data_component_tests": "Owner reports 9 PostgreSQL local tests passing; two independent research-code reviews in progress",
+    "execution_owner_update": "Agent prepares the sole separate-process test on port 3002 and an existing-Aiven test schema; waits for integrator exact candidate freeze before two new-session runs. Preparation is not execution.",
+    "review_finding_update": "Data research review found an invalid older source could mask newer research. Correction and final reviews pending.",
+    "next_action": "Receive owner execution after exact freeze, data correction and final reviews; no duplicate tests or implementation in this chat"
+  },
+  "published_contract_checkpoint": {
+    "receipt": "proposals/integration/RESEARCH-CONTRACT.json",
+    "state": "PUBLISHED_EXACT_HASHES_VERIFIED_OWNERS_IMPLEMENTING",
+    "research_contract_sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214",
+    "index_sha256": "62775365b86b257cb7f7bcc6d36f4ef51579b9ded5c8f3a5ff511cfd5ecb588b",
+    "agent_reception_message_id": "msg_05208eebedaa8180016ad9e2e7b1988191b7f6e833d090c26b",
+    "data_reception_message_id": "msg_0cd1f8e0b3aceb3f016ad9e2e85f448191b3f7e110516bfdd1",
+    "R1": "NOT_RUN_OR_NOT_RECEIVED",
+    "R2": "NOT_RUN_OR_NOT_RECEIVED",
+    "integrator_cursor": "3e3e8fa1-24fe-4df6-bad5-d5414a7a423a:111",
+    "agent_cursor": "e592ad66-790d-4ae4-8373-faa0ded947a7:42",
+    "data_cursor": "e6f1b2a8-f973-4e90-87e5-40226c1269a4:45",
+    "next_action": "Recevoir implementation, tests et revues exacts ; ne pas renvoyer le mandat deja recu."
+  },
+  "last_heartbeat": {
+    "observed_at": "2026-10-22T11:06:00Z",
+    "triggered_at": "2026-10-22T11:04:41.790Z",
+    "decision": "DONT_NOTIFY",
+    "state": "INTEGRATED_FINDINGS_CORRECTING_PROTOCOL_REVIEW_AND_HOST_ACCESS_CHECK_PENDING",
+    "R1": "NOT_RUN_OR_NOT_RECEIVED",
+    "R2": "NOT_RUN_OR_NOT_RECEIVED",
+    "progress": "Donnees fait recevoir un ordre durable des receptions en base apres collision d'horodatages a la milliseconde. Agent et UI poursuivent corrections et revues. R1/R2 complets restent non recus ; versions precedentes historiques, aucune intervention utilisateur requise. Controle realise a 2026-10-22T11:05:24Z.",
+    "agent_component_test_evidence": {
+      "level": "OWNER_REPORTED_NOT_INTEGRATED_ACCEPTANCE",
+      "message_id": "msg_05208eebedaa8180016ad9e52fc0988191ac08349bf7f6d45c",
+      "local_tests_reported": 64,
+      "independent_reviews": "RECEIPT_READ_TWO_FRESH_REVIEWERS_NO_RETAINED_FINDING",
+      "typecheck": "OWNER_REPORTED_PASS_FROZEN_FILES_UNCHANGED",
+      "typecheck_message_id": "msg_05208eebedaa8180016ad9e5997de481918fea5acf85da26dd"
+    },
+    "thread_cursors": {
+      "01a162bd-facf-7b63-861b-9bbf7f402938": "eba09586-2684-4005-b7f8-5c521c8d58b0:50",
+      "01a162bd-d470-7522-9d95-a03a82d9bd68": "3e3e8fa1-24fe-4df6-bad5-d5414a7a423a:186",
+      "01a162bd-ee93-7cc2-a93f-659950f41d93": "e592ad66-790d-4ae4-8373-faa0ded947a7:60",
+      "01a162bd-e262-7fa2-a1f3-aab46f68fc1a": "e6f1b2a8-f973-4e90-87e5-40226c1269a4:63"
+    }
+  },
+  "continuous_followup": {
+    "authorization": "Erwan a explicitement repondu Oui, toutes les cinq minutes jusqu'aux deux tests dans ce chat.",
+    "automation_id": "accel-recevoir-les-deux-tests-de-m-moire",
+    "kind": "heartbeat",
+    "status": "DELETED_AFTER_R1_R2_FINAL_RECEPTION",
+    "cadence_minutes": 5,
+    "target_thread_id": "01a162f6-8e54-7190-9b3b-fb79ba9f7b6b",
+    "stop_condition": "R1 et R2 reellement reussis et recus sur la version exacte ; desactiver uniquement ce suivi.",
+    "R1": "TWO_REAL_RUNS_AND_RESTART_ACK_BY_INTEGRATOR_WITH_FIRST_PROCESS_LIMITS",
+    "R2": "CONTROLLED_AIVEN_PASS_ACK_BY_INTEGRATOR_WITH_RECONCILIATION_LIMITS",
+    "current_step": "Suivi termine apres lecture du recu final integrateur et verification de son empreinte R2. R1 retrouve les sources apres redemarrage avec modele reel ; R2 controle v2, historique v1, plan stale et deduplication par contenu. Limites du premier processus R1, des sessions R2 et des refus initiaux conservees. Seule cette automation a ete supprimee. Chantier industriel reste chez ses proprietaires.",
+    "data_intake": {
+      "state": "RECEIVED_WITH_PROPOSAL_AND_CONTROLLED_SCENARIO",
+      "evidence": [
+        "proposals/data/RESEARCH-MEMORY-DELTA.md",
+        "proposals/data/RESEARCH-MEMORY-CONTROLLED-SCENARIO.json"
+      ]
+    },
+    "ui_intake": {
+      "state": "RECEIVED_EXPLICIT",
+      "thread_id": "01a162bd-facf-7b63-861b-9bbf7f402938",
+      "evidence_message_id": "msg_011f022d67b944f4016ad9dfacb3048191b0d3692d4bb30c79",
+      "evidence": "UI confirme les essais de memoire comme preuve distincte et la future tranche R1/R2."
+    },
+    "enterprise_scale_owner": "01a16306-b164-72f3-83d9-9edd27ded2ef",
+    "enterprise_evidence": {
+      "receipt": "proposals/product/alignment-20261022/DATA-CHECKS.json",
+      "baseline": "proposals/product/alignment-20261022/LOCAL-DOMAIN-SMOKE.json",
+      "candidate": "proposals/product/alignment-20261022/portfolio-10000.json",
+      "order_lines": 10000,
+      "total_rows": 24228,
+      "sites": 6,
+      "local_smoke_ms": 2495.853542,
+      "evaluation_bytes": 6542867,
+      "erp_crm_import": "NOT_RUN",
+      "aiven_import": "NOT_RUN",
+      "model_at_volume": "NOT_RUN",
+      "limit": "Candidat separe ; deux lignes d'achat heritees, pas d'historique. Projection bornee a recevoir, pas de capacite grande echelle revendiquee."
+    }
+  },
+  "tracker_delta": {
+    "comment_id": "2d75a8f8-6614-4a84-b14c-789cfbfad3e5",
+    "parent_comment_id": "a21b03bd-5d06-4615-8c8c-242c06e8cb60",
+    "readback_verified": true
+  },
+  "last_reception_check": "Integrateur et agent ont accuse reception explicite. Donnees et UI : envoi accepte, accuse specifique encore non observe apres attente bornee. Aucun second envoi du meme mandat.",
+  "marker": "ACCEL-MEMOIRE-RECHERCHE-TRACES-20261022-V1",
+  "authorization": {
+    "source": "Instruction directe Erwan dans le chat 01a162f6-8e54-7190-9b3b-fb79ba9f7b6b",
+    "text": "Transmettre a l'integrateur et aux chats concernes pour integration au harness sans doublon ; tester nouvelle session et source modifiee."
+  },
+  "observed_at": "2026-10-22T09:58:30.300Z",
+  "source": "proposals/product/MEMOIRE-RECHERCHE-TRACES.md",
+  "source_receipt": "proposals/product/MEMOIRE-RECHERCHE-TRACES-RECEIPT.json",
+  "tracker": "ERW-133",
+  "acceptance": [
+    "R1: recherche persistante retrouvee dans nouvelle session et nouveau run sans reinjection de la reponse precedente",
+    "R2: source controlee v2, revision de connaissance, v1 historique et invalidation ou reevaluation des propositions perimees"
+  ],
+  "implementation_owner": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "transmissions": [
+    {
+      "role": "integration",
+      "thread_id": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+      "title": "Accel : intégration et déploiement",
+      "transport": "SEND_ACCEPTED",
+      "reception": "RECEIVED_EXPLICIT",
+      "tests": "NOT_RUN_OR_NOT_RECEIVED",
+      "evidence_message_id": "msg_0a49b9c5652367d5016ad9dda01d44819180f96334e25c7d73",
+      "evidence": "R1/R2 recus comme suite du chantier ; parcours sectoriel declare distinct."
+    },
+    {
+      "role": "data",
+      "thread_id": "01a162bd-e262-7fa2-a1f3-aab46f68fc1a",
+      "title": "Accel : données et veille",
+      "transport": "SEND_ACCEPTED",
+      "reception": "PENDING",
+      "tests": "NOT_RUN_OR_NOT_RECEIVED"
+    },
+    {
+      "role": "agent",
+      "thread_id": "01a162bd-ee93-7cc2-a93f-659950f41d93",
+      "title": "Accel : métier et agents",
+      "transport": "SEND_ACCEPTED",
+      "reception": "RECEIVED_EXACT_SOURCE",
+      "tests": "NOT_RUN_OR_NOT_RECEIVED",
+      "evidence": "proposals/agent/RESEARCH-INTAKE.json",
+      "current_state": "WAITING_FOR_SHARED_CONTRACT_AND_SCOPE_RELEASE"
+    },
+    {
+      "role": "ui",
+      "thread_id": "01a162bd-facf-7b63-861b-9bbf7f402938",
+      "title": "Accel : interface A",
+      "transport": "SEND_ACCEPTED",
+      "reception": "PENDING",
+      "tests": "NOT_RUN_OR_NOT_RECEIVED"
+    },
+    {
+      "role": "coordinator",
+      "thread_id": "01a15f24-8d9c-7fd2-8a00-1b039732248f",
+      "title": "Hackathon Accel",
+      "transport": "SEND_ACCEPTED",
+      "reception": "PENDING",
+      "tests": "NOT_RUN_OR_NOT_RECEIVED"
+    },
+    {
+      "role": "product_vision",
+      "thread_id": "01a162bd-6384-7031-82c3-fdb5efba174e",
+      "title": "Clarifier le kit et la démo Accel",
+      "transport": "SEND_ACCEPTED",
+      "reception": "PENDING",
+      "tests": "NOT_RUN_OR_NOT_RECEIVED"
+    }
+  ],
+  "implementation_complete": false,
+  "no_new_chat": true,
+  "no_new_ticket": true,
+  "application_code_changed": false,
+  "current_vision_checkpoint": {
+    "observed_by_this_chat": "Source et recu relus ; aucun nouvel appel modele ni mutation metier lance par ce chat",
+    "question_path": {
+      "status": "REAL_MODEL_APPROVED_AND_READ_BACK",
+      "receipt": "proposals/integration/OPENAI-REAL-QUESTION.json",
+      "run_id": "4c73b502-7db7-4d5b-a284-ed01ba55d914",
+      "model": "gpt-5.4-mini",
+      "traces": 13,
+      "reported_tokens": 6557,
+      "monetary_inference_cost": "UNKNOWN"
+    },
+    "sector_case": {
+      "status": "REAL_CASE_APPROVED_AND_READ_BACK",
+      "receipt": "proposals/integration/REAL-CASE-FLOW.json",
+      "run_id": "b706f102-f547-47b8-94ec-a623f6e6c1c3",
+      "model": "gpt-5.4-mini",
+      "traces": 16,
+      "reported_tokens": 16310,
+      "business_option_cost_eur": 1420,
+      "decision_readback": "approved",
+      "inventory_unchanged": true,
+      "public_source": "Original ROCKWOOL July publication read through Keenable",
+      "company_and_confirmation": "SYNTHETIC",
+      "source_to_company_relation": "UNVERIFIED",
+      "final_ui_reception": "PENDING"
+    },
+    "research_memory": {
+      "status": "RECEIVED_FOR_IMPLEMENTATION",
+      "R1": "NOT_RUN",
+      "R2": "NOT_RUN",
+      "next_owner": "integrator",
+      "next_action": "Publier contrat et liberer le scope agent deja gele ; recevoir le raccord donnees/UI puis les essais integres."
+    },
+    "enterprise_scale_and_erp_crm": "NOT_PROVEN_BY_CURRENT_SMALL_SYNTHETIC_SCENARIO",
+    "commercial_opportunity_and_mixed_effect": "NOT_IMPLEMENTED_OR_NOT_RECEIVED",
+    "regulatory_applicability": "TO_VERIFY",
+    "runtime_deployment": "NOT_RUN_OR_NOT_RECEIVED"
+  },
+  "historical_tests_reconciled": {
+    "old_note": "22 passed / 1 failed on active earlier checkout; preserve historical evidence",
+    "current_agent_receipt": "proposals/agent/RESEARCH-INTAKE.json",
+    "current_case_delivery": "50 local tests passed, two reviews and exact receipt reported; research tests remain NOT_RUN"
+  },
+  "latest_execution_checkpoint": {
+    "observed_at": "2026-10-22T10:13:04.589771+00:00",
+    "scope": "Read-only follow-up; no app code changed and no model/database side effect launched",
+    "data_received_receipt": "proposals/integration/RECEIVED-DATA-KEENABLE.json",
+    "data_current_hashes_match": true,
+    "data_files_checked": 16,
+    "data_hash_differences": [],
+    "research_contract_proposal": "proposals/agent/RESEARCH-CONTRACT-PROPOSAL.json",
+    "shared_research_contract_present": false,
+    "R1": "NOT_RUN",
+    "R2": "NOT_RUN",
+    "next_dependency": "Integrator announced memory scope unblocking after the exposure-target fix; shared research contract still not observed at this checkpoint. Agent framing reuses attributed observations through lookup, without previous model exchanges in the new prompt. R1/R2 remain pending; scheduled followup continues.",
+    "automation_id": "accel-recevoir-les-deux-tests-de-m-moire",
+    "thread_cursors": {
+      "01a162bd-d470-7522-9d95-a03a82d9bd68": "3e3e8fa1-24fe-4df6-bad5-d5414a7a423a:93",
+      "01a162bd-ee93-7cc2-a93f-659950f41d93": "e592ad66-790d-4ae4-8373-faa0ded947a7:34",
+      "01a162bd-e262-7fa2-a1f3-aab46f68fc1a": "e6f1b2a8-f973-4e90-87e5-40226c1269a4:41",
+      "01a162bd-facf-7b63-861b-9bbf7f402938": "eba09586-2684-4005-b7f8-5c521c8d58b0:34"
+    }
+  }
+}

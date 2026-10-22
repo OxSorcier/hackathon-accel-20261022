@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "status": "PROPOSED_AWAITING_INTEGRATOR_CONTRACT",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "baseDataset": "../portfolio-10000.json",
+  "currentData": {
+    "portfolio": "CompanyDataset C1 shape, existing tables only, same company ID and 10000 order lines",
+    "crmChange": "Only CRM-IND-000 receives quantity/unit/date/destination/owner/qualification/price; 79 other generated opportunities remain to_qualify",
+    "procurementChange": "Extra existing-schema purchase_orders/purchase_order_lines/inbound_allocations, synthetic confirmed or planned_unconfirmed; kernel A/B retained"
+  },
+  "additiveContext": {
+    "companyProfile": "activity/countries/regions, provenance",
+    "projectOwners": "projectId/customerId/siteId/ownerActorId",
+    "industrialSites": "id/supplierId/country/region/productIds/dataOrigin",
+    "supplierDependencies": "supplierId/industrialSiteId/productId/purchaseOrderLineIds/basis/sourceRef",
+    "competitors": "id/productIds/regions/industrialDependencyRefs, no current incident in baseline",
+    "commercialDemand": "existing CRM ID/customer/project/product/quantity/unit/needDate/destination/owner/qualification/intake provenance/currency/sellingPriceCents/maxPriceCents",
+    "stockValuations": "stockId/productId/unit/currency/materialUnitCostCents/observedAt/sourceRef",
+    "deliveryQuotes": "id/sourceStockId/fromDepotId/toDepotId/productId/quantity/unit/dispatchDate/arrivalDate/validUntil/freightCents/handlingCents/synthetic confirmation/sourceRef",
+    "independentAlternatives": "existing supplierId/industrialSiteId and existing emergency quote references"
+  },
+  "operatorOnly": "A separately named operator-release package contains the controlled fire and subsequent confirmations. It is not in the current portfolio/context or seeded as future knowledge.",
+  "boundaries": [
+    "All commercial facts and links are synthetic.",
+    "BOAMP/public industry sources are evidence of public facts only, never confirmation of the fictional demand or incident.",
+    "No schema or type authority is claimed until src/contracts/industrial.ts is published by the integrator.",
+    "No application code, shared file or migration changed."
+  ]
+}

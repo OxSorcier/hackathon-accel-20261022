@@ -1,0 +1,103 @@
+{
+  "receivedAt": "2026-10-22T10:34:54.396612+00:00",
+  "receipt": "proposals/data/READY-KEENABLE-v3.json",
+  "allMatch": true,
+  "checks": [
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "expected": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08",
+      "actual": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08",
+      "match": true
+    },
+    {
+      "path": "src/data/validation.ts",
+      "expected": "070a87444889f0341adec582a929fbe1955e8b99bf01ca499365451c14cc799e",
+      "actual": "070a87444889f0341adec582a929fbe1955e8b99bf01ca499365451c14cc799e",
+      "match": true
+    },
+    {
+      "path": "src/data/watch-repository.ts",
+      "expected": "567b05c4d427b7df7d39211fd18d65b9e8172eb8db188f81c1ecb1ec6dafc437",
+      "actual": "567b05c4d427b7df7d39211fd18d65b9e8172eb8db188f81c1ecb1ec6dafc437",
+      "match": true
+    },
+    {
+      "path": "src/watch/collection-status.ts",
+      "expected": "d488455a87d17d1cb32862dc22c298ecff7e181ca7059027ddd1260d14dcba3d",
+      "actual": "d488455a87d17d1cb32862dc22c298ecff7e181ca7059027ddd1260d14dcba3d",
+      "match": true
+    },
+    {
+      "path": "src/watch/collector.ts",
+      "expected": "01ef6cdf0c29256c859e926a1789883ca8513d88a206ca17fd5173752a2121d2",
+      "actual": "01ef6cdf0c29256c859e926a1789883ca8513d88a206ca17fd5173752a2121d2",
+      "match": true
+    },
+    {
+      "path": "src/watch/engine.ts",
+      "expected": "f1c22040c3e4ceeb192d33876398e4853648960ac32933da33b8b907b0302dfd",
+      "actual": "f1c22040c3e4ceeb192d33876398e4853648960ac32933da33b8b907b0302dfd",
+      "match": true
+    },
+    {
+      "path": "src/watch/http.ts",
+      "expected": "a8adbde861c5c8176852487fb3980ee9aff8dfc73384985ad120027e3fbe0c81",
+      "actual": "a8adbde861c5c8176852487fb3980ee9aff8dfc73384985ad120027e3fbe0c81",
+      "match": true
+    },
+    {
+      "path": "src/watch/keenable.ts",
+      "expected": "8d0c97d2ac8d50848a09490744e32976f9dff9f22a0ec36a2d4239b98376d5ce",
+      "actual": "8d0c97d2ac8d50848a09490744e32976f9dff9f22a0ec36a2d4239b98376d5ce",
+      "match": true
+    },
+    {
+      "path": "src/watch/source-policy.ts",
+      "expected": "a4aae81d72c93a3cf46f6fe91a2ec1db0a2b309bbd1eb52860f588b02aa41f3b",
+      "actual": "a4aae81d72c93a3cf46f6fe91a2ec1db0a2b309bbd1eb52860f588b02aa41f3b",
+      "match": true
+    },
+    {
+      "path": "tests/data/validation.test.ts",
+      "expected": "0b22e3fa42459b5b47c39090f325af1661eb86aa9bf45afe775d5ad11b549818",
+      "actual": "0b22e3fa42459b5b47c39090f325af1661eb86aa9bf45afe775d5ad11b549818",
+      "match": true
+    },
+    {
+      "path": "tests/data/watch-postgres.test.ts",
+      "expected": "a788ad1295e396a65d61fddace822952fe73075d844ea5b3871e3a3295716f5e",
+      "actual": "a788ad1295e396a65d61fddace822952fe73075d844ea5b3871e3a3295716f5e",
+      "match": true
+    },
+    {
+      "path": "tests/watch/collector.test.ts",
+      "expected": "b6097347de53fcc8f3dc4b85e0addc68358e3b8b962270414519212383d64855",
+      "actual": "b6097347de53fcc8f3dc4b85e0addc68358e3b8b962270414519212383d64855",
+      "match": true
+    },
+    {
+      "path": "tests/watch/keenable.test.ts",
+      "expected": "8307cf2f0554dba7dd9f603c90b1811ef79ace21d7b52bef88cecca0cb5e679b",
+      "actual": "8307cf2f0554dba7dd9f603c90b1811ef79ace21d7b52bef88cecca0cb5e679b",
+      "match": true
+    },
+    {
+      "path": "tests/watch/live-boamp.ts",
+      "expected": "e1b05a8fb21c7b31c4d5209a934cec98abf34510eae568c5c0f17061b5d36667",
+      "actual": "e1b05a8fb21c7b31c4d5209a934cec98abf34510eae568c5c0f17061b5d36667",
+      "match": true
+    },
+    {
+      "path": "tests/watch/live-coverage.ts",
+      "expected": "ecbbb82f64455203c368bd367d0d3d877babecd6192e1be47ca1b40e02b0bd04",
+      "actual": "ecbbb82f64455203c368bd367d0d3d877babecd6192e1be47ca1b40e02b0bd04",
+      "match": true
+    },
+    {
+      "path": "tests/watch/live-keenable.ts",
+      "expected": "f7555c9dc5f06121115a515235055c5734efb3935f64656187fcddde1c4e5e2a",
+      "actual": "f7555c9dc5f06121115a515235055c5734efb3935f64656187fcddde1c4e5e2a",
+      "match": true
+    }
+  ]
+}

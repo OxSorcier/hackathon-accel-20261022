@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "status": "CANDIDATE_DTO_V2_DATA_CHECKED_TYPECHECK_PASS",
+  "checkedAt": "2026-10-22T11:15:02.451Z",
+  "supersedes": "INDUSTRIAL-READY.json",
+  "contract": {
+    "path": "src/contracts/industrial.ts",
+    "sha256": "c638d5c1c7fe4205c26318642c21e0b0375149490d81ffde9a4c1242cca04845",
+    "finalReview": "NOT_RUN_BY_THIS_CHAT"
+  },
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "contextRevision": "IC-INDUSTRIAL-2-2",
+  "qualificationRevision": "Q-INDUSTRIAL-2-1",
+  "files": [
+    {
+      "path": "proposals/product/alignment-20261022/v2/industrial-context.v2.json",
+      "sha256": "95a9aeb940ad51f576779e161e633f47e39d78678355b86b01bfd3386ed3235e",
+      "bytes": 22721,
+      "role": "CURRENT_INDUSTRIAL_CONTEXT"
+    },
+    {
+      "path": "proposals/product/alignment-20261022/v2/operator-event.v2.json",
+      "sha256": "12efd02dc12781fa7aa243db1064e5f15c7c948fc3d9eab8a33c1383c9f189b7",
+      "bytes": 2004,
+      "role": "OPERATOR_ONLY_NOT_CURRENT_IMPORT"
+    }
+  ],
+  "checksPassed": 69,
+  "earlierChecks": "INDUSTRIAL-READY.json",
+  "additionalChecks": [
+    "alternative destination matches URG-1",
+    "current stock lot and bounded independence URG-1",
+    "alternative destination matches URG-IND-GAMMA-01",
+    "current stock lot and bounded independence URG-IND-GAMMA-01",
+    "alternative destination matches URG-IND-GAMMA-02",
+    "current stock lot and bounded independence URG-IND-GAMMA-02",
+    "alternative destination matches URG-IND-GAMMA-03",
+    "current stock lot and bounded independence URG-IND-GAMMA-03",
+    "alternative destination matches URG-IND-GAMMA-04",
+    "current stock lot and bounded independence URG-IND-GAMMA-04",
+    "transport alias cost/capacity matches once DQ-CRM-IND-000-V2",
+    "transport alias cost/capacity matches once DQ-RISK-8-V2",
+    "two distinct transport capacities, no consolidation",
+    "unknown upstream retained",
+    "interruption confirmation distinct and bound to fire event",
+    "competitor confirmation event/entity/demand linked",
+    "competitor confirmation misses requested date",
+    "competitor confirmation is timed synthetic operator evidence",
+    "competitor interruption not present before event release",
+    "exact contract v2 unchanged during checks"
+  ],
+  "typecheck": {
+    "status": "PASS",
+    "method": "Exact JSON literals satisfy candidate canonical interfaces.",
+    "command": "node node_modules/typescript/bin/tsc --ignoreConfig --noEmit --strict --skipLibCheck --module nodenext --moduleResolution nodenext --target es2023 --types node --typeRoots /Users/erwan/Projects/hackathon-accel-20261022/node_modules/@types /private/tmp/accel-industrial-data-contract-check-v2.mts"
+  },
+  "notes": [
+    "Use v2 data files; prior DTO files and receipts remain historical.",
+    "Core dataset and policy are unchanged.",
+    "All three scenario facts are now expressible but require authenticated release; none is currently available by file authority.",
+    "Competitor inability is a fictional attributed confirmation, not inferred from a public source.",
+    "Future demo orders and planned allocations must not immediately increase destination stock.",
+    "Potential offer revenue and contribution are not completed sales."
+  ],
+  "aivenImport": "NOT_RUN_BY_THIS_CHAT",
+  "model": "NOT_RUN",
+  "effectExecution": "NOT_RUN"
+}

@@ -1,0 +1,30 @@
+{
+  "version": 3,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022",
+  "scope": "Local context_manifest recorded semantics and analysis-mode badge copy against isolated CASE flow. Main research UI excluded. No new run or business execution.",
+  "files": [
+    {
+      "path": "src/ui/api.ts",
+      "baselineSha256": "8078d6492d98e68b111f80ad3d69747ccad8a0845e89212fd83babb155b3fc46",
+      "sha256": "5a4d4d33fa47d57547eec4d7e9b42eec585209b3d4a18656ef9e4bfe9fa147fc",
+      "immutableSnapshot": "proposals/ui/context-manifest-delta/src/ui/api.ts.snapshot"
+    },
+    {
+      "path": "src/ui/types.ts",
+      "baselineSha256": "c8fc1eceb87aeae8d93f34d3199248f3b5589cfeac3c892253e37a7dab28810a",
+      "sha256": "8eb3a73e588d2a3197ca27a452cca80bca4b345ee51cf2e584215f1ef2caf84a",
+      "immutableSnapshot": "proposals/ui/context-manifest-delta/src/ui/types.ts.snapshot"
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "baselineSha256": "51f4372e68dc2ba4d544e5d9936a57908053792e93bdedf29f91eda60c02a581",
+      "sha256": "b4fabde686467c03021db659b0477d065988846ba23e88af25cb7ced6f6b83c7",
+      "immutableSnapshot": "proposals/ui/context-manifest-delta/src/ui/App.tsx.snapshot"
+    },
+    {
+      "path": "tests/ui/context-manifest.test.ts",
+      "sha256": "da7e23852ae43d325659c1b600710cd0b04adf2a79294ea493fcd32bf077a416",
+      "immutableSnapshot": "proposals/ui/context-manifest-delta/tests/ui/context-manifest.test.ts.snapshot"
+    }
+  ]
+}

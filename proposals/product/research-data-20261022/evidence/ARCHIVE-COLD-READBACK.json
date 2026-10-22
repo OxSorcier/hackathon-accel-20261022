@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "remoteArchiveIdentical": true,
+  "archiveSha256": "95ee78f1c82cbbbb14be19a05093aba381aa795a62384707e6aa194bb6859a17",
+  "verifiedFiles": 18,
+  "failed": [],
+  "localLinks": [
+    {
+      "href": "../../../docs/PRODUCT-VISION.md",
+      "exists": true
+    },
+    {
+      "href": "../../../docs/STATUS.md",
+      "exists": true
+    },
+    {
+      "href": "../../integration/KEENABLE-CONTRACT.md",
+      "exists": true
+    },
+    {
+      "href": "evidence/API-TRIALS.json",
+      "exists": true
+    },
+    {
+      "href": "PUBLIC-SIGNALS.json",
+      "exists": true
+    },
+    {
+      "href": "REGULATORY-CANDIDATES.json",
+      "exists": true
+    }
+  ],
+  "freshExtractionDirectory": "/tmp/accel-research-cold-01a162e0",
+  "independentReader": "NOT_RUN",
+  "scope": "Fresh filesystem recovery; no claim of a new agent context"
+}

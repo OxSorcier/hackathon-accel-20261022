@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "date": "2026-10-22T11:41:23.426Z",
+  "status": "WIP_NOT_REVIEWED_NOT_INTEGRATED",
+  "reason": "Human continues frontend. Stop concurrent App/styles/component/composition changes, preserve current bytes without rollback.",
+  "files": [
+    {
+      "path": "src/ui/App.tsx",
+      "snapshot": "proposals/ui/industrial/front-wip-20261022/src/ui/App.tsx.snapshot",
+      "sha256": "276101b47b9ace8b0ce27fbae6909f8d6a1252f3b8dae2d5c913c75d27cac243"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "snapshot": "proposals/ui/industrial/front-wip-20261022/src/ui/styles.css.snapshot",
+      "sha256": "004807ec8e24fcb87b80d1f43f247aee06ff96b1328aadb64f4c5275040132c4"
+    },
+    {
+      "path": "src/ui/IndustrialDesk.tsx",
+      "snapshot": "proposals/ui/industrial/front-wip-20261022/src/ui/IndustrialDesk.tsx.snapshot",
+      "sha256": "2d36a4cdb809bbc14025cf14f25a750e112f7dfb5ec844afd5cb25f0f64a4848"
+    },
+    {
+      "path": "tests/ui/preview.tsx",
+      "snapshot": "proposals/ui/industrial/front-wip-20261022/tests/ui/preview.tsx.snapshot",
+      "sha256": "98fff9084105cdb34ea45c99acc2e7497d80c935fdd003abe425563e7431112f"
+    }
+  ],
+  "next": "Existing frontend owner may reuse or replace this WIP deliberately. UI builder continues only industrial API boundaries/validation/tests, coordinated with existing owner.",
+  "stable3001": "Unchanged"
+}

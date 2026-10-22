@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "createdAt": "2026-10-22T10:54:06.974611+00:00",
+  "scope": "R1 reception operator scripts only, existing Aiven isolated schema and canonical frozen application entry",
+  "sourceFingerprint": "6edee6eea546c89bdd29514aefcb7b3250f9fbb3db7398d459f528b1471b60e1",
+  "files": [
+    {
+      "path": ".local/research-reception/shared.ts",
+      "sha256": "3f13ed1dda09eae140ccca4276c84df399befe69c6a7f0daedbd297b2c0c366f"
+    },
+    {
+      "path": ".local/research-reception/serve.ts",
+      "sha256": "f1d0f1f8fe3e6a0fad9ba4969b8cf75482e35094eacfae4d6813615bf19e27a8"
+    },
+    {
+      "path": ".local/research-reception/run.ts",
+      "sha256": "bc90b9dc75933548543a2f77c87f522e5c245616623b87ddb2776ecb5012e871"
+    }
+  ],
+  "runtimeDependency": "proposals/integration/REVIEW-INPUT-RESEARCH-SERVER.json",
+  "runtimeDependencySha256": "f78b5bc99974d61c1fd36ef3bcd28d263324003805d9e2ca1a7cb0015d554d91",
+  "typecheck": "PASS with ignoreConfig, strict, NodeNext, allowImportingTsExtensions",
+  "execution": "NO_DATABASE_OR_PROVIDER_CALL_YET",
+  "realizer": "gpt-6.1-sol/xhigh",
+  "updatedAt": "2026-10-22T11:18:34.735731+00:00",
+  "change": "Received migration007 import semantics: fresh historical barrier0, lock target company before terminal insert, trigger assigns imported publication_seq, preserve source dates and assert sequence unchanged across runs.",
+  "publicationContract": {
+    "source": "Direct data-owner message, received in this chat",
+    "migration": "migrations/007_research_publication_order.sql",
+    "sha256": "367b1f3733a10e157a5613093269e0c962c442ae70d193c4c26bce3fc05ed7b0",
+    "rule": "Apply migrations on empty isolated schema first. Under company FOR UPDATE, import the single terminal occurrence without copying publication_seq. Trigger assigns >0; original collection/publication dates remain unchanged. Ordinal proves reception in this schema only."
+  }
+}

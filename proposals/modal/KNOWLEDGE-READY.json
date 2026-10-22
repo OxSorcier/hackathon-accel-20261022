@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "unit": "pdf-knowledge-adapter",
+  "revision": 1,
+  "status": "complete",
+  "recordedAt": "2026-10-22T11:34:49.258566+00:00",
+  "unitScope": "Delegated cache-only page projection adapter; model tool registration, app wiring and UI remain owner work.",
+  "files": [
+    {
+      "path": "src/server/pdf-knowledge.ts",
+      "sha256": "619b69023971437410e87729a99862ba7dae7db7341e788eb04a2287aa01d054"
+    },
+    {
+      "path": "tests/server/pdf-knowledge.test.ts",
+      "sha256": "70fe21b7ba43c3d34b2390be32a633c1ce394b737f09138f119d45632b98e323"
+    }
+  ],
+  "references": [
+    {
+      "path": "src/contracts/pdf.ts",
+      "sha256": "8df45c4c63087489d89f3ea27691f954eea7c95fd083d76e524f833061cea4de"
+    },
+    {
+      "path": "src/server/pdf-documents.ts",
+      "sha256": "60c1bc24ed2995d3081aa56cbfcda82ec3a1923972bdde0957e2b0b7eae50120"
+    },
+    {
+      "path": "src/server/errors.ts",
+      "sha256": "74e7f5b864a68dc9103e809941034a66cb89747ce7a7fcdcde0438519ec84882"
+    }
+  ],
+  "realizerModel": "gpt-6.1-sol",
+  "reviewScope": "proposals/modal/KNOWLEDGE-REVIEW-SCOPE.json",
+  "reviewReceipt": "proposals/modal/KNOWLEDGE-REVIEWS.json",
+  "publicApi": "createPdfKnowledgePort(documents: PdfDocuments, actor: Actor, profileId: string): PdfKnowledgePort",
+  "roles": [
+    "direction",
+    "achats",
+    "logistique"
+  ],
+  "methods": {
+    "list": "Up to20 done-document descriptors, no page bodies. Storage failure throws sanitized AppError PDF_STORAGE_UNAVAILABLE503. Invalid cached identity/provenance throws PDF_STATE_INVALID503.",
+    "read": "SHA256 and1-2 distinct one-based pages (up to40 and <= cached pageCount). Each <=6000Unicode codepoints. Full pageTextHash, excerptHash, truncated, fullPageCharacterCount, fixed citationURL#page. externalCalls0."
+  },
+  "failureSemantics": {
+    "invalidActor": "PDF_INVALID_ACTOR401",
+    "operator": "PDF_FORBIDDEN403",
+    "invalidProfile": "PDF_INVALID_PROFILE400",
+    "invalidHash": "PDF_INVALID_HASH400",
+    "invalidPages": "PDF_INVALID_PAGES400 before store or after cached pageCount check",
+    "cacheMissingOrUnfinished": "not_available, documentnull, pagesempty, stable reason PDF_CACHE_MISSING/PENDING/UNCERTAIN/FAILED",
+    "cacheInvalidOrStorageError": "not_available without text and reason PDF_STATE_INVALID or PDF_STORAGE_UNAVAILABLE",
+    "nativeTextEmpty": "available with empty text, extractionStatusempty/partial and PDF_SELECTED_PAGE_EMPTY; no OCR claimed"
+  },
+  "conditions": [
+    "PUBLIC_SOURCE_UNTRUSTED",
+    "SOURCE_OBSERVATION_ONLY",
+    "NO_SUPPLIER_RELATION_CONFIRMED",
+    "NATIVE_TEXT_ONLY"
+  ],
+  "verification": {
+    "tests": "9/9 local tests pass",
+    "typecheck": "pass",
+    "dualReviews": "Exact revision1 received by two independent reviewers; no retained finding",
+    "hashesStable": true,
+    "externalCalls": 0,
+    "fullApplication": "NOT_RUN"
+  },
+  "contractStatus": "CANDIDATE at8df45c4c63087489d89f3ea27691f954eea7c95fd083d76e524f833061cea4de; canonical contract reception stays with integrator.",
+  "writesFrozen": true,
+  "git": "Uncommitted; no commit/push.",
+  "nextOwner": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "nextAction": "Receive exact adapter hashes, bind fixed profile and actor in worker/model options, register received tools and UI, then verify real selected-page citations/cache/restart on the integrated candidate."
+}

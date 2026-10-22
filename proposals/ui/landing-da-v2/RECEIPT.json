@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "date": "2026-10-22",
+  "status": "Visual positioning refinement delivered",
+  "mode": "reference-led built-in image editing",
+  "changes": [
+    "Hero now states business knowledge, connected tools, market intelligence, response coordination and execution of approved actions.",
+    "Audience broadened to teams managing inventory, supply and customer commitments across operations, procurement, sales and finance."
+  ],
+  "review": "Both images visually inspected inline. New English copy fits. Approved visual direction, tagline and product/action loop preserved.",
+  "assets": [
+    {
+      "variant": "A",
+      "file": "A-airy-split.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-93f77121-3b54-4feb-975e-89fa67313322.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "9e155aef37f33a0d93be5a81e108fa4da7e8ce18e8c79f265c6d630262c50294"
+    },
+    {
+      "variant": "B",
+      "file": "B-product-canvas.png",
+      "source": "/Users/erwan/.codex/generated_images/01a162cd-6303-7891-9160-54e6b70a3ffc/exec-7a6d2d01-9cbc-4516-ae3e-ee601e1431ef.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "3ef7596eb2624b1464dc8da62e268d5286099eac5f3fc5dc00a5cecd4fbe2e98"
+    }
+  ],
+  "copy": "COPY.md",
+  "prompts": "PROMPTS.json",
+  "scope": "Raster proposals. No application code or website publication changed."
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "status": "TWO_ROLES_CLOSED_NO_RETAINED_FINDING",
+  "checkedAt": "2026-10-22T12:09:36.286271+00:00",
+  "scope": "proposals/agent/R2-SCRIPT-REVIEW-SCOPE.json",
+  "sourceFingerprint": "48563dc32be1171f6a1aabd0ece413b7b501d724c44f93c317bf60706b0b2cd3",
+  "files": [
+    {
+      "path": ".local/research-reception/r2.ts",
+      "sha256": "777c05f632027195b153d77154a81d5e5b15f99d7b3f984c97af9703dfd9b994"
+    },
+    {
+      "path": ".local/research-reception/shared.ts",
+      "sha256": "3f13ed1dda09eae140ccca4276c84df399befe69c6a7f0daedbd297b2c0c366f"
+    }
+  ],
+  "realizer": "gpt-6.1-sol/xhigh",
+  "servedModels": "UNATTESTED",
+  "reviews": [
+    {
+      "agent": "/root/r2_operator_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "effort": "high",
+      "isolation": "fork_turns:none",
+      "cycles": 3,
+      "typecheck": "PASS",
+      "pins": "49MATCH before/after"
+    },
+    {
+      "agent": "/root/r2_operator_architecture",
+      "modelRequested": "gpt-6-astra",
+      "effort": "high",
+      "isolation": "fork_turns:none",
+      "cycles": 3,
+      "typecheck": "PASS",
+      "pins": "49MATCH before/after"
+    }
+  ],
+  "findingsClosed": [
+    "Case runs require currentCaseRef bound to actual current company/case read; pure probe now prepares1420 option in4 injected invocations, A/B0shortage.",
+    "Record session token before actor re-read so read errors/invalid actor still clean it; pure success/failure/double-cleanup probes PASS."
+  ],
+  "limits": [
+    "No reviewer DB/env/API/network/script execute. Actual controlled Aiven test pending.",
+    "No external model or research calls permitted."
+  ]
+}

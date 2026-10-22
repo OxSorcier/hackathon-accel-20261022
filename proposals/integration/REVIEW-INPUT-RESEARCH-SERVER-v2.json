@@ -1,0 +1,130 @@
+{
+  "version": 2,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/research-server-review-v2",
+  "base": "/Users/erwan/Projects/hackathon-accel-20261022/.local/research-server-review-v1",
+  "scope": "Server research R1/R2 binding, isolated public/controlled evidence, publication/approval freshness and concurrent watch serialization",
+  "createdAt": "2026-10-22T11:22:47.057708+00:00",
+  "files": [
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "47a8a3c8bbce586209944e9ef89f94022361b4b4b65f08f305785683b8358458"
+    },
+    {
+      "path": "src/contracts/research.ts",
+      "sha256": "fee848077572306a771708439ba003889ff0606cff0cffdc08a3c77b73ede214"
+    },
+    {
+      "path": "src/server/app.ts",
+      "sha256": "ef9f167081aaf21fcd1352a8659ae069df68d8c60f511420ff7a3dde21f1e68b"
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256": "b5dec6ed1a279399b97f0f00f7a54789ef988058bf77c49e7f837a0d4e6240d4"
+    },
+    {
+      "path": "src/server/worker.ts",
+      "sha256": "18977f749b193fbef3eda35e5f6896f3f8de2d3f474bc5b303e0f500c5fbf92d"
+    },
+    {
+      "path": "src/server/watch-service.ts",
+      "sha256": "e495c374bfbb29dbdd7f6d17a553cbbb5f05ed3d73ee489654799c8a56fdbca0"
+    },
+    {
+      "path": "src/server/start.ts",
+      "sha256": "e81f0e741c1dc5fdcf16cf0383d5040d59b6a5826780e841053ca12c68b54f4e"
+    },
+    {
+      "path": "src/server/research-service.ts",
+      "sha256": "b86e9d6476a3e0cbea37dbd70026f159ca37c9ca909282e4fd3d5e748a019b95"
+    },
+    {
+      "path": "src/server/research-context.ts",
+      "sha256": "7f64f20a8aabed2df5d4c6fff4418b16643b60cf9e93d0fb27e2b32c048ebc07"
+    },
+    {
+      "path": "src/server/cases.ts",
+      "sha256": "8649122c9ff9c27eb490bca33994065d35a64a0606c6dc83e1a3b287f6447bc7"
+    },
+    {
+      "path": "migrations/006_research.sql",
+      "sha256": "81284dc78ab4df3c54412605f9815f9b50f13f5497c134cf945d1696a8cb8afa"
+    },
+    {
+      "path": "tests/integration/research.test.ts",
+      "sha256": "9d23a132af3a147d4cb684ff7455fab05b2b8bc4d4ecc3e65fff63906fc3173c"
+    },
+    {
+      "path": "migrations/007_research_publication_order.sql",
+      "sha256": "367b1f3733a10e157a5613093269e0c962c442ae70d193c4c26bce3fc05ed7b0"
+    },
+    {
+      "path": "tests/server/origin.test.ts",
+      "sha256": "2fd4f04a94173010158ed2a75300ca68aa9148f6c05e9a6a6d5d4137963f2930"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "640d75523cb81f88eb581aa169f5fefd8c94d72deee1a7f5b0da6dd5f21f0e6a"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "0a81c114a7409da6410191755bb42a845d7b083c23294aa402a484c81dd9688e"
+    },
+    {
+      "path": "src/agent/context.ts",
+      "sha256": "262f0c97662f10a697cb071fab33b05ae692c16047a8e4dac12895b9bdcd89cf"
+    },
+    {
+      "path": "src/agent/case-context.ts",
+      "sha256": "151e7ccb950db6fbbeb907d9e70d005250a6464c8c0f827c847987c82a4c407f"
+    },
+    {
+      "path": "src/agent/research-context.ts",
+      "sha256": "b6bb1a985878d0a9787cc6e55ae15a090a497ca9ef8bd73b3f14ef2fe7080d96"
+    },
+    {
+      "path": "tests/agent/memory-provenance.test.ts",
+      "sha256": "e7e28788027cc3a02b088243bb47bde79f10ba081efef143b8f532b949b84d31"
+    },
+    {
+      "path": "tests/data/research-postgres.test.ts",
+      "sha256": "a70c9c81721541c76a2af6b0c65a385028bf108b8037548d4bf656095881c40b"
+    }
+  ],
+  "testResources": [
+    {
+      "path": "proposals/data/watch-schema.sql",
+      "sha256": "646763837b1b1f0ae7cceb88f5ca8de23f9607323a9dbff2d7c31dd9f3f25c08"
+    },
+    {
+      "path": "proposals/data/research-schema.sql",
+      "sha256": "79eb7786942be6009444932e7b7f8ee598e4e26811673664d93dcb2215c9816c"
+    },
+    {
+      "path": "proposals/data/RESEARCH-MEMORY-CONTROLLED-SCENARIO.json",
+      "sha256": "cd45ff318afdd022ad1626555dac1fe9fc1f2e670572057dfa1150db6cc2bd33"
+    },
+    {
+      "path": "proposals/data/research-publication-order.sql",
+      "sha256": "367b1f3733a10e157a5613093269e0c962c442ae70d193c4c26bce3fc05ed7b0"
+    }
+  ],
+  "receivedUnits": [
+    {
+      "receipt": "proposals/data/READY-RESEARCH-v2.json",
+      "receiptSha256": "43f069ecadfff6f9cb6fe2707e16d74c990b441e4e3feeb37a01cf37b86d678c",
+      "pinsMatched": 4
+    },
+    {
+      "receipt": "proposals/agent/MEMORY-PROVENANCE-READY.json",
+      "receiptSha256": "88908aa70d8d01646253355738a0fdebb0f1b5091c780e3a99645dfbd1767f50",
+      "pinsMatched": 8
+    },
+    {
+      "receipt": "proposals/ui/research/READY.json",
+      "receiptSha256": "2c0c5b68e9b3f2a74e1f8fb9d1d1a394cfbf654da5f37af3bae7d1c7c1b31f1c",
+      "pinsMatched": 22
+    }
+  ]
+}

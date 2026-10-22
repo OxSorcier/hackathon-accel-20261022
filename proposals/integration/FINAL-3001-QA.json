@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-22T10:40:37.760Z",
+  "url": "http://127.0.0.1:3001",
+  "checks": {
+    "html200": true,
+    "asset200": true,
+    "assetReplaced": true,
+    "englishDocument": true,
+    "sameCompany": true,
+    "sameCaseVersion": true,
+    "approvedPreserved": true,
+    "sameTraceCount": true,
+    "sameRun": true,
+    "sameConfirmation": true,
+    "oldNegativePreserved": true
+  },
+  "passed": true,
+  "assetPath": "/assets/index-R0XcSArE.js",
+  "assetSha256": "54193789b0cb0b1af514537b5cf2ee8a931c31e4e7333ff764cf219da0f2f980",
+  "previousAssetPath": "/assets/index-lcpfGLQO.js",
+  "companyId": "CO-PARCOURS-PAUL-V2",
+  "revision": "R-762bd855-8f8b-47b6-a28f-2789b9a03c5d",
+  "runId": "6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+  "proposalId": "proposal:6d4575fa-27ee-49f7-99f0-8a3a2130ca55",
+  "caseRef": {
+    "caseId": "case:068e414c-a09f-4561-b4db-e7bcf8bbc755",
+    "caseRevision": "C-9bf7d23a-b97e-4ff5-a8fd-4122f43fffca"
+  },
+  "historyVersions": 4,
+  "traceCount": 16,
+  "mode": "direct",
+  "model": "gpt-5.4-mini",
+  "decision": "approved"
+}
