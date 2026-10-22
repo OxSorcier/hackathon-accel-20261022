@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "status": "COMPLETE_DOCUMENTARY_MANDATE",
+  "date": "2026-10-22",
+  "sourceRef": "8b9e609ad2ba5fafff5729355f75bc578b50585a",
+  "branch": "codex/hackathon-postmortem-2026-10-22",
+  "productCodeChanged": false,
+  "productTestsRerun": false,
+  "productRestarted": false,
+  "externalProviderCalls": 0,
+  "erwanOsChanged": false,
+  "automationCreated": false,
+  "deploymentPerformed": false,
+  "render": {
+    "status": "PASS",
+    "cases": 21,
+    "viewports": [
+      390,
+      768,
+      1440
+    ],
+    "browser": "Isolated Chromium; Aside first reading",
+    "fonts": "Inter embedded and loaded",
+    "contentParity": true,
+    "externalDisplayRequests": 0,
+    "globalOverflow": false,
+    "links": "PASS",
+    "pixelsInspected": "Four report opening screens, chronology table and mobile pipeline samples",
+    "limits": "Desktop emulation, not physical mobile/Safari/Firefox. Aside resize unavailable."
+  },
+  "independentReview": {
+    "status": "RECEIVED_WITH_NO_OPEN_FINDINGS",
+    "reviewer": "coverage_review, distinct fresh context",
+    "artifact": "evidence/INDEPENDENT-REVIEW.md",
+    "corrections": [
+      "Historical local research skill update recovered",
+      "Configured/requested Harness model and actual skill invocation matrix",
+      "Three public observations with no known business exposure, prose status preserved"
+    ],
+    "exactDocumentPins": "PREFLIGHT.json and independent review closing hashes"
+  },
+  "archive": {
+    "status": "EIGHT_FILES_AND_COMPLETE_BUNDLE_BYTE_VERIFIED_TRACKING_READ_BACK",
+    "receipt": "ARCHIVE-RECEIPT.json",
+    "audienceChanged": false,
+    "bundle": "1KLtEYjm8LIJoLa-DIR1_APU57GD4CWTe",
+    "tracking": "ERW-133 comment 9295d7c8-911a-4625-9d05-573dbe4e984a"
+  },
+  "draftPullRequest": {
+    "status": "OPEN_DRAFT",
+    "url": "https://github.com/OxSorcier/hackathon-accel-20261022/pull/1",
+    "initialHead": "793b81a076c0330998dd2d58b7dad802e65d02d4",
+    "base": "8b9e609ad2ba5fafff5729355f75bc578b50585a",
+    "merged": false,
+    "monitoring": "Not started: draft PR, no automation authorised",
+    "approvalReview": "Initial create rejected for ambiguous publication authority. Exact direct user mission was reread, explicitly requesting branch and draft PR; same connector retry then approved. No workaround used.",
+    "attachedToCurrentChat": true,
+    "finalMetadata": "This receipt and ARCHIVE-RECEIPT advance the immutable content checkpoint; four reports and seven reviewed Markdown pins remain unchanged."
+  },
+  "limits": [
+    "Historical runtime results remain attributed to their exact receipts.",
+    "Final support identified by Erwan is the deployed physical-impact.com website; exact jury sequence, video and submission form receipt are not established.",
+    "Prospective workflow adoption and video pipeline remain NOT_RUN."
+  ],
+  "completionScope": "Requested documentary audit, research, proposals, offline artifacts, existing private archive/tracking and draft PR. No proposed product/Harness change has been implemented or activated by this audit."
+}

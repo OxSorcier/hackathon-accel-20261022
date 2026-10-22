@@ -1,0 +1,2861 @@
+{
+  "observedAt": "2026-10-22T18:58:00.201Z",
+  "browser": "151.0.7922.34",
+  "method": "Isolated Chromium, local file URLs, network disabled. Aside reading received separately; desktop emulated viewports only.",
+  "checks": [
+    {
+      "name": "HACKATHON-POSTMORTEM-2026-10-22",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 23389,
+      "renderChars": 23389,
+      "headings": [
+        {
+          "text": "Ce qui s'est passé au hackathon Accel",
+          "fontSize": "35px"
+        },
+        {
+          "text": "Le résultat établi",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Comment lire les preuves",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Le problème initial et son élargissement",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Chronologie reconstituée",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Architecture et choix réels",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Modèles, outils et skills effectivement tracés",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Trois états à ne pas fusionner",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Incidents, corrections et travail répété",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Démo, esthétique et expérience",
+          "fontSize": "25px"
+        },
+        {
+          "text": "État final et inconnues utiles",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Sources et suite",
+          "fontSize": "25px"
+        }
+      ],
+      "tableCount": 5,
+      "scrollTables": [
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://physical-impact.com",
+        "SOURCE-MAP.html",
+        "https://linear.app/briques/issue/ERW-133",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": "evidence/HACKATHON-POSTMORTEM-2026-10-22-390.png",
+      "pass": true
+    },
+    {
+      "name": "HACKATHON-POSTMORTEM-2026-10-22",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 23389,
+      "renderChars": 23389,
+      "headings": [
+        {
+          "text": "Ce qui s'est passé au hackathon Accel",
+          "fontSize": "34.56px"
+        },
+        {
+          "text": "Le résultat établi",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Comment lire les preuves",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Le problème initial et son élargissement",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Chronologie reconstituée",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Architecture et choix réels",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Modèles, outils et skills effectivement tracés",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Trois états à ne pas fusionner",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Incidents, corrections et travail répété",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Démo, esthétique et expérience",
+          "fontSize": "26px"
+        },
+        {
+          "text": "État final et inconnues utiles",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Sources et suite",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 5,
+      "scrollTables": [
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://physical-impact.com",
+        "SOURCE-MAP.html",
+        "https://linear.app/briques/issue/ERW-133",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "HACKATHON-POSTMORTEM-2026-10-22",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 23389,
+      "renderChars": 23389,
+      "headings": [
+        {
+          "text": "Ce qui s'est passé au hackathon Accel",
+          "fontSize": "52px"
+        },
+        {
+          "text": "Le résultat établi",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Comment lire les preuves",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Le problème initial et son élargissement",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Chronologie reconstituée",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Architecture et choix réels",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Modèles, outils et skills effectivement tracés",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Trois états à ne pas fusionner",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Incidents, corrections et travail répété",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Démo, esthétique et expérience",
+          "fontSize": "26px"
+        },
+        {
+          "text": "État final et inconnues utiles",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Sources et suite",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 5,
+      "scrollTables": [
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://physical-impact.com",
+        "SOURCE-MAP.html",
+        "https://linear.app/briques/issue/ERW-133",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": "evidence/HACKATHON-POSTMORTEM-2026-10-22-1440.png",
+      "pass": true
+    },
+    {
+      "name": "HARNESS-LESSONS",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 20815,
+      "renderChars": 20815,
+      "headings": [
+        {
+          "text": "Ce que le Harness doit apprendre de Physical Impact",
+          "fontSize": "35px"
+        },
+        {
+          "text": "Le diagnostic",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Ce que les images permettent de critiquer",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L01. Fixer une démonstration centrale et payer chaque extension",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L02. Partager les significations de DEMO et LIVE, pas seulement les types",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L03. Recevoir la séquence jouée avant de dire « complet »",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L04. Éprouver le support obligatoire avant les raffinements",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L05. Recevoir un transfert de propriétaire avant le premier fichier concurrent",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L06. Garder la preuve publique et la causalité métier séparées",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L07. Auditer aussi les oracles et le transport des preuves",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L08. Produire une première vidéo avant d'avoir besoin de la vidéo finale",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L09. Composer les skills déjà présents avant d'en ajouter",
+          "fontSize": "25px"
+        },
+        {
+          "text": "L10. Mesurer le résultat livré et éprouver les pannes qui le menacent",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Ce qui peut être parallélisé, et ce qui doit rester commun",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Revue contradictoire",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Matrice de priorités",
+          "fontSize": "25px"
+        }
+      ],
+      "tableCount": 3,
+      "scrollTables": [
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "SOURCE-MAP.html",
+        "SOURCE-MAP.html",
+        "TOOL-RESEARCH.html",
+        "HARNESS-LESSONS.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": "evidence/HARNESS-LESSONS-390.png",
+      "pass": true
+    },
+    {
+      "name": "HARNESS-LESSONS",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 20815,
+      "renderChars": 20815,
+      "headings": [
+        {
+          "text": "Ce que le Harness doit apprendre de Physical Impact",
+          "fontSize": "34.56px"
+        },
+        {
+          "text": "Le diagnostic",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Ce que les images permettent de critiquer",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L01. Fixer une démonstration centrale et payer chaque extension",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L02. Partager les significations de DEMO et LIVE, pas seulement les types",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L03. Recevoir la séquence jouée avant de dire « complet »",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L04. Éprouver le support obligatoire avant les raffinements",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L05. Recevoir un transfert de propriétaire avant le premier fichier concurrent",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L06. Garder la preuve publique et la causalité métier séparées",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L07. Auditer aussi les oracles et le transport des preuves",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L08. Produire une première vidéo avant d'avoir besoin de la vidéo finale",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L09. Composer les skills déjà présents avant d'en ajouter",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L10. Mesurer le résultat livré et éprouver les pannes qui le menacent",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Ce qui peut être parallélisé, et ce qui doit rester commun",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Revue contradictoire",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Matrice de priorités",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 3,
+      "scrollTables": [
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "SOURCE-MAP.html",
+        "SOURCE-MAP.html",
+        "TOOL-RESEARCH.html",
+        "HARNESS-LESSONS.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "HARNESS-LESSONS",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 20815,
+      "renderChars": 20815,
+      "headings": [
+        {
+          "text": "Ce que le Harness doit apprendre de Physical Impact",
+          "fontSize": "52px"
+        },
+        {
+          "text": "Le diagnostic",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Ce que les images permettent de critiquer",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L01. Fixer une démonstration centrale et payer chaque extension",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L02. Partager les significations de DEMO et LIVE, pas seulement les types",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L03. Recevoir la séquence jouée avant de dire « complet »",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L04. Éprouver le support obligatoire avant les raffinements",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L05. Recevoir un transfert de propriétaire avant le premier fichier concurrent",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L06. Garder la preuve publique et la causalité métier séparées",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L07. Auditer aussi les oracles et le transport des preuves",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L08. Produire une première vidéo avant d'avoir besoin de la vidéo finale",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L09. Composer les skills déjà présents avant d'en ajouter",
+          "fontSize": "26px"
+        },
+        {
+          "text": "L10. Mesurer le résultat livré et éprouver les pannes qui le menacent",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Ce qui peut être parallélisé, et ce qui doit rester commun",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Revue contradictoire",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Matrice de priorités",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 3,
+      "scrollTables": [
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "SOURCE-MAP.html",
+        "SOURCE-MAP.html",
+        "TOOL-RESEARCH.html",
+        "HARNESS-LESSONS.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": "evidence/HARNESS-LESSONS-1440.png",
+      "pass": true
+    },
+    {
+      "name": "HACKATHON-HARNESS-VNEXT",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 19175,
+      "renderChars": 19175,
+      "headings": [
+        {
+          "text": "Hackathon Harness vNext : deux tracks, une expérience reçue",
+          "fontSize": "35px"
+        },
+        {
+          "text": "La décision proposée",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Responsabilités et sorties",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Contrat minimal avant les écritures indépendantes",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Raccord progressif",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Cadence candidate pour un événement de six heures",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Workflow UX/UI composable",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Apports externes, sans installation proposée aujourd'hui",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Pipeline vidéo de trois minutes",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Outils vérifiés et choix proportionné",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Mesurer si la méthode est meilleure",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Quand renoncer aux deux tracks",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Matrice de priorités",
+          "fontSize": "25px"
+        }
+      ],
+      "tableCount": 10,
+      "scrollTables": [
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HARNESS-LESSONS.html",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animate/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://base-ui.com/react/handbook/styling",
+        "https://motion.dev/docs/react-use-reduced-motion",
+        "TOOL-RESEARCH.html",
+        "https://github.com/microsoft/playwright/releases/tag/v1.64.1",
+        "https://github.com/remotion-dev/remotion/releases/tag/v4.0.538",
+        "https://github.com/new-xp/ultrademo/tree/e7bdcfc241600b65bf6536f2c3c990a00a765b2d",
+        "https://github.com/AlexAnsart/demo-studio/tree/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa",
+        "https://github.com/snchande/DemoStudio/tree/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a",
+        "https://github.com/khajaaijaz26/agent-demo-studio/tree/b7921b334957128b16b686539343aee4bbe14e18",
+        "https://elevenlabs.io/docs/overview/capabilities/text-to-speech",
+        "https://github.com/OHF-Voice/piper1-gpl",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "TOOL-RESEARCH.html",
+        "SOURCE-MAP.html",
+        "HACKATHON-HARNESS-VNEXT.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": "evidence/HACKATHON-HARNESS-VNEXT-390.png",
+      "pass": true
+    },
+    {
+      "name": "HACKATHON-HARNESS-VNEXT",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 19175,
+      "renderChars": 19175,
+      "headings": [
+        {
+          "text": "Hackathon Harness vNext : deux tracks, une expérience reçue",
+          "fontSize": "34.56px"
+        },
+        {
+          "text": "La décision proposée",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Responsabilités et sorties",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Contrat minimal avant les écritures indépendantes",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Raccord progressif",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Cadence candidate pour un événement de six heures",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Workflow UX/UI composable",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Apports externes, sans installation proposée aujourd'hui",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Pipeline vidéo de trois minutes",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Outils vérifiés et choix proportionné",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Mesurer si la méthode est meilleure",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Quand renoncer aux deux tracks",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Matrice de priorités",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 10,
+      "scrollTables": [
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HARNESS-LESSONS.html",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animate/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://base-ui.com/react/handbook/styling",
+        "https://motion.dev/docs/react-use-reduced-motion",
+        "TOOL-RESEARCH.html",
+        "https://github.com/microsoft/playwright/releases/tag/v1.64.1",
+        "https://github.com/remotion-dev/remotion/releases/tag/v4.0.538",
+        "https://github.com/new-xp/ultrademo/tree/e7bdcfc241600b65bf6536f2c3c990a00a765b2d",
+        "https://github.com/AlexAnsart/demo-studio/tree/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa",
+        "https://github.com/snchande/DemoStudio/tree/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a",
+        "https://github.com/khajaaijaz26/agent-demo-studio/tree/b7921b334957128b16b686539343aee4bbe14e18",
+        "https://elevenlabs.io/docs/overview/capabilities/text-to-speech",
+        "https://github.com/OHF-Voice/piper1-gpl",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "TOOL-RESEARCH.html",
+        "SOURCE-MAP.html",
+        "HACKATHON-HARNESS-VNEXT.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "HACKATHON-HARNESS-VNEXT",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 19175,
+      "renderChars": 19175,
+      "headings": [
+        {
+          "text": "Hackathon Harness vNext : deux tracks, une expérience reçue",
+          "fontSize": "52px"
+        },
+        {
+          "text": "La décision proposée",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Responsabilités et sorties",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Contrat minimal avant les écritures indépendantes",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Raccord progressif",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Cadence candidate pour un événement de six heures",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Workflow UX/UI composable",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Apports externes, sans installation proposée aujourd'hui",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Pipeline vidéo de trois minutes",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Outils vérifiés et choix proportionné",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Mesurer si la méthode est meilleure",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Quand renoncer aux deux tracks",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Matrice de priorités",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 10,
+      "scrollTables": [
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HARNESS-LESSONS.html",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animate/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://base-ui.com/react/handbook/styling",
+        "https://motion.dev/docs/react-use-reduced-motion",
+        "TOOL-RESEARCH.html",
+        "https://github.com/microsoft/playwright/releases/tag/v1.64.1",
+        "https://github.com/remotion-dev/remotion/releases/tag/v4.0.538",
+        "https://github.com/new-xp/ultrademo/tree/e7bdcfc241600b65bf6536f2c3c990a00a765b2d",
+        "https://github.com/AlexAnsart/demo-studio/tree/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa",
+        "https://github.com/snchande/DemoStudio/tree/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a",
+        "https://github.com/khajaaijaz26/agent-demo-studio/tree/b7921b334957128b16b686539343aee4bbe14e18",
+        "https://elevenlabs.io/docs/overview/capabilities/text-to-speech",
+        "https://github.com/OHF-Voice/piper1-gpl",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "TOOL-RESEARCH.html",
+        "SOURCE-MAP.html",
+        "HACKATHON-HARNESS-VNEXT.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": "evidence/HACKATHON-HARNESS-VNEXT-1440.png",
+      "pass": true
+    },
+    {
+      "name": "ERWANOS-LEARNING-PACK",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 11965,
+      "renderChars": 11965,
+      "headings": [
+        {
+          "text": "Pack candidat ErwanOS : apprendre de Physical Impact",
+          "fontSize": "35px"
+        },
+        {
+          "text": "Le changement utile à éprouver",
+          "fontSize": "25px"
+        },
+        {
+          "text": "A. Local au projet",
+          "fontSize": "25px"
+        },
+        {
+          "text": "B. Hackathon Harness",
+          "fontSize": "25px"
+        },
+        {
+          "text": "C. ErwanOS global",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Expériences à créer avant adoption",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Mode de transfert recommandé",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Revue contradictoire et matrice de priorités",
+          "fontSize": "25px"
+        }
+      ],
+      "tableCount": 5,
+      "scrollTables": [
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://physical-impact.com",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "SOURCE-MAP.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "TOOL-RESEARCH.html",
+        "ERWANOS-LEARNING-PACK.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": "evidence/ERWANOS-LEARNING-PACK-390.png",
+      "pass": true
+    },
+    {
+      "name": "ERWANOS-LEARNING-PACK",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 11965,
+      "renderChars": 11965,
+      "headings": [
+        {
+          "text": "Pack candidat ErwanOS : apprendre de Physical Impact",
+          "fontSize": "34.56px"
+        },
+        {
+          "text": "Le changement utile à éprouver",
+          "fontSize": "26px"
+        },
+        {
+          "text": "A. Local au projet",
+          "fontSize": "26px"
+        },
+        {
+          "text": "B. Hackathon Harness",
+          "fontSize": "26px"
+        },
+        {
+          "text": "C. ErwanOS global",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Expériences à créer avant adoption",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Mode de transfert recommandé",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Revue contradictoire et matrice de priorités",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 5,
+      "scrollTables": [
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://physical-impact.com",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "SOURCE-MAP.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "TOOL-RESEARCH.html",
+        "ERWANOS-LEARNING-PACK.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "ERWANOS-LEARNING-PACK",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 11965,
+      "renderChars": 11965,
+      "headings": [
+        {
+          "text": "Pack candidat ErwanOS : apprendre de Physical Impact",
+          "fontSize": "52px"
+        },
+        {
+          "text": "Le changement utile à éprouver",
+          "fontSize": "26px"
+        },
+        {
+          "text": "A. Local au projet",
+          "fontSize": "26px"
+        },
+        {
+          "text": "B. Hackathon Harness",
+          "fontSize": "26px"
+        },
+        {
+          "text": "C. ErwanOS global",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Expériences à créer avant adoption",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Mode de transfert recommandé",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Revue contradictoire et matrice de priorités",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 5,
+      "scrollTables": [
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://physical-impact.com",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "SOURCE-MAP.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "TOOL-RESEARCH.html",
+        "ERWANOS-LEARNING-PACK.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": "evidence/ERWANOS-LEARNING-PACK-1440.png",
+      "pass": true
+    },
+    {
+      "name": "SOURCE-MAP",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 18945,
+      "renderChars": 18945,
+      "headings": [
+        {
+          "text": "Sources, couverture et limites de l'enquête",
+          "fontSize": "35px"
+        },
+        {
+          "text": "Références épinglées",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S01. Git et périmètre local",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S02. Brief et règles reçus",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S03. Préparation, import et réemploi",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S04. Plan et écarts de calendrier",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S05. Vision et changements",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S06. Propriétaires et orchestration",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S07. Moteur, données et tests",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S08. Risque initial, erreurs et réception réelle",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S09. Portefeuille industriel",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S10. Recherche et mémoire R1/R2",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S11. Parcours industriel réel",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S12. Modal PDF",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S13. UI, design et pixels",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S14. Retours humains et rework",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S15. Publication et reprise publique",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S16. Incident et arrêt",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S17. Présentation et documents",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S18. Suivi externe, coûts et limites de lecture",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S19. Lancement et accès",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S20. Support final confirmé et site actuel",
+          "fontSize": "25px"
+        },
+        {
+          "text": "S21. Skills et recherche outils",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Couverture finale du mandat",
+          "fontSize": "25px"
+        }
+      ],
+      "tableCount": 1,
+      "scrollTables": [
+        {
+          "width": 350,
+          "scroll": 680
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://github.com/OxSorcier/hackathon-accel-20261022",
+        "SOURCE-PINS.json",
+        "AUDIT-RECEIPT.json",
+        "https://drive.google.com/file/d/1gGpZlRTYJVLw5DQ6KcpqA_esH3DM0AZL/view",
+        "https://builderbase.com/event/accel-ai-innovate-paris",
+        "https://github.com/OxSorcier/hackathon-accel-20261022/blob/8b9e609ad2ba5fafff5729355f75bc578b50585a/docs/BUILD-PLAN.md",
+        "TOOL-RESEARCH.html",
+        "SOURCE-MAP.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "SOURCE-MAP",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 18945,
+      "renderChars": 18945,
+      "headings": [
+        {
+          "text": "Sources, couverture et limites de l'enquête",
+          "fontSize": "34.56px"
+        },
+        {
+          "text": "Références épinglées",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S01. Git et périmètre local",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S02. Brief et règles reçus",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S03. Préparation, import et réemploi",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S04. Plan et écarts de calendrier",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S05. Vision et changements",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S06. Propriétaires et orchestration",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S07. Moteur, données et tests",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S08. Risque initial, erreurs et réception réelle",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S09. Portefeuille industriel",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S10. Recherche et mémoire R1/R2",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S11. Parcours industriel réel",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S12. Modal PDF",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S13. UI, design et pixels",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S14. Retours humains et rework",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S15. Publication et reprise publique",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S16. Incident et arrêt",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S17. Présentation et documents",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S18. Suivi externe, coûts et limites de lecture",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S19. Lancement et accès",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S20. Support final confirmé et site actuel",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S21. Skills et recherche outils",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Couverture finale du mandat",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 1,
+      "scrollTables": [
+        {
+          "width": 688,
+          "scroll": 688
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://github.com/OxSorcier/hackathon-accel-20261022",
+        "SOURCE-PINS.json",
+        "AUDIT-RECEIPT.json",
+        "https://drive.google.com/file/d/1gGpZlRTYJVLw5DQ6KcpqA_esH3DM0AZL/view",
+        "https://builderbase.com/event/accel-ai-innovate-paris",
+        "https://github.com/OxSorcier/hackathon-accel-20261022/blob/8b9e609ad2ba5fafff5729355f75bc578b50585a/docs/BUILD-PLAN.md",
+        "TOOL-RESEARCH.html",
+        "SOURCE-MAP.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "SOURCE-MAP",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 18945,
+      "renderChars": 18945,
+      "headings": [
+        {
+          "text": "Sources, couverture et limites de l'enquête",
+          "fontSize": "52px"
+        },
+        {
+          "text": "Références épinglées",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S01. Git et périmètre local",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S02. Brief et règles reçus",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S03. Préparation, import et réemploi",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S04. Plan et écarts de calendrier",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S05. Vision et changements",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S06. Propriétaires et orchestration",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S07. Moteur, données et tests",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S08. Risque initial, erreurs et réception réelle",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S09. Portefeuille industriel",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S10. Recherche et mémoire R1/R2",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S11. Parcours industriel réel",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S12. Modal PDF",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S13. UI, design et pixels",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S14. Retours humains et rework",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S15. Publication et reprise publique",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S16. Incident et arrêt",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S17. Présentation et documents",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S18. Suivi externe, coûts et limites de lecture",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S19. Lancement et accès",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S20. Support final confirmé et site actuel",
+          "fontSize": "26px"
+        },
+        {
+          "text": "S21. Skills et recherche outils",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Couverture finale du mandat",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 1,
+      "scrollTables": [
+        {
+          "width": 880,
+          "scroll": 880
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://github.com/OxSorcier/hackathon-accel-20261022",
+        "SOURCE-PINS.json",
+        "AUDIT-RECEIPT.json",
+        "https://drive.google.com/file/d/1gGpZlRTYJVLw5DQ6KcpqA_esH3DM0AZL/view",
+        "https://builderbase.com/event/accel-ai-innovate-paris",
+        "https://github.com/OxSorcier/hackathon-accel-20261022/blob/8b9e609ad2ba5fafff5729355f75bc578b50585a/docs/BUILD-PLAN.md",
+        "TOOL-RESEARCH.html",
+        "SOURCE-MAP.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "TOOL-RESEARCH",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 21685,
+      "renderChars": 21685,
+      "headings": [
+        {
+          "text": "Recherche UX/UI et vidéo pour le postmortem Accel",
+          "fontSize": "35px"
+        },
+        {
+          "text": "Conclusion utile au Harness",
+          "fontSize": "25px"
+        },
+        {
+          "text": "1. Capacités locales déjà lues",
+          "fontSize": "25px"
+        },
+        {
+          "text": "2. Sources épinglées et maintenance observée",
+          "fontSize": "25px"
+        },
+        {
+          "text": "3. Ce que les mécanismes font réellement",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Qualité frontend",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Capture, composition et voix",
+          "fontSize": "18px"
+        },
+        {
+          "text": "4. Workflow frontend composable proposé",
+          "fontSize": "25px"
+        },
+        {
+          "text": "5. Pipeline vidéo reproductible 180 secondes proposé",
+          "fontSize": "25px"
+        },
+        {
+          "text": "Expérience d'adoption proposée, non exécutée",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Couverture et limites finales",
+          "fontSize": "25px"
+        }
+      ],
+      "tableCount": 3,
+      "scrollTables": [
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        },
+        {
+          "width": 350,
+          "scroll": 680
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt",
+        "https://github.com/emilkowalski/skills/tree/2d228630ba1446365f614a108cb8252f1feda202",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/LICENSE",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/LICENSE",
+        "https://github.com/microsoft/playwright/releases/tag/v1.64.1",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/LICENSE",
+        "https://github.com/remotion-dev/remotion/releases/tag/v4.0.538",
+        "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+        "https://github.com/new-xp/ultrademo/tree/e7bdcfc241600b65bf6536f2c3c990a00a765b2d",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/LICENSE",
+        "https://github.com/AlexAnsart/demo-studio/tree/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/LICENSE",
+        "https://github.com/snchande/DemoStudio/tree/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a",
+        "https://github.com/snchande/DemoStudio/blob/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a/LICENSE",
+        "https://github.com/khajaaijaz26/agent-demo-studio/tree/b7921b334957128b16b686539343aee4bbe14e18",
+        "https://github.com/khajaaijaz26/agent-demo-studio/blob/b7921b334957128b16b686539343aee4bbe14e18/LICENSE",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animate/SKILL.md",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://base-ui.com/react/handbook/styling",
+        "https://base-ui.com/react/components/dialog",
+        "https://motion.dev/docs/react-use-reduced-motion",
+        "https://playwright.dev/docs/videos",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/packages/playwright-core/src/server/videoRecorder.ts",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/tests/library/video.spec.ts",
+        "https://playwright.dev/docs/test-snapshots",
+        "https://www.remotion.dev/docs/render",
+        "https://www.remotion.dev/docs/captions/",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/renderer/src/render-media.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/parse-srt.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/serialize-srt.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/test/srt.test.ts",
+        "https://convert.remotion.dev/docs/license/faq",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/capture/capture.mjs",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/tts/tts.mjs",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/render/src/Demo.tsx",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/scripts/render.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/record.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/screencast.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/compose.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/verify.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/test-engine.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/sync-narration/scripts/sync-narration.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/sync-narration/scripts/align-narration.py",
+        "https://elevenlabs.io/docs/overview/capabilities/text-to-speech",
+        "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform",
+        "https://github.com/OHF-Voice/piper1-gpl",
+        "TOOL-RESEARCH.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "TOOL-RESEARCH",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 21685,
+      "renderChars": 21685,
+      "headings": [
+        {
+          "text": "Recherche UX/UI et vidéo pour le postmortem Accel",
+          "fontSize": "34.56px"
+        },
+        {
+          "text": "Conclusion utile au Harness",
+          "fontSize": "26px"
+        },
+        {
+          "text": "1. Capacités locales déjà lues",
+          "fontSize": "26px"
+        },
+        {
+          "text": "2. Sources épinglées et maintenance observée",
+          "fontSize": "26px"
+        },
+        {
+          "text": "3. Ce que les mécanismes font réellement",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Qualité frontend",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Capture, composition et voix",
+          "fontSize": "18px"
+        },
+        {
+          "text": "4. Workflow frontend composable proposé",
+          "fontSize": "26px"
+        },
+        {
+          "text": "5. Pipeline vidéo reproductible 180 secondes proposé",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Expérience d'adoption proposée, non exécutée",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Couverture et limites finales",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 3,
+      "scrollTables": [
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        },
+        {
+          "width": 688,
+          "scroll": 688
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt",
+        "https://github.com/emilkowalski/skills/tree/2d228630ba1446365f614a108cb8252f1feda202",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/LICENSE",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/LICENSE",
+        "https://github.com/microsoft/playwright/releases/tag/v1.64.1",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/LICENSE",
+        "https://github.com/remotion-dev/remotion/releases/tag/v4.0.538",
+        "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+        "https://github.com/new-xp/ultrademo/tree/e7bdcfc241600b65bf6536f2c3c990a00a765b2d",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/LICENSE",
+        "https://github.com/AlexAnsart/demo-studio/tree/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/LICENSE",
+        "https://github.com/snchande/DemoStudio/tree/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a",
+        "https://github.com/snchande/DemoStudio/blob/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a/LICENSE",
+        "https://github.com/khajaaijaz26/agent-demo-studio/tree/b7921b334957128b16b686539343aee4bbe14e18",
+        "https://github.com/khajaaijaz26/agent-demo-studio/blob/b7921b334957128b16b686539343aee4bbe14e18/LICENSE",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animate/SKILL.md",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://base-ui.com/react/handbook/styling",
+        "https://base-ui.com/react/components/dialog",
+        "https://motion.dev/docs/react-use-reduced-motion",
+        "https://playwright.dev/docs/videos",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/packages/playwright-core/src/server/videoRecorder.ts",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/tests/library/video.spec.ts",
+        "https://playwright.dev/docs/test-snapshots",
+        "https://www.remotion.dev/docs/render",
+        "https://www.remotion.dev/docs/captions/",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/renderer/src/render-media.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/parse-srt.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/serialize-srt.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/test/srt.test.ts",
+        "https://convert.remotion.dev/docs/license/faq",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/capture/capture.mjs",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/tts/tts.mjs",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/render/src/Demo.tsx",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/scripts/render.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/record.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/screencast.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/compose.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/verify.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/test-engine.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/sync-narration/scripts/sync-narration.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/sync-narration/scripts/align-narration.py",
+        "https://elevenlabs.io/docs/overview/capabilities/text-to-speech",
+        "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform",
+        "https://github.com/OHF-Voice/piper1-gpl",
+        "TOOL-RESEARCH.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "TOOL-RESEARCH",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 21685,
+      "renderChars": 21685,
+      "headings": [
+        {
+          "text": "Recherche UX/UI et vidéo pour le postmortem Accel",
+          "fontSize": "52px"
+        },
+        {
+          "text": "Conclusion utile au Harness",
+          "fontSize": "26px"
+        },
+        {
+          "text": "1. Capacités locales déjà lues",
+          "fontSize": "26px"
+        },
+        {
+          "text": "2. Sources épinglées et maintenance observée",
+          "fontSize": "26px"
+        },
+        {
+          "text": "3. Ce que les mécanismes font réellement",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Qualité frontend",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Capture, composition et voix",
+          "fontSize": "18px"
+        },
+        {
+          "text": "4. Workflow frontend composable proposé",
+          "fontSize": "26px"
+        },
+        {
+          "text": "5. Pipeline vidéo reproductible 180 secondes proposé",
+          "fontSize": "26px"
+        },
+        {
+          "text": "Expérience d'adoption proposée, non exécutée",
+          "fontSize": "18px"
+        },
+        {
+          "text": "Couverture et limites finales",
+          "fontSize": "26px"
+        }
+      ],
+      "tableCount": 3,
+      "scrollTables": [
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        },
+        {
+          "width": 880,
+          "scroll": 880
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt",
+        "https://github.com/emilkowalski/skills/tree/2d228630ba1446365f614a108cb8252f1feda202",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/LICENSE",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/LICENSE",
+        "https://github.com/microsoft/playwright/releases/tag/v1.64.1",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/LICENSE",
+        "https://github.com/remotion-dev/remotion/releases/tag/v4.0.538",
+        "https://github.com/remotion-dev/remotion/blob/5217b0c90623f2decb4575714fac89d3c4b69896/LICENSE.md",
+        "https://github.com/new-xp/ultrademo/tree/e7bdcfc241600b65bf6536f2c3c990a00a765b2d",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/LICENSE",
+        "https://github.com/AlexAnsart/demo-studio/tree/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/LICENSE",
+        "https://github.com/snchande/DemoStudio/tree/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a",
+        "https://github.com/snchande/DemoStudio/blob/8cad216e346f5fd10edf7cbe71875dd36f8b8d2a/LICENSE",
+        "https://github.com/khajaaijaz26/agent-demo-studio/tree/b7921b334957128b16b686539343aee4bbe14e18",
+        "https://github.com/khajaaijaz26/agent-demo-studio/blob/b7921b334957128b16b686539343aee4bbe14e18/LICENSE",
+        "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+        "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animate/SKILL.md",
+        "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+        "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+        "https://base-ui.com/react/handbook/styling",
+        "https://base-ui.com/react/components/dialog",
+        "https://motion.dev/docs/react-use-reduced-motion",
+        "https://playwright.dev/docs/videos",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/packages/playwright-core/src/server/videoRecorder.ts",
+        "https://github.com/microsoft/playwright/blob/cfe490d941f992655948eee8fd4fd94e1c4234bf/tests/library/video.spec.ts",
+        "https://playwright.dev/docs/test-snapshots",
+        "https://www.remotion.dev/docs/render",
+        "https://www.remotion.dev/docs/captions/",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/renderer/src/render-media.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/parse-srt.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/serialize-srt.ts",
+        "https://github.com/remotion-dev/remotion/blob/336e2c73a7a9e1016b3803a3accdbc2b84d29bc0/packages/captions/src/test/srt.test.ts",
+        "https://convert.remotion.dev/docs/license/faq",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/capture/capture.mjs",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/tts/tts.mjs",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/render/src/Demo.tsx",
+        "https://github.com/new-xp/ultrademo/blob/e7bdcfc241600b65bf6536f2c3c990a00a765b2d/scripts/render.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/record.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/screencast.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/compose.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/verify.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/film-demo/scripts/test-engine.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/sync-narration/scripts/sync-narration.mjs",
+        "https://github.com/AlexAnsart/demo-studio/blob/74ecd6c949b7f903fd616ee4b0c53ad22d2a68aa/skills/sync-narration/scripts/align-narration.py",
+        "https://elevenlabs.io/docs/overview/capabilities/text-to-speech",
+        "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform",
+        "https://github.com/OHF-Voice/piper1-gpl",
+        "TOOL-RESEARCH.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "README",
+      "width": 390,
+      "scrollWidth": 390,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 1205,
+      "renderChars": 1205,
+      "headings": [
+        {
+          "text": "Physical Impact : retour du hackathon Accel",
+          "fontSize": "35px"
+        }
+      ],
+      "tableCount": 1,
+      "scrollTables": [
+        {
+          "width": 350,
+          "scroll": 680
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "SOURCE-MAP.html",
+        "AUDIT-RECEIPT.json",
+        "https://linear.app/briques/issue/ERW-133",
+        "https://drive.google.com/drive/folders/1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp",
+        "README.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "README",
+      "width": 768,
+      "scrollWidth": 768,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 1205,
+      "renderChars": 1205,
+      "headings": [
+        {
+          "text": "Physical Impact : retour du hackathon Accel",
+          "fontSize": "34.56px"
+        }
+      ],
+      "tableCount": 1,
+      "scrollTables": [
+        {
+          "width": 688,
+          "scroll": 688
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "SOURCE-MAP.html",
+        "AUDIT-RECEIPT.json",
+        "https://linear.app/briques/issue/ERW-133",
+        "https://drive.google.com/drive/folders/1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp",
+        "README.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    },
+    {
+      "name": "README",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "fontLoaded": true,
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "contentParity": true,
+      "sourceChars": 1205,
+      "renderChars": 1205,
+      "headings": [
+        {
+          "text": "Physical Impact : retour du hackathon Accel",
+          "fontSize": "52px"
+        }
+      ],
+      "tableCount": 1,
+      "scrollTables": [
+        {
+          "width": 880,
+          "scroll": 880
+        }
+      ],
+      "links": [
+        "README.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HACKATHON-POSTMORTEM-2026-10-22.html",
+        "HARNESS-LESSONS.html",
+        "HARNESS-LESSONS.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "HACKATHON-HARNESS-VNEXT.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "ERWANOS-LEARNING-PACK.html",
+        "SOURCE-MAP.html",
+        "AUDIT-RECEIPT.json",
+        "https://linear.app/briques/issue/ERW-133",
+        "https://drive.google.com/drive/folders/1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp",
+        "README.md"
+      ],
+      "emptyLinks": [],
+      "globalOverflow": false,
+      "externalResources": [],
+      "placeholder": false,
+      "missingLinks": [],
+      "network": [],
+      "errors": [],
+      "screenshot": null,
+      "pass": true
+    }
+  ],
+  "limits": [
+    "Not Safari/Firefox or physical phones.",
+    "Historical product tests and video integration not rerun.",
+    "Content parity checks preserve generated source text; independent semantic review is separate."
+  ],
+  "status": "PASS",
+  "artifacts": [
+    {
+      "path": "ERWANOS-LEARNING-PACK.html",
+      "sha256": "0c41da238b61c05d05ec12e19c491bfbec40e29cc36d62207e726f3a6dfb819e"
+    },
+    {
+      "path": "ERWANOS-LEARNING-PACK.md",
+      "sha256": "68d9959bb0e3c66e85637f5f48b6989d00b9f1f3aa828c382329f996f3a0c4b9"
+    },
+    {
+      "path": "HACKATHON-HARNESS-VNEXT.html",
+      "sha256": "5eb217cf9583b8e4acc101616e01485937c8621fd2549424946fcf34bc1d0915"
+    },
+    {
+      "path": "HACKATHON-HARNESS-VNEXT.md",
+      "sha256": "66f39c05b1070ddeca0270979743df1f826eba90897bff32a010f0fc050dd3cb"
+    },
+    {
+      "path": "HACKATHON-POSTMORTEM-2026-10-22.html",
+      "sha256": "d19e40d0a5748647d6c3ff6af568cc0dfe384d935e5d664b76e2bfb581b24309"
+    },
+    {
+      "path": "HACKATHON-POSTMORTEM-2026-10-22.md",
+      "sha256": "ffc4f2e93b3394c2838ff51015b09710980d8f0f7175d1c8137e1ece75f13dde"
+    },
+    {
+      "path": "HARNESS-LESSONS.html",
+      "sha256": "c7d2af8219e6c3ccb9e0db9ae76cb365f33f5b37d57bdc303f772ed57ea5991e"
+    },
+    {
+      "path": "HARNESS-LESSONS.md",
+      "sha256": "7c9ab88868b199fbd3cbe40f02e76fa5addd5265b813197dbb9f61b55fce0d9a"
+    },
+    {
+      "path": "README.html",
+      "sha256": "b3ee01055464c7592821cc7f1befbc0fb11ca0b8a4d293a3ea25e54fe5e906aa"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8722f882d42cc927003facbfdef981321ebab223ea4f37c06e535196c6d96371"
+    },
+    {
+      "path": "SOURCE-MAP.html",
+      "sha256": "256163ff64b5eac5ebf6b4c5b5659b80f6718a13a25e9259779e358d0156b68f"
+    },
+    {
+      "path": "SOURCE-MAP.md",
+      "sha256": "8b0b0c84edee4aa7ef6c8560d598c08ba23c0a553fa8a336422f5d19966a6253"
+    },
+    {
+      "path": "TOOL-RESEARCH.html",
+      "sha256": "07eaf89fa08c392352806943359705b9730aaf5581b7a801234c73d9e8549b10"
+    },
+    {
+      "path": "TOOL-RESEARCH.md",
+      "sha256": "46a06146c325faafd9693c9e38e2d3c6ac0e5be57256af5eee33d4544151de76"
+    }
+  ]
+}
