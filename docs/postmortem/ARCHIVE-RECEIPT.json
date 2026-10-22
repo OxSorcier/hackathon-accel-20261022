@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "status": "EIGHT_REPORT_FILES_BYTE_VERIFIED",
+  "date": "2026-10-22",
+  "parentId": "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp",
+  "folderUrl": "https://drive.google.com/drive/folders/1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp",
+  "parentShared": false,
+  "audienceChanged": false,
+  "records": [
+    {
+      "path": "HACKATHON-POSTMORTEM-2026-10-22.html",
+      "id": "1gw5fUhhyAIpwF8Ue8YUq5K7iGeWQGtOt",
+      "title": "Physical Impact - Post-mortem - 2026-10-22 v1.html",
+      "url": "https://drive.google.com/file/d/1gw5fUhhyAIpwF8Ue8YUq5K7iGeWQGtOt/view?usp=drivesdk",
+      "mimeType": "text/html",
+      "parentIds": [
+        "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp"
+      ],
+      "shared": false,
+      "sourceVisibilityStatus": "not_shared",
+      "localSha256": "d19e40d0a5748647d6c3ff6af568cc0dfe384d935e5d664b76e2bfb581b24309",
+      "remoteSha256": "d19e40d0a5748647d6c3ff6af568cc0dfe384d935e5d664b76e2bfb581b24309",
+      "bytes": 192587,
+      "remoteBytes": 192587,
+      "identical": true
+    },
+    {
+      "path": "HACKATHON-POSTMORTEM-2026-10-22.md",
+      "id": "17hMYS_lRHFYgeAuCHrYA3Wjg_R21EdfR",
+      "title": "Physical Impact - Post-mortem - 2026-10-22 v1.md",
+      "url": "https://drive.google.com/file/d/17hMYS_lRHFYgeAuCHrYA3Wjg_R21EdfR/view?usp=drivesdk",
+      "mimeType": "text/markdown",
+      "parentIds": [
+        "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp"
+      ],
+      "shared": false,
+      "sourceVisibilityStatus": "not_shared",
+      "localSha256": "ffc4f2e93b3394c2838ff51015b09710980d8f0f7175d1c8137e1ece75f13dde",
+      "remoteSha256": "ffc4f2e93b3394c2838ff51015b09710980d8f0f7175d1c8137e1ece75f13dde",
+      "bytes": 25152,
+      "remoteBytes": 25152,
+      "identical": true
+    },
+    {
+      "path": "HARNESS-LESSONS.html",
+      "id": "1pnBcTb6lBc1Jgl2N9gWZadG6jAB9BfI8",
+      "title": "Physical Impact - Enseignements Harness - 2026-10-22 v1.html",
+      "url": "https://drive.google.com/file/d/1pnBcTb6lBc1Jgl2N9gWZadG6jAB9BfI8/view?usp=drivesdk",
+      "mimeType": "text/html",
+      "parentIds": [
+        "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp"
+      ],
+      "shared": false,
+      "sourceVisibilityStatus": "not_shared",
+      "localSha256": "c7d2af8219e6c3ccb9e0db9ae76cb365f33f5b37d57bdc303f772ed57ea5991e",
+      "remoteSha256": "c7d2af8219e6c3ccb9e0db9ae76cb365f33f5b37d57bdc303f772ed57ea5991e",
+      "bytes": 188259,
+      "remoteBytes": 188259,
+      "identical": true
+    },
+    {
+      "path": "HARNESS-LESSONS.md",
+      "id": "1tzXMzMMegFiR2exwbYOXH1coqa1W9W-K",
+      "title": "Physical Impact - Enseignements Harness - 2026-10-22 v1.md",
+      "url": "https://drive.google.com/file/d/1tzXMzMMegFiR2exwbYOXH1coqa1W9W-K/view?usp=drivesdk",
+      "mimeType": "text/markdown",
+      "parentIds": [
+        "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp"
+      ],
+      "shared": false,
+      "sourceVisibilityStatus": "not_shared",
+      "localSha256": "7c9ab88868b199fbd3cbe40f02e76fa5addd5265b813197dbb9f61b55fce0d9a",
+      "remoteSha256": "7c9ab88868b199fbd3cbe40f02e76fa5addd5265b813197dbb9f61b55fce0d9a",
+      "bytes": 22179,
+      "remoteBytes": 22179,
+      "identical": true
+    },
+    {
+      "path": "HACKATHON-HARNESS-VNEXT.html",
+      "id": "1zWUMX99mQM0OYm6QyuoF5zi9TxhxMSJv",
+      "title": "Physical Impact - Hackathon Harness vNext - 2026-10-22 v1.html",
+      "url": "https://drive.google.com/file/d/1zWUMX99mQM0OYm6QyuoF5zi9TxhxMSJv/view?usp=drivesdk",
+      "mimeType": "text/html",
+      "parentIds": [
+        "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp"
+      ],
+      "shared": false,
+      "sourceVisibilityStatus": "not_shared",
+      "localSha256": "5eb217cf9583b8e4acc101616e01485937c8621fd2549424946fcf34bc1d0915",
+      "remoteSha256": "5eb217cf9583b8e4acc101616e01485937c8621fd2549424946fcf34bc1d0915",
+      "bytes": 189817,
+      "remoteBytes": 189817,
+      "identical": true
+    },
+    {
+      "path": "HACKATHON-HARNESS-VNEXT.md",
+      "id": "1tbmfFKn1tV05URIO1AiQMI60cJzyrP3H",
+      "title": "Physical Impact - Hackathon Harness vNext - 2026-10-22 v1.md",
+      "url": "https://drive.google.com/file/d/1tbmfFKn1tV05URIO1AiQMI60cJzyrP3H/view?usp=drivesdk",
+      "mimeType": "text/markdown",
+      "parentIds": [
+        "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp"
+      ],
+      "shared": false,
+      "sourceVisibilityStatus": "not_shared",
+      "localSha256": "66f39c05b1070ddeca0270979743df1f826eba90897bff32a010f0fc050dd3cb",
+      "remoteSha256": "66f39c05b1070ddeca0270979743df1f826eba90897bff32a010f0fc050dd3cb",
+      "bytes": 21962,
+      "remoteBytes": 21962,
+      "identical": true
+    },
+    {
+      "path": "ERWANOS-LEARNING-PACK.html",
+      "id": "1MQzDzMwmyt8E2-7SL8i7a1rXDGCiuFkn",
+      "title": "Physical Impact - Pack candidat ErwanOS - 2026-10-22 v1.html",
+      "url": "https://drive.google.com/file/d/1MQzDzMwmyt8E2-7SL8i7a1rXDGCiuFkn/view?usp=drivesdk",
+      "mimeType": "text/html",
+      "parentIds": [
+        "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp"
+      ],
+      "shared": false,
+      "sourceVisibilityStatus": "not_shared",
+      "localSha256": "0c41da238b61c05d05ec12e19c491bfbec40e29cc36d62207e726f3a6dfb819e",
+      "remoteSha256": "0c41da238b61c05d05ec12e19c491bfbec40e29cc36d62207e726f3a6dfb819e",
+      "bytes": 179091,
+      "remoteBytes": 179091,
+      "identical": true
+    },
+    {
+      "path": "ERWANOS-LEARNING-PACK.md",
+      "id": "1qZACTQcgKplnh3pNG0Rkz77nha9odHmG",
+      "title": "Physical Impact - Pack candidat ErwanOS - 2026-10-22 v1.md",
+      "url": "https://drive.google.com/file/d/1qZACTQcgKplnh3pNG0Rkz77nha9odHmG/view?usp=drivesdk",
+      "mimeType": "text/markdown",
+      "parentIds": [
+        "1ygj6eLwnhxqK0mWxNqmg7F2aWzmm2Byp"
+      ],
+      "shared": false,
+      "sourceVisibilityStatus": "not_shared",
+      "localSha256": "68d9959bb0e3c66e85637f5f48b6989d00b9f1f3aa828c382329f996f3a0c4b9",
+      "remoteSha256": "68d9959bb0e3c66e85637f5f48b6989d00b9f1f3aa828c382329f996f3a0c4b9",
+      "bytes": 13131,
+      "remoteBytes": 13131,
+      "identical": true
+    }
+  ],
+  "bundle": "PENDING",
+  "tracking": "PENDING"
+}

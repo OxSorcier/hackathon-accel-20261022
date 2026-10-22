@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "status": "CONTENT_REVIEWED_RENDERED_AND_REPORT_ARCHIVES_VERIFIED_PR_PENDING",
+  "date": "2026-10-22",
+  "sourceRef": "8b9e609ad2ba5fafff5729355f75bc578b50585a",
+  "branch": "codex/hackathon-postmortem-2026-10-22",
+  "productCodeChanged": false,
+  "productTestsRerun": false,
+  "productRestarted": false,
+  "externalProviderCalls": 0,
+  "erwanOsChanged": false,
+  "automationCreated": false,
+  "deploymentPerformed": false,
+  "render": {"status":"PASS","cases":21,"viewports":[390,768,1440],"browser":"Isolated Chromium; Aside first reading","fonts":"Inter embedded and loaded","contentParity":true,"externalDisplayRequests":0,"globalOverflow":false,"links":"PASS","pixelsInspected":"Four report opening screens, chronology table and mobile pipeline samples","limits":"Desktop emulation, not physical mobile/Safari/Firefox. Aside resize unavailable."},
+  "independentReview": {"status":"RECEIVED_WITH_NO_OPEN_FINDINGS","reviewer":"coverage_review, distinct fresh context","artifact":"evidence/INDEPENDENT-REVIEW.md","corrections":["Historical local research skill update recovered","Configured/requested Harness model and actual skill invocation matrix","Three public observations with no known business exposure, prose status preserved"],"exactDocumentPins":"PREFLIGHT.json and independent review closing hashes"},
+  "archive": {"status":"EIGHT_FILES_BYTE_VERIFIED","receipt":"ARCHIVE-RECEIPT.json","audienceChanged":false,"bundle":"PENDING","tracking":"PENDING"},
+  "draftPullRequest": "IN_PROGRESS",
+  "limits": [
+    "Historical runtime results remain attributed to their exact receipts.",
+    "Final support identified by Erwan is the deployed physical-impact.com website; exact jury sequence, video and submission form receipt are not established.",
+    "Prospective workflow adoption and video pipeline remain NOT_RUN."
+  ]
+}

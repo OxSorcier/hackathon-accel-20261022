@@ -1,0 +1,8 @@
+{
+  "reviewPins": 7,
+  "reviewPinMismatches": [],
+  "documentIssues": [],
+  "renderStatus": "PASS",
+  "renderCases": 21,
+  "scope": "New docs/postmortem only. No product check rerun or effectiveness claim."
+}

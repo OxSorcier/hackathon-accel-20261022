@@ -1,0 +1,50 @@
+{
+  "status": "GENERATED_NOT_YET_BROWSER_RECEIVED",
+  "templateSha256": "b7539616b16979cc3dee30628ad02e393e94f3cd56aab8c43b38fa01d61766d3",
+  "outputs": [
+    {
+      "name": "HACKATHON-POSTMORTEM-2026-10-22",
+      "markdownSha256": "ffc4f2e93b3394c2838ff51015b09710980d8f0f7175d1c8137e1ece75f13dde",
+      "htmlSha256": "d19e40d0a5748647d6c3ff6af568cc0dfe384d935e5d664b76e2bfb581b24309",
+      "htmlBytes": 192587
+    },
+    {
+      "name": "HARNESS-LESSONS",
+      "markdownSha256": "7c9ab88868b199fbd3cbe40f02e76fa5addd5265b813197dbb9f61b55fce0d9a",
+      "htmlSha256": "c7d2af8219e6c3ccb9e0db9ae76cb365f33f5b37d57bdc303f772ed57ea5991e",
+      "htmlBytes": 188259
+    },
+    {
+      "name": "HACKATHON-HARNESS-VNEXT",
+      "markdownSha256": "66f39c05b1070ddeca0270979743df1f826eba90897bff32a010f0fc050dd3cb",
+      "htmlSha256": "5eb217cf9583b8e4acc101616e01485937c8621fd2549424946fcf34bc1d0915",
+      "htmlBytes": 189817
+    },
+    {
+      "name": "ERWANOS-LEARNING-PACK",
+      "markdownSha256": "68d9959bb0e3c66e85637f5f48b6989d00b9f1f3aa828c382329f996f3a0c4b9",
+      "htmlSha256": "0c41da238b61c05d05ec12e19c491bfbec40e29cc36d62207e726f3a6dfb819e",
+      "htmlBytes": 179091
+    },
+    {
+      "name": "SOURCE-MAP",
+      "markdownSha256": "8b0b0c84edee4aa7ef6c8560d598c08ba23c0a553fa8a336422f5d19966a6253",
+      "htmlSha256": "256163ff64b5eac5ebf6b4c5b5659b80f6718a13a25e9259779e358d0156b68f",
+      "htmlBytes": 186751
+    },
+    {
+      "name": "TOOL-RESEARCH",
+      "markdownSha256": "46a06146c325faafd9693c9e38e2d3c6ac0e5be57256af5eee33d4544151de76",
+      "htmlSha256": "07eaf89fa08c392352806943359705b9730aaf5581b7a801234c73d9e8549b10",
+      "htmlBytes": 194273
+    },
+    {
+      "name": "README",
+      "markdownSha256": "8722f882d42cc927003facbfdef981321ebab223ea4f37c06e535196c6d96371",
+      "htmlSha256": "b3ee01055464c7592821cc7f1befbc0fb11ca0b8a4d293a3ea25e54fe5e906aa",
+      "htmlBytes": 165900
+    }
+  ],
+  "networkDependencies": 0,
+  "note": "Original template style/font blocks reused, scoped Markdown layout added. No PDF requested."
+}
