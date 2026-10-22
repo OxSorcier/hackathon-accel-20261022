@@ -1,0 +1,1033 @@
+{
+  "version": 4,
+  "status": "ACTUAL_MODEL_REPORT_OBSERVED",
+  "source": ".local/industrial-runtime-v4",
+  "pid": null,
+  "url": "http://127.0.0.1:3003",
+  "startedAt": "2026-10-22T13:07:35.738Z",
+  "checks": {},
+  "limits": [
+    "Public BOAMP notices remain unqualified leads and do not establish a supplier or fire relationship.",
+    "The independent event and confirmations are explicitly synthetic.",
+    "All ERP/CRM execution is explicitly simulated, offers draft, future transfer not received stock.",
+    "Model configured alias gpt-5.4-mini, resolved identity and cost not separately attested."
+  ],
+  "initial": {
+    "revision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+    "events": 1,
+    "reports": 0,
+    "observations": 3
+  },
+  "release": {
+    "release": {
+      "event": {
+        "eventId": "EV-FIRE-ALPHA-V2",
+        "version": "IE-ALPHA-2-2",
+        "kind": "industrial_fire",
+        "occurredAt": "2026-10-22T09:00:00+02:00",
+        "supplierId": "SUP-1",
+        "supplierSiteId": "PLANT-ALPHA-FR",
+        "competitorIds": [
+          "COMP-IND-001"
+        ],
+        "productIds": [
+          "SKU-ISO100",
+          "SKU-IND-002"
+        ],
+        "status": "declared_synthetic_scenario",
+        "testOnly": true,
+        "provenance": {
+          "system": "SCENARIO",
+          "nativeId": "EV-FIRE-ALPHA-V2",
+          "version": "2",
+          "receivedAt": "2026-10-22T09:00:00+02:00",
+          "actorId": "OPERATOR"
+        },
+        "publicSourceEvidenceRefs": []
+      },
+      "confirmations": [
+        {
+          "confirmationId": "CONFIRM-ALPHA-V2",
+          "eventId": "EV-FIRE-ALPHA-V2",
+          "supplierId": "SUP-1",
+          "supplierSiteId": "PLANT-ALPHA-FR",
+          "purchaseOrderLineId": "POL-1",
+          "previousExpectedDate": "2026-10-23",
+          "confirmedExpectedDate": "2026-11-20",
+          "confirmedAt": "2026-10-22T09:03:00+02:00",
+          "confirmationStatus": "synthetic_confirmed",
+          "provenance": {
+            "system": "SCENARIO",
+            "nativeId": "CONFIRM-ALPHA-V2",
+            "version": "2",
+            "receivedAt": "2026-10-22T09:03:00+02:00",
+            "actorId": "OPERATOR"
+          }
+        }
+      ],
+      "competitorConfirmations": [
+        {
+          "confirmationId": "CONFIRM-COMPETITOR-V2",
+          "eventId": "EV-FIRE-ALPHA-V2",
+          "competitorId": "COMP-IND-001",
+          "supplierSiteId": "PLANT-ALPHA-FR",
+          "productId": "SKU-ISO100",
+          "unit": "palette",
+          "quantity": 20,
+          "requestedDeliveryDate": "2026-10-29",
+          "cannotFulfilBefore": "2026-10-30",
+          "relatedOpportunityId": "CRM-IND-000",
+          "confirmedAt": "2026-10-22T09:04:00+02:00",
+          "confirmationStatus": "synthetic_confirmed",
+          "provenance": {
+            "system": "SCENARIO",
+            "nativeId": "CONFIRM-COMPETITOR-V2",
+            "version": "2",
+            "receivedAt": "2026-10-22T09:04:00+02:00",
+            "actorId": "OPERATOR"
+          }
+        }
+      ],
+      "id": "industrial-release:add1fc1b-6ee1-4804-b326-26f4e5a34b8e",
+      "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+      "revision": "IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b",
+      "businessRevision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+      "policyVersion": "P1",
+      "contextRevision": "IC-INDUSTRIAL-2-2",
+      "qualificationRevision": "Q-INDUSTRIAL-2-1",
+      "releasedByActorId": "OPERATOR",
+      "releasedAt": "2026-10-22T13:00:33.241Z",
+      "researchDependencies": [
+        {
+          "scope": {
+            "profileId": "public-contracts",
+            "profileVersion": "v1",
+            "namespace": "live"
+          },
+          "generation": 1,
+          "validUntil": "2026-10-23T12:51:46.491Z",
+          "evidenceRefs": [
+            {
+              "evidenceId": "boamp:26-101462",
+              "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738",
+              "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+            },
+            {
+              "evidenceId": "boamp:26-101665",
+              "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9",
+              "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+            },
+            {
+              "evidenceId": "boamp:26-102180",
+              "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668",
+              "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+            }
+          ]
+        }
+      ]
+    },
+    "analysis": {
+      "id": "industrial-intent:b773cd3b98bec93ea937c8f983f266d77083c3e86218f56cf2ec945738791703",
+      "basis": {
+        "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+        "businessRevision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+        "policyVersion": "P1",
+        "contextRevision": "IC-INDUSTRIAL-2-2",
+        "qualificationRevision": "Q-INDUSTRIAL-2-1",
+        "eventId": "EV-FIRE-ALPHA-V2",
+        "eventRevision": "IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b",
+        "researchDependencies": [
+          {
+            "scope": {
+              "profileId": "public-contracts",
+              "profileVersion": "v1",
+              "namespace": "live"
+            },
+            "generation": 1,
+            "validUntil": "2026-10-23T12:51:46.491Z",
+            "evidenceRefs": [
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-101462",
+                "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738"
+              },
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-101665",
+                "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9"
+              },
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-102180",
+                "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668"
+              }
+            ]
+          }
+        ]
+      },
+      "analysisPolicyVersion": "industrial-analysis:v1",
+      "servicePrincipalId": "SERVICE-INDUSTRIAL-ANALYSIS",
+      "status": "ready",
+      "blockedReason": null,
+      "runId": null,
+      "budget": {
+        "maxProviderCalls": 6,
+        "maxToolCalls": 12,
+        "maxDurationMs": 60000,
+        "maxRunsPerEvent": 3
+      },
+      "createdAt": "2026-10-22T13:00:39.577Z"
+    }
+  },
+  "analyses": [
+    {
+      "id": "industrial-intent:1dcadf6c30c6fc15af714fb59faefb2faa87e847aafa473401cca23edc856e1b",
+      "basis": {
+        "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+        "businessRevision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+        "policyVersion": "P1",
+        "contextRevision": "IC-INDUSTRIAL-2-2",
+        "qualificationRevision": "Q-INDUSTRIAL-2-1",
+        "eventId": "EV-FIRE-ALPHA-V2",
+        "eventRevision": "IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b",
+        "researchDependencies": [
+          {
+            "scope": {
+              "profileId": "public-contracts",
+              "profileVersion": "v1",
+              "namespace": "live"
+            },
+            "generation": 1,
+            "validUntil": "2026-10-23T13:06:45.319Z",
+            "evidenceRefs": [
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-101462",
+                "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738"
+              },
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-101665",
+                "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9"
+              },
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-102180",
+                "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668"
+              }
+            ]
+          }
+        ]
+      },
+      "analysisPolicyVersion": "industrial-analysis:v2",
+      "servicePrincipalId": "SERVICE-INDUSTRIAL-ANALYSIS",
+      "status": "done",
+      "blockedReason": null,
+      "runId": "7ad05a01-fe99-4d73-8e10-c367374510c7",
+      "budget": {
+        "maxProviderCalls": 6,
+        "maxToolCalls": 12,
+        "maxDurationMs": 60000,
+        "maxRunsPerEvent": 3
+      },
+      "createdAt": "2026-10-22T13:07:31.951Z"
+    },
+    {
+      "id": "industrial-intent:b773cd3b98bec93ea937c8f983f266d77083c3e86218f56cf2ec945738791703",
+      "basis": {
+        "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+        "businessRevision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+        "policyVersion": "P1",
+        "contextRevision": "IC-INDUSTRIAL-2-2",
+        "qualificationRevision": "Q-INDUSTRIAL-2-1",
+        "eventId": "EV-FIRE-ALPHA-V2",
+        "eventRevision": "IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b",
+        "researchDependencies": [
+          {
+            "scope": {
+              "profileId": "public-contracts",
+              "profileVersion": "v1",
+              "namespace": "live"
+            },
+            "generation": 1,
+            "validUntil": "2026-10-23T12:51:46.491Z",
+            "evidenceRefs": [
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-101462",
+                "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738"
+              },
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-101665",
+                "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9"
+              },
+              {
+                "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+                "evidenceId": "boamp:26-102180",
+                "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668"
+              }
+            ]
+          }
+        ]
+      },
+      "analysisPolicyVersion": "industrial-analysis:v1",
+      "servicePrincipalId": "SERVICE-INDUSTRIAL-ANALYSIS",
+      "status": "blocked",
+      "blockedReason": "REPORT_NOT_PREPARED",
+      "runId": "1c454419-4b5b-45f2-b73d-69fd4e3464bf",
+      "budget": {
+        "maxProviderCalls": 6,
+        "maxToolCalls": 12,
+        "maxDurationMs": 60000,
+        "maxRunsPerEvent": 3
+      },
+      "createdAt": "2026-10-22T13:00:39.577Z"
+    }
+  ],
+  "publicResearch": {
+    "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+    "scope": {
+      "profileId": "public-contracts",
+      "profileVersion": "v1",
+      "namespace": "live"
+    },
+    "generation": 1,
+    "state": "reusable",
+    "checkedAt": "2026-10-22T13:08:21.558Z",
+    "validUntil": "2026-10-23T13:06:45.319Z",
+    "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+    "observations": [
+      {
+        "ref": {
+          "evidenceId": "boamp:26-101462",
+          "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738",
+          "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+        },
+        "evidence": {
+          "id": "boamp:26-101462",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-101462%22",
+          "title": "Travaux de fourniture et de mise en œuvre d'enrobés bitumineux chauds et autres matériaux traités aux liants hydrocarbonés sur le territoire de la Ville de Calais",
+          "content": "DILA, BOAMP. Notice 26-101462.\nTravaux de fourniture et de mise en œuvre d'enrobés bitumineux chauds et autres matériaux traités aux liants hydrocarbonés sur le territoire de la Ville de Calais\nPublic buyer: Ville de Calais\nDILA file: 26-101462\nPublished: 2026-10-21T00:00:00.000Z\nPublic lead requiring qualification. No verified commercial relationship with the synthetic suppliers.",
+          "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738",
+          "dataOrigin": "public",
+          "mode": "direct",
+          "publishedAt": "2026-10-21T00:00:00.000Z",
+          "collectedAt": "2026-10-22T12:51:37.752Z",
+          "provenance": {
+            "provider": "boamp",
+            "endpoint": "https://www.boamp.fr/api/explore/v2.1/catalog/datasets/boamp/records",
+            "method": "api_record",
+            "profileId": "public-contracts",
+            "indexedAt": null,
+            "truncated": false
+          },
+          "family": "public_contract"
+        },
+        "qualification": "source_observation_only",
+        "testOnly": false,
+        "conditions": [
+          "SOURCE_OBSERVATION_ONLY",
+          "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+          "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+          "PARTIAL_SOURCE_SET",
+          "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND"
+        ]
+      },
+      {
+        "ref": {
+          "evidenceId": "boamp:26-101665",
+          "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9",
+          "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+        },
+        "evidence": {
+          "id": "boamp:26-101665",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-101665%22",
+          "title": "26S022CH_Essais et mesures pour le contrôle qualité des matériaux utilisés dans la construction et l’entretien des infrastructures de Nîmes Métropole",
+          "content": "DILA, BOAMP. Notice 26-101665.\n26S022CH_Essais et mesures pour le contrôle qualité des matériaux utilisés dans la construction et l’entretien des infrastructures de Nîmes Métropole\nPublic buyer: Nîmes Métropole (30)\nDILA file: 26-101665\nPublished: 2026-10-21T00:00:00.000Z\nPublic lead requiring qualification. No verified commercial relationship with the synthetic suppliers.",
+          "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9",
+          "dataOrigin": "public",
+          "mode": "direct",
+          "publishedAt": "2026-10-21T00:00:00.000Z",
+          "collectedAt": "2026-10-22T12:51:37.752Z",
+          "provenance": {
+            "provider": "boamp",
+            "endpoint": "https://www.boamp.fr/api/explore/v2.1/catalog/datasets/boamp/records",
+            "method": "api_record",
+            "profileId": "public-contracts",
+            "indexedAt": null,
+            "truncated": false
+          },
+          "family": "public_contract"
+        },
+        "qualification": "source_observation_only",
+        "testOnly": false,
+        "conditions": [
+          "SOURCE_OBSERVATION_ONLY",
+          "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+          "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+          "PARTIAL_SOURCE_SET",
+          "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND"
+        ]
+      },
+      {
+        "ref": {
+          "evidenceId": "boamp:26-102180",
+          "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668",
+          "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+        },
+        "evidence": {
+          "id": "boamp:26-102180",
+          "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-102180%22",
+          "title": "Transport de matériaux routiers sur les RN de Guyane, pour les besoins des travaux en régie de la DGTM",
+          "content": "DILA, BOAMP. Notice 26-102180.\nTransport de matériaux routiers sur les RN de Guyane, pour les besoins des travaux en régie de la DGTM\nPublic buyer: DGTM GUYANE\nDILA file: 26-102180\nPublished: 2026-10-22T00:00:00.000Z\nPublic lead requiring qualification. No verified commercial relationship with the synthetic suppliers.",
+          "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668",
+          "dataOrigin": "public",
+          "mode": "direct",
+          "publishedAt": "2026-10-22T00:00:00.000Z",
+          "collectedAt": "2026-10-22T12:51:37.752Z",
+          "provenance": {
+            "provider": "boamp",
+            "endpoint": "https://www.boamp.fr/api/explore/v2.1/catalog/datasets/boamp/records",
+            "method": "api_record",
+            "profileId": "public-contracts",
+            "indexedAt": null,
+            "truncated": false
+          },
+          "family": "public_contract"
+        },
+        "qualification": "source_observation_only",
+        "testOnly": false,
+        "conditions": [
+          "SOURCE_OBSERVATION_ONLY",
+          "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+          "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+          "PARTIAL_SOURCE_SET",
+          "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND"
+        ]
+      }
+    ],
+    "conditions": [
+      "SOURCE_OBSERVATION_ONLY",
+      "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+      "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+      "PARTIAL_SOURCE_SET",
+      "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND"
+    ],
+    "reason": "Received source observations within the server freshness policy; no business fact inferred.",
+    "reused": true,
+    "externalCalls": 0
+  },
+  "run": {
+    "id": "7ad05a01-fe99-4d73-8e10-c367374510c7",
+    "mode": "direct",
+    "model": "gpt-5.4-mini",
+    "status": "proposal",
+    "traces": [
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:1",
+        "tool": "context_manifest",
+        "input": {},
+        "output": {
+          "revision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+          "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+          "memoryIds": [],
+          "assembledAt": "2026-10-22T13:07:33.023Z",
+          "snapshotAsOf": "2026-10-22T08:55:00+02:00",
+          "toolsVersion": "agent-tools/4",
+          "policyVersion": "P1",
+          "contractVersion": "C1",
+          "industrialScope": {
+            "reportId": null,
+            "contextRevision": "IC-INDUSTRIAL-2-2",
+            "qualificationRevision": "Q-INDUSTRIAL-2-1"
+          }
+        },
+        "startedAt": "2026-10-22T13:07:33.024Z",
+        "completedAt": "2026-10-22T13:07:33.024Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:2",
+        "tool": "model_intent",
+        "input": {
+          "turn": 0,
+          "model": "gpt-5.4-mini",
+          "version": "openai-chat-completions/v1"
+        },
+        "output": {
+          "status": "started"
+        },
+        "startedAt": "2026-10-22T13:07:34.640Z",
+        "completedAt": "2026-10-22T13:07:34.640Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:3",
+        "tool": "model_result",
+        "input": {
+          "turn": 0
+        },
+        "output": {
+          "usage": {
+            "inputTokens": 945,
+            "totalTokens": 959,
+            "outputTokens": 14
+          },
+          "status": "tool_calls"
+        },
+        "startedAt": "2026-10-22T13:07:34.640Z",
+        "completedAt": "2026-10-22T13:07:36.525Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:4",
+        "tool": "read_company_context",
+        "input": {},
+        "output": {
+          "result": {
+            "counts": {
+              "sources": 3,
+              "crmDemands": 1,
+              "commitments": 10000
+            },
+            "demands": [
+              {
+                "unit": "palette",
+                "needDate": "2026-10-29",
+                "quantity": 20,
+                "productId": "SKU-ISO100",
+                "opportunityId": "CRM-IND-000"
+              }
+            ],
+            "profile": {
+              "name": "Rivebois Matériaux",
+              "regions": [
+                "Hauts-de-France",
+                "Centre-Val de Loire",
+                "Provence-Alpes-Cote d Azur",
+                "Pays de la Loire",
+                "Auvergne-Rhone-Alpes",
+                "Brussels"
+              ],
+              "activity": "Multi-site timber and building materials",
+              "countries": [
+                "FR",
+                "BE"
+              ]
+            },
+            "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+            "runtimeState": {
+              "report": null,
+              "approvals": [],
+              "executions": []
+            },
+            "policyVersion": "P1",
+            "publicSources": [
+              {
+                "ref": {
+                  "evidenceId": "boamp:26-101462",
+                  "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738",
+                  "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+                },
+                "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-101462%22",
+                "title": "Travaux de fourniture et de mise en œuvre d'enrobés bitumineux chauds et autres matériaux traités aux liants hydrocarbonés sur le territoire de la Ville de Calais",
+                "content": "DILA, BOAMP. Notice 26-101462.\nTravaux de fourniture et de mise en œuvre d'enrobés bitumineux chauds et autres matériaux traités aux liants hydrocarbonés sur le territoire de la Ville de Calais\nPublic buyer: Ville de Calais\nDILA file: 26-101462\nPublished: 2026-10-21T00:00:00.000Z\nPublic lead requiring qualification. No verified commercial relationship with the synthetic suppliers.",
+                "conditions": [
+                  "SOURCE_OBSERVATION_ONLY",
+                  "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                  "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                  "PARTIAL_SOURCE_SET",
+                  "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND",
+                  "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND",
+                  "NO_SUPPLIER_CAUSALITY"
+                ],
+                "collectedAt": "2026-10-22T12:51:37.752Z",
+                "publishedAt": "2026-10-21T00:00:00.000Z"
+              },
+              {
+                "ref": {
+                  "evidenceId": "boamp:26-101665",
+                  "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9",
+                  "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+                },
+                "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-101665%22",
+                "title": "26S022CH_Essais et mesures pour le contrôle qualité des matériaux utilisés dans la construction et l’entretien des infrastructures de Nîmes Métropole",
+                "content": "DILA, BOAMP. Notice 26-101665.\n26S022CH_Essais et mesures pour le contrôle qualité des matériaux utilisés dans la construction et l’entretien des infrastructures de Nîmes Métropole\nPublic buyer: Nîmes Métropole (30)\nDILA file: 26-101665\nPublished: 2026-10-21T00:00:00.000Z\nPublic lead requiring qualification. No verified commercial relationship with the synthetic suppliers.",
+                "conditions": [
+                  "SOURCE_OBSERVATION_ONLY",
+                  "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                  "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                  "PARTIAL_SOURCE_SET",
+                  "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND",
+                  "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND",
+                  "NO_SUPPLIER_CAUSALITY"
+                ],
+                "collectedAt": "2026-10-22T12:51:37.752Z",
+                "publishedAt": "2026-10-21T00:00:00.000Z"
+              },
+              {
+                "ref": {
+                  "evidenceId": "boamp:26-102180",
+                  "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668",
+                  "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+                },
+                "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-102180%22",
+                "title": "Transport de matériaux routiers sur les RN de Guyane, pour les besoins des travaux en régie de la DGTM",
+                "content": "DILA, BOAMP. Notice 26-102180.\nTransport de matériaux routiers sur les RN de Guyane, pour les besoins des travaux en régie de la DGTM\nPublic buyer: DGTM GUYANE\nDILA file: 26-102180\nPublished: 2026-10-22T00:00:00.000Z\nPublic lead requiring qualification. No verified commercial relationship with the synthetic suppliers.",
+                "conditions": [
+                  "SOURCE_OBSERVATION_ONLY",
+                  "COMPANY_RELATION_AND_APPLICABILITY_UNVERIFIED",
+                  "PUBLISHER_FRESHNESS_NOT_VERIFIED",
+                  "PARTIAL_SOURCE_SET",
+                  "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND",
+                  "PUBLIC_NOTICE_LEAD_NOT_QUALIFIED_CRM_DEMAND",
+                  "NO_SUPPLIER_CAUSALITY"
+                ],
+                "collectedAt": "2026-10-22T12:51:37.752Z",
+                "publishedAt": "2026-10-22T00:00:00.000Z"
+              }
+            ],
+            "relationships": [
+              {
+                "partial": false,
+                "productId": "SKU-ISO100",
+                "supplierId": "SUP-1",
+                "orderLineIds": [
+                  "OL-A"
+                ],
+                "supplierSiteId": "PLANT-ALPHA-FR",
+                "totalOrderLines": 1,
+                "purchaseOrderLineIds": [
+                  "POL-1"
+                ]
+              },
+              {
+                "partial": false,
+                "productId": "SKU-IND-002",
+                "supplierId": "SUP-1",
+                "orderLineIds": [
+                  "OL-IND-00000",
+                  "OL-IND-03960",
+                  "OL-IND-07920"
+                ],
+                "supplierSiteId": "PLANT-ALPHA-FR",
+                "totalOrderLines": 3,
+                "purchaseOrderLineIds": [
+                  "POL-IND-ALPHA-01"
+                ]
+              },
+              {
+                "partial": false,
+                "productId": "SKU-IND-002",
+                "supplierId": "SUP-1",
+                "orderLineIds": [
+                  "OL-IND-02574",
+                  "OL-IND-06534",
+                  "OL-IND-03366"
+                ],
+                "supplierSiteId": "PLANT-ALPHA-FR",
+                "totalOrderLines": 3,
+                "purchaseOrderLineIds": [
+                  "POL-IND-ALPHA-02"
+                ]
+              },
+              {
+                "partial": false,
+                "productId": "SKU-IND-002",
+                "supplierId": "SUP-1",
+                "orderLineIds": [
+                  "OL-IND-00396",
+                  "OL-IND-04356",
+                  "OL-IND-08316"
+                ],
+                "supplierSiteId": "PLANT-ALPHA-FR",
+                "totalOrderLines": 3,
+                "purchaseOrderLineIds": [
+                  "POL-IND-ALPHA-03"
+                ]
+              },
+              {
+                "partial": false,
+                "productId": "SKU-IND-002",
+                "supplierId": "SUP-1",
+                "orderLineIds": [
+                  "OL-IND-02178",
+                  "OL-IND-06138",
+                  "OL-IND-02970"
+                ],
+                "supplierSiteId": "PLANT-ALPHA-FR",
+                "totalOrderLines": 3,
+                "purchaseOrderLineIds": [
+                  "POL-IND-ALPHA-04"
+                ]
+              }
+            ],
+            "releasedEvent": {
+              "eventId": "EV-FIRE-ALPHA-V2",
+              "testOnly": true,
+              "eventRevision": "IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b"
+            },
+            "contextRevision": "IC-INDUSTRIAL-2-2",
+            "businessRevision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+            "qualificationRevision": "Q-INDUSTRIAL-2-1"
+          },
+          "isError": false
+        },
+        "startedAt": "2026-10-22T13:07:38.679Z",
+        "completedAt": "2026-10-22T13:07:40.572Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:5",
+        "tool": "model_intent",
+        "input": {
+          "turn": 1,
+          "model": "gpt-5.4-mini",
+          "version": "openai-chat-completions/v1"
+        },
+        "output": {
+          "status": "started"
+        },
+        "startedAt": "2026-10-22T13:07:41.903Z",
+        "completedAt": "2026-10-22T13:07:41.903Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:6",
+        "tool": "model_result",
+        "input": {
+          "turn": 1
+        },
+        "output": {
+          "usage": {
+            "inputTokens": 2778,
+            "totalTokens": 2802,
+            "outputTokens": 24
+          },
+          "status": "tool_calls"
+        },
+        "startedAt": "2026-10-22T13:07:41.903Z",
+        "completedAt": "2026-10-22T13:07:43.814Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:7",
+        "tool": "calculate_common_plan",
+        "input": {
+          "demandId": "CRM-IND-000"
+        },
+        "output": {
+          "result": {
+            "basis": {
+              "eventId": "EV-FIRE-ALPHA-V2",
+              "eventRevision": "IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b",
+              "policyVersion": "P1",
+              "contextRevision": "IC-INDUSTRIAL-2-2",
+              "businessRevision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+              "qualificationRevision": "Q-INDUSTRIAL-2-1"
+            },
+            "event": {
+              "kind": "industrial_fire",
+              "eventId": "EV-FIRE-ALPHA-V2",
+              "occurredAt": "2026-10-22T09:00:00+02:00",
+              "qualification": "declared_synthetic_operator_scenario",
+              "publicSourceCount": 0
+            },
+            "plans": [
+              {
+                "id": "industrial-plan:27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b",
+                "steps": [
+                  {
+                    "id": "industrial-purchase:53e61e7acff159588c067587a0106064accc87f9e61213514b11f6a48b80979d",
+                    "kind": "purchase",
+                    "unit": "palette",
+                    "quoteId": "URG-1",
+                    "quantity": 8,
+                    "dependsOn": [],
+                    "productId": "SKU-ISO100",
+                    "supplierId": "SUP-3",
+                    "arrivalDate": "2026-10-23",
+                    "freightCents": 18000,
+                    "materialCents": 124000,
+                    "supplierSiteId": "PLANT-EMERGENCY-FR",
+                    "destinationDepotId": "DEP-LILLE",
+                    "canonicalResourceId": "URG-1"
+                  },
+                  {
+                    "id": "industrial-transfer:f1d9563dbe2c4de65c02794e6dd62edaad8699366b4913e26ab6a590aad770bf",
+                    "kind": "transfer",
+                    "unit": "palette",
+                    "quoteId": "DQ-CRM-IND-000-V2",
+                    "quantity": 20,
+                    "dependsOn": [
+                      "industrial-purchase:53e61e7acff159588c067587a0106064accc87f9e61213514b11f6a48b80979d"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "arrivalDate": "2026-10-29",
+                    "fromDepotId": "DEP-LYON",
+                    "quoteSource": "industrial_delivery",
+                    "dispatchDate": "2026-10-28",
+                    "freightCents": 26000,
+                    "handlingCents": 4000,
+                    "destinationDepotId": "DEP-LILLE",
+                    "canonicalResourceId": "ST-IND-DEP-LYON-SKU-ISO100"
+                  },
+                  {
+                    "id": "industrial-offer:8259170f7487c0b77b48b337f38dd8a0bbf8e06d71ba472616776fc6f8cc6fab",
+                    "kind": "prepare_offer",
+                    "unit": "palette",
+                    "state": "draft_potential_revenue_only",
+                    "needDate": "2026-10-29",
+                    "quantity": 20,
+                    "dependsOn": [
+                      "industrial-transfer:f1d9563dbe2c4de65c02794e6dd62edaad8699366b4913e26ab6a590aad770bf"
+                    ],
+                    "productId": "SKU-ISO100",
+                    "opportunityId": "CRM-IND-000",
+                    "destinationDepotId": "DEP-LILLE",
+                    "saleUnitPriceCents": 19000
+                  }
+                ],
+                "status": "feasible",
+                "version": "e339b1454089b63a7933fb18ada5218542c803fc009b58d349526bee94ff3fb4",
+                "unknowns": [
+                  "SYNTHETIC_OPERATOR_EVENT_NOT_PUBLICLY_VERIFIED",
+                  "UPSTREAM_MANUFACTURING_ORIGIN_UNKNOWN",
+                  "BOUNDED_CANDIDATE_NOT_GLOBAL_OPTIMUM",
+                  "SERVER_REVALIDATION_AND_ACTOR_BUDGET_REQUIRED"
+                ],
+                "economics": {
+                  "missing": [],
+                  "currency": "EUR",
+                  "grossNewSpendCents": 172000,
+                  "opportunityFreightCents": 26000,
+                  "opportunityRevenueCents": 380000,
+                  "opportunityHandlingCents": 4000,
+                  "riskMitigationSpendCents": 142000,
+                  "opportunityContributionCents": 110000,
+                  "opportunityMaterialValuationCents": 240000
+                },
+                "stepsTotal": 3,
+                "allocations": [
+                  {
+                    "unit": "palette",
+                    "quantity": 20,
+                    "targetId": "CRM-IND-000",
+                    "productId": "SKU-ISO100",
+                    "targetKind": "crm_demand",
+                    "availableDate": "2026-10-29",
+                    "canonicalResourceId": "ST-IND-DEP-LYON-SKU-ISO100"
+                  },
+                  {
+                    "unit": "palette",
+                    "quantity": 8,
+                    "targetId": "OL-A",
+                    "productId": "SKU-ISO100",
+                    "targetKind": "commitment",
+                    "availableDate": "2026-10-23",
+                    "canonicalResourceId": "URG-1"
+                  }
+                ],
+                "constraints": [],
+                "stepsReturned": 3,
+                "stepsTruncated": false,
+                "allocationsTotal": 10001,
+                "allocationsReturned": 2,
+                "allocationsTruncated": true
+              }
+            ],
+            "demand": {
+              "unit": "palette",
+              "needDate": "2026-10-29",
+              "quantity": 20,
+              "productId": "SKU-ISO100",
+              "projectId": "PROJECT-IND-00",
+              "customerId": "CLI-A",
+              "confirmedAt": "2026-10-22T06:50:00.000Z",
+              "opportunityId": "CRM-IND-000",
+              "predatesEvent": true,
+              "qualification": "existing_synthetic_confirmed_crm_demand",
+              "saleUnitPriceCents": 19000
+            },
+            "impact": "mixed",
+            "schema": "adaptops-industrial-model/1",
+            "testOnly": true,
+            "unknowns": [
+              "SYNTHETIC_OPERATOR_EVENT_NOT_PUBLICLY_VERIFIED",
+              "UPSTREAM_MANUFACTURING_ORIGIN_UNKNOWN",
+              "BOUNDED_CANDIDATE_NOT_GLOBAL_OPTIMUM",
+              "SERVER_REVALIDATION_AND_ACTOR_BUDGET_REQUIRED"
+            ],
+            "authority": "server_revalidates_exact_plan_and_budget_before_demo_execution",
+            "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+            "dataOrigin": "synthetic",
+            "plansTotal": 1,
+            "commitments": {
+              "total": 10000,
+              "details": [
+                {
+                  "unit": "palette",
+                  "needDate": "2026-10-23",
+                  "quantity": 8,
+                  "productId": "SKU-ISO100",
+                  "orderLineId": "OL-A"
+                }
+              ],
+              "returned": 1,
+              "protected": 10000,
+              "truncated": false,
+              "worsenedIds": [],
+              "affectedTotal": 1,
+              "worsenedCount": 0,
+              "remainingShortageIds": [],
+              "remainingShortageCount": 0
+            },
+            "constraints": [],
+            "evaluatedAt": "2026-10-22T13:07:46.301Z",
+            "assessmentId": "industrial-assessment:27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b",
+            "plansReturned": 1,
+            "plansTruncated": false,
+            "calculationHash": "e339b1454089b63a7933fb18ada5218542c803fc009b58d349526bee94ff3fb4"
+          },
+          "isError": false
+        },
+        "startedAt": "2026-10-22T13:07:46.301Z",
+        "completedAt": "2026-10-22T13:07:55.262Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:8",
+        "tool": "model_intent",
+        "input": {
+          "turn": 2,
+          "model": "gpt-5.4-mini",
+          "version": "openai-chat-completions/v1"
+        },
+        "output": {
+          "status": "started"
+        },
+        "startedAt": "2026-10-22T13:07:56.365Z",
+        "completedAt": "2026-10-22T13:07:56.365Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:9",
+        "tool": "model_result",
+        "input": {
+          "turn": 2
+        },
+        "output": {
+          "usage": {
+            "inputTokens": 4250,
+            "totalTokens": 5288,
+            "outputTokens": 1038
+          },
+          "status": "tool_calls"
+        },
+        "startedAt": "2026-10-22T13:07:56.365Z",
+        "completedAt": "2026-10-22T13:08:03.322Z"
+      },
+      {
+        "id": "7ad05a01-fe99-4d73-8e10-c367374510c7:trace:10",
+        "tool": "prepare_industrial_report",
+        "input": {
+          "title": "Current company briefing: public leads, qualified CRM demand, and common industrial plan",
+          "summary": "Attributed briefing based only on released server data for CO-DEMO-INDUSTRIAL-CANDIDATE.\n\nCompany profile: Rivebois Matériaux is a multi-site timber and building materials business operating in FR and BE, with regions listed as Hauts-de-France, Centre-Val de Loire, Provence-Alpes-Cote d Azur, Pays de la Loire, Auvergne-Rhone-Alpes, and Brussels.\n\nReleased synthetic incident: EV-FIRE-ALPHA-V2 / IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b is a declared synthetic operator scenario. It must be treated as a simulated industrial fire event, not a publicly verified incident. No public source count is attached to the event in the plan basis.\n\nPublic observations: three BOAMP notices were released as observation-only leads. They are not verified supplier relationships, do not establish causality, and do not qualify CRM demand.\n1) boamp:26-101462 ,  \"Travaux de fourniture et de mise en œuvre d'enrobés bitumineux chauds et autres matériaux traités aux liants hydrocarbonés sur le territoire de la Ville de Calais\". This is about bituminous road surfacing. On the released text, it is not established as timber, panels, or insulation, so current known exposure to the company is no known exposure.\n2) boamp:26-101665 ,  \"26S022CH_Essais et mesures pour le contrôle qualité des matériaux utilisés dans la construction et l’entretien des infrastructures de Nîmes Métropole\". This is a testing/measurement notice for construction and maintenance materials. The notice does not establish timber, panels, or insulation relevance, so current known exposure is no known exposure.\n3) boamp:26-102180 ,  \"Transport de matériaux routiers sur les RN de Guyane, pour les besoins des travaux en régie de la DGTM\". This is a transport notice for road materials in Guyane. The released text does not establish timber, panels, or insulation relevance, so current known exposure is no known exposure.\n\nQualified existing CRM demand: CRM-IND-000 is the only released qualified demand. It is an existing synthetic confirmed CRM demand for SKU-ISO100, 20 palettes, need date 2026-10-29, confirmed at 2026-10-22T06:50:00.000Z, and predates the synthetic event. It remains separate from public observations.\n\nCommon plan: the calculated feasible plan is industrial-plan:27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b, version e339b1454089b63a7933fb18ada5218542c803fc009b58d349526bee94ff3fb4, assessed as feasible. It contains three draft steps: (a) purchase 8 palettes of SKU-ISO100 from SUP-3 / PLANT-EMERGENCY-FR for DEP-LILLE, arrival 2026-10-23, material 124000 cents and freight 18000 cents; (b) transfer 20 palettes of SKU-ISO100 from DEP-LYON to DEP-LILLE for CRM-IND-000, dispatch 2026-10-28, arrival 2026-10-29, freight 26000 cents and handling 4000 cents; (c) prepare a draft offer for CRM-IND-000 at 19000 cents per palette. The plan’s economics show gross new spend 172000 cents, risk mitigation spend 142000 cents, opportunity revenue 380000 cents, and opportunity contribution 110000 cents.\n\nPlan limits and cautions: the calculation is a bounded candidate, not a global optimum. The event is synthetic and not publicly verified. Upstream manufacturing origin is unknown. Server revalidation and actor budget are still required. The offer is draft potential revenue only; approval is not execution and no stock movement or sale is confirmed by this report.\n\nSource limitations: only the released context and three observation-only public notices were used. The public notices are partial sources and fresh publication was not independently verified. No known supplier relationship or applicability is established from the notices alone. No approved or executed outcome is reported here.",
+          "evaluationId": "industrial-assessment:27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b",
+          "recommendedPlanId": "industrial-plan:27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b"
+        },
+        "output": {
+          "result": {
+            "status": "prepared",
+            "reportId": "report:7ad05a01-fe99-4d73-8e10-c367374510c7",
+            "simulationOnly": true,
+            "recommendedPlanId": "industrial-plan:27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b"
+          },
+          "isError": false
+        },
+        "startedAt": "2026-10-22T13:08:05.891Z",
+        "completedAt": "2026-10-22T13:08:15.267Z"
+      }
+    ],
+    "actorId": "SERVICE-INDUSTRIAL-ANALYSIS",
+    "message": "A revisable industrial report is prepared. Review the exact plan before a separate human decision.",
+    "question": "Prepare the current company briefing. Read the known company profile, current public observations and separately released synthetic incident and confirmations. Explain risks, public leads to qualify, the qualified existing CRM demand, the common plan and its limits. Never infer a supplier relationship or confirmation from a public notice. Check whether each public notice is actually relevant to timber, panels or insulation in the company regions; state no known exposure when the released observations do not establish one. This is an automatic structured report job: after read_company_context call calculate_common_plan with the existing qualified demand ID, then MUST call prepare_industrial_report with evaluationId=the returned assessmentId and recommendedPlanId=the returned feasible plan ID. If no feasible plan exists, use recommendedPlanId:null and explain the missing facts; never invent a plan ID. Put the attributed briefing and source limitations in that tool summary. A narrative final answer without prepare_industrial_report does not complete this job.",
+    "revision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+    "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+    "createdAt": "2026-10-22T13:07:32.424Z",
+    "proposalId": null,
+    "completedAt": "2026-10-22T13:08:21.502Z",
+    "operationKey": "industrial-intent:1dcadf6c30c6fc15af714fb59faefb2faa87e847aafa473401cca23edc856e1b",
+    "policyVersion": "P1",
+    "industrialBasis": {
+      "eventId": "EV-FIRE-ALPHA-V2",
+      "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+      "eventRevision": "IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b",
+      "policyVersion": "P1",
+      "contextRevision": "IC-INDUSTRIAL-2-2",
+      "businessRevision": "R-49414b2b-a52c-4da5-9214-0da7f1760037",
+      "researchDependencies": [
+        {
+          "scope": {
+            "namespace": "live",
+            "profileId": "public-contracts",
+            "profileVersion": "v1"
+          },
+          "generation": 1,
+          "validUntil": "2026-10-23T13:06:45.319Z",
+          "evidenceRefs": [
+            {
+              "evidenceId": "boamp:26-101462",
+              "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738",
+              "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+            },
+            {
+              "evidenceId": "boamp:26-101665",
+              "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9",
+              "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+            },
+            {
+              "evidenceId": "boamp:26-102180",
+              "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668",
+              "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000"
+            }
+          ]
+        }
+      ],
+      "qualificationRevision": "Q-INDUSTRIAL-2-1"
+    },
+    "industrialScope": {
+      "reportId": null,
+      "contextRevision": "IC-INDUSTRIAL-2-2",
+      "qualificationRevision": "Q-INDUSTRIAL-2-1"
+    },
+    "industrialIntentId": "industrial-intent:1dcadf6c30c6fc15af714fb59faefb2faa87e847aafa473401cca23edc856e1b",
+    "industrialReportId": "report:7ad05a01-fe99-4d73-8e10-c367374510c7"
+  },
+  "report": {
+    "id": "report:7ad05a01-fe99-4d73-8e10-c367374510c7",
+    "freshness": "current",
+    "status": "prepared",
+    "title": "Current company briefing: public leads, qualified CRM demand, and common industrial plan",
+    "summary": "Attributed briefing based only on released server data for CO-DEMO-INDUSTRIAL-CANDIDATE.\n\nCompany profile: Rivebois Matériaux is a multi-site timber and building materials business operating in FR and BE, with regions listed as Hauts-de-France, Centre-Val de Loire, Provence-Alpes-Cote d Azur, Pays de la Loire, Auvergne-Rhone-Alpes, and Brussels.\n\nReleased synthetic incident: EV-FIRE-ALPHA-V2 / IR-a07cd03c-8386-4a47-b1cf-e8ae3cd14d7b is a declared synthetic operator scenario. It must be treated as a simulated industrial fire event, not a publicly verified incident. No public source count is attached to the event in the plan basis.\n\nPublic observations: three BOAMP notices were released as observation-only leads. They are not verified supplier relationships, do not establish causality, and do not qualify CRM demand.\n1) boamp:26-101462 ,  \"Travaux de fourniture et de mise en œuvre d'enrobés bitumineux chauds et autres matériaux traités aux liants hydrocarbonés sur le territoire de la Ville de Calais\". This is about bituminous road surfacing. On the released text, it is not established as timber, panels, or insulation, so current known exposure to the company is no known exposure.\n2) boamp:26-101665 ,  \"26S022CH_Essais et mesures pour le contrôle qualité des matériaux utilisés dans la construction et l’entretien des infrastructures de Nîmes Métropole\". This is a testing/measurement notice for construction and maintenance materials. The notice does not establish timber, panels, or insulation relevance, so current known exposure is no known exposure.\n3) boamp:26-102180 ,  \"Transport de matériaux routiers sur les RN de Guyane, pour les besoins des travaux en régie de la DGTM\". This is a transport notice for road materials in Guyane. The released text does not establish timber, panels, or insulation relevance, so current known exposure is no known exposure.\n\nQualified existing CRM demand: CRM-IND-000 is the only released qualified demand. It is an existing synthetic confirmed CRM demand for SKU-ISO100, 20 palettes, need date 2026-10-29, confirmed at 2026-10-22T06:50:00.000Z, and predates the synthetic event. It remains separate from public observations.\n\nCommon plan: the calculated feasible plan is industrial-plan:27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b, version e339b1454089b63a7933fb18ada5218542c803fc009b58d349526bee94ff3fb4, assessed as feasible. It contains three draft steps: (a) purchase 8 palettes of SKU-ISO100 from SUP-3 / PLANT-EMERGENCY-FR for DEP-LILLE, arrival 2026-10-23, material 124000 cents and freight 18000 cents; (b) transfer 20 palettes of SKU-ISO100 from DEP-LYON to DEP-LILLE for CRM-IND-000, dispatch 2026-10-28, arrival 2026-10-29, freight 26000 cents and handling 4000 cents; (c) prepare a draft offer for CRM-IND-000 at 19000 cents per palette. The plan’s economics show gross new spend 172000 cents, risk mitigation spend 142000 cents, opportunity revenue 380000 cents, and opportunity contribution 110000 cents.\n\nPlan limits and cautions: the calculation is a bounded candidate, not a global optimum. The event is synthetic and not publicly verified. Upstream manufacturing origin is unknown. Server revalidation and actor budget are still required. The offer is draft potential revenue only; approval is not execution and no stock movement or sale is confirmed by this report.\n\nSource limitations: only the released context and three observation-only public notices were used. The public notices are partial sources and fresh publication was not independently verified. No known supplier relationship or applicability is established from the notices alone. No approved or executed outcome is reported here."
+  },
+  "plan": {
+    "id": "industrial-plan:27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b",
+    "version": "e339b1454089b63a7933fb18ada5218542c803fc009b58d349526bee94ff3fb4",
+    "hash": "4128f7b31662b43e480b34e88e4e4b6428ae92e798eff32517adc65484c1b0f7",
+    "economics": {
+      "missing": [],
+      "currency": "EUR",
+      "grossNewSpendCents": 172000,
+      "opportunityFreightCents": 26000,
+      "opportunityRevenueCents": 380000,
+      "opportunityHandlingCents": 4000,
+      "riskMitigationSpendCents": 142000,
+      "opportunityContributionCents": 110000,
+      "opportunityMaterialValuationCents": 240000
+    },
+    "coverage": {
+      "totalCommitments": 10000,
+      "protectedCommitments": 10000,
+      "worsenedOrderLineIds": [],
+      "remainingShortageOrderLineIds": []
+    }
+  },
+  "error": {
+    "message": "POST /api/industrial/plans/industrial-plan%3A27d6f1d59f3791801c376a463d9687589d30a4307b57a487c1f9b0473824861b/decision 400 INVALID_INPUT",
+    "at": "2026-10-22T13:08:22.185Z"
+  }
+}

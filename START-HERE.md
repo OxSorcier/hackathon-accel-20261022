@@ -23,3 +23,6 @@ Références courtes :
 Government APIs and timber-sector sources: [sector data research](proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.md), with [offline HTML](proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.html), source-access evidence and explicit product integration limits. This supplements PRODUCT-VISION and the existing data research.
 
 Accès, dépôt et crédits : [docs/ACCES-CREDITS.md](docs/ACCES-CREDITS.md). Ce suivi distingue annonces, essais reçus et activations encore attendues. Le chat existant dédié aux accès possède ces opérations.
+
+## Reprise publique autonome
+Lire [RECOVERY.md](docs/RECOVERY.md), [DECISIONS.md](docs/DECISIONS.md) et [CONTRIBUTING.md](CONTRIBUTING.md). Les anciens chemins `.local` et chats de build sont des traces historiques, pas des prérequis. Le checkpoint public courant est [PUBLICATION.md](docs/PUBLICATION.md).

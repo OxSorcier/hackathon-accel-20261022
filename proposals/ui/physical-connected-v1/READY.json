@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "status": "READY_FOR_INTEGRATOR_RECEPTION",
+  "frozen": true,
+  "observedAt": "2026-10-22T12:47:53.574Z",
+  "scope": "Local same-app presentation of received central company/public-source/report/capability DTOs. Published scripted demo remains separate.",
+  "sourceManifest": "REVIEW-INPUT.json",
+  "reviews": "REVIEWS.json",
+  "adapterReceipt": "proposals/ui/industrial/READY-central-dto-v1.json",
+  "adapterPins": [
+    {
+      "file": "src/ui/api.ts",
+      "sha256": "96c7bcc84cb7e51abdb34719723e1bfd0ee8c76c4bc6641af62fd6c9ff5ae2e6"
+    },
+    {
+      "file": "src/ui/types.ts",
+      "sha256": "06e471068d976dcbdcb0aa82375f9a4e1c9310fed0ab03d11cf1588768fe0582"
+    },
+    {
+      "file": "src/ui/industrial.ts",
+      "sha256": "0a3efa206e26b132de722f53b33530804e33f508f0e3186ffa7b3b7997d86cf6"
+    },
+    {
+      "file": "src/ui/industrial-api.ts",
+      "sha256": "29b5154aecbd2417bb8cb01903c623899f1b87f84082cc68e6631186d93af707"
+    },
+    {
+      "file": "src/ui/pending-commands.ts",
+      "sha256": "dd41f6b7774b74b72a10b908bc58bcd7b7acb598f23f8be5d0e3147d5dde671a"
+    },
+    {
+      "file": "tests/ui/industrial-api.test.ts",
+      "sha256": "3713bc5f98fc1c8c2bce9b3bc881d597b882cc800e7e07dc3170643be6cc40e8"
+    },
+    {
+      "file": "tests/ui/industrial-fixtures.ts",
+      "sha256": "712f91b012296f85adda0e1aa30bfcfffd6a0d094febf99c65e7f7451cb80a29"
+    }
+  ],
+  "clientFiles": [
+    {
+      "file": "proposals/ui/physical-connected-v1/client/assets/index-BlrEMIKf.js",
+      "bytes": 483543,
+      "sha256": "34b6eec93446bf4c04ff8576a8d04b47f0228bd646a51272f6206bddd4f64496"
+    },
+    {
+      "file": "proposals/ui/physical-connected-v1/client/assets/index-CbIuMnzw.css",
+      "bytes": 37489,
+      "sha256": "36d799109e09a4d73ee3dde95eda6ec78ddcb253e96f671899590a562807cefe"
+    },
+    {
+      "file": "proposals/ui/physical-connected-v1/client/index.html",
+      "bytes": 419,
+      "sha256": "664e949a5fd4ad16fed1441c8d3b9d7d2c3dd42536b532fe79a573a153b1badb"
+    }
+  ],
+  "staticRoot": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/physical-connected-v1/client",
+  "assembly": "ASSEMBLY.json",
+  "recordedInput": "RECORDED-INPUT.json",
+  "checks": {
+    "typecheck": "PASS",
+    "uiSuite": "207 PASS across10files",
+    "targetedProjectionDemoFeed": "14 PASS",
+    "viteBuild": "PASS",
+    "browser": "Aside, recorded authenticated response only",
+    "companySheet": "6receiveddepots,24receivedprojects,servercustomer/supplierlabels,read-only",
+    "watchtower": "No source context supplied in received capture; dates/schedule remain unavailable. UI code/tests handle received observations.",
+    "chat": "Disabled for missing/falsecapability and no API method. No question/provider called.",
+    "testFixtureExcludedFromClient": true
+  },
+  "integration": {
+    "sameServerHttpAuthentication": "NOT_RUN, sole runtime root/QA owns candidate assembly and session",
+    "sourceCollectionModelReportFlow": "NOT_RUN on this front; no provider or scenario command called",
+    "publicDeployment": "UNCHANGED by this local tranche",
+    "serverConfig": "UNCHANGED; no duplicate backend or worker"
+  },
+  "next": "Integrator assembles exact client in its existing candidate then QA tests that same origin once. Supply new actual workspace DTOs; no prepared-answer fallback.",
+  "publicCaptureReadback": "PUBLIC-CAPTURE-READBACK.json",
+  "publicCaptureStatus": "Three real BOAMP observations accepted by strict adapter and rendered from unchanged DTO; source collection belongs to integrator; same-origin browser/runtime reception remains NOT_RUN."
+}

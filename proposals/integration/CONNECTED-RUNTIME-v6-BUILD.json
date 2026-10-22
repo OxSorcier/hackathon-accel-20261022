@@ -1,0 +1,260 @@
+{
+  "version": 6,
+  "status": "RECEIVED_BUILD_FOR_LOCAL_RESTART",
+  "source": ".local/connected-runtime-v6",
+  "url": "http://127.0.0.1:3003",
+  "serverFiles": [
+    {
+      "path": "dist/server/agent/case-context.js",
+      "sha256": "8bb9167294362a6db5fd2fd708955064925febf10905dec75c729219ee84eafb"
+    },
+    {
+      "path": "dist/server/agent/context.js",
+      "sha256": "317efec266d7fc3da220bef8d9108835712ad8cbe50be6746dd44ed7b16e5f28"
+    },
+    {
+      "path": "dist/server/agent/index.js",
+      "sha256": "12df1ef23bd7dd9bdbb42b3006b40f9a94dcc161e34f06675ba374e0196f7fe5"
+    },
+    {
+      "path": "dist/server/agent/industrial-context.js",
+      "sha256": "de3f94a44903ca39967aa413dc1ef40655cf89e7218c2fa7529092850aceabec"
+    },
+    {
+      "path": "dist/server/agent/research-context.js",
+      "sha256": "6001878cb153758f71e5b3fb7fa6aed4aef7fd2a44d7602d7b02f79023099328"
+    },
+    {
+      "path": "dist/server/agent/runner.js",
+      "sha256": "6df4072d03fd416ec1c9c93b13612e842b6df4a388d192b34814af9d0f010e29"
+    },
+    {
+      "path": "dist/server/agent/specialized-runner.js",
+      "sha256": "23b239e45bcdf8a41f1a714ff658c1a905983f75ba126f295fa974f310ac596b"
+    },
+    {
+      "path": "dist/server/contracts/index.js",
+      "sha256": "7e0a7415d4a0593e25b2eed51f7a05edea4bc30f9bac905dd9581ed405a3d7b4"
+    },
+    {
+      "path": "dist/server/contracts/industrial-api.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "dist/server/contracts/industrial.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "dist/server/contracts/pdf.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "dist/server/contracts/research.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "dist/server/data/analysis-trigger.js",
+      "sha256": "729a3fbdf1645aa7aa639cfee7c831a9a137eac4f906f99436175745375a7d77"
+    },
+    {
+      "path": "dist/server/data/industrial-relations.js",
+      "sha256": "45c5af56c926ca31c7f60fb1f85819a642cc522337504cbf20e44c5af666d93b"
+    },
+    {
+      "path": "dist/server/data/research-repository.js",
+      "sha256": "f365645051e4766d7b669d3309719eedde1473a08ecdc642339b94a6b57f666f"
+    },
+    {
+      "path": "dist/server/data/validation.js",
+      "sha256": "b4a663d912f041f2146c79dd03de865df35ecbb20c8241ac3fef694c11afec7b"
+    },
+    {
+      "path": "dist/server/data/watch-repository.js",
+      "sha256": "6bb22c9f3b4f3d7531400dba420083ec72a59b645cab0aebf66b9d4902a0539c"
+    },
+    {
+      "path": "dist/server/domain/contract.js",
+      "sha256": "af7eb92287228f6f520f986539b4872eda49533a6410ffde00b6bad4969ac340"
+    },
+    {
+      "path": "dist/server/domain/engine.js",
+      "sha256": "a7f72c23eca212f7f84aecdedafe80d6dc30fa088121619e4545df4734f9fbcf"
+    },
+    {
+      "path": "dist/server/domain/index.js",
+      "sha256": "5fe254df369595a4ebd03e3cb69eb084e8793956f21db3017a2fef2bfc47a4c4"
+    },
+    {
+      "path": "dist/server/domain/industrial.js",
+      "sha256": "ede31a72d6cf359968dcf6b0dac3fd83390255d7d5879a10e365ff427acaaea0"
+    },
+    {
+      "path": "dist/server/domain/model.js",
+      "sha256": "8d3d5ea735d9dab1625adb27375bcd6e22ea3da463a72d193a12e1019dc35314"
+    },
+    {
+      "path": "dist/server/server/app.js",
+      "sha256": "b95d2e8f72dbb0d6fdf231a3eec0642d345b0539c43f9fba3d7a6543ea168c6b"
+    },
+    {
+      "path": "dist/server/server/auth.js",
+      "sha256": "f2aa04fc0ed877d834b49c6eb0ddcb1af4baed5f1fa8c5d9e42ef8647f842c23"
+    },
+    {
+      "path": "dist/server/server/cases.js",
+      "sha256": "2f823aff127d9df9a403b467b70924f2c937a97b768a26a08dc062b5c4270118"
+    },
+    {
+      "path": "dist/server/server/config.js",
+      "sha256": "dc52c559ad2638d03dc0b47ed7a33acdb37e221cb35453de6c83bcff483b6e81"
+    },
+    {
+      "path": "dist/server/server/errors.js",
+      "sha256": "89d5467f8b5ef4ad287f7603fc2c58363cf39bf5a5ee544a199492c3b2c23668"
+    },
+    {
+      "path": "dist/server/server/industrial-agent-port.js",
+      "sha256": "d0f6feea96fd71380bd2aa6179fa226342603401d1fe144dfc3f72328d369bdf"
+    },
+    {
+      "path": "dist/server/server/industrial-boundary.js",
+      "sha256": "8afa7082de69478c5fa9e18ca83618851f16353b66f134a5c7d72d0ec9f9b8bb"
+    },
+    {
+      "path": "dist/server/server/industrial-display.js",
+      "sha256": "d6aa9b346389e1f748ee136d938e49abc33703eecc0f97d1fc70368dd3056b0d"
+    },
+    {
+      "path": "dist/server/server/industrial-execution.js",
+      "sha256": "6b73cdd4981bde26ef60aa3f4256f81795b2de983c5fce7e3125b3a2cd330417"
+    },
+    {
+      "path": "dist/server/server/industrial-feed.js",
+      "sha256": "756de6e142ac2de5d54c283a85087e4bdd1d08f836ab2e80b32cee695486f7ea"
+    },
+    {
+      "path": "dist/server/server/industrial-read.js",
+      "sha256": "081538ee3e4e6224b56fccddf2d07fb7d226f6915d0831fe785eff4bb4593304"
+    },
+    {
+      "path": "dist/server/server/industrial-release.js",
+      "sha256": "49e846e1263b8e07ac9c54f810c1e21000f2c6f799f6cda41d7055906904b72f"
+    },
+    {
+      "path": "dist/server/server/industrial-runtime.js",
+      "sha256": "3f1f44c72015949d9f797e51542afa4e9e8672256562b60375d9ec85211fcb33"
+    },
+    {
+      "path": "dist/server/server/migrate.js",
+      "sha256": "a57480ae96a3fccb7c07c6cf14e8620b093021cc3863a25dc28d3d5239ac3a29"
+    },
+    {
+      "path": "dist/server/server/operator.js",
+      "sha256": "0939bf75af1b6d334574436ada93c95a673891e352d502efc782006ab13983b3"
+    },
+    {
+      "path": "dist/server/server/pdf-client.js",
+      "sha256": "c2ba70087f69f041e67634b80be342049ad28b66971742a1b912a5bd09413657"
+    },
+    {
+      "path": "dist/server/server/pdf-documents.js",
+      "sha256": "98a3ecd5cdb94c523fdf2aeb3b456256fc7b5a012e554077179c809059e7e856"
+    },
+    {
+      "path": "dist/server/server/pdf-knowledge.js",
+      "sha256": "29ee53e7b3e6b9bb6ca282ca61bc33116fa1019e7d389ff130c8be7d560d1660"
+    },
+    {
+      "path": "dist/server/server/pdf-routes.js",
+      "sha256": "307fb1a1cb91e3f762d4b586a3e09373316c3a9c92561c596a16900348bd7f7d"
+    },
+    {
+      "path": "dist/server/server/provider.js",
+      "sha256": "51ef5fe06722f3cede772590eb8d61a86e91a989196743ff92232a7a76ce51b3"
+    },
+    {
+      "path": "dist/server/server/research-context.js",
+      "sha256": "2d262b6f25590f6b817482b40e730f95450eea4b0a033cf50809c17ecff8e07c"
+    },
+    {
+      "path": "dist/server/server/research-service.js",
+      "sha256": "327ef66b50b38dcb677a39dfab045085034c13b9e71f8548308bcbae0268c4cd"
+    },
+    {
+      "path": "dist/server/server/start.js",
+      "sha256": "827d577cc7e9d121bb26d1f869c500d3d0f5b64706c4b9d6edd6399d5b159ea4"
+    },
+    {
+      "path": "dist/server/server/store.js",
+      "sha256": "3fedf509bab6ee37b50e4effd1d0b06978d264c48a64d8def5ab13e289d74d77"
+    },
+    {
+      "path": "dist/server/server/validation.js",
+      "sha256": "3d1833de3c6bfb6fa93df5d1cec9cfcab840c6831da8582ba4bd9e4ad906775c"
+    },
+    {
+      "path": "dist/server/server/watch-service.js",
+      "sha256": "cd0e983d8df06655237c8037fc723554b1390a1c8b56f7ab9479d13bf6609406"
+    },
+    {
+      "path": "dist/server/server/worker.js",
+      "sha256": "8866d8f58e439832bfea551739df385f836d567ed68af8e98ed3d896ec81f67c"
+    },
+    {
+      "path": "dist/server/watch/collection-status.js",
+      "sha256": "20efd81f5b69ed5f8ed0259a8b646f13b9790d3b495d13a0399aba21d2169e43"
+    },
+    {
+      "path": "dist/server/watch/collector.js",
+      "sha256": "f67d69acaa686782e7ea3db5f9ce00108464af32e7e992a9baf7e688da289c59"
+    },
+    {
+      "path": "dist/server/watch/engine.js",
+      "sha256": "827f3174332b979c9be120de428c6ab43606b89b44b3a31164d387cd929f07b3"
+    },
+    {
+      "path": "dist/server/watch/http.js",
+      "sha256": "517b6a4b3cd177d452d4e53628142fd7e7fc147099d441cdcc4017904e05119b"
+    },
+    {
+      "path": "dist/server/watch/keenable.js",
+      "sha256": "e405962f73ceae0060ad8cfd0b5ad2f9d89cb05e48cfd0581ce6dc874368747f"
+    },
+    {
+      "path": "dist/server/watch/source-policy.js",
+      "sha256": "7c7a1460edc62f1d8de99934370106795e97298a990b7b22b283ced5f2f11b5d"
+    }
+  ],
+  "clientFiles": [
+    {
+      "path": "dist/client/assets/index-Bb3FvtXo.js",
+      "sha256": "d5a58031e69342ae689bf7b4c69657e4312f7b128e10e31034299905347ff589",
+      "bytes": 483543
+    },
+    {
+      "path": "dist/client/assets/index-CbIuMnzw.css",
+      "sha256": "36d799109e09a4d73ee3dde95eda6ec78ddcb253e96f671899590a562807cefe",
+      "bytes": 37489
+    },
+    {
+      "path": "dist/client/index.html",
+      "sha256": "4b33b6cc22aebedd343c290c5ab16d5479c236ebf4bdf149de5f2b9a8f305309",
+      "bytes": 419
+    }
+  ],
+  "units": [
+    "INDUSTRIAL-RUNTIME-REVIEWS-v4.json",
+    "INDUSTRIAL-COMMAND-HTTP-REVIEWS.json",
+    "PDF-RUNTIME-REVIEWS.json",
+    "RUNTIME-CONTAINER-REVIEWS.json",
+    "RECEIVED-UI-ALLOCATION-v6.json"
+  ],
+  "checks": {
+    "canonicalTypecheck": "PASS",
+    "canonicalBuild": "PASS",
+    "canonicalExplicitTests": "93PASS:78industrial+1HTTP+14config",
+    "excludedEvidence": "Two earlier runs followed proposals symlink and failed archive import; not canonical. Corrected filter --exclude **/proposals/** yields3files93PASS."
+  },
+  "effects": "No model or business action in build.",
+  "createdAt": "2026-10-22T13:30:01.599460+00:00"
+}

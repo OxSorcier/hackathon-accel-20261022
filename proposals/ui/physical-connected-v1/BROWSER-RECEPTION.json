@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "status": "PREPARED_AWAITING_INTEGRATOR_CHECKPOINT",
+  "frontendReceipt": "proposals/ui/physical-connected-v1/READY.json",
+  "sourceManifest": "proposals/ui/physical-connected-v1/REVIEW-INPUT.json",
+  "staticFiles": [
+    {
+      "file": "proposals/ui/physical-connected-v1/client/assets/index-BlrEMIKf.js",
+      "bytes": 483543,
+      "sha256": "34b6eec93446bf4c04ff8576a8d04b47f0228bd646a51272f6206bddd4f64496"
+    },
+    {
+      "file": "proposals/ui/physical-connected-v1/client/assets/index-CbIuMnzw.css",
+      "bytes": 37489,
+      "sha256": "36d799109e09a4d73ee3dde95eda6ec78ddcb253e96f671899590a562807cefe"
+    },
+    {
+      "file": "proposals/ui/physical-connected-v1/client/index.html",
+      "bytes": 419,
+      "sha256": "664e949a5fd4ad16fed1441c8d3b9d7d2c3dd42536b532fe79a573a153b1badb"
+    }
+  ],
+  "staticRoot": "/Users/erwan/Projects/hackathon-accel-20261022/proposals/ui/physical-connected-v1/client",
+  "assembly": "proposals/ui/physical-connected-v1/ASSEMBLY.json",
+  "requestedOrigin": "http://127.0.0.1:3003",
+  "mode": "Actual same-origin HTTP adapter, outside /demo and without demo=1",
+  "requiredCheckpoint": [
+    "Integrator runtime source/version/hash manifest and candidate PID/URL",
+    "Confirmation this exact client manifest is assembled with that candidate",
+    "Existing authorized QA/business session, without exposing secrets in receipts",
+    "Received current workspace/report and their versions; no builder scenario/oracle as input"
+  ],
+  "readOnlyChecks": [
+    "Open the same-origin app in Aside and record the exact frontend asset hashes.",
+    "Read Overview, company profile/site/project labels and Watchtower public observations.",
+    "Keep BOAMP Calais/Nîmes/Guyane as public observations to qualify; no inferred CRM demand or monetized sale.",
+    "Preserve publication versus collection dates, research scope/generation and actual collection cadence.",
+    "If a report exists, open its dossier and plan details without approving, rejecting or executing.",
+    "Read server permissions, basis versions and durable receipts as supplied; missing states remain explicit.",
+    "Capture desktop screenshots and DOM measurements for the same candidate."
+  ],
+  "forbiddenInThisReadOnlyReception": [
+    "No forced or recreated watch/collection",
+    "No industrial question or model call",
+    "No operator event release or confirmation",
+    "No approval, rejection or simulation command",
+    "No second backend/worker, database import/reset or public deployment"
+  ],
+  "priorProof": "Recorded HTTP capture parsing/rendering and unit/browser-fixture checks are separate from this not-yet-run same-origin runtime reception.",
+  "checks": {
+    "sourcePinsVerified": 9,
+    "clientPinsVerified": 3,
+    "networkCalls": 0,
+    "browserRuntime": "NOT_RUN"
+  }
+}

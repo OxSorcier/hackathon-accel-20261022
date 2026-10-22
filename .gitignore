@@ -17,3 +17,6 @@ __pycache__/
 *.mp4
 proposals/**/*.snapshot
 proposals/**/*.txt
+
+# Local deployment linkage and credentials
+.vercel/

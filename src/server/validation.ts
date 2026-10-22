@@ -10,4 +10,4 @@ export const snapshotSchema: z.ZodType<CompanySnapshot> = z.object({ companyId: 
 { message: 'Company profile, dataset, policy and revision must match the server snapshot' });
 export const questionSchema = z.object({ question: z.string().trim().min(1).max(3000), operationKey: z.string().min(8).max(128).regex(/^[a-zA-Z0-9:_-]+$/) }).strict();
 export const decisionSchema = z.object({ decision: z.enum(['approve', 'reject']), revision: z.string().min(1).max(128), policyVersion: z.string().min(1).max(128), operationKey: z.string().min(8).max(128).regex(/^[a-zA-Z0-9:_-]+$/) }).strict();
-export const watchSchema = z.object({ publicTopic: z.string().trim().min(3).max(200), sourceUrls: z.array(z.url()).length(1), cadenceMinutes: z.number().int().min(5).max(10080) }).strict();
+export const watchSchema = z.object({ publicTopic: z.string().trim().min(3).max(200), sourceUrls: z.array(z.url()).min(1).max(3), cadenceMinutes: z.number().int().min(5).max(10080) }).strict();

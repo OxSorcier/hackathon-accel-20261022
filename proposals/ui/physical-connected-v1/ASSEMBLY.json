@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "status": "READY_FOR_INTEGRATOR_RECEPTION",
+  "frontendOwner": "01a16346-9b6f-7b70-afc7-57775e697a94",
+  "adapterOwner": "01a162bd-facf-7b63-861b-9bbf7f402938",
+  "runtimeOwner": "01a162bd-d470-7522-9d95-a03a82d9bd68",
+  "qaOwner": "01a15f24-8d9c-7fd2-8a00-1b039732248f",
+  "staticRoot": "proposals/ui/physical-connected-v1/client",
+  "existingRuntimeHook": "src/server/start.ts resolves dist/client/index.html from its cwd and passes that directory as createApp.staticRoot",
+  "assembly": "Integrator copies only this reviewed client/ directory into dist/client/ of its chosen exact runtime candidate before starting or replacing its one candidate. Do not replace the stable 3001 server or add a second backend/worker. Fastify then serves the same-origin frontend and existing /api routes.",
+  "httpMode": "Open / on that server without demo=1. ConnectedApp selects createHttpUiApi. /demo remains explicit scripted browser mode on the public static site.",
+  "auth": "Existing server session required. QA/root own authentication and the single runtime scenario. No access code, cookie or other secret is included.",
+  "recordedPreview": "http://127.0.0.1:4178/tests/ui/physical-connected-preview.html",
+  "recordedInput": "proposals/ui/physical-connected-v1/RECORDED-INPUT.json",
+  "limits": [
+    "Recorded preview is a rendering check of received DTOs, not a live GET or backend runtime test.",
+    "Current reviewed capture has no released event or report. No future scenario dates or effects are populated.",
+    "No provider/model/collector/decision/simulation was called for this frontend preparation.",
+    "The public Vercel package is unchanged. Do not replace it with this local bundle without its own integration reception."
+  ],
+  "next": "Receive final source and static-file manifest after both exact reviews, assemble once in existing root candidate, then QA reads and tests that same candidate.",
+  "sourceManifest": "REVIEW-INPUT.json",
+  "staticManifest": "READY.json"
+}

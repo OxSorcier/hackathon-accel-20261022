@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "RECEIVED",
+  "manifest": "REVIEW-INPUT-PDF-RUNTIME-v1.json",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModelAttested": false,
+  "reviewers": [
+    {
+      "agent": "pdf_runtime_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "isolation": "fork_turns:none",
+      "result": "NO_FINDINGS"
+    },
+    {
+      "agent": "pdf_runtime_architecture",
+      "modelRequested": "gpt-6-astra",
+      "isolation": "fork_turns:none",
+      "result": "NO_FINDINGS"
+    }
+  ],
+  "tests": {
+    "actualAivenScratchInjectedProviders": "PASS11.11s",
+    "unitChecks": "40PASS, one network disconnect test NOT_RUN reviewers; prior owner8/8routes includes actual clientdisconnect",
+    "typecheck": "PASS",
+    "serverBuild": "PASS"
+  },
+  "limits": [
+    "No actualModal/provider/browser throughthisbindingyet.",
+    "GETcompany/decisions/runs intentionally publicdemo alsoexposederivedPDFresults/traces.",
+    "pdfResult.pages holds last read call, earlierreads remain in traces."
+  ]
+}

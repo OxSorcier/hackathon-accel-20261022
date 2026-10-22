@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "reviewed_and_final_delta_revalidated",
+  "sourceManifest": "REVIEW-INPUT.json",
+  "implementationModel": "gpt-6.1-sol",
+  "modelIdentity": "Requested model identities; served identities are not separately attested by collaboration tool",
+  "reviews": [
+    {
+      "role": "same_model_counter_review",
+      "reviewer": "/root/physical_connected_review_sol",
+      "requestedModel": "gpt-6.1-sol",
+      "effort": "high",
+      "forkTurns": "none",
+      "findings": [],
+      "tests": "123 scoped tests and typecheck PASS; final SSR delta6 PASS"
+    },
+    {
+      "role": "architecture_contract_review",
+      "reviewer": "/root/physical_connected_review_astra",
+      "requestedModel": "gpt-6-astra",
+      "effort": "high",
+      "forkTurns": "none",
+      "findings": [],
+      "tests": "Nine pinned source files and supporting boundaries read; five initial SSR tests PASS; final stale-label delta read",
+      "resolvedAdvisory": "Preexisting stale action card now shows Earlier assessment before dossier opening."
+    }
+  ],
+  "limits": [
+    "No live HTTP authentication, Aiven, collection, model or execution verified by these reviews.",
+    "Recorded response and UI projection tests are distinct from integrated runtime proof."
+  ]
+}

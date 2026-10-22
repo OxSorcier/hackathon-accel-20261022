@@ -9,3 +9,5 @@
 !src/**
 !migrations/
 !migrations/**
+!config/
+!config/aiven-project-ca.pem

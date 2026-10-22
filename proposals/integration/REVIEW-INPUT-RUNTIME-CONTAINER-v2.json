@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/runtime-container-v2",
+  "base": "/Users/erwan/Projects/hackathon-accel-20261022/.local/pdf-runtime-v1",
+  "scope": "Runtime image uses received exact application and includes only public project CA certificate; sets in-container CA path, verified TLS unchanged. Build context allowlist excludes secrets/constructors/operator/fixtures. No app resource created, no commit or push. Normalize all recognized TLS URI selectors including ssl/sslnegotiation; optional validated DATABASE_SCHEMA pins deployment to existing schema over URI options, no reseed.",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "files": [
+    {
+      "path": "Dockerfile",
+      "sha256": "d4c430fa2b3091bf74fd64c944159a810c28f37427f10231f4ef2c9282408a6f"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "5608f00e5a1d91ed6d1bdecc2936f3399128615b12903258c5fb05628663f32a"
+    },
+    {
+      "path": "config/aiven-project-ca.pem",
+      "sha256": "a91c64194f4baca84485f833b381fd471a8bf5375222aea0b57db717cfb458a6"
+    },
+    {
+      "path": "src/server/config.ts",
+      "sha256": "012c8d71a595b51df838dfc4e00a830140cfa0f42cda954eb19ccb96d73ecf42"
+    },
+    {
+      "path": "tests/server/config.test.ts",
+      "sha256": "7d967e4b77cae8c48156f1fa57a2a7dfff265e2059e5ba039cce8eb64f40a50d"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/server/start.ts",
+      "sha256": "fa5126b8ace04b72c7a3c157d2812154818b819480ea635d3087c78ef81b34fb"
+    },
+    {
+      "path": "src/server/migrate.ts",
+      "sha256": "7f89f2854bb56822c32d93c3122da93dae93406cecb5c99599dab291187cb2ba"
+    },
+    {
+      "path": "package.json",
+      "sha256": "b89be02ce5d1b43ad6ae260d5565f90060aac0f2f2b380bc534d4976a9462be5"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5e19422d20ae4f3cb40789924b4db0e536a635acb454d1f7cadfba24e097cc7d"
+    }
+  ],
+  "checks": {
+    "certificateOnly": "X509 ca=true, noPRIVATEKEY, expiry2036, actualPGTLS1.3 successful with copied public file",
+    "dockerBuild": "NOT_RUN local Docker daemon unavailable",
+    "CA_SHA256": "a91c64194f4baca84485f833b381fd471a8bf5375222aea0b57db717cfb458a6"
+  },
+  "createdAt": "2026-10-22T13:24:34.553028+00:00"
+}

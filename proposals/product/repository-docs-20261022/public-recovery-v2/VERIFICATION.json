@@ -1,0 +1,140 @@
+{
+  "version": 2,
+  "date": "2026-10-22T18:05:30.823175+00:00",
+  "base": "285cfb0d1bfd1c313c4b57ffba5f2515446acffd",
+  "sourceAssembly": "Received connected-runtime-v6 code and tests, public recovery utility and docs; active-owner later code excluded",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "unitTests": {
+    "command": "npm test -- --exclude '**/proposals/**'",
+    "passed": 407,
+    "skipped": 123,
+    "failed": 0,
+    "scope": "No DB environment; host loopback required for disconnect test"
+  },
+  "database": {
+    "receipt": "DB-RECOVERY.json",
+    "schema": "physical_recovery_public_01a16393",
+    "initRepeatReadback": "PASS",
+    "providerCalls": 0,
+    "sourceCollection": 0,
+    "eventRelease": 0
+  },
+  "reviews": {
+    "realizerModelRequested": "gpt-6.1-sol",
+    "servedModelsAttested": false,
+    "isolation": "Two distinct fork_turns:none reviewers, requested high effort",
+    "counter": "gpt-6.1-sol",
+    "architecture": "gpt-6-astra",
+    "cycles": 2,
+    "openFindings": 0,
+    "correction": "All four pinned recovery inputs validated before any database write"
+  },
+  "limits": [
+    "Fresh real inference, collection and Modal service not rerun.",
+    "No application deployment.",
+    "Independent public cold-reader attempt recorded separately after publication."
+  ],
+  "codeFiles": [
+    {
+      "path": "src/ui/physical-model.ts",
+      "sha256": "400c2b1f01cefae278f539fea38b8c963f9351f579ee44e02a7bc418e7381e25"
+    },
+    {
+      "path": "src/ui/physical-pages.tsx",
+      "sha256": "c0f3af404b3d260f0ad7bb451bd7ec500064feea1b3991e688b4b0b799ed6af4"
+    },
+    {
+      "path": "src/ui/industrial.ts",
+      "sha256": "1b699ef141eed3ab3025b449bf24160ff3a1b92169665e9978e8fce4cc26e439"
+    },
+    {
+      "path": "src/server/validation.ts",
+      "sha256": "776a24a6f7169228a7b799435754bf8677cab5c8ca671dd1b109952b83022ae2"
+    },
+    {
+      "path": "src/server/industrial-read.ts",
+      "sha256": "20f2d9cdf808f6e4433f1a65183c27cf232cf4c61c5b67c9f9ab4f19662c0ca4"
+    },
+    {
+      "path": "src/server/app.ts",
+      "sha256": "030819348c41a2cf63930874a50318a38f05db2275f97bd45714685e97d3a9fc"
+    },
+    {
+      "path": "src/server/start.ts",
+      "sha256": "fa5126b8ace04b72c7a3c157d2812154818b819480ea635d3087c78ef81b34fb"
+    },
+    {
+      "path": "src/server/industrial-feed.ts",
+      "sha256": "3407b7f3acc48a4a7bef6d9b373c6788f30411bef447d614fa55549bb20fcd26"
+    },
+    {
+      "path": "src/server/industrial-runtime.ts",
+      "sha256": "f0fa57483437e0aa3715472b33bab00dc36dbca033ea3c5f7634e51abbaecdd6"
+    },
+    {
+      "path": "src/server/config.ts",
+      "sha256": "012c8d71a595b51df838dfc4e00a830140cfa0f42cda954eb19ccb96d73ecf42"
+    },
+    {
+      "path": "tests/ui/industrial-api.test.ts",
+      "sha256": "33a3763ea68cbc226c1d717375ae1c83c2b35efd57b5eaa794d126aa238250c2"
+    },
+    {
+      "path": "tests/ui/physical-connected-preview.html",
+      "sha256": "6f0a9b361c985c2cbe3b91df293760f3636e35e5f1efe2cfdb721d8e01699918"
+    },
+    {
+      "path": "tests/ui/physical-connected.test.tsx",
+      "sha256": "7709d4a4413f72a286ae09a50026822567252bdc25c5fc78cf28c5bccba9378c"
+    },
+    {
+      "path": "tests/ui/physical-connected-snapshot.ts",
+      "sha256": "a2c44ddcf3500cffdf04b9aca5d53da8946253326cd2e42c37c65da1a914fa89"
+    },
+    {
+      "path": "tests/ui/physical-connected-preview.tsx",
+      "sha256": "4e14fcc8ab1d7646aa2c0703d212d273c1fb9838dad69699a8385b4154d5b3a6"
+    },
+    {
+      "path": "tests/integration/industrial-runtime.test.ts",
+      "sha256": "2d788a2028a6e938ab68b887d992eaf6f6a7e83a79b34cc685c329b040e98c51"
+    },
+    {
+      "path": "tests/integration/pdf-runtime.test.ts",
+      "sha256": "19595fa7c3149abd34c0948cae10985f411609102672b2618a6ae58b5beed057"
+    },
+    {
+      "path": "tests/integration/industrial-feed.test.ts",
+      "sha256": "0d576347bc69f13b1c06520fd01002660274c20e4b8eddd0a9d7798352e8b999"
+    },
+    {
+      "path": "tests/server/industrial-command-http.test.ts",
+      "sha256": "1d7eceb6c1be6cd1b642c1c234cc45fa62956ab78775423aa56600b81ac73cf1"
+    },
+    {
+      "path": "tests/server/config.test.ts",
+      "sha256": "7d967e4b77cae8c48156f1fa57a2a7dfff265e2059e5ba039cce8eb64f40a50d"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "5608f00e5a1d91ed6d1bdecc2936f3399128615b12903258c5fb05628663f32a"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "d4c430fa2b3091bf74fd64c944159a810c28f37427f10231f4ef2c9282408a6f"
+    },
+    {
+      "path": "tools/recover-industrial.ts",
+      "sha256": "ec0b683933ff88b5349a3441176a3659801884fd18465a3a83fd4d532346a032"
+    },
+    {
+      "path": "tests/server/recovery.test.ts",
+      "sha256": "69a04f62dd0268019be7805657f754d5ef2579adfb19f8657ea6bd3b4958862b"
+    },
+    {
+      "path": "config/aiven-project-ca.pem",
+      "sha256": "a91c64194f4baca84485f833b381fd471a8bf5375222aea0b57db717cfb458a6"
+    }
+  ]
+}

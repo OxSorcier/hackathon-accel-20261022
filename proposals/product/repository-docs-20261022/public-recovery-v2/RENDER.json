@@ -1,0 +1,101 @@
+{
+  "browser": "Isolated bundled Chromium; Aside first snapshot, viewport support unavailable in Aside REPL",
+  "results": [
+    {
+      "doc": "docs/DECISIONS",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "inter": true,
+      "headings": 7,
+      "anchors": 0
+    },
+    {
+      "doc": "docs/DECISIONS",
+      "width": 768,
+      "scrollWidth": 768,
+      "inter": true,
+      "headings": 7,
+      "anchors": 0
+    },
+    {
+      "doc": "docs/DECISIONS",
+      "width": 390,
+      "scrollWidth": 390,
+      "inter": true,
+      "headings": 7,
+      "anchors": 0
+    },
+    {
+      "doc": "docs/RECOVERY",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "inter": true,
+      "headings": 5,
+      "anchors": 0
+    },
+    {
+      "doc": "docs/RECOVERY",
+      "width": 768,
+      "scrollWidth": 768,
+      "inter": true,
+      "headings": 5,
+      "anchors": 0
+    },
+    {
+      "doc": "docs/RECOVERY",
+      "width": 390,
+      "scrollWidth": 390,
+      "inter": true,
+      "headings": 5,
+      "anchors": 0
+    },
+    {
+      "doc": "CONTRIBUTING",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "inter": true,
+      "headings": 0,
+      "anchors": 0
+    },
+    {
+      "doc": "CONTRIBUTING",
+      "width": 768,
+      "scrollWidth": 768,
+      "inter": true,
+      "headings": 0,
+      "anchors": 0
+    },
+    {
+      "doc": "CONTRIBUTING",
+      "width": 390,
+      "scrollWidth": 390,
+      "inter": true,
+      "headings": 0,
+      "anchors": 0
+    },
+    {
+      "doc": "docs/REPOSITORY-GUIDE",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "inter": true,
+      "headings": 7,
+      "anchors": 0
+    },
+    {
+      "doc": "docs/REPOSITORY-GUIDE",
+      "width": 768,
+      "scrollWidth": 768,
+      "inter": true,
+      "headings": 7,
+      "anchors": 0
+    },
+    {
+      "doc": "docs/REPOSITORY-GUIDE",
+      "width": 390,
+      "scrollWidth": 390,
+      "inter": true,
+      "headings": 7,
+      "anchors": 0
+    }
+  ]
+}

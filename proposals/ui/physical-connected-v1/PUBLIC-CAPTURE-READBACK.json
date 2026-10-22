@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "status": "ACTUAL_PUBLIC_CAPTURE_PARSED_AND_RENDERED",
+  "source": "proposals/integration/INDUSTRIAL-WORKSPACE-PUBLIC-3003.json",
+  "sourceSha256": "f8a80e8b95b4d6a594532b6529a6c1109633bf48d268133892518e8ac1190800",
+  "checkedAt": "2026-10-22T12:53:51.000Z",
+  "calls": [
+    {
+      "route": "/api/company",
+      "method": "GET"
+    },
+    {
+      "route": "/api/decisions",
+      "method": "GET"
+    },
+    {
+      "route": "/api/industrial",
+      "method": "GET"
+    }
+  ],
+  "parsedDeepEqualsCapture": true,
+  "observations": [
+    {
+      "id": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000:boamp:26-101462:62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738",
+      "title": "Travaux de fourniture et de mise en œuvre d'enrobés bitumineux chauds et autres matériaux traités aux liants hydrocarbonés sur le territoire de la Ville de Calais",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-101462%22",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "collectedAt": "2026-10-22T12:51:37.752Z",
+      "evidenceRef": {
+        "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+        "evidenceId": "boamp:26-101462",
+        "contentHash": "62df9082127110d9c2ba6f7ff31342da328127ac85eb84eb5932103cd6ff5738"
+      },
+      "origin": "Public source",
+      "reportId": null
+    },
+    {
+      "id": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000:boamp:26-101665:e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9",
+      "title": "26S022CH_Essais et mesures pour le contrôle qualité des matériaux utilisés dans la construction et l’entretien des infrastructures de Nîmes Métropole",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-101665%22",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "collectedAt": "2026-10-22T12:51:37.752Z",
+      "evidenceRef": {
+        "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+        "evidenceId": "boamp:26-101665",
+        "contentHash": "e16190668de60a4b69c0b8134359c472015b928027ed55e51c5a6564f0ff69c9"
+      },
+      "origin": "Public source",
+      "reportId": null
+    },
+    {
+      "id": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000:boamp:26-102180:9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668",
+      "title": "Transport de matériaux routiers sur les RN de Guyane, pour les besoins des travaux en régie de la DGTM",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb%3A%2226-102180%22",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "collectedAt": "2026-10-22T12:51:37.752Z",
+      "evidenceRef": {
+        "occurrenceId": "scheduled:watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075:20261022125136.706000",
+        "evidenceId": "boamp:26-102180",
+        "contentHash": "9d956cffbdaf65acfb04e78c89001e43ffddc656bbbb2c33ff0bf421db9b3668"
+      },
+      "origin": "Public source",
+      "reportId": null
+    }
+  ],
+  "publicFeed": {
+    "profileId": "public-contracts",
+    "watchId": "watch:6189d55cef9e6f739dd8b23c3f97e5d75d20a4e78659b6ec5e161e5b3a05f075",
+    "cadenceMinutes": 15,
+    "nextRunAt": "2026-10-22T13:06:36.706Z",
+    "lastAttemptAt": "2026-10-22T12:51:37.395Z",
+    "lastAttemptStatus": "completed"
+  },
+  "capabilities": {
+    "automaticAnalysis": false,
+    "simulationOnly": true,
+    "publicEvidenceIsSeparate": true,
+    "decisionsConnected": false,
+    "simulationConnected": false,
+    "questionsConnected": false
+  },
+  "renderChecks": {
+    "allThreeOriginalHeadlines": true,
+    "publicationAndCollectionLabels": 3,
+    "cadence15Preserved": true,
+    "chatDisabled": true
+  },
+  "provenance": "Original collection and authenticated capture performed by runtime integrator. This check replays its unchanged DTO through the UI adapter and renders PhysicalPages; bootstrap authority uses a test fixture only. No live authentication, HTTP, provider, model or command called here.",
+  "browser": {
+    "status": "NOT_RUN_FOR_NEW_PUBLIC_CAPTURE",
+    "reason": "Aside REPL module imports are unavailable. Original recorded company preview was browser-checked; this newer public DTO was strictly parsed and rendered server-side from the same reviewed PhysicalPages component."
+  }
+}

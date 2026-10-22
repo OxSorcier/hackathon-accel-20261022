@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "status": "RECEIVED_FOR_EXACT_CANDIDATE",
+  "manifest": "REVIEW-INPUT-RUNTIME-CONTAINER-v2.json",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModelAttested": false,
+  "reviewers": [
+    {
+      "agent": "runtime_container_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "isolation": "fork_turns:none",
+      "cycles": 2,
+      "result": "TLS_FINDING_FIXED_NO_NEW_FINDINGS"
+    },
+    {
+      "agent": "runtime_container_architecture",
+      "modelRequested": "gpt-6-astra",
+      "isolation": "fork_turns:none",
+      "cycles": 2,
+      "result": "TLS_FINDING_FIXED_NO_NEW_FINDINGS"
+    }
+  ],
+  "fixes": [
+    "Strip ssl/sslnegotiation as well as all earlier URI TLS selectors before pg parses connectionString.",
+    "Optional strictly validated DATABASE_SCHEMA overrides conflicting URL startup options without changing default existing behavior.",
+    "Only public current project CA is included in image; no private key or credential."
+  ],
+  "tests": {
+    "effectivePgClientConfiguration": 14,
+    "typecheck": "PASS",
+    "serverBuild": "PASS",
+    "actualAivenReadWithHostileTlsAndSchemaUrlParams": {
+      "status": "PASS",
+      "schema": "adaptops_industrial_v2",
+      "tls": "TLSv1.3",
+      "revision": "R-c61ff6d9-74ff-498f-a0b1-8202db653ef4"
+    },
+    "dockerBuild": "NOT_RUN daemon unavailable even host; no Docker restart attempted"
+  },
+  "CA": {
+    "path": "config/aiven-project-ca.pem",
+    "sha256": "a91c64194f4baca84485f833b381fd471a8bf5375222aea0b57db717cfb458a6",
+    "publicCertificateOnly": true,
+    "validTo": "2036-10-19"
+  },
+  "deployment": "NOT_RUN",
+  "receivedAt": "2026-10-22T13:26:56.405915+00:00"
+}

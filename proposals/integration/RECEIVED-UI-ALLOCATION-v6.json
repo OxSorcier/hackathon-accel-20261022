@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "status": "EXACT_HASHES_RECEIVED_FOR_INTEGRATED_BUILD",
+  "sourceReceipt": "proposals/ui/industrial/READY-allocation-v6.json",
+  "manifestSha256": "7ce2cbbae78e0f3bb142ae8333f86a8d8ae50506a0ccad36d10e639be45925e6",
+  "files": [
+    {
+      "path": "src/ui/api.ts",
+      "sha256": "96c7bcc84cb7e51abdb34719723e1bfd0ee8c76c4bc6641af62fd6c9ff5ae2e6",
+      "bytes": 48820
+    },
+    {
+      "path": "src/ui/types.ts",
+      "sha256": "06e471068d976dcbdcb0aa82375f9a4e1c9310fed0ab03d11cf1588768fe0582",
+      "bytes": 6411
+    },
+    {
+      "path": "src/ui/industrial.ts",
+      "sha256": "1b699ef141eed3ab3025b449bf24160ff3a1b92169665e9978e8fce4cc26e439",
+      "bytes": 14728
+    },
+    {
+      "path": "src/ui/industrial-api.ts",
+      "sha256": "29b5154aecbd2417bb8cb01903c623899f1b87f84082cc68e6631186d93af707",
+      "bytes": 13564
+    },
+    {
+      "path": "src/ui/pending-commands.ts",
+      "sha256": "dd41f6b7774b74b72a10b908bc58bcd7b7acb598f23f8be5d0e3147d5dde671a",
+      "bytes": 1334
+    },
+    {
+      "path": "tests/ui/industrial-api.test.ts",
+      "sha256": "33a3763ea68cbc226c1d717375ae1c83c2b35efd57b5eaa794d126aa238250c2",
+      "bytes": 33719
+    },
+    {
+      "path": "tests/ui/industrial-fixtures.ts",
+      "sha256": "712f91b012296f85adda0e1aa30bfcfffd6a0d094febf99c65e7f7451cb80a29",
+      "bytes": 7332
+    }
+  ],
+  "onlyProductionDelta": "industrial.ts allocation ceiling100000",
+  "unreviewedMainPdfUiExcluded": true,
+  "receivedAt": "2026-10-22T13:27:45.608191+00:00"
+}

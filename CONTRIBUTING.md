@@ -1,0 +1,15 @@
+# Contributing and agent recovery
+
+Start with [START-HERE.md](START-HERE.md), [the recovery procedure](docs/RECOVERY.md), [the product/data map](docs/REPOSITORY-GUIDE.md), [why these choices](docs/DECISIONS.md) and [AGENTS.md](AGENTS.md). Record the full source SHA and work from the public checkpoint in [PUBLICATION.md](docs/PUBLICATION.md). Native IDs survive display-name changes.
+
+The ownership table describes the original concurrent build. In that shared checkout, preserve other owners' changes and use the designated proposal paths. An external contributor can use their own clone and propose a bounded patch through this GitHub repository; private builder chats, `.local` snapshots and installed desktop skills are not required. Do not interpret a historical permission as authority to access the original database, publish, deploy, spend or contact others.
+
+For code, keep strict TypeScript without `any`, explicit public return types, awaited async operations, boundary validation/error handling and lazy environment/client initialization. No production `console.log`, secrets or em dashes. Pin dependency versions and commit the lockfile with dependency changes. Read [shared contracts](docs/CONTRACTS.md) before changing an interface.
+
+After each code change obtain two independent read-only reviews on the exact final code: one by the same model that authored that scope, one by `gpt-6-astra`. Each reviewer starts in a fresh context, separate from the author and the other reviewer, with code, expected behaviour, contracts and tests, without prior verdicts or proposed fixes. The first challenges error cases and counterexamples; the second checks contracts, authority, versions, concurrency and durable state. Neither reviewer delegates again. If a required model/context is unavailable, report that review as `NOT_RUN`; do not silently substitute or claim the cycle complete.
+
+For each finding record a concrete trigger, file/symbol, causal path and consequence. Reproduce valid defects, correct them, rerun relevant tests and have affected reviewers revalidate the changed bytes. Keep hashes or a commit SHA, actual models requested (served identity only if attested), coverage, executed/skipped checks and remaining limits. Documentation-only changes do not require the two-model code panel. The installed internal-review skill can add local workflow guidance, but this tracked contract supplies the portable minimum.
+
+Run typecheck, build and appropriate tests from [RECOVERY.md](docs/RECOVERY.md). For UI, prefer Aside where available; otherwise record the browser actually used and why. Inspect the result, DOM measurements and screenshots at relevant sizes. A successful build is not browser acceptance. Public-copy tests, injected provider protocol tests, real provider runs, Aiven readback and real business effects are distinct evidence.
+
+Leave the exact task, changes, checks and unresolved questions in the existing owner area or patch description. A commit/push needs the user's applicable instruction. Deployment, external actions and secrets require their own authority. Keep historical failures and reservations visible.

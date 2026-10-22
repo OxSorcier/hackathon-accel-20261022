@@ -10,12 +10,16 @@ import { createAgentRunner, type ModelProvider } from '../agent/index.js';
 import { createIndustrialAgentPort } from './industrial-agent-port.js';
 import { evaluateIndustrialPlan } from '../domain/industrial.js';
 import { IndustrialReadRepository, industrialHash, type IndustrialReadService } from './industrial-read.js';
-import { readIndustrialDisplay, withIndustrialDisplay } from './industrial-display.js';
+import { createIndustrialFeedRead } from './industrial-feed.js';
+import { DataWatchError } from '../data/validation.js';
+import { readIndustrialDisplay } from './industrial-display.js';
 import { basisOfIndustrialRelease, IndustrialReleaseRepository } from './industrial-release.js';
 import { createIndustrialDemoExecutor, readIndustrialExecutionState, type IndustrialDemoExecutor } from './industrial-execution.js';
 import { AppError, PgStore, type RunFinalization } from './store.js';
 import type { ResearchService } from './research-service.js';
 import type { WatchService } from './app.js';
+import { createPdfKnowledgePort } from './pdf-knowledge.js';
+import { PDF_PROFILE, type PdfDocuments } from './pdf-documents.js';
 import { questionSchema } from './validation.js';
 
 export const INDUSTRIAL_PRINCIPAL = 'SERVICE-INDUSTRIAL-ANALYSIS';
@@ -34,7 +38,7 @@ export class IndustrialRuntime implements IndustrialReadService {
   readonly read: IndustrialReadRepository;
   readonly trigger: IndustrialAnalysisTrigger;
   readonly executor: IndustrialDemoExecutor;
-  constructor(private readonly store: PgStore, private readonly research: ResearchService, private readonly watches: WatchService, private readonly companyId: string) {
+  constructor(private readonly store: PgStore, private readonly research: ResearchService, private readonly watches: WatchService, private readonly companyId: string, private readonly documents?: PdfDocuments) {
     this.read = new IndustrialReadRepository(store);
     this.trigger = createIndustrialAnalysisTrigger({ servicePrincipalId: INDUSTRIAL_PRINCIPAL,
       resolvePrincipal: async (client, company, principal) => await authorizeIndustrialResearch(client, company, INDUSTRIAL_PUBLIC_SCOPE, principal) ? { id: principal, companyId: company, role: 'analysis_only', active: true } : null,
@@ -59,7 +63,7 @@ export class IndustrialRuntime implements IndustrialReadService {
         const dependencies = dependenciesOf(publicContext);
         if (dependencies.length && !await this.sourceCurrent(client, actor.companyId, publicContext)) throw new AppError('STALE_CONTEXT', 'Public observations changed before release.', 409);
         return dependencies;
-      }, enqueue: async (client, basis) => await this.trigger.enqueue(client, { basis, analysisPolicyVersion: 'industrial-analysis:v1', budget: limits }),
+      }, enqueue: async (client, basis) => await this.trigger.enqueue(client, { basis, analysisPolicyVersion: 'industrial-analysis:v2', budget: limits }),
     }).release(actor, value, expectedRevision, operationKey);
   }
   private async publicFor(actor: Actor): Promise<ResearchContext> {
@@ -70,16 +74,8 @@ export class IndustrialRuntime implements IndustrialReadService {
     return dependencies.length > 0 && await this.store.researchCurrent(companyId, dependencies, client, true);
   }
   async workspace(actor: Actor): Promise<IndustrialWorkspace> {
-    const publicResearch = await this.publicFor(actor);
-    const watches = await this.watches.list(actor.companyId), occurrences = await this.watches.occurrences(actor.companyId);
-    const watch = watches.find(value => value.publicTopic === 'marchés publics matériaux France' && value.enabled);
-    const last = watch ? occurrences.filter(value => value.watchId === watch.id).sort((a, b) => Date.parse(b.scheduledAt) - Date.parse(a.scheduledAt))[0] : undefined;
-    return await new IndustrialReadRepository(this.store, { decorate: async (client, current, _snapshot, _context, view) => {
-      const value = await withIndustrialDisplay(client, view);
-      const received = publicResearch.state === 'reusable' && !await this.sourceCurrent(client, actor.companyId, publicResearch)
-        ? { ...publicResearch, state: 'stale' as const, validUntil: null, observations: [], conditions: [...publicResearch.conditions, 'SOURCE_CHANGED_DURING_READ'] } : publicResearch;
-      return { ...value, publicResearch: received, publicFeed: { profileId: INDUSTRIAL_PUBLIC_SCOPE.profileId, watchId: watch?.id ?? null, cadenceMinutes: watch?.cadenceMinutes ?? null, nextRunAt: watch?.nextRunAt ?? null, lastAttemptAt: last?.startedAt ?? last?.scheduledAt ?? null, lastAttemptStatus: last?.status ?? null }, reports: value.reports.map(report => this.permissions(current, report)), capabilities: { ...value.capabilities, automaticAnalysis: true, questionsConnected: true, decisionsConnected: true, simulationConnected: true } };
-    } }).workspace(actor);
+    const view = await createIndustrialFeedRead(this.store, this.research, this.watches).workspace(actor);
+    return { ...view, reports: view.reports.map(report => this.permissions(actor, report)), capabilities: { ...view.capabilities, automaticAnalysis: true, questionsConnected: true, decisionsConnected: true, simulationConnected: true } };
   }
   async report(actor: Actor, id: string): Promise<IndustrialReportView> { return this.permissions(actor, await this.read.report(actor, id)); }
   private permissions(actor: Actor, view: IndustrialReportView): IndustrialReportView {
@@ -98,8 +94,13 @@ export class IndustrialRuntime implements IndustrialReadService {
   private async basisCurrent(client: SqlPort, basis: IndustrialBasis): Promise<boolean> {
     const snapshot = await this.store.snapshot(basis.companyId, client as PoolClient, true);
     if (snapshot.revision !== basis.businessRevision || snapshot.policyVersion !== basis.policyVersion) return false;
-    const context = await this.read.context(client as PoolClient, snapshot), release = await this.latestRelease(client, basis.companyId, basis.eventId);
-    return context.revision === basis.contextRevision && context.qualificationRevision === basis.qualificationRevision && release?.revision === basis.eventRevision && release.businessRevision === snapshot.revision && basis.researchDependencies.length > 0 && await this.store.researchCurrent(basis.companyId, basis.researchDependencies, client, true);
+    try {
+      const context = await this.read.context(client as PoolClient, snapshot), release = await this.latestRelease(client, basis.companyId, basis.eventId);
+      return context.revision === basis.contextRevision && context.qualificationRevision === basis.qualificationRevision && release?.revision === basis.eventRevision && release.businessRevision === snapshot.revision && basis.researchDependencies.length > 0 && await this.store.researchCurrent(basis.companyId, basis.researchDependencies, client, true);
+    } catch (error) {
+      if (error instanceof DataWatchError && ['INVALID_INDUSTRIAL_CONTEXT', 'INDUSTRIAL_CONTEXT_NOT_CURRENT'].includes(error.code)) return false;
+      throw error;
+    }
   }
   async question(actor: Actor, received: IndustrialQuestionInput): Promise<AgentRun> {
     if (!['direction', 'achats'].includes(actor.role)) throw new AppError('FORBIDDEN', 'A business analysis session is required.', 403);
@@ -118,24 +119,28 @@ export class IndustrialRuntime implements IndustrialReadService {
       if (dependencies.length && !await this.sourceCurrent(client, actor.companyId, publicContext)) throw new AppError('STALE_CONTEXT', 'Public observations changed before the question.', 409);
       const release = await this.latestRelease(client, actor.companyId);
       const basis = release?.businessRevision === snapshot.revision ? { ...basisOfIndustrialRelease(release), researchDependencies: dependencies } : undefined;
-      const run: AgentRun = { id: randomUUID(), companyId: actor.companyId, actorId: actor.actorId, operationKey: input.operationKey, question: input.question, status: 'queued', revision: snapshot.revision, policyVersion: snapshot.policyVersion, mode: 'direct', model: null, proposalId: null, message: null, traces: [], createdAt: new Date().toISOString(), completedAt: null, industrialScope: { contextRevision: context.revision, qualificationRevision: context.qualificationRevision, reportId: input.reportId ?? null }, ...(basis ? { industrialBasis: basis } : {}) };
+      const run: AgentRun = { id: randomUUID(), companyId: actor.companyId, actorId: actor.actorId, operationKey: input.operationKey, question: input.question, status: 'queued', revision: snapshot.revision, policyVersion: snapshot.policyVersion, mode: 'direct', model: null, proposalId: null, message: null, traces: [], createdAt: new Date().toISOString(), completedAt: null, ...(this.documents ? { pdfProfileId: PDF_PROFILE.id } : {}), industrialScope: { contextRevision: context.revision, qualificationRevision: context.qualificationRevision, reportId: input.reportId ?? null }, ...(basis ? { industrialBasis: basis } : {}) };
       await client.query('INSERT INTO runs(id,company_id,operation_key,actor,payload) VALUES($1,$2,$3,$4,$5)', [run.id, actor.companyId, input.operationKey, actor, run]);
-      await client.query('INSERT INTO accel_industrial_run_budgets(run_id,company_id,max_provider_calls,max_tool_calls,max_duration_ms,research_dependencies) VALUES($1,$2,$3,$4,$5,$6)', [run.id, actor.companyId, limits.maxProviderCalls, limits.maxToolCalls, limits.maxDurationMs, dependencies]);
+      await client.query('INSERT INTO accel_industrial_run_budgets(run_id,company_id,max_provider_calls,max_tool_calls,max_duration_ms,research_dependencies) VALUES($1,$2,$3,$4,$5,$6)', [run.id, actor.companyId, limits.maxProviderCalls, limits.maxToolCalls, limits.maxDurationMs, JSON.stringify(dependencies)]);
       return run;
     });
   }
   async beforeClaim(): Promise<void> {
     if (!await this.isIndustrial(this.companyId)) return;
     const actor: Actor = { companyId: this.companyId, actorId: INDUSTRIAL_PRINCIPAL, role: 'analysis_only', approvalCeilingEur: 0 };
-    const publicContext = await this.publicFor(actor);
+    let publicContext: ResearchContext;
+    try { publicContext = await this.publicFor(actor); } catch (error) { if (error instanceof DataWatchError && error.code === 'RESEARCH_SERVICE_FORBIDDEN') return; throw error; }
     await this.store.transaction(async client => {
       const snapshot = await this.store.snapshot(this.companyId, client, true), release = await this.latestRelease(client, this.companyId);
-      if (release?.businessRevision === snapshot.revision && await this.sourceCurrent(client, this.companyId, publicContext)) await this.trigger.enqueue(client, { basis: { ...basisOfIndustrialRelease(release), researchDependencies: dependenciesOf(publicContext) }, analysisPolicyVersion: 'industrial-analysis:v1', budget: limits });
+      if (release?.businessRevision === snapshot.revision && await this.sourceCurrent(client, this.companyId, publicContext)) await this.trigger.enqueue(client, { basis: { ...basisOfIndustrialRelease(release), researchDependencies: dependenciesOf(publicContext) }, analysisPolicyVersion: 'industrial-analysis:v2', budget: limits });
       const abandoned = await client.query<{ id: string; run_id: string }>("SELECT i.id,i.run_id FROM accel_industrial_analysis_intents i JOIN runs r ON r.id=i.run_id AND r.company_id=i.company_id WHERE i.company_id=$1 AND i.status IN ('queued','running') AND r.payload->>'status'='uncertain' LIMIT 10", [this.companyId]);
       for (const row of abandoned.rows) await this.trigger.finish(client, this.companyId, row.id, row.run_id, 'uncertain', 'RUN_REQUIRES_RECONCILIATION');
-      const ready = await this.trigger.listReady(client, { limit: 10 });
+      await client.query("UPDATE accel_industrial_analysis_intents SET status='blocked',blocked_reason='ANALYSIS_POLICY_SUPERSEDED' WHERE company_id=$1 AND status='ready' AND analysis_policy_version<>$2", [this.companyId, 'industrial-analysis:v2']);
+      const readyRows = await client.query<{ id: string }>("SELECT id FROM accel_industrial_analysis_intents WHERE company_id=$1 AND status='ready' AND analysis_policy_version=$2 ORDER BY created_at,id LIMIT 10", [this.companyId, 'industrial-analysis:v2']);
+      const ready = [];
+      for (const row of readyRows.rows) { const intent = await this.trigger.get(client, this.companyId, row.id); if (intent) ready.push(intent); }
       for (const intent of ready) await this.trigger.promote(client, intent.basis.companyId, intent.id, async (sql, value) => {
-        const run: AgentRun = { id: randomUUID(), companyId: value.basis.companyId, actorId: value.servicePrincipalId, operationKey: value.id, question: 'Prepare the current company briefing. Read the known company profile, current public observations and separately released synthetic incident and confirmations. Explain risks, public leads to qualify, the qualified existing CRM demand, the common plan and its limits. Never infer a supplier relationship or confirmation from a public notice.', status: 'queued', revision: value.basis.businessRevision, policyVersion: value.basis.policyVersion, mode: 'direct', model: null, proposalId: null, message: null, traces: [], createdAt: new Date().toISOString(), completedAt: null, industrialScope: { contextRevision: value.basis.contextRevision, qualificationRevision: value.basis.qualificationRevision, reportId: null }, industrialBasis: value.basis, industrialIntentId: value.id };
+        const run: AgentRun = { id: randomUUID(), companyId: value.basis.companyId, actorId: value.servicePrincipalId, operationKey: value.id, question: 'Prepare the current company briefing. Read the known company profile, current public observations and separately released synthetic incident and confirmations. Explain risks, public leads to qualify, the qualified existing CRM demand, the common plan and its limits. Never infer a supplier relationship or confirmation from a public notice. Check whether each public notice is actually relevant to timber, panels or insulation in the company regions; state no known exposure when the released observations do not establish one. This is an automatic structured report job: after read_company_context call calculate_common_plan with the existing qualified demand ID, then MUST call prepare_industrial_report with evaluationId=the returned assessmentId and recommendedPlanId=the returned feasible plan ID. If no feasible plan exists, use recommendedPlanId:null and explain the missing facts; never invent a plan ID. Put the attributed briefing and source limitations in that tool summary. A narrative final answer without prepare_industrial_report does not complete this job.', status: 'queued', revision: value.basis.businessRevision, policyVersion: value.basis.policyVersion, mode: 'direct', model: null, proposalId: null, message: null, traces: [], createdAt: new Date().toISOString(), completedAt: null, industrialScope: { contextRevision: value.basis.contextRevision, qualificationRevision: value.basis.qualificationRevision, reportId: null }, industrialBasis: value.basis, industrialIntentId: value.id };
         await sql.query('INSERT INTO runs(id,company_id,operation_key,actor,payload) VALUES($1,$2,$3,$4,$5)', [run.id, run.companyId, run.operationKey, { ...actor, companyId: run.companyId }, run]); return run.id;
       });
     });
@@ -174,7 +179,7 @@ export class IndustrialRuntime implements IndustrialReadService {
         loadInput: async (client, demandId, evaluatedAt) => await this.loadInput(client, run, demandId, evaluatedAt),
         readOverview: async client => await this.overview(client, run, publicContext), reserveUsage: async kind => await this.reserve(run, actor, kind),
       });
-      return await createAgentRunner({ industrialPort: port, ...(provider ? { provider } : {}), writeTrace: sink, maxDurationMs: 60000, currentVersion: async () => { const snapshot = await this.store.snapshot(run.companyId); return { companyId: snapshot.companyId, revision: snapshot.revision, policyVersion: snapshot.policyVersion }; } })(input);
+      return await createAgentRunner({ industrialPort: port, ...(run.pdfProfileId && this.documents ? { pdfKnowledgePort: createPdfKnowledgePort(this.documents, actor, run.pdfProfileId) } : {}), ...(provider ? { provider } : {}), writeTrace: sink, maxDurationMs: 60000, currentVersion: async () => { const snapshot = await this.store.snapshot(run.companyId); return { companyId: snapshot.companyId, revision: snapshot.revision, policyVersion: snapshot.policyVersion }; } })(input);
     };
   }
   private async overview(client: PoolClient, run: AgentRun, research: ResearchContext): Promise<JsonObject> {
@@ -207,7 +212,8 @@ export class IndustrialRuntime implements IndustrialReadService {
     if (!requireFeasible) return plan;
     const now = new Date().toISOString();
     const current = evaluateIndustrialPlan({ ...input, evaluatedAt: now });
-    if (!current.plans.some(value => value.status === 'feasible' && industrialHash(value.steps) === industrialHash(plan.steps) && industrialHash(value.economics) === industrialHash(plan.economics))) throw new AppError('STALE_CONTEXT', 'Time-sensitive plan resources changed.', 409);
+    const actions = (value: typeof plan): unknown => value.steps.map(({ id: _id, dependsOn, ...step }) => ({ ...step, dependsOn: dependsOn.map(id => value.steps.findIndex(candidate => candidate.id === id)) }));
+    if (!current.plans.some(value => value.status === 'feasible' && industrialHash(actions(value)) === industrialHash(actions(plan)) && industrialHash(value.economics) === industrialHash(plan.economics))) throw new AppError('STALE_CONTEXT', 'Time-sensitive plan resources changed.', 409);
     return plan;
   }
   async decide(actor: Actor, planId: string, input: IndustrialDecisionInput): Promise<IndustrialApproval> {
@@ -219,6 +225,9 @@ export class IndustrialRuntime implements IndustrialReadService {
       if (prior) { if (prior.command_hash !== commandHash) throw new AppError('OPERATION_CONFLICT', 'Decision key identifies different input.', 409); return prior.payload; }
       const row = (await client.query<{ payload: IndustrialReport }>("SELECT payload FROM accel_industrial_reports WHERE company_id=$1 AND EXISTS(SELECT 1 FROM jsonb_array_elements(payload->'assessment'->'plans') plan WHERE plan->>'id'=$2) ORDER BY created_at DESC LIMIT 1", [actor.companyId, planId])).rows[0];
       if (!row) throw new AppError('NOT_FOUND', 'Plan not found.', 404);
+      const receivedPlan = row.payload.assessment.plans.find(value => value.id === planId);
+      if (!receivedPlan || industrialHash(input.expectedBasis) !== industrialHash(receivedPlan.basis) || input.expectedPlanHash !== industrialHash(receivedPlan) || input.expectedPlanVersion !== receivedPlan.version) throw new AppError('STALE_CONTEXT', 'Plan identity changed.', 409);
+      if (input.decision === 'approve' && receivedPlan.economics.grossNewSpendCents > actor.approvalCeilingEur * 100) throw new AppError('BUDGET', 'Gross spending exceeds approval authority.', 403);
       const plan = await this.recalculate(client, row.payload, planId, input.decision === 'approve');
       if (industrialHash(input.expectedBasis) !== industrialHash(plan.basis) || input.expectedPlanHash !== industrialHash(plan) || input.expectedPlanVersion !== plan.version) throw new AppError('STALE_CONTEXT', 'Plan identity changed.', 409);
       if (input.decision === 'approve' && plan.economics.grossNewSpendCents > actor.approvalCeilingEur * 100) throw new AppError('BUDGET', 'Gross spending exceeds approval authority.', 403);
@@ -235,7 +244,7 @@ export class IndustrialRuntime implements IndustrialReadService {
     const report = result.industrialReport;
     if (report && (report.id !== `report:${run.id}` || report.companyId !== run.companyId || report.runId !== run.id || !run.industrialBasis || industrialHash(report.basis) !== industrialHash(run.industrialBasis))) throw new AppError('INVALID_REPORT', 'The report is outside its bound run.', 409);
     const current = !stale && await this.validateRun(client, run, actor);
-    let outcome: 'done' | 'stale' | 'blocked' | 'uncertain' = result.status === 'uncertain' ? 'uncertain' : !current || result.status === 'stale_context' ? 'stale' : result.status === 'error' || result.status === 'budget_exhausted' ? 'blocked' : 'done';
+    let outcome: 'done' | 'stale' | 'blocked' | 'uncertain' = result.status === 'uncertain' ? 'uncertain' : !current || result.status === 'stale_context' ? 'stale' : result.status === 'error' || result.status === 'budget_exhausted' || Boolean(run.industrialIntentId && !report) ? 'blocked' : 'done';
     if (report && outcome === 'done') {
       if (report.basis.businessRevision !== snapshot.revision || report.basis.policyVersion !== snapshot.policyVersion || report.status === 'stale' || report.recommendedPlanId === null && report.status !== 'needs_input') throw new AppError('INVALID_REPORT', 'Report status or snapshot binding is invalid.', 409);
       const demandId = report.assessment.plans[0]?.demandId ?? report.assessment.qualifiedDemandIds[0];
@@ -247,14 +256,14 @@ export class IndustrialRuntime implements IndustrialReadService {
     }
     // Publication consumes the final currentness and duration gate after calculation.
     if (run.industrialIntentId) {
-      const finished = await this.trigger.finish(client, run.companyId, run.industrialIntentId, run.id, outcome);
+      const finished = await this.trigger.finish(client, run.companyId, run.industrialIntentId, run.id, outcome, run.industrialIntentId && !report && outcome === 'blocked' ? 'REPORT_NOT_PREPARED' : undefined);
       outcome = finished.status === 'done' ? 'done' : finished.status === 'stale' ? 'stale' : finished.status === 'uncertain' ? 'uncertain' : 'blocked';
     } else if (outcome === 'done') {
       const allowed = await client.query("SELECT run_id FROM accel_industrial_run_budgets WHERE company_id=$1 AND run_id=$2 AND (started_at IS NULL OR clock_timestamp()<started_at+max_duration_ms*interval '1 millisecond')", [run.companyId, run.id]);
       if (!allowed.rowCount) outcome = 'blocked';
     }
     if (report && outcome !== 'done') await client.query('INSERT INTO accel_industrial_report_attempts(company_id,run_id,payload,outcome) VALUES($1,$2,$3,$4) ON CONFLICT(run_id) DO NOTHING', [run.companyId, run.id, report, outcome]);
-    if (outcome !== 'done') return { status: outcome === 'uncertain' ? 'uncertain' : outcome === 'stale' ? 'stale_context' : 'budget_exhausted', message: report ? 'The report attempt requires reconciliation. No reviewable report or business effect was published.' : 'The bound company, source or processing budget is no longer current.' };
+    if (outcome !== 'done') return { status: outcome === 'uncertain' ? 'uncertain' : outcome === 'stale' ? 'stale_context' : result.status === 'budget_exhausted' ? 'budget_exhausted' : 'error', message: report ? 'The report attempt requires reconciliation. No reviewable report or business effect was published.' : run.industrialIntentId && !report && outcome === 'blocked' ? 'The model did not prepare the required structured report. This attempt is blocked for reconciliation. No reviewable report or business effect was published.' : 'The bound company, source or processing budget is no longer current.' };
     if (!report) return {};
     await client.query('INSERT INTO accel_industrial_reports(id,company_id,run_id,payload) VALUES($1,$2,$3,$4)', [report.id, run.companyId, run.id, report]);
     return { industrialReportId: report.id };

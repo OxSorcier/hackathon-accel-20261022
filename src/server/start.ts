@@ -12,7 +12,9 @@ import { createRunWorker } from './worker.js';
 import { createWatchServices } from './watch-service.js';
 import { readCase, referenceOf } from './cases.js';
 import { createResearchService } from './research-service.js';
-import { createIndustrialFeedRead, industrialPublicWatchId } from './industrial-feed.js';
+import { createPdfDocuments } from './pdf-documents.js';
+import { IndustrialRuntime, authorizeIndustrialResearch } from './industrial-runtime.js';
+import { industrialPublicWatchId } from './industrial-feed.js';
 
 export async function start(): Promise<void> {
   const config = readConfig();
@@ -20,13 +22,15 @@ export async function start(): Promise<void> {
   try { await migrate(pool); } catch (error) { await pool.end(); throw error; }
   const store = new PgStore(pool);
   const provider = createConfiguredProvider();
-  const research = createResearchService(store, { collectorLimit: 3, publicContractsWatchId: industrialPublicWatchId(config.companyId) });
+  const research = createResearchService(store, { collectorLimit: 3, publicContractsWatchId: industrialPublicWatchId(config.companyId), authorizeServiceLookup: authorizeIndustrialResearch });
   const watches = createWatchServices(store, research.synchronizeWatch, { collectorLimit: 3 });
-  const industrial = createIndustrialFeedRead(store, research, watches.service);
-  const runWorker = createRunWorker(store, createAgentRunner(), (run, writeTrace, actor) => createAgentRunner({ ...(run.researchScope ? { researchPort: research.port(actor, run) } : {}), ...(provider ? { provider } : {}), maxDurationMs: 60000, currentVersion: async () => { const snapshot = await store.snapshot(run.companyId); return { companyId: snapshot.companyId, revision: snapshot.revision, policyVersion: snapshot.policyVersion }; }, ...(run.caseRef ? { currentCaseRef: async () => referenceOf(await readCase(store, run.companyId, run.caseRef!.caseId)) } : {}), writeTrace }), research);
+  const documents = createPdfDocuments(store, async work => await store.transaction(work));
+  const industrial = new IndustrialRuntime(store, research, watches.service, config.companyId, documents);
+  store.setRunFinalizer(industrial.finalize.bind(industrial));
+  const runWorker = createRunWorker(store, createAgentRunner(), (run, writeTrace, actor) => run.industrialScope ? industrial.runnerFor(run, writeTrace, actor, provider ?? undefined) : createAgentRunner({ ...(run.researchScope ? { researchPort: research.port(actor, run) } : {}), ...(provider ? { provider } : {}), maxDurationMs: 60000, currentVersion: async () => { const snapshot = await store.snapshot(run.companyId); return { companyId: snapshot.companyId, revision: snapshot.revision, policyVersion: snapshot.policyVersion }; }, ...(run.caseRef ? { currentCaseRef: async () => referenceOf(await readCase(store, run.companyId, run.caseRef!.caseId)) } : {}), writeTrace }), research, industrial);
   let staticRoot: string | undefined;
   try { await access(resolve('dist/client/index.html')); staticRoot = resolve('dist/client'); } catch { /* Vite serves development UI separately. */ }
-  const app = await createApp({ store, config, evaluate: businessEngine, watches: watches.service, research, industrial, ...(staticRoot ? { staticRoot } : {}) });
+  const app = await createApp({ store, config, evaluate: businessEngine, watches: watches.service, research, industrial, documents, ...(staticRoot ? { staticRoot } : {}) });
   app.addHook('onClose', async () => { await Promise.all([runWorker.stop(), watches.worker.stop()]); await pool.end(); });
   const shutdown = async (): Promise<void> => { await app.close(); };
   process.once('SIGINT', async () => { await shutdown(); });

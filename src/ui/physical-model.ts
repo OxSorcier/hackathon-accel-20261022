@@ -39,19 +39,18 @@ export function physicalCompanyName(workspace: IndustrialWorkspace): string {
 
 export function physicalFeedState(workspace: IndustrialWorkspace, now = Date.now()): PhysicalFeedState {
   const research = workspace.publicResearch;
-  if (!research || research.companyId !== workspace.company.id) return { label: "No source context received", tone: "neutral" };
+  const feed = !research || research.companyId === workspace.company.id && workspace.publicFeed?.profileId === research.scope.profileId ? workspace.publicFeed : undefined;
+  const schedule = { ...(feed?.cadenceMinutes !== null && feed?.cadenceMinutes !== undefined ? { cadenceMinutes: feed.cadenceMinutes } : {}), ...(feed?.nextRunAt ? { nextRunAt: feed.nextRunAt } : {}), ...(feed?.lastAttemptAt ? { lastAttemptAt: feed.lastAttemptAt } : {}), ...(feed?.lastAttemptStatus ? { lastAttemptStatus: feed.lastAttemptStatus } : {}) };
+  if (!research || research.companyId !== workspace.company.id) return { label: "No source context received", tone: "neutral", ...schedule };
   const expired = research.state === "reusable" && (research.validUntil === null || Date.parse(research.validUntil) <= now);
   const state = expired ? "stale" : research.state;
   const labels = { reusable: research.scope.namespace === "controlled" ? "Controlled source context received" : "Source context received", missing: "Source context missing", stale: "Earlier source context", partial: "Partial source collection", empty: "Collection returned no observation", error: "Source collection error", uncertain: "Collection outcome uncertain" };
-  const feed = workspace.publicFeed?.profileId === research.scope.profileId ? workspace.publicFeed : undefined;
   return { label: labels[state], tone: state === "reusable" ? research.scope.namespace === "live" ? "teal" : "neutral" : state === "empty" || state === "missing" ? "neutral" : "amber", checkedAt: research.checkedAt,
-    ...(research.validUntil ? { validUntil: research.validUntil } : {}), namespace: research.scope.namespace,
-    ...(feed?.cadenceMinutes !== null && feed?.cadenceMinutes !== undefined ? { cadenceMinutes: feed.cadenceMinutes } : {}),
-    ...(feed?.nextRunAt ? { nextRunAt: feed.nextRunAt } : {}), ...(feed?.lastAttemptAt ? { lastAttemptAt: feed.lastAttemptAt } : {}), ...(feed?.lastAttemptStatus ? { lastAttemptStatus: feed.lastAttemptStatus } : {}) };
+    ...(research.validUntil ? { validUntil: research.validUntil } : {}), namespace: research.scope.namespace, ...schedule };
 }
 
 /** A public headline never acquires an internal report merely by appearing in the same feed. */
-export function buildPhysicalFeed(industrial: IndustrialWorkspace, workspace: WorkspaceView): PhysicalFeedItem[] {
+export function buildPhysicalFeed(industrial: IndustrialWorkspace, workspace: WorkspaceView, now = Date.now()): PhysicalFeedItem[] {
   if (industrial.company.id !== workspace.company.id) return [];
   const incidents: PhysicalFeedItem[] = industrial.events.map(event => {
     const supplier = physicalEntityLabel(industrial, "supplier", event.event.supplierId, workspace.catalog.suppliers.find(item => item.id === event.event.supplierId)?.label ?? event.event.supplierId);
@@ -71,7 +70,7 @@ export function buildPhysicalFeed(industrial: IndustrialWorkspace, workspace: Wo
     status: ({ success: "Received", partial: "Partial collection", empty: "No update", error: "Collection error", not_run: "Not collected" })[source.status], source }));
   const research = industrial.publicResearch;
   if (research?.companyId === industrial.company.id) {
-    const state = physicalFeedState(industrial);
+    const state = physicalFeedState(industrial, now);
     for (const observation of research.observations) {
       const evidence = observation.evidence;
       const controlled = research.scope.namespace === "controlled" || observation.testOnly || evidence.mode !== "direct";

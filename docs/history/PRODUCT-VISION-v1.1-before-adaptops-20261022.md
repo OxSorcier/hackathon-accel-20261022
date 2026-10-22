@@ -8,12 +8,12 @@
 
 ## Linked supplements, 22 October
 
-This remains the owner vision document. The initial inspection and its implementation gaps below are a dated checkpoint. Use [the integrator's current state](STATUS.md) for current runtime evidence. The original version is preserved in [history](history/PRODUCT-VISION-v1.md).
+This remains the owner vision document. The initial inspection and its implementation gaps below are a dated checkpoint. Use [the integrator's current state](../STATUS.md) for current runtime evidence. The original version is preserved in [history](PRODUCT-VISION-v1.md).
 
-- [Government APIs and timber-sector data](../proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.md), with [offline HTML](../proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.html): source access trials, applicability, market opportunities and collection proposals. Research access does not establish an installed connector.
-- [Company research memory and traces](../proposals/product/MEMOIRE-RECHERCHE-TRACES.md): reuse and correction of prior knowledge. Its R1/R2 acceptance tests remain separate from a successful proposal run.
-- [Industrial customer, commercial story and demo](../proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.md), with [offline HTML](../proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.html): a proposed synthetic customer profile, larger portfolio, website/press copy and film. This is a linked proposal, not a received customer identity, application import or proof of scale.
-- [Sector-chain reception checkpoint](../proposals/product/research-data-20261022/sector-sources/CHAIN-RECEPTION-CHECKPOINT.json): technical runtime evidence and remaining relevance limits. A future-capacity announcement does not establish a near-term commercial delay; the synthetic internal confirmation is distinct.
+- [Government APIs and timber-sector data](../../proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.md), with [offline HTML](../../proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.html): source access trials, applicability, market opportunities and collection proposals. Research access does not establish an installed connector.
+- [Company research memory and traces](../../proposals/product/MEMOIRE-RECHERCHE-TRACES.md): reuse and correction of prior knowledge. Its R1/R2 acceptance tests remain separate from a successful proposal run.
+- [Industrial customer, commercial story and demo](../../proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.md), with [offline HTML](../../proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.html): a proposed synthetic customer profile, larger portfolio, website/press copy and film. This is a linked proposal, not a received customer identity, application import or proof of scale.
+- [Sector-chain reception checkpoint](../../proposals/product/research-data-20261022/sector-sources/CHAIN-RECEPTION-CHECKPOINT.json): technical runtime evidence and remaining relevance limits. A future-capacity announcement does not establish a near-term commercial delay; the synthetic internal confirmation is distinct.
 
 ## Vision reçue
 

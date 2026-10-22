@@ -59,4 +59,14 @@ describe.skipIf(!url)('known company and bounded existing watch feed, injected H
     const freshPool=new Pool({connectionString:url,options:`-c search_path=${schema}`});
     try {const freshStore=new PgStore(freshPool),freshResearch=createResearchService(freshStore,{collectorLimit:3,publicContractsWatchId:industrialPublicWatchId(companyId)}),freshWatches=createWatchServices(freshStore,freshResearch.synchronizeWatch,{collectorLimit:3});const reread=await createIndustrialFeedRead(freshStore,freshResearch,freshWatches.service).workspace(actor);expect(reread.publicResearch?.observations.map(value=>value.ref)).toEqual(view.publicResearch?.observations.map(value=>value.ref));expect(reread.publicResearch?.generation).toBe(view.publicResearch?.generation);expect(calls).toBe(count);}finally{await freshPool.end();}
   });
+  it('reports a real started attempt even behind a queued occurrence and over100 other-watch rows', async () => {
+    const research=createResearchService(store,{collectorLimit:3,publicContractsWatchId:industrialPublicWatchId(companyId)}), watches=createWatchServices(store,research.synchronizeWatch,{collectorLimit:3});
+    const id=industrialPublicWatchId(companyId);
+    await store.query("INSERT INTO accel_watch_definitions(id,company_id,actor_id,operation_key,public_topic,source_urls,cadence_minutes,enabled,next_run_at,created_at) SELECT 'other-watch',company_id,actor_id,'other-watch',public_topic,source_urls,cadence_minutes,false,next_run_at,created_at FROM accel_watch_definitions WHERE id=$1",[id]);
+    await store.query("INSERT INTO accel_watch_occurrences(id,watch_id,company_id,operation_key,status,scheduled_at) SELECT 'noise:'||n,'other-watch',$1,'noise:'||n,'queued','2030-01-01'::timestamptz+n*interval '1 second' FROM generate_series(1,105) n",[companyId]);
+    await store.query("INSERT INTO accel_watch_occurrences(id,watch_id,company_id,operation_key,status,scheduled_at,started_at,lease_until,worker_id) VALUES('real-attempt',$1,$2,'real-attempt','running','2029-01-01T08:00:00Z','2029-01-01T10:00:00Z','2029-01-01T10:01:00Z','test-worker'),('queued-later',$1,$2,'queued-later','queued','2029-01-01T09:00:00Z',NULL,NULL,NULL)",[id,companyId]);
+    const view=await createIndustrialFeedRead(store,research,watches.service).workspace(actor);
+    expect(view.publicFeed).toMatchObject({watchId:id,lastAttemptAt:'2029-01-01T10:00:00.000Z',lastAttemptStatus:'running'});
+  });
+
 });

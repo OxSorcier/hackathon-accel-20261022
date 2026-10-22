@@ -1,13 +1,21 @@
-# Public source publication
+# Public source checkpoint
 
-22 October 2026. Erwan authorised the initial commit, push and public visibility of the existing repository for the hackathon submission.
+Public repository: [OxSorcier/hackathon-accel-20261022](https://github.com/OxSorcier/hackathon-accel-20261022). Default branch: `main`. Initial publication: `285cfb0d1bfd1c313c4b57ffba5f2515446acffd`. Recovery update: 22 October 2026. Record `git rev-parse HEAD` when using this update; a future main can advance. A receipt can only name a commit after it exists.
 
-Repository: https://github.com/OxSorcier/hackathon-accel-20261022
+## Included source
 
-This is a source publication of the project under active development. The README, repository guide and exact-version receipts distinguish the accepted risk flow, industrial read candidate, research/PDF module evidence and scripted browser Demo mode. Publishing the source does not validate or deploy an unfinished integration.
+The recovery update assembles the received connected-runtime V6 source and tests, based on [the exact V6 build](../proposals/integration/CONNECTED-RUNTIME-v6-BUILD.json), with public documentation and the tracked [industrial recovery utility](../tools/recover-industrial.ts). The source manifest and verification results are in [public-recovery-v2](../proposals/product/repository-docs-20261022/public-recovery-v2/VERIFICATION.json). It excludes later changes being built concurrently in the original shared checkout. The source includes industrial analysis finalization, authenticated decision/simulation/question routes, PDF service registration and the received allocation UI. Presence does not prove a new deployed application.
 
-The source, tests, migrations, synthetic fixtures, documentation and project evidence are included. Private environment files, local working configurations, builder preparation, agent task state, dependency/build output, raw browser snapshots, log text, generated archives and film files stay local. The three-minute film is a separate submission asset. Existing files are preserved locally.
+The small historical risk flow, industrial connected server and browser presentation are separate evidence surfaces. The initial 173-test receipt and private historical source paths describe their original candidates. They cannot be used as CI for a later commit. Current startup is [start.ts](../src/server/start.ts); [RECOVERY.md](RECOVERY.md) supplies public commands and [DECISIONS.md](DECISIONS.md) supplies maintained reasons and tradeoffs. The [data guide](REPOSITORY-GUIDE.md) maps canonical data, provenance and native IDs.
 
-No real ERP/CRM credentials or production company records are included. The enriched company portfolio is synthetic; public observations keep their attribution and uncertainty. Review [REPOSITORY-GUIDE.md](REPOSITORY-GUIDE.md) and [STATUS.md](STATUS.md) before interpreting a receipt as evidence of the current checkout.
+## Verification and limits
 
-The first publication uses the existing `build/accel-local` branch as its source and the initial GitHub `main` branch as the public entry. Work continuing after the captured commit remains local until explicitly included in a later authorised update. A source publication is separate from application deployment and business execution.
+The verification receipt distinguishes exact source hashes, typecheck/build, executed unit tests, skipped PostgreSQL suites, isolated database initialization/readback and independent reviews. The new cold-reader report is separate and identifies the actual public SHA and commands it could execute. A failed sandbox bind or unavailable database is preserved as such, not converted into a success.
+
+The initializer imports core, context and alias files explicitly and refuses reset of an evolved company. It releases no event and calls no model/source/PDF service. The optional full industrial protocol test uses an injected provider and disposable schemas. Fresh real inference, live collection, Modal availability, browser business acceptance and public application deployment are separate checks. Existing historical receipts remain attributed, not rerun by publishing source.
+
+## Exclusions and contributor access
+
+Credentials, `.env*` except the empty `.env.example`, `.local`, `.preparation`, `.vercel`, local caches/build outputs and dependency directories are excluded. Tracked synthetic business inputs, construction proposals, operator protocols and historical receipts are readable source, not product-model context or public browser assets. The runtime image uses an explicit allowlist. The committed CA is a public certificate and grants no database access.
+
+Public contributors do not need private chats, desktop skills or the original `.local` sources. Use [CONTRIBUTING.md](../CONTRIBUTING.md) and [RECOVERY.md](RECOVERY.md). Original owner/thread IDs remain provenance for the shared build. Public-source access grants no access to private company data, tokens or hosted services. No customer efficacy or production ERP/CRM effect is claimed.

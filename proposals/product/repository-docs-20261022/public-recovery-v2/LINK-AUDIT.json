@@ -1,0 +1,6 @@
+{
+  "scope": "All tracked entrypoint and docs Markdown/HTML relative file links. Excludes external availability and prose code paths.",
+  "files": 40,
+  "links": 424,
+  "missing": []
+}

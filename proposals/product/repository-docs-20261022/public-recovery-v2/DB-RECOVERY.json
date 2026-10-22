@@ -1,0 +1,147 @@
+{
+  "schema": "physical_recovery_public_01a16393",
+  "success": true,
+  "records": [
+    {
+      "mode": "--check",
+      "exit": 0,
+      "result": {
+        "status": "validated_without_database",
+        "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+        "counts": {
+          "company": 1,
+          "employees": 3,
+          "suppliers": 40,
+          "products": 200,
+          "depots": 6,
+          "customers": 400,
+          "orders": 2502,
+          "order_lines": 10000,
+          "inventory": 764,
+          "reservations": 9999,
+          "purchase_orders": 8,
+          "purchase_order_lines": 8,
+          "inbound_allocations": 13,
+          "transport_quotes": 3,
+          "emergency_quotes": 5,
+          "crm_opportunities": 81,
+          "watch_drafts": 1,
+          "construction_projects": 24,
+          "product_supply_links": 202
+        },
+        "dataHash": "8ec5df0ed8499f7ca43936b4fbb09b9d99448fbf86859f5f9a4f7830e2d59083"
+      }
+    },
+    {
+      "mode": "--init",
+      "exit": 0,
+      "result": {
+        "status": "read_back",
+        "schema": "physical_recovery_public_01a16393",
+        "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+        "revision": "R-INDUSTRIAL-CANDIDATE-2",
+        "contextRevision": "IC-INDUSTRIAL-2-2",
+        "counts": {
+          "depots": 6,
+          "orders": 2502,
+          "company": 1,
+          "products": 200,
+          "customers": 400,
+          "employees": 3,
+          "inventory": 764,
+          "suppliers": 40,
+          "order_lines": 10000,
+          "reservations": 9999,
+          "watch_drafts": 1,
+          "purchase_orders": 8,
+          "emergency_quotes": 5,
+          "transport_quotes": 3,
+          "crm_opportunities": 81,
+          "inbound_allocations": 13,
+          "product_supply_links": 202,
+          "purchase_order_lines": 8,
+          "construction_projects": 24
+        },
+        "reports": 0,
+        "events": 0,
+        "noProviderCalls": true,
+        "noEventReleased": true
+      }
+    },
+    {
+      "mode": "--init",
+      "exit": 0,
+      "result": {
+        "status": "read_back",
+        "schema": "physical_recovery_public_01a16393",
+        "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+        "revision": "R-INDUSTRIAL-CANDIDATE-2",
+        "contextRevision": "IC-INDUSTRIAL-2-2",
+        "counts": {
+          "depots": 6,
+          "orders": 2502,
+          "company": 1,
+          "products": 200,
+          "customers": 400,
+          "employees": 3,
+          "inventory": 764,
+          "suppliers": 40,
+          "order_lines": 10000,
+          "reservations": 9999,
+          "watch_drafts": 1,
+          "purchase_orders": 8,
+          "emergency_quotes": 5,
+          "transport_quotes": 3,
+          "crm_opportunities": 81,
+          "inbound_allocations": 13,
+          "product_supply_links": 202,
+          "purchase_order_lines": 8,
+          "construction_projects": 24
+        },
+        "reports": 0,
+        "events": 0,
+        "noProviderCalls": true,
+        "noEventReleased": true
+      }
+    },
+    {
+      "mode": "--readback",
+      "exit": 0,
+      "result": {
+        "status": "read_back",
+        "schema": "physical_recovery_public_01a16393",
+        "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+        "revision": "R-INDUSTRIAL-CANDIDATE-2",
+        "contextRevision": "IC-INDUSTRIAL-2-2",
+        "counts": {
+          "depots": 6,
+          "orders": 2502,
+          "company": 1,
+          "products": 200,
+          "customers": 400,
+          "employees": 3,
+          "inventory": 764,
+          "suppliers": 40,
+          "order_lines": 10000,
+          "reservations": 9999,
+          "watch_drafts": 1,
+          "purchase_orders": 8,
+          "emergency_quotes": 5,
+          "transport_quotes": 3,
+          "crm_opportunities": 81,
+          "inbound_allocations": 13,
+          "product_supply_links": 202,
+          "purchase_order_lines": 8,
+          "construction_projects": 24
+        },
+        "reports": 0,
+        "events": 0,
+        "noProviderCalls": true,
+        "noEventReleased": true
+      }
+    }
+  ],
+  "realProviderCalls": false,
+  "sourceCollection": false,
+  "note": "Existing authorised PostgreSQL connection, dedicated new schema, no mutation of existing demo schemas. No full business event released."
+}

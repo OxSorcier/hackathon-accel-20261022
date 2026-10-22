@@ -14,8 +14,10 @@ export async function createPool(env: NodeJS.ProcessEnv = process.env): Promise<
   const local = ['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname);
   const sslMode = url.searchParams.get('sslmode');
   if (!local && sslMode === 'disable') throw new Error('Remote database requires verified TLS');
-  for (const key of ['sslmode', 'sslcert', 'sslkey', 'sslrootcert', 'uselibpqcompat']) url.searchParams.delete(key);
-  const config: PoolConfig = { connectionString: url.toString(), max: 8, connectionTimeoutMillis: 10000, idleTimeoutMillis: 30000 };
+  for (const key of ['ssl', 'sslnegotiation', 'sslmode', 'sslcert', 'sslkey', 'sslrootcert', 'uselibpqcompat']) url.searchParams.delete(key);
+  const schema = env.DATABASE_SCHEMA === undefined ? undefined : z.string().regex(/^[a-z_][a-z0-9_]{0,62}$/).parse(env.DATABASE_SCHEMA);
+  if (schema) url.searchParams.delete('options');
+  const config: PoolConfig = { connectionString: url.toString(), max: 8, connectionTimeoutMillis: 10000, idleTimeoutMillis: 30000, ...(schema ? { options: `-c search_path=${schema}` } : {}) };
   config.ssl = local && !env.DATABASE_CA_FILE ? false : { rejectUnauthorized: true, ...(env.DATABASE_CA_FILE ? { ca: await readFile(env.DATABASE_CA_FILE, 'utf8') } : {}) };
   const pool = new Pool(config);
   pool.on('error', () => { process.stderr.write('PostgreSQL pool connection failed\n'); });

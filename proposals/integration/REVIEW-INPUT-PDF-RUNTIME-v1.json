@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/pdf-runtime-v1",
+  "base": "/Users/erwan/Projects/hackathon-accel-20261022/.local/industrial-command-http-v1",
+  "scope": "Register received fixed-profile PDF routes with existing actor/Origin/error hooks; bind existing durable cache service at startup; grant fixed-profile cache-only PDF tools to manual industrial business questions only. No PDF profile for automatic analysis_only; no model acquisition; lazy Modal config; no provider or dependency changes.",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "files": [
+    {
+      "path": "src/server/app.ts",
+      "sha256": "030819348c41a2cf63930874a50318a38f05db2275f97bd45714685e97d3a9fc"
+    },
+    {
+      "path": "src/server/start.ts",
+      "sha256": "fa5126b8ace04b72c7a3c157d2812154818b819480ea635d3087c78ef81b34fb"
+    },
+    {
+      "path": "src/server/industrial-runtime.ts",
+      "sha256": "f0fa57483437e0aa3715472b33bab00dc36dbca033ea3c5f7634e51abbaecdd6"
+    },
+    {
+      "path": "tests/integration/pdf-runtime.test.ts",
+      "sha256": "19595fa7c3149abd34c0948cae10985f411609102672b2618a6ae58b5beed057"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/server/pdf-client.ts",
+      "sha256": "7534e0159adcdbac2c1310e5641d9b66e8dd07ab6eeecf797cf6eb767bd50ab4"
+    },
+    {
+      "path": "src/server/pdf-documents.ts",
+      "sha256": "60c1bc24ed2995d3081aa56cbfcda82ec3a1923972bdde0957e2b0b7eae50120"
+    },
+    {
+      "path": "src/server/pdf-routes.ts",
+      "sha256": "8fd23cb260bc11e64a1a9cf470e4b456934653f9316cdcac492edf1673b01d79"
+    },
+    {
+      "path": "src/server/pdf-knowledge.ts",
+      "sha256": "619b69023971437410e87729a99862ba7dae7db7341e788eb04a2287aa01d054"
+    },
+    {
+      "path": "src/contracts/pdf.ts",
+      "sha256": "8df45c4c63087489d89f3ea27691f954eea7c95fd083d76e524f833061cea4de"
+    },
+    {
+      "path": "src/agent/specialized-runner.ts",
+      "sha256": "208e714a0510030013207b28563474cdb86504e67e71e33fa3cf84b832863045"
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256": "8667708a88271f5e98912a6d33c322bfee43ffc7321662c12d59214f5ced8471"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "104d14d3677f9df853cb34f2d4c534a7ae53645c2cbde7c015694ccbadd49794"
+    },
+    {
+      "path": "migrations/008_pdf_documents.sql",
+      "sha256": "3aee5af2e2877aef1077905c2ba54617ee90f5260c9a144bec6fe13bac0d1c4a"
+    }
+  ],
+  "createdAt": "2026-10-22T13:11:05.477537+00:00"
+}

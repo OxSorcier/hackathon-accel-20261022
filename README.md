@@ -2,7 +2,7 @@
 
 **Physical Impact turns market signals and company data into coordinated action for operations teams.**
 
-[Website](https://physical-impact.com) · [Product one-pager](proposals/product/submission-20261022/ONE-PAGER.md) · [Evidence it works](proposals/product/submission-20261022/EVIDENCE-IT-WORKS.pdf) · [Data layer](proposals/product/submission-20261022/DATA-LAYER.md)
+[Website](https://physical-impact.com) · [Product one-pager](proposals/product/submission-20261022/ONE-PAGER.md) · [Evidence it works](proposals/product/submission-20261022/EVIDENCE-IT-WORKS.md) · [Data layer](proposals/product/submission-20261022/DATA-LAYER.md)
 
 Built for Accel AI Innovate Paris, 22 October 2026. Earlier project documents and source identifiers may use the working names AdaptOps or Accel decision desk.
 
@@ -24,7 +24,7 @@ Physical Impact connects external evidence with inventory, purchases, customer o
 4. Approve an admissible proposal through the interface. The server checks actor, role and current revisions.
 5. Read the decision back from Aiven and recover the same history after process restart.
 
-The accepted risk flow is a real model/tools/proposal/approval path. Approval does not place a purchase or move inventory. The richer industrial report, commercial opportunity and simulated-action journey retain separate integration checks.
+The accepted risk flow is a real model/tools/proposal/approval path. Approval does not place a purchase or move inventory. The received industrial V6 server separately connects report preparation, decisions, simulated effects and questions; its later frontend and public deployment keep their own reception checks.
 
 ## Evidence: company data changes the decision
 
@@ -68,27 +68,15 @@ Public evidence and authorised operational records enter a versioned company con
 
 The model cannot execute arbitrary SQL, read arbitrary files or gain authority from an identifier it supplies. Business secrets stay server-side. Builder documents, operator oracles and future test events are outside the product model context and runtime image. Public content is untrusted evidence, not permission to act.
 
-## Local start
+## Run or resume independently
 
-Requires Node 24 within the package engine range, npm and an accessible PostgreSQL database. Dependency versions are pinned in the lockfile.
+Use the [public recovery procedure](docs/RECOVERY.md). It gives a no-key browser presentation, a tracked initializer for the 10,000-line industrial core/context/display, a dedicated PostgreSQL schema, restart/readback checks and the optional real-provider path. The small `operator seed` fixture and the browser-only scenario are separate datasets, not shortcuts to the industrial import.
 
-1. Run `npm ci`.
-2. Copy `.env.example` to `.env`. Configure `DATABASE_URL`, `APP_ORIGIN` and independent random login tokens of at least 32 characters. `DEMO_LOGIN_TOKEN` resolves Paul on the server; `OPERATOR_LOGIN_TOKEN` resolves a separate operator who cannot approve business proposals.
-3. For remote PostgreSQL, use verified TLS. Supply a trusted CA with `DATABASE_CA_FILE` when required. A failed certificate check remains a failure.
-4. Run `npm run operator -- seed CO-DEMO` once to import the small synthetic fixture. Repeating refuses to overwrite it. This is not the 10,000-line industrial import.
-5. Run `npm run build`, then `npm start`. The default local origin is `http://127.0.0.1:3000`. Use the demo token to start the session.
+Start with `npm ci`, `npm run typecheck`, `npm run build`, `npm test -- --exclude '**/proposals/**'` and `node --import tsx tools/recover-industrial.ts --check`. For a credential-free product preview run `npm run dev:ui`, then open Vite's printed URL with `/?demo=1`. PostgreSQL suites skip without explicit test connections. Injected test providers do not prove real inference.
 
-For model calls configure `MODEL_PROVIDER=openai` (or explicitly `anthropic`), `MODEL_API_KEY` and an explicit `MODEL_NAME` in the server environment. Without usable provider configuration, missing input remains explicit rather than producing a fabricated proposal. No credential is included in this repository.
+Read [why these choices](docs/DECISIONS.md) for the product/data boundary, common-plan calculation, stack, JSONB tradeoffs, source TTL, model budgets, PDF extraction and simulated execution. These are maintained reasons with explicit limits, not invented comparative benchmarks. [CONTRIBUTING.md](CONTRIBUTING.md) supplies the review contract without private desktop skills.
 
-For development, `npm run dev` starts API/workers and `npm run dev:ui` starts Vite with an API proxy. Set `APP_ORIGIN` to the exact UI origin for mutations. Production serves only `dist/client`. Startup applies migrations and never seeds or resets company data.
-
-## Verification and repeatability
-
-Run `npm run typecheck`, `npm run build` and `npm test`. Set `TEST_DATABASE_URL` for server integration and `DATA_WATCH_TEST_DATABASE_URL` for watch storage; otherwise PostgreSQL suites are skipped. Use an isolated database with disposable-schema permissions.
-
-The frozen accepted risk-flow source has a receipt for 173 passing tests, typecheck, build and independent exact-code reviews. This count belongs to that frozen version; it is not CI for the uncommitted working tree. Provider protocol tests with injected responses remain distinct from real inference receipts.
-
-Tests cover calculations, stale revisions, roles, idempotence, concurrency, collection failures and durable readback. Restart preserves state. Use a distinct explicitly seeded session for a new scenario; never silently reset or replay uncertain effects. Detailed operator commands and acceptance work remain in [the build handoff](docs/HANDOFF.md) and [current status](docs/STATUS.md).
+The [public source checkpoint](docs/PUBLICATION.md) identifies the assembled code and checks. Earlier 173-test risk-flow receipts belong to their historical frozen source, not to every later commit. The current public source includes the received V6 industrial server wiring, PDF boundary and allocation UI; ongoing later owner work is outside that checkpoint.
 
 ## Repository map
 

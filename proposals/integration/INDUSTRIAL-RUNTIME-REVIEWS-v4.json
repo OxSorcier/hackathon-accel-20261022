@@ -1,0 +1,73 @@
+{
+  "version": 4,
+  "status": "RECEIVED_FOR_LOCAL_RUNTIME",
+  "manifest": "REVIEW-INPUT-INDUSTRIAL-RUNTIME-v4.json",
+  "manifestSha256": "a03665c516a3310746935eb86201b9a5ea8d7fbc2195807687ebec27a3ea725f",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModelAttested": false,
+  "reviews": [
+    {
+      "role": "counter",
+      "agent": "industrial_runtime_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "isolation": "fork_turns:none",
+      "cycles": 2,
+      "result": "NO_REMAINING_FINDINGS"
+    },
+    {
+      "role": "architecture",
+      "agent": "industrial_runtime_architecture",
+      "modelRequested": "gpt-6-astra",
+      "isolation": "fork_turns:none",
+      "cycles": 2,
+      "result": "NO_REMAINING_FINDINGS"
+    }
+  ],
+  "fixes": [
+    "Automatic intent without a report blocked/REPORT_NOT_PREPARED, no false done; manual answer may omit a report.",
+    "Question dependencies serialized as JSON for PostgreSQL jsonb.",
+    "Stored identity and ceiling refusal precedes expensive deterministic recalculation, final exact/current checks retained."
+  ],
+  "tests": {
+    "earlierFullScenario": "PASS 100.99s on Aiven scratch, injected HTTP/provider",
+    "finalV2": "55/56 first run; one provider fixture ENOENT packaging error, 8/8 provider tests passed after copying unchanged fixture resources. All56distinct tests now pass.",
+    "finalScenarioIncludes": [
+      "full10000linecalculation",
+      "actualscopedtools",
+      "automaticreport",
+      "no-reportintentblocked2ticks",
+      "operatorreleaseonlyPOL1",
+      "rolebudgethashrefusals",
+      "idempotentapproval",
+      "simulatedexecutiononce",
+      "freshpooldurablereadback",
+      "manualfollowupactualreceiptsnoeffects"
+    ],
+    "typecheck": "PASS",
+    "serverBuild": "PASS",
+    "externalProviderCalls": 0,
+    "finalV4AivenScratch": "PASS actual full scenario92.45s, oldreadyblocked/runIdnull/currentoneonly, injectedprovider/HTTP",
+    "finalV3PortRunner": "24PASS"
+  },
+  "front": {
+    "ready": "proposals/ui/physical-connected-v1/READY.json",
+    "staticFilesHashVerified": 3,
+    "adapterPinsHashVerified": 7,
+    "sameOriginRuntimeBrowser": "NOT_RUN"
+  },
+  "receivedAt": "2026-10-22T13:07:29.094323+00:00",
+  "limits": [
+    "No runtime/provider/scenario real in this receipt.",
+    "Reviewers did not execute PostgreSQL.",
+    "Uncertain/stale/budget finalizer matrix tested by independent in-memory probes; actual network acknowledgement loss NOT_RUN."
+  ],
+  "diagnosticAfterThreeCycles": {
+    "cause": "Old ready policy intent could inherit new prompt and consume another run.",
+    "fix": "Under company lock block superseded ready with explicit reason, select only current company/policy, preserve identities/counters/started intents.",
+    "reviewers": [
+      "industrial_runtime_counter",
+      "industrial_runtime_architecture"
+    ],
+    "result": "TARGETED_REVALIDATION_PASS_NO_REMAINING_FINDINGS"
+  }
+}

@@ -1,5 +1,10 @@
 # Product verification status
 
+## Public source recovery checkpoint, 22 October 2026
+
+The repository is now public. The current source scope, tests and exact-version limits are in [PUBLICATION.md](PUBLICATION.md); autonomous clone/install/data initialization is in [RECOVERY.md](RECOVERY.md). Earlier no-publication/import-pending notes below describe earlier checkpoints. The received V6 industrial runtime is assembled for the public update, independently of later active owner changes. Historical `.local` source paths are provenance, not public prerequisites. Deployment and fresh real-provider reception are separate checks.
+
+
 22 October 2026. Integration owner. No commit, push, public publication or application deployment. Earlier status snapshots and technical negative evidence are preserved.
 
 The corrected risk flow is usable on http://127.0.0.1:3001. The same generic question produced an admissible EUR 1,420 plan for A while preserving B. Approval was performed in Aside, then read back on Aiven. The final preview process preserved the company, case history, confirmation event, run, approved proposal and all 16 traces after restart. Final coordinator capture and independent readback on 3001 passed, with the approved plan and all 16 events retained.
@@ -45,3 +50,25 @@ The authenticated industrial API is running at http://127.0.0.1:3003 from `.loca
 Base validation:320 tests with both PostgreSQL flags on disposable Aiven schemas, exact final calendar delta10industrial tests, build/typecheck, two independent exact-code reviews and targeted diagnostic revalidation. Display:13base/read tests then4display tests including monotonic versions and concurrency, two reviews, actual import/restart/GET. Independent QA firstread13HTTPchecks passed; displayread reception follows separately. Local Docker/PostgreSQL became inaccessible even with host access; no shared VM restart was attempted.
 
 Research R1 and R2 are received with limits in `proposals/integration/RECEIVED-RESEARCH-R1-R2.json`. R1 used two actual model runs and retrieved3reusable observations from5raw sources, first-process PID/session/IPC counters not retained. R2 used an injected provider on actual Aiven, kept the approved control, made the otherwise feasible1420plan stale on source correction, retained2source versions and generation2 through identical-content new-key ingestion. Original negatives, corrected oracle and nonretained session limits remain explicit. This does not prove the industrial runtime or a publisher revision.
+
+## 22 octobre, 14h52 : première veille publique industrielle reçue
+
+Le serveur local3003 tourne sur `.local/industrial-public-feed-v3`, PID67212, schéma Aiven industriel conservé. Les deux revues finales couvrent le candidat exact, manifeste `REVIEW-INPUT-INDUSTRIAL-PUBLIC-FEED-v3.json`. Suite complète du socle339tests, correction finale2tests Aiven scratch, build/typecheck réussis.
+
+Une seule occurrence réelle a été exécutée par le worker de veille existant à12:51:37Z, terminée à12:51:46Z. Résultat brut partial : trois notices BOAMP directes, deux preuves Keenable incomplètes. La projection canonique ne retient que les trois notices BOAMP, generation1, source_observation_only. Ces notices ne confirment ni demande CRM, ni retard fournisseur, ni incendie. Cadence reçue15minutes, prochain passage13:06:36Z.
+
+Le POST de création a refusé les deux URLs par l'ancien schéma HTTP limité àune, avant toute mutation. La création unique a utilisé le service natif exact reçu avec l'acteur renvoyé par la session authentifiée. Cette limite HTTP est corrigée en main, encore en réception avec le runtime complet. Le candidat3003 ne connecte encore ni modèle, rapport, décision ou simulation.3001 reste inchangé. Preuves : `INDUSTRIAL-PUBLIC-FEED-3003.json`, `INDUSTRIAL-WORKSPACE-PUBLIC-3003.json` et `INDUSTRIAL-READ-CANDIDATE.json` v3.
+
+## 22 octobre, 15h39 : parcours industriel réel et reprise locale reçus
+
+Le premier OpenAI direct a lu le contexte et calculé le plan, puis terminé sans outil de préparation. Son intent reste bloqué REPORT_NOT_PREPARED et ses trois appels/9139tokens sont conservés dans INDUSTRIAL-RUNTIME-FIRST-NO-REPORT-3003.json. Une nouvelle politique de consigne reçue, sous le même budget événement, a produit le rapport natif report:7ad05a01-fe99-4d73-8e10-c367374510c7, trois appels modèle réels. Les trois notices BOAMP sont explicitement classées sans exposition connue au bois, panneaux ou isolation. Le plan relève des faits internes synthétiques indépendants :10000 engagements protégés,1720EUR de nouvelle dépense,1100EUR de contribution potentielle.
+
+La QA propriétaire a envoyé une approbation puis une simulation, une seule fois par clé. Approval industrial-approval:8bd39351-aa34-484f-a02e-c0feb96639a3, execution5f85ad71-6eab-405d-8189-e010b05ab58b, révision résultante R-c61ff6d9-74ff-498f-a0b1-8202db653ef4. Six enregistrements durables : achat futur, réservation source, transfert programmé, deux allocations, offre CRM brouillon. Stock physique, réservations et10000 lignes inchangés ; achat et ligne fournisseur passent de8à9.
+
+Trois questions après action ont fait sept appels réels/17964tokens. Les réponses relisent les reçus et leurs IDs sans nouvel effet. Le recalcul après action est refusé faute de base courante libérée ; les outils ne détaillent pas encore tout le plan historique. Ces limites restent explicites. Le rapport historique demeure prepared avec freshness stale après changement de révision. Aucun achat, transfert physique ou vente externe n'est prouvé.
+
+Le candidat3003v6, PID92607, source .local/connected-runtime-v6, a reçu le correctif de transport des10001 allocations.55JS serveur et3fichiers client sont épinglés.93tests canoniques passent, build/typecheck réussis. Après redémarrage, la QA relit la même exécution et obtient les mêmes reçus avec les mêmes clés, sans changement deR ni doublon. Aside authentifié montre Overview, Company, Watchtower, le rapport, le plan et les six effets. Les clics initiaux d'approbation/simulation dans cette interface restent NOT_RUN : ils ont été exécutés par API.
+
+Avant publication, deux microcopies sont en réception : nom société dans l'en-tête et titre HTML, plus remplacement versionné d'AdaptOps dans le profil display. Le serveur3001 reste inchangé. Le PDF HTTP/cache/agent a ses deux revues et un test Aiven injecté reçu ; acquisition réelle intégrée encore en réception, UI PDF distincte. Le réglage sectoriel BOAMP a deux revues hors ligne, pas encore une collecte produit.
+
+Erwan a demandé la mise en service sur physical-impact.com/live/ dans le chat01a163b5 et autorisé explicitement le budget Runtime1vCPU/2Go dans les49,83USD de crédits et la bascule du worker, sans carte ni dépassement. Le dépôt distant reste au commit285cfb0d1bfd1c313c4b57ffba5f2515446acffd. Le nouvel accord Git doit porter sur le snapshot exact final, encore en préparation. Aucune application Runtime ni route publique connectée n'est créée dans cette réception. Le certificat CA public empaqueté et le schéma industriel ont été vérifiés sur Aiven en TLS1.3, y compris après neutralisation des paramètres URL TLS contradictoires. Docker local est indisponible, construction image NOT_RUN.

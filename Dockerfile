@@ -12,6 +12,8 @@ COPY package.json package-lock.json ./
 RUN npm ci --omit=dev && npm cache clean --force
 COPY --from=build /app/dist ./dist
 COPY migrations ./migrations
+COPY config/aiven-project-ca.pem ./config/aiven-project-ca.pem
+ENV DATABASE_CA_FILE=/app/config/aiven-project-ca.pem
 USER node
 EXPOSE 3000
 CMD ["node", "dist/server/server/start.js"]

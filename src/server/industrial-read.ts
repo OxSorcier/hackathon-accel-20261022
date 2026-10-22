@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import type { PoolClient } from 'pg';
 import type { Actor, AgentRun, CompanySnapshot } from '../contracts/index.js';
 import type { IndustrialAnalysisIntent, IndustrialApproval, IndustrialBasis, IndustrialContext, IndustrialDemoExecution, IndustrialReport, ReleasedIndustrialEvent } from '../contracts/industrial.js';
-import type { IndustrialQuestionInput, IndustrialReportView, IndustrialWorkspace } from '../contracts/industrial-api.js';
+import type { IndustrialDecisionInput, IndustrialSimulationInput, IndustrialQuestionInput, IndustrialReportView, IndustrialWorkspace } from '../contracts/industrial-api.js';
 import { currentIndustrialContext, parseIndustrialContext } from '../data/industrial-relations.js';
 import { createIndustrialAnalysisTrigger } from '../data/analysis-trigger.js';
 import { AppError, PgStore } from './store.js';
@@ -22,6 +22,9 @@ export interface IndustrialReadService {
   isIndustrial(companyId: string): Promise<boolean>;
   workspace(actor: Actor): Promise<IndustrialWorkspace>;
   report(actor: Actor, id: string): Promise<IndustrialReportView>;
+  decide?(actor: Actor, planId: string, input: IndustrialDecisionInput): Promise<IndustrialApproval>;
+  simulate?(actor: Actor, approvalId: string, input: IndustrialSimulationInput): Promise<IndustrialDemoExecution>;
+  release?(actor: Actor, value: unknown, expectedRevision: string, operationKey: string): Promise<import('./industrial-release.js').IndustrialReleaseResult>;
   question?(actor: Actor, input: IndustrialQuestionInput): Promise<AgentRun>;
 }
 export interface IndustrialReadOptions {

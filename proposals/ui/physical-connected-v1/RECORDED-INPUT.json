@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "path": "proposals/integration/INDUSTRIAL-WORKSPACE-DISPLAY-3003.json",
+  "sha256": "b487442eedff516fc7e15d641765085ac0204f0860c476ecdcfcbe0d0b8d0960",
+  "kind": "Recorded authenticated workspace, no new API call or business mutation",
+  "companyId": "CO-DEMO-INDUSTRIAL-CANDIDATE",
+  "businessRevision": "R-INDUSTRIAL-CANDIDATE-2",
+  "events": 0,
+  "reports": 0
+}

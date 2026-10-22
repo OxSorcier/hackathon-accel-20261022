@@ -288,4 +288,13 @@ describe("industrial UI boundary, synthetic HTTP only", () => {
     const { api, root } = await setup(); const value = await api.readIndustrial!();
     expect(value).toEqual(root); expect(value.display).toBeUndefined(); expect(value.publicResearch).toBeUndefined(); expect(value.publicFeed).toBeUndefined(); expect(value.capabilities.questionsConnected).toBeUndefined();
   });
+  it("reads a portfolio plan that includes 10000 commitment allocations plus a CRM allocation without truncation", async () => {
+    const { api, root } = await setup(); const plan = root.reports[0]!.report.assessment.plans[0]!; const commitment = plan.allocations[0]!; const demand = plan.allocations[1]!;
+    plan.allocations = [...Array.from({ length: 10000 }, (_, index) => ({ ...commitment, targetId: `commitment-${index}` })), { ...demand }];
+    const value = await api.readIndustrial!(); expect(value.reports[0]!.report.assessment.plans[0]!.allocations).toEqual(plan.allocations); expect(value.reports[0]!.report.assessment.plans[0]!.allocations).toHaveLength(10001);
+  });
+  it("keeps step boundaries strict when accepting a larger allocation portfolio", async () => {
+    const { api, root } = await setup(); Reflect.set(root.reports[0]!.report.assessment.plans[0]!.steps[0]!, "unexpectedCommand", "not permitted");
+    await expect(api.readIndustrial!()).rejects.toMatchObject({ code: "INVALID_RESPONSE" });
+  });
 });

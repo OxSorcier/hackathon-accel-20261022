@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "scope": "Received industrial HTTP DTO presentation and same-app static bundle; no external calls or shared server/config changes",
+  "implementationModel": "gpt-6.1-sol",
+  "baseline": "proposals/ui/physical-connected-v1/baseline",
+  "files": [
+    {
+      "file": "src/ui/physical-model.ts",
+      "sha256": "400c2b1f01cefae278f539fea38b8c963f9351f579ee44e02a7bc418e7381e25"
+    },
+    {
+      "file": "src/ui/physical-pages.tsx",
+      "sha256": "70d131d55cc527629d242b911e4897f75c869e4af8d4116bd4034a9087e681a0"
+    },
+    {
+      "file": "src/ui/IndustrialDesk.tsx",
+      "sha256": "0330f7b4897c4ba943094af53813a199f85f1f4da427f5a501453af13db1b150"
+    },
+    {
+      "file": "src/ui/physical-impact.css",
+      "sha256": "cbdc7abcbbaf7588d27ee996efe60eb3f8cb7d01467a75a4639ee9679809b205"
+    },
+    {
+      "file": "src/ui/physical-demo.ts",
+      "sha256": "b8711d0a393c5028861451052207293caabc706c3e4838d95ebef355698fbebf"
+    },
+    {
+      "file": "tests/ui/physical-connected.test.tsx",
+      "sha256": "ee666822c1569acb40aca046141f7c648910341d00f37484ca27d32fe0bba504"
+    },
+    {
+      "file": "tests/ui/physical-connected-preview.tsx",
+      "sha256": "4e14fcc8ab1d7646aa2c0703d212d273c1fb9838dad69699a8385b4154d5b3a6"
+    },
+    {
+      "file": "tests/ui/physical-connected-preview.html",
+      "sha256": "6f0a9b361c985c2cbe3b91df293760f3636e35e5f1efe2cfdb721d8e01699918"
+    },
+    {
+      "file": "tests/ui/physical-connected-snapshot.ts",
+      "sha256": "a2c44ddcf3500cffdf04b9aca5d53da8946253326cd2e42c37c65da1a914fa89"
+    }
+  ]
+}

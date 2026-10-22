@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "status": "RECEIVED",
+  "manifest": "REVIEW-INPUT-INDUSTRIAL-COMMAND-HTTP-v1.json",
+  "manifestSha256": "5fb0db2f86423dc2424d293f57e05e1b87d6f0b160f4a830a1cac6a21245b9aa",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "servedModelAttested": false,
+  "reviewers": [
+    {
+      "agent": "industrial_http_counter",
+      "modelRequested": "gpt-6.1-sol",
+      "isolation": "fork_turns:none",
+      "result": "NO_FINDINGS"
+    },
+    {
+      "agent": "industrial_http_architecture",
+      "modelRequested": "gpt-6-astra",
+      "isolation": "fork_turns:none",
+      "result": "NO_FINDINGS"
+    }
+  ],
+  "tests": {
+    "HTTPNativeScheduledRefAndInvalidRefAndAuth": "PASS 1/1",
+    "typecheck": "PASS",
+    "serverBuild": "PASS"
+  },
+  "runtimeEffects": "NOT_RUN in this receipt",
+  "receivedAt": "2026-10-22T13:12:08.875157+00:00"
+}

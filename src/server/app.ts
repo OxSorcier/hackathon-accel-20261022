@@ -12,6 +12,8 @@ import { validateWatchInput } from '../data/validation.js';
 import { CaseRepository, caseAnalysisSchema, caseConfirmationSchema, caseInputSchema, caseRevisionSchema } from './cases.js';
 import type { ResearchService } from './research-service.js';
 import { parseControlledEvidence } from './research-service.js';
+import { registerPdfRoutes } from './pdf-routes.js';
+import type { PdfDocuments } from './pdf-documents.js';
 import type { IndustrialReadService } from './industrial-read.js';
 
 export interface WatchService {
@@ -20,7 +22,7 @@ export interface WatchService {
   occurrences(companyId: string): Promise<WatchOccurrence[]>;
   trigger(actor: Actor, watchId: string, operationKey: string): Promise<WatchOccurrence>;
 }
-export interface AppOptions { store: PgStore; config: AppConfig; evaluate: BusinessEngine; watches?: WatchService; research?: ResearchService; industrial?: IndustrialReadService; staticRoot?: string }
+export interface AppOptions { store: PgStore; config: AppConfig; evaluate: BusinessEngine; watches?: WatchService; research?: ResearchService; industrial?: IndustrialReadService; documents?: PdfDocuments; staticRoot?: string }
 function ok<T>(data: T): ApiResponse<T> { return { data, error: null }; }
 export async function createApp(options: AppOptions): Promise<FastifyInstance> {
   const { store, config, evaluate } = options;
@@ -42,6 +44,7 @@ export async function createApp(options: AppOptions): Promise<FastifyInstance> {
     // Never serialize a native SQL/provider error or its connection details.
     return await reply.code(503).send({ data: null, error: { code: 'UNAVAILABLE', message: 'Service unavailable. No successful result can be confirmed.' } });
   });
+  if (options.documents) await registerPdfRoutes(app, { documents: options.documents, actorFor });
   app.get('/api/health', async () => ok({ status: 'alive', version: '0.1.0', contractVersion: CONTRACT_VERSION }));
   app.get('/api/industrial', async request => {
     const actor = await actorFor(request);
@@ -62,6 +65,31 @@ export async function createApp(options: AppOptions): Promise<FastifyInstance> {
     if (!options.industrial?.question) throw new AppError('INDUSTRIAL_CONVERSATION_UNAVAILABLE', 'The bounded industrial conversation is not connected yet.', 503);
     const input = questionSchema.extend({ reportId: z.string().min(1).max(200).regex(/^[a-zA-Z0-9:_-]+$/).optional() }).strict().parse(request.body);
     return await reply.code(202).send(ok(await options.industrial.question(actor, input)));
+  });
+  const industrialId = z.string().min(1).max(200).regex(/^[A-Za-z0-9:._-]+$/);
+  const operationKey = z.string().min(8).max(128).regex(/^[A-Za-z0-9:_-]+$/);
+  const evidenceRef = z.object({ occurrenceId: industrialId, evidenceId: industrialId, contentHash: z.string().regex(/^[a-f0-9]{64}$/) }).strict();
+  const basis = z.object({ companyId: industrialId, businessRevision: industrialId, policyVersion: industrialId, contextRevision: industrialId, qualificationRevision: industrialId, eventId: industrialId, eventRevision: industrialId, researchDependencies: z.array(z.object({ scope: z.object({ profileId: industrialId, profileVersion: industrialId, namespace: z.enum(['live','controlled']) }).strict(), generation: z.number().int().nonnegative(), validUntil: z.iso.datetime({offset:true}).nullable(), evidenceRefs: z.array(evidenceRef).max(10) }).strict()).max(10) }).strict();
+  app.post('/api/industrial/plans/:id/decision', async request => {
+    const actor = await actorFor(request);
+    if (!options.industrial?.decide) throw new AppError('INDUSTRIAL_UNAVAILABLE', 'Industrial decisions are not connected.', 503);
+    const { id } = z.object({id:industrialId}).strict().parse(request.params);
+    const input = z.object({decision:z.enum(['approve','reject']),expectedBasis:basis,expectedPlanVersion:industrialId,expectedPlanHash:z.string().regex(/^[a-f0-9]{64}$/),operationKey}).strict().parse(request.body);
+    return ok(await options.industrial.decide(actor,id,input));
+  });
+  app.post('/api/industrial/approvals/:id/simulate', async request => {
+    const actor = await actorFor(request);
+    if (!options.industrial?.simulate) throw new AppError('INDUSTRIAL_UNAVAILABLE', 'Industrial simulation is not connected.', 503);
+    const { id } = z.object({id:industrialId}).strict().parse(request.params);
+    const input = z.object({expectedBusinessRevision:industrialId,expectedPlanVersion:industrialId,expectedPlanHash:z.string().regex(/^[a-f0-9]{64}$/),operationKey}).strict().parse(request.body);
+    return ok(await options.industrial.simulate(actor,id,input));
+  });
+  app.post('/api/operator/industrial/releases', async request => {
+    const actor = await actorFor(request);
+    if (actor.role !== 'operator') throw new AppError('FORBIDDEN','Explicit operator release required.',403);
+    if (!options.industrial?.release) throw new AppError('INDUSTRIAL_UNAVAILABLE', 'Industrial release is not connected.', 503);
+    const input = z.object({payload:z.unknown(),expectedRevision:industrialId,operationKey}).strict().parse(request.body);
+    return ok(await options.industrial.release(actor,input.payload,input.expectedRevision,input.operationKey));
   });
   app.get('/api/ready', async () => { await store.query('SELECT 1'); return ok({ database: 'connected' }); });
   app.post('/api/session', async (request, reply) => {

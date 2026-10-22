@@ -56,11 +56,11 @@ The existing direction A remains the application reference. The chosen name does
 | Revision and recovery | Why remaining work changed and what already happened. | Stale pending plans refused/recalculated; completed receipts/history retained after restart. |
 | Demo readability | The business decision before technical evidence. | English copy, clear hierarchy, progressive disclosure, keyboard focus and desktop/narrow-layout checks in Aside. |
 
-Observed on 3001: a question-first entry and a "Direct execution" badge on an approved proposal whose note says no purchase or stock movement occurred. UI has received both as targeted improvements. Run mode must not imply business execution. See the [UI checkpoint and real browser evidence](../proposals/ui/ADAPTOPS-DEMO-CHECKPOINT.json).
+Observed on 3001: a question-first entry and a "Direct execution" badge on an approved proposal whose note says no purchase or stock movement occurred. UI has received both as targeted improvements. Run mode must not imply business execution. See the [UI checkpoint and real browser evidence](../../proposals/ui/ADAPTOPS-DEMO-CHECKPOINT.json).
 
 ## Evidence checkpoint and concrete gaps
 
-This is a dated coordination checkpoint. The integrator's [current verification status](STATUS.md) owns runtime evidence. Historical failures and candidate receipts stay intact. This documentary change does not rerun application tests or certify candidate code.
+This is a dated coordination checkpoint. The integrator's [current verification status](../STATUS.md) owns runtime evidence. Historical failures and candidate receipts stay intact. This documentary change does not rerun application tests or certify candidate code.
 
 | Capability | Available evidence | Remaining delivery and proof | Existing owner |
 | --- | --- | --- | --- |
@@ -92,16 +92,16 @@ A1-A8 retain their existing meanings and are refined for the received vision. A9
 
 ## Challenge, sources and continuation
 
-The [three-minute demo brief](../proposals/product/alignment-20261022/DEMO-SCRIPT.md), with [offline HTML](../proposals/product/alignment-20261022/DEMO-SCRIPT.html), starts with the known company and prepared report, then a mixed-impact recommendation, approval, action result and changed-data revision. Footage can claim only what its exact received version does.
+The [three-minute demo brief](../../proposals/product/alignment-20261022/DEMO-SCRIPT.md), with [offline HTML](../../proposals/product/alignment-20261022/DEMO-SCRIPT.html), starts with the known company and prepared report, then a mixed-impact recommendation, approval, action result and changed-data revision. Footage can claim only what its exact received version does.
 
 The challenge supplied by Erwan asks for an end-to-end product grounded in changing data, visible data flow, measurable evidence, a slide and clear live/recorded/synthetic labels. It requires application deployment on Aiven Runtime; a working Aiven database alone does not establish it. Advanced self-improvement is optional. Memory reuse does not establish model training or measured learning.
 
-This version succeeds the [exact pre-AdaptOps vision](history/PRODUCT-VISION-v1.1-before-adaptops-20261022.md), with [historical HTML](history/PRODUCT-VISION-v1.1-before-adaptops-20261022.html). That snapshot preserves the initial inspection, A1-A8 and the hypothetical funding exercise. No funding, client contract, price, saving or unique market position is established.
+This version succeeds the [exact pre-AdaptOps vision](PRODUCT-VISION-v1.1-before-adaptops-20261022.md), with [historical HTML](PRODUCT-VISION-v1.1-before-adaptops-20261022.html). That snapshot preserves the initial inspection, A1-A8 and the hypothetical funding exercise. No funding, client contract, price, saving or unique market position is established.
 
-- [Industrial customer, portfolio and historical story](../proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.md). Its Decision Desk descriptor is superseded by AdaptOps; data/source identities remain intact.
-- [Company research memory and traces](../proposals/product/MEMOIRE-RECHERCHE-TRACES.md).
-- [Government/timber source research](../proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.md), with [offline HTML](../proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.html).
-- [Data checkpoint](../proposals/data/ADAPTOPS-DATA-CHECKPOINT-v1.json), [UI checkpoint](../proposals/ui/ADAPTOPS-DEMO-CHECKPOINT.json) and [builder ownership](OWNERSHIP.md).
-- [Integrator status](STATUS.md), the authority for current exact-version reception and tests.
+- [Industrial customer, portfolio and historical story](../../proposals/product/alignment-20261022/ALIGNMENT-AND-STORY.md). Its Decision Desk descriptor is superseded by AdaptOps; data/source identities remain intact.
+- [Company research memory and traces](../../proposals/product/MEMOIRE-RECHERCHE-TRACES.md).
+- [Government/timber source research](../../proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.md), with [offline HTML](../../proposals/product/research-data-20261022/sector-sources/SECTOR-DATA-STRATEGY.html).
+- [Data checkpoint](../../proposals/data/ADAPTOPS-DATA-CHECKPOINT-v1.json), [UI checkpoint](../../proposals/ui/ADAPTOPS-DEMO-CHECKPOINT.json) and [builder ownership](../OWNERSHIP.md).
+- [Integrator status](../STATUS.md), the authority for current exact-version reception and tests.
 
 Sources actually consulted: Erwan's received naming/action/UX instructions in chat 01a16316-d948-7672-b47f-395e6d411d33; previous vision and demo; current integrator/data/UI checkpoints; the challenge text supplied by Erwan. External research claims are not freshly reverified here. This update changes no application code, fixture, shared contract or deployment authority. The existing owners continue the product work.

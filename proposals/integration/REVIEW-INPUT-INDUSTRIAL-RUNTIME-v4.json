@@ -1,0 +1,112 @@
+{
+  "version": 4,
+  "root": "/Users/erwan/Projects/hackathon-accel-20261022/.local/industrial-runtime-v4",
+  "base": "/Users/erwan/Projects/hackathon-accel-20261022/.local/industrial-public-feed-v3",
+  "scope": "Industrial bound server release, automatic existing worker admission, actual scoped model port, durable budget/fenced final report, human decision, exact simulated execution and follow-up. Existing module contracts retained. No startup fixture/event/source collection, no C1 provider path for industrial company.",
+  "realizerModelRequested": "gpt-6.1-sol",
+  "files": [
+    {
+      "path": "src/server/industrial-runtime.ts",
+      "sha256": "5eddd7360633db49262f1122226152eccc6fdb6dbf74d5db6e240bda51787453"
+    },
+    {
+      "path": "src/server/industrial-release.ts",
+      "sha256": "440683e86e8350e8f35f88cf8e3741212d57a43a78e58cccfc9998d361a15aec"
+    },
+    {
+      "path": "src/server/industrial-read.ts",
+      "sha256": "20f2d9cdf808f6e4433f1a65183c27cf232cf4c61c5b67c9f9ab4f19662c0ca4"
+    },
+    {
+      "path": "src/server/store.ts",
+      "sha256": "8667708a88271f5e98912a6d33c322bfee43ffc7321662c12d59214f5ced8471"
+    },
+    {
+      "path": "src/server/worker.ts",
+      "sha256": "2a82375311aa3a03cba424a6035f7058f608f03c2e2fa6530c1af8cbf4faa40a"
+    },
+    {
+      "path": "src/server/start.ts",
+      "sha256": "f64f7009e554af7dece4810ca3181495c758910b80c7803941f4043316067f23"
+    },
+    {
+      "path": "src/server/app.ts",
+      "sha256": "053fb8173a0cf4057e79f851644fefc885ae0fb9dc665a4e0281d19cac568dc5"
+    },
+    {
+      "path": "src/server/validation.ts",
+      "sha256": "776a24a6f7169228a7b799435754bf8677cab5c8ca671dd1b109952b83022ae2"
+    },
+    {
+      "path": "migrations/012_industrial_report_attempts.sql",
+      "sha256": "f92e436aac5d6c0dfa7961dbe2535cec476e5200753aa5ddc22d3c7284e45e56"
+    },
+    {
+      "path": "tests/integration/industrial-runtime.test.ts",
+      "sha256": "2d788a2028a6e938ab68b887d992eaf6f6a7e83a79b34cc685c329b040e98c51"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/server/industrial-feed.ts",
+      "sha256": "3407b7f3acc48a4a7bef6d9b373c6788f30411bef447d614fa55549bb20fcd26"
+    },
+    {
+      "path": "src/server/research-service.ts",
+      "sha256": "28941ba7bd6da60db132b7b6ee9c462f62c1455ca66149f9e4f89a35194ebcba"
+    },
+    {
+      "path": "src/server/watch-service.ts",
+      "sha256": "65944dfa91aea7573f1cf2903879019edcd851433565efb5929209f10761095b"
+    },
+    {
+      "path": "src/server/industrial-display.ts",
+      "sha256": "6d3d30be4d301c92b398e038e8bb7693654ac05a8bb81d6dbe098b64856e6045"
+    },
+    {
+      "path": "src/server/industrial-agent-port.ts",
+      "sha256": "5d2aa4029ab2b6d74a9ad40b6d8bfc3c4a8af207414f89d4bdfc7b164858de9a"
+    },
+    {
+      "path": "src/server/industrial-execution.ts",
+      "sha256": "9fc63c284c3f73b142c9d6315bd96ad56f31462d3194e8bf09aac10839281cf9"
+    },
+    {
+      "path": "src/data/analysis-trigger.ts",
+      "sha256": "b18d884c29edfbb86952547685a90f8320e726f4ee909aab08bc52235f0510a2"
+    },
+    {
+      "path": "src/data/research-repository.ts",
+      "sha256": "0e329c828e36783a0f0c2bfaadf245e48976439568f43e086106a2ab829d80f6"
+    },
+    {
+      "path": "src/domain/industrial.ts",
+      "sha256": "87ddba8bec62406f71121af51d6fd5c17e3da795c9bca9fb303b87765f2f53ed"
+    },
+    {
+      "path": "src/agent/runner.ts",
+      "sha256": "d138898456b8672b19443ae25b37e0af21be262bec0374495450033f68324327"
+    },
+    {
+      "path": "src/agent/specialized-runner.ts",
+      "sha256": "208e714a0510030013207b28563474cdb86504e67e71e33fa3cf84b832863045"
+    },
+    {
+      "path": "src/agent/industrial-context.ts",
+      "sha256": "1b10459579998d7cce530a49d6d775ad3fd0b766e151943c00ac7d20ceabc9c6"
+    },
+    {
+      "path": "src/contracts/index.ts",
+      "sha256": "104d14d3677f9df853cb34f2d4c534a7ae53645c2cbde7c015694ccbadd49794"
+    },
+    {
+      "path": "src/contracts/industrial.ts",
+      "sha256": "2e22d97141cde9426df6221433e2ba82d86edf8a3a93376378ce8487293e2ace"
+    },
+    {
+      "path": "src/contracts/industrial-api.ts",
+      "sha256": "cce92904ad3a26dc26a832483e85029573895ae45edeacff669d034d6e6ce1c6"
+    }
+  ],
+  "createdAt": "2026-10-22T13:04:49.532549+00:00"
+}
